@@ -5,6 +5,8 @@ import dragged02 from "../../images/characters/gamjabot/extra/frames/dragged/02.
 import dragged03 from "../../images/characters/gamjabot/extra/frames/dragged/03.png";
 import hardImpact00 from "../../images/characters/gamjabot/extra/frames/hard-impact/00.png";
 import focused00 from "../../images/characters/gamjabot/extra/frames/focused/00.png";
+import singingDanceSheet from "../../images/characters/gamjabot/extra/frames/singing-dance-sheet-v1.png";
+import lowBatteryCarrySheet from "../../images/characters/gamjabot/extra/frames/low-battery-carry-sheet-v1.png";
 import alert00 from "../../running/alert/0.png";
 import alert01 from "../../running/alert/1.png";
 import alert02 from "../../running/alert/2.png";
@@ -57,6 +59,11 @@ export type PetAnimation =
   | "window-tumble"
   | "hard-impact"
   | "focused"
+  | "dancing"
+  | "battery-alert"
+  | "battery-lift"
+  | "battery-carry"
+  | "battery-present"
   | "climbing-left"
   | "climbing-right"
   | "rope-throw-left"
@@ -76,6 +83,15 @@ const DISPLAY_ATLAS_HEIGHT = 1144;
 type AnimationDefinition =
   | { source: "atlas"; row: number; frames: number }
   | { source: "images"; images: string[]; frames: number; mirror?: boolean; contain?: boolean }
+  | {
+      source: "grid";
+      image: string;
+      frames: number;
+      columns: number;
+      cellWidth: number;
+      cellHeight: number;
+      startFrame?: number;
+    }
   | {
       source: "strip";
       image: string;
@@ -113,6 +129,49 @@ const animations: Record<PetAnimation, AnimationDefinition> = {
   "window-tumble": { source: "images", images: [landing00, landing01, landing02, landing03], frames: 4 },
   "hard-impact": { source: "images", images: [hardImpact00], frames: 1 },
   focused: { source: "images", images: [focused00], frames: 1 },
+  dancing: {
+    source: "grid",
+    image: singingDanceSheet,
+    frames: 6,
+    columns: 3,
+    cellWidth: 128,
+    cellHeight: 128,
+  },
+  "battery-alert": {
+    source: "grid",
+    image: lowBatteryCarrySheet,
+    frames: 1,
+    columns: 3,
+    cellWidth: 128,
+    cellHeight: 128,
+  },
+  "battery-lift": {
+    source: "grid",
+    image: lowBatteryCarrySheet,
+    frames: 1,
+    columns: 3,
+    cellWidth: 128,
+    cellHeight: 128,
+    startFrame: 2,
+  },
+  "battery-carry": {
+    source: "grid",
+    image: lowBatteryCarrySheet,
+    frames: 2,
+    columns: 3,
+    cellWidth: 128,
+    cellHeight: 128,
+    startFrame: 3,
+  },
+  "battery-present": {
+    source: "grid",
+    image: lowBatteryCarrySheet,
+    frames: 1,
+    columns: 3,
+    cellWidth: 128,
+    cellHeight: 128,
+    startFrame: 5,
+  },
   "rope-throw-right": {
     source: "strip",
     image: ropeThrowStrip,
@@ -211,7 +270,7 @@ export function createPetSprite(): PetSprite {
   const render = (): void => {
     const definition = animations[animation];
     element.dataset.animation = animation;
-    element.style.transform = definition.source !== "atlas" && definition.mirror ? "scaleX(-1)" : "";
+    element.style.transform = "mirror" in definition && definition.mirror ? "scaleX(-1)" : "";
     if (definition.source === "atlas") {
       element.style.backgroundImage = `url("${gamjabotAtlas}")`;
       element.style.backgroundSize = `${DISPLAY_ATLAS_WIDTH}px ${DISPLAY_ATLAS_HEIGHT}px`;
@@ -224,6 +283,16 @@ export function createPetSprite(): PetSprite {
       element.style.backgroundSize = `${definition.displayWidth}px ${definition.displayHeight}px`;
       const centeredX = (DISPLAY_CELL_WIDTH - definition.frameWidth) / 2;
       element.style.backgroundPosition = `${centeredX - frame * definition.frameWidth}px ${definition.offsetY}px`;
+      return;
+    }
+
+    if (definition.source === "grid") {
+      const sourceFrame = frame + (definition.startFrame ?? 0);
+      const column = sourceFrame % definition.columns;
+      const row = Math.floor(sourceFrame / definition.columns);
+      element.style.backgroundImage = `url("${definition.image}")`;
+      element.style.backgroundSize = `${definition.cellWidth * definition.columns}px ${definition.cellHeight * 2}px`;
+      element.style.backgroundPosition = `${-column * definition.cellWidth}px ${-row * definition.cellHeight}px`;
       return;
     }
 

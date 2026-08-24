@@ -259,6 +259,8 @@ body[data-window="climb-rope"] #app {
   100% { opacity: 0; transform: scaleX(-1) translateX(calc(-50vw - 180px)); }
 }
 .pet-shell {
+  position: relative;
+  isolation: isolate;
   display: grid;
   width: 100vw;
   height: 100vh;
@@ -295,10 +297,64 @@ body[data-window="climb-rope"] #app {
 .pet-sprite[data-animation="running-right"] .pet-costume,
 .pet-sprite[data-animation^="load-"] .pet-costume { animation: pet-costume-bob 240ms steps(2) infinite; }
 .pet-sprite[data-animation="hard-impact"] .pet-costume { display: none; }
+.pet-sprite[data-animation^="battery-"] {
+  width: 128px;
+  height: 128px;
+}
+.pet-sprite[data-animation^="battery-"] .pet-costume { display: none; }
 .pet-sprite[data-animation="window-tumble"] {
   z-index: 3;
   animation: window-jump-tumble 980ms cubic-bezier(.2, .75, .25, 1) both;
   transform-origin: 50% 52%;
+}
+.pet-shell.youtube-music-stage::before {
+  position: absolute;
+  z-index: 0;
+  inset: 4px 8px 0;
+  border: 2px solid rgb(116 222 255 / .8);
+  border-bottom: 0;
+  border-radius: 42% 42% 0 0;
+  background:
+    radial-gradient(circle at 12% 72%, #ff42c8 0 7px, #252335 8px 18px, transparent 19px),
+    radial-gradient(circle at 88% 72%, #38d6ff 0 7px, #252335 8px 18px, transparent 19px),
+    repeating-linear-gradient(90deg, transparent 0 18px, rgb(255 255 255 / .3) 19px 22px, transparent 23px 39px),
+    linear-gradient(72deg, transparent 17%, rgb(42 205 255 / .48) 18% 35%, transparent 36%),
+    linear-gradient(-72deg, transparent 17%, rgb(255 55 190 / .48) 18% 35%, transparent 36%),
+    radial-gradient(ellipse at 50% 94%, #56536f 0 33%, #242331 34% 47%, transparent 48%);
+  box-shadow: inset 0 0 18px rgb(87 219 255 / .25), 0 0 12px rgb(255 48 198 / .38);
+  content: "";
+  animation: music-stage-pulse 560ms steps(2) infinite;
+  pointer-events: none;
+}
+.pet-shell.youtube-music-stage::after {
+  position: absolute;
+  z-index: 3;
+  top: 14px;
+  left: 22px;
+  width: 236px;
+  color: #fff66c;
+  font: 700 25px/1 "Segoe UI Symbol", sans-serif;
+  letter-spacing: 72px;
+  text-shadow: 0 0 4px #ff38c7, 0 0 8px #29cfff;
+  content: "♪♫★";
+  animation: music-notes-bounce 700ms ease-in-out infinite alternate;
+  pointer-events: none;
+}
+.pet-shell.youtube-music-stage .pet-sprite {
+  z-index: 2;
+  width: 128px;
+  height: 128px;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 0 5px #fff36b) drop-shadow(0 3px 1px rgb(0 0 0 / .45));
+}
+.pet-sprite[data-animation="dancing"] .pet-costume {
+  display: none;
+}
+@keyframes music-stage-pulse {
+  50% { filter: hue-rotate(38deg) brightness(1.25); }
+}
+@keyframes music-notes-bounce {
+  to { translate: 0 7px; rotate: -5deg; }
 }
 @keyframes window-jump-tumble {
   0% { transform: translateY(-6px) rotate(0deg) scale(.92); }

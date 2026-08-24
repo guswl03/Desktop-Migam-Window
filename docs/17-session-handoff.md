@@ -204,6 +204,11 @@
 
 ## 검증 상태
 
+- Chrome `YouTube Music` 창 감지와 무대·춤 반응을 추가했다. 기존 `images/characters/gamjabot/pack/dance/`의 6프레임을 사용하며 집중 타이머와 드래그가 우선한다.
+- 구현 후 프런트 50개·Rust 46개 테스트, TypeScript, production build, rustfmt와 Clippy를 통과했다. 실제 Chrome 창 제목 인식과 128×128 무대 가독성은 Windows 사용자 화면에서 수동 확인이 필요하다.
+- 사용자 확인 후 무대는 280×220으로 확대하고, 신규 `singing-dance-sheet-v1.png`의 마이크 노래·춤 6포즈로 교체했다. 창 크기 전환은 하단 중앙 접점을 보존하며 종료 시 128×128로 복구한다.
+- 확장 무대 변경 후 프런트 50개·Rust 47개 테스트, TypeScript, production/release build, rustfmt와 Clippy를 통과했다. Windows 화면에서 무대 크기와 복원 위치를 수동 확인해야 한다.
+
 - GAMCHA 구현 후 `npm test`: 프런트 18개 테스트 통과.
 - GAMCHA 구현 후 `cargo test`: Rust 32개 테스트 통과.
 - `cargo fmt`, `cargo clippy --all-targets -- -D warnings`: 통과.
@@ -255,6 +260,11 @@
 - 추가 사용자 확인에서 넘어지는 순간에는 Z-order와 별개로 자체 clipping도 남아 있었다. `window-tumble`이 발 근처 `58% 92%`를 축으로 82도 회전하면서 96×104 몸이 128×128 WebView 밖으로 튀어나간 것이 원인이었다. 회전축을 몸 중앙 `50% 52%`로 옮기고 누운 구간을 76%로 축소해 최외곽이 WebView 안에 남도록 했다. 프런트 47개 테스트, TypeScript와 production build를 통과했다.
 - 실행 중 앱이 기본 `dist/assets`와 `target/release/.cargo-build-lock`을 보유해 이 마지막 CSS 수정의 release 실행 파일 교체만 완료하지 못했다. 앱과 개발 터미널을 완전히 종료한 뒤 `npm run tauri -- build --no-bundle`을 다시 실행해야 최신 release EXE에 포함된다.
 - 최종 로프 개선 후 프런트 43개, Rust 45개 테스트, TypeScript, production/release build, rustfmt와 Clippy를 통과했다. 실행 파일은 `src-tauri/target/release/migam-desktop.exe`다.
+- Windows `GetSystemPowerStatus`로 배터리를 5초마다 확인한다. 배터리가 존재하고 충전 중이 아니며 20% 이하가 되면 감자봇이 놀란 뒤 가까운 화면 가장자리로 달려 나가고, 큰 빨간 배터리를 힘겹게 들고 천천히 돌아와 약 2.4초 동안 보여준다.
+- 동일한 저전력 상태에서는 한 번만 실행하며 충전 시작·25% 이상 회복 시 다음 이벤트를 재무장한다. 집중 타이머가 최우선이고, 타이머 중 감지된 이벤트는 종료 뒤 실행한다. 음악 무대 중에는 무대를 접은 후 연출하고 종료 뒤 음악 상태로 복귀한다.
+- 배터리가 없는 데스크톱에서도 `펫 우클릭 → 저전력 이벤트 테스트`로 전체 연출을 강제 실행할 수 있다. 전용 자산은 `images/characters/gamjabot/extra/frames/low-battery-carry-sheet-v1.png`이며 3×2 투명 시트다.
+- 저전력 이벤트 적용 후 프런트 53개·Rust 48개 테스트, TypeScript production build와 Clippy를 통과했다.
+- 배터리 시트 자체에는 안전 여백이 있었지만 기본 `.pet-sprite`가 96×104여서 128×128 셀의 오른쪽 32px가 잘렸다. `battery-*` 애니메이션 동안만 표시 영역을 128×128로 확장하고 코스튬을 숨기도록 수정했다. 프런트 53개 테스트와 TypeScript 검사는 통과했으며, 실행 중 앱이 `dist/assets`를 잠가 최신 release 빌드만 앱 종료 후 재실행해야 한다.
 
 - 감자봇 `final/validation-extended.json`: `ok: true`, 1536×2288, 8×11, 오류·경고 없음.
 - 감자봇 `qa/chroma-despill-extended.json`: `ok: true`.

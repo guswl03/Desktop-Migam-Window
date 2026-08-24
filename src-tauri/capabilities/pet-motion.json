@@ -3,5 +3,5 @@
   "identifier": "pet-motion",
   "description": "Allows the pet and kick-effect windows to animate their own position.",
   "windows": ["pet", "card"],
-  "permissions": ["core:window:allow-set-position"]
+  "permissions": ["core:window:allow-set-position", "core:window:allow-set-size"]
 }
