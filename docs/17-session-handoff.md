@@ -86,6 +86,14 @@
 - 방해 규칙의 유예 시간 하한을 1초, 재감지 대기 하한을 5초로 낮췄고 프런트 입력 제한과 Rust 검증을 일치시켰다.
 - 프런트 25개·Rust 43개 테스트, production build, rustfmt, Clippy가 통과했다. 설정 체크박스와 두 최솟값 저장은 실행 중인 Windows 앱에서 수동 확인이 남았다.
 
+## v0.1.1 최종 릴리스 요약
+
+- 원격 `main`의 저배터리 배터리 배달·YouTube Music 노래 무대·스프라이트 잘림 수정까지 포함해 앱 버전을 `0.1.1`로 통일했다.
+- README의 직접 다운로드와 릴리스 링크를 `v0.1.1`로 갱신하고, 손상 파일 보관 설명을 일반 사용자 문장으로 바꿨다.
+- 프런트 53개·Rust 48개 테스트, TypeScript, Vite production build, rustfmt, Clippy, Windows x64 NSIS 빌드와 main GitHub Actions가 통과했다.
+- `v0.1.1` 정식 릴리스에 `migam.desktop_0.1.1_x64-setup.exe`를 게시했다. SHA-256은 `8EEF5636826CE4EC8A287190FA5498B1E0B86A0AC7AAB9A60BECABAF93AE6EA1`이다.
+- 코드 서명은 아직 없어 Windows SmartScreen 경고가 나타날 수 있다.
+
 ## 현재 상태
 
 - Tauri 2 + Rust + Vite + 순수 TypeScript 기반 구축이 완료되어 있다.
@@ -360,3 +368,14 @@
 - 던진 감자봇이 중력과 화면 경계 반동을 적용받는다.
 - 어떤 던지기도 3초 이내 종료되고 화면 밖으로 영구 유실되지 않는다.
 - 포인터 속도와 물리 자동 테스트가 통과한다.
+
+## 마지막 인수인계
+
+```text
+현재 상태: v0.1.1 최종 릴리스 게시 완료, 실제 Windows 장시간·다중 모니터 수동 확인 전
+마지막 성공 검사: 2026-08-24 프런트 53개·Rust 48개·typecheck·production build·fmt·Clippy·Windows x64 NSIS build·main GitHub Actions 통과
+완료한 기능: 저배터리 배터리 배달, YouTube Music 노래 무대, 최신 스프라이트 잘림 수정과 README 직접 설치 안내를 포함한 v0.1.1 게시
+다음으로 할 일: 설치판을 새 Windows 11 환경에서 실행해 저배터리 이벤트, 음악 무대, 다중 모니터·DPI와 장시간 안정성을 수동 확인
+알려진 위험: 설치 파일은 코드 서명이 없어 SmartScreen 경고가 나타날 수 있고, 특수 최상단 창은 일반 앱과 표시 순서가 다를 수 있음
+실행/테스트 방법: README의 v0.1.1 설치 링크 또는 `. .\scripts\use-project-rust.ps1` 후 README 개발 명령 사용
+```
