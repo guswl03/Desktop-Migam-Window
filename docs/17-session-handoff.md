@@ -4,6 +4,15 @@
 
 이 문서는 다음 작업 세션이 가장 먼저 확인하는 단일 인수인계 기록이다. 작업을 끝낼 때마다 오래된 내용을 남기지 말고 현재 상태로 갱신한다.
 
+## v0.1.2 배포 준비
+
+- Canvas에서 배경 제거한 사진 배달 캐릭터가 `blob:` URL을 사용하지만 CSP `img-src`가 이를 허용하지 않아 사진만 보이던 원인을 수정했다.
+- CSP에는 기존 출처를 유지한 채 `blob:`만 추가했고, 설정이 다시 빠지면 실패하는 Rust 회귀 테스트를 추가했다.
+- 앱 버전과 README 다운로드 링크를 `0.1.2`/`v0.1.2`로 동기화했다.
+- 로컬 검증: 프런트 53개, Rust 49개, TypeScript, production build, rustfmt, Clippy `-D warnings`, Windows x64 MSI/NSIS 빌드 통과.
+- NSIS: `migam desktop_0.1.2_x64-setup.exe`, 19,977,502 bytes, SHA-256 `4C7DE4693B72C8FB3902715936AC364C7BE32BF425AF0383152EE4F7F56573E1`.
+- 남은 배포 게이트: PR·main GitHub Actions 통과 후 `v0.1.2` 태그에 NSIS 자산 게시.
+
 ## 현재 목표
 
 창 등반·상단 보행 자동 구현은 완료됐다. 실제 Windows 창에서 좌우 충돌·등반 위치·창 이동 추적·최소화 낙하를 수동 확인한 뒤 동작 속도와 스프라이트 오프셋을 미세 조정한다. 투두리스트 고급 축하 연출은 그 다음 작업으로 유지한다.
@@ -372,10 +381,10 @@
 ## 마지막 인수인계
 
 ```text
-현재 상태: v0.1.1 최종 릴리스 게시 완료, 실제 Windows 장시간·다중 모니터 수동 확인 전
-마지막 성공 검사: 2026-08-24 프런트 53개·Rust 48개·typecheck·production build·fmt·Clippy·Windows x64 NSIS build·main GitHub Actions 통과
-완료한 기능: 저배터리 배터리 배달, YouTube Music 노래 무대, 최신 스프라이트 잘림 수정과 README 직접 설치 안내를 포함한 v0.1.1 게시
-다음으로 할 일: 설치판을 새 Windows 11 환경에서 실행해 저배터리 이벤트, 음악 무대, 다중 모니터·DPI와 장시간 안정성을 수동 확인
-알려진 위험: 설치 파일은 코드 서명이 없어 SmartScreen 경고가 나타날 수 있고, 특수 최상단 창은 일반 앱과 표시 순서가 다를 수 있음
-실행/테스트 방법: README의 v0.1.1 설치 링크 또는 `. .\scripts\use-project-rust.ps1` 후 README 개발 명령 사용
+현재 상태: 사진 배달 캐릭터 CSP 수정과 v0.1.2 버전·README·Windows 설치 산출물 준비 완료, PR·main CI·정식 게시 대기
+마지막 성공 검사: 2026-08-24 프런트 53개·Rust 49개·typecheck·production build·fmt·Clippy·Windows x64 MSI/NSIS build 통과
+완료한 기능: `img-src blob:` 허용과 설정 회귀 테스트, v0.1.2 패키지 버전·README 직접 설치 링크, NSIS 설치 파일 생성
+다음으로 할 일: PR과 main CI 통과 후 v0.1.2 태그에 NSIS를 게시하고 실제 Windows에서 사진 배달 캐릭터를 수동 확인
+알려진 위험: 설치 파일은 코드 서명이 없어 SmartScreen 경고가 나타날 수 있고, WebView 실제 표시 확인은 새 설치판 게시 후 필요
+실행/테스트 방법: 로컬 NSIS 산출물 또는 `. .\scripts\use-project-rust.ps1` 후 README 개발 명령 사용
 ```

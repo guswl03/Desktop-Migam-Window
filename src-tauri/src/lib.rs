@@ -196,3 +196,27 @@ pub fn run() {
         .run(tauri::generate_context!())
         .expect("error while running the desktop pet application");
 }
+
+#[cfg(test)]
+mod config_tests {
+    #[test]
+    fn csp_allows_blob_images_for_generated_photo_delivery_sprite() {
+        let config: serde_json::Value =
+            serde_json::from_str(include_str!("../tauri.conf.json")).unwrap();
+        let csp = config
+            .pointer("/app/security/csp")
+            .and_then(serde_json::Value::as_str)
+            .unwrap();
+        let image_sources = csp
+            .split(';')
+            .find(|directive| directive.trim_start().starts_with("img-src "))
+            .unwrap();
+
+        assert!(
+            image_sources
+                .split_ascii_whitespace()
+                .any(|source| source == "blob:"),
+            "photo delivery creates a blob URL for the transparent pull sprite"
+        );
+    }
+}
