@@ -272,6 +272,7 @@
 | 2026-08-24 | 배터리 운반 프레임 우측 잘림 수정 | 코드·테스트 통과 | 128px 배터리 셀을 96px 기본 펫 영역에서 표시해 생긴 clipping을 확인하고 배터리 동작 중 표시 영역을 128×128로 확장; 실행 중 앱의 dist 잠금으로 release 재빌드는 앱 종료 후 필요 |
 
 | 2026-08-24 | v0.1.1 최종 릴리스 | 통과 | 버전·README 다운로드 링크 동기화, 프런트 53개·Rust 48개·typecheck·production/NSIS release build·fmt·Clippy·main CI 통과, Windows x64 설치 파일 게시 |
+| 2026-08-24 | 사진 배달 캐릭터 CSP 수정·v0.1.2 준비 | 로컬 통과 | `img-src`에 `blob:` 허용, 회귀 테스트 Red→Green, 프런트 53개·Rust 49개·typecheck·production build·fmt·Clippy·Windows x64 MSI/NSIS build 통과 |
 
 ## 시간 예산
 
