@@ -91,6 +91,73 @@ pub fn get_climbable_windows() -> Vec<WindowSurface> {
     climbable_windows()
 }
 
+#[tauri::command]
+pub fn is_youtube_music_active() -> bool {
+    crate::infrastructure::windows::youtube_music_in_chrome()
+}
+
+#[tauri::command]
+pub fn get_battery_state() -> Result<crate::infrastructure::windows::BatterySnapshot, String> {
+    crate::infrastructure::windows::battery_snapshot()
+}
+
+#[tauri::command]
+pub fn test_low_battery_event(app: AppHandle) -> Result<(), String> {
+    app.emit("battery://test", ())
+        .map_err(|_| "battery test event could not be started".to_owned())
+}
+
+const PET_WINDOW_WIDTH: u32 = 128;
+const PET_WINDOW_HEIGHT: u32 = 128;
+const MUSIC_STAGE_WIDTH: u32 = 280;
+const MUSIC_STAGE_HEIGHT: u32 = 220;
+
+fn anchored_window_position(
+    x: i32,
+    y: i32,
+    width: u32,
+    height: u32,
+    target_width: u32,
+    target_height: u32,
+) -> (i32, i32) {
+    let center_x = i64::from(x) + i64::from(width) / 2;
+    let bottom = i64::from(y) + i64::from(height);
+    (
+        (center_x - i64::from(target_width) / 2) as i32,
+        (bottom - i64::from(target_height)) as i32,
+    )
+}
+
+#[tauri::command]
+pub fn set_music_stage_expanded(app: AppHandle, expanded: bool) -> Result<(), String> {
+    let pet = app
+        .get_webview_window("pet")
+        .ok_or_else(|| "pet window is unavailable".to_owned())?;
+    let position = pet
+        .outer_position()
+        .map_err(|_| "pet position is unavailable".to_owned())?;
+    let size = pet
+        .outer_size()
+        .map_err(|_| "pet size is unavailable".to_owned())?;
+    let (target_width, target_height) = if expanded {
+        (MUSIC_STAGE_WIDTH, MUSIC_STAGE_HEIGHT)
+    } else {
+        (PET_WINDOW_WIDTH, PET_WINDOW_HEIGHT)
+    };
+    let (target_x, target_y) = anchored_window_position(
+        position.x,
+        position.y,
+        size.width,
+        size.height,
+        target_width,
+        target_height,
+    );
+    pet.set_position(tauri::PhysicalPosition::new(target_x, target_y))
+        .map_err(|_| "music stage could not be positioned".to_owned())?;
+    pet.set_size(tauri::PhysicalSize::new(target_width, target_height))
+        .map_err(|_| "music stage could not be resized".to_owned())
+}
+
 fn climb_rope_rect(x: i32, top: i32, bottom: i32, side: &str) -> (i32, i32, u32) {
     let normalized_top = top.min(bottom);
     let normalized_bottom = bottom.max(top);
@@ -834,7 +901,7 @@ pub fn quit_application(app: AppHandle) {
 }
 #[cfg(test)]
 mod gamcha_notice_position_tests {
-    use super::{climb_rope_rect, gamcha_notice_desired_y};
+    use super::{anchored_window_position, climb_rope_rect, gamcha_notice_desired_y};
 
     #[test]
     fn anchors_the_reward_notice_at_the_same_pet_offset_as_the_timer() {
@@ -846,5 +913,17 @@ mod gamcha_notice_position_tests {
         assert_eq!(climb_rope_rect(734, 300, 940, "right"), (574, 300, 640));
         assert_eq!(climb_rope_rect(734, 300, 940, "left"), (718, 300, 640));
         assert_eq!(climb_rope_rect(734, 400, 390, "right"), (574, 390, 24));
+    }
+
+    #[test]
+    fn music_stage_resize_preserves_bottom_center_anchor() {
+        assert_eq!(
+            anchored_window_position(500, 700, 128, 128, 280, 220),
+            (424, 608)
+        );
+        assert_eq!(
+            anchored_window_position(424, 608, 280, 220, 128, 128),
+            (500, 700)
+        );
     }
 }

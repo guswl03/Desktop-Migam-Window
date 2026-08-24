@@ -47,6 +47,12 @@ export interface SystemMetricsState {
   mode: ResourceResponseMode;
 }
 
+export interface BatteryState {
+  present: boolean;
+  percent?: number;
+  charging: boolean;
+}
+
 export interface WindowSurface {
   windowId: string;
   x: number;

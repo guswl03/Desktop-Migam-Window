@@ -19,7 +19,7 @@ mod platform {
             },
         },
         UI::WindowsAndMessaging::{
-            GetForegroundWindow, GetWindowRect, GetWindowTextLengthW, GetWindowTextW,
+            EnumWindows, GetForegroundWindow, GetWindowRect, GetWindowTextLengthW, GetWindowTextW,
             GetWindowThreadProcessId, IsIconic, IsWindow, IsWindowVisible, ShowWindow, SW_MINIMIZE,
         },
     };
@@ -33,6 +33,44 @@ mod platform {
 
     #[derive(Default)]
     pub struct PlatformWindowMinimizer;
+
+    fn matches_youtube_music_window(process_name: Option<&str>, title: Option<&str>) -> bool {
+        process_name.is_some_and(|name| name.eq_ignore_ascii_case("chrome.exe"))
+            && title.is_some_and(|value| value.to_ascii_lowercase().contains("youtube music"))
+    }
+
+    unsafe extern "system" fn find_youtube_music_window(window: HWND, parameter: isize) -> i32 {
+        if IsWindowVisible(window) == 0 {
+            return 1;
+        }
+        let Some(title) = PlatformForegroundWindowSource::window_title(window) else {
+            return 1;
+        };
+        if !title.to_ascii_lowercase().contains("youtube music") {
+            return 1;
+        }
+        let mut process_id = 0;
+        GetWindowThreadProcessId(window, &mut process_id);
+        let process_name = PlatformForegroundWindowSource::process_name(process_id)
+            .ok()
+            .flatten();
+        if matches_youtube_music_window(process_name.as_deref(), Some(&title)) {
+            *(parameter as *mut bool) = true;
+            return 0;
+        }
+        1
+    }
+
+    pub fn youtube_music_in_chrome() -> bool {
+        let mut found = false;
+        unsafe {
+            EnumWindows(
+                Some(find_youtube_music_window),
+                (&mut found as *mut bool) as isize,
+            );
+        }
+        found
+    }
 
     impl PlatformForegroundWindowSource {
         pub const fn new() -> Self {
@@ -164,7 +202,7 @@ mod platform {
 
     #[cfg(test)]
     mod tests {
-        use super::PlatformForegroundWindowSource;
+        use super::{matches_youtube_music_window, PlatformForegroundWindowSource};
 
         #[test]
         fn toolhelp_fallback_resolves_the_current_process_name() {
@@ -173,6 +211,22 @@ mod platform {
                     .expect("current process should appear in the Windows process snapshot");
 
             assert!(name.to_ascii_lowercase().ends_with(".exe"));
+        }
+
+        #[test]
+        fn recognizes_youtube_music_only_in_chrome() {
+            assert!(matches_youtube_music_window(
+                Some("Chrome.EXE"),
+                Some("Song title - YouTube Music")
+            ));
+            assert!(!matches_youtube_music_window(
+                Some("msedge.exe"),
+                Some("YouTube Music")
+            ));
+            assert!(!matches_youtube_music_window(
+                Some("chrome.exe"),
+                Some("YouTube")
+            ));
         }
     }
 }
@@ -206,6 +260,12 @@ mod platform {
             Err(ForegroundReadError::InspectionFailed)
         }
     }
+
+    pub fn youtube_music_in_chrome() -> bool {
+        false
+    }
 }
 
-pub use platform::{PlatformForegroundWindowSource, PlatformWindowMinimizer};
+pub use platform::{
+    youtube_music_in_chrome, PlatformForegroundWindowSource, PlatformWindowMinimizer,
+};

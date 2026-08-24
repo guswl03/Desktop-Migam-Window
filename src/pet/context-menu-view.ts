@@ -29,6 +29,7 @@ export async function mountPetContextMenu(container: HTMLElement): Promise<() =>
       <nav class="pet-command-list" aria-label="명령">
         <button type="button" data-action="gamcha"><kbd>G</kbd><span>GAMCHA!</span><small>보상·옷장</small></button>
         <button type="button" data-action="photo"><kbd>P</kbd><span>사진 배달 테스트</span><small>DELIVER</small></button>
+        <button type="button" data-action="battery"><kbd>B</kbd><span>저전력 이벤트 테스트</span><small>20%</small></button>
         <button type="button" data-action="timer"><kbd>T</kbd><span>타이머 표시</span><small>SHOW</small></button>
         <button type="button" data-action="todo"><kbd>✓</kbd><span>투두리스트</span><small>TODAY</small></button>
         <button type="button" data-action="start"><kbd>F5</kbd><span>집중 시작</span><small>RUN</small></button>
@@ -92,6 +93,7 @@ export async function mountPetContextMenu(container: HTMLElement): Promise<() =>
     }
     await hide().catch(() => undefined);
     if (action === "photo") await invoke("start_photo_delivery");
+    else if (action === "battery") await invoke("test_low_battery_event");
     else if (action === "start") {
       await invoke("start_focus");
       await invoke("show_utility_window", { label: "timer" });

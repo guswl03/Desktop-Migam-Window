@@ -100,7 +100,7 @@
         "label": "pet-menu",
         "title": "migam desktop · Command",
         "width": 292,
-        "height": 490,
+        "height": 530,
         "visible": false,
         "decorations": false,
         "alwaysOnTop": true,
