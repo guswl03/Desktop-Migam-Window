@@ -1,6 +1,6 @@
 [package]
 name = "migam-desktop"
-version = "0.1.0"
+version = "0.1.1"
 description = "migam desktop for Windows 11"
 authors = ["migam desktop contributors"]
 edition = "2021"

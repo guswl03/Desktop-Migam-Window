@@ -9,9 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/guswl03/Desktop-Migam-Window/releases/download/v0.1.0/migam.desktop_0.1.0_x64-setup.exe"><strong>Windows용 설치 파일 다운로드</strong></a>
+  <a href="https://github.com/guswl03/Desktop-Migam-Window/releases/download/v0.1.1/migam.desktop_0.1.1_x64-setup.exe"><strong>Windows용 설치 파일 다운로드</strong></a>
   ·
-  <a href="https://github.com/guswl03/Desktop-Migam-Window/releases/tag/v0.1.0">v0.1.0 릴리즈 보기</a>
+  <a href="https://github.com/guswl03/Desktop-Migam-Window/releases/tag/v0.1.1">v0.1.1 릴리즈 보기</a>
 </p>
 
 > [!NOTE]
@@ -19,12 +19,12 @@
 
 ## 바로 설치하기
 
-1. [migam desktop 설치 파일 다운로드](https://github.com/guswl03/Desktop-Migam-Window/releases/download/v0.1.0/migam.desktop_0.1.0_x64-setup.exe)를 누릅니다.
-2. 다운로드한 `migam.desktop_0.1.0_x64-setup.exe`를 실행합니다.
+1. [migam desktop 설치 파일 다운로드](https://github.com/guswl03/Desktop-Migam-Window/releases/download/v0.1.1/migam.desktop_0.1.1_x64-setup.exe)를 누릅니다.
+2. 다운로드한 `migam.desktop_0.1.1_x64-setup.exe`를 실행합니다.
 3. SmartScreen이 나타나면 **추가 정보**를 누른 뒤 게시자가 `알 수 없는 게시자`인지와 파일 이름을 확인하고 **실행**을 누릅니다.
 4. 설치 안내에 따라 완료하면 migam desktop이 실행됩니다.
 
-설치가 시작되지 않으면 [v0.1.0 릴리즈 페이지](https://github.com/guswl03/Desktop-Migam-Window/releases/tag/v0.1.0)의 **Assets**에서 `migam.desktop_0.1.0_x64-setup.exe`를 직접 내려받으세요.
+설치가 시작되지 않으면 [v0.1.1 릴리즈 페이지](https://github.com/guswl03/Desktop-Migam-Window/releases/tag/v0.1.1)의 **Assets**에서 `migam.desktop_0.1.1_x64-setup.exe`를 직접 내려받으세요.
 
 ### 처음 실행했다면
 
@@ -44,7 +44,7 @@ Windows **설정 → 앱 → 설치된 앱**에서 `migam desktop`을 찾아 제
 - CPU·메모리 사용량에 반응하는 이동과 트레이 표시
 - 뽀모도로 타이머와 할 일 집중 연결
 - 집중 완료 보상 티켓, GAMCHA와 156종 코스튬 인벤토리
-- 사진 배달과 희귀 이벤트
+- 사진 배달, 희귀 이벤트와 저배터리 배터리 배달
 - 사용자 규칙과 대상 재검증을 거치는 안전한 방해 창 최소화
 - 설정·할 일·GAMCHA 로컬 저장 및 손상 JSON 보존·복구
 
@@ -62,7 +62,7 @@ WebView2는 Windows 11에 기본 포함되어 있습니다. 앱 창이 열리지
 
 ## 로컬 데이터와 개인정보
 
-설정·할 일·GAMCHA 진행도는 Tauri 앱 데이터 디렉터리의 `settings.json`, `todo.json`, `gamcha.json`에 저장됩니다. 손상된 파일은 `*.corrupt-<timestamp>.json`으로 보존하고 안전한 기본값으로 복구합니다.
+설정·할 일·GAMCHA 진행도는 Tauri 앱 데이터 디렉터리의 `settings.json`, `todo.json`, `gamcha.json`에 저장됩니다. 손상된 파일은 이름에 복구 시각을 붙여 별도로 보관하고 안전한 기본값으로 복구합니다.
 
 - 계정, 클라우드 동기화, 분석 기능 없음
 - 실제 창 제목과 프로세스 경로 저장·로그 금지
@@ -100,8 +100,8 @@ cargo clippy --all-targets -- -D warnings
 
 ## 현재 검증 상태
 
-- 프런트엔드 테스트 47개 통과
-- Rust 테스트 45개 통과
+- 프런트엔드 테스트 53개 통과
+- Rust 테스트 48개 통과
 - TypeScript 검사, Vite production build, rustfmt, Clippy 통과
 - Windows x64 NSIS release 빌드 성공
 
