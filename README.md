@@ -19,7 +19,7 @@
 
 ## 바로 설치하기
 
-1. **[migam desktop 설치 파일 다운로드](https://github.com/guswl03/Desktop-Migam-Window/releases/download/v0.1.0/migam.desktop_0.1.0_x64-setup.exe)**를 누릅니다.
+1. [migam desktop 설치 파일 다운로드](https://github.com/guswl03/Desktop-Migam-Window/releases/download/v0.1.0/migam.desktop_0.1.0_x64-setup.exe)를 누릅니다.
 2. 다운로드한 `migam.desktop_0.1.0_x64-setup.exe`를 실행합니다.
 3. SmartScreen이 나타나면 **추가 정보**를 누른 뒤 게시자가 `알 수 없는 게시자`인지와 파일 이름을 확인하고 **실행**을 누릅니다.
 4. 설치 안내에 따라 완료하면 migam desktop이 실행됩니다.
