@@ -31,6 +31,10 @@ import thrown02 from "../../images/characters/gamjabot/extra/frames/thrown/02.pn
 import thrown03 from "../../images/characters/gamjabot/extra/frames/thrown/03.png";
 import thrown04 from "../../images/characters/gamjabot/extra/frames/thrown/04.png";
 import thrown05 from "../../images/characters/gamjabot/extra/frames/thrown/05.png";
+import pullUpStrip from "../../images/characters/gamjabot/extra/climbing/pull-up-strip-v2.png";
+import fallStrip from "../../images/characters/gamjabot/extra/climbing/fall-strip-v1.png";
+import ropeThrowStrip from "../../images/characters/gamjabot/extra/climbing/rope-throw-strip-v2.png";
+import ropeClimbStrip from "../../images/characters/gamjabot/extra/climbing/rope-climb-strip-v2.png";
 import type { CostumeSlot } from "../costumes/catalog";
 import type { CostumeAlignment } from "../costumes/alignment";
 
@@ -50,8 +54,16 @@ export type PetAnimation =
   | "dragged"
   | "thrown"
   | "landing"
+  | "window-tumble"
   | "hard-impact"
   | "focused"
+  | "climbing-left"
+  | "climbing-right"
+  | "rope-throw-left"
+  | "rope-throw-right"
+  | "pull-up-left"
+  | "pull-up-right"
+  | "falling"
   | "waiting"
   | "busy"
   | "failed";
@@ -63,7 +75,17 @@ const DISPLAY_ATLAS_HEIGHT = 1144;
 
 type AnimationDefinition =
   | { source: "atlas"; row: number; frames: number }
-  | { source: "images"; images: string[]; frames: number; mirror?: boolean; contain?: boolean };
+  | { source: "images"; images: string[]; frames: number; mirror?: boolean; contain?: boolean }
+  | {
+      source: "strip";
+      image: string;
+      frames: number;
+      displayWidth: number;
+      displayHeight: number;
+      frameWidth: number;
+      offsetY: number;
+      mirror?: boolean;
+    };
 
 const loadFrames = {
   alert: [alert00, alert01, alert02, alert03],
@@ -88,8 +110,75 @@ const animations: Record<PetAnimation, AnimationDefinition> = {
   dragged: { source: "images", images: [dragged00, dragged01, dragged02, dragged03], frames: 4 },
   thrown: { source: "images", images: [thrown00, thrown01, thrown02, thrown03, thrown04, thrown05], frames: 6 },
   landing: { source: "images", images: [landing00, landing01, landing02, landing03], frames: 4 },
+  "window-tumble": { source: "images", images: [landing00, landing01, landing02, landing03], frames: 4 },
   "hard-impact": { source: "images", images: [hardImpact00], frames: 1 },
   focused: { source: "images", images: [focused00], frames: 1 },
+  "rope-throw-right": {
+    source: "strip",
+    image: ropeThrowStrip,
+    frames: 4,
+    displayWidth: 372,
+    displayHeight: 124,
+    frameWidth: 93,
+    offsetY: -10,
+  },
+  "rope-throw-left": {
+    source: "strip",
+    image: ropeThrowStrip,
+    frames: 4,
+    displayWidth: 372,
+    displayHeight: 124,
+    frameWidth: 93,
+    offsetY: -10,
+    mirror: true,
+  },
+  "climbing-right": {
+    source: "strip",
+    image: ropeClimbStrip,
+    frames: 4,
+    displayWidth: 360,
+    displayHeight: 180,
+    frameWidth: 90,
+    offsetY: -40,
+  },
+  "climbing-left": {
+    source: "strip",
+    image: ropeClimbStrip,
+    frames: 4,
+    displayWidth: 360,
+    displayHeight: 180,
+    frameWidth: 90,
+    offsetY: -40,
+    mirror: true,
+  },
+  "pull-up-right": {
+    source: "strip",
+    image: pullUpStrip,
+    frames: 4,
+    displayWidth: 380,
+    displayHeight: 190,
+    frameWidth: 95,
+    offsetY: -14,
+  },
+  "pull-up-left": {
+    source: "strip",
+    image: pullUpStrip,
+    frames: 4,
+    displayWidth: 380,
+    displayHeight: 190,
+    frameWidth: 95,
+    offsetY: -14,
+    mirror: true,
+  },
+  falling: {
+    source: "strip",
+    image: fallStrip,
+    frames: 4,
+    displayWidth: 384,
+    displayHeight: 128,
+    frameWidth: 96,
+    offsetY: -10,
+  },
   waiting: { source: "atlas", row: 6, frames: 6 },
   busy: { source: "atlas", row: 7, frames: 6 },
   failed: { source: "atlas", row: 5, frames: 8 },
@@ -122,11 +211,19 @@ export function createPetSprite(): PetSprite {
   const render = (): void => {
     const definition = animations[animation];
     element.dataset.animation = animation;
-    element.style.transform = definition.source === "images" && definition.mirror ? "scaleX(-1)" : "";
+    element.style.transform = definition.source !== "atlas" && definition.mirror ? "scaleX(-1)" : "";
     if (definition.source === "atlas") {
       element.style.backgroundImage = `url("${gamjabotAtlas}")`;
       element.style.backgroundSize = `${DISPLAY_ATLAS_WIDTH}px ${DISPLAY_ATLAS_HEIGHT}px`;
       element.style.backgroundPosition = `${-frame * DISPLAY_CELL_WIDTH}px ${-definition.row * DISPLAY_CELL_HEIGHT}px`;
+      return;
+    }
+
+    if (definition.source === "strip") {
+      element.style.backgroundImage = `url("${definition.image}")`;
+      element.style.backgroundSize = `${definition.displayWidth}px ${definition.displayHeight}px`;
+      const centeredX = (DISPLAY_CELL_WIDTH - definition.frameWidth) / 2;
+      element.style.backgroundPosition = `${centeredX - frame * definition.frameWidth}px ${definition.offsetY}px`;
       return;
     }
 

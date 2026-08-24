@@ -6,6 +6,13 @@ import {
   getVisiblePositionBounds,
   pickHorizontalTarget,
   isPetMotionLocked,
+  findClimbCollision,
+  getSurfaceWalkingBounds,
+  getClimbRopeGeometry,
+  getClimbApproachY,
+  getWindowJumpDuration,
+  getWindowJumpPosition,
+  getClimbContactX,
 } from "./motion";
 
 describe("pet motion", () => {
@@ -71,4 +78,108 @@ describe("pet motion", () => {
     expect(isPetMotionLocked("shortBreak")).toBe(false);
     expect(isPetMotionLocked("longBreak")).toBe(false);
     expect(isPetMotionLocked("stopped")).toBe(false);
-  });});
+  });
+
+  it("moves a window jump along a slow raised arc", () => {
+    expect(getWindowJumpDuration(800, 300)).toBe(1_650);
+    expect(getWindowJumpDuration(800, 790)).toBe(1_111);
+    expect(getWindowJumpPosition(
+      { x: 100, y: 800 },
+      { x: 240, y: 300 },
+      0.5,
+      80,
+    )).toEqual({ x: 170, y: 470 });
+  });
+
+  it("detects a window wall crossed while walking to the right", () => {
+    const collision = findClimbCollision(
+      600,
+      608,
+      912,
+      { width: 128, height: 128 },
+      { x: 0, y: 0, width: 1920, height: 1040 },
+      [{ windowId: "editor", x: 734, y: 300, width: 800, height: 740 }],
+    );
+
+    expect(collision?.surface.windowId).toBe("editor");
+    expect(collision?.side).toBe("right");
+  });
+
+  it("detects the opposite wall while walking to the left", () => {
+    const collision = findClimbCollision(
+      900,
+      892,
+      912,
+      { width: 128, height: 128 },
+      { x: 0, y: 0, width: 1920, height: 1040 },
+      [{ windowId: "browser", x: 200, y: 320, width: 698, height: 720 }],
+    );
+
+    expect(collision?.surface.windowId).toBe("browser");
+    expect(collision?.side).toBe("left");
+  });
+
+  it("uses the highest window edge when multiple surfaces share the same wall", () => {
+    const collision = findClimbCollision(
+      600,
+      608,
+      912,
+      { width: 128, height: 128 },
+      { x: 0, y: 0, width: 1920, height: 1040 },
+      [
+        { windowId: "lower-overlay", x: 734, y: 328, width: 800, height: 712 },
+        { windowId: "main-window", x: 734, y: 52, width: 800, height: 988 },
+      ],
+    );
+
+    expect(collision?.surface.windowId).toBe("main-window");
+    expect(collision?.surface.y).toBe(52);
+  });
+
+  it("ignores maximized and too-narrow surfaces", () => {
+    expect(
+      findClimbCollision(
+        600,
+        608,
+        912,
+        { width: 128, height: 128 },
+        { x: 0, y: 0, width: 1920, height: 1040 },
+        [
+          { windowId: "maximized", x: 734, y: 0, width: 1186, height: 1040 },
+          { windowId: "narrow", x: 734, y: 500, width: 100, height: 540 },
+        ],
+      ),
+    ).toBeNull();
+  });
+
+  it("anchors walking bounds to the top of a supporting window", () => {
+    expect(
+      getSurfaceWalkingBounds(
+        { windowId: "editor", x: 300, y: 420, width: 700, height: 500 },
+        { width: 128, height: 128 },
+      ),
+    ).toEqual({ minX: 300, maxX: 872, minY: 292, maxY: 292 });
+  });
+
+  it("anchors a rope just outside either side of a window", () => {
+    const surface = { windowId: "editor", x: 300, y: 420, width: 700, height: 500 };
+    expect(getClimbRopeGeometry(surface, "right", 800, { width: 128, height: 128 }))
+      .toEqual({ x: 286, top: 424, bottom: 877 });
+    expect(getClimbRopeGeometry(surface, "left", 800, { width: 128, height: 128 }))
+      .toEqual({ x: 1014, top: 424, bottom: 877 });
+  });
+
+  it("keeps the character hand aligned with the rope at different DPI sizes", () => {
+    const surface = { windowId: "editor", x: 300, y: 420, width: 700, height: 500 };
+    expect(getClimbContactX(surface, "right", { width: 128, height: 128 })).toBe(199);
+    expect(getClimbContactX(surface, "right", { width: 160, height: 160 })).toBe(173);
+    expect(getClimbContactX(surface, "left", { width: 160, height: 160 })).toBe(967);
+  });
+
+  it("finishes rope climbing when the upper hand reaches the window hook", () => {
+    const surface = { windowId: "editor", x: 300, y: 420, width: 700, height: 500 };
+    expect(getClimbApproachY(surface, { width: 128, height: 128 })).toBe(347);
+    expect(getClimbRopeGeometry(surface, "right", 292, { width: 128, height: 128 }))
+      .toEqual({ x: 286, top: 424, bottom: 448 });
+  });
+});

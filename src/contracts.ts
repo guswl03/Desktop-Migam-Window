@@ -47,6 +47,14 @@ export interface SystemMetricsState {
   mode: ResourceResponseMode;
 }
 
+export interface WindowSurface {
+  windowId: string;
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+}
+
 export interface BootstrapState {
   settings: Settings;
   emergencyStopped: boolean;

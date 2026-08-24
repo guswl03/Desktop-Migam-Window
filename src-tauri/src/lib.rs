@@ -33,6 +33,9 @@ pub fn run() {
                 gamcha_service,
                 todo_service,
             ));
+            if let Some(rope) = app.get_webview_window("climb-rope") {
+                let _ = rope.set_ignore_cursor_events(true);
+            }
             let timer_app = app.handle().clone();
             let _ = std::thread::Builder::new()
                 .name("pomodoro-ticker".to_owned())
@@ -139,6 +142,9 @@ pub fn run() {
             presentation::commands::get_timer_state,
             presentation::commands::get_detection_state,
             presentation::commands::get_system_metrics,
+            presentation::commands::get_climbable_windows,
+            presentation::commands::show_climb_rope,
+            presentation::commands::hide_climb_rope,
             presentation::commands::get_gamcha_state,
             presentation::commands::get_todo_state,
             presentation::commands::add_todo,
@@ -160,7 +166,9 @@ pub fn run() {
             presentation::commands::emergency_stop,
             presentation::commands::resume_pet,
             presentation::commands::start_photo_delivery,
+            presentation::commands::begin_photo_delivery_motion,
             presentation::commands::settle_photo_delivery,
+            presentation::commands::expand_photo_delivery_for_rain,
             presentation::commands::finish_photo_delivery,
             presentation::commands::position_timer_bubble,
             presentation::commands::position_gamcha_bubble,

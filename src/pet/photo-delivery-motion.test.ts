@@ -1,5 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { calculatePhotoDeliveryLayout, photoDeliveryDelayMilliseconds } from "./photo-delivery-motion";
+import {
+  calculatePhotoDeliveryLayout,
+  photoDeliveryDelayMilliseconds,
+  photoDeliveryRarity,
+} from "./photo-delivery-motion";
 
 describe("photo delivery layout", () => {
   it("uses equal 12px side insets and one centered horizontal path", () => {
@@ -23,4 +27,12 @@ describe("photo delivery layout", () => {
     expect(photoDeliveryDelayMilliseconds(0)).toBe(20 * 60_000);
     expect(photoDeliveryDelayMilliseconds(0.5)).toBe(30 * 60_000);
     expect(photoDeliveryDelayMilliseconds(1)).toBe(40 * 60_000);
-  });});
+  });
+
+  it("selects the special photo for exactly the lowest one percent", () => {
+    expect(photoDeliveryRarity(0)).toBe("real-heogeodeongseu");
+    expect(photoDeliveryRarity(0.009999)).toBe("real-heogeodeongseu");
+    expect(photoDeliveryRarity(0.01)).toBe("normal");
+    expect(photoDeliveryRarity(0.99)).toBe("normal");
+  });
+});
