@@ -16,6 +16,7 @@ import { resolveCostumeAlignment, type CostumeAlignment } from "./costumes/align
 import { attachPetContextMenu } from "./pet/context-menu";
 import { mountPetContextMenu } from "./pet/context-menu-view";
 import { mountPhotoDelivery, startPhotoDeliveryScheduler } from "./pet/photo-delivery-view";
+import { mountClimbRope } from "./pet/climb-rope-view";
 import { startPetMotion } from "./pet/tauri-motion-runtime";
 import { createPetSprite } from "./pet/sprite";
 import { mountTimer } from "./timer/timer-view";
@@ -334,6 +335,10 @@ async function start(): Promise<void> {
     void mountPhotoDelivery(app!).then((cleanup) => {
       window.addEventListener("pagehide", cleanup, { once: true });
     });
+    return;
+  }
+  if (windowLabel === "climb-rope") {
+    mountClimbRope(app!);
     return;
   }
   let bootstrap: BootstrapState;

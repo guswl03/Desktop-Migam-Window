@@ -32,6 +32,41 @@ body[data-window="photo-delivery"] #app {
   overflow: hidden;
   background: transparent;
 }
+html[data-window="climb-rope"],
+body[data-window="climb-rope"],
+body[data-window="climb-rope"] #app {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  background: transparent;
+  pointer-events: none;
+}
+.climb-rope-stage {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  filter: drop-shadow(1px 2px 1px rgb(0 0 0 / .2));
+}
+.climb-rope-svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.climb-rope-stroke,
+.climb-rope-shadow {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+.climb-rope-shadow { stroke: rgb(255 255 255 / .82); stroke-width: 4; }
+.climb-rope-stroke { stroke: #17130f; stroke-width: 2.2; }
+.climb-rope-hook {
+  fill: none;
+  stroke: #17130f;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
 .photo-delivery-stage {
   position: relative;
   width: 100vw;
@@ -49,6 +84,7 @@ body[data-window="photo-delivery"] #app {
   align-items: end;
   opacity: 0;
   will-change: transform;
+  isolation: isolate;
 }
 .photo-delivery-rig.delivering {
   opacity: 1;
@@ -68,6 +104,7 @@ body[data-window="photo-delivery"] #app {
   pointer-events: auto;
 }
 .photo-delivery-pet {
+  position: relative;
   z-index: 2;
   width: 150px;
   height: 200px;
@@ -77,6 +114,9 @@ body[data-window="photo-delivery"] #app {
   background-position: 0 0;
   background-size: 600px 200px;
   transform-origin: 70% 90%;
+  visibility: visible;
+  opacity: 1;
+  filter: drop-shadow(2px 3px 1px rgb(0 0 0 / .22));
 }
 .photo-delivery-rig.from-right .photo-delivery-pet { order: 0; }
 .photo-delivery-rig.from-right .photo-delivery-card { order: 1; }
@@ -109,6 +149,7 @@ body[data-window="photo-delivery"] #app {
 }
 .photo-delivery-card {
   position: relative;
+  z-index: 1;
   width: var(--photo-width, 420px);
   height: var(--photo-height, 320px);
   margin: 0;
@@ -130,6 +171,7 @@ body[data-window="photo-delivery"] #app {
   cursor: default;
   opacity: 0;
 }
+.photo-delivery-card button[hidden] { display: none; }
 .photo-delivery-rig.settled .photo-delivery-card button { opacity: 0; }
 .photo-delivery-card img {
   display: block;
@@ -137,10 +179,58 @@ body[data-window="photo-delivery"] #app {
   height: 100%;
   object-fit: contain;
 }
+.photo-delivery-rig.rare.settled .photo-delivery-card img {
+  cursor: pointer;
+  user-select: none;
+}
+.photo-delivery-rig.rare.settled .photo-delivery-card img.rare-photo-hit {
+  animation: rare-photo-hit 180ms ease-out;
+}
+.photo-delivery-rig.raining {
+  visibility: hidden;
+  pointer-events: none;
+}
 .photo-delivery-rig.settled .photo-delivery-card {
   width: 100%;
   height: 100%;
   filter: none;
+}
+.gamjabot-rain {
+  position: fixed;
+  z-index: 20;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.gamjabot-rain img {
+  position: absolute;
+  top: -180px;
+  left: 0;
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+  opacity: 0;
+  transform-origin: 50% 50%;
+}
+.gamjabot-rain.active img {
+  animation: gamjabot-rain-fall var(--rain-duration) linear var(--rain-delay) both;
+}
+@keyframes rare-photo-hit {
+  0% { transform: scale(1); }
+  45% { transform: scale(.965) rotate(-.5deg); }
+  100% { transform: scale(1); }
+}
+@keyframes gamjabot-rain-fall {
+  0% {
+    opacity: 0;
+    transform: translate3d(var(--rain-x), -160px, 0) scale(var(--rain-scale)) rotate(0deg);
+  }
+  8%, 90% { opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: translate3d(calc(var(--rain-x) - 55px), calc(100vh + 220px), 0)
+      scale(var(--rain-scale)) rotate(var(--rain-rotation));
+  }
 }
 @keyframes photo-delivery-pull-frames {
   to { background-position-x: -600px; }
@@ -205,6 +295,22 @@ body[data-window="photo-delivery"] #app {
 .pet-sprite[data-animation="running-right"] .pet-costume,
 .pet-sprite[data-animation^="load-"] .pet-costume { animation: pet-costume-bob 240ms steps(2) infinite; }
 .pet-sprite[data-animation="hard-impact"] .pet-costume { display: none; }
+.pet-sprite[data-animation="window-tumble"] {
+  z-index: 3;
+  animation: window-jump-tumble 980ms cubic-bezier(.2, .75, .25, 1) both;
+  transform-origin: 50% 52%;
+}
+@keyframes window-jump-tumble {
+  0% { transform: translateY(-6px) rotate(0deg) scale(.92); }
+  24% { transform: translateY(-2px) rotate(64deg) scale(.82); }
+  58% { transform: translateY(-1px) rotate(82deg) scale(.76); }
+  76% { transform: translateY(-1px) rotate(82deg) scale(.76); }
+  100% { transform: translateY(0) rotate(0deg) scale(1); }
+}
+.pet-sprite[data-animation^="climbing-"] .pet-costume,
+.pet-sprite[data-animation^="rope-throw-"] .pet-costume,
+.pet-sprite[data-animation^="pull-up-"] .pet-costume,
+.pet-sprite[data-animation="falling"] .pet-costume { display: none; }
 @keyframes pet-costume-bob { 50% { translate: 0 -2px; } }
 .pet-sprite:active { cursor: grabbing; }
 .pet-sprite.todo-celebrating {

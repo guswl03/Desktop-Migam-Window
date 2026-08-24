@@ -2,6 +2,15 @@ const PREFERRED_SIDE_INSET = 12;
 const PET_CARD_OVERLAP_WIDTH = 123;
 const AUTOMATIC_DELIVERY_MINIMUM_MILLISECONDS = 20 * 60_000;
 const AUTOMATIC_DELIVERY_RANGE_MILLISECONDS = 20 * 60_000;
+const RARE_PHOTO_PROBABILITY = 0.01;
+
+export type PhotoDeliveryRarity = "normal" | "real-heogeodeongseu";
+
+export function photoDeliveryRarity(randomValue: number): PhotoDeliveryRarity {
+  return randomValue >= 0 && randomValue < RARE_PHOTO_PROBABILITY
+    ? "real-heogeodeongseu"
+    : "normal";
+}
 
 export function photoDeliveryDelayMilliseconds(randomValue: number): number {
   return AUTOMATIC_DELIVERY_MINIMUM_MILLISECONDS
