@@ -284,7 +284,7 @@ test("promotion rolls back every original after a commit rename", async () => {
 test("lexical path containment rejects drive-relative, absolute, and parent escapes", () => {
   assert.equal(assertPathInside("C:\\catalog\\pack", "C:\\catalog\\pack\\common\\common_001.png"), "C:\\catalog\\pack\\common\\common_001.png");
   for (const path of ["C:\\catalog\\outside\\item.png", "D:\\catalog\\pack\\item.png", "\\\\server\\share\\item.png", "..\\outside\\item.png"]) {
-    assert.throws(() => assertPathInside("C:\\catalog\\pack", path), /escapes/);
+    assert.throws(() => assertPathInside("C:\\catalog\\pack", path), /(escapes|must be absolute)/);
   }
 });
 
