@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import * as photoDeliveryMotion from "./photo-delivery-motion";
 import {
   calculatePhotoDeliveryLayout,
   photoDeliveryDelayMilliseconds,
@@ -6,6 +7,17 @@ import {
 } from "./photo-delivery-motion";
 
 describe("photo delivery layout", () => {
+  it("renders the delivered photo slightly smaller and completes the pull slightly faster", () => {
+    const presentation = Reflect.get(photoDeliveryMotion, "calculatePhotoDeliveryPresentation");
+
+    expect(presentation).toBeTypeOf("function");
+    expect(presentation(1600, 1200, 1920, 1040)).toEqual({
+      photoWidth: 480,
+      photoHeight: 360,
+      pullDurationMilliseconds: 17_500,
+    });
+  });
+
   it("uses equal 12px side insets and one centered horizontal path", () => {
     const left = calculatePhotoDeliveryLayout(1200, 800, 400, 300, true);
     const right = calculatePhotoDeliveryLayout(1200, 800, 400, 300, false);
@@ -34,5 +46,15 @@ describe("photo delivery layout", () => {
     expect(photoDeliveryRarity(0.009999)).toBe("real-heogeodeongseu");
     expect(photoDeliveryRarity(0.01)).toBe("normal");
     expect(photoDeliveryRarity(0.99)).toBe("normal");
+  });
+
+  it("forces the special photo when a development test requests the easter egg", () => {
+    const resolveRarity = photoDeliveryRarity as (
+      randomValue: number,
+      forceSpecialPhoto: boolean,
+    ) => ReturnType<typeof photoDeliveryRarity>;
+
+    expect(resolveRarity(0.5, true)).toBe("real-heogeodeongseu");
+    expect(resolveRarity(0.5, false)).toBe("normal");
   });
 });
