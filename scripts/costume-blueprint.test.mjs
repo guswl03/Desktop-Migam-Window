@@ -71,6 +71,11 @@ function completeBlueprint() {
       signatureDetail: `서명 ${id}`,
       prompt: `아이템 ${id} 하나`,
       slot: slots[rarity][index],
+      outerShape: ["epic", "legendary"].includes(rarity) ? {
+        family: `fixture-${id}`,
+        class: "other",
+        evidence: [id],
+      } : undefined,
     };
   });
 }
@@ -368,6 +373,81 @@ test("legendary and special quotas are exact", async () => {
     { theme: "미감이 정체성", slot: "head" },
   ]);
   assert.deepEqual(validateBlueprint(special, { rarity: "special" }), []);
+});
+
+test("legendary outer shapes are evidenced, unique, Epic-disjoint, and crown-hood limited", async () => {
+  const epic = await loadRarityBlueprint("epic");
+  const legendary = await loadRarityBlueprint("legendary");
+  const issues = [];
+
+  for (const item of [...epic, ...legendary]) {
+    const shape = item.outerShape;
+    if (!shape) {
+      issues.push(`${item.id}: missing outerShape`);
+      continue;
+    }
+    const copy = `${item.silhouette} ${item.prompt}`.normalize("NFC");
+    for (const evidence of shape.evidence ?? []) {
+      if (!copy.includes(evidence.normalize("NFC"))) {
+        issues.push(`${item.id}: missing shape evidence ${evidence}`);
+      }
+    }
+  }
+
+  const epicFamilies = epic.map(({ outerShape }) => outerShape?.family).filter(Boolean);
+  const legendaryFamilies = legendary.map(({ outerShape }) => outerShape?.family).filter(Boolean);
+  const epicFamilySet = new Set(epicFamilies);
+  assert.deepEqual(issues, []);
+  assert.equal(new Set(epicFamilies).size, 31);
+  assert.equal(new Set(legendaryFamilies).size, 12);
+  assert.deepEqual(legendaryFamilies.filter((family) => epicFamilySet.has(family)), []);
+  assert.ok(legendary.filter(({ outerShape }) => outerShape?.class === "crown").length <= 1);
+  assert.ok(legendary.filter(({ outerShape }) => outerShape?.class === "hood").length <= 1);
+});
+
+test("validator rejects Legendary outer-family reuse and excess crown or hood classes", () => {
+  const items = completeBlueprint();
+  const epic = items.find(({ id }) => id === "epic_001");
+  const legendary = items.filter(({ rarity }) => rarity === "legendary");
+  legendary[0].outerShape.family = epic.outerShape.family;
+  legendary[0].outerShape.class = "crown";
+  legendary[1].outerShape.class = "crown";
+  legendary[2].outerShape.class = "hood";
+  legendary[3].outerShape.class = "hood";
+  legendary[4].outerShape.evidence = ["설명에 없는 외곽 근거"];
+  legendary[5].silhouette += " 왕관형 외곽";
+  legendary[6].prompt += " 후드형 외곽";
+
+  const errors = validateBlueprint(items);
+  assert.ok(errors.some((error) => error.includes("duplicate outer shape family with epic_001")));
+  assert.ok(errors.includes("legendary: expected at most one crown-shaped outer form, got 2"));
+  assert.ok(errors.includes("legendary: expected at most one hood-shaped outer form, got 2"));
+  assert.ok(errors.some((error) => error.includes("outer shape evidence not found")));
+  assert.ok(errors.includes("legendary_006: outer shape class other conflicts with crown copy"));
+  assert.ok(errors.includes("legendary_007: outer shape class other conflicts with hood copy"));
+});
+
+test("ancient-ruler Legendary rows do not split one throne concept or reuse the Epic open-jaw collar", async () => {
+  const legendary = await loadRarityBlueprint("legendary");
+  const ancientRuler = legendary.filter(({ theme }) => theme === "고대 군주 장비");
+  const throneRows = ancientRuler.filter((item) =>
+    /왕좌|빈좌|의자|좌석/.test(`${item.name} ${item.silhouette} ${item.signatureDetail} ${item.prompt}`));
+  const neckCopy = ancientRuler
+    .filter(({ slot }) => slot === "neck")
+    .map((item) => `${item.name} ${item.silhouette} ${item.prompt}`)
+    .join(" ");
+
+  assert.ok(throneRows.length <= 1, throneRows.map(({ id }) => id).join(", "));
+  assert.doesNotMatch(neckCopy, /말굽|열린 고리|C자|한쪽 끝|직사각 버팀/);
+});
+
+test("photo-delivery Special uses one wearable metaphor without a literal panel composition", async () => {
+  const special = await loadRarityBlueprint("special");
+  const photoDelivery = special.find(({ id }) => id === "special_001");
+  const copy = `${photoDelivery.name} ${photoDelivery.silhouette} ${photoDelivery.signatureDetail} ${photoDelivery.prompt}`;
+
+  assert.doesNotMatch(copy, /패널|화면|프레임|사진판|빛그림판/);
+  assert.match(photoDelivery.prompt, /한 개/);
 });
 
 test("complete blueprint CLI reports the concept-lock summary", async () => {

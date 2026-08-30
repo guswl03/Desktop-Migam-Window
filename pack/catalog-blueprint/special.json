@@ -2,19 +2,19 @@
   {
     "id": "special_001",
     "rarity": "special",
-    "name": "빛그림배달 포켓망토",
+    "name": "빛그림배달 감광가방",
     "slot": "body",
     "theme": "사진 배달",
-    "silhouette": "넓은 세로 빛그림판을 감싼 두꺼운 천테가 아래의 둥근 배달주머니로 이어진 망토 윤곽",
+    "silhouette": "넓적한 물방울형 감광가방의 둥근 덮개와 몸판이 하나의 굵은 곡선으로 이어진 윤곽",
     "palette": {
-      "primary": "배달밤청록색",
-      "secondary": "빛그림유백색",
-      "accent": "추억살구색"
+      "primary": "감광먹청색",
+      "secondary": "현상유백색",
+      "accent": "노을살구빛"
     },
-    "material": "포근한 모직과 진주빛 감광천",
-    "signatureDetail": "빈 빛그림면 한쪽 모서리를 감싼 살구색 천접힘",
-    "prompt": "빈 유백색 빛그림면과 둥근 배달주머니가 두꺼운 천테로 완전히 이어진 단일 포켓망토 한 개, 빛그림면에는 장면이나 글자 없이 포근한 사진 배달 은유만 표현",
-    "defaultAlignment": { "x": 1, "y": 24, "size": 120 },
+    "material": "빛을 머금는 감광모직과 왁스가죽",
+    "signatureDetail": "둥근 덮개 중앙의 살구색 현상별 박음선 하나",
+    "prompt": "둥근 감광가방 몸판과 덮개와 어깨걸이가 모두 한 덩어리로 이어진 봉인형 몸 장식 한 개, 빛에 반응하는 천색과 현상별 박음선 하나로 빛그림 배달을 포근하게 은유",
+    "defaultAlignment": { "x": 1, "y": 23, "size": 118 },
     "qaState": "planned"
   },
   {

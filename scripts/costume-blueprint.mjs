@@ -15,6 +15,7 @@ const blueprintFiles = ["common.json", "rare.json", "epic.json", "legendary.json
 const allowedRarities = new Set(Object.keys(rarityCounts));
 const allowedSlots = new Set(Object.keys(overallSlotCounts));
 const allowedQaStates = new Set(["planned", "candidate", "accepted", "rejected"]);
+const allowedOuterShapeClasses = new Set(["other", "crown", "hood"]);
 const repositoryRoot = fileURLToPath(new URL("..", import.meta.url));
 const APPROVED_STYLE = "polished stylized desktop-pet game icon, friendly toy-like proportions, clean readable silhouette, crisp edges";
 
@@ -150,6 +151,42 @@ export function validateBlueprint(items, { rarity: scopeRarity = null } = {}) {
     }
 
     if (!allowedQaStates.has(item?.qaState)) errors.push(`${id}: invalid qaState`);
+
+    if (["epic", "legendary"].includes(item?.rarity)) {
+      const outerShape = item?.outerShape;
+      if (!outerShape || typeof outerShape !== "object" || Array.isArray(outerShape)) {
+        errors.push(`${id}: missing outer shape metadata`);
+      } else {
+        if (!normalized(outerShape.family)) errors.push(`${id}: missing outer shape family`);
+        if (!allowedOuterShapeClasses.has(outerShape.class)) {
+          errors.push(`${id}: invalid outer shape class`);
+        }
+        const shapeCopy = normalized(`${item?.silhouette ?? ""} ${item?.prompt ?? ""}`);
+        if (!Array.isArray(outerShape.evidence)
+          || outerShape.evidence.length === 0
+          || !outerShape.evidence.every((value) => normalized(value))) {
+          errors.push(`${id}: missing outer shape evidence`);
+        } else {
+          for (const evidence of outerShape.evidence) {
+            if (!shapeCopy.includes(normalized(evidence))) {
+              errors.push(`${id}: outer shape evidence not found: ${evidence}`);
+            }
+          }
+        }
+        if (item.rarity === "legendary") {
+          for (const [shapeClass, terms] of [
+            ["crown", /왕관|크라운/u],
+            ["hood", /후드|두건/u],
+          ]) {
+            if (terms.test(shapeCopy) && outerShape.class !== shapeClass) {
+              errors.push(
+                `${id}: outer shape class ${outerShape.class} conflicts with ${shapeClass} copy`,
+              );
+            }
+          }
+        }
+      }
+    }
   });
 
   for (const id of expectedIds.keys()) {
@@ -190,6 +227,21 @@ export function validateBlueprint(items, { rarity: scopeRarity = null } = {}) {
     return values.every(Boolean) ? values.join("\u0000") : "";
   });
   addDuplicateErrors(items, errors, "signature detail", (item) => normalized(item?.signatureDetail));
+
+  const rankedShapeItems = items.filter(({ rarity }) => ["epic", "legendary"].includes(rarity));
+  addDuplicateErrors(
+    rankedShapeItems,
+    errors,
+    "outer shape family",
+    (item) => normalized(item?.outerShape?.family),
+  );
+  const legendaryShapes = rankedShapeItems.filter(({ rarity }) => rarity === "legendary");
+  for (const shapeClass of ["crown", "hood"]) {
+    const count = legendaryShapes.filter(({ outerShape }) => outerShape?.class === shapeClass).length;
+    if (count > 1) {
+      errors.push(`legendary: expected at most one ${shapeClass}-shaped outer form, got ${count}`);
+    }
+  }
 
   return errors;
 }
