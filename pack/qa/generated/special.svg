@@ -28,11 +28,11 @@
       <svg x="128" y="48" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../special/special_001.png" x="124" y="18" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../special/special_001.png" x="120" y="40" width="112" height="112" preserveAspectRatio="xMidYMid meet" />
       <text x="16" y="208" class="id">special_001</text>
       <text x="16" y="235" class="name"><title>원조 감자 개발자 — 감자 새싹 왕관, 개발자 후드, 감자봇의 원형 입 문양을 활용한 황금 배지</title>원조 감자 개발자 — 감자 새싹 왕관</text>
-      <text x="16" y="260" class="meta">SPECIAL · head</text>
-      <text x="16" y="284" class="meta">x -4 · y -30 · size 104</text>
+      <text x="16" y="260" class="meta">SPECIAL · full</text>
+      <text x="16" y="284" class="meta">x -8 · y -8 · size 112</text>
       <text x="16" y="311" class="file">special/special_001.png</text>
     </g>
     <g class="costume-cell" data-id="special_002">

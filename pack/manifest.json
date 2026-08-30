@@ -258,11 +258,11 @@
       "file": "common/common_017.png",
       "source": "catalog-81/02-common-10-18.png",
       "sourceSlot": 7,
-      "slot": "body",
+      "slot": "full",
       "defaultAlignment": {
-        "x": -4,
-        "y": 17,
-        "size": 104
+        "x": -8,
+        "y": -8,
+        "size": 112
       }
     },
     {
@@ -1218,11 +1218,11 @@
       "file": "special/special_001.png",
       "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
       "sourceSlot": 8,
-      "slot": "head",
+      "slot": "full",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": -8,
+        "y": -8,
+        "size": 112
       }
     },
     {
@@ -1953,11 +1953,11 @@
       "file": "common/common_064.png",
       "source": "more-30/15-common-61-66.png",
       "sourceSlot": 3,
-      "slot": "body",
+      "slot": "full",
       "defaultAlignment": {
-        "x": -4,
-        "y": 17,
-        "size": 104
+        "x": -8,
+        "y": -8,
+        "size": 112
       }
     },
     {
@@ -1968,11 +1968,11 @@
       "file": "common/common_065.png",
       "source": "more-30/15-common-61-66.png",
       "sourceSlot": 4,
-      "slot": "face",
+      "slot": "full",
       "defaultAlignment": {
-        "x": -4,
+        "x": -8,
         "y": -8,
-        "size": 104
+        "size": 112
       }
     },
     {

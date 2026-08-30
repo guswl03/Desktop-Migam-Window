@@ -93,11 +93,36 @@ const reviewedPlacements = new Map([
   ["legendary_005", { slot: "head", defaultAlignment: { x: -4, y: -48, size: 100 } }],
 ]);
 
+const redrawPlacements = new Map([
+  ["common_017", { slot: "full", defaultAlignment: { x: -8, y: -8, size: 112 } }],
+  ["common_061", { slot: "full", defaultAlignment: { x: -8, y: -8, size: 112 } }],
+  ["common_064", { slot: "full", defaultAlignment: { x: -8, y: -8, size: 112 } }],
+  ["common_065", { slot: "full", defaultAlignment: { x: -8, y: -8, size: 112 } }],
+  ["rare_015", { slot: "full", defaultAlignment: { x: -8, y: -8, size: 112 } }],
+  ["rare_018", { slot: "full", defaultAlignment: { x: -8, y: -8, size: 112 } }],
+  ["rare_019", { slot: "head", defaultAlignment: { x: -4, y: -30, size: 104 } }],
+  ["rare_035", { slot: "head", defaultAlignment: { x: -4, y: -30, size: 104 } }],
+  ["rare_040", { slot: "head", defaultAlignment: { x: -4, y: -30, size: 104 } }],
+  ["rare_046", { slot: "full", defaultAlignment: { x: -8, y: -8, size: 112 } }],
+  ["epic_007", { slot: "full", defaultAlignment: { x: -8, y: -8, size: 112 } }],
+  ["epic_023", { slot: "full", defaultAlignment: { x: -8, y: -8, size: 112 } }],
+  ["legendary_001", { slot: "full", defaultAlignment: { x: -8, y: -8, size: 112 } }],
+  ["legendary_002", { slot: "head", defaultAlignment: { x: -4, y: -30, size: 104 } }],
+  ["legendary_004", { slot: "full", defaultAlignment: { x: -8, y: -8, size: 112 } }],
+  ["legendary_006", { slot: "full", defaultAlignment: { x: -8, y: -8, size: 112 } }],
+  ["special_001", { slot: "full", defaultAlignment: { x: -8, y: -8, size: 112 } }],
+]);
+
 const keepReason = "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함.";
 const candidates = manifest.costumes.filter(({ rarity }) => rarity !== "default");
 const audit = candidates.map(({ id }) => {
   if (redrawReasons.has(id)) {
-    return { id, state: "redraw", reason: redrawReasons.get(id) };
+    return {
+      id,
+      state: "redraw",
+      reason: redrawReasons.get(id),
+      placement: redrawPlacements.get(id),
+    };
   }
   if (realignReasons.has(id)) {
     return {

@@ -59,7 +59,7 @@ test("reviewed placement corrections are applied to the manifest", async () => {
   );
   const costumesById = new Map(drawCandidates.map((costume) => [costume.id, costume]));
 
-  for (const entry of audit.filter(({ state }) => state === "realign")) {
+  for (const entry of audit.filter(({ state }) => state !== "keep")) {
     const costume = costumesById.get(entry.id);
     assert.deepEqual(
       { slot: costume.slot, defaultAlignment: costume.defaultAlignment },

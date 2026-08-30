@@ -9,7 +9,7 @@ const manifest = JSON.parse(await readFile(manifestPath, "utf8"));
 const audit = JSON.parse(await readFile(auditPath, "utf8"));
 const corrections = new Map(
   audit
-    .filter(({ state }) => state === "realign")
+    .filter(({ state }) => state !== "keep")
     .map(({ id, placement }) => [id, placement]),
 );
 
