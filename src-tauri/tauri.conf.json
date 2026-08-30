@@ -65,8 +65,8 @@
       {
         "label": "settings",
         "title": "migam desktop · Settings",
-        "width": 720,
-        "height": 620,
+        "width": 520,
+        "height": 780,
         "visible": false,
         "resizable": true
       },

@@ -501,7 +501,7 @@ body[data-window="timer"] .timer-error { min-height: 0; margin: 0; color: #fff; 
   .debug-menu span { min-width: auto; padding: 0 7px; }
   .debug-ribbon span { min-width: 72px; }
   .settings-heading { align-items: start; flex-direction: column; gap: 0; }
-  .debug-build { margin-top: -8px; }
+  .debug-build { margin-top: 0; }
 }
 
 /* Raw debugger pass: dense, square, and intentionally close to classic Win32 tools. */
