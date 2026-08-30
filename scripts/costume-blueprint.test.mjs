@@ -170,6 +170,51 @@ test("loads every rarity file from a supplied blueprint root", async () => {
   }
 });
 
+test("aggregate loading treats absent canonical rarity files as empty planned rarities", async () => {
+  const root = await mkdtemp(join(tmpdir(), "costume-blueprint-missing-rarities-"));
+  const directory = join(root, "pack", "catalog-blueprint");
+  await mkdir(directory, { recursive: true });
+  await writeFile(join(directory, "common.json"), JSON.stringify([validItem]));
+
+  try {
+    const items = await loadBlueprint(root);
+    assert.deepEqual(items, [validItem]);
+    const errors = validateBlueprint(items);
+    assert.ok(errors.includes("missing catalog ID rare_001"));
+    assert.ok(errors.includes("missing catalog ID special_005"));
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("aggregate loading still rejects malformed existing rarity files", async () => {
+  const root = await mkdtemp(join(tmpdir(), "costume-blueprint-malformed-rarity-"));
+  const directory = join(root, "pack", "catalog-blueprint");
+  await mkdir(directory, { recursive: true });
+  await writeFile(join(directory, "common.json"), JSON.stringify([validItem]));
+  await writeFile(join(directory, "rare.json"), "not-json");
+
+  try {
+    await assert.rejects(loadBlueprint(root), SyntaxError);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("aggregate loading still rejects unreadable existing rarity paths", async () => {
+  const root = await mkdtemp(join(tmpdir(), "costume-blueprint-unreadable-rarity-"));
+  const directory = join(root, "pack", "catalog-blueprint");
+  await mkdir(directory, { recursive: true });
+  await writeFile(join(directory, "common.json"), JSON.stringify([validItem]));
+  await mkdir(join(directory, "rare.json"));
+
+  try {
+    await assert.rejects(loadBlueprint(root), (error) => error?.code !== "ENOENT");
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
 test("default validation stays full-catalog when non-Common rarity files are empty", async () => {
   const root = await mkdtemp(join(tmpdir(), "costume-blueprint-full-scope-"));
   const directory = join(root, "pack", "catalog-blueprint");
@@ -225,6 +270,21 @@ test("common blueprint CLI validates only the Common document", async () => {
     stdout.trim(),
     "common=80 missing=0 duplicate=0 slot=head:44,face:12,neck:10,body:14",
   );
+});
+
+test("rare blueprint covers its approved themes and slots", async () => {
+  const rare = JSON.parse(await readFile(
+    new URL("../pack/catalog-blueprint/rare.json", import.meta.url),
+  ));
+  assert.deepEqual(countBy(rare, "theme"), {
+    "탐험가 장비": 15,
+    "생물 영감 장비": 14,
+    "소형 기계 장비": 14,
+    "가상 지역 장비": 14,
+  });
+  assert.deepEqual(countBy(rare, "slot"), { head: 31, face: 8, neck: 6, body: 12 });
+  assert.deepEqual(rare.map(({ id }) => id), expectedIds("rare", 57));
+  assert.deepEqual(validateBlueprint(rare, { rarity: "rare" }), []);
 });
 
 test("assembles a standalone transparent image prompt", () => {

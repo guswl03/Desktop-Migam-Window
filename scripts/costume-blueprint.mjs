@@ -197,7 +197,13 @@ export async function loadBlueprint(root = repositoryRoot, rarity = null) {
   const directory = resolve(root, "pack", "catalog-blueprint");
   const files = rarity === null ? blueprintFiles : [`${rarity}.json`];
   const documents = await Promise.all(files.map(async (file) => {
-    const source = await readFile(resolve(directory, file), "utf8");
+    let source;
+    try {
+      source = await readFile(resolve(directory, file), "utf8");
+    } catch (error) {
+      if (rarity === null && error?.code === "ENOENT") return [];
+      throw error;
+    }
     const items = JSON.parse(source);
     if (!Array.isArray(items)) throw new Error(`${file}: blueprint file must contain an array`);
     return items;
