@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2300" height="700" viewBox="0 0 2300 700">
+  <title>New catalog style-lock pilots</title>
+  <defs>
+    <pattern id="checker" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#f1f1f1" />
+      <rect width="8" height="8" fill="#d8d8d8" />
+      <rect x="8" y="8" width="8" height="8" fill="#d8d8d8" />
+    </pattern>
+    <style>
+      text { font-family: "Segoe UI", sans-serif; fill: #f4f4f5; }
+      .section { font: 700 12px Consolas, monospace; fill: #aeb2c0; letter-spacing: 1px; }
+      .id { font: 700 18px Consolas, monospace; fill: #7fd7ff; }
+      .name { font-size: 19px; font-weight: 700; }
+      .meta { font: 13px Consolas, monospace; fill: #ffcf53; }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#17181c" />
+
+  <g class="pilot" data-id="common_001" transform="translate(6 6)">
+    <rect width="448" height="688" rx="8" fill="#222329" stroke="#aeb2c0" stroke-width="2" />
+    <text x="20" y="28" class="section">ISOLATED · 4X LOGICAL</text>
+    <rect x="32" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../accepted/common/common_001.png" x="32" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" image-rendering="pixelated" />
+    <text x="20" y="458" class="id">common_001</text>
+    <text x="20" y="484" class="name">새벽 우편모</text>
+    <text x="20" y="507" class="meta">COMMON · head · x -4 · y -30 · size 104</text>
+    <text x="20" y="532" class="section">WORN · PET 96PX</text>
+    <rect x="136" y="540" width="176" height="136" fill="url(#checker)" stroke="#777" />
+    <svg x="176" y="556" width="96" height="104" viewBox="0 0 96 104" overflow="hidden"><image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" /></svg>
+    <image href="../accepted/common/common_001.png" x="172" y="526" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+  </g>
+
+  <g class="pilot" data-id="rare_001" transform="translate(466 6)">
+    <rect width="448" height="688" rx="8" fill="#222329" stroke="#5ca9e6" stroke-width="2" />
+    <text x="20" y="28" class="section">ISOLATED · 4X LOGICAL</text>
+    <rect x="32" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../accepted/rare/rare_001.png" x="32" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" image-rendering="pixelated" />
+    <text x="20" y="458" class="id">rare_001</text>
+    <text x="20" y="484" class="name">구름능선 풍향관모</text>
+    <text x="20" y="507" class="meta">RARE · head · x 2 · y -32 · size 111</text>
+    <text x="20" y="532" class="section">WORN · PET 96PX</text>
+    <rect x="136" y="540" width="176" height="136" fill="url(#checker)" stroke="#777" />
+    <svg x="176" y="556" width="96" height="104" viewBox="0 0 96 104" overflow="hidden"><image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" /></svg>
+    <image href="../accepted/rare/rare_001.png" x="178" y="524" width="111" height="111" preserveAspectRatio="xMidYMid meet" />
+  </g>
+
+  <g class="pilot" data-id="epic_001" transform="translate(926 6)">
+    <rect width="448" height="688" rx="8" fill="#222329" stroke="#a57af4" stroke-width="2" />
+    <text x="20" y="28" class="section">ISOLATED · 4X LOGICAL</text>
+    <rect x="32" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../accepted/epic/epic_001.png" x="32" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" image-rendering="pixelated" />
+    <text x="20" y="458" class="id">epic_001</text>
+    <text x="20" y="484" class="name">기억제본학파 반전책등관</text>
+    <text x="20" y="507" class="meta">EPIC · head · x -2 · y -35 · size 111</text>
+    <text x="20" y="532" class="section">WORN · PET 96PX</text>
+    <rect x="136" y="540" width="176" height="136" fill="url(#checker)" stroke="#777" />
+    <svg x="176" y="556" width="96" height="104" viewBox="0 0 96 104" overflow="hidden"><image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" /></svg>
+    <image href="../accepted/epic/epic_001.png" x="174" y="521" width="111" height="111" preserveAspectRatio="xMidYMid meet" />
+  </g>
+
+  <g class="pilot" data-id="legendary_001" transform="translate(1386 6)">
+    <rect width="448" height="688" rx="8" fill="#222329" stroke="#f3bf4f" stroke-width="2" />
+    <text x="20" y="28" class="section">ISOLATED · 4X LOGICAL</text>
+    <rect x="32" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../accepted/legendary/legendary_001.png" x="32" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" image-rendering="pixelated" />
+    <text x="20" y="458" class="id">legendary_001</text>
+    <text x="20" y="484" class="name">삼중궤도 천구모</text>
+    <text x="20" y="507" class="meta">LEGENDARY · head · x -2 · y -40 · size 121</text>
+    <text x="20" y="532" class="section">WORN · PET 96PX</text>
+    <rect x="136" y="540" width="176" height="136" fill="url(#checker)" stroke="#777" />
+    <svg x="176" y="556" width="96" height="104" viewBox="0 0 96 104" overflow="hidden"><image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" /></svg>
+    <image href="../accepted/legendary/legendary_001.png" x="174" y="516" width="121" height="121" preserveAspectRatio="xMidYMid meet" />
+  </g>
+
+  <g class="pilot" data-id="special_001" transform="translate(1846 6)">
+    <rect width="448" height="688" rx="8" fill="#222329" stroke="#fb7f9b" stroke-width="2" />
+    <text x="20" y="28" class="section">ISOLATED · 4X LOGICAL</text>
+    <rect x="32" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../accepted/special/special_001.png" x="32" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" image-rendering="pixelated" />
+    <text x="20" y="458" class="id">special_001</text>
+    <text x="20" y="484" class="name">빛그림배달 감광가방</text>
+    <text x="20" y="507" class="meta">SPECIAL · body · x 1 · y 23 · size 118</text>
+    <text x="20" y="532" class="section">WORN · PET 96PX</text>
+    <rect x="136" y="540" width="176" height="136" fill="url(#checker)" stroke="#777" />
+    <svg x="176" y="556" width="96" height="104" viewBox="0 0 96 104" overflow="hidden"><image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" /></svg>
+    <image href="../accepted/special/special_001.png" x="177" y="579" width="118" height="118" preserveAspectRatio="xMidYMid meet" />
+  </g>
+</svg>

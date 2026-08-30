@@ -16,7 +16,7 @@
     "signatureDetail": "세 궤도띠가 만나는 축의 붉은 항성핵 하나",
     "prompt": "기울기가 다른 세 궤도띠가 공통축에서 모두 붙어 있는 단일 연결형 천구 머리 장식 한 개, 큰 비대칭 원형 외곽과 붉은 항성핵 하나만 선명하게 표현",
     "defaultAlignment": { "x": -2, "y": -40, "size": 121 },
-    "qaState": "planned"
+    "qaState": "accepted"
   },
   {
     "id": "legendary_002",
