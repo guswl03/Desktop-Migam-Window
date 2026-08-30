@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { access, mkdtemp, mkdir, readFile, rm, symlink, writeFile } from "node:fs/promises";
+import { access, mkdtemp, mkdir, readFile, readdir, rm, symlink, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import test from "node:test";
@@ -14,6 +14,8 @@ import { expectedCatalogIds } from "./costume-blueprint.mjs";
 import {
   applyPromotion,
   assertPathInside,
+  assertWindowsPathInside,
+  authorizePromotionRoot,
   loadAcceptedCandidates,
   planPromotion,
 } from "./costume-promote-candidates.mjs";
@@ -251,28 +253,120 @@ test("apply promotion rejects an arbitrary caller plan with zero writes", async 
   }
 });
 
-test("promotion rolls back every original when staging or commit fails", async () => {
-  for (const phase of ["stage", "commit"]) {
-    const root = await mkdtemp(join(tmpdir(), `costume-promotion-${phase}-`));
-    await prepareAuthoritativePromotion(root);
-    try {
-      await assert.rejects(
-        applyPromotion({ root, failureHook: ({ currentPhase, index }) => {
-          if (currentPhase === phase && index === 2) throw new Error(`injected ${phase} failure`);
-        } }),
-        new RegExp(`injected ${phase} failure`),
-      );
-      await assertOriginalCatalog(root);
-    } finally {
-      await rm(root, { recursive: true, force: true });
-    }
+async function assertRollbackForPhase(phase) {
+  const root = await mkdtemp(join(tmpdir(), `costume-promotion-${phase}-`));
+  await prepareAuthoritativePromotion(root);
+  try {
+    await assert.rejects(
+      applyPromotion({ root, failureHook: ({ currentPhase, index }) => {
+        if (currentPhase === phase && index === 2) throw new Error(`injected ${phase} failure`);
+      } }),
+      new RegExp(`injected ${phase} failure`),
+    );
+    await assertOriginalCatalog(root);
+  } finally {
+    await rm(root, { recursive: true, force: true });
   }
+}
+
+test("promotion rolls back every original when staging fails", async () => {
+  await assertRollbackForPhase("stage");
+});
+
+test("promotion rolls back every original before a commit rename", async () => {
+  await assertRollbackForPhase("before-commit-rename");
+});
+
+test("promotion rolls back every original after a commit rename", async () => {
+  await assertRollbackForPhase("after-commit-rename");
 });
 
 test("lexical path containment rejects drive-relative, absolute, and parent escapes", () => {
   assert.equal(assertPathInside("C:\\catalog\\pack", "C:\\catalog\\pack\\common\\common_001.png"), "C:\\catalog\\pack\\common\\common_001.png");
   for (const path of ["C:\\catalog\\outside\\item.png", "D:\\catalog\\pack\\item.png", "\\\\server\\share\\item.png", "..\\outside\\item.png"]) {
     assert.throws(() => assertPathInside("C:\\catalog\\pack", path), /escapes/);
+  }
+});
+
+test("Windows containment requires absolute same-volume roots and candidates", () => {
+  assert.equal(
+    assertWindowsPathInside("C:\\catalog\\pack", "C:\\catalog\\pack\\common\\common_001.png"),
+    "C:\\catalog\\pack\\common\\common_001.png",
+  );
+  for (const [root, candidate] of [
+    ["C:catalog\\pack", "C:\\catalog\\pack\\common\\item.png"],
+    ["C:\\catalog\\pack", "C:relative\\item.png"],
+    ["C:\\catalog\\pack", "D:\\catalog\\pack\\item.png"],
+    ["C:\\catalog\\pack", "\\\\server\\share\\item.png"],
+    ["C:\\catalog\\pack", "C:\\catalog\\pack"],
+    ["C:\\catalog\\pack", "C:\\catalog\\pack\\..\\outside\\item.png"],
+  ]) {
+    assert.throws(() => assertWindowsPathInside(root, candidate), /escapes|absolute/);
+  }
+});
+
+test("root authorization rejects relative and absent roots before planning", async () => {
+  await assert.rejects(authorizePromotionRoot("relative-root"), /absolute/);
+  await assert.rejects(authorizePromotionRoot(join(tmpdir(), "missing-promotion-root")), /existing/);
+});
+
+test("backup rename failure leaves every original and no backup or temp", async () => {
+  const root = await mkdtemp(join(tmpdir(), "costume-promotion-backup-failure-"));
+  await prepareAuthoritativePromotion(root);
+  try {
+    await assert.rejects(
+      applyPromotion({ root, failureHook: ({ currentPhase, index }) => {
+        if (currentPhase === "before-backup-rename" && index === 2) throw new Error("injected backup failure");
+      } }),
+      /injected backup failure/,
+    );
+    await assertOriginalCatalog(root);
+    for (const rarity of ["common", "rare", "epic", "legendary", "special"]) {
+      const leftovers = (await readdir(join(root, "pack", rarity))).filter((name) => /\.promote\.(tmp|bak)$/.test(name));
+      assert.deepEqual(leftovers, [], rarity);
+    }
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("restore failure preserves the exact backup path and reports aggregate rollback errors", async () => {
+  const root = await mkdtemp(join(tmpdir(), "costume-promotion-restore-failure-"));
+  await prepareAuthoritativePromotion(root);
+  try {
+    await assert.rejects(
+      applyPromotion({ root, failureHook: ({ currentPhase, index }) => {
+        if (currentPhase === "before-commit-rename" && index === 2) throw new Error("injected commit failure");
+        if (currentPhase === "before-restore-rename" && index === 1) throw new Error("injected restore failure");
+      } }),
+      (error) => error instanceof AggregateError
+        && error.errors.some((entry) => entry.message.includes("backup preserved at")),
+    );
+    const files = await readdir(join(root, "pack", "common"));
+    assert.ok(files.some((name) => name.startsWith(".common_002.") && name.endsWith(".promote.bak")));
+    assert.deepEqual(await readFile(join(root, "pack", "common", "common_001.png")), Buffer.from("original-common_001"));
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("backup cleanup failure surfaces committed-but-incomplete state without rollback", async () => {
+  const root = await mkdtemp(join(tmpdir(), "costume-promotion-cleanup-failure-"));
+  await prepareAuthoritativePromotion(root);
+  try {
+    await assert.rejects(
+      applyPromotion({ root, failureHook: ({ currentPhase, index }) => {
+        if (currentPhase === "before-backup-cleanup" && index === 2) throw new Error("injected cleanup failure");
+      } }),
+      (error) => error instanceof AggregateError
+        && error.message.includes("cleanup incomplete")
+        && error.errors.some((entry) => entry.message.includes("common_003")),
+    );
+    assert.notDeepEqual(await readFile(join(root, "pack", "common", "common_001.png")), Buffer.from("original-common_001"));
+    const files = await readdir(join(root, "pack", "common"));
+    assert.ok(files.some((name) => name.startsWith(".common_003.") && name.endsWith(".promote.bak")));
+  } finally {
+    await rm(root, { recursive: true, force: true });
   }
 });
 

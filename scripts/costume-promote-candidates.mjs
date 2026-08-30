@@ -8,7 +8,7 @@ import {
   rm,
   writeFile,
 } from "node:fs/promises";
-import { extname, isAbsolute, relative, resolve, sep } from "node:path";
+import { extname, isAbsolute, parse, relative, resolve, sep, win32 } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { randomUUID } from "node:crypto";
 import { expectedCatalogIds, loadBlueprint } from "./costume-blueprint.mjs";
@@ -18,8 +18,13 @@ import { readPngRgba } from "./lib/png-rgba.mjs";
 const repositoryRoot = fileURLToPath(new URL("..", import.meta.url));
 const rarities = ["common", "rare", "epic", "legendary", "special"];
 
-export function assertPathInside(root, path, label = "path") {
-  const relativePath = relative(root, path);
+function assertPathInsideWith(pathApi, root, path, label) {
+  if (!pathApi.isAbsolute(root) || !pathApi.isAbsolute(path)) {
+    throw new Error(`${label}: root and candidate paths must be absolute`);
+  }
+  const normalizedRoot = pathApi.resolve(root);
+  const normalizedPath = pathApi.resolve(path);
+  const relativePath = pathApi.relative(normalizedRoot, normalizedPath);
   if (
     relativePath === ""
     || isAbsolute(relativePath)
@@ -30,22 +35,69 @@ export function assertPathInside(root, path, label = "path") {
   ) {
     throw new Error(`${label}: path escapes its approved directory`);
   }
-  return path;
+  return normalizedPath;
+}
+
+export function assertPathInside(root, path, label = "path") {
+  return assertPathInsideWith({ isAbsolute, resolve, relative, sep }, root, path, label);
+}
+
+export function assertWindowsPathInside(root, path, label = "path") {
+  return assertPathInsideWith(win32, root, path, label);
+}
+
+function sameCanonicalPath(left, right) {
+  return process.platform === "win32"
+    ? left.toLowerCase() === right.toLowerCase()
+    : left === right;
+}
+
+export async function authorizePromotionRoot(root = repositoryRoot) {
+  if (!isAbsolute(root)) throw new Error("promotion root must be absolute");
+  const lexicalRoot = resolve(root);
+  const rootStat = await lstat(lexicalRoot).catch((error) => {
+    if (error?.code === "ENOENT") throw new Error("promotion root must be an existing real directory");
+    throw error;
+  });
+  if (!rootStat.isDirectory() || rootStat.isSymbolicLink()) {
+    throw new Error("promotion root must be an existing real directory");
+  }
+  const rootPath = parse(lexicalRoot).root;
+  let current = rootPath;
+  for (const segment of relative(rootPath, lexicalRoot).split(sep).filter(Boolean)) {
+    current = resolve(current, segment);
+    const stat = await lstat(current);
+    if (!stat.isDirectory() || stat.isSymbolicLink()) {
+      throw new Error(`promotion root has a symlink or non-directory ancestor: ${current}`);
+    }
+    const canonical = await realpath(current);
+    if (!sameCanonicalPath(canonical, current)) {
+      throw new Error(`promotion root has a redirected ancestor: ${current}`);
+    }
+  }
+  const canonicalRoot = await realpath(lexicalRoot);
+  if (!sameCanonicalPath(canonicalRoot, lexicalRoot)) {
+    throw new Error("promotion root resolves through a symlink or junction");
+  }
+  return canonicalRoot;
 }
 
 async function verifiedDirectory(root, directory, label) {
-  const rootStat = await lstat(root);
-  if (!rootStat.isDirectory() || rootStat.isSymbolicLink()) {
-    throw new Error(`${label}: approved root is not a real directory`);
+  const canonicalRoot = await authorizePromotionRoot(root);
+  const lexicalDirectory = assertPathInside(canonicalRoot, resolve(directory), label);
+  let current = canonicalRoot;
+  for (const segment of relative(canonicalRoot, lexicalDirectory).split(sep).filter(Boolean)) {
+    current = resolve(current, segment);
+    const stat = await lstat(current);
+    if (!stat.isDirectory() || stat.isSymbolicLink()) {
+      throw new Error(`${label}: parent directory is not a real directory`);
+    }
+    const canonical = await realpath(current);
+    if (!sameCanonicalPath(canonical, current)) {
+      throw new Error(`${label}: parent directory resolves through a symlink or junction`);
+    }
   }
-  const directoryStat = await lstat(directory);
-  if (!directoryStat.isDirectory() || directoryStat.isSymbolicLink()) {
-    throw new Error(`${label}: parent directory is not a real directory`);
-  }
-  const canonicalRoot = await realpath(root);
-  const canonicalDirectory = await realpath(directory);
-  assertPathInside(canonicalRoot, canonicalDirectory, label);
-  return { canonicalRoot, canonicalDirectory };
+  return { canonicalRoot, canonicalDirectory: current };
 }
 
 async function verifiedRegularFile(path, parent, label, { allowMissing = false } = {}) {
@@ -106,6 +158,7 @@ async function verifyDestination(root, item) {
 }
 
 export async function loadAcceptedCandidates(root = repositoryRoot) {
+  root = await authorizePromotionRoot(root);
   const acceptedRoot = resolve(root, "pack", "qa", "accepted");
   const candidates = new Map();
   let rarityEntries;
@@ -162,6 +215,7 @@ export async function loadAcceptedCandidates(root = repositoryRoot) {
 }
 
 export async function planPromotion(blueprint, acceptedCandidates, { root = repositoryRoot } = {}) {
+  root = await authorizePromotionRoot(root);
   const errors = [];
   const expected = expectedCatalogIds();
   const blueprintById = new Map();
@@ -273,17 +327,42 @@ async function rereadForStaging(root, copy) {
   return { ...copy, sourcePath, ...destination, bytes: await readFile(sourcePath) };
 }
 
-async function rollback(staged) {
+function runFailureHook(failureHook, currentPhase, index, record) {
+  failureHook?.({ currentPhase, index, id: record.id });
+}
+
+async function rollback(staged, failureHook) {
   const rollbackErrors = [];
-  for (const copy of [...staged].reverse()) {
+  for (let index = staged.length - 1; index >= 0; index -= 1) {
+    const copy = staged[index];
     try {
-      if (copy.committed) await rm(copy.targetPath, { force: true });
-      if (copy.backupPath) await rename(copy.backupPath, copy.targetPath);
+      if (copy.committed) {
+        runFailureHook(failureHook, "before-remove-committed", index, copy);
+        await rm(copy.targetPath, { force: true });
+        copy.committed = false;
+        runFailureHook(failureHook, "after-remove-committed", index, copy);
+      }
     } catch (error) {
       rollbackErrors.push(error);
     }
     try {
+      if (copy.backupPath) {
+        const backup = copy.backupPath;
+        runFailureHook(failureHook, "before-restore-rename", index, copy);
+        await rename(backup, copy.targetPath);
+        copy.backupPath = null;
+        runFailureHook(failureHook, "after-restore-rename", index, copy);
+      }
+    } catch (error) {
+      rollbackErrors.push(new Error(
+        `${copy.id}: restore failed; backup preserved at ${copy.backupPath}: ${error.message}`,
+        { cause: error },
+      ));
+    }
+    try {
+      runFailureHook(failureHook, "before-temp-cleanup", index, copy);
       await rm(copy.temporaryPath, { force: true });
+      runFailureHook(failureHook, "after-temp-cleanup", index, copy);
     } catch (error) {
       rollbackErrors.push(error);
     }
@@ -298,7 +377,8 @@ export async function applyPromotion(options = {}) {
   if ("copies" in options || "errors" in options || "plan" in options) {
     throw new Error("applyPromotion does not accept a caller-supplied plan");
   }
-  const { root = repositoryRoot, failureHook, beforeCommit } = options;
+  let { root = repositoryRoot, failureHook, beforeCommit } = options;
+  root = await authorizePromotionRoot(root);
   const buildPlan = async () => planPromotion(
     await loadBlueprint(root),
     await loadAcceptedCandidates(root),
@@ -310,6 +390,7 @@ export async function applyPromotion(options = {}) {
   if (plan.errors.length) throw new Error(plan.errors.join("\n"));
 
   const staged = [];
+  let committed = false;
   try {
     for (let index = 0; index < plan.copies.length; index += 1) {
       const copy = await rereadForStaging(root, plan.copies[index]);
@@ -321,31 +402,51 @@ export async function applyPromotion(options = {}) {
       const stagedDecoded = await readPngRgba(temporary);
       const errors = validateCandidate({ id: copy.id, rarity: copy.rarity }, stagedDecoded);
       if (errors.length) throw new Error(errors.join("\n"));
-      failureHook?.({ currentPhase: "stage", index, id: record.id });
+      runFailureHook(failureHook, "stage", index, record);
     }
     await beforeCommit?.(Object.freeze({ root, copies: plan.copies }));
-    for (const record of staged) {
+    for (let index = 0; index < staged.length; index += 1) {
+      const record = staged[index];
       await verifiedRegularFile(record.targetPath, record.parent, record.id, { allowMissing: true });
       const existing = await lstat(record.targetPath).catch((error) => error?.code === "ENOENT" ? null : Promise.reject(error));
       if (existing) {
-        record.backupPath = temporaryPath(record.parent.canonicalDirectory, record.id, "promote.bak");
-        assertPathInside(record.parent.canonicalDirectory, record.backupPath, record.id);
-        await rename(record.targetPath, record.backupPath);
+        const backupPath = temporaryPath(record.parent.canonicalDirectory, record.id, "promote.bak");
+        assertPathInside(record.parent.canonicalDirectory, backupPath, record.id);
+        runFailureHook(failureHook, "before-backup-rename", index, record);
+        await rename(record.targetPath, backupPath);
+        record.backupPath = backupPath;
+        runFailureHook(failureHook, "after-backup-rename", index, record);
       }
     }
     for (let index = 0; index < staged.length; index += 1) {
       const record = staged[index];
-      failureHook?.({ currentPhase: "commit", index, id: record.id });
+      runFailureHook(failureHook, "before-commit-rename", index, record);
       await rename(record.temporaryPath, record.targetPath);
       record.committed = true;
+      runFailureHook(failureHook, "after-commit-rename", index, record);
     }
-    for (const record of staged) {
+    committed = true;
+    const cleanupErrors = [];
+    for (let index = 0; index < staged.length; index += 1) {
+      const record = staged[index];
       if (!record.backupPath) continue;
-      await rm(record.backupPath, { force: true }).catch(() => {});
+      try {
+        runFailureHook(failureHook, "before-backup-cleanup", index, record);
+        await rm(record.backupPath, { force: true });
+        record.backupPath = null;
+        runFailureHook(failureHook, "after-backup-cleanup", index, record);
+      } catch (error) {
+        cleanupErrors.push(new Error(
+          `${record.id}: promotion committed but backup cleanup incomplete at ${record.backupPath}: ${error.message}`,
+          { cause: error },
+        ));
+      }
     }
+    if (cleanupErrors.length) throw new AggregateError(cleanupErrors, "promotion committed but cleanup incomplete");
     return staged.length;
   } catch (error) {
-    const rollbackErrors = await rollback(staged);
+    if (committed) throw error;
+    const rollbackErrors = await rollback(staged, failureHook);
     if (rollbackErrors.length) {
       throw new AggregateError([error, ...rollbackErrors], "promotion failed and rollback was incomplete");
     }
