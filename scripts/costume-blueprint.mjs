@@ -1,4 +1,4 @@
-import { readFile } from "node:fs/promises";
+import { lstat, readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
@@ -22,6 +22,10 @@ function normalized(value) {
   return typeof value === "string"
     ? value.normalize("NFC").trim().replaceAll(/\s+/g, " ").toLocaleLowerCase()
     : "";
+}
+
+export function isAbsentBlueprintEntry(readError, entryError) {
+  return readError?.code === "ENOENT" && entryError?.code === "ENOENT";
 }
 
 function itemId(item, index) {
@@ -197,11 +201,20 @@ export async function loadBlueprint(root = repositoryRoot, rarity = null) {
   const directory = resolve(root, "pack", "catalog-blueprint");
   const files = rarity === null ? blueprintFiles : [`${rarity}.json`];
   const documents = await Promise.all(files.map(async (file) => {
+    const path = resolve(directory, file);
     let source;
     try {
-      source = await readFile(resolve(directory, file), "utf8");
+      source = await readFile(path, "utf8");
     } catch (error) {
-      if (rarity === null && error?.code === "ENOENT") return [];
+      if (rarity === null && error?.code === "ENOENT") {
+        let entryError = null;
+        try {
+          await lstat(path);
+        } catch (candidateError) {
+          entryError = candidateError;
+        }
+        if (isAbsentBlueprintEntry(error, entryError)) return [];
+      }
       throw error;
     }
     const items = JSON.parse(source);

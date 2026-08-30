@@ -8,6 +8,7 @@ import { promisify } from "node:util";
 import {
   buildImagePrompt,
   expectedCatalogIds,
+  isAbsentBlueprintEntry,
   loadBlueprint,
   validateBlueprint,
 } from "./costume-blueprint.mjs";
@@ -185,6 +186,16 @@ test("aggregate loading treats absent canonical rarity files as empty planned ra
   } finally {
     await rm(root, { recursive: true, force: true });
   }
+});
+
+test("missing-entry decision rejects dangling canonical entries", () => {
+  const enoent = { code: "ENOENT" };
+  assert.equal(
+    isAbsentBlueprintEntry(enoent, enoent),
+    true,
+  );
+  assert.equal(isAbsentBlueprintEntry(enoent, null), false);
+  assert.equal(isAbsentBlueprintEntry({ code: "EACCES" }, enoent), false);
 });
 
 test("aggregate loading still rejects malformed existing rarity files", async () => {
