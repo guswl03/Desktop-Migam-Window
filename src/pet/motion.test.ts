@@ -13,6 +13,9 @@ import {
   getWindowJumpDuration,
   getWindowJumpPosition,
   getClimbContactX,
+  getSurfaceStayDuration,
+  getNearestSurfaceExit,
+  getSurfaceDeparture,
 } from "./motion";
 
 describe("pet motion", () => {
@@ -105,6 +108,32 @@ describe("pet motion", () => {
     expect(collision?.side).toBe("right");
   });
 
+  it("ignores window walls when window climbing is disabled", () => {
+    const detectCollision = findClimbCollision as (
+      currentX: number,
+      nextX: number,
+      walkingY: number,
+      windowSize: { width: number; height: number },
+      workArea: { x: number; y: number; width: number; height: number },
+      surfaces: Array<{ windowId: string; x: number; y: number; width: number; height: number }>,
+      supportWindowId: string | null,
+      windowClimbingEnabled: boolean,
+    ) => ReturnType<typeof findClimbCollision>;
+
+    expect(
+      detectCollision(
+        600,
+        608,
+        912,
+        { width: 128, height: 128 },
+        { x: 0, y: 0, width: 1920, height: 1040 },
+        [{ windowId: "editor", x: 734, y: 300, width: 800, height: 740 }],
+        null,
+        false,
+      ),
+    ).toBeNull();
+  });
+
   it("detects the opposite wall while walking to the left", () => {
     const collision = findClimbCollision(
       900,
@@ -159,6 +188,27 @@ describe("pet motion", () => {
         { width: 128, height: 128 },
       ),
     ).toEqual({ minX: 300, maxX: 872, minY: 292, maxY: 292 });
+  });
+
+  it("keeps the pet on a window for eight to fifteen seconds", () => {
+    expect(getSurfaceStayDuration(0)).toBe(8_000);
+    expect(getSurfaceStayDuration(0.5)).toBe(11_500);
+    expect(getSurfaceStayDuration(1)).toBe(15_000);
+  });
+
+  it("chooses the nearest window edge before dropping", () => {
+    const bounds = { minX: 300, maxX: 872, minY: 292, maxY: 292 };
+
+    expect(getNearestSurfaceExit(420, bounds)).toEqual({ side: "left", targetX: 300 });
+    expect(getNearestSurfaceExit(800, bounds)).toEqual({ side: "right", targetX: 872 });
+  });
+
+  it("starts leaving only after the scheduled surface stay expires", () => {
+    const bounds = { minX: 300, maxX: 872, minY: 292, maxY: 292 };
+
+    expect(getSurfaceDeparture(11_499, 11_500, 800, bounds)).toBeNull();
+    expect(getSurfaceDeparture(11_500, 11_500, 800, bounds))
+      .toEqual({ side: "right", targetX: 872 });
   });
 
   it("anchors a rope just outside either side of a window", () => {

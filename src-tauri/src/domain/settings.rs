@@ -22,6 +22,8 @@ pub struct PetSettings {
     pub resource_response_mode: ResourceResponseMode,
     #[serde(default = "default_true")]
     pub automatic_photo_delivery_enabled: bool,
+    #[serde(default = "default_true")]
+    pub window_climbing_enabled: bool,
 }
 
 const fn default_true() -> bool {
@@ -108,6 +110,7 @@ impl Default for Settings {
                 visual_scale_percent: 100,
                 resource_response_mode: ResourceResponseMode::Off,
                 automatic_photo_delivery_enabled: true,
+                window_climbing_enabled: true,
             },
             pomodoro: PomodoroSettings {
                 focus_minutes: 25,
@@ -201,6 +204,16 @@ mod tests {
     }
 
     #[test]
+    fn defaults_enable_window_climbing_and_serialize_the_preference() {
+        let value = serde_json::to_value(Settings::default()).unwrap();
+
+        assert_eq!(
+            value["pet"]["windowClimbingEnabled"],
+            serde_json::Value::Bool(true)
+        );
+    }
+
+    #[test]
     fn validation_rejects_focus_minutes_outside_one_to_one_hundred_twenty() {
         let mut zero_minutes = Settings::default();
         zero_minutes.pomodoro.focus_minutes = 0;
@@ -273,5 +286,37 @@ mod tests {
             ResourceResponseMode::Off
         );
         assert!(settings.pet.automatic_photo_delivery_enabled);
+        let serialized = serde_json::to_value(settings).unwrap();
+        assert_eq!(
+            serialized["pet"]["windowClimbingEnabled"],
+            serde_json::Value::Bool(true)
+        );
+    }
+
+    #[test]
+    fn current_settings_preserve_a_disabled_window_climbing_preference() {
+        let settings = Settings::from_json(
+            r#"{
+                "schemaVersion": 2,
+                "pet": {
+                    "visualScalePercent": 100,
+                    "windowClimbingEnabled": false
+                },
+                "pomodoro": {
+                    "focusMinutes": 25,
+                    "shortBreakMinutes": 5,
+                    "longBreakMinutes": 15,
+                    "sessionsBeforeLongBreak": 4
+                },
+                "focusGuard": { "interventionEnabled": false, "rules": [] }
+            }"#,
+        )
+        .unwrap();
+
+        let serialized = serde_json::to_value(settings).unwrap();
+        assert_eq!(
+            serialized["pet"]["windowClimbingEnabled"],
+            serde_json::Value::Bool(false)
+        );
     }
 }

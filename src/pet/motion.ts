@@ -33,6 +33,11 @@ export interface PositionBounds {
   maxY: number;
 }
 
+export interface SurfaceExit {
+  side: ClimbSide;
+  targetX: number;
+}
+
 export function clamp(value: number, minimum: number, maximum: number): number {
   return Math.min(Math.max(value, minimum), maximum);
 }
@@ -97,6 +102,32 @@ export function pickHorizontalTarget(
   const distanceToLeft = Math.abs(currentX - bounds.minX);
   const distanceToRight = Math.abs(bounds.maxX - currentX);
   return distanceToLeft > distanceToRight ? bounds.minX : bounds.maxX;
+}
+
+export function getSurfaceStayDuration(randomValue: number): number {
+  return Math.round(8_000 + clamp(randomValue, 0, 1) * 7_000);
+}
+
+export function getNearestSurfaceExit(
+  currentX: number,
+  bounds: PositionBounds,
+): SurfaceExit {
+  const distanceToLeft = Math.abs(currentX - bounds.minX);
+  const distanceToRight = Math.abs(bounds.maxX - currentX);
+  return distanceToLeft < distanceToRight
+    ? { side: "left", targetX: bounds.minX }
+    : { side: "right", targetX: bounds.maxX };
+}
+
+export function getSurfaceDeparture(
+  nowMilliseconds: number,
+  leaveAtMilliseconds: number,
+  currentX: number,
+  bounds: PositionBounds,
+): SurfaceExit | null {
+  return nowMilliseconds < leaveAtMilliseconds
+    ? null
+    : getNearestSurfaceExit(currentX, bounds);
 }
 
 export function advanceToward(
@@ -207,7 +238,9 @@ export function findClimbCollision(
   workArea: WorkArea,
   surfaces: WindowSurface[],
   supportWindowId: string | null = null,
+  windowClimbingEnabled = true,
 ): ClimbCollision | null {
+  if (!windowClimbingEnabled) return null;
   const direction = Math.sign(nextX - currentX);
   if (direction === 0) return null;
 

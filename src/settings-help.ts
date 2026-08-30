@@ -1,7 +1,7 @@
 const helpText = {
-  petSize: "화면에 표시되는 펫 크기입니다. 기본값은 100이며, 50~200 사이의 숫자를 입력하세요.",
   resourceResponse: "CPU나 메모리 사용량이 높을 때 펫의 표정과 움직임을 바꿉니다. 잘 모르겠다면 ‘CPU와 메모리 중 높은 값’을 선택하세요.",
   automaticPhotoDelivery: "펫이 약 20~40분 간격으로 컴퓨터 관련 사진을 자동으로 가져옵니다.",
+  windowClimbing: "펫이 이동 중 창을 만나면 창 위로 올라갑니다. 끄면 새로운 창을 만나도 올라가지 않습니다.",
   focusMinutes: "한 번 집중할 시간을 분 단위로 입력하세요. 예: 25",
   shortBreakMinutes: "집중을 한 번 마친 뒤 쉬는 시간을 분 단위로 입력하세요. 예: 5",
   longBreakMinutes: "여러 번 집중한 뒤 길게 쉬는 시간을 분 단위로 입력하세요. 예: 15",

@@ -2,6 +2,7 @@ import { invoke } from "@tauri-apps/api/core";
 import { listen } from "@tauri-apps/api/event";
 import {
   calculatePhotoDeliveryLayout,
+  calculatePhotoDeliveryPresentation,
   photoDeliveryDelayMilliseconds,
   photoDeliveryRarity,
 } from "./photo-delivery-motion";
@@ -13,11 +14,14 @@ import rarePhotoUrl from "../../images/characters/gamjabot/extra/photo-delivery/
 import visualStudioPhotoUrl from "../../images/characters/gamjabot/extra/photo-delivery/photos/visual-studio.png";
 import windbgPhotoUrl from "../../images/characters/gamjabot/extra/photo-delivery/photos/windbg.png";
 
-const PULL_DURATION_MILLISECONDS = 18_000;
 const PET_LEAVE_DURATION_MILLISECONDS = 1_500;
 const RARE_PHOTO_REQUIRED_CLICKS = 5;
 const GAMJABOT_RAIN_DURATION_MILLISECONDS = 4_200;
 const GAMJABOT_RAIN_DROP_COUNT = 34;
+
+interface PhotoDeliveryRequest {
+  forceSpecialPhoto?: boolean;
+}
 
 const photoUrls = [
   visualStudioPhotoUrl,
@@ -188,10 +192,14 @@ export async function mountPhotoDelivery(container: HTMLElement): Promise<() => 
     }));
   };
 
-  const start = (): void => {
+  const start = (request: PhotoDeliveryRequest = {}): void => {
     if (phase !== "idle") return;
     phase = "delivering";
-    rareDelivery = photoDeliveryRarity(Math.random()) === "real-heogeodeongseu";
+    const rarity = photoDeliveryRarity(
+      Math.random(),
+      request.forceSpecialPhoto ?? false,
+    );
+    rareDelivery = rarity === "real-heogeodeongseu";
     rareClicks = 0;
     close.hidden = rareDelivery;
     rig.classList.toggle("rare", rareDelivery);
@@ -202,11 +210,17 @@ export async function mountPhotoDelivery(container: HTMLElement): Promise<() => 
     void Promise.all([spriteUrlPromise, photo.decode()]).then(async ([spriteUrl]) => {
       if (phase !== "delivering") return;
       pet.style.backgroundImage = `url("${spriteUrl}")`;
-      const maximumWidth = Math.min(520, window.innerWidth * 0.52);
-      const maximumHeight = Math.min(420, window.innerHeight * 0.58);
-      const scale = Math.min(maximumWidth / photo.naturalWidth, maximumHeight / photo.naturalHeight);
-      const photoWidth = Math.max(300, Math.round(photo.naturalWidth * scale));
-      const photoHeight = Math.max(240, Math.round(photo.naturalHeight * scale));
+      const {
+        photoWidth,
+        photoHeight,
+        pullDurationMilliseconds,
+      } = calculatePhotoDeliveryPresentation(
+        photo.naturalWidth,
+        photo.naturalHeight,
+        window.innerWidth,
+        window.innerHeight,
+        rarity,
+      );
       const comesFromLeft = Math.random() < 0.5;
       const { targetX, y: targetY, startX } = calculatePhotoDeliveryLayout(
         window.innerWidth,
@@ -226,7 +240,7 @@ export async function mountPhotoDelivery(container: HTMLElement): Promise<() => 
       await invoke("begin_photo_delivery_motion");
       if (phase !== "delivering") return;
       route = rig.animate(pullKeyframes(startX, targetX, targetY), {
-        duration: PULL_DURATION_MILLISECONDS,
+        duration: pullDurationMilliseconds,
         fill: "forwards",
       });
       void route.finished.then(leavePet).catch(() => undefined);
@@ -287,7 +301,10 @@ export async function mountPhotoDelivery(container: HTMLElement): Promise<() => 
     }
   };
 
-  const unlisten = await listen("photo://deliver", start);
+  const unlisten = await listen<PhotoDeliveryRequest>(
+    "photo://deliver",
+    ({ payload }) => start(payload),
+  );
   const unlistenSettled = await listen("photo://settled", settle);
   const unlistenReset = await listen("photo://reset", reset);
   const unlistenEmergency = await listen("app://emergency-stopped", reset);

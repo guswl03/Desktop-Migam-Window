@@ -19,6 +19,8 @@ import {
   getPositionBounds,
   getClimbRopeGeometry,
   getClimbContactX,
+  getSurfaceDeparture,
+  getSurfaceStayDuration,
   getWindowJumpDuration,
   getWindowJumpPosition,
   getSurfaceWalkingBounds,
@@ -40,7 +42,13 @@ import {
 } from "./physics";
 import type { PetAnimation, PetSprite } from "./sprite";
 import { resolveMusicReaction } from "./music-stage";
-import type { BatteryState, SystemMetricsState } from "../contracts";
+import type {
+  BatteryState,
+  BootstrapState,
+  Settings,
+  SystemMetricsState,
+} from "../contracts";
+import { invokeWhenReady } from "../tauri/invoke-when-ready";
 import {
   nearestScreenSide,
   shouldRearmLowBatteryEvent,
@@ -90,6 +98,7 @@ interface WalkingMode {
   windowSize: PhysicalSize;
   workArea: WorkArea;
   supportWindowId: string | null;
+  surfaceExitSide: ClimbSide | null;
 }
 
 interface ClimbingMode {
@@ -253,6 +262,7 @@ export function startPetMotion(sprite: PetSprite): () => void {
   let unlistenTimer: (() => void) | null = null;
   let unlistenTodo: (() => void) | null = null;
   let unlistenBatteryTest: (() => void) | null = null;
+  let unlistenSettings: (() => void) | null = null;
   let celebrationTimer: number | undefined;
   let resourceSpeedMultiplier = 1;
   let latestSystemMetrics: SystemMetricsState = {
@@ -261,6 +271,11 @@ export function startPetMotion(sprite: PetSprite): () => void {
     mode: "off",
   };
   let climbableSurfaces: WindowSurface[] = [];
+  let windowClimbingEnabled = true;
+  let surfaceStay: {
+    windowId: string;
+    leaveAtMilliseconds: number;
+  } | null = null;
   let lastAnimationFrameAt = performance.now();
   let lastRopeSyncAt = 0;
   let lastRopeGeometry = "";
@@ -344,13 +359,15 @@ export function startPetMotion(sprite: PetSprite): () => void {
   const beginSurfaceFall = (
     position: Point,
     floorBounds: PositionBounds,
+    horizontalVelocity = 0,
   ): void => {
+    surfaceStay = null;
     setMode(
       {
         kind: "thrown",
         throwState: {
           position,
-          velocity: { x: 0, y: 120 },
+          velocity: { x: horizontalVelocity, y: 120 },
           elapsedSeconds: 0,
         },
         bounds: floorBounds,
@@ -366,6 +383,7 @@ export function startPetMotion(sprite: PetSprite): () => void {
   const beginDrag = async (event: PointerEvent): Promise<void> => {
     if (event.button !== 0 || timerActive || mode.kind === "battery-trip") return;
     event.preventDefault();
+    surfaceStay = null;
     sprite.element.setPointerCapture(event.pointerId);
 
     const nextInteractionId = ++interactionId;
@@ -445,7 +463,12 @@ export function startPetMotion(sprite: PetSprite): () => void {
   };
 
   const updateIdle = async (idle: IdleMode, nowMilliseconds: number): Promise<void> => {
-    if (nowMilliseconds < idle.untilMilliseconds) return;
+    const surfaceStayExpired = Boolean(
+      idle.supportWindowId &&
+      surfaceStay?.windowId === idle.supportWindowId &&
+      nowMilliseconds >= surfaceStay.leaveAtMilliseconds,
+    );
+    if (nowMilliseconds < idle.untilMilliseconds && !surfaceStayExpired) return;
 
     const monitor = await resolveMonitor();
     if (!monitor || mode !== idle) return;
@@ -475,7 +498,16 @@ export function startPetMotion(sprite: PetSprite): () => void {
 
     const safePosition = clampPosition(windowPosition, bounds);
     const groundY = bounds.maxY;
-    const targetX = pickHorizontalTarget(safePosition.x, bounds, Math.random(), 48);
+    const departure = supportWindowId && surfaceStay?.windowId === supportWindowId
+      ? getSurfaceDeparture(
+          nowMilliseconds,
+          surfaceStay.leaveAtMilliseconds,
+          safePosition.x,
+          bounds,
+        )
+      : null;
+    const targetX = departure?.targetX ??
+      pickHorizontalTarget(safePosition.x, bounds, Math.random(), 48);
     await petWindow.setPosition(
       new PhysicalPosition(Math.round(safePosition.x), Math.round(groundY)),
     );
@@ -493,6 +525,7 @@ export function startPetMotion(sprite: PetSprite): () => void {
         windowSize,
         workArea,
         supportWindowId,
+        surfaceExitSide: departure?.side ?? null,
       },
       resourceMovementAnimation(latestSystemMetrics, direction),
     );
@@ -521,6 +554,22 @@ export function startPetMotion(sprite: PetSprite): () => void {
         Math.max(walking.targetX, surfaceBounds.minX),
         surfaceBounds.maxX,
       );
+      if (walking.surfaceExitSide) {
+        walking.targetX = walking.surfaceExitSide === "left"
+          ? surfaceBounds.minX
+          : surfaceBounds.maxX;
+      } else if (surfaceStay?.windowId === walking.supportWindowId) {
+        const departure = getSurfaceDeparture(
+          performance.now(),
+          surfaceStay.leaveAtMilliseconds,
+          walking.x,
+          surfaceBounds,
+        );
+        if (departure) {
+          walking.surfaceExitSide = departure.side;
+          walking.targetX = departure.targetX;
+        }
+      }
     }
 
     const nextX = advanceToward(
@@ -539,6 +588,7 @@ export function startPetMotion(sprite: PetSprite): () => void {
       walking.workArea,
       climbableSurfaces,
       walking.supportWindowId,
+      windowClimbingEnabled && walking.surfaceExitSide === null,
     );
     if (collision) {
       const surfaceBounds = getSurfaceWalkingBounds(
@@ -579,6 +629,17 @@ export function startPetMotion(sprite: PetSprite): () => void {
     if (mode !== walking) return;
 
     if (Math.abs(walking.targetX - walking.x) <= ARRIVAL_TOLERANCE_PIXELS) {
+      if (walking.surfaceExitSide) {
+        const horizontalVelocity = walking.surfaceExitSide === "left"
+          ? -WALK_SPEED_PIXELS_PER_SECOND
+          : WALK_SPEED_PIXELS_PER_SECOND;
+        beginSurfaceFall(
+          { x: walking.x, y: walking.groundY },
+          walking.floorBounds,
+          horizontalVelocity,
+        );
+        return;
+      }
       if (shouldRunContinuously(latestSystemMetrics)) {
         walking.targetX = pickHorizontalTarget(
           walking.x,
@@ -742,6 +803,11 @@ export function startPetMotion(sprite: PetSprite): () => void {
     if (mode !== pullUp) return;
 
     if (progress >= 1) {
+      surfaceStay = {
+        windowId: surface.windowId,
+        leaveAtMilliseconds:
+          performance.now() + getSurfaceStayDuration(Math.random()),
+      };
       setMode(
         {
           kind: "landing",
@@ -1081,7 +1147,20 @@ export function startPetMotion(sprite: PetSprite): () => void {
       });
   };
 
+  const applyPetSettings = (settings: Settings): void => {
+    windowClimbingEnabled = settings.pet.windowClimbingEnabled;
+  };
+
   void invoke<TimerSnapshot>("get_timer_state").then(applyTimerState).catch(() => undefined);
+  void invokeWhenReady<BootstrapState>("get_bootstrap_state")
+    .then(({ settings }) => applyPetSettings(settings))
+    .catch(() => undefined);
+  void listen<Settings>("settings://saved", ({ payload }) => applyPetSettings(payload)).then(
+    (unlisten) => {
+      if (active) unlistenSettings = unlisten;
+      else unlisten();
+    },
+  );
   void listen<TimerSnapshot>("timer://state", ({ payload }) => applyTimerState(payload)).then(
     (unlisten) => {
       if (active) unlistenTimer = unlisten;
@@ -1148,6 +1227,7 @@ export function startPetMotion(sprite: PetSprite): () => void {
     unlistenTimer?.();
     unlistenTodo?.();
     unlistenBatteryTest?.();
+    unlistenSettings?.();
     if (musicStageExpanded) {
       void invoke("set_music_stage_expanded", { expanded: false }).catch(() => undefined);
     }

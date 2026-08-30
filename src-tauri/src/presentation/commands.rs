@@ -526,6 +526,7 @@ pub fn start_photo_delivery(
     app: AppHandle,
     state: State<'_, AppState>,
     automatic: Option<bool>,
+    force_special_photo: Option<bool>,
 ) -> Result<bool, String> {
     if automatic.unwrap_or(false)
         && !state
@@ -557,7 +558,21 @@ pub fn start_photo_delivery(
     delivery
         .show()
         .map_err(|_| "photo delivery could not be shown".to_owned())?;
-    if delivery.emit("photo://deliver", ()).is_err() {
+    #[derive(Clone, Serialize)]
+    #[serde(rename_all = "camelCase")]
+    struct PhotoDeliveryRequest {
+        force_special_photo: bool,
+    }
+
+    if delivery
+        .emit(
+            "photo://deliver",
+            PhotoDeliveryRequest {
+                force_special_photo: force_special_photo.unwrap_or(false),
+            },
+        )
+        .is_err()
+    {
         let _ = delivery.hide();
         if let Some(pet) = app.get_webview_window("pet") {
             let _ = pet.set_always_on_top(true);
