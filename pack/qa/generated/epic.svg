@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1360" viewBox="0 0 1440 1360">
+  <title>Gamjabot epic costume QA</title>
+  <defs>
+    <pattern id="checker" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#f1f1f1" />
+      <rect width="8" height="8" fill="#d8d8d8" />
+      <rect x="8" y="8" width="8" height="8" fill="#d8d8d8" />
+    </pattern>
+    <style>
+      text { font-family: "Segoe UI", sans-serif; fill: #f4f4f5; }
+      .section-label { font-size: 10px; fill: #aeb2c0; letter-spacing: 1px; }
+      .id { font: 700 15px Consolas, monospace; fill: #7fd7ff; }
+      .name { font-size: 17px; font-weight: 700; }
+      .meta { font: 12px Consolas, monospace; fill: #ffcf53; }
+      .file { font: 10px Consolas, monospace; fill: #aeb2c0; }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#17181c" />
+  
+    <g class="costume-cell" data-id="epic_001">
+      <rect x="4" y="4" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="25" class="section-label">ISOLATED</text>
+      <rect x="12" y="34" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_001.png" x="4" y="26" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="140" y="25" class="section-label">WORN</text>
+      <rect x="132" y="34" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="128" y="48" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_001.png" x="124" y="18" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <text x="16" y="208" class="id">epic_001</text>
+      <text x="16" y="235" class="name"><title>달빛 천상 왕관</title>달빛 천상 왕관</text>
+      <text x="16" y="260" class="meta">EPIC · head</text>
+      <text x="16" y="284" class="meta">x -4 · y -30 · size 104</text>
+      <text x="16" y="311" class="file">epic/epic_001.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_002">
+      <rect x="244" y="4" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="256" y="25" class="section-label">ISOLATED</text>
+      <rect x="252" y="34" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_002.png" x="244" y="26" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="380" y="25" class="section-label">WORN</text>
+      <rect x="372" y="34" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="368" y="48" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_002.png" x="364" y="65" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <text x="256" y="208" class="id">epic_002</text>
+      <text x="256" y="235" class="name"><title>불사조 망토</title>불사조 망토</text>
+      <text x="256" y="260" class="meta">EPIC · body</text>
+      <text x="256" y="284" class="meta">x -4 · y 17 · size 104</text>
+      <text x="256" y="311" class="file">epic/epic_002.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_003">
+      <rect x="484" y="4" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="496" y="25" class="section-label">ISOLATED</text>
+      <rect x="492" y="34" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_003.png" x="484" y="26" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="620" y="25" class="section-label">WORN</text>
+      <rect x="612" y="34" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="608" y="48" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_003.png" x="604" y="18" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <text x="496" y="208" class="id">epic_003</text>
+      <text x="496" y="235" class="name"><title>수정 얼음 왕관</title>수정 얼음 왕관</text>
+      <text x="496" y="260" class="meta">EPIC · head</text>
+      <text x="496" y="284" class="meta">x -4 · y -30 · size 104</text>
+      <text x="496" y="311" class="file">epic/epic_003.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_004">
+      <rect x="724" y="4" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="736" y="25" class="section-label">ISOLATED</text>
+      <rect x="732" y="34" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_004.png" x="724" y="26" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="860" y="25" class="section-label">WORN</text>
+      <rect x="852" y="34" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="848" y="48" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_004.png" x="844" y="18" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <text x="736" y="208" class="id">epic_004</text>
+      <text x="736" y="235" class="name"><title>숲 수호자 뿔관</title>숲 수호자 뿔관</text>
+      <text x="736" y="260" class="meta">EPIC · head</text>
+      <text x="736" y="284" class="meta">x -4 · y -30 · size 104</text>
+      <text x="736" y="311" class="file">epic/epic_004.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_005">
+      <rect x="964" y="4" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="976" y="25" class="section-label">ISOLATED</text>
+      <rect x="972" y="34" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_005.png" x="964" y="26" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="1100" y="25" class="section-label">WORN</text>
+      <rect x="1092" y="34" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="1088" y="48" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_005.png" x="1084" y="18" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <text x="976" y="208" class="id">epic_005</text>
+      <text x="976" y="235" class="name"><title>스팀펑크 발명가 헬멧</title>스팀펑크 발명가 헬멧</text>
+      <text x="976" y="260" class="meta">EPIC · head</text>
+      <text x="976" y="284" class="meta">x -4 · y -30 · size 104</text>
+      <text x="976" y="311" class="file">epic/epic_005.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_006">
+      <rect x="1204" y="4" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1216" y="25" class="section-label">ISOLATED</text>
+      <rect x="1212" y="34" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_006.png" x="1204" y="26" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="1340" y="25" class="section-label">WORN</text>
+      <rect x="1332" y="34" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="1328" y="48" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_006.png" x="1324" y="40" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <text x="1216" y="208" class="id">epic_006</text>
+      <text x="1216" y="235" class="name"><title>네온 사이버 바이저</title>네온 사이버 바이저</text>
+      <text x="1216" y="260" class="meta">EPIC · face</text>
+      <text x="1216" y="284" class="meta">x -4 · y -8 · size 104</text>
+      <text x="1216" y="311" class="file">epic/epic_006.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_007">
+      <rect x="4" y="344" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="365" class="section-label">ISOLATED</text>
+      <rect x="12" y="374" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_007.png" x="4" y="366" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="140" y="365" class="section-label">WORN</text>
+      <rect x="132" y="374" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="128" y="388" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_007.png" x="120" y="380" width="112" height="112" preserveAspectRatio="xMidYMid meet" />
+      <text x="16" y="548" class="id">epic_007</text>
+      <text x="16" y="575" class="name"><title>왕실 해군 제독 세트</title>왕실 해군 제독 세트</text>
+      <text x="16" y="600" class="meta">EPIC · full</text>
+      <text x="16" y="624" class="meta">x -8 · y -8 · size 112</text>
+      <text x="16" y="651" class="file">epic/epic_007.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_008">
+      <rect x="244" y="344" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="256" y="365" class="section-label">ISOLATED</text>
+      <rect x="252" y="374" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_008.png" x="244" y="366" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="380" y="365" class="section-label">WORN</text>
+      <rect x="372" y="374" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="368" y="388" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_008.png" x="364" y="358" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <text x="256" y="548" class="id">epic_008</text>
+      <text x="256" y="575" class="name"><title>흑요석 화산 왕관</title>흑요석 화산 왕관</text>
+      <text x="256" y="600" class="meta">EPIC · head</text>
+      <text x="256" y="624" class="meta">x -4 · y -30 · size 104</text>
+      <text x="256" y="651" class="file">epic/epic_008.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_009">
+      <rect x="484" y="344" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="496" y="365" class="section-label">ISOLATED</text>
+      <rect x="492" y="374" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_009.png" x="484" y="366" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="620" y="365" class="section-label">WORN</text>
+      <rect x="612" y="374" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="608" y="388" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_009.png" x="600" y="380" width="112" height="112" preserveAspectRatio="xMidYMid meet" />
+      <text x="496" y="548" class="id">epic_009</text>
+      <text x="496" y="575" class="name"><title>은하 수면모 세트</title>은하 수면모 세트</text>
+      <text x="496" y="600" class="meta">EPIC · full</text>
+      <text x="496" y="624" class="meta">x -8 · y -8 · size 112</text>
+      <text x="496" y="651" class="file">epic/epic_009.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_010">
+      <rect x="724" y="344" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="736" y="365" class="section-label">ISOLATED</text>
+      <rect x="732" y="374" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_010.png" x="724" y="366" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="860" y="365" class="section-label">WORN</text>
+      <rect x="852" y="374" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="848" y="388" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_010.png" x="844" y="358" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <text x="736" y="548" class="id">epic_010</text>
+      <text x="736" y="575" class="name"><title>황금 마스터 셰프 모자</title>황금 마스터 셰프 모자</text>
+      <text x="736" y="600" class="meta">EPIC · head</text>
+      <text x="736" y="624" class="meta">x -4 · y -30 · size 104</text>
+      <text x="736" y="651" class="file">epic/epic_010.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_011">
+      <rect x="964" y="344" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="976" y="365" class="section-label">ISOLATED</text>
+      <rect x="972" y="374" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_011.png" x="964" y="366" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="1100" y="365" class="section-label">WORN</text>
+      <rect x="1092" y="374" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="1088" y="388" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_011.png" x="1080" y="380" width="112" height="112" preserveAspectRatio="xMidYMid meet" />
+      <text x="976" y="548" class="id">epic_011</text>
+      <text x="976" y="575" class="name"><title>고대 유적 탐험가 세트</title>고대 유적 탐험가 세트</text>
+      <text x="976" y="600" class="meta">EPIC · full</text>
+      <text x="976" y="624" class="meta">x -8 · y -8 · size 112</text>
+      <text x="976" y="651" class="file">epic/epic_011.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_012">
+      <rect x="1204" y="344" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1216" y="365" class="section-label">ISOLATED</text>
+      <rect x="1212" y="374" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_012.png" x="1204" y="366" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="1340" y="365" class="section-label">WORN</text>
+      <rect x="1332" y="374" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="1328" y="388" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_012.png" x="1320" y="380" width="112" height="112" preserveAspectRatio="xMidYMid meet" />
+      <text x="1216" y="548" class="id">epic_012</text>
+      <text x="1216" y="575" class="name"><title>아케이드 챔피언 세트</title>아케이드 챔피언 세트</text>
+      <text x="1216" y="600" class="meta">EPIC · full</text>
+      <text x="1216" y="624" class="meta">x -8 · y -8 · size 112</text>
+      <text x="1216" y="651" class="file">epic/epic_012.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_013">
+      <rect x="4" y="684" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="705" class="section-label">ISOLATED</text>
+      <rect x="12" y="714" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_013.png" x="4" y="706" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="140" y="705" class="section-label">WORN</text>
+      <rect x="132" y="714" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="128" y="728" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_013.png" x="124" y="698" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <text x="16" y="888" class="id">epic_013</text>
+      <text x="16" y="915" class="name"><title>오로라 주술사 뿔후드</title>오로라 주술사 뿔후드</text>
+      <text x="16" y="940" class="meta">EPIC · head</text>
+      <text x="16" y="964" class="meta">x -4 · y -30 · size 104</text>
+      <text x="16" y="991" class="file">epic/epic_013.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_014">
+      <rect x="244" y="684" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="256" y="705" class="section-label">ISOLATED</text>
+      <rect x="252" y="714" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_014.png" x="244" y="706" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="380" y="705" class="section-label">WORN</text>
+      <rect x="372" y="714" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="368" y="728" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_014.png" x="364" y="698" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <text x="256" y="888" class="id">epic_014</text>
+      <text x="256" y="915" class="name"><title>기계 부엉이 학자 후드</title>기계 부엉이 학자 후드</text>
+      <text x="256" y="940" class="meta">EPIC · head</text>
+      <text x="256" y="964" class="meta">x -4 · y -30 · size 104</text>
+      <text x="256" y="991" class="file">epic/epic_014.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_015">
+      <rect x="484" y="684" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="496" y="705" class="section-label">ISOLATED</text>
+      <rect x="492" y="714" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_015.png" x="484" y="706" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="620" y="705" class="section-label">WORN</text>
+      <rect x="612" y="714" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="608" y="728" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_015.png" x="604" y="698" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <text x="496" y="888" class="id">epic_015</text>
+      <text x="496" y="915" class="name"><title>바다 신탁 조개 왕관</title>바다 신탁 조개 왕관</text>
+      <text x="496" y="940" class="meta">EPIC · head</text>
+      <text x="496" y="964" class="meta">x -4 · y -30 · size 104</text>
+      <text x="496" y="991" class="file">epic/epic_015.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_016">
+      <rect x="724" y="684" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="736" y="705" class="section-label">ISOLATED</text>
+      <rect x="732" y="714" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_016.png" x="724" y="706" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="860" y="705" class="section-label">WORN</text>
+      <rect x="852" y="714" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="848" y="728" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_016.png" x="844" y="745" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <text x="736" y="888" class="id">epic_016</text>
+      <text x="736" y="915" class="name"><title>벚꽃 수호자 망토</title>벚꽃 수호자 망토</text>
+      <text x="736" y="940" class="meta">EPIC · body</text>
+      <text x="736" y="964" class="meta">x -4 · y 17 · size 104</text>
+      <text x="736" y="991" class="file">epic/epic_016.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_017">
+      <rect x="964" y="684" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="976" y="705" class="section-label">ISOLATED</text>
+      <rect x="972" y="714" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_017.png" x="964" y="706" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="1100" y="705" class="section-label">WORN</text>
+      <rect x="1092" y="714" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="1088" y="728" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_017.png" x="1084" y="698" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <text x="976" y="888" class="id">epic_017</text>
+      <text x="976" y="915" class="name"><title>천둥새 조종사 투구</title>천둥새 조종사 투구</text>
+      <text x="976" y="940" class="meta">EPIC · head</text>
+      <text x="976" y="964" class="meta">x -4 · y -30 · size 104</text>
+      <text x="976" y="991" class="file">epic/epic_017.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_018">
+      <rect x="1204" y="684" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1216" y="705" class="section-label">ISOLATED</text>
+      <rect x="1212" y="714" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_018.png" x="1204" y="706" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="1340" y="705" class="section-label">WORN</text>
+      <rect x="1332" y="714" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="1328" y="728" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_018.png" x="1324" y="720" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <text x="1216" y="888" class="id">epic_018</text>
+      <text x="1216" y="915" class="name"><title>달빛 가면무도회 가면</title>달빛 가면무도회 가면</text>
+      <text x="1216" y="940" class="meta">EPIC · face</text>
+      <text x="1216" y="964" class="meta">x -4 · y -8 · size 104</text>
+      <text x="1216" y="991" class="file">epic/epic_018.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_019">
+      <rect x="4" y="1024" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="1045" class="section-label">ISOLATED</text>
+      <rect x="12" y="1054" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_019.png" x="4" y="1046" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="140" y="1045" class="section-label">WORN</text>
+      <rect x="132" y="1054" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="128" y="1068" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_019.png" x="124" y="1038" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <text x="16" y="1228" class="id">epic_019</text>
+      <text x="16" y="1255" class="name"><title>마법 도서관 대마법사 모자</title>마법 도서관 대마법사 모자</text>
+      <text x="16" y="1280" class="meta">EPIC · head</text>
+      <text x="16" y="1304" class="meta">x -4 · y -30 · size 104</text>
+      <text x="16" y="1331" class="file">epic/epic_019.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_020">
+      <rect x="244" y="1024" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="256" y="1045" class="section-label">ISOLATED</text>
+      <rect x="252" y="1054" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_020.png" x="244" y="1046" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="380" y="1045" class="section-label">WORN</text>
+      <rect x="372" y="1054" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="368" y="1068" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_020.png" x="360" y="1060" width="112" height="112" preserveAspectRatio="xMidYMid meet" />
+      <text x="256" y="1228" class="id">epic_020</text>
+      <text x="256" y="1255" class="name"><title>진홍 쇼군 갑주</title>진홍 쇼군 갑주</text>
+      <text x="256" y="1280" class="meta">EPIC · full</text>
+      <text x="256" y="1304" class="meta">x -8 · y -8 · size 112</text>
+      <text x="256" y="1331" class="file">epic/epic_020.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_021">
+      <rect x="484" y="1024" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="496" y="1045" class="section-label">ISOLATED</text>
+      <rect x="492" y="1054" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_021.png" x="484" y="1046" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="620" y="1045" class="section-label">WORN</text>
+      <rect x="612" y="1054" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="608" y="1068" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_021.png" x="604" y="1038" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <text x="496" y="1228" class="id">epic_021</text>
+      <text x="496" y="1255" class="name"><title>심연 잠수부 압력 헬멧</title>심연 잠수부 압력 헬멧</text>
+      <text x="496" y="1280" class="meta">EPIC · head</text>
+      <text x="496" y="1304" class="meta">x -4 · y -30 · size 104</text>
+      <text x="496" y="1331" class="file">epic/epic_021.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_022">
+      <rect x="724" y="1024" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="736" y="1045" class="section-label">ISOLATED</text>
+      <rect x="732" y="1054" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_022.png" x="724" y="1046" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="860" y="1045" class="section-label">WORN</text>
+      <rect x="852" y="1054" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="848" y="1068" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_022.png" x="844" y="1038" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <text x="736" y="1228" class="id">epic_022</text>
+      <text x="736" y="1255" class="name"><title>폭풍 록 아이돌 왕관</title>폭풍 록 아이돌 왕관</text>
+      <text x="736" y="1280" class="meta">EPIC · head</text>
+      <text x="736" y="1304" class="meta">x -4 · y -30 · size 104</text>
+      <text x="736" y="1331" class="file">epic/epic_022.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_023">
+      <rect x="964" y="1024" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="976" y="1045" class="section-label">ISOLATED</text>
+      <rect x="972" y="1054" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_023.png" x="964" y="1046" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="1100" y="1045" class="section-label">WORN</text>
+      <rect x="1092" y="1054" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="1088" y="1068" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_023.png" x="1080" y="1060" width="112" height="112" preserveAspectRatio="xMidYMid meet" />
+      <text x="976" y="1228" class="id">epic_023</text>
+      <text x="976" y="1255" class="name"><title>대연금술사 세트</title>대연금술사 세트</text>
+      <text x="976" y="1280" class="meta">EPIC · full</text>
+      <text x="976" y="1304" class="meta">x -8 · y -8 · size 112</text>
+      <text x="976" y="1331" class="file">epic/epic_023.png</text>
+    </g>
+    <g class="costume-cell" data-id="epic_024">
+      <rect x="1204" y="1024" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1216" y="1045" class="section-label">ISOLATED</text>
+      <rect x="1212" y="1054" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../epic/epic_024.png" x="1204" y="1046" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="1340" y="1045" class="section-label">WORN</text>
+      <rect x="1332" y="1054" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="1328" y="1068" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../epic/epic_024.png" x="1324" y="1038" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <text x="1216" y="1228" class="id">epic_024</text>
+      <text x="1216" y="1255" class="name"><title>발키리 룬 투구</title>발키리 룬 투구</text>
+      <text x="1216" y="1280" class="meta">EPIC · head</text>
+      <text x="1216" y="1304" class="meta">x -4 · y -30 · size 104</text>
+      <text x="1216" y="1331" class="file">epic/epic_024.png</text>
+    </g>
+</svg>
