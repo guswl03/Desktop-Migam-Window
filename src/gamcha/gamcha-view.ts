@@ -144,7 +144,11 @@ export async function mountGamcha(container: HTMLElement): Promise<() => void> {
   const selectedAlignment = (): CostumeAlignment | null => {
     const costume = costumeById.get(selectedCostumeId ?? "");
     if (!costume) return null;
-    return resolveCostumeAlignment(costume.slot, currentSnapshot.costumeAlignments[costume.id]);
+    return resolveCostumeAlignment(
+      costume.slot,
+      costume.defaultAlignment,
+      currentSnapshot.costumeAlignments[costume.id],
+    );
   };
 
   const renderAlignment = (): void => {
@@ -229,6 +233,7 @@ export async function mountGamcha(container: HTMLElement): Promise<() => void> {
         slot: selected.slot,
         alignment: resolveCostumeAlignment(
           selected.slot,
+          selected.defaultAlignment,
           currentSnapshot.costumeAlignments[selected.id],
         ),
       });

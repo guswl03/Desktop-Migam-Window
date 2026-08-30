@@ -20,7 +20,8 @@ export function defaultCostumeAlignment(slot: CostumeSlot): CostumeAlignment {
 
 export function resolveCostumeAlignment(
   slot: CostumeSlot,
+  itemDefault: CostumeAlignment | undefined,
   saved: CostumeAlignment | undefined,
 ): CostumeAlignment {
-  return saved ? { ...saved } : defaultCostumeAlignment(slot);
+  return { ...(saved ?? itemDefault ?? defaults[slot]) };
 }

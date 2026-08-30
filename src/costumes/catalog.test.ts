@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import manifest from "../../pack/manifest.json";
+import { costumeById, readCostumePlacement } from "./catalog";
 
 type CostumePlacement = {
   slot?: string;
@@ -28,5 +29,41 @@ describe("costume manifest metadata", () => {
         size: expect.any(Number),
       });
     }
+  });
+
+  it("exposes explicit manifest placement through the runtime catalog", () => {
+    expect(costumeById.get("legendary_003")).toEqual(
+      expect.objectContaining({
+        slot: "full",
+        defaultAlignment: expect.objectContaining({
+          x: expect.any(Number),
+          y: expect.any(Number),
+          size: expect.any(Number),
+        }),
+      }),
+    );
+  });
+
+  it("trusts explicit placement instead of inferring it from the display name", () => {
+    expect(readCostumePlacement({
+      id: "test_explicit",
+      name: "이름에는 세트가 있지만 얼굴에 쓰는 아이템",
+      rarity: "common",
+      file: "common/test.png",
+      slot: "face",
+      defaultAlignment: { x: 3, y: -7, size: 99 },
+    })).toEqual({
+      slot: "face",
+      defaultAlignment: { x: 3, y: -7, size: 99 },
+    });
+  });
+
+  it("rejects missing built-in placement with the item ID", () => {
+    expect(() => readCostumePlacement({
+      id: "test_missing",
+      name: "위치 없음",
+      rarity: "common",
+      file: "common/test.png",
+    })).toThrow("test_missing");
   });
 });

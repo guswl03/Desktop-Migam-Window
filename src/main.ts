@@ -54,7 +54,11 @@ function renderPet(): void {
       sprite.setCostume(costume ? {
         url: costume.url,
         slot: costume.slot,
-        alignment: resolveCostumeAlignment(costume.slot, snapshot.costumeAlignments[costume.id]),
+        alignment: resolveCostumeAlignment(
+          costume.slot,
+          costume.defaultAlignment,
+          snapshot.costumeAlignments[costume.id],
+        ),
       } : null);
     };
     void invokeWhenReady<CostumeSnapshot>("get_gamcha_state")
