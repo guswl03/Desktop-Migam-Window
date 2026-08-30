@@ -29,6 +29,12 @@ function expectedIds(rarity, count) {
   );
 }
 
+async function loadRarityBlueprint(rarity) {
+  return JSON.parse(await readFile(
+    new URL(`../pack/catalog-blueprint/${rarity}.json`, import.meta.url),
+  ));
+}
+
 const validItem = {
   id: "common_001", rarity: "common", name: "새벽 우편모", slot: "head",
   theme: "생활 도구", silhouette: "짧은 챙과 봉인 단추", palette: {
@@ -246,9 +252,7 @@ test("default validation stays full-catalog when non-Common rarity files are emp
 });
 
 test("common blueprint covers its approved themes and slots", async () => {
-  const common = JSON.parse(await readFile(
-    new URL("../pack/catalog-blueprint/common.json", import.meta.url),
-  ));
+  const common = await loadRarityBlueprint("common");
   assert.deepEqual(countBy(common, "theme"), {
     "생활 도구": 20,
     "직업 장비": 20,
@@ -284,9 +288,7 @@ test("common blueprint CLI validates only the Common document", async () => {
 });
 
 test("rare blueprint covers its approved themes and slots", async () => {
-  const rare = JSON.parse(await readFile(
-    new URL("../pack/catalog-blueprint/rare.json", import.meta.url),
-  ));
+  const rare = await loadRarityBlueprint("rare");
   assert.deepEqual(countBy(rare, "theme"), {
     "탐험가 장비": 15,
     "생물 영감 장비": 14,
@@ -299,9 +301,7 @@ test("rare blueprint covers its approved themes and slots", async () => {
 });
 
 test("epic blueprint covers its approved themes and slots", async () => {
-  const epic = JSON.parse(await readFile(
-    new URL("../pack/catalog-blueprint/epic.json", import.meta.url),
-  ));
+  const epic = await loadRarityBlueprint("epic");
   assert.deepEqual(countBy(epic, "theme"), {
     "마법 학파 장비": 8,
     "원소 장비": 8,
@@ -311,6 +311,30 @@ test("epic blueprint covers its approved themes and slots", async () => {
   assert.deepEqual(countBy(epic, "slot"), { head: 16, face: 5, neck: 4, body: 6 });
   assert.deepEqual(epic.map(({ id }) => id), expectedIds("epic", 31));
   assert.deepEqual(validateBlueprint(epic, { rarity: "epic" }), []);
+});
+
+test("epic organization emblems keep distinct topologies and unambiguous fold copy", async () => {
+  const epic = await loadRarityBlueprint("epic");
+  const organizationSignatures = epic
+    .filter(({ theme }) => theme === "신비 조직 장비")
+    .map(({ signatureDetail }) => signatureDetail);
+  const ambiguousCopyIds = epic
+    .filter((item) => /안접힌|한쪽녹은마름틀/.test(JSON.stringify(item)))
+    .map(({ id }) => id);
+
+  assert.deepEqual({
+    returnLoopEmblems: organizationSignatures.filter(
+      (signature) => /막다른되돌이고리|한굽돌아옴고리/.test(signature),
+    ).length,
+    splitQuadrilateralEmblems: organizationSignatures.filter(
+      (signature) => /사선분할사각창|비껴쪼갠마름/.test(signature),
+    ).length,
+    ambiguousCopyIds,
+  }, {
+    returnLoopEmblems: 1,
+    splitQuadrilateralEmblems: 1,
+    ambiguousCopyIds: [],
+  });
 });
 
 test("assembles a standalone transparent image prompt", () => {
