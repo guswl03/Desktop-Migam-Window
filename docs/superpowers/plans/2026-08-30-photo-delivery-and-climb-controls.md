@@ -289,4 +289,3 @@ Record exact command outputs and manual checks in both project documents.
 git add -- docs/13-progress-board.md docs/17-session-handoff.md
 git commit -m "docs: record pet control verification"
 ```
-

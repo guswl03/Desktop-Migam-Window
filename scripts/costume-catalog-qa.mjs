@@ -97,7 +97,7 @@ function renderSheet(rarity, costumes, outputPath) {
     </style>
   </defs>
   <rect width="100%" height="100%" fill="#17181c" />
-  ${cells.join("")}
+${cells.join("")}
 </svg>
 `;
 }
