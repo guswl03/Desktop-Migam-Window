@@ -1,12 +1,21 @@
 const PREFERRED_SIDE_INSET = 12;
 const PET_CARD_OVERLAP_WIDTH = 123;
+const PHOTO_DELIVERY_MAXIMUM_WIDTH = 480;
+const PHOTO_DELIVERY_MAXIMUM_HEIGHT = 390;
+const PHOTO_DELIVERY_MINIMUM_WIDTH = 280;
+const PHOTO_DELIVERY_MINIMUM_HEIGHT = 224;
+const PHOTO_DELIVERY_PULL_DURATION_MILLISECONDS = 17_500;
 const AUTOMATIC_DELIVERY_MINIMUM_MILLISECONDS = 20 * 60_000;
 const AUTOMATIC_DELIVERY_RANGE_MILLISECONDS = 20 * 60_000;
 const RARE_PHOTO_PROBABILITY = 0.01;
 
 export type PhotoDeliveryRarity = "normal" | "real-heogeodeongseu";
 
-export function photoDeliveryRarity(randomValue: number): PhotoDeliveryRarity {
+export function photoDeliveryRarity(
+  randomValue: number,
+  forceSpecialPhoto = false,
+): PhotoDeliveryRarity {
+  if (forceSpecialPhoto) return "real-heogeodeongseu";
   return randomValue >= 0 && randomValue < RARE_PHOTO_PROBABILITY
     ? "real-heogeodeongseu"
     : "normal";
@@ -22,6 +31,29 @@ export interface PhotoDeliveryLayout {
   y: number;
   targetX: number;
   startX: number;
+}
+
+export interface PhotoDeliveryPresentation {
+  photoWidth: number;
+  photoHeight: number;
+  pullDurationMilliseconds: number;
+}
+
+export function calculatePhotoDeliveryPresentation(
+  naturalWidth: number,
+  naturalHeight: number,
+  viewportWidth: number,
+  viewportHeight: number,
+): PhotoDeliveryPresentation {
+  const maximumWidth = Math.min(PHOTO_DELIVERY_MAXIMUM_WIDTH, viewportWidth * 0.52);
+  const maximumHeight = Math.min(PHOTO_DELIVERY_MAXIMUM_HEIGHT, viewportHeight * 0.58);
+  const scale = Math.min(maximumWidth / naturalWidth, maximumHeight / naturalHeight);
+
+  return {
+    photoWidth: Math.max(PHOTO_DELIVERY_MINIMUM_WIDTH, Math.round(naturalWidth * scale)),
+    photoHeight: Math.max(PHOTO_DELIVERY_MINIMUM_HEIGHT, Math.round(naturalHeight * scale)),
+    pullDurationMilliseconds: PHOTO_DELIVERY_PULL_DURATION_MILLISECONDS,
+  };
 }
 
 export function calculatePhotoDeliveryLayout(
