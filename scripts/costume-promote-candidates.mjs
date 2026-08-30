@@ -18,11 +18,29 @@ import { readPngRgba } from "./lib/png-rgba.mjs";
 const repositoryRoot = fileURLToPath(new URL("..", import.meta.url));
 const rarities = ["common", "rare", "epic", "legendary", "special"];
 
+function isWindowsNetworkOrDevicePath(path) {
+  return typeof path === "string" && /^(?:\\\\|\/\/)/.test(path);
+}
+
+export function assertPromotionRootPolicy(root, { platform = process.platform } = {}) {
+  if (isWindowsNetworkOrDevicePath(root)) {
+    throw new Error("promotion root must be a local drive-absolute path");
+  }
+  if (platform === "win32") {
+    if (!win32.isAbsolute(root) || !/^[A-Za-z]:[\\/]/.test(root)) {
+      throw new Error("promotion root must be a local drive-absolute path");
+    }
+  } else if (!isAbsolute(root)) {
+    throw new Error("promotion root must be absolute");
+  }
+  return root;
+}
+
 function assertPathInsideWith(pathApi, root, path, label) {
   if (!pathApi.isAbsolute(root) || !pathApi.isAbsolute(path)) {
     throw new Error(`${label}: root and candidate paths must be absolute`);
   }
-  if (/^(?:\\\\|\/\/)/.test(root) || /^(?:\\\\|\/\/)/.test(path)) {
+  if (isWindowsNetworkOrDevicePath(root) || isWindowsNetworkOrDevicePath(path)) {
     throw new Error(`${label}: network and device paths are not approved for local promotion`);
   }
   const relativePath = pathApi.relative(root, path);
@@ -55,7 +73,7 @@ export async function authorizeDirectoryChain(root, {
   lstat: lstatOperation = lstat,
   realpath: realpathOperation = realpath,
 } = {}) {
-  if (!isAbsolute(root)) throw new Error("promotion root must be absolute");
+  assertPromotionRootPolicy(root);
   const lexicalRoot = resolve(root);
   const rootStat = await lstatOperation(lexicalRoot).catch((error) => {
     if (error?.code === "ENOENT") throw new Error("promotion root must be an existing real directory");

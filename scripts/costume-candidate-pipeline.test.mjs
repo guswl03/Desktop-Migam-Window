@@ -17,6 +17,7 @@ import {
   assertWindowsPathInside,
   authorizeDirectoryChain,
   authorizePromotionRoot,
+  assertPromotionRootPolicy,
   loadAcceptedCandidates,
   planPromotion,
 } from "./costume-promote-candidates.mjs";
@@ -405,6 +406,34 @@ test("ancestor authorizer rejects deterministic root and intermediate canonical 
     authorizeDirectoryChain(root, { ...operations, realpath: async (path) => path === intermediate ? `${path}-redirected` : path }),
     /redirected ancestor/,
   );
+});
+
+test("root policy rejects UNC and device boundaries before injected filesystem operations", async () => {
+  let operationsCalled = 0;
+  const operations = {
+    lstat: async () => {
+      operationsCalled += 1;
+      return { isDirectory: () => true, isSymbolicLink: () => false };
+    },
+    realpath: async (path) => path,
+  };
+  for (const root of ["\\\\server\\share\\catalog", "\\\\?\\C:\\catalog", "\\\\.\\C:\\catalog"]) {
+    await assert.rejects(authorizeDirectoryChain(root, operations), /local drive-absolute/);
+  }
+  assert.equal(operationsCalled, 0);
+});
+
+test("root policy accepts local lexical paths without allowing injection to bypass it", async () => {
+  assert.doesNotThrow(() => assertPromotionRootPolicy("C:\\catalog\\pack", { platform: "win32" }));
+  assert.throws(() => assertPromotionRootPolicy("C:catalog\\pack", { platform: "win32" }), /local drive-absolute/);
+  assert.doesNotThrow(() => assertPromotionRootPolicy(resolve(tmpdir(), "promotion-local-root")));
+  const operations = {
+    lstat: async () => ({ isDirectory: () => true, isSymbolicLink: () => false }),
+    realpath: async (path) => path,
+  };
+  if (process.platform === "win32") {
+    await assert.doesNotReject(authorizeDirectoryChain("C:\\catalog\\pack", operations));
+  }
 });
 
 test("root authorization rejects relative and absent roots before planning", async () => {
