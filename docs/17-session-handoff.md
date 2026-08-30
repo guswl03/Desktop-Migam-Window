@@ -6,7 +6,7 @@
 
 ## 2026-08-30 사진 배달·창 오르기 설정 조정
 
-- 작업 브랜치는 `feat/photo-delivery-climb-controls`이며 `origin/main`의 `d2b3e76994d24519017cd23c9604a76ab4faef08`에서 시작했다. main 직접 푸시와 배포는 하지 않는다.
+- 작업 브랜치 `feat/photo-delivery-climb-controls`는 PR [#40](https://github.com/guswl03/Desktop-Migam-Window/pull/40)으로 main의 `c74fd8e2fdb8637c49081d98502c9220e6a6f8fc`에 병합했고, 해당 커밋을 `v0.2.0`으로 배포했다.
 - 일반 사진 배달 표시 범위는 최소 260×208px, 최대 430×350px로 유지한다. `real-heogeodeongseu` 희귀 사진만 계산된 일반 표시 크기의 85%로 줄였고 이동 시간은 6초로 단축했다.
 - 우클릭 메뉴의 `사진 배달 테스트`·`저전력 이벤트 테스트`와 설정의 `희귀 사진 이스터에그 테스트` 버튼을 개발·배포 빌드 모두에서 제거했다.
 - 버튼과 연결된 프런트 클릭 처리도 제거했다. 자동 사진 배달, 실제 저전력 감지와 희귀 사진 1% 분기는 그대로 유지한다.
@@ -16,6 +16,14 @@
 - 설정창은 실행 시 520×780 세로형 크기로 열리고 리사이즈는 유지한다. 560px 이하의 1열 배치에서 `설정` 제목과 `LOCAL · SCHEMA 2`를 겹치게 하던 음수 여백을 제거했다.
 - 검증: 프런트 13파일 66테스트 통과, Rust 51테스트 통과, `npm run typecheck`, `npm run build`, `cargo fmt --check`, `cargo clippy --all-targets -- -D warnings` 통과. 실제 Edge 520×780 회귀 테스트에서 제목 비겹침·가로 넘침 없음·1열 배치를 확인했고 소스와 production `dist`의 세 테스트 버튼 문구 및 `펫 크기` 문구 검색은 0건이었다. Windows 링커의 import library 생성 안내 외 실패는 없었다.
 - 남은 수동 확인: `npm run tauri:dev`에서 설정창 최초 크기, 일반·희귀 사진 크기와 6초 이동 체감, 희귀 사진 5회 클릭 이스터에그, 창 오르기 ON/OFF와 8~15초 뒤 자동 하강, 테스트 UI 비노출을 실제 WebView2로 확인한다.
+
+## v0.2.0 최종 릴리스
+
+- 앱·Tauri·Rust 패키지 버전과 README 직접 다운로드 링크를 `0.2.0`/`v0.2.0`으로 동기화했다.
+- 로컬에서 프런트 66개·Rust 51개 테스트, TypeScript, production build, rustfmt, Clippy `-D warnings`와 Windows x64 NSIS release build를 통과했다.
+- PR [#40](https://github.com/guswl03/Desktop-Migam-Window/pull/40)의 push/PR 검사와 main [Actions 실행](https://github.com/guswl03/Desktop-Migam-Window/actions/runs/33312969192)이 모두 통과했다.
+- [migam desktop v0.2.0](https://github.com/guswl03/Desktop-Migam-Window/releases/tag/v0.2.0)은 main의 `c74fd8e2fdb8637c49081d98502c9220e6a6f8fc`를 가리키는 정식 최신 릴리스다.
+- NSIS: `migam.desktop_0.2.0_x64-setup.exe`, 19,982,099 bytes, SHA-256 `B6265AA69AB801D08C0A64F5E03FAEEAC3D41D62D3F1AD72F3F3D166BF3CA803`. GitHub 자산 digest와 다운로드 응답의 크기도 동일함을 확인했다.
 
 ## v0.1.2 배포 준비
 
@@ -28,7 +36,7 @@
 
 ## 현재 목표
 
-사진 배달 크기·속도와 테스트 UI 제거, 창 오르기 ON/OFF 설정 구현 및 자동 검증은 완료됐다. 실제 Windows 앱에서 사진 연출과 설정 전환을 수동 확인한 뒤 배포 여부를 결정한다. 투두리스트 고급 축하 연출은 그 다음 작업으로 유지한다.
+사진 배달 크기·속도와 테스트 UI 제거, 창 오르기 ON/OFF·자동 하강 설정을 포함한 `v0.2.0` 배포가 완료됐다. 실제 Windows에서 설정 재실행 복원과 창별 자동 하강 체감 확인은 후속 회귀 점검으로 유지하고, 투두리스트 고급 축하 연출은 그 다음 작업으로 진행한다.
 
 ## 최근 창 등반·상단 보행 작업 요약
 
