@@ -1,0 +1,1022 @@
+[
+  {
+    "id": "common_001",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_002",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_003",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_004",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_005",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_006",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_007",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_008",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_009",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_010",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_011",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_012",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_013",
+    "state": "realign",
+    "reason": "수면 안대가 입을 가려 눈 위치로 올려야 함.",
+    "placement": {
+      "slot": "face",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -24,
+        "size": 104
+      }
+    }
+  },
+  {
+    "id": "common_014",
+    "state": "realign",
+    "reason": "왕관이 눈을 가려 머리 위로 올려야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -48,
+        "size": 104
+      }
+    }
+  },
+  {
+    "id": "common_015",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_016",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_017",
+    "state": "redraw",
+    "reason": "줄넘기인데 줄이 빠져 손잡이만 보여 원본 구성을 보강해야 함."
+  },
+  {
+    "id": "common_018",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_019",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_020",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_021",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_022",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_023",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_024",
+    "state": "realign",
+    "reason": "운동 머리띠가 눈을 가려 이마로 올려야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -44,
+        "size": 104
+      }
+    }
+  },
+  {
+    "id": "common_025",
+    "state": "realign",
+    "reason": "목걸이형 카메라가 얼굴을 가려 목/가슴 위치로 내려야 함.",
+    "placement": {
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 24,
+        "size": 96
+      }
+    }
+  },
+  {
+    "id": "common_026",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_027",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_028",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_029",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_030",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_031",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_032",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_033",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_034",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_035",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_036",
+    "state": "realign",
+    "reason": "머리핀이 눈 위에 놓여 머리 오른쪽으로 옮겨야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 18,
+        "y": -38,
+        "size": 96
+      }
+    }
+  },
+  {
+    "id": "common_037",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_038",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_039",
+    "state": "realign",
+    "reason": "리본이 눈을 가려 머리 오른쪽으로 옮겨야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 18,
+        "y": -40,
+        "size": 96
+      }
+    }
+  },
+  {
+    "id": "common_040",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_001",
+    "state": "realign",
+    "reason": "보석 왕관이 얼굴을 가려 머리 위로 올려야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -58,
+        "size": 100
+      }
+    }
+  },
+  {
+    "id": "rare_002",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_003",
+    "state": "realign",
+    "reason": "마법사 모자가 눈을 가려 머리 위로 올려야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -54,
+        "size": 104
+      }
+    }
+  },
+  {
+    "id": "rare_004",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_005",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_006",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_007",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_008",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_009",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_010",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_011",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_012",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_013",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_014",
+    "state": "realign",
+    "reason": "파티 모자가 얼굴을 덮어 위로 올리고 조금 줄여야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -44,
+        "size": 92
+      }
+    }
+  },
+  {
+    "id": "rare_015",
+    "state": "redraw",
+    "reason": "이름은 초밥 요리사 세트지만 원본에는 머리띠만 보여 세트 구성을 보강해야 함."
+  },
+  {
+    "id": "rare_016",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_017",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_018",
+    "state": "redraw",
+    "reason": "이름은 숲 레인저 세트지만 원본에는 모자만 보여 의상 구성을 추가해야 함."
+  },
+  {
+    "id": "rare_019",
+    "state": "redraw",
+    "reason": "헬멧 얼굴 창이 불투명해 캐릭터 눈이 사라지므로 투명 구조로 다시 그려야 함."
+  },
+  {
+    "id": "rare_020",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_021",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_022",
+    "state": "realign",
+    "reason": "광대 모자가 눈을 가려 머리 위로 올려야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -40,
+        "size": 104
+      }
+    }
+  },
+  {
+    "id": "rare_023",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_024",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "epic_001",
+    "state": "realign",
+    "reason": "천상 왕관이 얼굴을 가려 머리 위로 올려야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -58,
+        "size": 100
+      }
+    }
+  },
+  {
+    "id": "epic_002",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "epic_003",
+    "state": "realign",
+    "reason": "수정 왕관이 눈을 가려 머리 위로 올려야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -52,
+        "size": 104
+      }
+    }
+  },
+  {
+    "id": "epic_004",
+    "state": "realign",
+    "reason": "수호자 관이 눈을 가려 이마 위로 올려야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -48,
+        "size": 104
+      }
+    }
+  },
+  {
+    "id": "epic_005",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "epic_006",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "epic_007",
+    "state": "redraw",
+    "reason": "이름은 왕실 해군 제독 세트지만 원본에는 모자만 보여 제복 구성을 추가해야 함."
+  },
+  {
+    "id": "epic_008",
+    "state": "realign",
+    "reason": "화산 왕관이 눈을 가려 머리 위로 올려야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -52,
+        "size": 104
+      }
+    }
+  },
+  {
+    "id": "epic_009",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "epic_010",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "epic_011",
+    "state": "realign",
+    "reason": "탐험가 장비가 얼굴을 덮어 몸통 중심으로 내려야 함.",
+    "placement": {
+      "slot": "body",
+      "defaultAlignment": {
+        "x": 8,
+        "y": 22,
+        "size": 88
+      }
+    }
+  },
+  {
+    "id": "epic_012",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "legendary_001",
+    "state": "redraw",
+    "reason": "관과 망토가 한 덩어리로 몸통에 겹쳐 위치값만으로는 두 구성품을 맞출 수 없어 다시 그려야 함."
+  },
+  {
+    "id": "legendary_002",
+    "state": "redraw",
+    "reason": "후드의 얼굴 창이 막혀 표정이 사라지므로 투명한 얼굴 공간과 장식을 다시 그려야 함."
+  },
+  {
+    "id": "legendary_003",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "legendary_004",
+    "state": "redraw",
+    "reason": "전설 세트치고 구성과 실루엣이 작고 단순해 시계 장비 디테일을 보강해야 함."
+  },
+  {
+    "id": "special_001",
+    "state": "redraw",
+    "reason": "특수 등급 세트의 각 부품이 지나치게 작고 흩어져 감자 새싹 콘셉트를 선명하게 다시 그려야 함."
+  },
+  {
+    "id": "common_041",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_042",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_043",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_044",
+    "state": "realign",
+    "reason": "꽃 안경이 입에 걸려 눈 위치로 올려야 함.",
+    "placement": {
+      "slot": "face",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -22,
+        "size": 104
+      }
+    }
+  },
+  {
+    "id": "common_045",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_046",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_047",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_048",
+    "state": "realign",
+    "reason": "메신저백이 얼굴 옆에 떠 있어 몸통 위치로 내려야 함.",
+    "placement": {
+      "slot": "body",
+      "defaultAlignment": {
+        "x": 8,
+        "y": 17,
+        "size": 96
+      }
+    }
+  },
+  {
+    "id": "common_049",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_050",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_051",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_052",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_053",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_054",
+    "state": "realign",
+    "reason": "헤드램프가 눈을 가려 이마로 올려야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -36,
+        "size": 104
+      }
+    }
+  },
+  {
+    "id": "common_055",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_056",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_057",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_058",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_059",
+    "state": "realign",
+    "reason": "하트 머리핀이 얼굴 중앙에 있어 머리 오른쪽으로 옮겨야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 18,
+        "y": -34,
+        "size": 88
+      }
+    }
+  },
+  {
+    "id": "common_060",
+    "state": "realign",
+    "reason": "선캡이 눈을 가려 이마로 올려야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -48,
+        "size": 104
+      }
+    }
+  },
+  {
+    "id": "rare_025",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_026",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_027",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_028",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_029",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_030",
+    "state": "realign",
+    "reason": "장난감 병정 모자가 눈을 가려 머리 위로 올려야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -42,
+        "size": 104
+      }
+    }
+  },
+  {
+    "id": "rare_031",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_032",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_033",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_034",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_035",
+    "state": "redraw",
+    "reason": "보닛 얼굴 창이 불투명해 캐릭터 얼굴이 사라지므로 투명 구조로 다시 그려야 함."
+  },
+  {
+    "id": "rare_036",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_037",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_038",
+    "state": "realign",
+    "reason": "축제 머리띠가 눈을 가려 이마로 올려야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -40,
+        "size": 100
+      }
+    }
+  },
+  {
+    "id": "epic_013",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "epic_014",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "epic_015",
+    "state": "realign",
+    "reason": "조개 왕관이 눈을 가려 머리 위로 올려야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -52,
+        "size": 104
+      }
+    }
+  },
+  {
+    "id": "epic_016",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "epic_017",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "epic_018",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "epic_019",
+    "state": "realign",
+    "reason": "대마법사 모자가 눈을 가려 머리 위로 올려야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -54,
+        "size": 104
+      }
+    }
+  },
+  {
+    "id": "legendary_005",
+    "state": "realign",
+    "reason": "레비아탄 왕관이 눈을 가려 머리 위로 올려야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -48,
+        "size": 100
+      }
+    }
+  },
+  {
+    "id": "legendary_006",
+    "state": "redraw",
+    "reason": "관과 망토가 한 덩어리로 얼굴을 가려 각 구성품이 맞는 위치에 오도록 다시 그려야 함."
+  },
+  {
+    "id": "legendary_007",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "special_002",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_061",
+    "state": "redraw",
+    "reason": "이름은 차장 세트지만 원본에는 모자만 보여 제복 구성을 추가해야 함."
+  },
+  {
+    "id": "common_062",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_063",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_064",
+    "state": "redraw",
+    "reason": "이름은 반다나와 앞치마지만 원본에는 반다나만 보여 앞치마를 추가해야 함."
+  },
+  {
+    "id": "common_065",
+    "state": "redraw",
+    "reason": "이름은 모자와 쌍안경 가방이지만 원본에는 모자만 보여 가방을 추가해야 함."
+  },
+  {
+    "id": "common_066",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_067",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_068",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_069",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_070",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_071",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "common_072",
+    "state": "realign",
+    "reason": "마시멜로 모자가 얼굴 전체를 덮어 위로 올리고 조금 줄여야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -40,
+        "size": 92
+      }
+    }
+  },
+  {
+    "id": "rare_039",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_040",
+    "state": "redraw",
+    "reason": "스쿠버 돔 얼굴 창이 어둡게 막혀 캐릭터 얼굴이 사라지므로 다시 그려야 함."
+  },
+  {
+    "id": "rare_041",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_042",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_043",
+    "state": "realign",
+    "reason": "바이킹 투구가 눈을 가려 머리 위로 올려야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -50,
+        "size": 104
+      }
+    }
+  },
+  {
+    "id": "rare_044",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_045",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_046",
+    "state": "redraw",
+    "reason": "이름은 탐정 세트지만 원본에는 모자만 보여 탐정 소품을 추가해야 함."
+  },
+  {
+    "id": "rare_047",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "rare_048",
+    "state": "realign",
+    "reason": "벨벳 모자가 눈을 가려 머리 위로 올려야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -38,
+        "size": 104
+      }
+    }
+  },
+  {
+    "id": "epic_020",
+    "state": "realign",
+    "reason": "쇼군 갑주가 얼굴을 가려 머리 위로 올려야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -54,
+        "size": 104
+      }
+    }
+  },
+  {
+    "id": "epic_021",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "epic_022",
+    "state": "realign",
+    "reason": "폭풍 왕관이 눈을 가려 머리 위로 올려야 함.",
+    "placement": {
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -52,
+        "size": 104
+      }
+    }
+  },
+  {
+    "id": "epic_023",
+    "state": "redraw",
+    "reason": "이름은 대연금술사 세트지만 원본에는 머리 장식만 보여 의상 구성을 추가해야 함."
+  },
+  {
+    "id": "epic_024",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "legendary_008",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "legendary_009",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  },
+  {
+    "id": "special_003",
+    "state": "keep",
+    "reason": "원본 디테일과 착용 위치가 이름 및 슬롯에 부합함."
+  }
+]

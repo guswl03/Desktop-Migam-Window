@@ -232,11 +232,11 @@
       <svg x="128" y="728" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../common/common_013.png" x="124" y="720" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../common/common_013.png" x="124" y="704" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
       <text x="16" y="888" class="id">common_013</text>
       <text x="16" y="915" class="name"><title>수면 안대</title>수면 안대</text>
       <text x="16" y="940" class="meta">COMMON · face</text>
-      <text x="16" y="964" class="meta">x -4 · y -8 · size 104</text>
+      <text x="16" y="964" class="meta">x -4 · y -24 · size 104</text>
       <text x="16" y="991" class="file">common/common_013.png</text>
     </g>
     <g class="costume-cell" data-id="common_014">
@@ -249,11 +249,11 @@
       <svg x="368" y="728" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../common/common_014.png" x="364" y="698" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../common/common_014.png" x="364" y="680" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
       <text x="256" y="888" class="id">common_014</text>
       <text x="256" y="915" class="name"><title>종이 파티 왕관</title>종이 파티 왕관</text>
       <text x="256" y="940" class="meta">COMMON · head</text>
-      <text x="256" y="964" class="meta">x -4 · y -30 · size 104</text>
+      <text x="256" y="964" class="meta">x -4 · y -48 · size 104</text>
       <text x="256" y="991" class="file">common/common_014.png</text>
     </g>
     <g class="costume-cell" data-id="common_015">
@@ -419,11 +419,11 @@
       <svg x="1328" y="1068" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../common/common_024.png" x="1324" y="1038" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../common/common_024.png" x="1324" y="1024" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
       <text x="1216" y="1228" class="id">common_024</text>
       <text x="1216" y="1255" class="name"><title>운동 머리띠</title>운동 머리띠</text>
       <text x="1216" y="1280" class="meta">COMMON · head</text>
-      <text x="1216" y="1304" class="meta">x -4 · y -30 · size 104</text>
+      <text x="1216" y="1304" class="meta">x -4 · y -44 · size 104</text>
       <text x="1216" y="1331" class="file">common/common_024.png</text>
     </g>
     <g class="costume-cell" data-id="common_025">
@@ -436,11 +436,11 @@
       <svg x="128" y="1408" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../common/common_025.png" x="124" y="1378" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../common/common_025.png" x="124" y="1432" width="96" height="96" preserveAspectRatio="xMidYMid meet" />
       <text x="16" y="1568" class="id">common_025</text>
       <text x="16" y="1595" class="name"><title>미니 카메라</title>미니 카메라</text>
-      <text x="16" y="1620" class="meta">COMMON · head</text>
-      <text x="16" y="1644" class="meta">x -4 · y -30 · size 104</text>
+      <text x="16" y="1620" class="meta">COMMON · neck</text>
+      <text x="16" y="1644" class="meta">x -4 · y 24 · size 96</text>
       <text x="16" y="1671" class="file">common/common_025.png</text>
     </g>
     <g class="costume-cell" data-id="common_026">
@@ -623,11 +623,11 @@
       <svg x="1328" y="1748" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../common/common_036.png" x="1324" y="1718" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../common/common_036.png" x="1346" y="1710" width="96" height="96" preserveAspectRatio="xMidYMid meet" />
       <text x="1216" y="1908" class="id">common_036</text>
       <text x="1216" y="1935" class="name"><title>꽃 머리핀</title>꽃 머리핀</text>
       <text x="1216" y="1960" class="meta">COMMON · head</text>
-      <text x="1216" y="1984" class="meta">x -4 · y -30 · size 104</text>
+      <text x="1216" y="1984" class="meta">x 18 · y -38 · size 96</text>
       <text x="1216" y="2011" class="file">common/common_036.png</text>
     </g>
     <g class="costume-cell" data-id="common_037">
@@ -674,11 +674,11 @@
       <svg x="608" y="2088" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../common/common_039.png" x="604" y="2058" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../common/common_039.png" x="626" y="2048" width="96" height="96" preserveAspectRatio="xMidYMid meet" />
       <text x="496" y="2248" class="id">common_039</text>
       <text x="496" y="2275" class="name"><title>물방울 리본</title>물방울 리본</text>
       <text x="496" y="2300" class="meta">COMMON · head</text>
-      <text x="496" y="2324" class="meta">x -4 · y -30 · size 104</text>
+      <text x="496" y="2324" class="meta">x 18 · y -40 · size 96</text>
       <text x="496" y="2351" class="file">common/common_039.png</text>
     </g>
     <g class="costume-cell" data-id="common_040">
@@ -759,11 +759,11 @@
       <svg x="368" y="2428" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../common/common_044.png" x="364" y="2420" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../common/common_044.png" x="364" y="2406" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
       <text x="256" y="2588" class="id">common_044</text>
       <text x="256" y="2615" class="name"><title>꽃무늬 안경</title>꽃무늬 안경</text>
       <text x="256" y="2640" class="meta">COMMON · face</text>
-      <text x="256" y="2664" class="meta">x -4 · y -8 · size 104</text>
+      <text x="256" y="2664" class="meta">x -4 · y -22 · size 104</text>
       <text x="256" y="2691" class="file">common/common_044.png</text>
     </g>
     <g class="costume-cell" data-id="common_045">
@@ -827,11 +827,11 @@
       <svg x="1328" y="2428" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../common/common_048.png" x="1324" y="2398" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../common/common_048.png" x="1336" y="2445" width="96" height="96" preserveAspectRatio="xMidYMid meet" />
       <text x="1216" y="2588" class="id">common_048</text>
       <text x="1216" y="2615" class="name"><title>미니 메신저백</title>미니 메신저백</text>
-      <text x="1216" y="2640" class="meta">COMMON · head</text>
-      <text x="1216" y="2664" class="meta">x -4 · y -30 · size 104</text>
+      <text x="1216" y="2640" class="meta">COMMON · body</text>
+      <text x="1216" y="2664" class="meta">x 8 · y 17 · size 96</text>
       <text x="1216" y="2691" class="file">common/common_048.png</text>
     </g>
     <g class="costume-cell" data-id="common_049">
@@ -929,11 +929,11 @@
       <svg x="1328" y="2768" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../common/common_054.png" x="1324" y="2738" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../common/common_054.png" x="1324" y="2732" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
       <text x="1216" y="2928" class="id">common_054</text>
       <text x="1216" y="2955" class="name"><title>캠핑 헤드램프</title>캠핑 헤드램프</text>
       <text x="1216" y="2980" class="meta">COMMON · head</text>
-      <text x="1216" y="3004" class="meta">x -4 · y -30 · size 104</text>
+      <text x="1216" y="3004" class="meta">x -4 · y -36 · size 104</text>
       <text x="1216" y="3031" class="file">common/common_054.png</text>
     </g>
     <g class="costume-cell" data-id="common_055">
@@ -1014,11 +1014,11 @@
       <svg x="1088" y="3108" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../common/common_059.png" x="1084" y="3078" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../common/common_059.png" x="1106" y="3074" width="88" height="88" preserveAspectRatio="xMidYMid meet" />
       <text x="976" y="3268" class="id">common_059</text>
       <text x="976" y="3295" class="name"><title>하트 머리핀</title>하트 머리핀</text>
       <text x="976" y="3320" class="meta">COMMON · head</text>
-      <text x="976" y="3344" class="meta">x -4 · y -30 · size 104</text>
+      <text x="976" y="3344" class="meta">x 18 · y -34 · size 88</text>
       <text x="976" y="3371" class="file">common/common_059.png</text>
     </g>
     <g class="costume-cell" data-id="common_060">
@@ -1031,11 +1031,11 @@
       <svg x="1328" y="3108" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../common/common_060.png" x="1324" y="3078" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../common/common_060.png" x="1324" y="3060" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
       <text x="1216" y="3268" class="id">common_060</text>
       <text x="1216" y="3295" class="name"><title>흰색 선캡</title>흰색 선캡</text>
       <text x="1216" y="3320" class="meta">COMMON · head</text>
-      <text x="1216" y="3344" class="meta">x -4 · y -30 · size 104</text>
+      <text x="1216" y="3344" class="meta">x -4 · y -48 · size 104</text>
       <text x="1216" y="3371" class="file">common/common_060.png</text>
     </g>
     <g class="costume-cell" data-id="common_061">
@@ -1235,11 +1235,11 @@
       <svg x="1328" y="3788" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../common/common_072.png" x="1324" y="3758" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../common/common_072.png" x="1324" y="3748" width="92" height="92" preserveAspectRatio="xMidYMid meet" />
       <text x="1216" y="3948" class="id">common_072</text>
       <text x="1216" y="3975" class="name"><title>구운 마시멜로 모자</title>구운 마시멜로 모자</text>
       <text x="1216" y="4000" class="meta">COMMON · head</text>
-      <text x="1216" y="4024" class="meta">x -4 · y -30 · size 104</text>
+      <text x="1216" y="4024" class="meta">x -4 · y -40 · size 92</text>
       <text x="1216" y="4051" class="file">common/common_072.png</text>
     </g>
 </svg>

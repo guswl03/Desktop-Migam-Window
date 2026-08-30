@@ -201,7 +201,7 @@
       "slot": "face",
       "defaultAlignment": {
         "x": -4,
-        "y": -8,
+        "y": -24,
         "size": 104
       }
     },
@@ -216,7 +216,7 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
+        "y": -48,
         "size": 104
       }
     },
@@ -366,7 +366,7 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
+        "y": -44,
         "size": 104
       }
     },
@@ -378,11 +378,11 @@
       "file": "common/common_025.png",
       "source": "catalog-81/03-common-19-27.png",
       "sourceSlot": 6,
-      "slot": "head",
+      "slot": "neck",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
-        "size": 104
+        "y": 24,
+        "size": 96
       }
     },
     {
@@ -545,9 +545,9 @@
       "sourceSlot": 8,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 18,
+        "y": -38,
+        "size": 96
       }
     },
     {
@@ -590,9 +590,9 @@
       "sourceSlot": 2,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 18,
+        "y": -40,
+        "size": 96
       }
     },
     {
@@ -621,8 +621,8 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
-        "size": 104
+        "y": -58,
+        "size": 100
       }
     },
     {
@@ -651,7 +651,7 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
+        "y": -54,
         "size": 104
       }
     },
@@ -816,8 +816,8 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
-        "size": 104
+        "y": -44,
+        "size": 92
       }
     },
     {
@@ -936,7 +936,7 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
+        "y": -40,
         "size": 104
       }
     },
@@ -981,8 +981,8 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
-        "size": 104
+        "y": -58,
+        "size": 100
       }
     },
     {
@@ -1011,7 +1011,7 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
+        "y": -52,
         "size": 104
       }
     },
@@ -1026,7 +1026,7 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
+        "y": -48,
         "size": 104
       }
     },
@@ -1086,7 +1086,7 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
+        "y": -52,
         "size": 104
       }
     },
@@ -1128,11 +1128,11 @@
       "file": "epic/epic_011.png",
       "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
       "sourceSlot": 2,
-      "slot": "full",
+      "slot": "body",
       "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
+        "x": 8,
+        "y": 22,
+        "size": 88
       }
     },
     {
@@ -1158,11 +1158,11 @@
       "file": "legendary/legendary_001.png",
       "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
       "sourceSlot": 4,
-      "slot": "body",
+      "slot": "full",
       "defaultAlignment": {
-        "x": -4,
-        "y": 17,
-        "size": 104
+        "x": -8,
+        "y": -8,
+        "size": 112
       }
     },
     {
@@ -1281,7 +1281,7 @@
       "slot": "face",
       "defaultAlignment": {
         "x": -4,
-        "y": -8,
+        "y": -22,
         "size": 104
       }
     },
@@ -1338,11 +1338,11 @@
       "file": "common/common_048.png",
       "source": "additional-45/10-common-41-49.png",
       "sourceSlot": 7,
-      "slot": "head",
+      "slot": "body",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 8,
+        "y": 17,
+        "size": 96
       }
     },
     {
@@ -1431,7 +1431,7 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
+        "y": -36,
         "size": 104
       }
     },
@@ -1505,9 +1505,9 @@
       "sourceSlot": 0,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 18,
+        "y": -34,
+        "size": 88
       }
     },
     {
@@ -1521,7 +1521,7 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
+        "y": -48,
         "size": 104
       }
     },
@@ -1611,7 +1611,7 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
+        "y": -42,
         "size": 104
       }
     },
@@ -1731,8 +1731,8 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
-        "size": 104
+        "y": -40,
+        "size": 100
       }
     },
     {
@@ -1776,7 +1776,7 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
+        "y": -52,
         "size": 104
       }
     },
@@ -1836,7 +1836,7 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
+        "y": -54,
         "size": 104
       }
     },
@@ -1851,8 +1851,8 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
-        "size": 104
+        "y": -48,
+        "size": 100
       }
     },
     {
@@ -1863,11 +1863,11 @@
       "file": "legendary/legendary_006.png",
       "source": "additional-45/14-epic-15-19-legendary-05-07-bonus-special.png",
       "sourceSlot": 6,
-      "slot": "body",
+      "slot": "full",
       "defaultAlignment": {
-        "x": -4,
-        "y": 17,
-        "size": 104
+        "x": -8,
+        "y": -8,
+        "size": 112
       }
     },
     {
@@ -2076,8 +2076,8 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
-        "size": 104
+        "y": -40,
+        "size": 92
       }
     },
     {
@@ -2148,11 +2148,11 @@
       "file": "rare/rare_043.png",
       "source": "more-30/17-rare-39-44.png",
       "sourceSlot": 4,
-      "slot": "full",
+      "slot": "head",
       "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
+        "x": -4,
+        "y": -50,
+        "size": 104
       }
     },
     {
@@ -2226,7 +2226,7 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
+        "y": -38,
         "size": 104
       }
     },
@@ -2238,11 +2238,11 @@
       "file": "epic/epic_020.png",
       "source": "more-30/18-rare-45-48-epic-20-21.png",
       "sourceSlot": 4,
-      "slot": "full",
+      "slot": "head",
       "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
+        "x": -4,
+        "y": -54,
+        "size": 104
       }
     },
     {
@@ -2271,7 +2271,7 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
+        "y": -52,
         "size": 104
       }
     },

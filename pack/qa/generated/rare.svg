@@ -28,11 +28,11 @@
       <svg x="128" y="48" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../rare/rare_001.png" x="124" y="18" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../rare/rare_001.png" x="124" y="-10" width="100" height="100" preserveAspectRatio="xMidYMid meet" />
       <text x="16" y="208" class="id">rare_001</text>
       <text x="16" y="235" class="name"><title>보석 왕관</title>보석 왕관</text>
       <text x="16" y="260" class="meta">RARE · head</text>
-      <text x="16" y="284" class="meta">x -4 · y -30 · size 104</text>
+      <text x="16" y="284" class="meta">x -4 · y -58 · size 100</text>
       <text x="16" y="311" class="file">rare/rare_001.png</text>
     </g>
     <g class="costume-cell" data-id="rare_002">
@@ -62,11 +62,11 @@
       <svg x="608" y="48" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../rare/rare_003.png" x="604" y="18" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../rare/rare_003.png" x="604" y="-6" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
       <text x="496" y="208" class="id">rare_003</text>
       <text x="496" y="235" class="name"><title>별빛 마법사 모자</title>별빛 마법사 모자</text>
       <text x="496" y="260" class="meta">RARE · head</text>
-      <text x="496" y="284" class="meta">x -4 · y -30 · size 104</text>
+      <text x="496" y="284" class="meta">x -4 · y -54 · size 104</text>
       <text x="496" y="311" class="file">rare/rare_003.png</text>
     </g>
     <g class="costume-cell" data-id="rare_004">
@@ -249,11 +249,11 @@
       <svg x="368" y="728" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../rare/rare_014.png" x="364" y="698" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../rare/rare_014.png" x="364" y="684" width="92" height="92" preserveAspectRatio="xMidYMid meet" />
       <text x="256" y="888" class="id">rare_014</text>
       <text x="256" y="915" class="name"><title>마법 파티 모자</title>마법 파티 모자</text>
       <text x="256" y="940" class="meta">RARE · head</text>
-      <text x="256" y="964" class="meta">x -4 · y -30 · size 104</text>
+      <text x="256" y="964" class="meta">x -4 · y -44 · size 92</text>
       <text x="256" y="991" class="file">rare/rare_014.png</text>
     </g>
     <g class="costume-cell" data-id="rare_015">
@@ -385,11 +385,11 @@
       <svg x="848" y="1068" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../rare/rare_022.png" x="844" y="1038" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../rare/rare_022.png" x="844" y="1028" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
       <text x="736" y="1228" class="id">rare_022</text>
       <text x="736" y="1255" class="name"><title>카니발 광대 모자</title>카니발 광대 모자</text>
       <text x="736" y="1280" class="meta">RARE · head</text>
-      <text x="736" y="1304" class="meta">x -4 · y -30 · size 104</text>
+      <text x="736" y="1304" class="meta">x -4 · y -40 · size 104</text>
       <text x="736" y="1331" class="file">rare/rare_022.png</text>
     </g>
     <g class="costume-cell" data-id="rare_023">
@@ -521,11 +521,11 @@
       <svg x="1328" y="1408" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../rare/rare_030.png" x="1324" y="1378" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../rare/rare_030.png" x="1324" y="1366" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
       <text x="1216" y="1568" class="id">rare_030</text>
       <text x="1216" y="1595" class="name"><title>장난감 병정 모자</title>장난감 병정 모자</text>
       <text x="1216" y="1620" class="meta">RARE · head</text>
-      <text x="1216" y="1644" class="meta">x -4 · y -30 · size 104</text>
+      <text x="1216" y="1644" class="meta">x -4 · y -42 · size 104</text>
       <text x="1216" y="1671" class="file">rare/rare_030.png</text>
     </g>
     <g class="costume-cell" data-id="rare_031">
@@ -657,11 +657,11 @@
       <svg x="368" y="2088" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../rare/rare_038.png" x="364" y="2058" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../rare/rare_038.png" x="364" y="2048" width="100" height="100" preserveAspectRatio="xMidYMid meet" />
       <text x="256" y="2248" class="id">rare_038</text>
       <text x="256" y="2275" class="name"><title>축제 북 머리띠와 띠</title>축제 북 머리띠와 띠</text>
       <text x="256" y="2300" class="meta">RARE · head</text>
-      <text x="256" y="2324" class="meta">x -4 · y -30 · size 104</text>
+      <text x="256" y="2324" class="meta">x -4 · y -40 · size 100</text>
       <text x="256" y="2351" class="file">rare/rare_038.png</text>
     </g>
     <g class="costume-cell" data-id="rare_039">
@@ -742,11 +742,11 @@
       <svg x="128" y="2428" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../rare/rare_043.png" x="120" y="2420" width="112" height="112" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../rare/rare_043.png" x="124" y="2378" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
       <text x="16" y="2588" class="id">rare_043</text>
       <text x="16" y="2615" class="name"><title>북방 바이킹 세트</title>북방 바이킹 세트</text>
-      <text x="16" y="2640" class="meta">RARE · full</text>
-      <text x="16" y="2664" class="meta">x -8 · y -8 · size 112</text>
+      <text x="16" y="2640" class="meta">RARE · head</text>
+      <text x="16" y="2664" class="meta">x -4 · y -50 · size 104</text>
       <text x="16" y="2691" class="file">rare/rare_043.png</text>
     </g>
     <g class="costume-cell" data-id="rare_044">
@@ -827,11 +827,11 @@
       <svg x="1328" y="2428" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
         <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
       </svg>
-      <image href="../../rare/rare_048.png" x="1324" y="2398" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../../rare/rare_048.png" x="1324" y="2390" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
       <text x="1216" y="2588" class="id">rare_048</text>
       <text x="1216" y="2615" class="name"><title>왕실 벨벳 모자</title>왕실 벨벳 모자</text>
       <text x="1216" y="2640" class="meta">RARE · head</text>
-      <text x="1216" y="2664" class="meta">x -4 · y -30 · size 104</text>
+      <text x="1216" y="2664" class="meta">x -4 · y -38 · size 104</text>
       <text x="1216" y="2691" class="file">rare/rare_048.png</text>
     </g>
 </svg>

@@ -33,3 +33,38 @@ test("contact-sheet rows cover every candidate exactly once", () => {
     drawCandidates.map(({ id }) => id),
   );
 });
+
+test("catalog audit classifies every candidate exactly once", async () => {
+  const audit = JSON.parse(
+    await readFile(resolve(repositoryRoot, "pack/qa/catalog-audit.json"), "utf8"),
+  );
+  const validStates = new Set(["keep", "realign", "redraw"]);
+
+  assert.equal(audit.length, drawCandidates.length);
+  assert.equal(new Set(audit.map(({ id }) => id)).size, drawCandidates.length);
+  assert.deepEqual(
+    audit.map(({ id }) => id),
+    drawCandidates.map(({ id }) => id),
+  );
+
+  for (const entry of audit) {
+    assert.ok(validStates.has(entry.state), `${entry.id}: invalid state`);
+    assert.ok(entry.reason.trim().length > 0, `${entry.id}: missing reason`);
+  }
+});
+
+test("reviewed placement corrections are applied to the manifest", async () => {
+  const audit = JSON.parse(
+    await readFile(resolve(repositoryRoot, "pack/qa/catalog-audit.json"), "utf8"),
+  );
+  const costumesById = new Map(drawCandidates.map((costume) => [costume.id, costume]));
+
+  for (const entry of audit.filter(({ state }) => state === "realign")) {
+    const costume = costumesById.get(entry.id);
+    assert.deepEqual(
+      { slot: costume.slot, defaultAlignment: costume.defaultAlignment },
+      entry.placement,
+      entry.id,
+    );
+  }
+});
