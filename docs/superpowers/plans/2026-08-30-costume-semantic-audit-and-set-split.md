@@ -32,7 +32,7 @@
 - Modify: `package.json`
 
 **Interfaces:**
-- Consumes: `decodePngRgba(bytes): { width, height, data }`
+- Consumes: `readPngRgba(path): { width, height, pixels }`
 - Produces: `analyzePngSemantics(decoded, options?): SemanticMetrics`
 - `SemanticMetrics` shape: `{ bounds, edgeMargins, opaqueRatio, lowAlphaPixels, isolatedComponents, warnings }`
 
@@ -44,9 +44,9 @@ import assert from "node:assert/strict";
 import { analyzePngSemantics } from "./lib/png-rgba.mjs";
 
 function rgba(width, height, pixels) {
-  const data = new Uint8Array(width * height * 4);
-  for (const [x, y, alpha] of pixels) data[(y * width + x) * 4 + 3] = alpha;
-  return { width, height, data };
+  const rgbaPixels = new Uint8Array(width * height * 4);
+  for (const [x, y, alpha] of pixels) rgbaPixels[(y * width + x) * 4 + 3] = alpha;
+  return { width, height, pixels: rgbaPixels };
 }
 
 test("flags opaque pixels touching the canvas edge", () => {
@@ -78,7 +78,7 @@ Expected: FAIL because `analyzePngSemantics` is not exported.
 
 ```js
 export function analyzePngSemantics(
-  { width, height, data },
+  { width, height, pixels },
   { visibleAlpha = 16, dustAlpha = 32, minimumSpan = 56 } = {},
 ) {
   // Walk 8-connected visible-alpha pixels, calculate the union bounds,

@@ -148,3 +148,124 @@ export function visibleBounds(pixels, width, height) {
   }
   return right < 0 ? null : { left, top, right, bottom };
 }
+
+export function analyzePngSemantics(
+  { width, height, pixels },
+  {
+    visibleAlpha = 16,
+    dustAlpha = 32,
+    minimumSpan = 56,
+    minimumComponentPixels = 16,
+  } = {},
+) {
+  const bounds = visibleBoundsAtAlpha(pixels, width, height, visibleAlpha);
+  let visiblePixels = 0;
+  let lowAlphaPixels = 0;
+  const visible = new Uint8Array(width * height);
+
+  for (let index = 0; index < width * height; index += 1) {
+    const alpha = pixels[index * 4 + 3];
+    if (alpha > 0 && alpha < dustAlpha) lowAlphaPixels += 1;
+    if (alpha < visibleAlpha) continue;
+    visible[index] = 1;
+    visiblePixels += 1;
+  }
+
+  const components = connectedAlphaComponents(visible, width, height);
+  const isolatedComponents = components
+    .filter((component) => component.pixels < minimumComponentPixels)
+    .sort((left, right) => right.pixels - left.pixels);
+  const edgeMargins = bounds
+    ? {
+        left: bounds.left,
+        top: bounds.top,
+        right: width - 1 - bounds.right,
+        bottom: height - 1 - bounds.bottom,
+      }
+    : null;
+  const warnings = [];
+
+  if (!bounds) {
+    warnings.push("empty");
+  } else {
+    const spanX = bounds.right - bounds.left + 1;
+    const spanY = bounds.bottom - bounds.top + 1;
+    if (Object.values(edgeMargins).some((margin) => margin === 0)) {
+      warnings.push("edge-contact");
+    }
+    if (Math.max(spanX, spanY) < minimumSpan) warnings.push("undersized");
+  }
+  if (lowAlphaPixels > 0) warnings.push("alpha-dust");
+  if (isolatedComponents.length > 0) warnings.push("isolated-specks");
+
+  return {
+    bounds,
+    edgeMargins,
+    opaqueRatio: visiblePixels / (width * height),
+    lowAlphaPixels,
+    isolatedComponents,
+    warnings,
+  };
+}
+
+function visibleBoundsAtAlpha(pixels, width, height, visibleAlpha) {
+  let left = width;
+  let top = height;
+  let right = -1;
+  let bottom = -1;
+  for (let y = 0; y < height; y += 1) {
+    for (let x = 0; x < width; x += 1) {
+      if (pixels[(y * width + x) * 4 + 3] < visibleAlpha) continue;
+      left = Math.min(left, x);
+      top = Math.min(top, y);
+      right = Math.max(right, x);
+      bottom = Math.max(bottom, y);
+    }
+  }
+  return right < 0 ? null : { left, top, right, bottom };
+}
+
+function connectedAlphaComponents(visible, width, height) {
+  const visited = new Uint8Array(visible.length);
+  const components = [];
+  const neighbors = [-1, 0, 1];
+
+  for (let start = 0; start < visible.length; start += 1) {
+    if (!visible[start] || visited[start]) continue;
+    const queue = [start];
+    visited[start] = 1;
+    let cursor = 0;
+    let pixels = 0;
+    let left = width;
+    let top = height;
+    let right = -1;
+    let bottom = -1;
+
+    while (cursor < queue.length) {
+      const index = queue[cursor];
+      cursor += 1;
+      const x = index % width;
+      const y = Math.floor(index / width);
+      pixels += 1;
+      left = Math.min(left, x);
+      top = Math.min(top, y);
+      right = Math.max(right, x);
+      bottom = Math.max(bottom, y);
+
+      for (const dy of neighbors) {
+        for (const dx of neighbors) {
+          if (dx === 0 && dy === 0) continue;
+          const nextX = x + dx;
+          const nextY = y + dy;
+          if (nextX < 0 || nextX >= width || nextY < 0 || nextY >= height) continue;
+          const next = nextY * width + nextX;
+          if (!visible[next] || visited[next]) continue;
+          visited[next] = 1;
+          queue.push(next);
+        }
+      }
+    }
+    components.push({ pixels, bounds: { left, top, right, bottom } });
+  }
+  return components;
+}

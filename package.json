@@ -8,7 +8,7 @@
     "build": "tsc --noEmit && vite build --configLoader runner",
     "lint": "tsc --noEmit",
     "test": "vitest run --configLoader runner",
-    "test:assets": "node --test scripts/costume-catalog-qa.test.mjs scripts/png-normalize.test.mjs",
+    "test:assets": "node --test scripts/costume-catalog-qa.test.mjs scripts/png-normalize.test.mjs scripts/png-semantic-analysis.test.mjs",
     "costumes:validate": "node scripts/costume-catalog-qa.mjs validate",
     "costumes:validate-candidates": "node scripts/costume-promote-candidates.mjs",
     "costumes:promote-candidates": "node scripts/costume-promote-candidates.mjs --apply",
