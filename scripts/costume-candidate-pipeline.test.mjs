@@ -15,6 +15,7 @@ import {
   applyPromotion,
   assertPathInside,
   assertWindowsPathInside,
+  authorizeDirectoryChain,
   authorizePromotionRoot,
   loadAcceptedCandidates,
   planPromotion,
@@ -86,6 +87,14 @@ async function assertOriginalCatalog(root) {
       Buffer.from(`original-${id}`),
       id,
     );
+  }
+}
+
+async function assertNoPromotionArtifacts(root) {
+  for (const rarity of ["common", "rare", "epic", "legendary", "special"]) {
+    const leftovers = (await readdir(join(root, "pack", rarity)))
+      .filter((name) => /\.promote\.(tmp|bak)$/.test(name));
+    assert.deepEqual(leftovers, [], rarity);
   }
 }
 
@@ -281,10 +290,83 @@ test("promotion rolls back every original after a commit rename", async () => {
   await assertRollbackForPhase("after-commit-rename");
 });
 
+test("after-backup hook failure restores originals with no promotion artifacts", async () => {
+  const root = await mkdtemp(join(tmpdir(), "costume-promotion-after-backup-"));
+  await prepareAuthoritativePromotion(root);
+  try {
+    await assert.rejects(
+      applyPromotion({ root, failureHook: ({ currentPhase, index }) => {
+        if (currentPhase === "after-backup-rename" && index === 2) throw new Error("injected after backup failure");
+      } }),
+      /injected after backup failure/,
+    );
+    await assertOriginalCatalog(root);
+    await assertNoPromotionArtifacts(root);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("after-commit hook failure restores originals with no promotion artifacts", async () => {
+  const root = await mkdtemp(join(tmpdir(), "costume-promotion-after-commit-"));
+  await prepareAuthoritativePromotion(root);
+  try {
+    await assert.rejects(
+      applyPromotion({ root, failureHook: ({ currentPhase, index }) => {
+        if (currentPhase === "after-commit-rename" && index === 2) throw new Error("injected after commit failure");
+      } }),
+      /injected after commit failure/,
+    );
+    await assertOriginalCatalog(root);
+    await assertNoPromotionArtifacts(root);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("after-restore hook reports restored state without a null backup path", async () => {
+  const root = await mkdtemp(join(tmpdir(), "costume-promotion-after-restore-"));
+  await prepareAuthoritativePromotion(root);
+  try {
+    await assert.rejects(
+      applyPromotion({ root, failureHook: ({ currentPhase, index }) => {
+        if (currentPhase === "before-commit-rename" && index === 2) throw new Error("injected commit failure");
+        if (currentPhase === "after-restore-rename" && index === 1) throw new Error("injected after restore failure");
+      } }),
+      (error) => error instanceof AggregateError
+        && error.errors.some((entry) => /original was restored and no backup remains.*after restore failure/.test(entry.message))
+        && !error.errors.some((entry) => entry.message.includes("null") || entry.message.includes("backup preserved")),
+    );
+    await assertOriginalCatalog(root);
+    await assertNoPromotionArtifacts(root);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("after-backup-cleanup hook reports completed cleanup without a null backup path", async () => {
+  const root = await mkdtemp(join(tmpdir(), "costume-promotion-after-cleanup-"));
+  await prepareAuthoritativePromotion(root);
+  try {
+    await assert.rejects(
+      applyPromotion({ root, failureHook: ({ currentPhase, index }) => {
+        if (currentPhase === "after-backup-cleanup" && index === 2) throw new Error("injected after cleanup failure");
+      } }),
+      (error) => error instanceof AggregateError
+        && error.errors.some((entry) => /backup cleanup completed but after-hook failed.*after cleanup failure/.test(entry.message))
+        && !error.errors.some((entry) => entry.message.includes("null") || entry.message.includes("backup cleanup incomplete")),
+    );
+    assert.notDeepEqual(await readFile(join(root, "pack", "common", "common_001.png")), Buffer.from("original-common_001"));
+    await assertNoPromotionArtifacts(root);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
 test("lexical path containment rejects drive-relative, absolute, and parent escapes", () => {
   assert.equal(assertPathInside("C:\\catalog\\pack", "C:\\catalog\\pack\\common\\common_001.png"), "C:\\catalog\\pack\\common\\common_001.png");
   for (const path of ["C:\\catalog\\outside\\item.png", "D:\\catalog\\pack\\item.png", "\\\\server\\share\\item.png", "..\\outside\\item.png"]) {
-    assert.throws(() => assertPathInside("C:\\catalog\\pack", path), /(escapes|must be absolute)/);
+    assert.throws(() => assertPathInside("C:\\catalog\\pack", path), /(escapes|must be absolute|network)/);
   }
 });
 
@@ -300,9 +382,29 @@ test("Windows containment requires absolute same-volume roots and candidates", (
     ["C:\\catalog\\pack", "\\\\server\\share\\item.png"],
     ["C:\\catalog\\pack", "C:\\catalog\\pack"],
     ["C:\\catalog\\pack", "C:\\catalog\\pack\\..\\outside\\item.png"],
+    ["\\\\server\\share\\catalog", "\\\\server\\share\\catalog\\common\\item.png"],
+    ["\\\\?\\C:\\catalog\\pack", "\\\\?\\C:\\catalog\\pack\\common\\item.png"],
+    ["C:\\catalog\\pack", "\\\\.\\C:\\catalog\\pack\\common\\item.png"],
   ]) {
-    assert.throws(() => assertWindowsPathInside(root, candidate), /escapes|absolute/);
+    assert.throws(() => assertWindowsPathInside(root, candidate), /escapes|absolute|network/);
   }
+});
+
+test("ancestor authorizer rejects deterministic root and intermediate canonical redirects", async () => {
+  const root = resolve(tmpdir(), "promotion-authorizer", "nested");
+  const operations = {
+    lstat: async () => ({ isDirectory: () => true, isSymbolicLink: () => false }),
+    realpath: async (path) => path,
+  };
+  await assert.rejects(
+    authorizeDirectoryChain(root, { ...operations, realpath: async (path) => path === root ? `${path}-redirected` : path }),
+    /redirected ancestor/,
+  );
+  const intermediate = resolve(root, "..");
+  await assert.rejects(
+    authorizeDirectoryChain(root, { ...operations, realpath: async (path) => path === intermediate ? `${path}-redirected` : path }),
+    /redirected ancestor/,
+  );
 });
 
 test("root authorization rejects relative and absent roots before planning", async () => {

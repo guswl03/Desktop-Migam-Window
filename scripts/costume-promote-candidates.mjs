@@ -22,20 +22,19 @@ function assertPathInsideWith(pathApi, root, path, label) {
   if (!pathApi.isAbsolute(root) || !pathApi.isAbsolute(path)) {
     throw new Error(`${label}: root and candidate paths must be absolute`);
   }
-  const normalizedRoot = pathApi.resolve(root);
-  const normalizedPath = pathApi.resolve(path);
-  const relativePath = pathApi.relative(normalizedRoot, normalizedPath);
+  if (/^(?:\\\\|\/\/)/.test(root) || /^(?:\\\\|\/\/)/.test(path)) {
+    throw new Error(`${label}: network and device paths are not approved for local promotion`);
+  }
+  const relativePath = pathApi.relative(root, path);
   if (
     relativePath === ""
-    || isAbsolute(relativePath)
+    || pathApi.isAbsolute(relativePath)
     || relativePath === ".."
-    || relativePath.startsWith(`..${sep}`)
-    || relativePath.startsWith("../")
-    || relativePath.startsWith("..\\")
+    || relativePath.split(pathApi.sep)[0] === ".."
   ) {
     throw new Error(`${label}: path escapes its approved directory`);
   }
-  return normalizedPath;
+  return path;
 }
 
 export function assertPathInside(root, path, label = "path") {
@@ -52,10 +51,13 @@ function sameCanonicalPath(left, right) {
     : left === right;
 }
 
-export async function authorizePromotionRoot(root = repositoryRoot) {
+export async function authorizeDirectoryChain(root, {
+  lstat: lstatOperation = lstat,
+  realpath: realpathOperation = realpath,
+} = {}) {
   if (!isAbsolute(root)) throw new Error("promotion root must be absolute");
   const lexicalRoot = resolve(root);
-  const rootStat = await lstat(lexicalRoot).catch((error) => {
+  const rootStat = await lstatOperation(lexicalRoot).catch((error) => {
     if (error?.code === "ENOENT") throw new Error("promotion root must be an existing real directory");
     throw error;
   });
@@ -66,20 +68,24 @@ export async function authorizePromotionRoot(root = repositoryRoot) {
   let current = rootPath;
   for (const segment of relative(rootPath, lexicalRoot).split(sep).filter(Boolean)) {
     current = resolve(current, segment);
-    const stat = await lstat(current);
+    const stat = await lstatOperation(current);
     if (!stat.isDirectory() || stat.isSymbolicLink()) {
       throw new Error(`promotion root has a symlink or non-directory ancestor: ${current}`);
     }
-    const canonical = await realpath(current);
+    const canonical = await realpathOperation(current);
     if (!sameCanonicalPath(canonical, current)) {
       throw new Error(`promotion root has a redirected ancestor: ${current}`);
     }
   }
-  const canonicalRoot = await realpath(lexicalRoot);
+  const canonicalRoot = await realpathOperation(lexicalRoot);
   if (!sameCanonicalPath(canonicalRoot, lexicalRoot)) {
     throw new Error("promotion root resolves through a symlink or junction");
   }
   return canonicalRoot;
+}
+
+export async function authorizePromotionRoot(root = repositoryRoot) {
+  return authorizeDirectoryChain(root);
 }
 
 async function verifiedDirectory(root, directory, label) {
@@ -351,7 +357,14 @@ async function rollback(staged, failureHook) {
         runFailureHook(failureHook, "before-restore-rename", index, copy);
         await rename(backup, copy.targetPath);
         copy.backupPath = null;
-        runFailureHook(failureHook, "after-restore-rename", index, copy);
+        try {
+          runFailureHook(failureHook, "after-restore-rename", index, copy);
+        } catch (error) {
+          rollbackErrors.push(new Error(
+            `${copy.id}: original was restored and no backup remains; after-restore observation failed: ${error.message}`,
+            { cause: error },
+          ));
+        }
       }
     } catch (error) {
       rollbackErrors.push(new Error(
@@ -430,14 +443,22 @@ export async function applyPromotion(options = {}) {
     for (let index = 0; index < staged.length; index += 1) {
       const record = staged[index];
       if (!record.backupPath) continue;
+      const backup = record.backupPath;
       try {
         runFailureHook(failureHook, "before-backup-cleanup", index, record);
-        await rm(record.backupPath, { force: true });
+        await rm(backup, { force: true });
         record.backupPath = null;
-        runFailureHook(failureHook, "after-backup-cleanup", index, record);
+        try {
+          runFailureHook(failureHook, "after-backup-cleanup", index, record);
+        } catch (error) {
+          cleanupErrors.push(new Error(
+            `${record.id}: promotion committed; backup cleanup completed but after-hook failed: ${error.message}`,
+            { cause: error },
+          ));
+        }
       } catch (error) {
         cleanupErrors.push(new Error(
-          `${record.id}: promotion committed but backup cleanup incomplete at ${record.backupPath}: ${error.message}`,
+          `${record.id}: promotion committed but backup cleanup incomplete at ${backup}: ${error.message}`,
           { cause: error },
         ));
       }
