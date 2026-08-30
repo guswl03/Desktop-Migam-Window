@@ -91,7 +91,7 @@ test("accepts a complete catalog with the approved rarity and slot totals", () =
 });
 
 test("an incomplete common subset still requires all 80 approved Common IDs", () => {
-  const errors = validateBlueprint([validItem]);
+  const errors = validateBlueprint([validItem], { rarity: "common" });
   assert.ok(errors.includes("catalog: expected 80 items, got 1"));
   assert.ok(errors.includes("missing catalog ID common_080"));
   assert.ok(!errors.includes("missing catalog ID rare_001"));
@@ -170,6 +170,25 @@ test("loads every rarity file from a supplied blueprint root", async () => {
   }
 });
 
+test("default validation stays full-catalog when non-Common rarity files are empty", async () => {
+  const root = await mkdtemp(join(tmpdir(), "costume-blueprint-full-scope-"));
+  const directory = join(root, "pack", "catalog-blueprint");
+  await mkdir(directory, { recursive: true });
+  const common = completeBlueprint().filter(({ rarity }) => rarity === "common");
+  await writeFile(join(directory, "common.json"), JSON.stringify(common));
+  await Promise.all(["rare", "epic", "legendary", "special"].map((rarity) =>
+    writeFile(join(directory, `${rarity}.json`), "[]")));
+
+  try {
+    const items = await loadBlueprint(root);
+    const errors = validateBlueprint(items);
+    assert.ok(errors.includes("catalog: expected 185 items, got 80"));
+    assert.ok(errors.includes("missing catalog ID rare_001"));
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
 test("common blueprint covers its approved themes and slots", async () => {
   const common = JSON.parse(await readFile(
     new URL("../pack/catalog-blueprint/common.json", import.meta.url),
@@ -182,7 +201,18 @@ test("common blueprint covers its approved themes and slots", async () => {
   });
   assert.deepEqual(countBy(common, "slot"), { head: 44, face: 12, neck: 10, body: 14 });
   assert.deepEqual(common.map(({ id }) => id), expectedIds("common", 80));
-  assert.deepEqual(validateBlueprint(common), []);
+  assert.deepEqual(validateBlueprint(common, { rarity: "common" }), []);
+});
+
+test("common blueprint later headwear types do not reuse first-half form labels", async () => {
+  const common = JSON.parse(await readFile(
+    new URL("../pack/catalog-blueprint/common.json", import.meta.url),
+  ));
+  const laterHeadwear = common.slice(40).filter(({ slot }) => slot === "head");
+  const reused = laterHeadwear
+    .filter(({ name }) => ["보닛", "두건", "후드", "캡"].some((form) => name.includes(form)))
+    .map(({ id, name }) => `${id} ${name}`);
+  assert.deepEqual(reused, []);
 });
 
 test("common blueprint CLI validates only the Common document", async () => {

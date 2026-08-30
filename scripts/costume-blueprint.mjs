@@ -63,15 +63,13 @@ export function expectedCatalogIds(scopeRarity = null) {
   ));
 }
 
-export function validateBlueprint(items) {
+export function validateBlueprint(items, { rarity: scopeRarity = null } = {}) {
   if (!Array.isArray(items)) return ["blueprint: items must be an array"];
+  if (scopeRarity !== null && !allowedRarities.has(scopeRarity)) {
+    return [`blueprint: unsupported validation rarity ${scopeRarity}`];
+  }
 
   const errors = [];
-  const declaredRarities = new Set(items.map((item) => {
-    const match = typeof item?.id === "string" ? item.id.match(/^([a-z]+)_\d{3}$/) : null;
-    return match && allowedRarities.has(match[1]) ? match[1] : null;
-  }).filter(Boolean));
-  const scopeRarity = declaredRarities.size === 1 ? [...declaredRarities][0] : null;
   const expectedIds = expectedCatalogIds(scopeRarity);
   const expectedRarityCounts = scopeRarity
     ? { [scopeRarity]: rarityCounts[scopeRarity] }
@@ -231,7 +229,7 @@ async function main() {
     throw new Error("usage: node scripts/costume-blueprint.mjs validate [--rarity <rarity>]");
   }
   const items = await loadBlueprint(repositoryRoot, rarity);
-  const errors = validateBlueprint(items);
+  const errors = validateBlueprint(items, { rarity });
   if (errors.length) throw new Error(errors.join("\n"));
   if (rarity) {
     const slotCounts = countByKeys([...allowedSlots]);
