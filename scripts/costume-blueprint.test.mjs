@@ -298,6 +298,21 @@ test("rare blueprint covers its approved themes and slots", async () => {
   assert.deepEqual(validateBlueprint(rare, { rarity: "rare" }), []);
 });
 
+test("epic blueprint covers its approved themes and slots", async () => {
+  const epic = JSON.parse(await readFile(
+    new URL("../pack/catalog-blueprint/epic.json", import.meta.url),
+  ));
+  assert.deepEqual(countBy(epic, "theme"), {
+    "마법 학파 장비": 8,
+    "원소 장비": 8,
+    "신비 조직 장비": 8,
+    "꿈·차원 장비": 7,
+  });
+  assert.deepEqual(countBy(epic, "slot"), { head: 16, face: 5, neck: 4, body: 6 });
+  assert.deepEqual(epic.map(({ id }) => id), expectedIds("epic", 31));
+  assert.deepEqual(validateBlueprint(epic, { rarity: "epic" }), []);
+});
+
 test("assembles a standalone transparent image prompt", () => {
   const prompt = buildImagePrompt(validItem, "approved style lock");
   assert.match(prompt, /Asset type: standalone common desktop-pet costume icon/);
