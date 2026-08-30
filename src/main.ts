@@ -15,6 +15,7 @@ import { costumeById } from "./costumes/catalog";
 import { resolveCostumeAlignment, type CostumeAlignment } from "./costumes/alignment";
 import { attachPetContextMenu } from "./pet/context-menu";
 import { mountPetContextMenu } from "./pet/context-menu-view";
+import { developmentTestFeatures } from "./pet/context-menu-actions";
 import { mountPhotoDelivery, startPhotoDeliveryScheduler } from "./pet/photo-delivery-view";
 import { mountClimbRope } from "./pet/climb-rope-view";
 import { startPetMotion } from "./pet/tauri-motion-runtime";
@@ -169,6 +170,11 @@ function renderSettings(
   emergencyShortcutAvailable: boolean,
   trayAvailable: boolean,
 ): void {
+  const developmentTestMarkup = developmentTestFeatures(import.meta.env.DEV).settings
+    .map(({ action, label }) =>
+      `<button type="button" class="secondary" data-development-test="${action}">${label}</button>`,
+    )
+    .join("");
   let rules = settings.focusGuard.rules.map((rule) => ({ ...rule }));
   app!.innerHTML = `
     <main class="panel settings-panel">
@@ -192,6 +198,8 @@ function renderSettings(
           </label>
           <p id="resource-status" class="detection-status" role="status">CPU --% · 메모리 --%</p>
           <label class="checkbox-row"><input name="automaticPhotoDeliveryEnabled" type="checkbox" ${settings.pet.automaticPhotoDeliveryEnabled ? "checked" : ""} /> <span class="setting-label-text">자동 사진 배달 ${settingsHelp("automaticPhotoDelivery")}</span></label>
+          <label class="checkbox-row"><input name="windowClimbingEnabled" type="checkbox" ${settings.pet.windowClimbingEnabled ? "checked" : ""} /> <span class="setting-label-text">창 위로 올라가기 ${settingsHelp("windowClimbing")}</span></label>
+          ${developmentTestMarkup}
         </fieldset>
         <fieldset>
           <legend>뽀모도로</legend>
@@ -222,6 +230,24 @@ function renderSettings(
   const status = document.querySelector<HTMLSpanElement>("#save-status");
   const ruleList = document.querySelector<HTMLDivElement>("#rule-list");
   const intervention = form?.elements.namedItem("interventionEnabled") as HTMLInputElement | null;
+  if (import.meta.env.DEV) {
+    document.querySelector<HTMLButtonElement>('[data-development-test="rare-photo"]')
+      ?.addEventListener("click", async () => {
+        if (status) status.textContent = "희귀 사진 테스트를 시작하는 중입니다.";
+        try {
+          const started = await invoke<boolean>("start_photo_delivery", {
+            forceSpecialPhoto: true,
+          });
+          if (status) {
+            status.textContent = started
+              ? "희귀 사진 이스터에그 테스트를 시작했습니다."
+              : "사진 배달이 이미 진행 중입니다.";
+          }
+        } catch {
+          if (status) status.textContent = "희귀 사진 테스트를 시작하지 못했습니다.";
+        }
+      });
+  }
   const redrawRules = (): void => {
     if (ruleList) ruleList.innerHTML = ruleRows(rules);
     if (intervention) {
@@ -277,6 +303,7 @@ function renderSettings(
         visualScalePercent: numberValue(values, "visualScalePercent"),
         resourceResponseMode: String(values.get("resourceResponseMode")) as ResourceResponseMode,
         automaticPhotoDeliveryEnabled: values.has("automaticPhotoDeliveryEnabled"),
+        windowClimbingEnabled: values.has("windowClimbingEnabled"),
       },
       pomodoro: {
         focusMinutes: numberValue(values, "focusMinutes"),

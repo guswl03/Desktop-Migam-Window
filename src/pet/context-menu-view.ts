@@ -1,5 +1,9 @@
 import { invoke } from "@tauri-apps/api/core";
-import { contextUtilityCommand, showUtilityThenHideMenu } from "./context-menu-actions";
+import {
+  contextUtilityCommand,
+  developmentTestFeatures,
+  showUtilityThenHideMenu,
+} from "./context-menu-actions";
 import { invokeWhenReady } from "../tauri/invoke-when-ready";
 import { listen } from "@tauri-apps/api/event";
 import type { SystemMetricsState } from "../contracts";
@@ -16,6 +20,11 @@ const phaseLabels: Record<TimerState["phase"], string> = {
 };
 
 export async function mountPetContextMenu(container: HTMLElement): Promise<() => void> {
+  const testCommandMarkup = developmentTestFeatures(import.meta.env.DEV).contextMenu
+    .map(({ action, shortcut, label, detail }) =>
+      `<button type="button" data-action="${action}"><kbd>${shortcut}</kbd><span>${label}</span><small>${detail}</small></button>`,
+    )
+    .join("");
   container.innerHTML = `
     <main class="pet-command" aria-label="감자봇 명령 메뉴">
       <header class="pet-command-title"><span>MigamDesktop.Command</span><button type="button" data-close aria-label="닫기">×</button></header>
@@ -28,8 +37,7 @@ export async function mountPetContextMenu(container: HTMLElement): Promise<() =>
       <div class="pet-command-line"><span>0:000&gt;</span><span>select command_</span></div>
       <nav class="pet-command-list" aria-label="명령">
         <button type="button" data-action="gamcha"><kbd>G</kbd><span>GAMCHA!</span><small>보상·옷장</small></button>
-        <button type="button" data-action="photo"><kbd>P</kbd><span>사진 배달 테스트</span><small>DELIVER</small></button>
-        <button type="button" data-action="battery"><kbd>B</kbd><span>저전력 이벤트 테스트</span><small>20%</small></button>
+        ${testCommandMarkup}
         <button type="button" data-action="timer"><kbd>T</kbd><span>타이머 표시</span><small>SHOW</small></button>
         <button type="button" data-action="todo"><kbd>✓</kbd><span>투두리스트</span><small>TODAY</small></button>
         <button type="button" data-action="start"><kbd>F5</kbd><span>집중 시작</span><small>RUN</small></button>
