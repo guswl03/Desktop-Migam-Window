@@ -8,6 +8,7 @@ use std::{
 
 use serde::{Deserialize, Serialize};
 
+use crate::domain::costume_catalog::costume_ids_for;
 use crate::domain::gamcha::{rarity_for_roll, GamchaRarity};
 
 const SCHEMA_VERSION: u8 = 1;
@@ -129,14 +130,14 @@ impl GamchaService {
 
         let mut next = progress.clone();
         let rarity = rarity_for_roll(Self::random_u16()? % 10_000);
-        let unowned = (0..rarity.count())
-            .map(|index| rarity.costume_id(index))
-            .filter(|id| !next.owned_costume_ids.contains(id))
+        let rarity_pool = costume_ids_for(rarity);
+        let unowned = rarity_pool
+            .iter()
+            .filter(|id| !next.owned_costume_ids.contains(id.as_str()))
+            .cloned()
             .collect::<Vec<_>>();
         let pool = if unowned.is_empty() {
-            (0..rarity.count())
-                .map(|index| rarity.costume_id(index))
-                .collect::<Vec<_>>()
+            rarity_pool.to_vec()
         } else {
             unowned
         };
