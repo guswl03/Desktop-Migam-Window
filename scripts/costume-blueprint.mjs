@@ -259,7 +259,9 @@ async function main() {
     );
     return;
   }
-  console.log(`blueprint valid: ${items.length} items`);
+  console.log(
+    `items=${items.length} missing=0 duplicateName=0 duplicateSilhouette=0 duplicatePalette=0 duplicateDetail=0`,
+  );
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {

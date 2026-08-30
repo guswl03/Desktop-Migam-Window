@@ -1,0 +1,92 @@
+[
+  {
+    "id": "special_001",
+    "rarity": "special",
+    "name": "빛그림배달 포켓망토",
+    "slot": "body",
+    "theme": "사진 배달",
+    "silhouette": "넓은 세로 빛그림판을 감싼 두꺼운 천테가 아래의 둥근 배달주머니로 이어진 망토 윤곽",
+    "palette": {
+      "primary": "배달밤청록색",
+      "secondary": "빛그림유백색",
+      "accent": "추억살구색"
+    },
+    "material": "포근한 모직과 진주빛 감광천",
+    "signatureDetail": "빈 빛그림면 한쪽 모서리를 감싼 살구색 천접힘",
+    "prompt": "빈 유백색 빛그림면과 둥근 배달주머니가 두꺼운 천테로 완전히 이어진 단일 포켓망토 한 개, 빛그림면에는 장면이나 글자 없이 포근한 사진 배달 은유만 표현",
+    "defaultAlignment": { "x": 1, "y": 24, "size": 120 },
+    "qaState": "planned"
+  },
+  {
+    "id": "special_002",
+    "rarity": "special",
+    "name": "몰입불씨 초읽기모",
+    "slot": "head",
+    "theme": "집중 타이머",
+    "silhouette": "낮은 쿠션띠 위에 두꺼운 원형 초읽기판 하나가 비스듬히 서고 꼭대기 감김손잡이와 이어진 윤곽",
+    "palette": {
+      "primary": "몰입남보라색",
+      "secondary": "초읽기크림색",
+      "accent": "불씨귤빛"
+    },
+    "material": "쿠션가죽과 따뜻한 유백 도자",
+    "signatureDetail": "숫자 없는 원판에 남은 귤빛 부채꼴 한 칸",
+    "prompt": "원형 초읽기판과 꼭대기 감김손잡이와 쿠션띠가 모두 붙은 단일 머리 장식 한 개, 숫자나 글자나 주변 사물 없이 남은 시간을 뜻하는 귤빛 부채꼴 한 칸만 표현",
+    "defaultAlignment": { "x": -1, "y": -36, "size": 116 },
+    "qaState": "planned"
+  },
+  {
+    "id": "special_003",
+    "rarity": "special",
+    "name": "창턱오름 갈고리칼라",
+    "slot": "neck",
+    "theme": "창 오르기",
+    "silhouette": "굵은 밧줄칼라의 앞쪽이 길게 굽어 하나의 큰 J자 갈고리 끝으로 이어진 윤곽",
+    "palette": {
+      "primary": "창틀하늘색",
+      "secondary": "오름밧줄베이지색",
+      "accent": "갈고리라즈베리색"
+    },
+    "material": "폭신한 마법밧줄과 무광 경금속",
+    "signatureDetail": "J자 갈고리 안쪽의 라즈베리색 창턱받침 한 칸",
+    "prompt": "굵은 밧줄칼라가 앞의 큰 J자 갈고리까지 끊김 없이 이어진 단일 목 장식 한 개, 주변 사물이나 캐릭터 없이 창턱을 오르는 기능을 포근한 모험 장비로 표현",
+    "defaultAlignment": { "x": 2, "y": 13, "size": 110 },
+    "qaState": "planned"
+  },
+  {
+    "id": "special_004",
+    "rarity": "special",
+    "name": "감차 행운캡슐단안경",
+    "slot": "face",
+    "theme": "GAMCHA",
+    "silhouette": "큰 원형 캡슐렌즈가 굵은 가로 이음선으로 나뉘고 짧은 곡선테와 한 덩어리로 붙은 윤곽",
+    "palette": {
+      "primary": "감차자주색",
+      "secondary": "캡슐민트색",
+      "accent": "행운별노랑색"
+    },
+    "material": "사탕빛 수지와 무지갯결 합금",
+    "signatureDetail": "캡슐 이음선 한쪽의 노란 네꼭지 행운홈",
+    "prompt": "원형 캡슐렌즈와 짧은 곡선테가 완전히 붙은 단일 단안경 한 개, 캡슐 안의 물체나 글자 없이 행운홈 하나로 GAMCHA를 은유",
+    "defaultAlignment": { "x": 3, "y": -8, "size": 108 },
+    "qaState": "planned"
+  },
+  {
+    "id": "special_005",
+    "rarity": "special",
+    "name": "미감이 청록감자모",
+    "slot": "head",
+    "theme": "미감이 정체성",
+    "silhouette": "한쪽이 통통하게 부푼 비정형 감자형 쿠션모 위로 짧은 새싹꼭지가 이어진 윤곽",
+    "palette": {
+      "primary": "미감청록색",
+      "secondary": "감자크림갈색",
+      "accent": "새싹연두색"
+    },
+    "material": "보송한 펠트와 누비천",
+    "signatureDetail": "통통한 옆면의 청록색 한 줄 미소굽이 박음선",
+    "prompt": "비정형 감자형 쿠션과 짧은 새싹꼭지가 붙은 단일 머리 장식 한 개, 눈이나 입이나 캐릭터 신체나 글자 없이 청록색과 미소굽이 박음선으로 미감이 정체성을 표현",
+    "defaultAlignment": { "x": 0, "y": -33, "size": 114 },
+    "qaState": "planned"
+  }
+]

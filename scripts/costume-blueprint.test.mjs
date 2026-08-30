@@ -337,6 +337,51 @@ test("epic organization emblems keep distinct topologies and unambiguous fold co
   });
 });
 
+test("complete blueprint contains 185 unique original items", async () => {
+  const items = await loadBlueprint();
+  assert.equal(items.length, 185);
+  assert.equal(new Set(items.map(({ id }) => id)).size, 185);
+  assert.equal(new Set(items.map(({ name }) => name)).size, 185);
+  assert.deepEqual(validateBlueprint(items), []);
+});
+
+test("legendary and special quotas are exact", async () => {
+  const legendary = await loadRarityBlueprint("legendary");
+  const special = await loadRarityBlueprint("special");
+
+  assert.deepEqual(legendary.map(({ id }) => id), expectedIds("legendary", 12));
+  assert.deepEqual(countBy(legendary, "theme"), {
+    "천체 장비": 3,
+    "고대 군주 장비": 3,
+    "세계수·거대 생물 장비": 3,
+    "우주 현상 장비": 3,
+  });
+  assert.deepEqual(countBy(legendary, "slot"), { head: 6, face: 2, neck: 1, body: 3 });
+  assert.deepEqual(validateBlueprint(legendary, { rarity: "legendary" }), []);
+
+  assert.deepEqual(special.map(({ id }) => id), expectedIds("special", 5));
+  assert.deepEqual(special.map(({ theme, slot }) => ({ theme, slot })), [
+    { theme: "사진 배달", slot: "body" },
+    { theme: "집중 타이머", slot: "head" },
+    { theme: "창 오르기", slot: "neck" },
+    { theme: "GAMCHA", slot: "face" },
+    { theme: "미감이 정체성", slot: "head" },
+  ]);
+  assert.deepEqual(validateBlueprint(special, { rarity: "special" }), []);
+});
+
+test("complete blueprint CLI reports the concept-lock summary", async () => {
+  const { stdout } = await execFileAsync(
+    process.execPath,
+    ["scripts/costume-blueprint.mjs", "validate"],
+    { cwd: new URL("..", import.meta.url) },
+  );
+  assert.equal(
+    stdout.trim(),
+    "items=185 missing=0 duplicateName=0 duplicateSilhouette=0 duplicatePalette=0 duplicateDetail=0",
+  );
+});
+
 test("assembles a standalone transparent image prompt", () => {
   const prompt = buildImagePrompt(validItem, "approved style lock");
   assert.match(prompt, /Asset type: standalone common desktop-pet costume icon/);
