@@ -18,9 +18,15 @@ const allowedQaStates = new Set(["planned", "candidate", "accepted", "rejected"]
 const allowedOuterShapeClasses = new Set(["other", "crown", "hood"]);
 const englishOuterShapePlaceholderPattern =
   /(?:^|[^a-z])(?:fixture|item|shape|silhouette|outer)(?:$|[^a-z])/u;
-const genericKoreanOuterShapeTokens = new Set([
-  "단일", "구조", "윤곽", "외곽", "형태", "모양", "장비", "착용물",
+const genericKoreanOuterShapeWords = new Set([
+  "단일", "단일한", "단순", "단순한", "기본", "기본적인",
+  "일반", "일반적인", "구조", "구조적", "구조적인",
+  "윤곽", "외곽", "형태", "모양", "장비", "착용물",
 ]);
+const genericKoreanParticles = [
+  "에서", "으로", "의", "은", "는", "이", "가", "을", "를",
+  "에", "로", "과", "와", "도", "만",
+];
 const catalogIdEvidencePattern = /(?:^|[^a-z0-9])(?:common|rare|epic|legendary|special)_\d{3}(?:$|[^a-z0-9])/iu;
 const repositoryRoot = fileURLToPath(new URL("..", import.meta.url));
 const APPROVED_STYLE = "polished stylized desktop-pet game icon, friendly toy-like proportions, clean readable silhouette, crisp edges";
@@ -31,11 +37,18 @@ function normalized(value) {
     : "";
 }
 
+function isGenericKoreanOuterShapeToken(token) {
+  if (genericKoreanOuterShapeWords.has(token)) return true;
+  return genericKoreanParticles.some((particle) =>
+    token.endsWith(particle)
+    && genericKoreanOuterShapeWords.has(token.slice(0, -particle.length)));
+}
+
 function isGenericOuterShapeEvidence(value) {
   if (englishOuterShapePlaceholderPattern.test(value)) return true;
   const tokens = value.match(/[\p{L}\p{N}]+/gu) ?? [];
   return tokens.length > 0
-    && tokens.every((token) => genericKoreanOuterShapeTokens.has(token));
+    && tokens.every(isGenericKoreanOuterShapeToken);
 }
 
 export function isAbsentBlueprintEntry(readError, entryError) {

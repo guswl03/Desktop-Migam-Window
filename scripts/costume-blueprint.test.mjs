@@ -482,6 +482,36 @@ test("outer-shape fingerprints fold ASCII case and order without locale-sensitiv
     error.includes("legendary_001: duplicate outer shape fingerprint with epic_001")));
 });
 
+test("Korean generic evidence normalizes only approved modifier and particle variants", () => {
+  const items = completeBlueprint();
+  const ranked = items.filter(({ rarity }) => ["epic", "legendary"].includes(rarity));
+  const genericPhrases = [
+    "단일 구조 윤곽의",
+    "단일한 구조 윤곽",
+    "기본적인 구조적인 외곽으로",
+  ];
+  genericPhrases.forEach((phrase, index) => {
+    ranked[index].silhouette += ` ${phrase}`;
+    ranked[index].outerShape.evidence = [phrase, ranked[index].outerShape.evidence[1]];
+  });
+  const legitimatePhrase = "단일고리와 외곽선";
+  ranked[3].silhouette += ` ${legitimatePhrase}`;
+  ranked[3].outerShape.evidence = [
+    legitimatePhrase,
+    ranked[3].outerShape.evidence[1],
+  ];
+
+  const errors = validateBlueprint(items);
+  assert.ok(errors.includes("epic_001: generic outer shape evidence: 단일 구조 윤곽의"));
+  assert.ok(errors.includes("epic_002: generic outer shape evidence: 단일한 구조 윤곽"));
+  assert.ok(errors.includes(
+    "epic_003: generic outer shape evidence: 기본적인 구조적인 외곽으로",
+  ));
+  assert.ok(!errors.includes(
+    "epic_004: generic outer shape evidence: 단일고리와 외곽선",
+  ));
+});
+
 test("validator still rejects excess crown or hood classes and copy-class conflicts", () => {
   const items = completeBlueprint();
   const legendary = items.filter(({ rarity }) => rarity === "legendary");
