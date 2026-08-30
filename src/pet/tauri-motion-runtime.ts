@@ -40,7 +40,13 @@ import {
 } from "./physics";
 import type { PetAnimation, PetSprite } from "./sprite";
 import { resolveMusicReaction } from "./music-stage";
-import type { BatteryState, SystemMetricsState } from "../contracts";
+import type {
+  BatteryState,
+  BootstrapState,
+  Settings,
+  SystemMetricsState,
+} from "../contracts";
+import { invokeWhenReady } from "../tauri/invoke-when-ready";
 import {
   nearestScreenSide,
   shouldRearmLowBatteryEvent,
@@ -253,6 +259,7 @@ export function startPetMotion(sprite: PetSprite): () => void {
   let unlistenTimer: (() => void) | null = null;
   let unlistenTodo: (() => void) | null = null;
   let unlistenBatteryTest: (() => void) | null = null;
+  let unlistenSettings: (() => void) | null = null;
   let celebrationTimer: number | undefined;
   let resourceSpeedMultiplier = 1;
   let latestSystemMetrics: SystemMetricsState = {
@@ -261,6 +268,7 @@ export function startPetMotion(sprite: PetSprite): () => void {
     mode: "off",
   };
   let climbableSurfaces: WindowSurface[] = [];
+  let windowClimbingEnabled = true;
   let lastAnimationFrameAt = performance.now();
   let lastRopeSyncAt = 0;
   let lastRopeGeometry = "";
@@ -539,6 +547,7 @@ export function startPetMotion(sprite: PetSprite): () => void {
       walking.workArea,
       climbableSurfaces,
       walking.supportWindowId,
+      windowClimbingEnabled,
     );
     if (collision) {
       const surfaceBounds = getSurfaceWalkingBounds(
@@ -1081,7 +1090,20 @@ export function startPetMotion(sprite: PetSprite): () => void {
       });
   };
 
+  const applyPetSettings = (settings: Settings): void => {
+    windowClimbingEnabled = settings.pet.windowClimbingEnabled;
+  };
+
   void invoke<TimerSnapshot>("get_timer_state").then(applyTimerState).catch(() => undefined);
+  void invokeWhenReady<BootstrapState>("get_bootstrap_state")
+    .then(({ settings }) => applyPetSettings(settings))
+    .catch(() => undefined);
+  void listen<Settings>("settings://saved", ({ payload }) => applyPetSettings(payload)).then(
+    (unlisten) => {
+      if (active) unlistenSettings = unlisten;
+      else unlisten();
+    },
+  );
   void listen<TimerSnapshot>("timer://state", ({ payload }) => applyTimerState(payload)).then(
     (unlisten) => {
       if (active) unlistenTimer = unlisten;
@@ -1148,6 +1170,7 @@ export function startPetMotion(sprite: PetSprite): () => void {
     unlistenTimer?.();
     unlistenTodo?.();
     unlistenBatteryTest?.();
+    unlistenSettings?.();
     if (musicStageExpanded) {
       void invoke("set_music_stage_expanded", { expanded: false }).catch(() => undefined);
     }

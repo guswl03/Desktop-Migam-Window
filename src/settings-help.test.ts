@@ -14,4 +14,14 @@ describe("settings help", () => {
     expect(settingsHelp("windowTitle")).toContain("YouTube");
     expect(settingsHelp("graceSeconds")).toContain("최소화하기 전");
   });
+
+  it("explains the window climbing switch in user-facing terms", () => {
+    let markup = "";
+
+    expect(() => {
+      markup = settingsHelp("windowClimbing" as Parameters<typeof settingsHelp>[0]);
+    }).not.toThrow();
+    expect(markup).toContain("창을 만나면");
+    expect(markup).toContain("위로 올라");
+  });
 });
