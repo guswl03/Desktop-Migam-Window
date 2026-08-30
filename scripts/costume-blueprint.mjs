@@ -16,9 +16,10 @@ const allowedRarities = new Set(Object.keys(rarityCounts));
 const allowedSlots = new Set(Object.keys(overallSlotCounts));
 const allowedQaStates = new Set(["planned", "candidate", "accepted", "rejected"]);
 const allowedOuterShapeClasses = new Set(["other", "crown", "hood"]);
-const genericOuterShapeEvidence = new Set([
-  "fixture", "item", "silhouette", "outer shape",
-  "항목", "아이템", "실루엣", "외곽", "윤곽",
+const englishOuterShapePlaceholderPattern =
+  /(?:^|[^a-z])(?:fixture|item|shape|silhouette|outer)(?:$|[^a-z])/u;
+const genericKoreanOuterShapeTokens = new Set([
+  "단일", "구조", "윤곽", "외곽", "형태", "모양", "장비", "착용물",
 ]);
 const catalogIdEvidencePattern = /(?:^|[^a-z0-9])(?:common|rare|epic|legendary|special)_\d{3}(?:$|[^a-z0-9])/iu;
 const repositoryRoot = fileURLToPath(new URL("..", import.meta.url));
@@ -26,8 +27,15 @@ const APPROVED_STYLE = "polished stylized desktop-pet game icon, friendly toy-li
 
 function normalized(value) {
   return typeof value === "string"
-    ? value.normalize("NFC").trim().replaceAll(/\s+/g, " ").toLocaleLowerCase()
+    ? value.normalize("NFC").trim().replaceAll(/\s+/g, " ").toLowerCase()
     : "";
+}
+
+function isGenericOuterShapeEvidence(value) {
+  if (englishOuterShapePlaceholderPattern.test(value)) return true;
+  const tokens = value.match(/[\p{L}\p{N}]+/gu) ?? [];
+  return tokens.length > 0
+    && tokens.every((token) => genericKoreanOuterShapeTokens.has(token));
 }
 
 export function isAbsentBlueprintEntry(readError, entryError) {
@@ -180,7 +188,7 @@ export function validateBlueprint(items, { rarity: scopeRarity = null } = {}) {
             if (catalogIdEvidencePattern.test(canonical)) {
               errors.push(`${id}: invalid ID-like outer shape evidence: ${evidence}`);
             }
-            if (genericOuterShapeEvidence.has(canonical)) {
+            if (isGenericOuterShapeEvidence(canonical)) {
               errors.push(`${id}: generic outer shape evidence: ${evidence}`);
             }
             if (!silhouette.includes(canonical)) {
@@ -271,7 +279,7 @@ function outerShapeFingerprint(item) {
     || new Set(canonical).size !== canonical.length
     || canonical.some((value) =>
       !value
-      || genericOuterShapeEvidence.has(value)
+      || isGenericOuterShapeEvidence(value)
       || catalogIdEvidencePattern.test(value)
       || !silhouette.includes(value))) {
     return "";

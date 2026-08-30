@@ -439,6 +439,12 @@ test("outer-shape evidence rejects IDs, generic placeholders, and prompt-only co
   ranked[2].prompt += " 프롬프트 전용 삼각판과 프롬프트 전용 물결밑단";
   ranked[2].outerShape.evidence = ["프롬프트 전용 삼각판", "프롬프트 전용 물결밑단"];
   ranked[3].outerShape.evidence = [ranked[3].outerShape.evidence[0]];
+  ranked[4].silhouette += " fixture-shape";
+  ranked[4].outerShape.evidence = ["fixture-shape", ranked[4].outerShape.evidence[1]];
+  ranked[5].silhouette += " 단일 구조 윤곽";
+  ranked[5].outerShape.evidence = ["단일 구조 윤곽", ranked[5].outerShape.evidence[1]];
+  ranked[6].silhouette += " OuTeR-SiLhOuEtTe";
+  ranked[6].outerShape.evidence = ["OuTeR-SiLhOuEtTe", ranked[6].outerShape.evidence[1]];
 
   const errors = validateBlueprint(items);
   assert.ok(errors.includes("epic_001: invalid ID-like outer shape evidence: epic_001"));
@@ -447,6 +453,33 @@ test("outer-shape evidence rejects IDs, generic placeholders, and prompt-only co
     "epic_003: outer shape evidence not found in silhouette: 프롬프트 전용 삼각판",
   ));
   assert.ok(errors.includes("epic_004: expected at least two outer shape evidence phrases"));
+  assert.ok(errors.includes("epic_005: generic outer shape evidence: fixture-shape"));
+  assert.ok(errors.includes("epic_006: generic outer shape evidence: 단일 구조 윤곽"));
+  assert.ok(errors.includes("epic_007: generic outer shape evidence: OuTeR-SiLhOuEtTe"));
+});
+
+test("outer-shape fingerprints fold ASCII case and order without locale-sensitive hooks", () => {
+  const items = completeBlueprint();
+  const epic = items.find(({ id }) => id === "epic_001");
+  const legendary = items.find(({ id }) => id === "legendary_001");
+  epic.silhouette += " RIDGED ARCH와 FORKED BASE";
+  epic.outerShape.evidence = ["RIDGED ARCH", "FORKED BASE"];
+  legendary.silhouette += " forked base와 ridged arch";
+  legendary.outerShape.evidence = ["forked base", "ridged arch"];
+
+  const originalLocaleLowerCase = String.prototype.toLocaleLowerCase;
+  String.prototype.toLocaleLowerCase = function localeDependentIdentity() {
+    return String(this);
+  };
+  let errors;
+  try {
+    errors = validateBlueprint(items);
+  } finally {
+    String.prototype.toLocaleLowerCase = originalLocaleLowerCase;
+  }
+
+  assert.ok(errors.some((error) =>
+    error.includes("legendary_001: duplicate outer shape fingerprint with epic_001")));
 });
 
 test("validator still rejects excess crown or hood classes and copy-class conflicts", () => {
