@@ -26,6 +26,7 @@ export interface Settings {
     visualScalePercent: number;
     resourceResponseMode: ResourceResponseMode;
     automaticPhotoDeliveryEnabled: boolean;
+    windowClimbingEnabled: boolean;
   };
   pomodoro: {
     focusMinutes: number;

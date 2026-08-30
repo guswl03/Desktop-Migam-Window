@@ -207,7 +207,9 @@ export function findClimbCollision(
   workArea: WorkArea,
   surfaces: WindowSurface[],
   supportWindowId: string | null = null,
+  windowClimbingEnabled = true,
 ): ClimbCollision | null {
+  if (!windowClimbingEnabled) return null;
   const direction = Math.sign(nextX - currentX);
   if (direction === 0) return null;
 
