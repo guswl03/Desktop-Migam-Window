@@ -19,6 +19,37 @@ const validItem = {
   qaState: "planned",
 };
 
+const slotsByRarity = {
+  common: { head: 44, face: 12, neck: 10, body: 14 },
+  rare: { head: 31, face: 8, neck: 6, body: 12 },
+  epic: { head: 16, face: 5, neck: 4, body: 6 },
+  legendary: { head: 6, face: 2, neck: 1, body: 3 },
+  special: { head: 2, face: 1, neck: 1, body: 1 },
+};
+
+function completeBlueprint() {
+  const slots = Object.fromEntries(Object.entries(slotsByRarity).map(([rarity, counts]) => [
+    rarity,
+    Object.entries(counts).flatMap(([slot, count]) => Array(count).fill(slot)),
+  ]));
+  const nextSlot = Object.fromEntries(Object.keys(slots).map((rarity) => [rarity, 0]));
+
+  return [...expectedCatalogIds()].map(([id, rarity]) => {
+    const index = nextSlot[rarity]++;
+    return {
+      ...validItem,
+      id,
+      rarity,
+      name: `아이템 ${id}`,
+      silhouette: `실루엣 ${id}`,
+      palette: { primary: `주색 ${id}`, secondary: `보조색 ${id}`, accent: `강조색 ${id}` },
+      signatureDetail: `서명 ${id}`,
+      prompt: `아이템 ${id} 하나`,
+      slot: slots[rarity][index],
+    };
+  });
+}
+
 test("declares exactly the approved 185 rarity IDs", () => {
   const ids = expectedCatalogIds();
   assert.equal(ids.size, 185);
@@ -37,6 +68,40 @@ test("rejects duplicate concepts and non-independent slots", () => {
   assert.ok(errors.some((error) => error.includes("duplicate silhouette")));
 });
 
+test("accepts a complete catalog with the approved rarity and slot totals", () => {
+  assert.deepEqual(validateBlueprint(completeBlueprint()), []);
+});
+
+test("reports missing and duplicate catalog IDs", () => {
+  const items = completeBlueprint();
+  const missing = items.filter(({ id }) => id !== "common_080");
+  const duplicate = [...missing, { ...items[0] }];
+
+  assert.ok(validateBlueprint(missing).some((error) => error.includes("missing catalog ID common_080")));
+  const duplicateErrors = validateBlueprint(duplicate);
+  assert.ok(duplicateErrors.some((error) => error.includes("common_001: duplicate ID")));
+  assert.ok(duplicateErrors.some((error) => error.includes("missing catalog ID common_080")));
+});
+
+test("reports item rarity and per-rarity slot count violations", () => {
+  const items = completeBlueprint();
+  const rare = items.find((item) => item.id === "rare_001");
+  rare.rarity = "common";
+  const common = items.find((item) => item.id === "common_001");
+  common.slot = "face";
+
+  const errors = validateBlueprint(items);
+  assert.ok(errors.some((error) => error.includes("rare_001: wrong rarity")));
+  assert.ok(errors.some((error) => error.includes("common: expected slots head=44 face=12 neck=10 body=14")));
+  assert.ok(errors.some((error) => error.includes("rare: expected slots head=31 face=8 neck=6 body=12")));
+});
+
+test("reports duplicate signature details with the duplicate item ID", () => {
+  const items = completeBlueprint();
+  items[1].signatureDetail = items[0].signatureDetail;
+  assert.ok(validateBlueprint(items).some((error) => error.includes("common_002: duplicate signature detail")));
+});
+
 test("reports each invalid schema property with its exact item ID", () => {
   const item = {
     ...validItem,
@@ -50,7 +115,8 @@ test("reports each invalid schema property with its exact item ID", () => {
     qaState: "draft",
   };
   const errors = validateBlueprint([validItem, item]);
-  assert.ok(errors.every((error) => error.startsWith("common_001:")));
+  const itemErrors = errors.filter((error) => error.startsWith("common_001:"));
+  assert.ok(itemErrors.length > 0);
   assert.ok(errors.some((error) => error.includes("wrong rarity")));
   assert.ok(errors.some((error) => error.includes("missing name")));
   assert.ok(errors.some((error) => error.includes("unsupported slot")));

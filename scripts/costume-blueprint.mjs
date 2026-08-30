@@ -3,9 +3,17 @@ import { resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 const rarityCounts = { common: 80, rare: 57, epic: 31, legendary: 12, special: 5 };
+const slotCountsByRarity = {
+  common: { head: 44, face: 12, neck: 10, body: 14 },
+  rare: { head: 31, face: 8, neck: 6, body: 12 },
+  epic: { head: 16, face: 5, neck: 4, body: 6 },
+  legendary: { head: 6, face: 2, neck: 1, body: 3 },
+  special: { head: 2, face: 1, neck: 1, body: 1 },
+};
+const overallSlotCounts = { head: 99, face: 28, neck: 22, body: 36 };
 const blueprintFiles = ["common.json", "rare.json", "epic.json", "legendary.json", "special.json"];
 const allowedRarities = new Set(Object.keys(rarityCounts));
-const allowedSlots = new Set(["head", "face", "neck", "body"]);
+const allowedSlots = new Set(Object.keys(overallSlotCounts));
 const allowedQaStates = new Set(["planned", "candidate", "accepted", "rejected"]);
 const repositoryRoot = fileURLToPath(new URL("..", import.meta.url));
 const APPROVED_STYLE = "polished stylized desktop-pet game icon, friendly toy-like proportions, clean readable silhouette, crisp edges";
@@ -18,6 +26,14 @@ function normalized(value) {
 
 function itemId(item, index) {
   return typeof item?.id === "string" && item.id.trim() ? item.id : `<item ${index + 1}>`;
+}
+
+function countByKeys(keys) {
+  return Object.fromEntries(keys.map((key) => [key, 0]));
+}
+
+function countDescription(counts) {
+  return Object.entries(counts).map(([key, count]) => `${key}=${count}`).join(" ");
 }
 
 function addDuplicateErrors(items, errors, label, valueFor) {
@@ -45,15 +61,41 @@ export function expectedCatalogIds() {
 }
 
 export function validateBlueprint(items) {
+  if (!Array.isArray(items)) return ["blueprint: items must be an array"];
+
   const errors = [];
   const expectedIds = expectedCatalogIds();
-  const requiredTextFields = [["name", "name"], ["theme", "theme"], ["silhouette", "silhouette"], ["material", "material"], ["signatureDetail", "signature detail"], ["prompt", "prompt"]];
+  const requiredTextFields = [
+    ["name", "name"],
+    ["theme", "theme"],
+    ["silhouette", "silhouette"],
+    ["material", "material"],
+    ["signatureDetail", "signature detail"],
+    ["prompt", "prompt"],
+  ];
+  const actualRarityCounts = countByKeys([...allowedRarities]);
+  const actualSlotCounts = countByKeys([...allowedSlots]);
+  const actualSlotsByRarity = Object.fromEntries(
+    [...allowedRarities].map((rarity) => [rarity, countByKeys([...allowedSlots])]),
+  );
+  const seenIds = new Map();
 
-  if (!Array.isArray(items)) return ["blueprint: items must be an array"];
+  if (items.length !== expectedIds.size) {
+    errors.push(`catalog: expected ${expectedIds.size} items, got ${items.length}`);
+  }
 
   items.forEach((item, index) => {
     const id = itemId(item, index);
-    if (!normalized(item?.id)) errors.push(`${id}: missing id`);
+    const hasId = Boolean(normalized(item?.id));
+    if (!hasId) {
+      errors.push(`${id}: missing id`);
+    } else if (!expectedIds.has(item.id)) {
+      errors.push(`${id}: unexpected catalog ID`);
+    } else if (seenIds.has(item.id)) {
+      errors.push(`${id}: duplicate ID (first declared at item ${seenIds.get(item.id) + 1})`);
+    } else {
+      seenIds.set(item.id, index);
+    }
 
     for (const [field, label] of requiredTextFields) {
       if (!normalized(item?.[field])) errors.push(`${id}: missing ${label}`);
@@ -62,13 +104,19 @@ export function validateBlueprint(items) {
     const expectedRarity = expectedIds.get(item?.id);
     if (!allowedRarities.has(item?.rarity)) {
       errors.push(`${id}: wrong rarity`);
-    } else if (expectedRarity && item.rarity !== expectedRarity) {
-      errors.push(`${id}: wrong rarity (expected ${expectedRarity}, got ${item.rarity})`);
-    } else if (!expectedRarity) {
-      errors.push(`${id}: unknown catalog ID`);
+    } else {
+      actualRarityCounts[item.rarity] += 1;
+      if (expectedRarity && item.rarity !== expectedRarity) {
+        errors.push(`${id}: wrong rarity (expected ${expectedRarity}, got ${item.rarity})`);
+      }
     }
 
-    if (!allowedSlots.has(item?.slot)) errors.push(`${id}: unsupported slot`);
+    if (!allowedSlots.has(item?.slot)) {
+      errors.push(`${id}: unsupported slot`);
+    } else {
+      actualSlotCounts[item.slot] += 1;
+      if (allowedRarities.has(item?.rarity)) actualSlotsByRarity[item.rarity][item.slot] += 1;
+    }
 
     const palette = item?.palette;
     if (!palette || typeof palette !== "object") {
@@ -86,6 +134,31 @@ export function validateBlueprint(items) {
 
     if (!allowedQaStates.has(item?.qaState)) errors.push(`${id}: invalid qaState`);
   });
+
+  for (const id of expectedIds.keys()) {
+    if (!seenIds.has(id)) errors.push(`missing catalog ID ${id}`);
+  }
+
+  if (countDescription(actualRarityCounts) !== countDescription(rarityCounts)) {
+    errors.push(
+      `catalog: expected rarities ${countDescription(rarityCounts)}, got ${countDescription(actualRarityCounts)}`,
+    );
+  }
+
+  for (const [rarity, expectedSlots] of Object.entries(slotCountsByRarity)) {
+    const actualSlots = actualSlotsByRarity[rarity];
+    if (countDescription(actualSlots) !== countDescription(expectedSlots)) {
+      errors.push(
+        `${rarity}: expected slots ${countDescription(expectedSlots)}, got ${countDescription(actualSlots)}`,
+      );
+    }
+  }
+
+  if (countDescription(actualSlotCounts) !== countDescription(overallSlotCounts)) {
+    errors.push(
+      `catalog: expected overall slots ${countDescription(overallSlotCounts)}, got ${countDescription(actualSlotCounts)}`,
+    );
+  }
 
   addDuplicateErrors(items, errors, "name", (item) => normalized(item?.name));
   addDuplicateErrors(items, errors, "silhouette", (item) => normalized(item?.silhouette));
