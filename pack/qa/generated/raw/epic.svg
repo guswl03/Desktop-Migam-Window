@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1380" height="4160" viewBox="0 0 1380 4160">
+  <title>Gamjabot epic raw costume audit</title>
+  <defs>
+    <pattern id="checker" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#f1f1f1" />
+      <rect width="8" height="8" fill="#d8d8d8" />
+      <rect x="8" y="8" width="8" height="8" fill="#d8d8d8" />
+    </pattern>
+    <style>
+      text { font-family: "Segoe UI", sans-serif; fill: #f4f4f5; }
+      .label { font: 700 12px Consolas, monospace; fill: #7fd7ff; }
+      .name { font-size: 17px; font-weight: 700; }
+      .meta { font: 12px Consolas, monospace; fill: #ffcf53; }
+      .observation { font-size: 11px; fill: #d8d8dc; }
+      .warning { font: 700 11px Consolas, monospace; fill: #ff8f70; }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#17181c" />
+
+  <g class="costume-cell" data-id="epic_001">
+    <rect x="6" y="6" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="18" y="28" class="label">RAW · 4X · epic_001</text>
+    <rect x="38" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_001.png" x="38" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="18" y="452" class="name">달빛 천상 왕관</text>
+    <text x="18" y="474" class="meta">keep · head · bounds 73,73..181,181</text>
+    <text x="18" y="494" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_002">
+    <rect x="466" y="6" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="478" y="28" class="label">RAW · 4X · epic_002</text>
+    <rect x="498" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_002.png" x="498" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="478" y="452" class="name">불사조 망토</text>
+    <text x="478" y="474" class="meta">keep · body · bounds 21,76..234,178</text>
+    <text x="478" y="494" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_003">
+    <rect x="926" y="6" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="938" y="28" class="label">RAW · 4X · epic_003</text>
+    <rect x="958" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_003.png" x="958" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="938" y="452" class="name">수정 얼음 왕관</text>
+    <text x="938" y="474" class="meta">keep · head · bounds 49,74..206,180</text>
+    <text x="938" y="494" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_004">
+    <rect x="6" y="526" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="18" y="548" class="label">RAW · 4X · epic_004</text>
+    <rect x="38" y="562" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_004.png" x="38" y="562" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="18" y="972" class="name">숲 수호자 뿔관</text>
+    <text x="18" y="994" class="meta">keep · head · bounds 16,78..239,177</text>
+    <text x="18" y="1014" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_005">
+    <rect x="466" y="526" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="478" y="548" class="label">RAW · 4X · epic_005</text>
+    <rect x="498" y="562" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_005.png" x="498" y="562" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="478" y="972" class="name">스팀펑크 발명가 헬멧</text>
+    <text x="478" y="994" class="meta">keep · head · bounds 52,77..203,177</text>
+    <text x="478" y="1014" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_006">
+    <rect x="926" y="526" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="938" y="548" class="label">RAW · 4X · epic_006</text>
+    <rect x="958" y="562" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_006.png" x="958" y="562" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="938" y="972" class="name">네온 사이버 바이저</text>
+    <text x="938" y="994" class="meta">keep · face · bounds 45,93..209,162</text>
+    <text x="938" y="1014" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_007">
+    <rect x="6" y="1046" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="18" y="1068" class="label">RAW · 4X · epic_007</text>
+    <rect x="38" y="1082" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_007.png" x="38" y="1082" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="18" y="1492" class="name">왕실 해군 제독 세트</text>
+    <text x="18" y="1514" class="meta">keep · full · bounds 38,16..216,239</text>
+    <text x="18" y="1534" class="warning">alpha-dust</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_008">
+    <rect x="466" y="1046" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="478" y="1068" class="label">RAW · 4X · epic_008</text>
+    <rect x="498" y="1082" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_008.png" x="498" y="1082" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="478" y="1492" class="name">흑요석 화산 왕관</text>
+    <text x="478" y="1514" class="meta">keep · head · bounds 53,73..202,182</text>
+    <text x="478" y="1534" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_009">
+    <rect x="926" y="1046" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="938" y="1068" class="label">RAW · 4X · epic_009</text>
+    <rect x="958" y="1082" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_009.png" x="958" y="1082" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="938" y="1492" class="name">은하 수면모 세트</text>
+    <text x="938" y="1514" class="meta">keep · full · bounds 41,51..214,204</text>
+    <text x="938" y="1534" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_010">
+    <rect x="6" y="1566" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="18" y="1588" class="label">RAW · 4X · epic_010</text>
+    <rect x="38" y="1602" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_010.png" x="38" y="1602" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="18" y="2012" class="name">황금 마스터 셰프 모자</text>
+    <text x="18" y="2034" class="meta">keep · head · bounds 52,67..203,187</text>
+    <text x="18" y="2054" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_011">
+    <rect x="466" y="1566" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="478" y="1588" class="label">RAW · 4X · epic_011</text>
+    <rect x="498" y="1602" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_011.png" x="498" y="1602" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="478" y="2012" class="name">고대 유적 탐험가 세트</text>
+    <text x="478" y="2034" class="meta">keep · body · bounds 47,43..208,211</text>
+    <text x="478" y="2054" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_012">
+    <rect x="926" y="1566" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="938" y="1588" class="label">RAW · 4X · epic_012</text>
+    <rect x="958" y="1602" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_012.png" x="958" y="1602" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="938" y="2012" class="name">아케이드 챔피언 세트</text>
+    <text x="938" y="2034" class="meta">keep · full · bounds 57,41..197,213</text>
+    <text x="938" y="2054" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_013">
+    <rect x="6" y="2086" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="18" y="2108" class="label">RAW · 4X · epic_013</text>
+    <rect x="38" y="2122" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_013.png" x="38" y="2122" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="18" y="2532" class="name">오로라 주술사 뿔후드</text>
+    <text x="18" y="2554" class="meta">keep · head · bounds 16,53..239,201</text>
+    <text x="18" y="2574" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_014">
+    <rect x="466" y="2086" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="478" y="2108" class="label">RAW · 4X · epic_014</text>
+    <rect x="498" y="2122" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_014.png" x="498" y="2122" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="478" y="2532" class="name">기계 부엉이 학자 후드</text>
+    <text x="478" y="2554" class="meta">keep · head · bounds 46,59..209,195</text>
+    <text x="478" y="2574" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_015">
+    <rect x="926" y="2086" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="938" y="2108" class="label">RAW · 4X · epic_015</text>
+    <rect x="958" y="2122" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_015.png" x="958" y="2122" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="938" y="2532" class="name">바다 신탁 조개 왕관</text>
+    <text x="938" y="2554" class="meta">keep · head · bounds 34,69..221,186</text>
+    <text x="938" y="2574" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_016">
+    <rect x="6" y="2606" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="18" y="2628" class="label">RAW · 4X · epic_016</text>
+    <rect x="38" y="2642" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_016.png" x="38" y="2642" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="18" y="3052" class="name">벚꽃 수호자 망토</text>
+    <text x="18" y="3074" class="meta">keep · body · bounds 16,79..239,176</text>
+    <text x="18" y="3094" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_017">
+    <rect x="466" y="2606" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="478" y="2628" class="label">RAW · 4X · epic_017</text>
+    <rect x="498" y="2642" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_017.png" x="498" y="2642" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="478" y="3052" class="name">천둥새 조종사 투구</text>
+    <text x="478" y="3074" class="meta">keep · head · bounds 38,70..216,185</text>
+    <text x="478" y="3094" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_018">
+    <rect x="926" y="2606" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="938" y="2628" class="label">RAW · 4X · epic_018</text>
+    <rect x="958" y="2642" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_018.png" x="958" y="2642" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="938" y="3052" class="name">달빛 가면무도회 가면</text>
+    <text x="938" y="3074" class="meta">keep · face · bounds 59,79..196,176</text>
+    <text x="938" y="3094" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_019">
+    <rect x="6" y="3126" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="18" y="3148" class="label">RAW · 4X · epic_019</text>
+    <rect x="38" y="3162" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_019.png" x="38" y="3162" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="18" y="3572" class="name">마법 도서관 대마법사 모자</text>
+    <text x="18" y="3594" class="meta">keep · head · bounds 32,69..222,186</text>
+    <text x="18" y="3614" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_020">
+    <rect x="466" y="3126" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="478" y="3148" class="label">RAW · 4X · epic_020</text>
+    <rect x="498" y="3162" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_020.png" x="498" y="3162" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="478" y="3572" class="name">진홍 쇼군 갑주</text>
+    <text x="478" y="3594" class="meta">keep · head · bounds 31,52..223,202</text>
+    <text x="478" y="3614" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_021">
+    <rect x="926" y="3126" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="938" y="3148" class="label">RAW · 4X · epic_021</text>
+    <rect x="958" y="3162" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_021.png" x="958" y="3162" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="938" y="3572" class="name">심연 잠수부 압력 헬멧</text>
+    <text x="938" y="3594" class="meta">keep · head · bounds 37,40..218,215</text>
+    <text x="938" y="3614" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_022">
+    <rect x="6" y="3646" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="18" y="3668" class="label">RAW · 4X · epic_022</text>
+    <rect x="38" y="3682" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_022.png" x="38" y="3682" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="18" y="4092" class="name">폭풍 록 아이돌 왕관</text>
+    <text x="18" y="4114" class="meta">keep · head · bounds 34,71..221,183</text>
+    <text x="18" y="4134" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_023">
+    <rect x="466" y="3646" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="478" y="3668" class="label">RAW · 4X · epic_023</text>
+    <rect x="498" y="3682" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_023.png" x="498" y="3682" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="478" y="4092" class="name">대연금술사 세트</text>
+    <text x="478" y="4114" class="meta">keep · full · bounds 37,16..217,239</text>
+    <text x="478" y="4134" class="warning">alpha-dust</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="epic_024">
+    <rect x="926" y="3646" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="938" y="3668" class="label">RAW · 4X · epic_024</text>
+    <rect x="958" y="3682" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../epic/epic_024.png" x="958" y="3682" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="938" y="4092" class="name">발키리 룬 투구</text>
+    <text x="938" y="4114" class="meta">keep · head · bounds 16,40..238,215</text>
+    <text x="938" y="4134" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+</svg>

@@ -1,0 +1,1130 @@
+[
+  {
+    "id": "common_001",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_002",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_003",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_004",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_005",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_006",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_007",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_008",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_009",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_010",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_011",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_012",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_013",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_014",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_015",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_016",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_017",
+    "state": "keep",
+    "observations": [],
+    "warnings": [
+      "alpha-dust"
+    ],
+    "components": []
+  },
+  {
+    "id": "common_018",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_019",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_020",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_021",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_022",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_023",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_024",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_025",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_026",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_027",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_028",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_029",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_030",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_031",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_032",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_033",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_034",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_035",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_036",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_037",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_038",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_039",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_040",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_001",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_002",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_003",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_004",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_005",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_006",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_007",
+    "state": "keep",
+    "observations": [],
+    "warnings": [
+      "isolated-specks"
+    ],
+    "components": []
+  },
+  {
+    "id": "rare_008",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_009",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_010",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_011",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_012",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_013",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_014",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_015",
+    "state": "keep",
+    "observations": [],
+    "warnings": [
+      "alpha-dust"
+    ],
+    "components": []
+  },
+  {
+    "id": "rare_016",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_017",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_018",
+    "state": "keep",
+    "observations": [],
+    "warnings": [
+      "alpha-dust"
+    ],
+    "components": []
+  },
+  {
+    "id": "rare_019",
+    "state": "keep",
+    "observations": [],
+    "warnings": [
+      "alpha-dust"
+    ],
+    "components": []
+  },
+  {
+    "id": "rare_020",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_021",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_022",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_023",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_024",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_001",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_002",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_003",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_004",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_005",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_006",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_007",
+    "state": "keep",
+    "observations": [],
+    "warnings": [
+      "alpha-dust"
+    ],
+    "components": []
+  },
+  {
+    "id": "epic_008",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_009",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_010",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_011",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_012",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "legendary_001",
+    "state": "keep",
+    "observations": [],
+    "warnings": [
+      "alpha-dust"
+    ],
+    "components": []
+  },
+  {
+    "id": "legendary_002",
+    "state": "keep",
+    "observations": [],
+    "warnings": [
+      "alpha-dust"
+    ],
+    "components": []
+  },
+  {
+    "id": "legendary_003",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "legendary_004",
+    "state": "keep",
+    "observations": [],
+    "warnings": [
+      "alpha-dust"
+    ],
+    "components": []
+  },
+  {
+    "id": "special_001",
+    "state": "keep",
+    "observations": [],
+    "warnings": [
+      "alpha-dust"
+    ],
+    "components": []
+  },
+  {
+    "id": "common_041",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_042",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_043",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_044",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_045",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_046",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_047",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_048",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_049",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_050",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_051",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_052",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_053",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_054",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_055",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_056",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_057",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_058",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_059",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_060",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_025",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_026",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_027",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_028",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_029",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_030",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_031",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_032",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_033",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_034",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_035",
+    "state": "keep",
+    "observations": [],
+    "warnings": [
+      "alpha-dust"
+    ],
+    "components": []
+  },
+  {
+    "id": "rare_036",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_037",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_038",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_013",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_014",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_015",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_016",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_017",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_018",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_019",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "legendary_005",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "legendary_006",
+    "state": "keep",
+    "observations": [],
+    "warnings": [
+      "alpha-dust"
+    ],
+    "components": []
+  },
+  {
+    "id": "legendary_007",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "special_002",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_061",
+    "state": "keep",
+    "observations": [],
+    "warnings": [
+      "alpha-dust"
+    ],
+    "components": []
+  },
+  {
+    "id": "common_062",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_063",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_064",
+    "state": "keep",
+    "observations": [],
+    "warnings": [
+      "alpha-dust"
+    ],
+    "components": []
+  },
+  {
+    "id": "common_065",
+    "state": "keep",
+    "observations": [],
+    "warnings": [
+      "alpha-dust"
+    ],
+    "components": []
+  },
+  {
+    "id": "common_066",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_067",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_068",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_069",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_070",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_071",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "common_072",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_039",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_040",
+    "state": "keep",
+    "observations": [],
+    "warnings": [
+      "alpha-dust"
+    ],
+    "components": []
+  },
+  {
+    "id": "rare_041",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_042",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_043",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_044",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_045",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_046",
+    "state": "keep",
+    "observations": [],
+    "warnings": [
+      "alpha-dust"
+    ],
+    "components": []
+  },
+  {
+    "id": "rare_047",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "rare_048",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_020",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_021",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_022",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "epic_023",
+    "state": "keep",
+    "observations": [],
+    "warnings": [
+      "alpha-dust"
+    ],
+    "components": []
+  },
+  {
+    "id": "epic_024",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "legendary_008",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "legendary_009",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  },
+  {
+    "id": "special_003",
+    "state": "keep",
+    "observations": [],
+    "warnings": [],
+    "components": []
+  }
+]

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1380" height="520" viewBox="0 0 1380 520">
+  <title>Gamjabot special raw costume audit</title>
+  <defs>
+    <pattern id="checker" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#f1f1f1" />
+      <rect width="8" height="8" fill="#d8d8d8" />
+      <rect x="8" y="8" width="8" height="8" fill="#d8d8d8" />
+    </pattern>
+    <style>
+      text { font-family: "Segoe UI", sans-serif; fill: #f4f4f5; }
+      .label { font: 700 12px Consolas, monospace; fill: #7fd7ff; }
+      .name { font-size: 17px; font-weight: 700; }
+      .meta { font: 12px Consolas, monospace; fill: #ffcf53; }
+      .observation { font-size: 11px; fill: #d8d8dc; }
+      .warning { font: 700 11px Consolas, monospace; fill: #ff8f70; }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#17181c" />
+
+  <g class="costume-cell" data-id="special_001">
+    <rect x="6" y="6" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="18" y="28" class="label">RAW · 4X · special_001</text>
+    <rect x="38" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../special/special_001.png" x="38" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="18" y="452" class="name">원조 감자 개발자 — 감자 새싹 왕관, 개발자 후드, 감자봇의 원형 입 문양을 활용한 황금 배지</text>
+    <text x="18" y="474" class="meta">keep · full · bounds 62,16..192,239</text>
+    <text x="18" y="494" class="warning">alpha-dust</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="special_002">
+    <rect x="466" y="6" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="478" y="28" class="label">RAW · 4X · special_002</text>
+    <rect x="498" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../special/special_002.png" x="498" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="478" y="452" class="name">숨겨진 Stitch 기록관 — 다섯 색상 조각을 이어 만든 패치워크 후드와 감자봇 원형 입 문양 잠금장식</text>
+    <text x="478" y="474" class="meta">keep · head · bounds 40,68..215,187</text>
+    <text x="478" y="494" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+  <g class="costume-cell" data-id="special_003">
+    <rect x="926" y="6" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
+    <text x="938" y="28" class="label">RAW · 4X · special_003</text>
+    <rect x="958" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../../../special/special_003.png" x="958" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
+    <text x="938" y="452" class="name">다섯 시트의 큐레이터 — 다섯 색상 탭과 감자봇 나선 문양 잠금장식을 단 박물관 큐레이터 세트</text>
+    <text x="938" y="474" class="meta">keep · full · bounds 29,70..225,184</text>
+    <text x="938" y="494" class="warning">none</text>
+    <title>UNREVIEWED</title>
+  </g>
+</svg>
