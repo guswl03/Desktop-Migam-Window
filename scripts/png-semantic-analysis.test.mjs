@@ -31,3 +31,15 @@ test("reports isolated low-alpha dust separately", () => {
   assert.equal(metrics.lowAlphaPixels, 1);
   assert.ok(metrics.warnings.includes("alpha-dust"));
 });
+
+test("does not classify attached antialiasing as alpha dust", () => {
+  const metrics = analyzePngSemantics(rgba(8, 8, [
+    [3, 3, 255],
+    [3, 4, 255],
+    [4, 3, 255],
+    [4, 4, 255],
+    [5, 4, 12],
+  ]));
+  assert.equal(metrics.lowAlphaPixels, 1);
+  assert.ok(!metrics.warnings.includes("alpha-dust"));
+});

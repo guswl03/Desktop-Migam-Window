@@ -161,6 +161,7 @@ export function analyzePngSemantics(
   const bounds = visibleBoundsAtAlpha(pixels, width, height, visibleAlpha);
   let visiblePixels = 0;
   let lowAlphaPixels = 0;
+  let alphaDustPixels = 0;
   const visible = new Uint8Array(width * height);
 
   for (let index = 0; index < width * height; index += 1) {
@@ -169,6 +170,27 @@ export function analyzePngSemantics(
     if (alpha < visibleAlpha) continue;
     visible[index] = 1;
     visiblePixels += 1;
+  }
+
+  for (let index = 0; index < width * height; index += 1) {
+    const alpha = pixels[index * 4 + 3];
+    if (alpha === 0 || alpha >= dustAlpha) continue;
+    const x = index % width;
+    const y = Math.floor(index / width);
+    let attachedToVisiblePixel = false;
+    for (let dy = -1; dy <= 1 && !attachedToVisiblePixel; dy += 1) {
+      for (let dx = -1; dx <= 1; dx += 1) {
+        if (dx === 0 && dy === 0) continue;
+        const nextX = x + dx;
+        const nextY = y + dy;
+        if (nextX < 0 || nextX >= width || nextY < 0 || nextY >= height) continue;
+        if (visible[nextY * width + nextX]) {
+          attachedToVisiblePixel = true;
+          break;
+        }
+      }
+    }
+    if (!attachedToVisiblePixel) alphaDustPixels += 1;
   }
 
   const components = connectedAlphaComponents(visible, width, height);
@@ -195,7 +217,7 @@ export function analyzePngSemantics(
     }
     if (Math.max(spanX, spanY) < minimumSpan) warnings.push("undersized");
   }
-  if (lowAlphaPixels > 0) warnings.push("alpha-dust");
+  if (alphaDustPixels > 0) warnings.push("alpha-dust");
   if (isolatedComponents.length > 0) warnings.push("isolated-specks");
 
   return {
@@ -203,6 +225,7 @@ export function analyzePngSemantics(
     edgeMargins,
     opaqueRatio: visiblePixels / (width * height),
     lowAlphaPixels,
+    alphaDustPixels,
     isolatedComponents,
     warnings,
   };
