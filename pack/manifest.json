@@ -17,7 +17,13 @@
       "collection": "catalog-81",
       "file": "common/common_001.png",
       "source": "catalog-81/01-common-01-09.png",
-      "sourceSlot": 0
+      "sourceSlot": 0,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_002",
@@ -26,7 +32,13 @@
       "collection": "catalog-81",
       "file": "common/common_002.png",
       "source": "catalog-81/01-common-01-09.png",
-      "sourceSlot": 1
+      "sourceSlot": 1,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_003",
@@ -35,7 +47,13 @@
       "collection": "catalog-81",
       "file": "common/common_003.png",
       "source": "catalog-81/01-common-01-09.png",
-      "sourceSlot": 2
+      "sourceSlot": 2,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_004",
@@ -44,7 +62,13 @@
       "collection": "catalog-81",
       "file": "common/common_004.png",
       "source": "catalog-81/01-common-01-09.png",
-      "sourceSlot": 3
+      "sourceSlot": 3,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_005",
@@ -53,7 +77,13 @@
       "collection": "catalog-81",
       "file": "common/common_005.png",
       "source": "catalog-81/01-common-01-09.png",
-      "sourceSlot": 4
+      "sourceSlot": 4,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_006",
@@ -62,7 +92,13 @@
       "collection": "catalog-81",
       "file": "common/common_006.png",
       "source": "catalog-81/01-common-01-09.png",
-      "sourceSlot": 5
+      "sourceSlot": 5,
+      "slot": "face",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -8,
+        "size": 104
+      }
     },
     {
       "id": "common_007",
@@ -71,7 +107,13 @@
       "collection": "catalog-81",
       "file": "common/common_007.png",
       "source": "catalog-81/01-common-01-09.png",
-      "sourceSlot": 6
+      "sourceSlot": 6,
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 12,
+        "size": 104
+      }
     },
     {
       "id": "common_008",
@@ -80,7 +122,13 @@
       "collection": "catalog-81",
       "file": "common/common_008.png",
       "source": "catalog-81/01-common-01-09.png",
-      "sourceSlot": 7
+      "sourceSlot": 7,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_009",
@@ -89,7 +137,13 @@
       "collection": "catalog-81",
       "file": "common/common_009.png",
       "source": "catalog-81/01-common-01-09.png",
-      "sourceSlot": 8
+      "sourceSlot": 8,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_010",
@@ -98,7 +152,13 @@
       "collection": "catalog-81",
       "file": "common/common_010.png",
       "source": "catalog-81/02-common-10-18.png",
-      "sourceSlot": 0
+      "sourceSlot": 0,
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 12,
+        "size": 104
+      }
     },
     {
       "id": "common_011",
@@ -107,7 +167,13 @@
       "collection": "catalog-81",
       "file": "common/common_011.png",
       "source": "catalog-81/02-common-10-18.png",
-      "sourceSlot": 1
+      "sourceSlot": 1,
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 12,
+        "size": 104
+      }
     },
     {
       "id": "common_012",
@@ -116,7 +182,13 @@
       "collection": "catalog-81",
       "file": "common/common_012.png",
       "source": "catalog-81/02-common-10-18.png",
-      "sourceSlot": 2
+      "sourceSlot": 2,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_013",
@@ -125,7 +197,13 @@
       "collection": "catalog-81",
       "file": "common/common_013.png",
       "source": "catalog-81/02-common-10-18.png",
-      "sourceSlot": 3
+      "sourceSlot": 3,
+      "slot": "face",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -8,
+        "size": 104
+      }
     },
     {
       "id": "common_014",
@@ -134,7 +212,13 @@
       "collection": "catalog-81",
       "file": "common/common_014.png",
       "source": "catalog-81/02-common-10-18.png",
-      "sourceSlot": 4
+      "sourceSlot": 4,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_015",
@@ -143,7 +227,13 @@
       "collection": "catalog-81",
       "file": "common/common_015.png",
       "source": "catalog-81/02-common-10-18.png",
-      "sourceSlot": 5
+      "sourceSlot": 5,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_016",
@@ -152,7 +242,13 @@
       "collection": "catalog-81",
       "file": "common/common_016.png",
       "source": "catalog-81/02-common-10-18.png",
-      "sourceSlot": 6
+      "sourceSlot": 6,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_017",
@@ -161,7 +257,13 @@
       "collection": "catalog-81",
       "file": "common/common_017.png",
       "source": "catalog-81/02-common-10-18.png",
-      "sourceSlot": 7
+      "sourceSlot": 7,
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 17,
+        "size": 104
+      }
     },
     {
       "id": "common_018",
@@ -170,7 +272,13 @@
       "collection": "catalog-81",
       "file": "common/common_018.png",
       "source": "catalog-81/02-common-10-18.png",
-      "sourceSlot": 8
+      "sourceSlot": 8,
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 12,
+        "size": 104
+      }
     },
     {
       "id": "common_019",
@@ -179,7 +287,13 @@
       "collection": "catalog-81",
       "file": "common/common_019.png",
       "source": "catalog-81/03-common-19-27.png",
-      "sourceSlot": 0
+      "sourceSlot": 0,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_020",
@@ -188,7 +302,13 @@
       "collection": "catalog-81",
       "file": "common/common_020.png",
       "source": "catalog-81/03-common-19-27.png",
-      "sourceSlot": 1
+      "sourceSlot": 1,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_021",
@@ -197,7 +317,13 @@
       "collection": "catalog-81",
       "file": "common/common_021.png",
       "source": "catalog-81/03-common-19-27.png",
-      "sourceSlot": 2
+      "sourceSlot": 2,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_022",
@@ -206,7 +332,13 @@
       "collection": "catalog-81",
       "file": "common/common_022.png",
       "source": "catalog-81/03-common-19-27.png",
-      "sourceSlot": 3
+      "sourceSlot": 3,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_023",
@@ -215,7 +347,13 @@
       "collection": "catalog-81",
       "file": "common/common_023.png",
       "source": "catalog-81/03-common-19-27.png",
-      "sourceSlot": 4
+      "sourceSlot": 4,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_024",
@@ -224,7 +362,13 @@
       "collection": "catalog-81",
       "file": "common/common_024.png",
       "source": "catalog-81/03-common-19-27.png",
-      "sourceSlot": 5
+      "sourceSlot": 5,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_025",
@@ -233,7 +377,13 @@
       "collection": "catalog-81",
       "file": "common/common_025.png",
       "source": "catalog-81/03-common-19-27.png",
-      "sourceSlot": 6
+      "sourceSlot": 6,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_026",
@@ -242,7 +392,13 @@
       "collection": "catalog-81",
       "file": "common/common_026.png",
       "source": "catalog-81/03-common-19-27.png",
-      "sourceSlot": 7
+      "sourceSlot": 7,
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 17,
+        "size": 104
+      }
     },
     {
       "id": "common_027",
@@ -251,7 +407,13 @@
       "collection": "catalog-81",
       "file": "common/common_027.png",
       "source": "catalog-81/03-common-19-27.png",
-      "sourceSlot": 8
+      "sourceSlot": 8,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_028",
@@ -260,7 +422,13 @@
       "collection": "catalog-81",
       "file": "common/common_028.png",
       "source": "catalog-81/04-common-28-36.png",
-      "sourceSlot": 0
+      "sourceSlot": 0,
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 12,
+        "size": 104
+      }
     },
     {
       "id": "common_029",
@@ -269,7 +437,13 @@
       "collection": "catalog-81",
       "file": "common/common_029.png",
       "source": "catalog-81/04-common-28-36.png",
-      "sourceSlot": 1
+      "sourceSlot": 1,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_030",
@@ -278,7 +452,13 @@
       "collection": "catalog-81",
       "file": "common/common_030.png",
       "source": "catalog-81/04-common-28-36.png",
-      "sourceSlot": 2
+      "sourceSlot": 2,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_031",
@@ -287,7 +467,13 @@
       "collection": "catalog-81",
       "file": "common/common_031.png",
       "source": "catalog-81/04-common-28-36.png",
-      "sourceSlot": 3
+      "sourceSlot": 3,
+      "slot": "full",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -8,
+        "size": 112
+      }
     },
     {
       "id": "common_032",
@@ -296,7 +482,13 @@
       "collection": "catalog-81",
       "file": "common/common_032.png",
       "source": "catalog-81/04-common-28-36.png",
-      "sourceSlot": 4
+      "sourceSlot": 4,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_033",
@@ -305,7 +497,13 @@
       "collection": "catalog-81",
       "file": "common/common_033.png",
       "source": "catalog-81/04-common-28-36.png",
-      "sourceSlot": 5
+      "sourceSlot": 5,
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 17,
+        "size": 104
+      }
     },
     {
       "id": "common_034",
@@ -314,7 +512,13 @@
       "collection": "catalog-81",
       "file": "common/common_034.png",
       "source": "catalog-81/04-common-28-36.png",
-      "sourceSlot": 6
+      "sourceSlot": 6,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_035",
@@ -323,7 +527,13 @@
       "collection": "catalog-81",
       "file": "common/common_035.png",
       "source": "catalog-81/04-common-28-36.png",
-      "sourceSlot": 7
+      "sourceSlot": 7,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_036",
@@ -332,7 +542,13 @@
       "collection": "catalog-81",
       "file": "common/common_036.png",
       "source": "catalog-81/04-common-28-36.png",
-      "sourceSlot": 8
+      "sourceSlot": 8,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_037",
@@ -341,7 +557,13 @@
       "collection": "catalog-81",
       "file": "common/common_037.png",
       "source": "catalog-81/05-common-37-40-rare-01-05.png",
-      "sourceSlot": 0
+      "sourceSlot": 0,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_038",
@@ -350,7 +572,13 @@
       "collection": "catalog-81",
       "file": "common/common_038.png",
       "source": "catalog-81/05-common-37-40-rare-01-05.png",
-      "sourceSlot": 1
+      "sourceSlot": 1,
+      "slot": "face",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -8,
+        "size": 104
+      }
     },
     {
       "id": "common_039",
@@ -359,7 +587,13 @@
       "collection": "catalog-81",
       "file": "common/common_039.png",
       "source": "catalog-81/05-common-37-40-rare-01-05.png",
-      "sourceSlot": 2
+      "sourceSlot": 2,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_040",
@@ -368,7 +602,13 @@
       "collection": "catalog-81",
       "file": "common/common_040.png",
       "source": "catalog-81/05-common-37-40-rare-01-05.png",
-      "sourceSlot": 3
+      "sourceSlot": 3,
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 17,
+        "size": 104
+      }
     },
     {
       "id": "rare_001",
@@ -377,7 +617,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_001.png",
       "source": "catalog-81/05-common-37-40-rare-01-05.png",
-      "sourceSlot": 4
+      "sourceSlot": 4,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_002",
@@ -386,7 +632,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_002.png",
       "source": "catalog-81/05-common-37-40-rare-01-05.png",
-      "sourceSlot": 5
+      "sourceSlot": 5,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_003",
@@ -395,7 +647,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_003.png",
       "source": "catalog-81/05-common-37-40-rare-01-05.png",
-      "sourceSlot": 6
+      "sourceSlot": 6,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_004",
@@ -404,7 +662,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_004.png",
       "source": "catalog-81/05-common-37-40-rare-01-05.png",
-      "sourceSlot": 7
+      "sourceSlot": 7,
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 17,
+        "size": 104
+      }
     },
     {
       "id": "rare_005",
@@ -413,7 +677,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_005.png",
       "source": "catalog-81/05-common-37-40-rare-01-05.png",
-      "sourceSlot": 8
+      "sourceSlot": 8,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_006",
@@ -422,7 +692,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_006.png",
       "source": "catalog-81/06-rare-06-14.png",
-      "sourceSlot": 0
+      "sourceSlot": 0,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_007",
@@ -431,7 +707,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_007.png",
       "source": "catalog-81/06-rare-06-14.png",
-      "sourceSlot": 1
+      "sourceSlot": 1,
+      "slot": "full",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -8,
+        "size": 112
+      }
     },
     {
       "id": "rare_008",
@@ -440,7 +722,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_008.png",
       "source": "catalog-81/06-rare-06-14.png",
-      "sourceSlot": 2
+      "sourceSlot": 2,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_009",
@@ -449,7 +737,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_009.png",
       "source": "catalog-81/06-rare-06-14.png",
-      "sourceSlot": 3
+      "sourceSlot": 3,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_010",
@@ -458,7 +752,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_010.png",
       "source": "catalog-81/06-rare-06-14.png",
-      "sourceSlot": 4
+      "sourceSlot": 4,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_011",
@@ -467,7 +767,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_011.png",
       "source": "catalog-81/06-rare-06-14.png",
-      "sourceSlot": 5
+      "sourceSlot": 5,
+      "slot": "full",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -8,
+        "size": 112
+      }
     },
     {
       "id": "rare_012",
@@ -476,7 +782,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_012.png",
       "source": "catalog-81/06-rare-06-14.png",
-      "sourceSlot": 6
+      "sourceSlot": 6,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_013",
@@ -485,7 +797,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_013.png",
       "source": "catalog-81/06-rare-06-14.png",
-      "sourceSlot": 7
+      "sourceSlot": 7,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_014",
@@ -494,7 +812,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_014.png",
       "source": "catalog-81/06-rare-06-14.png",
-      "sourceSlot": 8
+      "sourceSlot": 8,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_015",
@@ -503,7 +827,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_015.png",
       "source": "catalog-81/07-rare-15-23.png",
-      "sourceSlot": 0
+      "sourceSlot": 0,
+      "slot": "full",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -8,
+        "size": 112
+      }
     },
     {
       "id": "rare_016",
@@ -512,7 +842,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_016.png",
       "source": "catalog-81/07-rare-15-23.png",
-      "sourceSlot": 1
+      "sourceSlot": 1,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_017",
@@ -521,7 +857,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_017.png",
       "source": "catalog-81/07-rare-15-23.png",
-      "sourceSlot": 2
+      "sourceSlot": 2,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_018",
@@ -530,7 +872,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_018.png",
       "source": "catalog-81/07-rare-15-23.png",
-      "sourceSlot": 3
+      "sourceSlot": 3,
+      "slot": "full",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -8,
+        "size": 112
+      }
     },
     {
       "id": "rare_019",
@@ -539,7 +887,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_019.png",
       "source": "catalog-81/07-rare-15-23.png",
-      "sourceSlot": 4
+      "sourceSlot": 4,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_020",
@@ -548,7 +902,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_020.png",
       "source": "catalog-81/07-rare-15-23.png",
-      "sourceSlot": 5
+      "sourceSlot": 5,
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 17,
+        "size": 104
+      }
     },
     {
       "id": "rare_021",
@@ -557,7 +917,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_021.png",
       "source": "catalog-81/07-rare-15-23.png",
-      "sourceSlot": 6
+      "sourceSlot": 6,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_022",
@@ -566,7 +932,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_022.png",
       "source": "catalog-81/07-rare-15-23.png",
-      "sourceSlot": 7
+      "sourceSlot": 7,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_023",
@@ -575,7 +947,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_023.png",
       "source": "catalog-81/07-rare-15-23.png",
-      "sourceSlot": 8
+      "sourceSlot": 8,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_024",
@@ -584,7 +962,13 @@
       "collection": "catalog-81",
       "file": "rare/rare_024.png",
       "source": "catalog-81/08-rare-24-epic-01-08.png",
-      "sourceSlot": 0
+      "sourceSlot": 0,
+      "slot": "face",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -8,
+        "size": 104
+      }
     },
     {
       "id": "epic_001",
@@ -593,7 +977,13 @@
       "collection": "catalog-81",
       "file": "epic/epic_001.png",
       "source": "catalog-81/08-rare-24-epic-01-08.png",
-      "sourceSlot": 1
+      "sourceSlot": 1,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "epic_002",
@@ -602,7 +992,13 @@
       "collection": "catalog-81",
       "file": "epic/epic_002.png",
       "source": "catalog-81/08-rare-24-epic-01-08.png",
-      "sourceSlot": 2
+      "sourceSlot": 2,
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 17,
+        "size": 104
+      }
     },
     {
       "id": "epic_003",
@@ -611,7 +1007,13 @@
       "collection": "catalog-81",
       "file": "epic/epic_003.png",
       "source": "catalog-81/08-rare-24-epic-01-08.png",
-      "sourceSlot": 3
+      "sourceSlot": 3,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "epic_004",
@@ -620,7 +1022,13 @@
       "collection": "catalog-81",
       "file": "epic/epic_004.png",
       "source": "catalog-81/08-rare-24-epic-01-08.png",
-      "sourceSlot": 4
+      "sourceSlot": 4,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "epic_005",
@@ -629,7 +1037,13 @@
       "collection": "catalog-81",
       "file": "epic/epic_005.png",
       "source": "catalog-81/08-rare-24-epic-01-08.png",
-      "sourceSlot": 5
+      "sourceSlot": 5,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "epic_006",
@@ -638,7 +1052,13 @@
       "collection": "catalog-81",
       "file": "epic/epic_006.png",
       "source": "catalog-81/08-rare-24-epic-01-08.png",
-      "sourceSlot": 6
+      "sourceSlot": 6,
+      "slot": "face",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -8,
+        "size": 104
+      }
     },
     {
       "id": "epic_007",
@@ -647,7 +1067,13 @@
       "collection": "catalog-81",
       "file": "epic/epic_007.png",
       "source": "catalog-81/08-rare-24-epic-01-08.png",
-      "sourceSlot": 7
+      "sourceSlot": 7,
+      "slot": "full",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -8,
+        "size": 112
+      }
     },
     {
       "id": "epic_008",
@@ -656,7 +1082,13 @@
       "collection": "catalog-81",
       "file": "epic/epic_008.png",
       "source": "catalog-81/08-rare-24-epic-01-08.png",
-      "sourceSlot": 8
+      "sourceSlot": 8,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "epic_009",
@@ -665,7 +1097,13 @@
       "collection": "catalog-81",
       "file": "epic/epic_009.png",
       "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
-      "sourceSlot": 0
+      "sourceSlot": 0,
+      "slot": "full",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -8,
+        "size": 112
+      }
     },
     {
       "id": "epic_010",
@@ -674,7 +1112,13 @@
       "collection": "catalog-81",
       "file": "epic/epic_010.png",
       "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
-      "sourceSlot": 1
+      "sourceSlot": 1,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "epic_011",
@@ -683,7 +1127,13 @@
       "collection": "catalog-81",
       "file": "epic/epic_011.png",
       "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
-      "sourceSlot": 2
+      "sourceSlot": 2,
+      "slot": "full",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -8,
+        "size": 112
+      }
     },
     {
       "id": "epic_012",
@@ -692,7 +1142,13 @@
       "collection": "catalog-81",
       "file": "epic/epic_012.png",
       "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
-      "sourceSlot": 3
+      "sourceSlot": 3,
+      "slot": "full",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -8,
+        "size": 112
+      }
     },
     {
       "id": "legendary_001",
@@ -701,7 +1157,13 @@
       "collection": "catalog-81",
       "file": "legendary/legendary_001.png",
       "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
-      "sourceSlot": 4
+      "sourceSlot": 4,
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 17,
+        "size": 104
+      }
     },
     {
       "id": "legendary_002",
@@ -710,7 +1172,13 @@
       "collection": "catalog-81",
       "file": "legendary/legendary_002.png",
       "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
-      "sourceSlot": 5
+      "sourceSlot": 5,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "legendary_003",
@@ -719,7 +1187,13 @@
       "collection": "catalog-81",
       "file": "legendary/legendary_003.png",
       "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
-      "sourceSlot": 6
+      "sourceSlot": 6,
+      "slot": "full",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -8,
+        "size": 112
+      }
     },
     {
       "id": "legendary_004",
@@ -728,7 +1202,13 @@
       "collection": "catalog-81",
       "file": "legendary/legendary_004.png",
       "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
-      "sourceSlot": 7
+      "sourceSlot": 7,
+      "slot": "full",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -8,
+        "size": 112
+      }
     },
     {
       "id": "special_001",
@@ -737,7 +1217,13 @@
       "collection": "catalog-81",
       "file": "special/special_001.png",
       "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
-      "sourceSlot": 8
+      "sourceSlot": 8,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_041",
@@ -746,7 +1232,13 @@
       "collection": "additional-45",
       "file": "common/common_041.png",
       "source": "additional-45/10-common-41-49.png",
-      "sourceSlot": 0
+      "sourceSlot": 0,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_042",
@@ -755,7 +1247,13 @@
       "collection": "additional-45",
       "file": "common/common_042.png",
       "source": "additional-45/10-common-41-49.png",
-      "sourceSlot": 1
+      "sourceSlot": 1,
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 12,
+        "size": 104
+      }
     },
     {
       "id": "common_043",
@@ -764,7 +1262,13 @@
       "collection": "additional-45",
       "file": "common/common_043.png",
       "source": "additional-45/10-common-41-49.png",
-      "sourceSlot": 2
+      "sourceSlot": 2,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_044",
@@ -773,7 +1277,13 @@
       "collection": "additional-45",
       "file": "common/common_044.png",
       "source": "additional-45/10-common-41-49.png",
-      "sourceSlot": 3
+      "sourceSlot": 3,
+      "slot": "face",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -8,
+        "size": 104
+      }
     },
     {
       "id": "common_045",
@@ -782,7 +1292,13 @@
       "collection": "additional-45",
       "file": "common/common_045.png",
       "source": "additional-45/10-common-41-49.png",
-      "sourceSlot": 4
+      "sourceSlot": 4,
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 17,
+        "size": 104
+      }
     },
     {
       "id": "common_046",
@@ -791,7 +1307,13 @@
       "collection": "additional-45",
       "file": "common/common_046.png",
       "source": "additional-45/10-common-41-49.png",
-      "sourceSlot": 5
+      "sourceSlot": 5,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_047",
@@ -800,7 +1322,13 @@
       "collection": "additional-45",
       "file": "common/common_047.png",
       "source": "additional-45/10-common-41-49.png",
-      "sourceSlot": 6
+      "sourceSlot": 6,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_048",
@@ -809,7 +1337,13 @@
       "collection": "additional-45",
       "file": "common/common_048.png",
       "source": "additional-45/10-common-41-49.png",
-      "sourceSlot": 7
+      "sourceSlot": 7,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_049",
@@ -818,7 +1352,13 @@
       "collection": "additional-45",
       "file": "common/common_049.png",
       "source": "additional-45/10-common-41-49.png",
-      "sourceSlot": 8
+      "sourceSlot": 8,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_050",
@@ -827,7 +1367,13 @@
       "collection": "additional-45",
       "file": "common/common_050.png",
       "source": "additional-45/11-common-50-58.png",
-      "sourceSlot": 0
+      "sourceSlot": 0,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_051",
@@ -836,7 +1382,13 @@
       "collection": "additional-45",
       "file": "common/common_051.png",
       "source": "additional-45/11-common-50-58.png",
-      "sourceSlot": 1
+      "sourceSlot": 1,
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 17,
+        "size": 104
+      }
     },
     {
       "id": "common_052",
@@ -845,7 +1397,13 @@
       "collection": "additional-45",
       "file": "common/common_052.png",
       "source": "additional-45/11-common-50-58.png",
-      "sourceSlot": 2
+      "sourceSlot": 2,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_053",
@@ -854,7 +1412,13 @@
       "collection": "additional-45",
       "file": "common/common_053.png",
       "source": "additional-45/11-common-50-58.png",
-      "sourceSlot": 3
+      "sourceSlot": 3,
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 12,
+        "size": 104
+      }
     },
     {
       "id": "common_054",
@@ -863,7 +1427,13 @@
       "collection": "additional-45",
       "file": "common/common_054.png",
       "source": "additional-45/11-common-50-58.png",
-      "sourceSlot": 4
+      "sourceSlot": 4,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_055",
@@ -872,7 +1442,13 @@
       "collection": "additional-45",
       "file": "common/common_055.png",
       "source": "additional-45/11-common-50-58.png",
-      "sourceSlot": 5
+      "sourceSlot": 5,
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 12,
+        "size": 104
+      }
     },
     {
       "id": "common_056",
@@ -881,7 +1457,13 @@
       "collection": "additional-45",
       "file": "common/common_056.png",
       "source": "additional-45/11-common-50-58.png",
-      "sourceSlot": 6
+      "sourceSlot": 6,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_057",
@@ -890,7 +1472,13 @@
       "collection": "additional-45",
       "file": "common/common_057.png",
       "source": "additional-45/11-common-50-58.png",
-      "sourceSlot": 7
+      "sourceSlot": 7,
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 17,
+        "size": 104
+      }
     },
     {
       "id": "common_058",
@@ -899,7 +1487,13 @@
       "collection": "additional-45",
       "file": "common/common_058.png",
       "source": "additional-45/11-common-50-58.png",
-      "sourceSlot": 8
+      "sourceSlot": 8,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_059",
@@ -908,7 +1502,13 @@
       "collection": "additional-45",
       "file": "common/common_059.png",
       "source": "additional-45/12-common-59-60-rare-25-31.png",
-      "sourceSlot": 0
+      "sourceSlot": 0,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_060",
@@ -917,7 +1517,13 @@
       "collection": "additional-45",
       "file": "common/common_060.png",
       "source": "additional-45/12-common-59-60-rare-25-31.png",
-      "sourceSlot": 1
+      "sourceSlot": 1,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_025",
@@ -926,7 +1532,13 @@
       "collection": "additional-45",
       "file": "rare/rare_025.png",
       "source": "additional-45/12-common-59-60-rare-25-31.png",
-      "sourceSlot": 2
+      "sourceSlot": 2,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_026",
@@ -935,7 +1547,13 @@
       "collection": "additional-45",
       "file": "rare/rare_026.png",
       "source": "additional-45/12-common-59-60-rare-25-31.png",
-      "sourceSlot": 3
+      "sourceSlot": 3,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_027",
@@ -944,7 +1562,13 @@
       "collection": "additional-45",
       "file": "rare/rare_027.png",
       "source": "additional-45/12-common-59-60-rare-25-31.png",
-      "sourceSlot": 4
+      "sourceSlot": 4,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_028",
@@ -953,7 +1577,13 @@
       "collection": "additional-45",
       "file": "rare/rare_028.png",
       "source": "additional-45/12-common-59-60-rare-25-31.png",
-      "sourceSlot": 5
+      "sourceSlot": 5,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_029",
@@ -962,7 +1592,13 @@
       "collection": "additional-45",
       "file": "rare/rare_029.png",
       "source": "additional-45/12-common-59-60-rare-25-31.png",
-      "sourceSlot": 6
+      "sourceSlot": 6,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_030",
@@ -971,7 +1607,13 @@
       "collection": "additional-45",
       "file": "rare/rare_030.png",
       "source": "additional-45/12-common-59-60-rare-25-31.png",
-      "sourceSlot": 7
+      "sourceSlot": 7,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_031",
@@ -980,7 +1622,13 @@
       "collection": "additional-45",
       "file": "rare/rare_031.png",
       "source": "additional-45/12-common-59-60-rare-25-31.png",
-      "sourceSlot": 8
+      "sourceSlot": 8,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_032",
@@ -989,7 +1637,13 @@
       "collection": "additional-45",
       "file": "rare/rare_032.png",
       "source": "additional-45/13-rare-32-38-epic-13-14.png",
-      "sourceSlot": 0
+      "sourceSlot": 0,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_033",
@@ -998,7 +1652,13 @@
       "collection": "additional-45",
       "file": "rare/rare_033.png",
       "source": "additional-45/13-rare-32-38-epic-13-14.png",
-      "sourceSlot": 1
+      "sourceSlot": 1,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_034",
@@ -1007,7 +1667,13 @@
       "collection": "additional-45",
       "file": "rare/rare_034.png",
       "source": "additional-45/13-rare-32-38-epic-13-14.png",
-      "sourceSlot": 2
+      "sourceSlot": 2,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_035",
@@ -1016,7 +1682,13 @@
       "collection": "additional-45",
       "file": "rare/rare_035.png",
       "source": "additional-45/13-rare-32-38-epic-13-14.png",
-      "sourceSlot": 3
+      "sourceSlot": 3,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_036",
@@ -1025,7 +1697,13 @@
       "collection": "additional-45",
       "file": "rare/rare_036.png",
       "source": "additional-45/13-rare-32-38-epic-13-14.png",
-      "sourceSlot": 4
+      "sourceSlot": 4,
+      "slot": "full",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -8,
+        "size": 112
+      }
     },
     {
       "id": "rare_037",
@@ -1034,7 +1712,13 @@
       "collection": "additional-45",
       "file": "rare/rare_037.png",
       "source": "additional-45/13-rare-32-38-epic-13-14.png",
-      "sourceSlot": 5
+      "sourceSlot": 5,
+      "slot": "face",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -8,
+        "size": 104
+      }
     },
     {
       "id": "rare_038",
@@ -1043,7 +1727,13 @@
       "collection": "additional-45",
       "file": "rare/rare_038.png",
       "source": "additional-45/13-rare-32-38-epic-13-14.png",
-      "sourceSlot": 6
+      "sourceSlot": 6,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "epic_013",
@@ -1052,7 +1742,13 @@
       "collection": "additional-45",
       "file": "epic/epic_013.png",
       "source": "additional-45/13-rare-32-38-epic-13-14.png",
-      "sourceSlot": 7
+      "sourceSlot": 7,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "epic_014",
@@ -1061,7 +1757,13 @@
       "collection": "additional-45",
       "file": "epic/epic_014.png",
       "source": "additional-45/13-rare-32-38-epic-13-14.png",
-      "sourceSlot": 8
+      "sourceSlot": 8,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "epic_015",
@@ -1070,7 +1772,13 @@
       "collection": "additional-45",
       "file": "epic/epic_015.png",
       "source": "additional-45/14-epic-15-19-legendary-05-07-bonus-special.png",
-      "sourceSlot": 0
+      "sourceSlot": 0,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "epic_016",
@@ -1079,7 +1787,13 @@
       "collection": "additional-45",
       "file": "epic/epic_016.png",
       "source": "additional-45/14-epic-15-19-legendary-05-07-bonus-special.png",
-      "sourceSlot": 1
+      "sourceSlot": 1,
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 17,
+        "size": 104
+      }
     },
     {
       "id": "epic_017",
@@ -1088,7 +1802,13 @@
       "collection": "additional-45",
       "file": "epic/epic_017.png",
       "source": "additional-45/14-epic-15-19-legendary-05-07-bonus-special.png",
-      "sourceSlot": 2
+      "sourceSlot": 2,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "epic_018",
@@ -1097,7 +1817,13 @@
       "collection": "additional-45",
       "file": "epic/epic_018.png",
       "source": "additional-45/14-epic-15-19-legendary-05-07-bonus-special.png",
-      "sourceSlot": 3
+      "sourceSlot": 3,
+      "slot": "face",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -8,
+        "size": 104
+      }
     },
     {
       "id": "epic_019",
@@ -1106,7 +1832,13 @@
       "collection": "additional-45",
       "file": "epic/epic_019.png",
       "source": "additional-45/14-epic-15-19-legendary-05-07-bonus-special.png",
-      "sourceSlot": 4
+      "sourceSlot": 4,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "legendary_005",
@@ -1115,7 +1847,13 @@
       "collection": "additional-45",
       "file": "legendary/legendary_005.png",
       "source": "additional-45/14-epic-15-19-legendary-05-07-bonus-special.png",
-      "sourceSlot": 5
+      "sourceSlot": 5,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "legendary_006",
@@ -1124,7 +1862,13 @@
       "collection": "additional-45",
       "file": "legendary/legendary_006.png",
       "source": "additional-45/14-epic-15-19-legendary-05-07-bonus-special.png",
-      "sourceSlot": 6
+      "sourceSlot": 6,
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 17,
+        "size": 104
+      }
     },
     {
       "id": "legendary_007",
@@ -1133,7 +1877,13 @@
       "collection": "additional-45",
       "file": "legendary/legendary_007.png",
       "source": "additional-45/14-epic-15-19-legendary-05-07-bonus-special.png",
-      "sourceSlot": 7
+      "sourceSlot": 7,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "special_002",
@@ -1142,7 +1892,13 @@
       "collection": "additional-45",
       "file": "special/special_002.png",
       "source": "additional-45/14-epic-15-19-legendary-05-07-bonus-special.png",
-      "sourceSlot": 8
+      "sourceSlot": 8,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_061",
@@ -1151,7 +1907,13 @@
       "collection": "more-30",
       "file": "common/common_061.png",
       "source": "more-30/15-common-61-66.png",
-      "sourceSlot": 0
+      "sourceSlot": 0,
+      "slot": "full",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -8,
+        "size": 112
+      }
     },
     {
       "id": "common_062",
@@ -1160,7 +1922,13 @@
       "collection": "more-30",
       "file": "common/common_062.png",
       "source": "more-30/15-common-61-66.png",
-      "sourceSlot": 1
+      "sourceSlot": 1,
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 17,
+        "size": 104
+      }
     },
     {
       "id": "common_063",
@@ -1169,7 +1937,13 @@
       "collection": "more-30",
       "file": "common/common_063.png",
       "source": "more-30/15-common-61-66.png",
-      "sourceSlot": 2
+      "sourceSlot": 2,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_064",
@@ -1178,7 +1952,13 @@
       "collection": "more-30",
       "file": "common/common_064.png",
       "source": "more-30/15-common-61-66.png",
-      "sourceSlot": 3
+      "sourceSlot": 3,
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 17,
+        "size": 104
+      }
     },
     {
       "id": "common_065",
@@ -1187,7 +1967,13 @@
       "collection": "more-30",
       "file": "common/common_065.png",
       "source": "more-30/15-common-61-66.png",
-      "sourceSlot": 4
+      "sourceSlot": 4,
+      "slot": "face",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -8,
+        "size": 104
+      }
     },
     {
       "id": "common_066",
@@ -1196,7 +1982,13 @@
       "collection": "more-30",
       "file": "common/common_066.png",
       "source": "more-30/15-common-61-66.png",
-      "sourceSlot": 5
+      "sourceSlot": 5,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_067",
@@ -1205,7 +1997,13 @@
       "collection": "more-30",
       "file": "common/common_067.png",
       "source": "more-30/16-common-67-72.png",
-      "sourceSlot": 0
+      "sourceSlot": 0,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_068",
@@ -1214,7 +2012,13 @@
       "collection": "more-30",
       "file": "common/common_068.png",
       "source": "more-30/16-common-67-72.png",
-      "sourceSlot": 1
+      "sourceSlot": 1,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_069",
@@ -1223,7 +2027,13 @@
       "collection": "more-30",
       "file": "common/common_069.png",
       "source": "more-30/16-common-67-72.png",
-      "sourceSlot": 2
+      "sourceSlot": 2,
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 12,
+        "size": 104
+      }
     },
     {
       "id": "common_070",
@@ -1232,7 +2042,13 @@
       "collection": "more-30",
       "file": "common/common_070.png",
       "source": "more-30/16-common-67-72.png",
-      "sourceSlot": 3
+      "sourceSlot": 3,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_071",
@@ -1241,7 +2057,13 @@
       "collection": "more-30",
       "file": "common/common_071.png",
       "source": "more-30/16-common-67-72.png",
-      "sourceSlot": 4
+      "sourceSlot": 4,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "common_072",
@@ -1250,7 +2072,13 @@
       "collection": "more-30",
       "file": "common/common_072.png",
       "source": "more-30/16-common-67-72.png",
-      "sourceSlot": 5
+      "sourceSlot": 5,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_039",
@@ -1259,7 +2087,13 @@
       "collection": "more-30",
       "file": "rare/rare_039.png",
       "source": "more-30/17-rare-39-44.png",
-      "sourceSlot": 0
+      "sourceSlot": 0,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_040",
@@ -1268,7 +2102,13 @@
       "collection": "more-30",
       "file": "rare/rare_040.png",
       "source": "more-30/17-rare-39-44.png",
-      "sourceSlot": 1
+      "sourceSlot": 1,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_041",
@@ -1277,7 +2117,13 @@
       "collection": "more-30",
       "file": "rare/rare_041.png",
       "source": "more-30/17-rare-39-44.png",
-      "sourceSlot": 2
+      "sourceSlot": 2,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_042",
@@ -1286,7 +2132,13 @@
       "collection": "more-30",
       "file": "rare/rare_042.png",
       "source": "more-30/17-rare-39-44.png",
-      "sourceSlot": 3
+      "sourceSlot": 3,
+      "slot": "full",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -8,
+        "size": 112
+      }
     },
     {
       "id": "rare_043",
@@ -1295,7 +2147,13 @@
       "collection": "more-30",
       "file": "rare/rare_043.png",
       "source": "more-30/17-rare-39-44.png",
-      "sourceSlot": 4
+      "sourceSlot": 4,
+      "slot": "full",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -8,
+        "size": 112
+      }
     },
     {
       "id": "rare_044",
@@ -1304,7 +2162,13 @@
       "collection": "more-30",
       "file": "rare/rare_044.png",
       "source": "more-30/17-rare-39-44.png",
-      "sourceSlot": 5
+      "sourceSlot": 5,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "rare_045",
@@ -1313,7 +2177,13 @@
       "collection": "more-30",
       "file": "rare/rare_045.png",
       "source": "more-30/18-rare-45-48-epic-20-21.png",
-      "sourceSlot": 0
+      "sourceSlot": 0,
+      "slot": "face",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -8,
+        "size": 104
+      }
     },
     {
       "id": "rare_046",
@@ -1322,7 +2192,13 @@
       "collection": "more-30",
       "file": "rare/rare_046.png",
       "source": "more-30/18-rare-45-48-epic-20-21.png",
-      "sourceSlot": 1
+      "sourceSlot": 1,
+      "slot": "full",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -8,
+        "size": 112
+      }
     },
     {
       "id": "rare_047",
@@ -1331,7 +2207,13 @@
       "collection": "more-30",
       "file": "rare/rare_047.png",
       "source": "more-30/18-rare-45-48-epic-20-21.png",
-      "sourceSlot": 2
+      "sourceSlot": 2,
+      "slot": "full",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -8,
+        "size": 112
+      }
     },
     {
       "id": "rare_048",
@@ -1340,7 +2222,13 @@
       "collection": "more-30",
       "file": "rare/rare_048.png",
       "source": "more-30/18-rare-45-48-epic-20-21.png",
-      "sourceSlot": 3
+      "sourceSlot": 3,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "epic_020",
@@ -1349,7 +2237,13 @@
       "collection": "more-30",
       "file": "epic/epic_020.png",
       "source": "more-30/18-rare-45-48-epic-20-21.png",
-      "sourceSlot": 4
+      "sourceSlot": 4,
+      "slot": "full",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -8,
+        "size": 112
+      }
     },
     {
       "id": "epic_021",
@@ -1358,7 +2252,13 @@
       "collection": "more-30",
       "file": "epic/epic_021.png",
       "source": "more-30/18-rare-45-48-epic-20-21.png",
-      "sourceSlot": 5
+      "sourceSlot": 5,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "epic_022",
@@ -1367,7 +2267,13 @@
       "collection": "more-30",
       "file": "epic/epic_022.png",
       "source": "more-30/19-epic-22-24-legendary-08-09-secret-special.png",
-      "sourceSlot": 0
+      "sourceSlot": 0,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "epic_023",
@@ -1376,7 +2282,13 @@
       "collection": "more-30",
       "file": "epic/epic_023.png",
       "source": "more-30/19-epic-22-24-legendary-08-09-secret-special.png",
-      "sourceSlot": 1
+      "sourceSlot": 1,
+      "slot": "full",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -8,
+        "size": 112
+      }
     },
     {
       "id": "epic_024",
@@ -1385,7 +2297,13 @@
       "collection": "more-30",
       "file": "epic/epic_024.png",
       "source": "more-30/19-epic-22-24-legendary-08-09-secret-special.png",
-      "sourceSlot": 2
+      "sourceSlot": 2,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "legendary_008",
@@ -1394,7 +2312,13 @@
       "collection": "more-30",
       "file": "legendary/legendary_008.png",
       "source": "more-30/19-epic-22-24-legendary-08-09-secret-special.png",
-      "sourceSlot": 3
+      "sourceSlot": 3,
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -30,
+        "size": 104
+      }
     },
     {
       "id": "legendary_009",
@@ -1403,7 +2327,13 @@
       "collection": "more-30",
       "file": "legendary/legendary_009.png",
       "source": "more-30/19-epic-22-24-legendary-08-09-secret-special.png",
-      "sourceSlot": 4
+      "sourceSlot": 4,
+      "slot": "face",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -8,
+        "size": 104
+      }
     },
     {
       "id": "special_003",
@@ -1412,7 +2342,13 @@
       "collection": "more-30",
       "file": "special/special_003.png",
       "source": "more-30/19-epic-22-24-legendary-08-09-secret-special.png",
-      "sourceSlot": 5
+      "sourceSlot": 5,
+      "slot": "full",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -8,
+        "size": 112
+      }
     },
     {
       "id": "default_ghost",
