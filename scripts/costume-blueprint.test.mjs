@@ -58,23 +58,38 @@ function completeBlueprint() {
     Object.entries(counts).flatMap(([slot, count]) => Array(count).fill(slot)),
   ]));
   const nextSlot = Object.fromEntries(Object.keys(slots).map((rarity) => [rarity, 0]));
+  const fixtureCenterShapes = [
+    "둥근 삼각", "비대칭 사다리꼴", "가로 타원", "뾰족 오각",
+    "넓은 육각", "기운 반원", "세로 마름모",
+  ];
+  const fixtureEdgeShapes = [
+    "두 갈래 굽은", "세 단 계단", "한쪽 둥근홈", "쌍봉우리",
+    "굵은 갈고리", "깊은 V홈", "비대칭 물결",
+  ];
+  let rankedShapeIndex = 0;
 
   return [...expectedCatalogIds()].map(([id, rarity]) => {
     const index = nextSlot[rarity]++;
+    const hasOuterShape = ["epic", "legendary"].includes(rarity);
+    const shapeIndex = hasOuterShape ? rankedShapeIndex++ : -1;
+    const centerShape = fixtureCenterShapes[shapeIndex % fixtureCenterShapes.length];
+    const edgeShape = fixtureEdgeShapes[Math.floor(shapeIndex / fixtureCenterShapes.length)];
+    const silhouette = hasOuterShape
+      ? `${centerShape} 중심판이 ${edgeShape} 밑단과 끊김 없이 이어진 구조 윤곽`
+      : `실루엣 ${id}`;
     return {
       ...validItem,
       id,
       rarity,
       name: `아이템 ${id}`,
-      silhouette: `실루엣 ${id}`,
+      silhouette,
       palette: { primary: `주색 ${id}`, secondary: `보조색 ${id}`, accent: `강조색 ${id}` },
       signatureDetail: `서명 ${id}`,
       prompt: `아이템 ${id} 하나`,
       slot: slots[rarity][index],
-      outerShape: ["epic", "legendary"].includes(rarity) ? {
-        family: `fixture-${id}`,
+      outerShape: hasOuterShape ? {
         class: "other",
-        evidence: [id],
+        evidence: [`${centerShape} 중심판`, `${edgeShape} 밑단`],
       } : undefined,
     };
   });
@@ -375,7 +390,7 @@ test("legendary and special quotas are exact", async () => {
   assert.deepEqual(validateBlueprint(special, { rarity: "special" }), []);
 });
 
-test("legendary outer shapes are evidenced, unique, Epic-disjoint, and crown-hood limited", async () => {
+test("legendary outer shapes use silhouette evidence, stay Epic-disjoint, and limit crown-hood forms", async () => {
   const epic = await loadRarityBlueprint("epic");
   const legendary = await loadRarityBlueprint("legendary");
   const issues = [];
@@ -386,43 +401,67 @@ test("legendary outer shapes are evidenced, unique, Epic-disjoint, and crown-hoo
       issues.push(`${item.id}: missing outerShape`);
       continue;
     }
-    const copy = `${item.silhouette} ${item.prompt}`.normalize("NFC");
+    if ("family" in shape) issues.push(`${item.id}: free-form shape family remains`);
+    if ((shape.evidence ?? []).length < 2) {
+      issues.push(`${item.id}: insufficient shape evidence`);
+    }
+    const copy = item.silhouette.normalize("NFC");
     for (const evidence of shape.evidence ?? []) {
       if (!copy.includes(evidence.normalize("NFC"))) {
         issues.push(`${item.id}: missing shape evidence ${evidence}`);
       }
     }
   }
-
-  const epicFamilies = epic.map(({ outerShape }) => outerShape?.family).filter(Boolean);
-  const legendaryFamilies = legendary.map(({ outerShape }) => outerShape?.family).filter(Boolean);
-  const epicFamilySet = new Set(epicFamilies);
   assert.deepEqual(issues, []);
-  assert.equal(new Set(epicFamilies).size, 31);
-  assert.equal(new Set(legendaryFamilies).size, 12);
-  assert.deepEqual(legendaryFamilies.filter((family) => epicFamilySet.has(family)), []);
   assert.ok(legendary.filter(({ outerShape }) => outerShape?.class === "crown").length <= 1);
   assert.ok(legendary.filter(({ outerShape }) => outerShape?.class === "hood").length <= 1);
 });
 
-test("validator rejects Legendary outer-family reuse and excess crown or hood classes", () => {
+test("a fresh arbitrary label cannot hide reused Epic silhouette evidence", () => {
   const items = completeBlueprint();
   const epic = items.find(({ id }) => id === "epic_001");
   const legendary = items.filter(({ rarity }) => rarity === "legendary");
-  legendary[0].outerShape.family = epic.outerShape.family;
+  legendary[0].silhouette = epic.silhouette;
+  legendary[0].outerShape.evidence = [...epic.outerShape.evidence];
+  legendary[0].outerShape.family = "brand-new-arbitrary-label";
+
+  const errors = validateBlueprint(items);
+  assert.ok(errors.some((error) =>
+    error.includes("legendary_001: duplicate outer shape fingerprint with epic_001")));
+});
+
+test("outer-shape evidence rejects IDs, generic placeholders, and prompt-only copy", () => {
+  const items = completeBlueprint();
+  const ranked = items.filter(({ rarity }) => ["epic", "legendary"].includes(rarity));
+  ranked[0].silhouette += ` ${ranked[0].id}`;
+  ranked[0].outerShape.evidence = [ranked[0].id, ranked[0].outerShape.evidence[1]];
+  ranked[1].outerShape.evidence = ["윤곽", ranked[1].outerShape.evidence[1]];
+  ranked[2].prompt += " 프롬프트 전용 삼각판과 프롬프트 전용 물결밑단";
+  ranked[2].outerShape.evidence = ["프롬프트 전용 삼각판", "프롬프트 전용 물결밑단"];
+  ranked[3].outerShape.evidence = [ranked[3].outerShape.evidence[0]];
+
+  const errors = validateBlueprint(items);
+  assert.ok(errors.includes("epic_001: invalid ID-like outer shape evidence: epic_001"));
+  assert.ok(errors.includes("epic_002: generic outer shape evidence: 윤곽"));
+  assert.ok(errors.includes(
+    "epic_003: outer shape evidence not found in silhouette: 프롬프트 전용 삼각판",
+  ));
+  assert.ok(errors.includes("epic_004: expected at least two outer shape evidence phrases"));
+});
+
+test("validator still rejects excess crown or hood classes and copy-class conflicts", () => {
+  const items = completeBlueprint();
+  const legendary = items.filter(({ rarity }) => rarity === "legendary");
   legendary[0].outerShape.class = "crown";
   legendary[1].outerShape.class = "crown";
   legendary[2].outerShape.class = "hood";
   legendary[3].outerShape.class = "hood";
-  legendary[4].outerShape.evidence = ["설명에 없는 외곽 근거"];
   legendary[5].silhouette += " 왕관형 외곽";
-  legendary[6].prompt += " 후드형 외곽";
+  legendary[6].silhouette += " 후드형 외곽";
 
   const errors = validateBlueprint(items);
-  assert.ok(errors.some((error) => error.includes("duplicate outer shape family with epic_001")));
   assert.ok(errors.includes("legendary: expected at most one crown-shaped outer form, got 2"));
   assert.ok(errors.includes("legendary: expected at most one hood-shaped outer form, got 2"));
-  assert.ok(errors.some((error) => error.includes("outer shape evidence not found")));
   assert.ok(errors.includes("legendary_006: outer shape class other conflicts with crown copy"));
   assert.ok(errors.includes("legendary_007: outer shape class other conflicts with hood copy"));
 });

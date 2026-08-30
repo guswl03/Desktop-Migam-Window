@@ -6,7 +6,7 @@
     "slot": "head",
     "theme": "천체 장비",
     "silhouette": "서로 다른 기울기의 세 넓은 궤도띠가 한쪽 공통축에서 이어진 비대칭 천구형 윤곽",
-    "outerShape": { "family": "shared-axis-triple-armillary", "class": "other", "evidence": ["세 넓은 궤도띠", "공통축"] },
+    "outerShape": {"class":"other","evidence":["세 넓은 궤도띠","한쪽 공통축"]},
     "palette": {
       "primary": "밤청자색",
       "secondary": "별금속백색",
@@ -25,7 +25,7 @@
     "slot": "face",
     "theme": "천체 장비",
     "silhouette": "위아래로 엇갈린 두 굵은 초승달판이 양끝에서 맞물려 아몬드형 빈틈을 감싼 윤곽",
-    "outerShape": { "family": "interlocked-opposed-crescents", "class": "other", "evidence": ["두 굵은 초승달판", "아몬드형 빈틈"] },
+    "outerShape": {"class":"other","evidence":["두 굵은 초승달판","아몬드형 빈틈"]},
     "palette": {
       "primary": "월식흑청색",
       "secondary": "달빛은백색",
@@ -44,7 +44,7 @@
     "slot": "head",
     "theme": "천체 장비",
     "silhouette": "넓은 사분원 판의 바깥 호와 굵은 대각살이 낮은 받침띠에 끊김 없이 붙은 윤곽",
-    "outerShape": { "family": "integrated-quadrant-sextant", "class": "other", "evidence": ["사분원 판", "대각살"] },
+    "outerShape": {"class":"other","evidence":["넓은 사분원 판","굵은 대각살"]},
     "palette": {
       "primary": "성도남보라색",
       "secondary": "측성황백금색",
@@ -63,7 +63,7 @@
     "slot": "head",
     "theme": "고대 군주 장비",
     "silhouette": "넓은 반원 받침 위에 하나의 높은 사각 기둥판이 비스듬히 서서 긴 그림자쐐기를 이루는 윤곽",
-    "outerShape": { "family": "oblique-gnomon-half-disc", "class": "other", "evidence": ["반원 받침", "사각 기둥판"] },
+    "outerShape": {"class":"other","evidence":["넓은 반원 받침","높은 사각 기둥판"]},
     "palette": {
       "primary": "왕조석자주색",
       "secondary": "황혼사암색",
@@ -82,7 +82,7 @@
     "slot": "neck",
     "theme": "고대 군주 장비",
     "silhouette": "완전히 닫힌 원형 윗판 아래로 세 갈래 둥근 아랫잎이 좌우 대칭으로 퍼진 가슴받이 윤곽",
-    "outerShape": { "family": "closed-three-lobed-seal-plastron", "class": "other", "evidence": ["완전히 닫힌 원형 윗판", "세 갈래 둥근 아랫잎"] },
+    "outerShape": {"class":"other","evidence":["완전히 닫힌 원형 윗판","세 갈래 둥근 아랫잎"]},
     "palette": {
       "primary": "군주감청색",
       "secondary": "봉인상아색",
@@ -101,7 +101,7 @@
     "slot": "body",
     "theme": "고대 군주 장비",
     "silhouette": "높은 등받이형 오각판이 아래의 깊은 곡선 받침과 이어져 비어 있는 의자꼴을 이루는 윤곽",
-    "outerShape": { "family": "empty-throne-backplate", "class": "other", "evidence": ["등받이형 오각판", "곡선 받침"] },
+    "outerShape": {"class":"other","evidence":["높은 등받이형 오각판","깊은 곡선 받침"]},
     "palette": {
       "primary": "빈좌군청색",
       "secondary": "고석회백색",
@@ -120,7 +120,7 @@
     "slot": "head",
     "theme": "세계수·거대 생물 장비",
     "silhouette": "넓고 평평한 나무차양의 양끝이 굵은 공중뿌리 두 갈래로 내려와 아래 고리와 다시 이어진 윤곽",
-    "outerShape": { "family": "recirculating-aerial-root-canopy", "class": "other", "evidence": ["나무차양", "공중뿌리"] },
+    "outerShape": {"class":"other","evidence":["넓고 평평한 나무차양","공중뿌리 두 갈래"]},
     "palette": {
       "primary": "세계수심록색",
       "secondary": "고목황갈색",
@@ -139,7 +139,7 @@
     "slot": "face",
     "theme": "세계수·거대 생물 장비",
     "silhouette": "두꺼운 비정형 옹이테가 한쪽으로 크게 부풀고 반대쪽의 좁은 뿌리다리로 닫힌 윤곽",
-    "outerShape": { "family": "asymmetric-knotwood-aperture", "class": "other", "evidence": ["비정형 옹이테", "뿌리다리"] },
+    "outerShape": {"class":"other","evidence":["두꺼운 비정형 옹이테","좁은 뿌리다리"]},
     "palette": {
       "primary": "옹이나무밤색",
       "secondary": "속결비취색",
@@ -158,7 +158,7 @@
     "slot": "body",
     "theme": "세계수·거대 생물 장비",
     "silhouette": "넓고 둥근 사각 진동판의 한 모서리가 눌리고 세 겹 굵은 파동테가 바깥으로 번진 윤곽",
-    "outerShape": { "family": "corner-impact-ripple-plate", "class": "other", "evidence": ["사각 진동판", "파동테"] },
+    "outerShape": {"class":"other","evidence":["넓고 둥근 사각 진동판","세 겹 굵은 파동테"]},
     "palette": {
       "primary": "거대걸음흑토색",
       "secondary": "울림석청회색",
@@ -177,7 +177,7 @@
     "slot": "head",
     "theme": "우주 현상 장비",
     "silhouette": "한쪽으로 기운 넓은 원반이 중앙의 깊은 깔때기형 목으로 말려 들어가는 윤곽",
-    "outerShape": { "family": "tilted-accretion-funnel", "class": "other", "evidence": ["넓은 원반", "깔때기형 목"] },
+    "outerShape": {"class":"other","evidence":["한쪽으로 기운 넓은 원반","깊은 깔때기형 목"]},
     "palette": {
       "primary": "사건지평먹보라색",
       "secondary": "중력렌즈청백색",
@@ -196,7 +196,7 @@
     "slot": "head",
     "theme": "우주 현상 장비",
     "silhouette": "낮은 활대에서 세 폭의 넓은 물결천이 서로 다른 길이로 흘러내려 한쪽으로 모이는 윤곽",
-    "outerShape": { "family": "three-drop-aurora-curtain", "class": "other", "evidence": ["활대", "세 폭"] },
+    "outerShape": {"class":"other","evidence":["낮은 활대","세 폭의 넓은 물결천"]},
     "palette": {
       "primary": "극광청록색",
       "secondary": "밤하늘남색",
@@ -215,7 +215,7 @@
     "slot": "body",
     "theme": "우주 현상 장비",
     "silhouette": "큰 중심판에서 길고 짧은 여덟 방사쐐기가 번갈아 뻗어 하나의 파열별을 이루는 윤곽",
-    "outerShape": { "family": "alternating-eight-ray-burstplate", "class": "other", "evidence": ["여덟 방사쐐기", "파열별"] },
+    "outerShape": {"class":"other","evidence":["큰 중심판","여덟 방사쐐기"]},
     "palette": {
       "primary": "초신성백금색",
       "secondary": "성운감청색",

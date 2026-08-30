@@ -16,6 +16,11 @@ const allowedRarities = new Set(Object.keys(rarityCounts));
 const allowedSlots = new Set(Object.keys(overallSlotCounts));
 const allowedQaStates = new Set(["planned", "candidate", "accepted", "rejected"]);
 const allowedOuterShapeClasses = new Set(["other", "crown", "hood"]);
+const genericOuterShapeEvidence = new Set([
+  "fixture", "item", "silhouette", "outer shape",
+  "항목", "아이템", "실루엣", "외곽", "윤곽",
+]);
+const catalogIdEvidencePattern = /(?:^|[^a-z0-9])(?:common|rare|epic|legendary|special)_\d{3}(?:$|[^a-z0-9])/iu;
 const repositoryRoot = fileURLToPath(new URL("..", import.meta.url));
 const APPROVED_STYLE = "polished stylized desktop-pet game icon, friendly toy-like proportions, clean readable silhouette, crisp edges";
 
@@ -157,23 +162,34 @@ export function validateBlueprint(items, { rarity: scopeRarity = null } = {}) {
       if (!outerShape || typeof outerShape !== "object" || Array.isArray(outerShape)) {
         errors.push(`${id}: missing outer shape metadata`);
       } else {
-        if (!normalized(outerShape.family)) errors.push(`${id}: missing outer shape family`);
         if (!allowedOuterShapeClasses.has(outerShape.class)) {
           errors.push(`${id}: invalid outer shape class`);
         }
-        const shapeCopy = normalized(`${item?.silhouette ?? ""} ${item?.prompt ?? ""}`);
         if (!Array.isArray(outerShape.evidence)
-          || outerShape.evidence.length === 0
+          || outerShape.evidence.length < 2
           || !outerShape.evidence.every((value) => normalized(value))) {
-          errors.push(`${id}: missing outer shape evidence`);
+          errors.push(`${id}: expected at least two outer shape evidence phrases`);
         } else {
+          const canonicalEvidence = outerShape.evidence.map(normalized);
+          if (new Set(canonicalEvidence).size !== canonicalEvidence.length) {
+            errors.push(`${id}: outer shape evidence phrases must be distinct`);
+          }
+          const silhouette = normalized(item?.silhouette);
           for (const evidence of outerShape.evidence) {
-            if (!shapeCopy.includes(normalized(evidence))) {
-              errors.push(`${id}: outer shape evidence not found: ${evidence}`);
+            const canonical = normalized(evidence);
+            if (catalogIdEvidencePattern.test(canonical)) {
+              errors.push(`${id}: invalid ID-like outer shape evidence: ${evidence}`);
+            }
+            if (genericOuterShapeEvidence.has(canonical)) {
+              errors.push(`${id}: generic outer shape evidence: ${evidence}`);
+            }
+            if (!silhouette.includes(canonical)) {
+              errors.push(`${id}: outer shape evidence not found in silhouette: ${evidence}`);
             }
           }
         }
         if (item.rarity === "legendary") {
+          const shapeCopy = normalized(`${item?.silhouette ?? ""} ${item?.prompt ?? ""}`);
           for (const [shapeClass, terms] of [
             ["crown", /왕관|크라운/u],
             ["hood", /후드|두건/u],
@@ -232,8 +248,8 @@ export function validateBlueprint(items, { rarity: scopeRarity = null } = {}) {
   addDuplicateErrors(
     rankedShapeItems,
     errors,
-    "outer shape family",
-    (item) => normalized(item?.outerShape?.family),
+    "outer shape fingerprint",
+    outerShapeFingerprint,
   );
   const legendaryShapes = rankedShapeItems.filter(({ rarity }) => rarity === "legendary");
   for (const shapeClass of ["crown", "hood"]) {
@@ -244,6 +260,23 @@ export function validateBlueprint(items, { rarity: scopeRarity = null } = {}) {
   }
 
   return errors;
+}
+
+function outerShapeFingerprint(item) {
+  const evidence = item?.outerShape?.evidence;
+  if (!Array.isArray(evidence)) return "";
+  const canonical = evidence.map(normalized);
+  const silhouette = normalized(item?.silhouette);
+  if (canonical.length < 2
+    || new Set(canonical).size !== canonical.length
+    || canonical.some((value) =>
+      !value
+      || genericOuterShapeEvidence.has(value)
+      || catalogIdEvidencePattern.test(value)
+      || !silhouette.includes(value))) {
+    return "";
+  }
+  return canonical.sort().join("\u0000");
 }
 
 export async function loadBlueprint(root = repositoryRoot, rarity = null) {
