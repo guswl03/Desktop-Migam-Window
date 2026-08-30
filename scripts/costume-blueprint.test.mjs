@@ -1,14 +1,32 @@
 import assert from "node:assert/strict";
-import { mkdtemp, mkdir, rm, writeFile } from "node:fs/promises";
+import { execFile } from "node:child_process";
+import { mkdtemp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import test from "node:test";
+import { promisify } from "node:util";
 import {
   buildImagePrompt,
   expectedCatalogIds,
   loadBlueprint,
   validateBlueprint,
 } from "./costume-blueprint.mjs";
+
+const execFileAsync = promisify(execFile);
+
+function countBy(items, field) {
+  return items.reduce((counts, item) => {
+    counts[item[field]] = (counts[item[field]] ?? 0) + 1;
+    return counts;
+  }, {});
+}
+
+function expectedIds(rarity, count) {
+  return Array.from(
+    { length: count },
+    (_, index) => `${rarity}_${String(index + 1).padStart(3, "0")}`,
+  );
+}
 
 const validItem = {
   id: "common_001", rarity: "common", name: "새벽 우편모", slot: "head",
@@ -72,6 +90,13 @@ test("accepts a complete catalog with the approved rarity and slot totals", () =
   assert.deepEqual(validateBlueprint(completeBlueprint()), []);
 });
 
+test("an incomplete common subset still requires all 80 approved Common IDs", () => {
+  const errors = validateBlueprint([validItem]);
+  assert.ok(errors.includes("catalog: expected 80 items, got 1"));
+  assert.ok(errors.includes("missing catalog ID common_080"));
+  assert.ok(!errors.includes("missing catalog ID rare_001"));
+});
+
 test("reports missing and duplicate catalog IDs", () => {
   const items = completeBlueprint();
   const missing = items.filter(({ id }) => id !== "common_080");
@@ -128,7 +153,7 @@ test("reports each invalid schema property with its exact item ID", () => {
 
 test("loads every rarity file from a supplied blueprint root", async () => {
   const root = await mkdtemp(join(tmpdir(), "costume-blueprint-"));
-  const directory = join(root, "pack", "blueprint");
+  const directory = join(root, "pack", "catalog-blueprint");
   await mkdir(directory, { recursive: true });
   const files = ["common", "rare", "epic", "legendary", "special"];
   await Promise.all(files.map((rarity) => writeFile(
@@ -143,6 +168,33 @@ test("loads every rarity file from a supplied blueprint root", async () => {
   } finally {
     await rm(root, { recursive: true, force: true });
   }
+});
+
+test("common blueprint covers its approved themes and slots", async () => {
+  const common = JSON.parse(await readFile(
+    new URL("../pack/catalog-blueprint/common.json", import.meta.url),
+  ));
+  assert.deepEqual(countBy(common, "theme"), {
+    "생활 도구": 20,
+    "직업 장비": 20,
+    "여행 장비": 20,
+    "취미·공예 장비": 20,
+  });
+  assert.deepEqual(countBy(common, "slot"), { head: 44, face: 12, neck: 10, body: 14 });
+  assert.deepEqual(common.map(({ id }) => id), expectedIds("common", 80));
+  assert.deepEqual(validateBlueprint(common), []);
+});
+
+test("common blueprint CLI validates only the Common document", async () => {
+  const { stdout } = await execFileAsync(
+    process.execPath,
+    ["scripts/costume-blueprint.mjs", "validate", "--rarity", "common"],
+    { cwd: new URL("..", import.meta.url) },
+  );
+  assert.equal(
+    stdout.trim(),
+    "common=80 missing=0 duplicate=0 slot=head:44,face:12,neck:10,body:14",
+  );
 });
 
 test("assembles a standalone transparent image prompt", () => {

@@ -51,8 +51,11 @@ function addDuplicateErrors(items, errors, label, valueFor) {
   });
 }
 
-export function expectedCatalogIds() {
-  return new Map(Object.entries(rarityCounts).flatMap(([rarity, count]) =>
+export function expectedCatalogIds(scopeRarity = null) {
+  const counts = scopeRarity
+    ? [[scopeRarity, rarityCounts[scopeRarity]]]
+    : Object.entries(rarityCounts);
+  return new Map(counts.flatMap(([rarity, count]) =>
     Array.from({ length: count }, (_, index) => [
       `${rarity}_${String(index + 1).padStart(3, "0")}`,
       rarity,
@@ -64,7 +67,19 @@ export function validateBlueprint(items) {
   if (!Array.isArray(items)) return ["blueprint: items must be an array"];
 
   const errors = [];
-  const expectedIds = expectedCatalogIds();
+  const declaredRarities = new Set(items.map((item) => {
+    const match = typeof item?.id === "string" ? item.id.match(/^([a-z]+)_\d{3}$/) : null;
+    return match && allowedRarities.has(match[1]) ? match[1] : null;
+  }).filter(Boolean));
+  const scopeRarity = declaredRarities.size === 1 ? [...declaredRarities][0] : null;
+  const expectedIds = expectedCatalogIds(scopeRarity);
+  const expectedRarityCounts = scopeRarity
+    ? { [scopeRarity]: rarityCounts[scopeRarity] }
+    : rarityCounts;
+  const expectedOverallSlotCounts = scopeRarity
+    ? slotCountsByRarity[scopeRarity]
+    : overallSlotCounts;
+  const checkedRarities = scopeRarity ? [scopeRarity] : [...allowedRarities];
   const requiredTextFields = [
     ["name", "name"],
     ["theme", "theme"],
@@ -139,13 +154,17 @@ export function validateBlueprint(items) {
     if (!seenIds.has(id)) errors.push(`missing catalog ID ${id}`);
   }
 
-  if (countDescription(actualRarityCounts) !== countDescription(rarityCounts)) {
+  const scopedActualRarityCounts = Object.fromEntries(
+    checkedRarities.map((rarity) => [rarity, actualRarityCounts[rarity]]),
+  );
+  if (countDescription(scopedActualRarityCounts) !== countDescription(expectedRarityCounts)) {
     errors.push(
-      `catalog: expected rarities ${countDescription(rarityCounts)}, got ${countDescription(actualRarityCounts)}`,
+      `catalog: expected rarities ${countDescription(expectedRarityCounts)}, got ${countDescription(scopedActualRarityCounts)}`,
     );
   }
 
-  for (const [rarity, expectedSlots] of Object.entries(slotCountsByRarity)) {
+  for (const rarity of checkedRarities) {
+    const expectedSlots = slotCountsByRarity[rarity];
     const actualSlots = actualSlotsByRarity[rarity];
     if (countDescription(actualSlots) !== countDescription(expectedSlots)) {
       errors.push(
@@ -154,9 +173,9 @@ export function validateBlueprint(items) {
     }
   }
 
-  if (countDescription(actualSlotCounts) !== countDescription(overallSlotCounts)) {
+  if (countDescription(actualSlotCounts) !== countDescription(expectedOverallSlotCounts)) {
     errors.push(
-      `catalog: expected overall slots ${countDescription(overallSlotCounts)}, got ${countDescription(actualSlotCounts)}`,
+      `catalog: expected overall slots ${countDescription(expectedOverallSlotCounts)}, got ${countDescription(actualSlotCounts)}`,
     );
   }
 
@@ -173,9 +192,13 @@ export function validateBlueprint(items) {
   return errors;
 }
 
-export async function loadBlueprint(root = repositoryRoot) {
-  const directory = resolve(root, "pack", "blueprint");
-  const documents = await Promise.all(blueprintFiles.map(async (file) => {
+export async function loadBlueprint(root = repositoryRoot, rarity = null) {
+  if (rarity !== null && !allowedRarities.has(rarity)) {
+    throw new Error(`unsupported rarity: ${rarity}`);
+  }
+  const directory = resolve(root, "pack", "catalog-blueprint");
+  const files = rarity === null ? blueprintFiles : [`${rarity}.json`];
+  const documents = await Promise.all(files.map(async (file) => {
     const source = await readFile(resolve(directory, file), "utf8");
     const items = JSON.parse(source);
     if (!Array.isArray(items)) throw new Error(`${file}: blueprint file must contain an array`);
@@ -201,11 +224,24 @@ export function buildImagePrompt(item, styleLock = APPROVED_STYLE) {
 
 async function main() {
   if (process.argv[2] !== "validate") {
-    throw new Error("usage: node scripts/costume-blueprint.mjs validate");
+    throw new Error("usage: node scripts/costume-blueprint.mjs validate [--rarity <rarity>]");
   }
-  const items = await loadBlueprint();
+  const rarity = process.argv[3] === "--rarity" ? process.argv[4] : null;
+  if ((process.argv.length > 3 && !rarity) || process.argv.length > (rarity ? 5 : 3)) {
+    throw new Error("usage: node scripts/costume-blueprint.mjs validate [--rarity <rarity>]");
+  }
+  const items = await loadBlueprint(repositoryRoot, rarity);
   const errors = validateBlueprint(items);
   if (errors.length) throw new Error(errors.join("\n"));
+  if (rarity) {
+    const slotCounts = countByKeys([...allowedSlots]);
+    for (const item of items) slotCounts[item.slot] += 1;
+    console.log(
+      `${rarity}=${items.length} missing=0 duplicate=0 slot=`
+      + `head:${slotCounts.head},face:${slotCounts.face},neck:${slotCounts.neck},body:${slotCounts.body}`,
+    );
+    return;
+  }
   console.log(`blueprint valid: ${items.length} items`);
 }
 
