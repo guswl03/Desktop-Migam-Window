@@ -24,9 +24,9 @@
     <rect x="38" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
     <image href="../../../legendary/legendary_001.png" x="38" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
     <text x="18" y="452" class="name">태양 황제 관과 망토</text>
-    <text x="18" y="474" class="meta">keep · full · bounds 24,16..231,239</text>
-    <text x="18" y="494" class="warning">alpha-dust</text>
-    <title>UNREVIEWED</title>
+    <text x="18" y="474" class="meta">split · full · bounds 24,16..231,239</text>
+    <text x="18" y="494" class="warning">none</text>
+    <title>태양 황제 관과 망토 원본에 서로 독립 장착 가능한 태양 황제 관·태양 황제 망토이(가</title>
   </g>
   <g class="costume-cell" data-id="legendary_002">
     <rect x="466" y="6" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -35,8 +35,8 @@
     <image href="../../../legendary/legendary_002.png" x="498" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
     <text x="478" y="452" class="name">심야 우주 군주 후드</text>
     <text x="478" y="474" class="meta">keep · head · bounds 27,16..227,239</text>
-    <text x="478" y="494" class="warning">alpha-dust</text>
-    <title>UNREVIEWED</title>
+    <text x="478" y="494" class="warning">none</text>
+    <title>심야 우주 군주 후드의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린</title>
   </g>
   <g class="costume-cell" data-id="legendary_003">
     <rect x="926" y="6" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -44,9 +44,9 @@
     <rect x="958" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
     <image href="../../../legendary/legendary_003.png" x="958" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
     <text x="938" y="452" class="name">프리즘 수정룡 세트</text>
-    <text x="938" y="474" class="meta">keep · full · bounds 70,40..184,215</text>
+    <text x="938" y="474" class="meta">redraw · full · bounds 70,40..184,215</text>
     <text x="938" y="494" class="warning">none</text>
-    <title>UNREVIEWED</title>
+    <title>수정룡 장식이 카드에서 지나치게 작고 위아래에 가는 수평 잔상이 있어 선명한 단일 투구</title>
   </g>
   <g class="costume-cell" data-id="legendary_004">
     <rect x="6" y="526" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -54,9 +54,9 @@
     <rect x="38" y="562" width="384" height="384" fill="url(#checker)" stroke="#777" />
     <image href="../../../legendary/legendary_004.png" x="38" y="562" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
     <text x="18" y="972" class="name">태엽 시간지기 세트</text>
-    <text x="18" y="994" class="meta">keep · full · bounds 38,16..216,239</text>
-    <text x="18" y="1014" class="warning">alpha-dust</text>
-    <title>UNREVIEWED</title>
+    <text x="18" y="994" class="meta">split · full · bounds 38,16..216,239</text>
+    <text x="18" y="1014" class="warning">none</text>
+    <title>태엽 시간지기 세트 원본에 서로 독립 장착 가능한 태엽 시간지기 관·태엽 시간지기 예복</title>
   </g>
   <g class="costume-cell" data-id="legendary_005">
     <rect x="466" y="526" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -64,9 +64,9 @@
     <rect x="498" y="562" width="384" height="384" fill="url(#checker)" stroke="#777" />
     <image href="../../../legendary/legendary_005.png" x="498" y="562" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
     <text x="478" y="972" class="name">심연 레비아탄 왕관</text>
-    <text x="478" y="994" class="meta">keep · head · bounds 16,50..239,205</text>
+    <text x="478" y="994" class="meta">redraw · head · bounds 16,50..239,205</text>
     <text x="478" y="1014" class="warning">none</text>
-    <title>UNREVIEWED</title>
+    <title>레비아탄 왕관 아래에 같은 뿔 장식이 잘려 반복되어 안전 여백을 둔 새 원본이 필요하다</title>
   </g>
   <g class="costume-cell" data-id="legendary_006">
     <rect x="926" y="526" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -74,9 +74,9 @@
     <rect x="958" y="562" width="384" height="384" fill="url(#checker)" stroke="#777" />
     <image href="../../../legendary/legendary_006.png" x="958" y="562" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
     <text x="938" y="972" class="name">세계수 군주 관과 망토</text>
-    <text x="938" y="994" class="meta">keep · full · bounds 25,16..229,239</text>
-    <text x="938" y="1014" class="warning">alpha-dust</text>
-    <title>UNREVIEWED</title>
+    <text x="938" y="994" class="meta">split · full · bounds 25,16..229,239</text>
+    <text x="938" y="1014" class="warning">none</text>
+    <title>세계수 군주 관과 망토 원본에 서로 독립 장착 가능한 세계수 군주 관·세계수 군주 망토</title>
   </g>
   <g class="costume-cell" data-id="legendary_007">
     <rect x="6" y="1046" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -84,9 +84,9 @@
     <rect x="38" y="1082" width="384" height="384" fill="url(#checker)" stroke="#777" />
     <image href="../../../legendary/legendary_007.png" x="38" y="1082" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
     <text x="18" y="1492" class="name">무지개 오로라 천상 투구</text>
-    <text x="18" y="1514" class="meta">keep · head · bounds 32,45..222,209</text>
+    <text x="18" y="1514" class="meta">redraw · head · bounds 32,45..222,209</text>
     <text x="18" y="1534" class="warning">none</text>
-    <title>UNREVIEWED</title>
+    <title>오로라 투구 아래에 같은 금빛 뿔과 오로라 조각이 반복되어 잘려 있다.</title>
   </g>
   <g class="costume-cell" data-id="legendary_008">
     <rect x="466" y="1046" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -94,9 +94,9 @@
     <rect x="498" y="1082" width="384" height="384" fill="url(#checker)" stroke="#777" />
     <image href="../../../legendary/legendary_008.png" x="498" y="1082" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
     <text x="478" y="1492" class="name">황금 파라오 태양관</text>
-    <text x="478" y="1514" class="meta">keep · head · bounds 32,40..222,215</text>
+    <text x="478" y="1514" class="meta">redraw · head · bounds 32,40..222,215</text>
     <text x="478" y="1534" class="warning">none</text>
-    <title>UNREVIEWED</title>
+    <title>파라오 관 아래에 동일한 청금색 줄무늬 관이 반복되어 잘려 있다.</title>
   </g>
   <g class="costume-cell" data-id="legendary_009">
     <rect x="926" y="1046" width="448" height="508" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -104,8 +104,8 @@
     <rect x="958" y="1082" width="384" height="384" fill="url(#checker)" stroke="#777" />
     <image href="../../../legendary/legendary_009.png" x="958" y="1082" width="384" height="384" preserveAspectRatio="xMidYMid meet" />
     <text x="938" y="1492" class="name">유령 가면무도회 후드</text>
-    <text x="938" y="1514" class="meta">keep · face · bounds 28,40..227,215</text>
+    <text x="938" y="1514" class="meta">redraw · face · bounds 28,40..227,215</text>
     <text x="938" y="1534" class="warning">none</text>
-    <title>UNREVIEWED</title>
+    <title>가면과 베일 아래에 같은 보석 장식이 반복되어 잘려 카드 하단에서 불완전하게 보인다.</title>
   </g>
 </svg>

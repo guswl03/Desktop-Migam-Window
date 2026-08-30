@@ -29,7 +29,7 @@
     <text x="16" y="276" class="name">달빛 천상 왕관</text>
     <text x="16" y="300" class="meta">head · x -4 · y -58 · size 100</text>
     <text x="16" y="322" class="warning">none</text>
-    <text x="16" y="340" class="observation">UNREVIEWED</text>
+    <text x="16" y="340" class="observation">달빛 천상 왕관의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복</text>
   </g>
   <g class="costume-cell" data-id="epic_002">
     <rect x="286" y="6" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -42,7 +42,7 @@
     <text x="296" y="276" class="name">불사조 망토</text>
     <text x="296" y="300" class="meta">body · x -4 · y 17 · size 104</text>
     <text x="296" y="322" class="warning">none</text>
-    <text x="296" y="340" class="observation">UNREVIEWED</text>
+    <text x="296" y="340" class="observation">불사조 망토의 단일 몸 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각</text>
   </g>
   <g class="costume-cell" data-id="epic_003">
     <rect x="566" y="6" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -55,7 +55,7 @@
     <text x="576" y="276" class="name">수정 얼음 왕관</text>
     <text x="576" y="300" class="meta">head · x -4 · y -52 · size 104</text>
     <text x="576" y="322" class="warning">none</text>
-    <text x="576" y="340" class="observation">UNREVIEWED</text>
+    <text x="576" y="340" class="observation">수정 얼음 왕관의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복</text>
   </g>
   <g class="costume-cell" data-id="epic_004">
     <rect x="846" y="6" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -68,7 +68,7 @@
     <text x="856" y="276" class="name">숲 수호자 뿔관</text>
     <text x="856" y="300" class="meta">head · x -4 · y -48 · size 104</text>
     <text x="856" y="322" class="warning">none</text>
-    <text x="856" y="340" class="observation">UNREVIEWED</text>
+    <text x="856" y="340" class="observation">숲 수호자 뿔관의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복</text>
   </g>
   <g class="costume-cell" data-id="epic_005">
     <rect x="1126" y="6" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -81,7 +81,7 @@
     <text x="1136" y="276" class="name">스팀펑크 발명가 헬멧</text>
     <text x="1136" y="300" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="1136" y="322" class="warning">none</text>
-    <text x="1136" y="340" class="observation">UNREVIEWED</text>
+    <text x="1136" y="340" class="observation">스팀펑크 발명가 헬멧의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린</text>
   </g>
   <g class="costume-cell" data-id="epic_006">
     <rect x="6" y="366" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -94,7 +94,7 @@
     <text x="16" y="636" class="name">네온 사이버 바이저</text>
     <text x="16" y="660" class="meta">face · x -4 · y -8 · size 104</text>
     <text x="16" y="682" class="warning">none</text>
-    <text x="16" y="700" class="observation">UNREVIEWED</text>
+    <text x="16" y="700" class="observation">네온 사이버 바이저의 단일 얼굴 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 </text>
   </g>
   <g class="costume-cell" data-id="epic_007">
     <rect x="286" y="366" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -106,8 +106,8 @@
     <image href="../../../epic/epic_007.png" x="364" y="410" width="112" height="112" preserveAspectRatio="xMidYMid meet" />
     <text x="296" y="636" class="name">왕실 해군 제독 세트</text>
     <text x="296" y="660" class="meta">full · x -8 · y -8 · size 112</text>
-    <text x="296" y="682" class="warning">alpha-dust</text>
-    <text x="296" y="700" class="observation">UNREVIEWED</text>
+    <text x="296" y="682" class="warning">none</text>
+    <text x="296" y="700" class="observation">왕실 해군 제독 세트 원본에 서로 독립 장착 가능한 왕실 해군 제독 모자·왕실 해군 제</text>
   </g>
   <g class="costume-cell" data-id="epic_008">
     <rect x="566" y="366" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -120,7 +120,7 @@
     <text x="576" y="636" class="name">흑요석 화산 왕관</text>
     <text x="576" y="660" class="meta">head · x -4 · y -52 · size 104</text>
     <text x="576" y="682" class="warning">none</text>
-    <text x="576" y="700" class="observation">UNREVIEWED</text>
+    <text x="576" y="700" class="observation">흑요석 화산 왕관의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중</text>
   </g>
   <g class="costume-cell" data-id="epic_009">
     <rect x="846" y="366" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -133,7 +133,7 @@
     <text x="856" y="636" class="name">은하 수면모 세트</text>
     <text x="856" y="660" class="meta">full · x -8 · y -8 · size 112</text>
     <text x="856" y="682" class="warning">none</text>
-    <text x="856" y="700" class="observation">UNREVIEWED</text>
+    <text x="856" y="700" class="observation">은하 수면모 세트 원본에 서로 독립 장착 가능한 은하 수면모·은하 목도리이(가) 함께 </text>
   </g>
   <g class="costume-cell" data-id="epic_010">
     <rect x="1126" y="366" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -146,7 +146,7 @@
     <text x="1136" y="636" class="name">황금 마스터 셰프 모자</text>
     <text x="1136" y="660" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="1136" y="682" class="warning">none</text>
-    <text x="1136" y="700" class="observation">UNREVIEWED</text>
+    <text x="1136" y="700" class="observation">황금 마스터 셰프 모자의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘</text>
   </g>
   <g class="costume-cell" data-id="epic_011">
     <rect x="6" y="726" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -159,7 +159,7 @@
     <text x="16" y="996" class="name">고대 유적 탐험가 세트</text>
     <text x="16" y="1020" class="meta">body · x 8 · y 22 · size 88</text>
     <text x="16" y="1042" class="warning">none</text>
-    <text x="16" y="1060" class="observation">UNREVIEWED</text>
+    <text x="16" y="1060" class="observation">고대 유적 탐험가 세트 원본에 서로 독립 장착 가능한 고대 유적 탐험가 가면·고대 유적</text>
   </g>
   <g class="costume-cell" data-id="epic_012">
     <rect x="286" y="726" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -172,7 +172,7 @@
     <text x="296" y="996" class="name">아케이드 챔피언 세트</text>
     <text x="296" y="1020" class="meta">full · x -8 · y -8 · size 112</text>
     <text x="296" y="1042" class="warning">none</text>
-    <text x="296" y="1060" class="observation">UNREVIEWED</text>
+    <text x="296" y="1060" class="observation">아케이드 챔피언 세트 원본에 서로 독립 장착 가능한 아케이드 챔피언 헤드폰·아케이드 챔</text>
   </g>
   <g class="costume-cell" data-id="epic_013">
     <rect x="566" y="726" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -185,7 +185,7 @@
     <text x="576" y="996" class="name">오로라 주술사 뿔후드</text>
     <text x="576" y="1020" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="576" y="1042" class="warning">none</text>
-    <text x="576" y="1060" class="observation">UNREVIEWED</text>
+    <text x="576" y="1060" class="observation">오로라 주술사 뿔후드의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린</text>
   </g>
   <g class="costume-cell" data-id="epic_014">
     <rect x="846" y="726" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -198,7 +198,7 @@
     <text x="856" y="996" class="name">기계 부엉이 학자 후드</text>
     <text x="856" y="1020" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="856" y="1042" class="warning">none</text>
-    <text x="856" y="1060" class="observation">UNREVIEWED</text>
+    <text x="856" y="1060" class="observation">기계 부엉이 학자 후드의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘</text>
   </g>
   <g class="costume-cell" data-id="epic_015">
     <rect x="1126" y="726" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -211,7 +211,7 @@
     <text x="1136" y="996" class="name">바다 신탁 조개 왕관</text>
     <text x="1136" y="1020" class="meta">head · x -4 · y -52 · size 104</text>
     <text x="1136" y="1042" class="warning">none</text>
-    <text x="1136" y="1060" class="observation">UNREVIEWED</text>
+    <text x="1136" y="1060" class="observation">바다 신탁 조개 왕관의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린</text>
   </g>
   <g class="costume-cell" data-id="epic_016">
     <rect x="6" y="1086" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -224,7 +224,7 @@
     <text x="16" y="1356" class="name">벚꽃 수호자 망토</text>
     <text x="16" y="1380" class="meta">body · x -4 · y 17 · size 104</text>
     <text x="16" y="1402" class="warning">none</text>
-    <text x="16" y="1420" class="observation">UNREVIEWED</text>
+    <text x="16" y="1420" class="observation">벚꽃 수호자 망토의 단일 몸 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복</text>
   </g>
   <g class="costume-cell" data-id="epic_017">
     <rect x="286" y="1086" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -237,7 +237,7 @@
     <text x="296" y="1356" class="name">천둥새 조종사 투구</text>
     <text x="296" y="1380" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="296" y="1402" class="warning">none</text>
-    <text x="296" y="1420" class="observation">UNREVIEWED</text>
+    <text x="296" y="1420" class="observation">천둥새 조종사 투구의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 </text>
   </g>
   <g class="costume-cell" data-id="epic_018">
     <rect x="566" y="1086" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -250,7 +250,7 @@
     <text x="576" y="1356" class="name">달빛 가면무도회 가면</text>
     <text x="576" y="1380" class="meta">face · x -4 · y -8 · size 104</text>
     <text x="576" y="1402" class="warning">none</text>
-    <text x="576" y="1420" class="observation">UNREVIEWED</text>
+    <text x="576" y="1420" class="observation">달빛 가면무도회 가면의 단일 얼굴 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린</text>
   </g>
   <g class="costume-cell" data-id="epic_019">
     <rect x="846" y="1086" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -263,7 +263,7 @@
     <text x="856" y="1356" class="name">마법 도서관 대마법사 모자</text>
     <text x="856" y="1380" class="meta">head · x -4 · y -54 · size 104</text>
     <text x="856" y="1402" class="warning">none</text>
-    <text x="856" y="1420" class="observation">UNREVIEWED</text>
+    <text x="856" y="1420" class="observation">마법 도서관 대마법사 모자의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며,</text>
   </g>
   <g class="costume-cell" data-id="epic_020">
     <rect x="1126" y="1086" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -276,7 +276,7 @@
     <text x="1136" y="1356" class="name">진홍 쇼군 갑주</text>
     <text x="1136" y="1380" class="meta">head · x -4 · y -54 · size 104</text>
     <text x="1136" y="1402" class="warning">none</text>
-    <text x="1136" y="1420" class="observation">UNREVIEWED</text>
+    <text x="1136" y="1420" class="observation">진홍 쇼군 갑주 원본에 서로 독립 장착 가능한 진홍 쇼군 투구·진홍 쇼군 어깨 갑주이(</text>
   </g>
   <g class="costume-cell" data-id="epic_021">
     <rect x="6" y="1446" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -289,7 +289,7 @@
     <text x="16" y="1716" class="name">심연 잠수부 압력 헬멧</text>
     <text x="16" y="1740" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="16" y="1762" class="warning">none</text>
-    <text x="16" y="1780" class="observation">UNREVIEWED</text>
+    <text x="16" y="1780" class="observation">심연 잠수부 압력 헬멧의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘</text>
   </g>
   <g class="costume-cell" data-id="epic_022">
     <rect x="286" y="1446" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -302,7 +302,7 @@
     <text x="296" y="1716" class="name">폭풍 록 아이돌 왕관</text>
     <text x="296" y="1740" class="meta">head · x -4 · y -52 · size 104</text>
     <text x="296" y="1762" class="warning">none</text>
-    <text x="296" y="1780" class="observation">UNREVIEWED</text>
+    <text x="296" y="1780" class="observation">폭풍 록 아이돌 왕관의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린</text>
   </g>
   <g class="costume-cell" data-id="epic_023">
     <rect x="566" y="1446" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -314,8 +314,8 @@
     <image href="../../../epic/epic_023.png" x="644" y="1490" width="112" height="112" preserveAspectRatio="xMidYMid meet" />
     <text x="576" y="1716" class="name">대연금술사 세트</text>
     <text x="576" y="1740" class="meta">full · x -8 · y -8 · size 112</text>
-    <text x="576" y="1762" class="warning">alpha-dust</text>
-    <text x="576" y="1780" class="observation">UNREVIEWED</text>
+    <text x="576" y="1762" class="warning">none</text>
+    <text x="576" y="1780" class="observation">대연금술사 세트 원본에 서로 독립 장착 가능한 대연금술사 머리 장식·대연금술사 로브·대</text>
   </g>
   <g class="costume-cell" data-id="epic_024">
     <rect x="846" y="1446" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -328,6 +328,6 @@
     <text x="856" y="1716" class="name">발키리 룬 투구</text>
     <text x="856" y="1740" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="856" y="1762" class="warning">none</text>
-    <text x="856" y="1780" class="observation">UNREVIEWED</text>
+    <text x="856" y="1780" class="observation">발키리 투구 아래에 동일한 날개와 투구가 한 번 더 잘려 보여 완전한 단일 투구가 필요</text>
   </g>
 </svg>

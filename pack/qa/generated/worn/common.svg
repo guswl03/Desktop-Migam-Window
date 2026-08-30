@@ -29,7 +29,7 @@
     <text x="16" y="276" class="name">검정 헤드폰</text>
     <text x="16" y="300" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="16" y="322" class="warning">none</text>
-    <text x="16" y="340" class="observation">UNREVIEWED</text>
+    <text x="16" y="340" class="observation">검정 헤드폰의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_002">
     <rect x="286" y="6" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -42,7 +42,7 @@
     <text x="296" y="276" class="name">탐정 모자</text>
     <text x="296" y="300" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="296" y="322" class="warning">none</text>
-    <text x="296" y="340" class="observation">UNREVIEWED</text>
+    <text x="296" y="340" class="observation">탐정 모자의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각</text>
   </g>
   <g class="costume-cell" data-id="common_003">
     <rect x="566" y="6" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -55,7 +55,7 @@
     <text x="576" y="276" class="name">요리사 모자</text>
     <text x="576" y="300" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="576" y="322" class="warning">none</text>
-    <text x="576" y="340" class="observation">UNREVIEWED</text>
+    <text x="576" y="340" class="observation">요리사 모자의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_004">
     <rect x="846" y="6" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -68,7 +68,7 @@
     <text x="856" y="276" class="name">빨간 머리띠</text>
     <text x="856" y="300" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="856" y="322" class="warning">none</text>
-    <text x="856" y="340" class="observation">UNREVIEWED</text>
+    <text x="856" y="340" class="observation">빨간 머리띠의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_005">
     <rect x="1126" y="6" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -81,7 +81,7 @@
     <text x="1136" y="276" class="name">남색 비니</text>
     <text x="1136" y="300" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="1136" y="322" class="warning">none</text>
-    <text x="1136" y="340" class="observation">UNREVIEWED</text>
+    <text x="1136" y="340" class="observation">남색 비니의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각</text>
   </g>
   <g class="costume-cell" data-id="common_006">
     <rect x="6" y="366" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -94,7 +94,7 @@
     <text x="16" y="636" class="name">동그란 독서 안경</text>
     <text x="16" y="660" class="meta">face · x -4 · y -8 · size 104</text>
     <text x="16" y="682" class="warning">none</text>
-    <text x="16" y="700" class="observation">UNREVIEWED</text>
+    <text x="16" y="700" class="observation">동그란 독서 안경의 단일 얼굴 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중</text>
   </g>
   <g class="costume-cell" data-id="common_007">
     <rect x="286" y="366" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -107,7 +107,7 @@
     <text x="296" y="636" class="name">빨간 넥타이</text>
     <text x="296" y="660" class="meta">neck · x -4 · y 12 · size 104</text>
     <text x="296" y="682" class="warning">none</text>
-    <text x="296" y="700" class="observation">UNREVIEWED</text>
+    <text x="296" y="700" class="observation">빨간 넥타이의 단일 목 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각</text>
   </g>
   <g class="costume-cell" data-id="common_008">
     <rect x="566" y="366" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -120,7 +120,7 @@
     <text x="576" y="636" class="name">초록 야구 모자</text>
     <text x="576" y="660" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="576" y="682" class="warning">none</text>
-    <text x="576" y="700" class="observation">UNREVIEWED</text>
+    <text x="576" y="700" class="observation">초록 야구 모자의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복</text>
   </g>
   <g class="costume-cell" data-id="common_009">
     <rect x="846" y="366" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -133,7 +133,7 @@
     <text x="856" y="636" class="name">노란 우비 모자</text>
     <text x="856" y="660" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="856" y="682" class="warning">none</text>
-    <text x="856" y="700" class="observation">UNREVIEWED</text>
+    <text x="856" y="700" class="observation">노란 우비 모자의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복</text>
   </g>
   <g class="costume-cell" data-id="common_010">
     <rect x="1126" y="366" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -146,7 +146,7 @@
     <text x="1136" y="636" class="name">줄무늬 목도리</text>
     <text x="1136" y="660" class="meta">neck · x -4 · y 12 · size 104</text>
     <text x="1136" y="682" class="warning">none</text>
-    <text x="1136" y="700" class="observation">UNREVIEWED</text>
+    <text x="1136" y="700" class="observation">줄무늬 목도리의 단일 목 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_011">
     <rect x="6" y="726" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -159,7 +159,7 @@
     <text x="16" y="996" class="name">작은 나비넥타이</text>
     <text x="16" y="1020" class="meta">neck · x -4 · y 12 · size 104</text>
     <text x="16" y="1042" class="warning">none</text>
-    <text x="16" y="1060" class="observation">UNREVIEWED</text>
+    <text x="16" y="1060" class="observation">작은 나비넥타이의 단일 목 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 </text>
   </g>
   <g class="costume-cell" data-id="common_012">
     <rect x="286" y="726" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -172,7 +172,7 @@
     <text x="296" y="996" class="name">귀마개</text>
     <text x="296" y="1020" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="296" y="1042" class="warning">none</text>
-    <text x="296" y="1060" class="observation">UNREVIEWED</text>
+    <text x="296" y="1060" class="observation">귀마개의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각과 </text>
   </g>
   <g class="costume-cell" data-id="common_013">
     <rect x="566" y="726" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -185,7 +185,7 @@
     <text x="576" y="996" class="name">수면 안대</text>
     <text x="576" y="1020" class="meta">face · x -4 · y -24 · size 104</text>
     <text x="576" y="1042" class="warning">none</text>
-    <text x="576" y="1060" class="observation">UNREVIEWED</text>
+    <text x="576" y="1060" class="observation">수면 안대의 단일 얼굴 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각</text>
   </g>
   <g class="costume-cell" data-id="common_014">
     <rect x="846" y="726" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -198,7 +198,7 @@
     <text x="856" y="996" class="name">종이 파티 왕관</text>
     <text x="856" y="1020" class="meta">head · x -4 · y -48 · size 104</text>
     <text x="856" y="1042" class="warning">none</text>
-    <text x="856" y="1060" class="observation">UNREVIEWED</text>
+    <text x="856" y="1060" class="observation">종이 파티 왕관의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복</text>
   </g>
   <g class="costume-cell" data-id="common_015">
     <rect x="1126" y="726" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -211,7 +211,7 @@
     <text x="1136" y="996" class="name">화가 베레모</text>
     <text x="1136" y="1020" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="1136" y="1042" class="warning">none</text>
-    <text x="1136" y="1060" class="observation">UNREVIEWED</text>
+    <text x="1136" y="1060" class="observation">화가 베레모의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_016">
     <rect x="6" y="1086" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -224,7 +224,7 @@
     <text x="16" y="1356" class="name">정원사 밀짚모자</text>
     <text x="16" y="1380" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="16" y="1402" class="warning">none</text>
-    <text x="16" y="1420" class="observation">UNREVIEWED</text>
+    <text x="16" y="1420" class="observation">정원사 밀짚모자의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복</text>
   </g>
   <g class="costume-cell" data-id="common_017">
     <rect x="286" y="1086" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -236,8 +236,8 @@
     <image href="../../../common/common_017.png" x="364" y="1130" width="112" height="112" preserveAspectRatio="xMidYMid meet" />
     <text x="296" y="1356" class="name">멜빵</text>
     <text x="296" y="1380" class="meta">full · x -8 · y -8 · size 112</text>
-    <text x="296" y="1402" class="warning">alpha-dust</text>
-    <text x="296" y="1420" class="observation">UNREVIEWED</text>
+    <text x="296" y="1402" class="warning">none</text>
+    <text x="296" y="1420" class="observation">멜빵의 단일 복합 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각과 고</text>
   </g>
   <g class="costume-cell" data-id="common_018">
     <rect x="566" y="1086" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -250,7 +250,7 @@
     <text x="576" y="1356" class="name">세일러 스카프</text>
     <text x="576" y="1380" class="meta">neck · x -4 · y 12 · size 104</text>
     <text x="576" y="1402" class="warning">none</text>
-    <text x="576" y="1420" class="observation">UNREVIEWED</text>
+    <text x="576" y="1420" class="observation">세일러 스카프의 단일 목 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_019">
     <rect x="846" y="1086" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -263,7 +263,7 @@
     <text x="856" y="1356" class="name">게이머 헤드셋</text>
     <text x="856" y="1380" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="856" y="1402" class="warning">none</text>
-    <text x="856" y="1420" class="observation">UNREVIEWED</text>
+    <text x="856" y="1420" class="observation">게이머 헤드셋의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 </text>
   </g>
   <g class="costume-cell" data-id="common_020">
     <rect x="1126" y="1086" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -276,7 +276,7 @@
     <text x="1136" y="1356" class="name">학생 모자</text>
     <text x="1136" y="1380" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="1136" y="1402" class="warning">none</text>
-    <text x="1136" y="1420" class="observation">UNREVIEWED</text>
+    <text x="1136" y="1420" class="observation">학생 모자의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각</text>
   </g>
   <g class="costume-cell" data-id="common_021">
     <rect x="6" y="1446" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -289,7 +289,7 @@
     <text x="16" y="1716" class="name">제빵사 모자</text>
     <text x="16" y="1740" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="16" y="1762" class="warning">none</text>
-    <text x="16" y="1780" class="observation">UNREVIEWED</text>
+    <text x="16" y="1780" class="observation">제빵사 모자의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_022">
     <rect x="286" y="1446" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -302,7 +302,7 @@
     <text x="296" y="1716" class="name">등산 버킷햇</text>
     <text x="296" y="1740" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="296" y="1762" class="warning">none</text>
-    <text x="296" y="1780" class="observation">UNREVIEWED</text>
+    <text x="296" y="1780" class="observation">등산 버킷햇의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_023">
     <rect x="566" y="1446" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -315,7 +315,7 @@
     <text x="576" y="1716" class="name">수영 고글</text>
     <text x="576" y="1740" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="576" y="1762" class="warning">none</text>
-    <text x="576" y="1780" class="observation">UNREVIEWED</text>
+    <text x="576" y="1780" class="observation">수영 고글의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각</text>
   </g>
   <g class="costume-cell" data-id="common_024">
     <rect x="846" y="1446" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -328,7 +328,7 @@
     <text x="856" y="1716" class="name">운동 머리띠</text>
     <text x="856" y="1740" class="meta">head · x -4 · y -44 · size 104</text>
     <text x="856" y="1762" class="warning">none</text>
-    <text x="856" y="1780" class="observation">UNREVIEWED</text>
+    <text x="856" y="1780" class="observation">운동 머리띠의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_025">
     <rect x="1126" y="1446" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -341,7 +341,7 @@
     <text x="1136" y="1716" class="name">미니 카메라</text>
     <text x="1136" y="1740" class="meta">neck · x -4 · y 24 · size 96</text>
     <text x="1136" y="1762" class="warning">none</text>
-    <text x="1136" y="1780" class="observation">UNREVIEWED</text>
+    <text x="1136" y="1780" class="observation">미니 카메라의 단일 목 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각</text>
   </g>
   <g class="costume-cell" data-id="common_026">
     <rect x="6" y="1806" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -354,7 +354,7 @@
     <text x="16" y="2076" class="name">기본 백팩</text>
     <text x="16" y="2100" class="meta">body · x -4 · y 17 · size 104</text>
     <text x="16" y="2122" class="warning">none</text>
-    <text x="16" y="2140" class="observation">UNREVIEWED</text>
+    <text x="16" y="2140" class="observation">기본 백팩의 단일 몸 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각과</text>
   </g>
   <g class="costume-cell" data-id="common_027">
     <rect x="286" y="1806" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -367,7 +367,7 @@
     <text x="296" y="2076" class="name">산타 모자</text>
     <text x="296" y="2100" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="296" y="2122" class="warning">none</text>
-    <text x="296" y="2140" class="observation">UNREVIEWED</text>
+    <text x="296" y="2140" class="observation">산타 모자의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각</text>
   </g>
   <g class="costume-cell" data-id="common_028">
     <rect x="566" y="1806" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -380,7 +380,7 @@
     <text x="576" y="2076" class="name">사원증 목걸이</text>
     <text x="576" y="2100" class="meta">neck · x -4 · y 12 · size 104</text>
     <text x="576" y="2122" class="warning">none</text>
-    <text x="576" y="2140" class="observation">UNREVIEWED</text>
+    <text x="576" y="2140" class="observation">사원증 목걸이의 단일 목 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_029">
     <rect x="846" y="1806" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -393,7 +393,7 @@
     <text x="856" y="2076" class="name">안전모</text>
     <text x="856" y="2100" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="856" y="2122" class="warning">none</text>
-    <text x="856" y="2140" class="observation">UNREVIEWED</text>
+    <text x="856" y="2140" class="observation">안전모의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각과 </text>
   </g>
   <g class="costume-cell" data-id="common_030">
     <rect x="1126" y="1806" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -406,7 +406,7 @@
     <text x="1136" y="2076" class="name">간호사 모자</text>
     <text x="1136" y="2100" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="1136" y="2122" class="warning">none</text>
-    <text x="1136" y="2140" class="observation">UNREVIEWED</text>
+    <text x="1136" y="2140" class="observation">간호사 모자의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_031">
     <rect x="6" y="2166" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -419,7 +419,7 @@
     <text x="16" y="2436" class="name">우체부 세트</text>
     <text x="16" y="2460" class="meta">full · x -8 · y -8 · size 112</text>
     <text x="16" y="2482" class="warning">none</text>
-    <text x="16" y="2500" class="observation">UNREVIEWED</text>
+    <text x="16" y="2500" class="observation">우체부 세트 원본에 서로 독립 장착 가능한 우체부 모자·우체부 우편 가방이(가) 함께 </text>
   </g>
   <g class="costume-cell" data-id="common_032">
     <rect x="286" y="2166" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -432,7 +432,7 @@
     <text x="296" y="2436" class="name">정비공 반다나</text>
     <text x="296" y="2460" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="296" y="2482" class="warning">none</text>
-    <text x="296" y="2500" class="observation">UNREVIEWED</text>
+    <text x="296" y="2500" class="observation">정비공 반다나의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 </text>
   </g>
   <g class="costume-cell" data-id="common_033">
     <rect x="566" y="2166" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -445,7 +445,7 @@
     <text x="576" y="2436" class="name">바리스타 앞치마</text>
     <text x="576" y="2460" class="meta">body · x -4 · y 17 · size 104</text>
     <text x="576" y="2482" class="warning">none</text>
-    <text x="576" y="2500" class="observation">UNREVIEWED</text>
+    <text x="576" y="2500" class="observation">바리스타 앞치마의 단일 몸 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 </text>
   </g>
   <g class="costume-cell" data-id="common_034">
     <rect x="846" y="2166" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -458,7 +458,7 @@
     <text x="856" y="2436" class="name">낚시꾼 모자</text>
     <text x="856" y="2460" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="856" y="2482" class="warning">none</text>
-    <text x="856" y="2500" class="observation">UNREVIEWED</text>
+    <text x="856" y="2500" class="observation">낚시꾼 모자의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_035">
     <rect x="1126" y="2166" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -471,7 +471,7 @@
     <text x="1136" y="2436" class="name">학사모</text>
     <text x="1136" y="2460" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="1136" y="2482" class="warning">none</text>
-    <text x="1136" y="2500" class="observation">UNREVIEWED</text>
+    <text x="1136" y="2500" class="observation">학사모의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각과 </text>
   </g>
   <g class="costume-cell" data-id="common_036">
     <rect x="6" y="2526" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -484,7 +484,7 @@
     <text x="16" y="2796" class="name">꽃 머리핀</text>
     <text x="16" y="2820" class="meta">head · x 18 · y -38 · size 96</text>
     <text x="16" y="2842" class="warning">none</text>
-    <text x="16" y="2860" class="observation">UNREVIEWED</text>
+    <text x="16" y="2860" class="observation">꽃 머리핀의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각</text>
   </g>
   <g class="costume-cell" data-id="common_037">
     <rect x="286" y="2526" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -497,7 +497,7 @@
     <text x="296" y="2796" class="name">토끼 귀</text>
     <text x="296" y="2820" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="296" y="2842" class="warning">none</text>
-    <text x="296" y="2860" class="observation">UNREVIEWED</text>
+    <text x="296" y="2860" class="observation">토끼 귀의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각과</text>
   </g>
   <g class="costume-cell" data-id="common_038">
     <rect x="566" y="2526" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -510,7 +510,7 @@
     <text x="576" y="2796" class="name">검정 선글라스</text>
     <text x="576" y="2820" class="meta">face · x -4 · y -8 · size 104</text>
     <text x="576" y="2842" class="warning">none</text>
-    <text x="576" y="2860" class="observation">UNREVIEWED</text>
+    <text x="576" y="2860" class="observation">검정 선글라스의 단일 얼굴 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 </text>
   </g>
   <g class="costume-cell" data-id="common_039">
     <rect x="846" y="2526" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -523,7 +523,7 @@
     <text x="856" y="2796" class="name">물방울 리본</text>
     <text x="856" y="2820" class="meta">head · x 18 · y -40 · size 96</text>
     <text x="856" y="2842" class="warning">none</text>
-    <text x="856" y="2860" class="observation">UNREVIEWED</text>
+    <text x="856" y="2860" class="observation">물방울 리본의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_040">
     <rect x="1126" y="2526" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -536,7 +536,7 @@
     <text x="1136" y="2796" class="name">유틸리티 벨트</text>
     <text x="1136" y="2820" class="meta">body · x -4 · y 17 · size 104</text>
     <text x="1136" y="2842" class="warning">none</text>
-    <text x="1136" y="2860" class="observation">UNREVIEWED</text>
+    <text x="1136" y="2860" class="observation">유틸리티 벨트의 단일 몸 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_041">
     <rect x="6" y="2886" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -549,7 +549,7 @@
     <text x="16" y="3156" class="name">주황 귀달이 모자</text>
     <text x="16" y="3180" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="16" y="3202" class="warning">none</text>
-    <text x="16" y="3220" class="observation">UNREVIEWED</text>
+    <text x="16" y="3220" class="observation">모자 아래쪽에 본체와 연결되지 않은 주황색 잘린 조각이 보여 안전 여백을 둔 새 원본이</text>
   </g>
   <g class="costume-cell" data-id="common_042">
     <rect x="286" y="2886" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -562,7 +562,7 @@
     <text x="296" y="3156" class="name">줄무늬 넥워머</text>
     <text x="296" y="3180" class="meta">neck · x -4 · y 12 · size 104</text>
     <text x="296" y="3202" class="warning">none</text>
-    <text x="296" y="3220" class="observation">UNREVIEWED</text>
+    <text x="296" y="3220" class="observation">줄무늬 넥워머의 단일 목 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_043">
     <rect x="566" y="2886" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -575,7 +575,7 @@
     <text x="576" y="3156" class="name">기본 비행사 모자</text>
     <text x="576" y="3180" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="576" y="3202" class="warning">none</text>
-    <text x="576" y="3220" class="observation">UNREVIEWED</text>
+    <text x="576" y="3220" class="observation">기본 비행사 모자 원본에 서로 독립 장착 가능한 기본 비행사 모자·기본 비행사 고글이(</text>
   </g>
   <g class="costume-cell" data-id="common_044">
     <rect x="846" y="2886" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -588,7 +588,7 @@
     <text x="856" y="3156" class="name">꽃무늬 안경</text>
     <text x="856" y="3180" class="meta">face · x -4 · y -22 · size 104</text>
     <text x="856" y="3202" class="warning">none</text>
-    <text x="856" y="3220" class="observation">UNREVIEWED</text>
+    <text x="856" y="3220" class="observation">꽃무늬 안경의 단일 얼굴 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_045">
     <rect x="1126" y="2886" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -601,7 +601,7 @@
     <text x="1136" y="3156" class="name">미니 작업 앞치마</text>
     <text x="1136" y="3180" class="meta">body · x -4 · y 17 · size 104</text>
     <text x="1136" y="3202" class="warning">none</text>
-    <text x="1136" y="3220" class="observation">UNREVIEWED</text>
+    <text x="1136" y="3220" class="observation">미니 작업 앞치마의 단일 몸 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복</text>
   </g>
   <g class="costume-cell" data-id="common_046">
     <rect x="6" y="3246" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -614,7 +614,7 @@
     <text x="16" y="3516" class="name">구름 모자</text>
     <text x="16" y="3540" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="16" y="3562" class="warning">none</text>
-    <text x="16" y="3580" class="observation">UNREVIEWED</text>
+    <text x="16" y="3580" class="observation">구름 모자의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각</text>
   </g>
   <g class="costume-cell" data-id="common_047">
     <rect x="286" y="3246" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -627,7 +627,7 @@
     <text x="296" y="3516" class="name">나뭇잎 머리띠</text>
     <text x="296" y="3540" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="296" y="3562" class="warning">none</text>
-    <text x="296" y="3580" class="observation">UNREVIEWED</text>
+    <text x="296" y="3580" class="observation">나뭇잎 머리띠의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 </text>
   </g>
   <g class="costume-cell" data-id="common_048">
     <rect x="566" y="3246" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -640,7 +640,7 @@
     <text x="576" y="3516" class="name">미니 메신저백</text>
     <text x="576" y="3540" class="meta">body · x 8 · y 17 · size 96</text>
     <text x="576" y="3562" class="warning">none</text>
-    <text x="576" y="3580" class="observation">UNREVIEWED</text>
+    <text x="576" y="3580" class="observation">미니 메신저백의 단일 몸 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_049">
     <rect x="846" y="3246" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -653,7 +653,7 @@
     <text x="856" y="3516" class="name">물방울 샤워캡</text>
     <text x="856" y="3540" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="856" y="3562" class="warning">none</text>
-    <text x="856" y="3580" class="observation">UNREVIEWED</text>
+    <text x="856" y="3580" class="observation">물방울 샤워캡의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 </text>
   </g>
   <g class="costume-cell" data-id="common_050">
     <rect x="1126" y="3246" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -666,7 +666,7 @@
     <text x="1136" y="3516" class="name">데님 버킷햇</text>
     <text x="1136" y="3540" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="1136" y="3562" class="warning">none</text>
-    <text x="1136" y="3580" class="observation">UNREVIEWED</text>
+    <text x="1136" y="3580" class="observation">데님 버킷햇의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_051">
     <rect x="6" y="3606" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -679,7 +679,7 @@
     <text x="16" y="3876" class="name">줄무늬 조끼</text>
     <text x="16" y="3900" class="meta">body · x -4 · y 17 · size 104</text>
     <text x="16" y="3922" class="warning">none</text>
-    <text x="16" y="3940" class="observation">UNREVIEWED</text>
+    <text x="16" y="3940" class="observation">줄무늬 조끼의 단일 몸 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각</text>
   </g>
   <g class="costume-cell" data-id="common_052">
     <rect x="286" y="3606" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -692,7 +692,7 @@
     <text x="296" y="3876" class="name">실험실 고글</text>
     <text x="296" y="3900" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="296" y="3922" class="warning">none</text>
-    <text x="296" y="3940" class="observation">UNREVIEWED</text>
+    <text x="296" y="3940" class="observation">실험실 고글의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_053">
     <rect x="566" y="3606" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -705,7 +705,7 @@
     <text x="576" y="3876" class="name">제빵사 스카프</text>
     <text x="576" y="3900" class="meta">neck · x -4 · y 12 · size 104</text>
     <text x="576" y="3922" class="warning">none</text>
-    <text x="576" y="3940" class="observation">UNREVIEWED</text>
+    <text x="576" y="3940" class="observation">제빵사 스카프의 단일 목 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_054">
     <rect x="846" y="3606" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -718,7 +718,7 @@
     <text x="856" y="3876" class="name">캠핑 헤드램프</text>
     <text x="856" y="3900" class="meta">head · x -4 · y -36 · size 104</text>
     <text x="856" y="3922" class="warning">none</text>
-    <text x="856" y="3940" class="observation">UNREVIEWED</text>
+    <text x="856" y="3940" class="observation">캠핑 헤드램프의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 </text>
   </g>
   <g class="costume-cell" data-id="common_055">
     <rect x="1126" y="3606" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -731,7 +731,7 @@
     <text x="1136" y="3876" class="name">방울 목걸이</text>
     <text x="1136" y="3900" class="meta">neck · x -4 · y 12 · size 104</text>
     <text x="1136" y="3922" class="warning">none</text>
-    <text x="1136" y="3940" class="observation">UNREVIEWED</text>
+    <text x="1136" y="3940" class="observation">방울 목걸이의 단일 목 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각</text>
   </g>
   <g class="costume-cell" data-id="common_056">
     <rect x="6" y="3966" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -744,7 +744,7 @@
     <text x="16" y="4236" class="name">곰 귀 머리띠</text>
     <text x="16" y="4260" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="16" y="4282" class="warning">none</text>
-    <text x="16" y="4300" class="observation">UNREVIEWED</text>
+    <text x="16" y="4300" class="observation">곰 귀 머리띠의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 </text>
   </g>
   <g class="costume-cell" data-id="common_057">
     <rect x="286" y="3966" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -757,7 +757,7 @@
     <text x="296" y="4236" class="name">우비 케이프</text>
     <text x="296" y="4260" class="meta">body · x -4 · y 17 · size 104</text>
     <text x="296" y="4282" class="warning">none</text>
-    <text x="296" y="4300" class="observation">UNREVIEWED</text>
+    <text x="296" y="4300" class="observation">우비 케이프의 단일 몸 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각</text>
   </g>
   <g class="costume-cell" data-id="common_058">
     <rect x="566" y="3966" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -770,7 +770,7 @@
     <text x="576" y="4236" class="name">복고 뉴스보이캡</text>
     <text x="576" y="4260" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="576" y="4282" class="warning">none</text>
-    <text x="576" y="4300" class="observation">UNREVIEWED</text>
+    <text x="576" y="4300" class="observation">복고 뉴스보이캡의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복</text>
   </g>
   <g class="costume-cell" data-id="common_059">
     <rect x="846" y="3966" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -783,7 +783,7 @@
     <text x="856" y="4236" class="name">하트 머리핀</text>
     <text x="856" y="4260" class="meta">head · x 18 · y -34 · size 88</text>
     <text x="856" y="4282" class="warning">none</text>
-    <text x="856" y="4300" class="observation">UNREVIEWED</text>
+    <text x="856" y="4300" class="observation">하트 머리핀의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_060">
     <rect x="1126" y="3966" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -796,7 +796,7 @@
     <text x="1136" y="4236" class="name">흰색 선캡</text>
     <text x="1136" y="4260" class="meta">head · x -4 · y -48 · size 104</text>
     <text x="1136" y="4282" class="warning">none</text>
-    <text x="1136" y="4300" class="observation">UNREVIEWED</text>
+    <text x="1136" y="4300" class="observation">흰색 선캡의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조각</text>
   </g>
   <g class="costume-cell" data-id="common_061">
     <rect x="6" y="4326" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -808,8 +808,8 @@
     <image href="../../../common/common_061.png" x="84" y="4370" width="112" height="112" preserveAspectRatio="xMidYMid meet" />
     <text x="16" y="4596" class="name">열차 차장 세트</text>
     <text x="16" y="4620" class="meta">full · x -8 · y -8 · size 112</text>
-    <text x="16" y="4642" class="warning">alpha-dust</text>
-    <text x="16" y="4660" class="observation">UNREVIEWED</text>
+    <text x="16" y="4642" class="warning">none</text>
+    <text x="16" y="4660" class="observation">열차 차장 세트 원본에 서로 독립 장착 가능한 열차 차장 모자·열차 차장 제복이(가) </text>
   </g>
   <g class="costume-cell" data-id="common_062">
     <rect x="286" y="4326" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -822,7 +822,7 @@
     <text x="296" y="4596" class="name">도서관 사서 카디건</text>
     <text x="296" y="4620" class="meta">body · x -4 · y 17 · size 104</text>
     <text x="296" y="4642" class="warning">none</text>
-    <text x="296" y="4660" class="observation">UNREVIEWED</text>
+    <text x="296" y="4660" class="observation">도서관 사서 카디건의 단일 몸 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중</text>
   </g>
   <g class="costume-cell" data-id="common_063">
     <rect x="566" y="4326" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -835,7 +835,7 @@
     <text x="576" y="4596" class="name">배달 라이더 헬멧</text>
     <text x="576" y="4620" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="576" y="4642" class="warning">none</text>
-    <text x="576" y="4660" class="observation">UNREVIEWED</text>
+    <text x="576" y="4660" class="observation">배달 라이더 헬멧의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중</text>
   </g>
   <g class="costume-cell" data-id="common_064">
     <rect x="846" y="4326" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -847,8 +847,8 @@
     <image href="../../../common/common_064.png" x="924" y="4370" width="112" height="112" preserveAspectRatio="xMidYMid meet" />
     <text x="856" y="4596" class="name">도예가 반다나와 앞치마</text>
     <text x="856" y="4620" class="meta">full · x -8 · y -8 · size 112</text>
-    <text x="856" y="4642" class="warning">alpha-dust</text>
-    <text x="856" y="4660" class="observation">UNREVIEWED</text>
+    <text x="856" y="4642" class="warning">none</text>
+    <text x="856" y="4660" class="observation">도예가 반다나와 앞치마 원본에 서로 독립 장착 가능한 도예가 반다나·도예가 앞치마이(가</text>
   </g>
   <g class="costume-cell" data-id="common_065">
     <rect x="1126" y="4326" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -860,8 +860,8 @@
     <image href="../../../common/common_065.png" x="1204" y="4370" width="112" height="112" preserveAspectRatio="xMidYMid meet" />
     <text x="1136" y="4596" class="name">탐조가 모자와 쌍안경 가방</text>
     <text x="1136" y="4620" class="meta">full · x -8 · y -8 · size 112</text>
-    <text x="1136" y="4642" class="warning">alpha-dust</text>
-    <text x="1136" y="4660" class="observation">UNREVIEWED</text>
+    <text x="1136" y="4642" class="warning">none</text>
+    <text x="1136" y="4660" class="observation">탐조가 모자와 쌍안경 가방 원본에 서로 독립 장착 가능한 탐조가 모자·탐조가 쌍안경 가</text>
   </g>
   <g class="costume-cell" data-id="common_066">
     <rect x="6" y="4686" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -874,7 +874,7 @@
     <text x="16" y="4956" class="name">복고 식당 종이모자</text>
     <text x="16" y="4980" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="16" y="5002" class="warning">none</text>
-    <text x="16" y="5020" class="observation">UNREVIEWED</text>
+    <text x="16" y="5020" class="observation">복고 식당 종이모자의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 </text>
   </g>
   <g class="costume-cell" data-id="common_067">
     <rect x="286" y="4686" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -887,7 +887,7 @@
     <text x="296" y="4956" class="name">양봉가 모자</text>
     <text x="296" y="4980" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="296" y="5002" class="warning">none</text>
-    <text x="296" y="5020" class="observation">UNREVIEWED</text>
+    <text x="296" y="5020" class="observation">양봉가 모자의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 중복 조</text>
   </g>
   <g class="costume-cell" data-id="common_068">
     <rect x="566" y="4686" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -900,7 +900,7 @@
     <text x="576" y="4956" class="name">테니스 선캡과 손목밴드</text>
     <text x="576" y="4980" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="576" y="5002" class="warning">none</text>
-    <text x="576" y="5020" class="observation">UNREVIEWED</text>
+    <text x="576" y="5020" class="observation">테니스 선캡과 손목밴드 원본에 서로 독립 장착 가능한 테니스 선캡·테니스 손목밴드이(가</text>
   </g>
   <g class="costume-cell" data-id="common_069">
     <rect x="846" y="4686" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -913,7 +913,7 @@
     <text x="856" y="4956" class="name">오케스트라 지휘자 칼라</text>
     <text x="856" y="4980" class="meta">neck · x -4 · y 12 · size 104</text>
     <text x="856" y="5002" class="warning">none</text>
-    <text x="856" y="5020" class="observation">UNREVIEWED</text>
+    <text x="856" y="5020" class="observation">오케스트라 지휘자 칼라의 단일 목 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린</text>
   </g>
   <g class="costume-cell" data-id="common_070">
     <rect x="1126" y="4686" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -926,7 +926,7 @@
     <text x="1136" y="4956" class="name">스키 고글과 니트밴드</text>
     <text x="1136" y="4980" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="1136" y="5002" class="warning">none</text>
-    <text x="1136" y="5020" class="observation">UNREVIEWED</text>
+    <text x="1136" y="5020" class="observation">스키 고글과 니트밴드의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린</text>
   </g>
   <g class="costume-cell" data-id="common_071">
     <rect x="6" y="5046" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -939,7 +939,7 @@
     <text x="16" y="5316" class="name">필름 사진가 베레모</text>
     <text x="16" y="5340" class="meta">head · x -4 · y -30 · size 104</text>
     <text x="16" y="5362" class="warning">none</text>
-    <text x="16" y="5380" class="observation">UNREVIEWED</text>
+    <text x="16" y="5380" class="observation">필름 사진가 베레모 원본에 서로 독립 장착 가능한 필름 사진가 베레모·필름 사진가 카메</text>
   </g>
   <g class="costume-cell" data-id="common_072">
     <rect x="286" y="5046" width="268" height="348" rx="8" fill="#222329" stroke="#5b5d67" />
@@ -952,6 +952,6 @@
     <text x="296" y="5316" class="name">구운 마시멜로 모자</text>
     <text x="296" y="5340" class="meta">head · x -4 · y -40 · size 92</text>
     <text x="296" y="5362" class="warning">none</text>
-    <text x="296" y="5380" class="observation">UNREVIEWED</text>
+    <text x="296" y="5380" class="observation">구운 마시멜로 모자의 단일 머리 장식 실루엣 전체가 캔버스 여백 안에 들어오며, 잘린 </text>
   </g>
 </svg>
