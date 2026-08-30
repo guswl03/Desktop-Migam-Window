@@ -1,6 +1,7 @@
 import { mkdir, rename, rm, writeFile } from "node:fs/promises";
-import { relative, resolve, sep } from "node:path";
+import { isAbsolute, relative, resolve, sep } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import { randomUUID } from "node:crypto";
 import { expectedCatalogIds, loadBlueprint } from "./costume-blueprint.mjs";
 import { analyzePngSemantics, readPngRgba, visibleBounds } from "./lib/png-rgba.mjs";
 import { encodePngRgba, normalizeRgbaSprite } from "./lib/png-normalize.mjs";
@@ -15,7 +16,14 @@ function itemLabel(item) {
 
 function safePathInside(root, path, label) {
   const relativePath = relative(root, path);
-  if (relativePath === "" || relativePath.startsWith(`..${sep}`) || relativePath === "..") {
+  if (
+    relativePath === ""
+    || isAbsolute(relativePath)
+    || relativePath.startsWith(`..${sep}`)
+    || relativePath.startsWith("../")
+    || relativePath.startsWith("..\\")
+    || relativePath === ".."
+  ) {
     throw new Error(`${label}: path escapes its approved directory`);
   }
   return path;
@@ -111,10 +119,10 @@ export async function normalizeCandidate(item, {
   const destinationRoot = resolve(root, "pack", "qa", "accepted", item.rarity);
   safePathInside(destinationRoot, destination, item.id);
   await mkdir(destinationRoot, { recursive: true });
-  const temporary = resolve(destinationRoot, `.${item.id}.${process.pid}.tmp`);
+  const temporary = resolve(destinationRoot, `.${item.id}.${randomUUID()}.tmp`);
   safePathInside(destinationRoot, temporary, item.id);
   try {
-    await writeFile(temporary, encodePngRgba(candidate));
+    await writeFile(temporary, encodePngRgba(candidate), { flag: "wx" });
     await rename(temporary, destination);
   } finally {
     await rm(temporary, { force: true });

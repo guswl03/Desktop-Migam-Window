@@ -1,18 +1,65 @@
-import { readdir, readFile, writeFile } from "node:fs/promises";
-import { extname, relative, resolve, sep } from "node:path";
+import {
+  lstat,
+  mkdir,
+  readdir,
+  readFile,
+  realpath,
+  rename,
+  rm,
+  writeFile,
+} from "node:fs/promises";
+import { extname, isAbsolute, relative, resolve, sep } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import { randomUUID } from "node:crypto";
 import { expectedCatalogIds, loadBlueprint } from "./costume-blueprint.mjs";
-import { acceptedCandidatePath } from "./costume-normalize-candidates.mjs";
+import { acceptedCandidatePath, validateCandidate } from "./costume-normalize-candidates.mjs";
+import { readPngRgba } from "./lib/png-rgba.mjs";
 
 const repositoryRoot = fileURLToPath(new URL("..", import.meta.url));
 const rarities = ["common", "rare", "epic", "legendary", "special"];
 
-function safePathInside(root, path, label) {
+export function assertPathInside(root, path, label = "path") {
   const relativePath = relative(root, path);
-  if (relativePath === "" || relativePath === ".." || relativePath.startsWith(`..${sep}`)) {
+  if (
+    relativePath === ""
+    || isAbsolute(relativePath)
+    || relativePath === ".."
+    || relativePath.startsWith(`..${sep}`)
+    || relativePath.startsWith("../")
+    || relativePath.startsWith("..\\")
+  ) {
     throw new Error(`${label}: path escapes its approved directory`);
   }
   return path;
+}
+
+async function verifiedDirectory(root, directory, label) {
+  const rootStat = await lstat(root);
+  if (!rootStat.isDirectory() || rootStat.isSymbolicLink()) {
+    throw new Error(`${label}: approved root is not a real directory`);
+  }
+  const directoryStat = await lstat(directory);
+  if (!directoryStat.isDirectory() || directoryStat.isSymbolicLink()) {
+    throw new Error(`${label}: parent directory is not a real directory`);
+  }
+  const canonicalRoot = await realpath(root);
+  const canonicalDirectory = await realpath(directory);
+  assertPathInside(canonicalRoot, canonicalDirectory, label);
+  return { canonicalRoot, canonicalDirectory };
+}
+
+async function verifiedRegularFile(path, parent, label, { allowMissing = false } = {}) {
+  const stat = await lstat(path).catch((error) => {
+    if (allowMissing && error?.code === "ENOENT") return null;
+    throw error;
+  });
+  if (!stat) return null;
+  if (!stat.isFile() || stat.isSymbolicLink()) {
+    throw new Error(`${label}: file must be a regular non-symlink file`);
+  }
+  const canonicalPath = await realpath(path);
+  assertPathInside(parent.canonicalDirectory, canonicalPath, label);
+  return stat;
 }
 
 function candidateRecord(key, entry) {
@@ -22,10 +69,40 @@ function candidateRecord(key, entry) {
       rarity: entry.rarity,
       sourcePath: entry.sourcePath,
       bytes: entry.bytes,
+      decoded: entry.decoded,
       invalid: entry.invalid,
     };
   }
   return { id: key, bytes: entry };
+}
+
+function candidatePaths(root, item) {
+  const sourcePath = acceptedCandidatePath(item, root);
+  const sourceParent = resolve(root, "pack", "qa", "accepted", item.rarity);
+  const destinationParent = resolve(root, "pack", item.rarity);
+  const targetPath = resolve(destinationParent, `${item.id}.png`);
+  return { sourcePath, sourceParent, destinationParent, targetPath };
+}
+
+async function verifyAcceptedSource(root, item, sourcePath) {
+  const { sourcePath: expectedSource, sourceParent } = candidatePaths(root, item);
+  if (resolve(sourcePath) !== expectedSource) {
+    throw new Error(`${item.id}: accepted candidate path does not match its approved rarity directory`);
+  }
+  const acceptedRoot = resolve(root, "pack", "qa", "accepted");
+  const parent = await verifiedDirectory(acceptedRoot, sourceParent, item.id);
+  assertPathInside(parent.canonicalDirectory, await realpath(sourcePath), item.id);
+  await verifiedRegularFile(sourcePath, parent, item.id);
+  return sourcePath;
+}
+
+async function verifyDestination(root, item) {
+  const { destinationParent, targetPath } = candidatePaths(root, item);
+  const packRoot = resolve(root, "pack");
+  const parent = await verifiedDirectory(packRoot, destinationParent, item.id);
+  assertPathInside(parent.canonicalDirectory, targetPath, item.id);
+  await verifiedRegularFile(targetPath, parent, item.id, { allowMissing: true });
+  return { parent, targetPath };
 }
 
 export async function loadAcceptedCandidates(root = repositoryRoot) {
@@ -33,6 +110,10 @@ export async function loadAcceptedCandidates(root = repositoryRoot) {
   const candidates = new Map();
   let rarityEntries;
   try {
+    const stat = await lstat(acceptedRoot);
+    if (!stat.isDirectory() || stat.isSymbolicLink()) {
+      throw new Error("accepted candidate root is not a real directory");
+    }
     rarityEntries = await readdir(acceptedRoot, { withFileTypes: true });
   } catch (error) {
     if (error?.code === "ENOENT") return candidates;
@@ -49,11 +130,16 @@ export async function loadAcceptedCandidates(root = repositoryRoot) {
     }
     const rarity = directory.name;
     const directoryPath = resolve(acceptedRoot, rarity);
-    safePathInside(acceptedRoot, directoryPath, rarity);
+    let parent;
+    try {
+      parent = await verifiedDirectory(acceptedRoot, directoryPath, rarity);
+    } catch (error) {
+      candidates.set(`__accepted_path_${rarity}`, { id: rarity, invalid: error.message });
+      continue;
+    }
     const files = await readdir(directoryPath, { withFileTypes: true });
     for (const file of files) {
       const sourcePath = resolve(directoryPath, file.name);
-      safePathInside(directoryPath, sourcePath, file.name);
       if (!file.isFile() || extname(file.name).toLowerCase() !== ".png") {
         candidates.set(`__accepted_path_${rarity}_${file.name}`, {
           id: `${rarity}/${file.name}`,
@@ -63,12 +149,13 @@ export async function loadAcceptedCandidates(root = repositoryRoot) {
       }
       const id = file.name.slice(0, -4);
       const key = candidates.has(id) ? `${id}#duplicate-${rarity}` : id;
-      candidates.set(key, {
-        id,
-        rarity,
-        sourcePath,
-        bytes: await readFile(sourcePath),
-      });
+      try {
+        assertPathInside(parent.canonicalDirectory, sourcePath, id);
+        await verifiedRegularFile(sourcePath, parent, id);
+        candidates.set(key, { id, rarity, sourcePath, bytes: await readFile(sourcePath) });
+      } catch (error) {
+        candidates.set(key, { id, rarity, invalid: error.message });
+      }
     }
   }
   return candidates;
@@ -81,9 +168,7 @@ export async function planPromotion(blueprint, acceptedCandidates, { root = repo
   if (!Array.isArray(blueprint)) {
     errors.push("blueprint: expected an array of 185 rows");
   } else {
-    if (blueprint.length !== expected.size) {
-      errors.push(`expected 185 blueprint rows, got ${blueprint.length}`);
-    }
+    if (blueprint.length !== expected.size) errors.push(`expected 185 blueprint rows, got ${blueprint.length}`);
     for (const item of blueprint) {
       const id = typeof item?.id === "string" ? item.id : "<blueprint row>";
       if (blueprintById.has(id)) {
@@ -96,25 +181,15 @@ export async function planPromotion(blueprint, acceptedCandidates, { root = repo
         errors.push(`${id}: unexpected blueprint ID`);
         continue;
       }
-      if (item.rarity !== expectedRarity) {
-        errors.push(`${id}: blueprint rarity mismatch (got ${item.rarity}, expected ${expectedRarity})`);
-      }
-      if (item.qaState !== "accepted") {
-        errors.push(`${id}: qaState must be accepted (got ${item.qaState})`);
-      }
+      if (item.rarity !== expectedRarity) errors.push(`${id}: blueprint rarity mismatch (got ${item.rarity}, expected ${expectedRarity})`);
+      if (item.qaState !== "accepted") errors.push(`${id}: qaState must be accepted (got ${item.qaState})`);
     }
-    for (const id of expected.keys()) {
-      if (!blueprintById.has(id)) errors.push(`${id}: missing blueprint row`);
-    }
+    for (const id of expected.keys()) if (!blueprintById.has(id)) errors.push(`${id}: missing blueprint row`);
   }
 
-  if (!(acceptedCandidates instanceof Map)) {
-    errors.push("accepted candidates: expected a Map keyed by costume ID");
-  }
   const candidates = acceptedCandidates instanceof Map ? acceptedCandidates : new Map();
-  if (candidates.size !== expected.size) {
-    errors.push(`expected 185 accepted candidates, got ${candidates.size}`);
-  }
+  if (!(acceptedCandidates instanceof Map)) errors.push("accepted candidates: expected a Map keyed by costume ID");
+  if (candidates.size !== expected.size) errors.push(`expected 185 accepted candidates, got ${candidates.size}`);
   const candidateIds = new Set();
   for (const [key, entry] of candidates) {
     const candidate = candidateRecord(key, entry);
@@ -130,7 +205,8 @@ export async function planPromotion(blueprint, acceptedCandidates, { root = repo
     candidateIds.add(id);
     if (key !== id) errors.push(`${key}: accepted candidate key mismatch for ${id}`);
     const expectedRarity = expected.get(id);
-    if (!expectedRarity) {
+    const item = blueprintById.get(id);
+    if (!expectedRarity || !item) {
       errors.push(`${id}: unexpected accepted candidate`);
       continue;
     }
@@ -140,47 +216,141 @@ export async function planPromotion(blueprint, acceptedCandidates, { root = repo
     if (!(candidate.bytes instanceof Uint8Array) || candidate.bytes.length === 0) {
       errors.push(`${id}: accepted candidate PNG is missing or empty`);
     }
+    let decoded = candidate.decoded;
     if (candidate.sourcePath) {
-      const expectedSource = acceptedCandidatePath({ id, rarity: expectedRarity }, root);
-      if (resolve(candidate.sourcePath) !== expectedSource) {
-        errors.push(`${id}: accepted candidate path does not match its approved rarity directory`);
+      try {
+        await verifyAcceptedSource(root, item, candidate.sourcePath);
+        decoded = await readPngRgba(candidate.sourcePath);
+      } catch (error) {
+        errors.push(`${id}: invalid accepted candidate PNG: ${error.message}`);
       }
+    }
+    if (decoded) errors.push(...validateCandidate(item, decoded));
+    else if (item.qaState === "accepted" && !candidate.sourcePath) {
+      errors.push(`${id}: accepted candidate has no decoded PNG for validation`);
     }
   }
 
   for (const [id, rarity] of expected) {
     const item = blueprintById.get(id);
-    if (item?.qaState === "accepted" && !candidateIds.has(id)) {
-      errors.push(`${id}: missing accepted candidate`);
-    }
+    if (item?.qaState === "accepted" && !candidateIds.has(id)) errors.push(`${id}: missing accepted candidate`);
     if (item?.rarity === rarity && item?.qaState === "accepted" && candidateIds.has(id)) {
-      const targetRoot = resolve(root, "pack", rarity);
-      safePathInside(targetRoot, resolve(targetRoot, `${id}.png`), id);
+      try {
+        await verifyDestination(root, item);
+      } catch (error) {
+        errors.push(`${id}: invalid promotion destination: ${error.message}`);
+      }
     }
   }
 
   if (errors.length) return { root, errors, copies: [] };
   const copies = [...expected].map(([id, rarity]) => {
+    const item = blueprintById.get(id);
     const candidate = candidateRecord(id, candidates.get(id));
-    const sourcePath = candidate.sourcePath ?? acceptedCandidatePath({ id, rarity }, root);
-    const targetRoot = resolve(root, "pack", rarity);
-    const targetPath = safePathInside(targetRoot, resolve(targetRoot, `${id}.png`), id);
-    return { id, rarity, sourcePath, targetPath, png: candidate.bytes };
+    const paths = candidatePaths(root, item);
+    return Object.freeze({
+      id,
+      rarity,
+      sourcePath: candidate.sourcePath ?? paths.sourcePath,
+      targetPath: paths.targetPath,
+      png: candidate.bytes,
+    });
   });
-  return { root, errors: [], copies };
+  return Object.freeze({ root, errors: Object.freeze([]), copies: Object.freeze(copies) });
 }
 
-export async function applyPromotion(plan) {
-  if (!plan || !Array.isArray(plan.errors) || !Array.isArray(plan.copies)) {
-    throw new Error("invalid promotion plan");
+function temporaryPath(parent, id, kind) {
+  return resolve(parent, `.${id}.${randomUUID()}.${kind}`);
+}
+
+async function rereadForStaging(root, copy) {
+  const item = { id: copy.id, rarity: copy.rarity };
+  const sourcePath = await verifyAcceptedSource(root, item, copy.sourcePath);
+  const decoded = await readPngRgba(sourcePath);
+  const errors = validateCandidate(item, decoded);
+  if (errors.length) throw new Error(errors.join("\n"));
+  const destination = await verifyDestination(root, item);
+  return { ...copy, sourcePath, ...destination, bytes: await readFile(sourcePath) };
+}
+
+async function rollback(staged) {
+  const rollbackErrors = [];
+  for (const copy of [...staged].reverse()) {
+    try {
+      if (copy.committed) await rm(copy.targetPath, { force: true });
+      if (copy.backupPath) await rename(copy.backupPath, copy.targetPath);
+    } catch (error) {
+      rollbackErrors.push(error);
+    }
+    try {
+      await rm(copy.temporaryPath, { force: true });
+    } catch (error) {
+      rollbackErrors.push(error);
+    }
   }
-  if (plan.errors.length) throw new Error("promotion plan contains errors");
-  for (const copy of plan.copies) {
-    const targetRoot = resolve(plan.root ?? repositoryRoot, "pack", copy.rarity);
-    safePathInside(targetRoot, copy.targetPath, copy.id);
+  return rollbackErrors;
+}
+
+export async function applyPromotion(options = {}) {
+  if (!options || typeof options !== "object" || Array.isArray(options)) {
+    throw new Error("applyPromotion expects authoritative options");
   }
-  for (const copy of plan.copies) await writeFile(copy.targetPath, copy.png);
-  return plan.copies.length;
+  if ("copies" in options || "errors" in options || "plan" in options) {
+    throw new Error("applyPromotion does not accept a caller-supplied plan");
+  }
+  const { root = repositoryRoot, failureHook, beforeCommit } = options;
+  const buildPlan = async () => planPromotion(
+    await loadBlueprint(root),
+    await loadAcceptedCandidates(root),
+    { root },
+  );
+  const firstPlan = await buildPlan();
+  if (firstPlan.errors.length) throw new Error(firstPlan.errors.join("\n"));
+  const plan = await buildPlan();
+  if (plan.errors.length) throw new Error(plan.errors.join("\n"));
+
+  const staged = [];
+  try {
+    for (let index = 0; index < plan.copies.length; index += 1) {
+      const copy = await rereadForStaging(root, plan.copies[index]);
+      const temporary = temporaryPath(copy.parent.canonicalDirectory, copy.id, "promote.tmp");
+      assertPathInside(copy.parent.canonicalDirectory, temporary, copy.id);
+      const record = { ...copy, temporaryPath: temporary, backupPath: null, committed: false };
+      staged.push(record);
+      await writeFile(temporary, copy.bytes, { flag: "wx" });
+      const stagedDecoded = await readPngRgba(temporary);
+      const errors = validateCandidate({ id: copy.id, rarity: copy.rarity }, stagedDecoded);
+      if (errors.length) throw new Error(errors.join("\n"));
+      failureHook?.({ currentPhase: "stage", index, id: record.id });
+    }
+    await beforeCommit?.(Object.freeze({ root, copies: plan.copies }));
+    for (const record of staged) {
+      await verifiedRegularFile(record.targetPath, record.parent, record.id, { allowMissing: true });
+      const existing = await lstat(record.targetPath).catch((error) => error?.code === "ENOENT" ? null : Promise.reject(error));
+      if (existing) {
+        record.backupPath = temporaryPath(record.parent.canonicalDirectory, record.id, "promote.bak");
+        assertPathInside(record.parent.canonicalDirectory, record.backupPath, record.id);
+        await rename(record.targetPath, record.backupPath);
+      }
+    }
+    for (let index = 0; index < staged.length; index += 1) {
+      const record = staged[index];
+      failureHook?.({ currentPhase: "commit", index, id: record.id });
+      await rename(record.temporaryPath, record.targetPath);
+      record.committed = true;
+    }
+    for (const record of staged) {
+      if (!record.backupPath) continue;
+      await rm(record.backupPath, { force: true }).catch(() => {});
+    }
+    return staged.length;
+  } catch (error) {
+    const rollbackErrors = await rollback(staged);
+    if (rollbackErrors.length) {
+      throw new AggregateError([error, ...rollbackErrors], "promotion failed and rollback was incomplete");
+    }
+    throw error;
+  }
 }
 
 async function main() {
@@ -188,15 +358,13 @@ async function main() {
   if (apply.length > 1 || (apply.length === 1 && apply[0] !== "--apply")) {
     throw new Error("usage: node scripts/costume-promote-candidates.mjs [--apply]");
   }
-  const blueprint = await loadBlueprint(repositoryRoot);
-  const candidates = await loadAcceptedCandidates(repositoryRoot);
-  const plan = await planPromotion(blueprint, candidates);
+  const plan = await planPromotion(
+    await loadBlueprint(repositoryRoot),
+    await loadAcceptedCandidates(repositoryRoot),
+  );
   if (plan.errors.length) throw new Error(plan.errors.join("\n"));
-  if (apply[0] === "--apply") {
-    console.log(`promoted=${await applyPromotion(plan)}`);
-  } else {
-    console.log(`validated=${plan.copies.length}`);
-  }
+  if (apply[0] === "--apply") console.log(`promoted=${await applyPromotion()}`);
+  else console.log(`validated=${plan.copies.length}`);
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {

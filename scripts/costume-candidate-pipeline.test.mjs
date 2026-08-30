@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { access, mkdtemp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
+import { access, mkdtemp, mkdir, readFile, rm, symlink, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import test from "node:test";
@@ -11,7 +11,12 @@ import {
 } from "./costume-normalize-candidates.mjs";
 import { encodePngRgba } from "./lib/png-normalize.mjs";
 import { expectedCatalogIds } from "./costume-blueprint.mjs";
-import { applyPromotion, planPromotion } from "./costume-promote-candidates.mjs";
+import {
+  applyPromotion,
+  assertPathInside,
+  loadAcceptedCandidates,
+  planPromotion,
+} from "./costume-promote-candidates.mjs";
 
 function item(id, rarity = "common", qaState = "accepted") {
   return { id, rarity, qaState };
@@ -45,7 +50,41 @@ function acceptedBlueprint() {
 }
 
 function acceptedPngs(blueprint) {
-  return new Map(blueprint.map(({ id }) => [id, encodePngRgba(sprite())]));
+  return new Map(blueprint.map(({ id }) => [id, {
+    bytes: encodePngRgba(sprite()),
+    decoded: sprite(),
+  }]));
+}
+
+async function prepareAuthoritativePromotion(root, { override = new Map() } = {}) {
+  const blueprint = acceptedBlueprint();
+  const blueprintDirectory = join(root, "pack", "catalog-blueprint");
+  await mkdir(blueprintDirectory, { recursive: true });
+  await Promise.all(["common", "rare", "epic", "legendary", "special"].map(async (rarity) => {
+    await writeFile(
+      join(blueprintDirectory, `${rarity}.json`),
+      JSON.stringify(blueprint.filter((item) => item.rarity === rarity)),
+    );
+  }));
+  for (const candidate of blueprint) {
+    const acceptedPath = acceptedCandidatePath(candidate, root);
+    const destination = join(root, "pack", candidate.rarity, `${candidate.id}.png`);
+    await mkdir(join(root, "pack", "qa", "accepted", candidate.rarity), { recursive: true });
+    await mkdir(join(root, "pack", candidate.rarity), { recursive: true });
+    await writeFile(acceptedPath, override.get(candidate.id) ?? encodePngRgba(sprite()));
+    await writeFile(destination, Buffer.from(`original-${candidate.id}`));
+  }
+  return blueprint;
+}
+
+async function assertOriginalCatalog(root) {
+  for (const [id, rarity] of expectedCatalogIds()) {
+    assert.deepEqual(
+      await readFile(join(root, "pack", rarity, `${id}.png`)),
+      Buffer.from(`original-${id}`),
+      id,
+    );
+  }
 }
 
 test("normalizes candidates into rarity directories", () => {
@@ -72,6 +111,19 @@ test("candidate validation requires both transparency and a visible 64px span", 
     .includes("common_001: candidate has no transparent pixels"));
   assert.ok(validateCandidate(item("common_001"), sprite({ right: 40, bottom: 40 }))
     .includes("common_001: visible span must be at least 64 pixels wide or tall (got 25x25)"));
+});
+
+test("candidate validation accepts exact 12px margins and 64px spans but rejects every 11px boundary", () => {
+  assert.deepEqual(validateCandidate(item("common_001"), sprite({ left: 12, top: 12, right: 75, bottom: 75 })), []);
+  for (const [side, values] of Object.entries({
+    left: { left: 11 }, top: { top: 11 }, right: { right: 244 }, bottom: { bottom: 244 },
+  })) {
+    assert.ok(validateCandidate(item("common_001"), sprite(values))
+      .some((error) => error.includes(`the ${side} margin (got 11)`)), side);
+  }
+  assert.deepEqual(validateCandidate(item("common_001"), sprite({ right: 79, bottom: 20 })), []);
+  assert.ok(validateCandidate(item("common_001"), sprite({ right: 78, bottom: 20 }))
+    .some((error) => error.includes("got 63x5")));
 });
 
 test("accepted candidate paths reject traversal and unapproved rarity-ID pairs", () => {
@@ -136,7 +188,7 @@ test("apply promotion makes no writes when the plan contains errors", async () =
   const result = await planPromotion(blueprint, new Map(), { root });
 
   try {
-    await assert.rejects(applyPromotion(result), /promotion plan contains errors/);
+    await assert.rejects(applyPromotion(result), /caller-supplied plan/);
     await assert.rejects(access(join(root, "pack", "common", "common_001.png")));
   } finally {
     await rm(root, { recursive: true, force: true });
@@ -152,11 +204,102 @@ test("apply promotion writes the complete clean plan to its planned destination 
     mkdir(join(root, "pack", rarity), { recursive: true })));
 
   try {
-    assert.equal(await applyPromotion(plan), 185);
+    await assert.rejects(applyPromotion(plan), /caller-supplied plan/);
+    await prepareAuthoritativePromotion(root);
+    assert.equal(await applyPromotion({ root }), 185);
     assert.deepEqual(
       await readFile(join(root, "pack", "common", "common_001.png")),
-      pngs.get("common_001"),
+      pngs.get("common_001").bytes,
     );
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("promotion dry-run decodes every accepted source and rejects corrupt or invalid geometry", async () => {
+  const root = await mkdtemp(join(tmpdir(), "costume-promotion-validate-"));
+  const blueprint = await prepareAuthoritativePromotion(root, {
+    override: new Map([
+      ["common_001", Buffer.from("not a PNG")],
+      ["common_002", encodePngRgba(sprite({ left: 0 }))],
+      ["common_003", encodePngRgba(sprite({ dust: true }))],
+    ]),
+  });
+  try {
+    const plan = await planPromotion(blueprint, await loadAcceptedCandidates(root), { root });
+    assert.ok(plan.errors.some((error) => error.startsWith("common_001: invalid accepted candidate PNG:")));
+    assert.ok(plan.errors.includes("common_002: visible pixels touch a canvas edge"));
+    assert.ok(plan.errors.includes("common_003: alpha-dust warning"));
+    assert.equal(plan.copies.length, 0);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("apply promotion rejects an arbitrary caller plan with zero writes", async () => {
+  const root = await mkdtemp(join(tmpdir(), "costume-promotion-untrusted-"));
+  await mkdir(join(root, "outside"), { recursive: true });
+  try {
+    await assert.rejects(applyPromotion({
+      root,
+      errors: [],
+      copies: [{ id: "common_001", rarity: "../../outside", targetPath: join(root, "outside", "owned.png") }],
+    }), /caller-supplied plan/);
+    await assert.rejects(access(join(root, "outside", "owned.png")));
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("promotion rolls back every original when staging or commit fails", async () => {
+  for (const phase of ["stage", "commit"]) {
+    const root = await mkdtemp(join(tmpdir(), `costume-promotion-${phase}-`));
+    await prepareAuthoritativePromotion(root);
+    try {
+      await assert.rejects(
+        applyPromotion({ root, failureHook: ({ currentPhase, index }) => {
+          if (currentPhase === phase && index === 2) throw new Error(`injected ${phase} failure`);
+        } }),
+        new RegExp(`injected ${phase} failure`),
+      );
+      await assertOriginalCatalog(root);
+    } finally {
+      await rm(root, { recursive: true, force: true });
+    }
+  }
+});
+
+test("lexical path containment rejects drive-relative, absolute, and parent escapes", () => {
+  assert.equal(assertPathInside("C:\\catalog\\pack", "C:\\catalog\\pack\\common\\common_001.png"), "C:\\catalog\\pack\\common\\common_001.png");
+  for (const path of ["C:\\catalog\\outside\\item.png", "D:\\catalog\\pack\\item.png", "\\\\server\\share\\item.png", "..\\outside\\item.png"]) {
+    assert.throws(() => assertPathInside("C:\\catalog\\pack", path), /escapes/);
+  }
+});
+
+test("dry-run rejects accepted and destination symlinks when the host permits them", async (t) => {
+  const root = await mkdtemp(join(tmpdir(), "costume-promotion-symlink-"));
+  const blueprint = await prepareAuthoritativePromotion(root);
+  const accepted = acceptedCandidatePath(blueprint[0], root);
+  const destination = join(root, "pack", "common", "common_001.png");
+  const outside = join(root, "outside.png");
+  await writeFile(outside, encodePngRgba(sprite()));
+  try {
+    await rm(accepted);
+    await symlink(outside, accepted, "file");
+  } catch (error) {
+    await rm(root, { recursive: true, force: true });
+    if (["EPERM", "EACCES", "UNKNOWN"].includes(error?.code)) t.skip("host forbids test symlinks");
+    throw error;
+  }
+  try {
+    const plan = await planPromotion(blueprint, await loadAcceptedCandidates(root), { root });
+    assert.ok(plan.errors.some((error) => error.includes("unexpected accepted candidate path")));
+    await rm(accepted);
+    await writeFile(accepted, encodePngRgba(sprite()));
+    await rm(destination);
+    await symlink(outside, destination, "file");
+    const secondPlan = await planPromotion(blueprint, await loadAcceptedCandidates(root), { root });
+    assert.ok(secondPlan.errors.some((error) => error.includes("invalid promotion destination")));
   } finally {
     await rm(root, { recursive: true, force: true });
   }
