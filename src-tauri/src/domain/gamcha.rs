@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-#[derive(Clone, Copy, Debug, Deserialize, Eq, PartialEq, Serialize)]
+#[derive(Clone, Copy, Debug, Deserialize, Eq, Ord, PartialEq, PartialOrd, Serialize)]
 #[serde(rename_all = "lowercase")]
 pub enum GamchaRarity {
     Common,
@@ -8,36 +8,6 @@ pub enum GamchaRarity {
     Epic,
     Legendary,
     Special,
-}
-
-impl GamchaRarity {
-    pub const fn count(self) -> u16 {
-        match self {
-            Self::Common => 72,
-            Self::Rare => 48,
-            Self::Epic => 24,
-            Self::Legendary => 9,
-            Self::Special => 3,
-        }
-    }
-
-    const fn prefix(self) -> &'static str {
-        match self {
-            Self::Common => "common",
-            Self::Rare => "rare",
-            Self::Epic => "epic",
-            Self::Legendary => "legendary",
-            Self::Special => "special",
-        }
-    }
-
-    pub fn costume_id(self, zero_based_index: u16) -> String {
-        format!(
-            "{}_{:03}",
-            self.prefix(),
-            zero_based_index % self.count() + 1
-        )
-    }
 }
 
 pub const fn rarity_for_roll(roll: u16) -> GamchaRarity {
@@ -53,6 +23,7 @@ pub const fn rarity_for_roll(roll: u16) -> GamchaRarity {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use crate::domain::costume_catalog::{costume_ids_for, drawable_manifest_count};
 
     #[test]
     fn rarity_boundaries_match_the_published_rates() {
@@ -66,25 +37,8 @@ mod tests {
     }
 
     #[test]
-    fn costume_ids_use_pack_manifest_names() {
-        assert_eq!(GamchaRarity::Common.costume_id(0), "common_001");
-        assert_eq!(GamchaRarity::Common.costume_id(71), "common_072");
-        assert_eq!(GamchaRarity::Rare.costume_id(48), "rare_001");
-        assert_eq!(GamchaRarity::Special.costume_id(2), "special_003");
-    }
-
-    #[test]
-    fn configured_inventory_matches_every_drawable_manifest_entry() {
-        let manifest: serde_json::Value =
-            serde_json::from_str(include_str!("../../../pack/manifest.json")).unwrap();
-        let manifest_ids = manifest["costumes"]
-            .as_array()
-            .unwrap()
-            .iter()
-            .filter(|costume| costume["rarity"] != "default")
-            .map(|costume| costume["id"].as_str().unwrap())
-            .collect::<std::collections::BTreeSet<_>>();
-        let generated_ids = [
+    fn draw_pools_match_every_manifest_entry_without_fixed_counts() {
+        let total = [
             GamchaRarity::Common,
             GamchaRarity::Rare,
             GamchaRarity::Epic,
@@ -92,13 +46,9 @@ mod tests {
             GamchaRarity::Special,
         ]
         .into_iter()
-        .flat_map(|rarity| (0..rarity.count()).map(move |index| rarity.costume_id(index)))
-        .collect::<std::collections::BTreeSet<_>>();
+        .map(|rarity| costume_ids_for(rarity).len())
+        .sum::<usize>();
 
-        assert_eq!(manifest_ids.len(), 156);
-        assert_eq!(generated_ids.len(), 156);
-        assert!(generated_ids
-            .iter()
-            .all(|id| manifest_ids.contains(id.as_str())));
+        assert_eq!(total, drawable_manifest_count());
     }
 }

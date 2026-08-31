@@ -131,7 +131,7 @@
 - `pet`, `card`, `timer`, `todo`, `settings`, `gamcha` 창과 트레이, 설정 저장·복구, 전역 긴급 중지가 구현되어 있다.
 - 집중 시간이 자연스럽게 끝날 때만 GAMCHA 티켓 1장이 지급된다. Skip과 Stop은 보상하지 않는다.
 - GAMCHA 티켓·누적 추첨·보유 코스튬은 앱 데이터 디렉터리의 `gamcha.json`에 저장되고 손상 파일은 별도로 보존한다.
-- `pack/manifest.json` 159종 중 `default` 3종을 제외한 156종이 실제 추첨 후보이다.
+- `pack/manifest.json`은 총 188종이며 `default` 3종을 제외한 185종이 실제 추첨 후보이다.
 - 확률은 Common 60%, Rare 25%, Epic 10%, Legendary 4%, Special 1%이다.
 - 선택된 등급 안에서는 그 등급의 모든 코스튬을 모을 때까지 중복이 나오지 않는다.
 - 자연 집중 완료 시에는 작은 `gamcha-notice` 보상 말풍선만 펫 위에 나타난다.
@@ -142,7 +142,7 @@
 - GAMCHA 왼쪽 아래 `OUTFIT` 옷장에서 보유 코스튬 또는 `기본 모습`을 선택해 착용·해제할 수 있다.
 - 착용 ID는 `gamcha.json`에 저장되고 `gamcha://equipped` 이벤트로 펫에 즉시 반영되며 재시작 후 복원된다. 보유하지 않은 ID는 Rust에서 거부한다.
 - 256×256 코스튬은 128×128로 표시하고 96×104 펫 셀에 `left -16px`, `top -12px`로 중심 정렬한다. 걷기 중 2px 바운스를 적용하고 Hard Impact에서는 숨긴다.
-- `pack`의 개별 자산별 runtime alignment 메타데이터는 아직 없으므로 모자·안경·몸 장식별 Windows 육안 확인 후 종류별 미세 보정이 다음 단계다.
+- 185개 모든 추첨 코스튬에 아이템별 `defaultAlignment` 메타데이터가 있으며, 사용자 저장 보정값이 있으면 그 값을 우선 적용한다.
 - 보라색 placeholder 대신 `images/characters/gamjabot/final/spritesheet-extended.webp`의 실제 감자봇을 표시한다.
 - 감자봇 atlas는 1536×2288, 192×208 셀, 8열×11행이며 deterministic validation과 chroma despill이 통과했다.
 - 펫 창은 128×128이며, HTML/root/body/app/shell 배경을 모두 투명하게 두어 감자봇 외 픽셀을 그리지 않는다.
@@ -409,4 +409,45 @@
 다음으로 할 일: PR과 main CI 통과 후 v0.1.2 태그에 NSIS를 게시하고 실제 Windows에서 사진 배달 캐릭터를 수동 확인
 알려진 위험: 설치 파일은 코드 서명이 없어 SmartScreen 경고가 나타날 수 있고, WebView 실제 표시 확인은 새 설치판 게시 후 필요
 실행/테스트 방법: 로컬 NSIS 산출물 또는 `. .\scripts\use-project-rust.ps1` 후 README 개발 명령 사용
+```
+
+## 2026-08-30 작업 인수인계
+
+- 최종 작업 브랜치: `feat/costume-catalog-overhaul`
+- 보존 작업 폴더: `C:\Users\hglee\Documents\ChatGPT\개발톤\Desktop-Migam-Window-costume-catalog-overhaul`
+- 사진 배달은 최대 480×390·최소 280×224, 17.5초로 조정했다. 1% 희귀 사진의 자연 발생 확률과 5회 클릭 이스터에그는 그대로다.
+- 개발 모드에서는 기존 사진 배달·저전력 우클릭 테스트와 설정의 희귀 사진 강제 테스트를 사용할 수 있다. 프로덕션 번들에는 이 세 테스트 UI를 넣지 않는다.
+- `창 오르기 사용`은 기본 ON이며 설정에 영구 저장된다. OFF 전환은 진행 중인 등반을 강제 중단하지 않고 다음 등반부터 막는다.
+- `pack/manifest.json`의 코스튬 156종에 명시적 슬롯과 기본 정렬값을 기록했다. 사용자 저장 보정값을 가장 먼저 사용하므로 기존 사용자의 커스텀 배치는 보존된다.
+- 도감 전수 판정은 유지 109종·배치 보정 30종·원본 재제작 17종이다. 재제작 PNG는 기존 ID·이름·등급·파일 경로를 그대로 유지하고 256×256 RGBA 투명 자산으로 교체했다.
+- 재제작 대상: common 017·061·064·065, rare 015·018·019·035·040·046, epic 007·023, legendary 001·002·004·006, special 001.
+- 빠르게 다른 카드를 누를 때 이전 이미지 로드 완료가 현재 상세 미리보기를 덮어쓰지 않도록 최신 요청만 반영한다.
+- 자동 QA는 도감 156종 누락·중복, PNG 규격과 투명 영역, 검토 분류, 배치 보정 반영을 검사한다. 결과 원장은 `pack/qa/catalog-audit.json`, 등급별 접촉 시트는 `pack/qa/generated/*.svg`다.
+- 최종 로컬 검사: 자산 6개, 프런트 65개, Rust 51개 테스트 모두 통과; TypeScript·프로덕션 빌드 통과; 프로덕션 개발용 테스트 UI 문자열 0건.
+- 아직 푸시·PR·main 병합·설치판 배포를 하지 않았다. 원래 작업 폴더의 사용자 미커밋 변경도 건드리지 않았다.
+
+남은 수동 확인: Windows에서 사진 배달 체감 크기·속도, 창 오르기 ON/OFF, 몸체·얼굴 구멍형을 포함한 대표 재제작 코스튬 착용 모습을 확인한다.
+
+## 2026-09-01 신규 185종 도감 최종 인수인계
+
+- `pack/manifest.json`은 뽑기 코스튬 185종과 기존 기본 3종, 총 188종이다.
+- 뽑기 등급 수는 Common 80·Rare 57·Epic 31·Legendary 12·Special 5이고, 배치 슬롯 수는 head 99·face 28·neck 22·body 36이다.
+- 185개 ID·이름·파일 경로가 모두 고유하며 ID는 승인된 정규 범위와 정확히 일치한다. 런타임과 매니페스트에는 `full`, split 파생 ID, `parentSetId`, `source`, derived-component 지원이 없다.
+- 프로덕션 PNG 185개와 `pack/qa/accepted/` 승인본 185개는 항목별 SHA-256이 모두 같고 불일치는 0개다. 모든 blueprint 행은 `accepted`다.
+- `pack/qa/generated/final/`의 5개 시트는 185개 셀을 매니페스트 순서로 포함하고 warning 요소가 없다.
+- Special 매핑은 `special_001` 사진 배달/body, `special_002` 집중 타이머/head, `special_003` 창 오르기/neck, `special_004` GAMCHA/face, `special_005` 미감이 정체성/head다.
+- 구 semantic repair 스크립트·원장·raw/worn 시트와 package 명령은 제거되어 있으며 새 blueprint·candidate·final QA 흐름만 사용한다.
+- 새로 실행한 검증은 에셋 56/56, 프런트 20파일·67테스트, Rust 52테스트, blueprint 185, candidate 185, production 185, final sheets 5/185, TypeScript·Vite production build·rustfmt·Clippy 모두 통과했다.
+- 후보 프로모션 파이프라인 전체 테스트는 36개 통과·실패 0개이며, Windows가 symlink 생성을 거부한 안전성 테스트 1개만 명시적으로 skip했다.
+- `npm run tauri -- dev`는 Vite 준비, Rust dev build, `migam-desktop.exe` 실행까지 성공했다. 연결 worktree의 deny-read ACL로 UI 자동화 도구가 종료되어 실제 추첨·착용 및 기존 기능 회귀의 Windows 수동 확인은 남아 있다.
+- `src-tauri/Cargo.toml`은 working tree와 index blob hash가 모두 `ec0a238b0252a93116d8a3c29ec5db1fbdf74503`으로 같으며 staging·커밋에서 제외한다.
+- 이번 단계에서는 배포·푸시·PR·병합을 수행하지 않았다.
+
+```text
+현재 상태: 신규 185종 게임 아이템 도감 자동 검증 완료, Windows 수동 인수 검사 대기
+마지막 성공 검사: 2026-09-01 에셋 56·프런트 67·Rust 52, blueprint/candidate/production 185, TypeScript·production build·fmt·Clippy 통과
+완료한 기능: 기존 ID·희귀도·소유 호환을 유지한 185종 신규 카탈로그, 개별 배치, 최종 이미지·시트·해시·레거시 검증
+다음으로 할 일: 일반 Windows 사용자 세션에서 등급별 대표 추첨·이름·아트·소유 복원·단일 장착·클리핑과 사진 배달·뽀모도로·창 오르기·설정을 확인
+알려진 위험: 자동 검증은 모두 통과했지만 위 실제 Windows 상호작용·시각 확인은 ACL 제한 때문에 아직 완료하지 못함
+실행/테스트 방법: README의 개발 실행과 카탈로그 QA 명령 사용
 ```

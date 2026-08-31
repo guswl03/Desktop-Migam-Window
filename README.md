@@ -9,9 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/guswl03/Desktop-Migam-Window/releases/download/v0.2.0/migam.desktop_0.2.0_x64-setup.exe"><strong>Windows용 설치 파일 다운로드</strong></a>
+  <a href="https://github.com/guswl03/Desktop-Migam-Window/releases/download/v0.2.2/migam.desktop_0.2.2_x64-setup.exe"><strong>Windows용 설치 파일 다운로드</strong></a>
   ·
-  <a href="https://github.com/guswl03/Desktop-Migam-Window/releases/tag/v0.2.0">v0.2.0 릴리즈 보기</a>
+  <a href="https://github.com/guswl03/Desktop-Migam-Window/releases/tag/v0.2.2">v0.2.2 릴리즈 보기</a>
 </p>
 
 > [!NOTE]
@@ -19,12 +19,12 @@
 
 ## 바로 설치하기
 
-1. [migam desktop 설치 파일 다운로드](https://github.com/guswl03/Desktop-Migam-Window/releases/download/v0.2.0/migam.desktop_0.2.0_x64-setup.exe)를 누릅니다.
-2. 다운로드한 `migam.desktop_0.2.0_x64-setup.exe`를 실행합니다.
+1. [migam desktop 설치 파일 다운로드](https://github.com/guswl03/Desktop-Migam-Window/releases/download/v0.2.2/migam.desktop_0.2.2_x64-setup.exe)를 누릅니다.
+2. 다운로드한 `migam.desktop_0.2.2_x64-setup.exe`를 실행합니다.
 3. SmartScreen이 나타나면 **추가 정보**를 누른 뒤 게시자가 `알 수 없는 게시자`인지와 파일 이름을 확인하고 **실행**을 누릅니다.
 4. 설치 안내에 따라 완료하면 migam desktop이 실행됩니다.
 
-설치가 시작되지 않으면 [v0.2.0 릴리즈 페이지](https://github.com/guswl03/Desktop-Migam-Window/releases/tag/v0.2.0)의 **Assets**에서 `migam.desktop_0.2.0_x64-setup.exe`를 직접 내려받으세요.
+설치가 시작되지 않으면 [v0.2.2 릴리즈 페이지](https://github.com/guswl03/Desktop-Migam-Window/releases/tag/v0.2.2)의 **Assets**에서 `migam.desktop_0.2.2_x64-setup.exe`를 직접 내려받으세요.
 
 ### 처음 실행했다면
 
@@ -43,7 +43,7 @@ Windows **설정 → 앱 → 설치된 앱**에서 `migam desktop`을 찾아 제
 - 클릭, 드래그, 던지기, 착지·충돌과 사용자가 끌 수 있는 창 등반 애니메이션
 - CPU·메모리 사용량에 반응하는 이동과 트레이 표시
 - 뽀모도로 타이머와 할 일 집중 연결
-- 집중 완료 보상 티켓, GAMCHA와 156종 코스튬 인벤토리
+- 집중 완료 보상 티켓, GAMCHA와 뽑기 코스튬 314종 인벤토리(기본 3종을 포함한 매니페스트 총 317종)
 - 사진 배달, 희귀 이벤트와 저배터리 배터리 배달
 - 사용자 규칙과 대상 재검증을 거치는 안전한 방해 창 최소화
 - 설정·할 일·GAMCHA 로컬 저장 및 손상 JSON 보존·복구
@@ -87,6 +87,10 @@ npm run tauri -- dev
 ### 검증
 
 ```powershell
+npm run test:assets
+npm run costumes:blueprint
+npm run costumes:validate
+npm run costumes:validate-candidates
 npm run typecheck
 npm test
 npm run build
@@ -100,9 +104,11 @@ cargo clippy --all-targets -- -D warnings
 
 ## 현재 검증 상태
 
-- 프런트엔드 테스트 66개 통과
-- Rust 테스트 51개 통과
+- 에셋 테스트 57개와 프런트엔드 테스트 76개 통과
+- Rust 테스트 52개 통과
+- 뽑기 코스튬 314종(Common 149, Rare 92, Epic 52, Legendary 13, Special 8)과 기본 3종 검증 통과
+- 배치 슬롯 합계 head 181, face 38, neck 31, body 64 및 승인 후보 314개 검증 통과
 - TypeScript 검사, Vite production build, rustfmt, Clippy 통과
-- Windows x64 NSIS release 빌드 성공
+- 개발 앱 실행은 확인했으며 실제 Windows 추첨·착용·기존 기능 회귀는 수동 확인이 남아 있음
 
 상세한 구현 및 검증 기준은 [개발 문서 색인](docs/README.md)을 참고하세요.

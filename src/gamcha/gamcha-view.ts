@@ -68,7 +68,7 @@ export async function mountGamcha(container: HTMLElement): Promise<() => void> {
           <button id="gamcha-draw" class="gamcha-draw" type="button">GAMCHA 돌리기!</button>
         </div>
         <section class="gamcha-inventory" aria-labelledby="gamcha-inventory-heading" hidden>
-          <header><div><p>COSTUME COLLECTION</p><h2 id="gamcha-inventory-heading">코스튬 도감</h2></div><span id="gamcha-inventory-summary">획득 0 / 156</span></header>
+          <header><div><p>COSTUME COLLECTION</p><h2 id="gamcha-inventory-heading">코스튬 도감</h2></div><span id="gamcha-inventory-summary">획득 0 / ${costumes.length}</span></header>
           <div id="gamcha-inventory-grid" class="gamcha-inventory-grid" role="listbox" aria-label="전체 코스튬 도감"></div>
           <aside class="gamcha-inventory-detail">
             <div id="gamcha-inventory-preview" class="gamcha-inventory-preview" aria-label="선택 코스튬 착용 미리보기"></div>
@@ -144,7 +144,11 @@ export async function mountGamcha(container: HTMLElement): Promise<() => void> {
   const selectedAlignment = (): CostumeAlignment | null => {
     const costume = costumeById.get(selectedCostumeId ?? "");
     if (!costume) return null;
-    return resolveCostumeAlignment(costume.slot, currentSnapshot.costumeAlignments[costume.id]);
+    return resolveCostumeAlignment(
+      costume.slot,
+      costume.defaultAlignment,
+      currentSnapshot.costumeAlignments[costume.id],
+    );
   };
 
   const renderAlignment = (): void => {
@@ -229,6 +233,7 @@ export async function mountGamcha(container: HTMLElement): Promise<() => void> {
         slot: selected.slot,
         alignment: resolveCostumeAlignment(
           selected.slot,
+          selected.defaultAlignment,
           currentSnapshot.costumeAlignments[selected.id],
         ),
       });

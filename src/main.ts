@@ -55,7 +55,11 @@ function renderPet(): void {
       sprite.setCostume(costume ? {
         url: costume.url,
         slot: costume.slot,
-        alignment: resolveCostumeAlignment(costume.slot, snapshot.costumeAlignments[costume.id]),
+        alignment: resolveCostumeAlignment(
+          costume.slot,
+          costume.defaultAlignment,
+          snapshot.costumeAlignments[costume.id],
+        ),
       } : null);
     };
     void invokeWhenReady<CostumeSnapshot>("get_gamcha_state")
@@ -218,6 +222,24 @@ function renderSettings(
   const status = document.querySelector<HTMLSpanElement>("#save-status");
   const ruleList = document.querySelector<HTMLDivElement>("#rule-list");
   const intervention = form?.elements.namedItem("interventionEnabled") as HTMLInputElement | null;
+  if (import.meta.env.DEV) {
+    document.querySelector<HTMLButtonElement>('[data-development-test="rare-photo"]')
+      ?.addEventListener("click", async () => {
+        if (status) status.textContent = "희귀 사진 테스트를 시작하는 중입니다.";
+        try {
+          const started = await invoke<boolean>("start_photo_delivery", {
+            forceSpecialPhoto: true,
+          });
+          if (status) {
+            status.textContent = started
+              ? "희귀 사진 이스터에그 테스트를 시작했습니다."
+              : "사진 배달이 이미 진행 중입니다.";
+          }
+        } catch {
+          if (status) status.textContent = "희귀 사진 테스트를 시작하지 못했습니다.";
+        }
+      });
+  }
   const redrawRules = (): void => {
     if (ruleList) ruleList.innerHTML = ruleRows(rules);
     if (intervention) {

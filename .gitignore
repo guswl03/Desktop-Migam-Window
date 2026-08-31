@@ -6,6 +6,7 @@ src-tauri/gen/
 .vite/
 .npm-cache/
 .tools/
+pack/qa/candidates/
 
 # Copied build outputs and duplicate source-layout folders are not part of the new repository.
 /images/app/assets/
@@ -15,3 +16,4 @@ src-tauri/gen/
 /src-tauri/src/domain/behavior.rs
 /미친감자 펫 개발계획.md
 /.patch-probe
+/.superpowers/

@@ -10,9 +10,23 @@
 - `more-30/`: 일반 12, 희귀 10, 영웅 5, 전설 2, 비밀 스페셜 1
 - `singles/`: 최초 무료 지급 기본 코스튬 3종
 
-총 159종의 등급별 코스튬 아이디어와 초기 컨셉 시트를 포함한다. 각 하위 폴더의 `catalog.md`에서 이름과 시트 배치를 확인할 수 있다.
+위 폴더는 총 159종의 초기 코스튬 아이디어와 컨셉 시트를 보존한 작업 이력이다. 각 하위 폴더의 `catalog.md`에서 당시 이름과 시트 배치를 확인할 수 있다.
 
-현재 PNG는 코스튬 단독 모습과 감자봇 착용 미리보기를 함께 보여주는 디자인 시트다. 런타임에서 직접 사용하는 개별 투명 오버레이 자산으로 분리한 파일은 아니다.
+이 `costumes/` 폴더의 PNG는 코스튬 단독 모습과 감자봇 착용 미리보기를 함께 보여주는 과거 디자인 시트이며, 현재 런타임 자산은 아니다.
+
+## 현재 런타임 카탈로그
+
+- `pack/manifest.json`에는 뽑기 코스튬 185종과 기본 지급 3종, 총 188종이 있다.
+- 등급별 뽑기 수는 Common 80, Rare 57, Epic 31, Legendary 12, Special 5다.
+- 배치 분류별 수는 head 99, face 28, neck 22, body 36이며, 한 번에 하나만 장착한다.
+- 프로덕션 PNG는 `pack/<rarity>/`, 승인본은 `pack/qa/accepted/<rarity>/`, 최종 검수 시트는 `pack/qa/generated/final/`에 있다.
+
+```powershell
+npm run test:assets
+npm run costumes:blueprint
+npm run costumes:validate
+npm run costumes:validate-candidates
+```
 
 
 

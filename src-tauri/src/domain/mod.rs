@@ -1,3 +1,4 @@
+pub mod costume_catalog;
 pub mod distraction;
 pub mod foreground;
 pub mod gamcha;

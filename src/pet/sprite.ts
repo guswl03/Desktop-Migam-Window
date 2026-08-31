@@ -39,6 +39,7 @@ import ropeThrowStrip from "../../images/characters/gamjabot/extra/climbing/rope
 import ropeClimbStrip from "../../images/characters/gamjabot/extra/climbing/rope-climb-strip-v2.png";
 import type { CostumeSlot } from "../costumes/catalog";
 import type { CostumeAlignment } from "../costumes/alignment";
+import { createLatestAssetLoader } from "../costumes/latest-asset-loader";
 
 export type PetAnimation =
   | "idle"
@@ -266,6 +267,36 @@ export function createPetSprite(): PetSprite {
 
   let animation: PetAnimation = "idle";
   let frame = 0;
+  let appliedCostumeUrl: string | null = null;
+  const costumeLoader = createLatestAssetLoader<{
+    url: string;
+    slot: CostumeSlot;
+    alignment: CostumeAlignment;
+  }>();
+
+  const clearCostume = (): void => {
+    appliedCostumeUrl = null;
+    costume.hidden = true;
+    costume.removeAttribute("src");
+    delete costume.dataset.slot;
+    costume.style.removeProperty("--costume-x");
+    costume.style.removeProperty("--costume-y");
+    costume.style.removeProperty("--costume-size");
+  };
+
+  const applyCostume = (nextCostume: {
+    url: string;
+    slot: CostumeSlot;
+    alignment: CostumeAlignment;
+  }): void => {
+    appliedCostumeUrl = nextCostume.url;
+    costume.src = nextCostume.url;
+    costume.dataset.slot = nextCostume.slot;
+    costume.style.setProperty("--costume-x", `${nextCostume.alignment.x}px`);
+    costume.style.setProperty("--costume-y", `${nextCostume.alignment.y}px`);
+    costume.style.setProperty("--costume-size", `${nextCostume.alignment.size}px`);
+    costume.hidden = false;
+  };
 
   const render = (): void => {
     const definition = animations[animation];
@@ -313,20 +344,22 @@ export function createPetSprite(): PetSprite {
       }
     },
     setCostume(nextCostume) {
-      costume.hidden = !nextCostume;
-      if (nextCostume) {
-        costume.src = nextCostume.url;
-        costume.dataset.slot = nextCostume.slot;
-        costume.style.setProperty("--costume-x", `${nextCostume.alignment.x}px`);
-        costume.style.setProperty("--costume-y", `${nextCostume.alignment.y}px`);
-        costume.style.setProperty("--costume-size", `${nextCostume.alignment.size}px`);
-      } else {
-        costume.removeAttribute("src");
-        delete costume.dataset.slot;
-        costume.style.removeProperty("--costume-x");
-        costume.style.removeProperty("--costume-y");
-        costume.style.removeProperty("--costume-size");
+      if (!nextCostume) {
+        costumeLoader.invalidate();
+        clearCostume();
+        return;
       }
+      if (appliedCostumeUrl === nextCostume.url && !costume.hidden) {
+        applyCostume(nextCostume);
+        return;
+      }
+
+      clearCostume();
+      const preloaded = new Image();
+      preloaded.src = nextCostume.url;
+      void costumeLoader
+        .load(nextCostume, () => preloaded.decode(), applyCostume)
+        .catch(() => undefined);
     },
     advanceFrame() {
       frame = (frame + 1) % animations[animation].frames;

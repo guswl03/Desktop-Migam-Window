@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1696" height="896" viewBox="0 0 1696 896">
+  <title>Gamjabot special costume QA</title>
+  <defs>
+    <pattern id="checker" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#f1f1f1" />
+      <rect width="8" height="8" fill="#d8d8d8" />
+      <rect x="8" y="8" width="8" height="8" fill="#d8d8d8" />
+    </pattern>
+    <style>
+      text { font-family: "Segoe UI", sans-serif; fill: #f4f4f5; }
+      .section-label { font-size: 10px; fill: #aeb2c0; letter-spacing: 1px; }
+      .id { font: 700 15px Consolas, monospace; fill: #7fd7ff; }
+      .name { font-size: 17px; font-weight: 700; }
+      .meta { font: 12px Consolas, monospace; fill: #ffcf53; }
+      .bounds { font: 11px Consolas, monospace; fill: #aeb2c0; }
+      .clear { font: 11px Consolas, monospace; fill: #7ee2a8; }
+      .warning { font: 11px Consolas, monospace; fill: #ff7f8c; }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#17181c" />
+
+    <g class="costume-cell" data-id="special_001" data-qa-state="accepted">
+      <rect x="4" y="4" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="25" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="34" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../special/special_001.png" x="12" y="34" width="256" height="256" />
+      <text x="300" y="25" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="48" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="48" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../special/special_001.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="16" y="316" class="id">special_001</text>
+      <text x="16" y="340" class="name"><title>빛그림배달 감광가방</title>빛그림배달 감광가방</text>
+      <text x="16" y="362" class="meta">SPECIAL · body · accepted</text>
+      <text x="16" y="380" class="meta">x 19 · y 48 · size 59</text>
+      <text x="16" y="398" class="bounds">source L30 T16 R225 B239</text>
+      <text x="16" y="416" class="bounds">worn L25.91 T51.69 R71.09 B103.31</text>
+      <text x="16" y="434" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="special_002" data-qa-state="accepted">
+      <rect x="428" y="4" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="25" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="34" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../special/special_002.png" x="436" y="34" width="256" height="256" />
+      <text x="724" y="25" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="48" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="48" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../special/special_002.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="440" y="316" class="id">special_002</text>
+      <text x="440" y="340" class="name"><title>몰입불씨 초읽기모</title>몰입불씨 초읽기모</text>
+      <text x="440" y="362" class="meta">SPECIAL · head · accepted</text>
+      <text x="440" y="380" class="meta">x 21 · y -27 · size 54</text>
+      <text x="440" y="398" class="bounds">source L48 T16 R206 B239</text>
+      <text x="440" y="416" class="bounds">worn L31.13 T-23.63 R64.66 B23.63</text>
+      <text x="440" y="434" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="special_003" data-qa-state="accepted">
+      <rect x="852" y="4" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="25" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="34" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../special/special_003.png" x="860" y="34" width="256" height="256" />
+      <text x="1148" y="25" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="48" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="48" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../special/special_003.png" x="39" y="81" width="50" height="50" />
+      </svg>
+      <text x="864" y="316" class="id">special_003</text>
+      <text x="864" y="340" class="name"><title>창턱오름 갈고리칼라</title>창턱오름 갈고리칼라</text>
+      <text x="864" y="362" class="meta">SPECIAL · neck · accepted</text>
+      <text x="864" y="380" class="meta">x 23 · y 57 · size 50</text>
+      <text x="864" y="398" class="bounds">source L51 T16 R203 B239</text>
+      <text x="864" y="416" class="bounds">worn L32.96 T60.13 R62.84 B103.88</text>
+      <text x="864" y="434" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="special_004" data-qa-state="accepted">
+      <rect x="1276" y="4" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="25" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="34" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../special/special_004.png" x="1284" y="34" width="256" height="256" />
+      <text x="1572" y="25" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="48" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="48" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../special/special_004.png" x="28" y="25" width="73" height="73" />
+      </svg>
+      <text x="1288" y="316" class="id">special_004</text>
+      <text x="1288" y="340" class="name"><title>감차 행운캡슐단안경</title>감차 행운캡슐단안경</text>
+      <text x="1288" y="362" class="meta">SPECIAL · face · accepted</text>
+      <text x="1288" y="380" class="meta">x 12 · y 1 · size 73</text>
+      <text x="1288" y="398" class="bounds">source L16 T58 R239 B196</text>
+      <text x="1288" y="416" class="bounds">worn L16.56 T17.54 R80.44 B57.18</text>
+      <text x="1288" y="434" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="special_005" data-qa-state="accepted">
+      <rect x="4" y="452" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="473" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="482" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../special/special_005.png" x="12" y="482" width="256" height="256" />
+      <text x="300" y="473" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="496" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="496" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../special/special_005.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="16" y="764" class="id">special_005</text>
+      <text x="16" y="788" class="name"><title>미감이 청록감자모</title>미감이 청록감자모</text>
+      <text x="16" y="810" class="meta">SPECIAL · head · accepted</text>
+      <text x="16" y="828" class="meta">x 21 · y -27 · size 54</text>
+      <text x="16" y="846" class="bounds">source L33 T16 R222 B239</text>
+      <text x="16" y="864" class="bounds">worn L27.96 T-23.63 R68.04 B23.63</text>
+      <text x="16" y="882" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="special_006" data-qa-state="accepted">
+      <rect x="428" y="452" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="473" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="482" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../special/special_006.png" x="436" y="482" width="256" height="256" />
+      <text x="724" y="473" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="496" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="496" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../special/special_006.png" x="41" y="1" width="46" height="46" />
+      </svg>
+      <text x="440" y="764" class="id">special_006</text>
+      <text x="440" y="788" class="name"><title>원조 감자 개발자 — 감자 새싹 왕관, 개발자 후드, 감자봇의 원형 입 문양을 활용한 황금 배지</title>원조 감자 개발자 — 감자 새싹 왕관, 개발</text>
+      <text x="440" y="810" class="meta">SPECIAL · head · accepted</text>
+      <text x="440" y="828" class="meta">x 25 · y -23 · size 46</text>
+      <text x="440" y="846" class="bounds">source L88 T16 R166 B239</text>
+      <text x="440" y="864" class="bounds">worn L40.81 T-20.13 R55.01 B20.13</text>
+      <text x="440" y="882" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="special_007" data-qa-state="accepted">
+      <rect x="852" y="452" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="473" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="482" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../special/special_007.png" x="860" y="482" width="256" height="256" />
+      <text x="1148" y="473" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="496" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="496" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../special/special_007.png" x="22" y="-18" width="85" height="85" />
+      </svg>
+      <text x="864" y="764" class="id">special_007</text>
+      <text x="864" y="788" class="name"><title>숨겨진 Stitch 기록관 — 다섯 색상 조각을 이어 만든 패치워크 후드와 감자봇 원형 입 문양 잠금장식</title>숨겨진 Stitch 기록관 — 다섯 색상 조</text>
+      <text x="864" y="810" class="meta">SPECIAL · head · accepted</text>
+      <text x="864" y="828" class="meta">x 6 · y -42 · size 85</text>
+      <text x="864" y="846" class="bounds">source L40 T68 R215 B187</text>
+      <text x="864" y="864" class="bounds">worn L19.28 T-19.42 R77.72 B20.42</text>
+      <text x="864" y="882" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="special_008" data-qa-state="accepted">
+      <rect x="1276" y="452" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="473" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="482" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../special/special_008.png" x="1284" y="482" width="256" height="256" />
+      <text x="1572" y="473" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="496" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="496" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../special/special_008.png" x="7" y="21" width="114" height="114" />
+      </svg>
+      <text x="1288" y="764" class="id">special_008</text>
+      <text x="1288" y="788" class="name"><title>다섯 시트의 큐레이터 — 다섯 색상 탭과 감자봇 나선 문양 잠금장식을 단 박물관 큐레이터 세트</title>다섯 시트의 큐레이터 — 다섯 색상 탭과 감</text>
+      <text x="1288" y="810" class="meta">SPECIAL · body · accepted</text>
+      <text x="1288" y="828" class="meta">x -9 · y -3 · size 114</text>
+      <text x="1288" y="846" class="bounds">source L29 T70 R225 B184</text>
+      <text x="1288" y="864" class="bounds">worn L3.91 T28.17 R91.64 B79.38</text>
+      <text x="1288" y="882" class="clear">warnings none</text>
+    </g>
+</svg>

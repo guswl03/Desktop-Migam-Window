@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="340" viewBox="0 0 1440 340">
+  <title>Gamjabot special costume QA</title>
+  <defs>
+    <pattern id="checker" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#f1f1f1" />
+      <rect width="8" height="8" fill="#d8d8d8" />
+      <rect x="8" y="8" width="8" height="8" fill="#d8d8d8" />
+    </pattern>
+    <style>
+      text { font-family: "Segoe UI", sans-serif; fill: #f4f4f5; }
+      .section-label { font-size: 10px; fill: #aeb2c0; letter-spacing: 1px; }
+      .id { font: 700 15px Consolas, monospace; fill: #7fd7ff; }
+      .name { font-size: 17px; font-weight: 700; }
+      .meta { font: 12px Consolas, monospace; fill: #ffcf53; }
+      .file { font: 10px Consolas, monospace; fill: #aeb2c0; }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#17181c" />
+
+    <g class="costume-cell" data-id="special_001">
+      <rect x="4" y="4" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="25" class="section-label">ISOLATED</text>
+      <rect x="12" y="34" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../special/special_001.png" x="4" y="26" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="140" y="25" class="section-label">WORN</text>
+      <rect x="132" y="34" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="128" y="48" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../special/special_001.png" x="120" y="40" width="112" height="112" preserveAspectRatio="xMidYMid meet" />
+      <text x="16" y="208" class="id">special_001</text>
+      <text x="16" y="235" class="name"><title>원조 감자 개발자 — 감자 새싹 왕관, 개발자 후드, 감자봇의 원형 입 문양을 활용한 황금 배지</title>원조 감자 개발자 — 감자 새싹 왕관</text>
+      <text x="16" y="260" class="meta">SPECIAL · full</text>
+      <text x="16" y="284" class="meta">x -8 · y -8 · size 112</text>
+      <text x="16" y="311" class="file">special/special_001.png</text>
+    </g>
+    <g class="costume-cell" data-id="special_002">
+      <rect x="244" y="4" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="256" y="25" class="section-label">ISOLATED</text>
+      <rect x="252" y="34" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../special/special_002.png" x="244" y="26" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="380" y="25" class="section-label">WORN</text>
+      <rect x="372" y="34" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="368" y="48" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../special/special_002.png" x="364" y="18" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <text x="256" y="208" class="id">special_002</text>
+      <text x="256" y="235" class="name"><title>숨겨진 Stitch 기록관 — 다섯 색상 조각을 이어 만든 패치워크 후드와 감자봇 원형 입 문양 잠금장식</title>숨겨진 Stitch 기록관 — 다섯 </text>
+      <text x="256" y="260" class="meta">SPECIAL · head</text>
+      <text x="256" y="284" class="meta">x -4 · y -30 · size 104</text>
+      <text x="256" y="311" class="file">special/special_002.png</text>
+    </g>
+    <g class="costume-cell" data-id="special_003">
+      <rect x="484" y="4" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="496" y="25" class="section-label">ISOLATED</text>
+      <rect x="492" y="34" width="112" height="144" fill="url(#checker)" stroke="#777" />
+      <image href="../../special/special_003.png" x="484" y="26" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
+      <text x="620" y="25" class="section-label">WORN</text>
+      <rect x="612" y="34" width="96" height="144" fill="url(#checker)" stroke="#777" />
+      <svg x="608" y="48" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+        <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      </svg>
+      <image href="../../special/special_003.png" x="600" y="40" width="112" height="112" preserveAspectRatio="xMidYMid meet" />
+      <text x="496" y="208" class="id">special_003</text>
+      <text x="496" y="235" class="name"><title>다섯 시트의 큐레이터 — 다섯 색상 탭과 감자봇 나선 문양 잠금장식을 단 박물관 큐레이터 세트</title>다섯 시트의 큐레이터 — 다섯 색상 </text>
+      <text x="496" y="260" class="meta">SPECIAL · full</text>
+      <text x="496" y="284" class="meta">x -8 · y -8 · size 112</text>
+      <text x="496" y="311" class="file">special/special_003.png</text>
+    </g>
+</svg>

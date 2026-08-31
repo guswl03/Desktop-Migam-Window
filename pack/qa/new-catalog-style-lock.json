@@ -1,0 +1,15 @@
+{
+  "name": "cozy-indie-pixel-rpg",
+  "required": [
+    "crisp pixel-like dark outline",
+    "large readable silhouette",
+    "restrained shading",
+    "warm hand-crafted pixel clusters",
+    "readable at 96px",
+    "one centered wearable on true transparency"
+  ],
+  "forbidden": [
+    "character anatomy", "second item", "text", "background", "checkerboard",
+    "shadow plate", "border", "duplicate", "cropped edge", "stray pixels"
+  ]
+}

@@ -1,0 +1,1531 @@
+[
+  {
+    "id": "epic_001",
+    "rarity": "epic",
+    "name": "기억제본학파 반전책등관",
+    "slot": "head",
+    "theme": "마법 학파 장비",
+    "silhouette": "두꺼운 직사각 띠가 위에서 안쪽으로 한 번 뒤집혀 닫힌 책등 모양의 단일 고리를 이루는 윤곽",
+    "palette": {
+      "primary": "기억남청색",
+      "secondary": "양피상아색",
+      "accent": "봉인청백색"
+    },
+    "material": "기억을 머금은 양피막",
+    "signatureDetail": "앞면 중앙의 청백색 닫힌 책 상징 하나",
+    "prompt": "기억제본학파 반전책등관 한 개만, 하나로 이어진 독립 착용 아이템으로, 뒤집힌 책등 고리 외곽선과 닫힌 책 상징 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 11,
+      "y": -37,
+      "size": 74
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "직사각 띠",
+        "닫힌 책등 모양의 단일 고리"
+      ]
+    }
+  },
+  {
+    "id": "epic_002",
+    "rarity": "epic",
+    "name": "유리연성학파 연화쐐기관",
+    "slot": "head",
+    "theme": "마법 학파 장비",
+    "silhouette": "넓은 반달띠의 한쪽은 둥글게 녹아 부풀고 반대쪽은 얇은 두 단 쐐기로 굳은 단일 윤곽",
+    "palette": {
+      "primary": "연성자홍색",
+      "secondary": "거품유리민트색",
+      "accent": "연화귤색"
+    },
+    "material": "스스로 데워지는 거품유리",
+    "signatureDetail": "부푼 쪽 중앙의 귤색 한쪽이 녹아 흐르는 마름모 틀 상징 하나",
+    "prompt": "유리연성학파 연화쐐기관 한 개만, 하나로 이어진 독립 착용 아이템으로, 둥글게 녹은 쪽과 두 단 쐐기로 굳은 쪽이 대비되는 외곽선 및 한쪽이 녹아 흐르는 마름모 틀 상징 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 9,
+      "y": -39,
+      "size": 78
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "넓은 반달띠",
+        "두 단 쐐기"
+      ]
+    }
+  },
+  {
+    "id": "epic_003",
+    "rarity": "epic",
+    "name": "공간기하학파 접면칠각관",
+    "slot": "head",
+    "theme": "마법 학파 장비",
+    "silhouette": "일곱 굵은 면이 높낮이를 달리하며 안쪽으로 접혀 하나의 비틀린 칠각 고리를 이룬 윤곽",
+    "palette": {
+      "primary": "기하보라색",
+      "secondary": "운모회청색",
+      "accent": "접면연두색"
+    },
+    "material": "접히는 칠각운모",
+    "signatureDetail": "가장 넓은 면의 연두색 불가능칠각매듭 하나",
+    "prompt": "공간기하학파 접면칠각관 한 개만, 하나로 이어진 독립 착용 아이템으로, 비틀린 칠각 고리 외곽선과 불가능칠각매듭 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 21,
+      "y": -27,
+      "size": 54
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "안쪽으로 접혀",
+        "비틀린 칠각 고리"
+      ]
+    }
+  },
+  {
+    "id": "epic_004",
+    "rarity": "epic",
+    "name": "무음주문학파 정지파관",
+    "slot": "head",
+    "theme": "마법 학파 장비",
+    "silhouette": "굵은 가로 지그재그 능선이 양끝에서 아래 곡선밑단으로 이어지고 중앙 한 구간만 완전히 평평한 윤곽",
+    "palette": {
+      "primary": "무음흑보라색",
+      "secondary": "정지파회백색",
+      "accent": "주문살구색"
+    },
+    "material": "소리를 삼킨 흑음석",
+    "signatureDetail": "평평한 구간의 살구색 끝막힌파형 상징 하나",
+    "prompt": "무음주문학파 정지파관 한 개만, 하나로 이어진 독립 착용 아이템으로, 지그재그 능선 가운데 한 구간만 평평해진 외곽선과 끝막힌파형 상징 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 6,
+      "y": -42,
+      "size": 84
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "가로 지그재그 능선",
+        "중앙 한 구간만 완전히 평평"
+      ]
+    }
+  },
+  {
+    "id": "epic_005",
+    "rarity": "epic",
+    "name": "변환기호학파 상변가리개",
+    "slot": "face",
+    "theme": "마법 학파 장비",
+    "silhouette": "왼쪽의 둥근 끝이 중앙의 굵은 허리를 지나 오른쪽의 네모난 끝으로 변하는 긴 단일 판 윤곽",
+    "palette": {
+      "primary": "상변청록색",
+      "secondary": "기호먹자주색",
+      "accent": "변환금귤색"
+    },
+    "material": "형상을 기억하는 색유리막",
+    "signatureDetail": "가운데 허리의 금귤색 둥근꼴-네모꼴 소용돌이 하나",
+    "prompt": "변환기호학파 상변가리개 한 개만, 하나로 이어진 독립 착용 아이템으로, 둥근 끝에서 네모난 끝으로 변하는 외곽선과 상변 소용돌이 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": -3,
+      "y": -14,
+      "size": 102
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "왼쪽의 둥근 끝",
+        "오른쪽의 네모난 끝"
+      ]
+    }
+  },
+  {
+    "id": "epic_006",
+    "rarity": "epic",
+    "name": "공명술학파 진동턱칼라",
+    "slot": "neck",
+    "theme": "마법 학파 장비",
+    "silhouette": "낮은 C자 띠 바깥쪽이 한 지점에서만 세 겹의 넓은 사각 진동턱으로 부풀어 오른 단일 윤곽",
+    "palette": {
+      "primary": "공명군청색",
+      "secondary": "청자비취색",
+      "accent": "진동분홍색"
+    },
+    "material": "울림을 품은 청자섬유",
+    "signatureDetail": "가장 큰 사각턱 안의 분홍색 동심울림고리 하나",
+    "prompt": "공명술학파 진동턱칼라 한 개만, 하나로 이어진 독립 착용 아이템으로, 한 지점에서 사각으로 부푼 진동턱 외곽선과 동심울림고리 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 13,
+      "y": 47,
+      "size": 70
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "C자 띠",
+        "사각 진동턱"
+      ]
+    }
+  },
+  {
+    "id": "epic_007",
+    "rarity": "epic",
+    "name": "보호결계학파 문턱결계갑",
+    "slot": "body",
+    "theme": "마법 학파 장비",
+    "silhouette": "윗변이 좁고 아랫변이 넓은 거꾸로 된 쐐기문판이 양옆 갈고리테와 이어진 단일 갑주 윤곽",
+    "palette": {
+      "primary": "결계심청색",
+      "secondary": "솜유리유백색",
+      "accent": "문턱주홍색"
+    },
+    "material": "충격을 되감는 솜유리",
+    "signatureDetail": "쐐기문판 중앙의 주홍색 네모매듭 하나",
+    "prompt": "보호결계학파 문턱결계갑 한 개만, 하나로 이어진 독립 착용 아이템으로, 거꾸로 된 쐐기문판 외곽선과 네모매듭 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": 48,
+      "size": 59
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "거꾸로 된 쐐기문판",
+        "양옆 갈고리테"
+      ]
+    }
+  },
+  {
+    "id": "epic_008",
+    "rarity": "epic",
+    "name": "확률직조학파 우연갈래외투",
+    "slot": "body",
+    "theme": "마법 학파 장비",
+    "silhouette": "한쪽은 둥글게 부풀고 반대쪽은 세 번 꺾인 계단으로 내려오는 비대칭 사다리꼴 외투 윤곽",
+    "palette": {
+      "primary": "확률포도색",
+      "secondary": "가능성은회색",
+      "accent": "우연라임색"
+    },
+    "material": "가능성실로 짠 직물",
+    "signatureDetail": "둥근 쪽 중앙의 라임색 비대칭 네잎매듭 하나",
+    "prompt": "확률직조학파 우연갈래외투 한 개만, 하나로 이어진 독립 착용 아이템으로, 둥근 면과 계단 면이 다른 외곽선 및 비대칭 네잎매듭 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": 48,
+      "size": 59
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "둥글게 부풀",
+        "세 번 꺾인 계단"
+      ]
+    }
+  },
+  {
+    "id": "epic_009",
+    "rarity": "epic",
+    "name": "수정맥 폐곡관",
+    "slot": "head",
+    "theme": "원소 장비",
+    "silhouette": "굵은 열두 면의 닫힌 고리가 중앙의 깊은 V홈을 사이에 두고 양쪽 봉우리로 솟는 단일 윤곽",
+    "palette": {
+      "primary": "수정심해색",
+      "secondary": "결정유백색",
+      "accent": "균열선홍색"
+    },
+    "material": "압력무지개 결정질",
+    "signatureDetail": "V홈 아래의 선홍색 갈라진 육각결정 상징 하나",
+    "prompt": "수정맥 폐곡관 한 개만, 하나로 이어진 독립 착용 아이템으로, 면이 굵은 폐곡 고리와 깊은 V홈 외곽선 및 갈라진 육각결정 상징 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 9,
+      "y": -39,
+      "size": 78
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "열두 면의 닫힌 고리",
+        "양쪽 봉우리"
+      ]
+    }
+  },
+  {
+    "id": "epic_010",
+    "rarity": "epic",
+    "name": "불꽃심 비틀관",
+    "slot": "head",
+    "theme": "원소 장비",
+    "silhouette": "넓은 물방울형 밑단이 중앙에서 잘록해진 뒤 하나의 굵은 S자 불꽃끝으로 휘어 오르는 윤곽",
+    "palette": {
+      "primary": "불꽃진홍색",
+      "secondary": "심지자주색",
+      "accent": "열빛크림색"
+    },
+    "material": "재가 되지 않는 불실",
+    "signatureDetail": "잘록한 중앙의 크림색 속 빈 S자 불꽃 상징 하나",
+    "prompt": "불꽃심 비틀관 한 개만, 하나로 이어진 독립 착용 아이템으로, 넓은 밑단에서 S자로 휘어 오르는 불꽃 외곽선과 속 빈 불꽃 상징 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 21,
+      "y": -27,
+      "size": 54
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "물방울형 밑단",
+        "S자 불꽃끝"
+      ]
+    }
+  },
+  {
+    "id": "epic_011",
+    "rarity": "epic",
+    "name": "회오리띠 바람관",
+    "slot": "head",
+    "theme": "원소 장비",
+    "silhouette": "낮은 가로띠가 한쪽에서 넓게 감겨 들고 반대쪽의 길고 뾰족한 끝으로 이어지는 한 줄 회오리 윤곽",
+    "palette": {
+      "primary": "바람연청색",
+      "secondary": "구름비단회색",
+      "accent": "회오리연두색"
+    },
+    "material": "무게 없는 구름비단",
+    "signatureDetail": "넓게 감긴 쪽의 연두색 한 줄 회오리 상징 하나",
+    "prompt": "회오리띠 바람관 한 개만, 하나로 이어진 독립 착용 아이템으로, 넓게 감긴 쪽과 길고 뾰족한 끝이 이어진 바람 외곽선 및 한 줄 회오리 상징 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 14,
+      "y": -34,
+      "size": 68
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "낮은 가로띠",
+        "길고 뾰족한 끝"
+      ]
+    }
+  },
+  {
+    "id": "epic_012",
+    "rarity": "epic",
+    "name": "거석문 대지관",
+    "slot": "head",
+    "theme": "원소 장비",
+    "silhouette": "네 번 불규칙하게 꺾인 두꺼운 거석 덩어리 안에 낮은 사각문 공백이 난 하나의 육중한 윤곽",
+    "palette": {
+      "primary": "대지먹갈색",
+      "secondary": "부석청회색",
+      "accent": "지맥황금색"
+    },
+    "material": "숨 쉬는 부석펠트",
+    "signatureDetail": "사각문 공백 위의 황금색 계단꼭대기 거석 상징 하나",
+    "prompt": "거석문 대지관 한 개만, 하나로 이어진 독립 착용 아이템으로, 불규칙한 거석 덩어리와 낮은 사각문 공백 외곽선 및 계단꼭대기 거석 상징 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 16,
+      "y": -32,
+      "size": 64
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "거석 덩어리",
+        "사각문 공백"
+      ]
+    }
+  },
+  {
+    "id": "epic_013",
+    "rarity": "epic",
+    "name": "만조마루 물결가리개",
+    "slot": "face",
+    "theme": "원소 장비",
+    "silhouette": "왼쪽의 낮은 물결턱이 오른쪽의 큰 말림마루까지 한 번에 치솟는 굵은 파도띠 윤곽",
+    "palette": {
+      "primary": "만조남청색",
+      "secondary": "물유리청록색",
+      "accent": "포말백자색"
+    },
+    "material": "흐르며 굳는 물유리",
+    "signatureDetail": "큰 말림마루 안의 백자색 한 갈래 파도 상징 하나",
+    "prompt": "만조마루 물결가리개 한 개만, 하나로 이어진 독립 착용 아이템으로, 낮은 물결턱에서 큰 말림마루로 치솟는 외곽선과 한 갈래 파도 상징 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 16,
+      "y": 5,
+      "size": 64
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "낮은 물결턱",
+        "큰 말림마루"
+      ]
+    }
+  },
+  {
+    "id": "epic_014",
+    "rarity": "epic",
+    "name": "뇌광고리 번개테",
+    "slot": "face",
+    "theme": "원소 장비",
+    "silhouette": "굵은 지그재그 띠가 날카로운 네 굽이를 지나 처음으로 되돌아오는 닫힌 번개고리 윤곽",
+    "palette": {
+      "primary": "뇌광보라색",
+      "secondary": "섬광호박색",
+      "accent": "전류민트색"
+    },
+    "material": "번개가 굳은 섬광호박",
+    "signatureDetail": "가장 높은 굽이의 민트색 닫힌 번개고리 상징 하나",
+    "prompt": "뇌광고리 번개테 한 개만, 하나로 이어진 독립 착용 아이템으로, 네 굽이를 지나 닫히는 번개고리 외곽선과 닫힌 번개 상징 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 24,
+      "y": 13,
+      "size": 49
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "지그재그 띠",
+        "닫힌 번개고리"
+      ]
+    }
+  },
+  {
+    "id": "epic_015",
+    "rarity": "epic",
+    "name": "서리별 결정칼라",
+    "slot": "neck",
+    "theme": "원소 장비",
+    "silhouette": "넓은 육각 고리 바깥으로 여섯 개의 짧고 굵은 서리가지가 같은 간격으로 이어진 단일 윤곽",
+    "palette": {
+      "primary": "서리백청색",
+      "secondary": "설탕세라믹연보라색",
+      "accent": "결정별살구색"
+    },
+    "material": "서리 먹은 설탕세라믹",
+    "signatureDetail": "육각 고리 중앙의 살구색 여섯갈래 서리결정 상징 하나",
+    "prompt": "서리별 결정칼라 한 개만, 하나로 이어진 독립 착용 아이템으로, 육각 고리와 여섯 서리가지가 만든 결정 외곽선 및 여섯갈래 서리결정 상징 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 23,
+      "y": 57,
+      "size": 50
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "넓은 육각 고리",
+        "여섯 개의 짧고 굵은 서리가지"
+      ]
+    }
+  },
+  {
+    "id": "epic_016",
+    "rarity": "epic",
+    "name": "생장나선 덩굴갑",
+    "slot": "body",
+    "theme": "원소 장비",
+    "silhouette": "굵은 줄기형 중앙판이 아래에서 감겨 올라가며 양옆의 큰 잎굴곡과 끊김 없이 이어지는 나선 갑주 윤곽",
+    "palette": {
+      "primary": "생장비취색",
+      "secondary": "엽록유리남색",
+      "accent": "새순금빛색"
+    },
+    "material": "살아 있는 엽록유리",
+    "signatureDetail": "나선 중앙의 금빛 한잎새순 상징 하나",
+    "prompt": "생장나선 덩굴갑 한 개만, 하나로 이어진 독립 착용 아이템으로, 감겨 오르는 줄기와 큰 잎굴곡 외곽선 및 한잎새순 상징 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": 48,
+      "size": 59
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "줄기형 중앙판",
+        "양옆의 큰 잎굴곡"
+      ]
+    }
+  },
+  {
+    "id": "epic_017",
+    "rarity": "epic",
+    "name": "여백수집회 빈모서리관",
+    "slot": "head",
+    "theme": "신비 조직 장비",
+    "silhouette": "낮은 곡선띠 위의 큰 오각판에서 왼쪽 위 모서리 하나만 깊게 안으로 접힌 단일 윤곽",
+    "palette": {
+      "primary": "여백유백색",
+      "secondary": "백묵천회청색",
+      "accent": "수집표청록색"
+    },
+    "material": "공백을 굳힌 백묵천",
+    "signatureDetail": "오각판 중앙의 청록색 안으로 접힌 오각틀 조직 표장 하나",
+    "prompt": "여백수집회 빈모서리관 한 개만, 하나로 이어진 독립 착용 아이템으로, 한 모서리만 깊게 접힌 오각 외곽선과 안으로 접힌 오각틀 표장 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 21,
+      "y": -27,
+      "size": 54
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "큰 오각판",
+        "왼쪽 위 모서리 하나만 깊게 안으로 접힌"
+      ]
+    }
+  },
+  {
+    "id": "epic_018",
+    "rarity": "epic",
+    "name": "반대편창문실 어긋창관",
+    "slot": "head",
+    "theme": "신비 조직 장비",
+    "silhouette": "넓은 직사각 띠의 왼쪽 절반은 위로 오른쪽 절반은 아래로 밀리고 가운데 짧은 다리로 이어진 윤곽",
+    "palette": {
+      "primary": "반대편청회색",
+      "secondary": "거울펠트보라색",
+      "accent": "창격노랑색"
+    },
+    "material": "반대상을 비추는 거울펠트",
+    "signatureDetail": "가운데 다리의 노란색 사선분할사각창 조직 표장 하나",
+    "prompt": "반대편창문실 어긋창관 한 개만, 하나로 이어진 독립 착용 아이템으로, 반대 방향으로 밀린 직사각 띠 외곽선과 사선분할사각창 표장 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 5,
+      "y": -43,
+      "size": 86
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "넓은 직사각 띠",
+        "가운데 짧은 다리"
+      ]
+    }
+  },
+  {
+    "id": "epic_019",
+    "rarity": "epic",
+    "name": "늦은종착기록소 되돌이관",
+    "slot": "head",
+    "theme": "신비 조직 장비",
+    "silhouette": "긴 가로띠가 끝에서 둥글게 되돌아와 아래쪽을 나란히 지나며 굵은 막힘끝에서 멈추는 단일 윤곽",
+    "palette": {
+      "primary": "종착먹청색",
+      "secondary": "안개금속회색",
+      "accent": "기록소산호색"
+    },
+    "material": "도착 전의 안개금속",
+    "signatureDetail": "막힘끝 위의 산호색 막다른되돌이고리 조직 표장 하나",
+    "prompt": "늦은종착기록소 되돌이관 한 개만, 하나로 이어진 독립 착용 아이템으로, 둥글게 되돌아 굵은 끝에서 멈추는 띠 외곽선과 막다른되돌이고리 표장 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 2,
+      "y": -46,
+      "size": 92
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "긴 가로띠",
+        "굵은 막힘끝"
+      ]
+    }
+  },
+  {
+    "id": "epic_020",
+    "rarity": "epic",
+    "name": "푸른침묵연구회 고요홈관",
+    "slot": "head",
+    "theme": "신비 조직 장비",
+    "silhouette": "폭이 넓은 낮은 사다리꼴 덩어리 꼭대기에서 둥근 세로홈 하나가 밑선 가까이 깊게 파인 윤곽",
+    "palette": {
+      "primary": "침묵남청색",
+      "secondary": "응결왁스청색",
+      "accent": "고요분홍색"
+    },
+    "material": "침묵이 응결된 남청왁스",
+    "signatureDetail": "세로홈 아래의 분홍색 가운데홈타원 조직 표장 하나",
+    "prompt": "푸른침묵연구회 고요홈관 한 개만, 하나로 이어진 독립 착용 아이템으로, 둥근 세로홈이 깊게 파인 사다리꼴 외곽선과 가운데홈타원 표장 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 6,
+      "y": -42,
+      "size": 84
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "낮은 사다리꼴 덩어리",
+        "둥근 세로홈 하나"
+      ]
+    }
+  },
+  {
+    "id": "epic_021",
+    "rarity": "epic",
+    "name": "첫그늘측량소 그늘부채테",
+    "slot": "face",
+    "theme": "신비 조직 장비",
+    "silhouette": "긴 오목 아치판의 한쪽 끝은 둥근 세 갈래로 넓어지고 반대쪽은 짧은 둥근 끝으로 모이는 단일 윤곽",
+    "palette": {
+      "primary": "첫그늘먹보라색",
+      "secondary": "편광자개청색",
+      "accent": "측량표귤색"
+    },
+    "material": "첫그늘 편광자개",
+    "signatureDetail": "오목한 중앙의 귤색 세 갈래 부채 조직 표장 하나",
+    "prompt": "첫그늘측량소 그늘부채테 한 개만, 하나로 이어진 독립 착용 아이템으로, 한쪽은 둥근 세 갈래로 넓어지고 반대쪽은 짧게 모이는 오목 아치 외곽선과 세 갈래 부채 표장 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 17,
+      "y": 6,
+      "size": 62
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "긴 오목 아치판",
+        "한쪽 끝은 둥근 세 갈래"
+      ]
+    }
+  },
+  {
+    "id": "epic_022",
+    "rarity": "epic",
+    "name": "잊은계절안내실 계절쐐기칼라",
+    "slot": "neck",
+    "theme": "신비 조직 장비",
+    "silhouette": "넓은 사선 칼라의 아랫변 한곳만 크게 삼각으로 솟고 반대쪽 끝은 둥근 홈으로 파인 단일 윤곽",
+    "palette": {
+      "primary": "잊은계절쑥색",
+      "secondary": "잎비단회금색",
+      "accent": "안내표자주색"
+    },
+    "material": "계절을 잊는 잎비단",
+    "signatureDetail": "삼각 솟음 안쪽의 자주색 끝이 둥근 홑톱니 조직 표장 하나",
+    "prompt": "잊은계절안내실 계절쐐기칼라 한 개만, 하나로 이어진 독립 착용 아이템으로, 아랫변 한곳이 삼각으로 솟고 반대쪽 끝은 둥글게 파인 외곽선과 끝이 둥근 홑톱니 표장 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 17,
+      "y": 51,
+      "size": 62
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "넓은 사선 칼라",
+        "아랫변 한곳만 크게 삼각으로 솟"
+      ]
+    }
+  },
+  {
+    "id": "epic_023",
+    "rarity": "epic",
+    "name": "무명도형보관소 빈지붕갑",
+    "slot": "body",
+    "theme": "신비 조직 장비",
+    "silhouette": "세로로 긴 육각 몸판의 윗변이 안으로 내려앉고 양끝이 좁은 다리로 이어진 지붕 없는 단일 윤곽",
+    "palette": {
+      "primary": "무명먹회색",
+      "secondary": "먹도자청록색",
+      "accent": "보관표살구색"
+    },
+    "material": "이름을 지운 먹도자",
+    "signatureDetail": "내려앉은 윗변 아래의 살구색 지붕없는육각 조직 표장 하나",
+    "prompt": "무명도형보관소 빈지붕갑 한 개만, 하나로 이어진 독립 착용 아이템으로, 윗변이 안으로 내려앉은 육각 외곽선과 지붕없는육각 표장 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": 48,
+      "size": 59
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "세로로 긴 육각 몸판",
+        "윗변이 안으로 내려앉"
+      ]
+    }
+  },
+  {
+    "id": "epic_024",
+    "rarity": "epic",
+    "name": "느린빛편찬회 늦광외투",
+    "slot": "body",
+    "theme": "신비 조직 장비",
+    "silhouette": "기울어진 긴 캡슐형 장막의 한쪽 끝만 사각으로 깊게 파이고 반대쪽은 둥글게 닫힌 윤곽",
+    "palette": {
+      "primary": "느린빛남보라색",
+      "secondary": "저녁비단적청색",
+      "accent": "편찬표연두색"
+    },
+    "material": "빛을 늦게 내는 저녁비단",
+    "signatureDetail": "둥근 쪽의 연두색 한끝패인캡슐 조직 표장 하나",
+    "prompt": "느린빛편찬회 늦광외투 한 개만, 하나로 이어진 독립 착용 아이템으로, 한쪽만 깊게 파인 기울어진 캡슐 외곽선과 한끝패인캡슐 표장 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 16,
+      "y": 45,
+      "size": 65
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "기울어진 긴 캡슐형 장막",
+        "한쪽 끝만 사각으로 깊게 파"
+      ]
+    }
+  },
+  {
+    "id": "epic_025",
+    "rarity": "epic",
+    "name": "거꾸로계단 꿈관",
+    "slot": "head",
+    "theme": "꿈·차원 장비",
+    "silhouette": "네 개의 굵은 계단이 한쪽 아래로 솟아오른 뒤 넓은 곡선 밑단으로 되돌아오는 닫힌 단일 윤곽",
+    "palette": {
+      "primary": "거꾸로꿈보라색",
+      "secondary": "꿈석고유백색",
+      "accent": "계단하늘색"
+    },
+    "material": "아래로 솟는 꿈석고",
+    "signatureDetail": "가장 넓은 단의 하늘색 거꾸로계단 상징 하나",
+    "prompt": "거꾸로계단 꿈관 한 개만, 하나로 이어진 독립 착용 아이템으로, 아래로 솟는 네 계단과 되돌아오는 곡선 밑단 외곽선 및 거꾸로계단 상징 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 21,
+      "y": -27,
+      "size": 54
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "네 개의 굵은 계단",
+        "넓은 곡선 밑단으로 되돌아오는"
+      ]
+    }
+  },
+  {
+    "id": "epic_026",
+    "rarity": "epic",
+    "name": "접힌복도 사잇문관",
+    "slot": "head",
+    "theme": "꿈·차원 장비",
+    "silhouette": "두꺼운 직사각 아치의 윗변이 안으로 꺾여 내려와 한쪽 세로변의 바깥면으로 다시 이어지는 불가능문 단일 윤곽",
+    "palette": {
+      "primary": "복도먹청색",
+      "secondary": "늘어나는종이황갈색",
+      "accent": "사잇문민트색"
+    },
+    "material": "안쪽이 늘어나는 복도종이",
+    "signatureDetail": "꺾인 윗변 중앙의 민트색 안으로 접힌 문틀 상징 하나",
+    "prompt": "접힌복도 사잇문관 한 개만, 하나로 이어진 독립 착용 아이템으로, 윗변이 안으로 꺾여 세로변 바깥으로 이어지는 불가능문 외곽선과 안으로 접힌 문틀 상징 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 16,
+      "y": -32,
+      "size": 64
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "두꺼운 직사각 아치",
+        "윗변이 안으로 꺾여 내려와"
+      ]
+    }
+  },
+  {
+    "id": "epic_027",
+    "rarity": "epic",
+    "name": "한박자늦은 모래관",
+    "slot": "head",
+    "theme": "꿈·차원 장비",
+    "silhouette": "옆으로 누운 모래시계형 덩어리가 가운데에서 위로 굽어 낮은 곡선 받침과 끊김 없이 이어진 단일 윤곽",
+    "palette": {
+      "primary": "늦은시간자주색",
+      "secondary": "모래유리젤금색",
+      "accent": "한박자청록색"
+    },
+    "material": "잠든 모래유리젤",
+    "signatureDetail": "굽은 가운데의 청록색 옆누운모래시계 상징 하나",
+    "prompt": "한박자늦은 모래관 한 개만, 하나로 이어진 독립 착용 아이템으로, 옆으로 누워 가운데가 굽은 모래시계 외곽선과 옆누운모래시계 상징 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 11,
+      "y": -37,
+      "size": 74
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "옆으로 누운 모래시계형 덩어리",
+        "낮은 곡선 받침"
+      ]
+    }
+  },
+  {
+    "id": "epic_028",
+    "rarity": "epic",
+    "name": "되감긴미로 포갬관",
+    "slot": "head",
+    "theme": "꿈·차원 장비",
+    "silhouette": "하나의 넓은 사각띠가 세 번 안으로 꺾여 감긴 뒤 자기 아래를 지나 바깥 밑단으로 이어지는 미로 윤곽",
+    "palette": {
+      "primary": "되감김남보라색",
+      "secondary": "솜도자연회색",
+      "accent": "미로주홍색"
+    },
+    "material": "되감기는 솜도자기",
+    "signatureDetail": "가운데 빈칸의 주홍색 한줄사각미로 상징 하나",
+    "prompt": "되감긴미로 포갬관 한 개만, 하나로 이어진 독립 착용 아이템으로, 세 번 안으로 감겨 자기 아래를 지나는 사각띠 외곽선과 한줄사각미로 상징 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": -29,
+      "size": 58
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "넓은 사각띠",
+        "세 번 안으로 꺾여 감긴"
+      ]
+    }
+  },
+  {
+    "id": "epic_029",
+    "rarity": "epic",
+    "name": "어긋난초점 꿈가리개",
+    "slot": "face",
+    "theme": "꿈·차원 장비",
+    "silhouette": "긴 타원형 판이 중앙에서 자기 안쪽으로 접혀 한쪽은 볼록하고 반대쪽은 오목해진 단일 렌즈 윤곽",
+    "palette": {
+      "primary": "초점꿈청색",
+      "secondary": "몽환수지분홍색",
+      "accent": "어긋남연노랑색"
+    },
+    "material": "초점을 비트는 몽환수지",
+    "signatureDetail": "중앙 안쪽 접힘의 연노랑색 반쯤 접힌 초점 고리 상징 하나",
+    "prompt": "어긋난초점 꿈가리개 한 개만, 하나로 이어진 독립 착용 아이템으로, 중앙이 안으로 접혀 볼록면과 오목면이 된 외곽선 및 반쯤 접힌 초점 고리 상징 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": -3,
+      "y": -14,
+      "size": 102
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "긴 타원형 판",
+        "한쪽은 볼록하고 반대쪽은 오목해진"
+      ]
+    }
+  },
+  {
+    "id": "epic_030",
+    "rarity": "epic",
+    "name": "위로낙하 반전칼라",
+    "slot": "neck",
+    "theme": "꿈·차원 장비",
+    "silhouette": "넓은 V자 띠의 아래 꼭짓점이 중앙 공백을 거슬러 위로 접힌 뒤 윗변에 다시 붙는 단일 윤곽",
+    "palette": {
+      "primary": "낙하밤청색",
+      "secondary": "꿈물결천회보라색",
+      "accent": "반전금귤색"
+    },
+    "material": "위로 흐르는 꿈물결천",
+    "signatureDetail": "위로 접힌 꼭짓점의 금귤색 상승낙하쐐기 상징 하나",
+    "prompt": "위로낙하 반전칼라 한 개만, 하나로 이어진 독립 착용 아이템으로, V자 아래 꼭짓점이 위로 접혀 윗변에 다시 붙는 외곽선과 상승낙하쐐기 상징 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 7,
+      "y": 42,
+      "size": 80
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "넓은 V자 띠",
+        "아래 꼭짓점이 중앙 공백을 거슬러 위로 접힌"
+      ]
+    }
+  },
+  {
+    "id": "epic_031",
+    "rarity": "epic",
+    "name": "안팎반전 복도망토",
+    "slot": "body",
+    "theme": "꿈·차원 장비",
+    "silhouette": "넓은 U자 장막의 아랫변 한쪽이 안으로 돌아 중앙 사각공백을 통과한 듯 윗변에 합쳐지는 연속 윤곽",
+    "palette": {
+      "primary": "안팎밤보라색",
+      "secondary": "반전비단군청색",
+      "accent": "복도끝백금색"
+    },
+    "material": "안팎이 뒤바뀐 밤비단",
+    "signatureDetail": "중앙 사각공백 둘레의 백금색 끝없는복도고리 상징 하나",
+    "prompt": "안팎반전 복도망토 한 개만, 하나로 이어진 독립 착용 아이템으로, 아랫변이 안으로 돌아 중앙 공백을 거쳐 윗변에 합쳐지는 외곽선과 끝없는복도고리 상징 하나를 96픽셀에서 크게 읽히게 하고 인체·신체 부위·캐릭터·배경·글자·다른 물건·분리되거나 떠 있는 구성요소 없이 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": 48,
+      "size": 59
+    },
+    "qaState": "accepted",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "넓은 U자 장막",
+        "중앙 사각공백"
+      ]
+    }
+  },
+  {
+    "id": "epic_032",
+    "rarity": "epic",
+    "name": "달빛 천상 왕관",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "달빛 천상 왕관 원본의 윗윤곽과 epic 001 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "달빛 천상 왕관 원본 주색",
+      "secondary": "달빛 천상 왕관 원본 보조색",
+      "accent": "달빛 천상 왕관 원본 강조색"
+    },
+    "material": "달빛 천상 왕관 원본의 재질 표현",
+    "signatureDetail": "달빛 천상 왕관 원본 고유 장식",
+    "prompt": "달빛 천상 왕관, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 1,
+      "y": -47,
+      "size": 94
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_001",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "달빛 천상 왕관 원본의 윗윤곽",
+        "epic 001 고유 밑단"
+      ]
+    }
+  },
+  {
+    "id": "epic_033",
+    "rarity": "epic",
+    "name": "불사조 망토",
+    "slot": "body",
+    "theme": "기존 도감 복원",
+    "silhouette": "불사조 망토 원본의 윗윤곽과 epic 002 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "불사조 망토 원본 주색",
+      "secondary": "불사조 망토 원본 보조색",
+      "accent": "불사조 망토 원본 강조색"
+    },
+    "material": "불사조 망토 원본의 재질 표현",
+    "signatureDetail": "불사조 망토 원본 고유 장식",
+    "prompt": "불사조 망토, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -4,
+      "y": 2,
+      "size": 105
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_002",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "불사조 망토 원본의 윗윤곽",
+        "epic 002 고유 밑단"
+      ]
+    }
+  },
+  {
+    "id": "epic_034",
+    "rarity": "epic",
+    "name": "수정 얼음 왕관",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "수정 얼음 왕관 원본의 윗윤곽과 epic 003 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "수정 얼음 왕관 원본 주색",
+      "secondary": "수정 얼음 왕관 원본 보조색",
+      "accent": "수정 얼음 왕관 원본 강조색"
+    },
+    "material": "수정 얼음 왕관 원본의 재질 표현",
+    "signatureDetail": "수정 얼음 왕관 원본 고유 장식",
+    "prompt": "수정 얼음 왕관, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 0,
+      "y": -48,
+      "size": 96
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_003",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "수정 얼음 왕관 원본의 윗윤곽",
+        "epic 003 고유 밑단"
+      ]
+    }
+  },
+  {
+    "id": "epic_035",
+    "rarity": "epic",
+    "name": "숲 수호자 뿔관",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "숲 수호자 뿔관 원본의 윗윤곽과 epic 004 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "숲 수호자 뿔관 원본 주색",
+      "secondary": "숲 수호자 뿔관 원본 보조색",
+      "accent": "숲 수호자 뿔관 원본 강조색"
+    },
+    "material": "숲 수호자 뿔관 원본의 재질 표현",
+    "signatureDetail": "숲 수호자 뿔관 원본 고유 장식",
+    "prompt": "숲 수호자 뿔관, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -3,
+      "y": -51,
+      "size": 102
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_004",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "숲 수호자 뿔관 원본의 윗윤곽",
+        "epic 004 고유 밑단"
+      ]
+    }
+  },
+  {
+    "id": "epic_036",
+    "rarity": "epic",
+    "name": "스팀펑크 발명가 헬멧",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "스팀펑크 발명가 헬멧 원본의 윗윤곽과 epic 005 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "스팀펑크 발명가 헬멧 원본 주색",
+      "secondary": "스팀펑크 발명가 헬멧 원본 보조색",
+      "accent": "스팀펑크 발명가 헬멧 원본 강조색"
+    },
+    "material": "스팀펑크 발명가 헬멧 원본의 재질 표현",
+    "signatureDetail": "스팀펑크 발명가 헬멧 원본 고유 장식",
+    "prompt": "스팀펑크 발명가 헬멧, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -2,
+      "y": -50,
+      "size": 101
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_005",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "스팀펑크 발명가 헬멧 원본의 윗윤곽",
+        "epic 005 고유 밑단"
+      ]
+    }
+  },
+  {
+    "id": "epic_037",
+    "rarity": "epic",
+    "name": "네온 사이버 바이저",
+    "slot": "face",
+    "theme": "기존 도감 복원",
+    "silhouette": "네온 사이버 바이저 원본의 윗윤곽과 epic 006 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "네온 사이버 바이저 원본 주색",
+      "secondary": "네온 사이버 바이저 원본 보조색",
+      "accent": "네온 사이버 바이저 원본 강조색"
+    },
+    "material": "네온 사이버 바이저 원본의 재질 표현",
+    "signatureDetail": "네온 사이버 바이저 원본 고유 장식",
+    "prompt": "네온 사이버 바이저, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 11,
+      "y": 0,
+      "size": 74
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_006",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "네온 사이버 바이저 원본의 윗윤곽",
+        "epic 006 고유 밑단"
+      ]
+    }
+  },
+  {
+    "id": "epic_038",
+    "rarity": "epic",
+    "name": "왕실 해군 제독 세트",
+    "slot": "body",
+    "theme": "기존 도감 복원",
+    "silhouette": "왕실 해군 제독 세트 원본의 윗윤곽과 epic 007 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "왕실 해군 제독 세트 원본 주색",
+      "secondary": "왕실 해군 제독 세트 원본 보조색",
+      "accent": "왕실 해군 제독 세트 원본 강조색"
+    },
+    "material": "왕실 해군 제독 세트 원본의 재질 표현",
+    "signatureDetail": "왕실 해군 제독 세트 원본 고유 장식",
+    "prompt": "왕실 해군 제독 세트, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -8,
+      "y": -2,
+      "size": 113
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_007",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "왕실 해군 제독 세트 원본의 윗윤곽",
+        "epic 007 고유 밑단"
+      ]
+    }
+  },
+  {
+    "id": "epic_039",
+    "rarity": "epic",
+    "name": "흑요석 화산 왕관",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "흑요석 화산 왕관 원본의 윗윤곽과 epic 008 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "흑요석 화산 왕관 원본 주색",
+      "secondary": "흑요석 화산 왕관 원본 보조색",
+      "accent": "흑요석 화산 왕관 원본 강조색"
+    },
+    "material": "흑요석 화산 왕관 원본의 재질 표현",
+    "signatureDetail": "흑요석 화산 왕관 원본 고유 장식",
+    "prompt": "흑요석 화산 왕관, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 2,
+      "y": -46,
+      "size": 93
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_008",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "흑요석 화산 왕관 원본의 윗윤곽",
+        "epic 008 고유 밑단"
+      ]
+    }
+  },
+  {
+    "id": "epic_040",
+    "rarity": "epic",
+    "name": "황금 마스터 셰프 모자",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "황금 마스터 셰프 모자 원본의 윗윤곽과 epic 010 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "황금 마스터 셰프 모자 원본 주색",
+      "secondary": "황금 마스터 셰프 모자 원본 보조색",
+      "accent": "황금 마스터 셰프 모자 원본 강조색"
+    },
+    "material": "황금 마스터 셰프 모자 원본의 재질 표현",
+    "signatureDetail": "황금 마스터 셰프 모자 원본 고유 장식",
+    "prompt": "황금 마스터 셰프 모자, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 6,
+      "y": -42,
+      "size": 85
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_010",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "황금 마스터 셰프 모자 원본의 윗윤곽",
+        "epic 010 고유 밑단"
+      ]
+    }
+  },
+  {
+    "id": "epic_041",
+    "rarity": "epic",
+    "name": "아케이드 챔피언 세트",
+    "slot": "body",
+    "theme": "기존 도감 복원",
+    "silhouette": "아케이드 챔피언 세트 원본의 윗윤곽과 epic 012 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "아케이드 챔피언 세트 원본 주색",
+      "secondary": "아케이드 챔피언 세트 원본 보조색",
+      "accent": "아케이드 챔피언 세트 원본 강조색"
+    },
+    "material": "아케이드 챔피언 세트 원본의 재질 표현",
+    "signatureDetail": "아케이드 챔피언 세트 원본 고유 장식",
+    "prompt": "아케이드 챔피언 세트, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -20,
+      "y": -14,
+      "size": 136
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_012",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "아케이드 챔피언 세트 원본의 윗윤곽",
+        "epic 012 고유 밑단"
+      ]
+    }
+  },
+  {
+    "id": "epic_042",
+    "rarity": "epic",
+    "name": "오로라 주술사 뿔후드",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "오로라 주술사 뿔후드 원본의 윗윤곽과 epic 013 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "오로라 주술사 뿔후드 원본 주색",
+      "secondary": "오로라 주술사 뿔후드 원본 보조색",
+      "accent": "오로라 주술사 뿔후드 원본 강조색"
+    },
+    "material": "오로라 주술사 뿔후드 원본의 재질 표현",
+    "signatureDetail": "오로라 주술사 뿔후드 원본 고유 장식",
+    "prompt": "오로라 주술사 뿔후드, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 14,
+      "y": -34,
+      "size": 69
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_013",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "오로라 주술사 뿔후드 원본의 윗윤곽",
+        "epic 013 고유 밑단"
+      ]
+    }
+  },
+  {
+    "id": "epic_043",
+    "rarity": "epic",
+    "name": "기계 부엉이 학자 후드",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "기계 부엉이 학자 후드 원본의 윗윤곽과 epic 014 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "기계 부엉이 학자 후드 원본 주색",
+      "secondary": "기계 부엉이 학자 후드 원본 보조색",
+      "accent": "기계 부엉이 학자 후드 원본 강조색"
+    },
+    "material": "기계 부엉이 학자 후드 원본의 재질 표현",
+    "signatureDetail": "기계 부엉이 학자 후드 원본 고유 장식",
+    "prompt": "기계 부엉이 학자 후드, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 11,
+      "y": -37,
+      "size": 75
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_014",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "기계 부엉이 학자 후드 원본의 윗윤곽",
+        "epic 014 고유 밑단"
+      ]
+    }
+  },
+  {
+    "id": "epic_044",
+    "rarity": "epic",
+    "name": "바다 신탁 조개 왕관",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "바다 신탁 조개 왕관 원본의 윗윤곽과 epic 015 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "바다 신탁 조개 왕관 원본 주색",
+      "secondary": "바다 신탁 조개 왕관 원본 보조색",
+      "accent": "바다 신탁 조개 왕관 원본 강조색"
+    },
+    "material": "바다 신탁 조개 왕관 원본의 재질 표현",
+    "signatureDetail": "바다 신탁 조개 왕관 원본 고유 장식",
+    "prompt": "바다 신탁 조개 왕관, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 5,
+      "y": -43,
+      "size": 87
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_015",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "바다 신탁 조개 왕관 원본의 윗윤곽",
+        "epic 015 고유 밑단"
+      ]
+    }
+  },
+  {
+    "id": "epic_045",
+    "rarity": "epic",
+    "name": "벚꽃 수호자 망토",
+    "slot": "body",
+    "theme": "기존 도감 복원",
+    "silhouette": "벚꽃 수호자 망토 원본의 윗윤곽과 epic 016 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "벚꽃 수호자 망토 원본 주색",
+      "secondary": "벚꽃 수호자 망토 원본 보조색",
+      "accent": "벚꽃 수호자 망토 원본 강조색"
+    },
+    "material": "벚꽃 수호자 망토 원본의 재질 표현",
+    "signatureDetail": "벚꽃 수호자 망토 원본 고유 장식",
+    "prompt": "벚꽃 수호자 망토, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -2,
+      "y": 4,
+      "size": 101
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_016",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "벚꽃 수호자 망토 원본의 윗윤곽",
+        "epic 016 고유 밑단"
+      ]
+    }
+  },
+  {
+    "id": "epic_046",
+    "rarity": "epic",
+    "name": "천둥새 조종사 투구",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "천둥새 조종사 투구 원본의 윗윤곽과 epic 017 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "천둥새 조종사 투구 원본 주색",
+      "secondary": "천둥새 조종사 투구 원본 보조색",
+      "accent": "천둥새 조종사 투구 원본 강조색"
+    },
+    "material": "천둥새 조종사 투구 원본의 재질 표현",
+    "signatureDetail": "천둥새 조종사 투구 원본 고유 장식",
+    "prompt": "천둥새 조종사 투구, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 4,
+      "y": -44,
+      "size": 88
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_017",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "천둥새 조종사 투구 원본의 윗윤곽",
+        "epic 017 고유 밑단"
+      ]
+    }
+  },
+  {
+    "id": "epic_047",
+    "rarity": "epic",
+    "name": "달빛 가면무도회 가면",
+    "slot": "face",
+    "theme": "기존 도감 복원",
+    "silhouette": "달빛 가면무도회 가면 원본의 윗윤곽과 epic 018 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "달빛 가면무도회 가면 원본 주색",
+      "secondary": "달빛 가면무도회 가면 원본 보조색",
+      "accent": "달빛 가면무도회 가면 원본 강조색"
+    },
+    "material": "달빛 가면무도회 가면 원본의 재질 표현",
+    "signatureDetail": "달빛 가면무도회 가면 원본 고유 장식",
+    "prompt": "달빛 가면무도회 가면, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 17,
+      "y": 6,
+      "size": 63
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_018",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "달빛 가면무도회 가면 원본의 윗윤곽",
+        "epic 018 고유 밑단"
+      ]
+    }
+  },
+  {
+    "id": "epic_048",
+    "rarity": "epic",
+    "name": "마법 도서관 대마법사 모자",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "마법 도서관 대마법사 모자 원본의 윗윤곽과 epic 019 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "마법 도서관 대마법사 모자 원본 주색",
+      "secondary": "마법 도서관 대마법사 모자 원본 보조색",
+      "accent": "마법 도서관 대마법사 모자 원본 강조색"
+    },
+    "material": "마법 도서관 대마법사 모자 원본의 재질 표현",
+    "signatureDetail": "마법 도서관 대마법사 모자 원본 고유 장식",
+    "prompt": "마법 도서관 대마법사 모자, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 5,
+      "y": -43,
+      "size": 87
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_019",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "마법 도서관 대마법사 모자 원본의 윗윤곽",
+        "epic 019 고유 밑단"
+      ]
+    }
+  },
+  {
+    "id": "epic_049",
+    "rarity": "epic",
+    "name": "진홍 쇼군 갑주",
+    "slot": "body",
+    "theme": "기존 도감 복원",
+    "silhouette": "진홍 쇼군 갑주 원본의 윗윤곽과 epic 020 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "진홍 쇼군 갑주 원본 주색",
+      "secondary": "진홍 쇼군 갑주 원본 보조색",
+      "accent": "진홍 쇼군 갑주 원본 강조색"
+    },
+    "material": "진홍 쇼군 갑주 원본의 재질 표현",
+    "signatureDetail": "진홍 쇼군 갑주 원본 고유 장식",
+    "prompt": "진홍 쇼군 갑주, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -10,
+      "y": -4,
+      "size": 117
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_020",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "진홍 쇼군 갑주 원본의 윗윤곽",
+        "epic 020 고유 밑단"
+      ]
+    }
+  },
+  {
+    "id": "epic_050",
+    "rarity": "epic",
+    "name": "심연 잠수부 압력 헬멧",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "심연 잠수부 압력 헬멧 원본의 윗윤곽과 epic 021 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "심연 잠수부 압력 헬멧 원본 주색",
+      "secondary": "심연 잠수부 압력 헬멧 원본 보조색",
+      "accent": "심연 잠수부 압력 헬멧 원본 강조색"
+    },
+    "material": "심연 잠수부 압력 헬멧 원본의 재질 표현",
+    "signatureDetail": "심연 잠수부 압력 헬멧 원본 고유 장식",
+    "prompt": "심연 잠수부 압력 헬멧, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 19,
+      "y": -29,
+      "size": 58
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_021",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "심연 잠수부 압력 헬멧 원본의 윗윤곽",
+        "epic 021 고유 밑단"
+      ]
+    }
+  },
+  {
+    "id": "epic_051",
+    "rarity": "epic",
+    "name": "폭풍 록 아이돌 왕관",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "폭풍 록 아이돌 왕관 원본의 윗윤곽과 epic 022 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "폭풍 록 아이돌 왕관 원본 주색",
+      "secondary": "폭풍 록 아이돌 왕관 원본 보조색",
+      "accent": "폭풍 록 아이돌 왕관 원본 강조색"
+    },
+    "material": "폭풍 록 아이돌 왕관 원본의 재질 표현",
+    "signatureDetail": "폭풍 록 아이돌 왕관 원본 고유 장식",
+    "prompt": "폭풍 록 아이돌 왕관, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 3,
+      "y": -45,
+      "size": 91
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_022",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "폭풍 록 아이돌 왕관 원본의 윗윤곽",
+        "epic 022 고유 밑단"
+      ]
+    }
+  },
+  {
+    "id": "epic_052",
+    "rarity": "epic",
+    "name": "대연금술사 세트",
+    "slot": "body",
+    "theme": "기존 도감 복원",
+    "silhouette": "대연금술사 세트 원본의 윗윤곽과 epic 023 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "대연금술사 세트 원본 주색",
+      "secondary": "대연금술사 세트 원본 보조색",
+      "accent": "대연금술사 세트 원본 강조색"
+    },
+    "material": "대연금술사 세트 원본의 재질 표현",
+    "signatureDetail": "대연금술사 세트 원본 고유 장식",
+    "prompt": "대연금술사 세트, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -2,
+      "y": 4,
+      "size": 101
+    },
+    "qaState": "accepted",
+    "restoredFrom": "epic_023",
+    "outerShape": {
+      "class": "other",
+      "evidence": [
+        "대연금술사 세트 원본의 윗윤곽",
+        "epic 023 고유 밑단"
+      ]
+    }
+  }
+]

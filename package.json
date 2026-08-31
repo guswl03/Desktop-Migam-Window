@@ -1,13 +1,20 @@
 {
   "name": "migam-desktop",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.2.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build --configLoader runner",
     "lint": "tsc --noEmit",
     "test": "vitest run --configLoader runner",
+    "test:assets": "node --test scripts/costume-blueprint.test.mjs scripts/costume-catalog-qa.test.mjs scripts/png-normalize.test.mjs scripts/png-semantic-analysis.test.mjs scripts/sprite-similarity.test.mjs",
+    "costumes:blueprint": "node scripts/costume-blueprint.mjs validate",
+    "costumes:validate": "node scripts/costume-catalog-qa.mjs validate",
+    "costumes:normalize": "node scripts/costume-normalize-candidates.mjs",
+    "costumes:validate-candidates": "node scripts/costume-promote-candidates.mjs",
+    "costumes:promote-candidates": "node scripts/costume-promote-candidates.mjs --apply",
+    "costumes:sheets": "node scripts/costume-catalog-qa.mjs sheets",
     "typecheck": "tsc --noEmit",
     "tauri": "tauri"
   },

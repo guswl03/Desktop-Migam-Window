@@ -11,7 +11,6 @@ const defaults: Record<CostumeSlot, CostumeAlignment> = {
   face: { x: -4, y: -8, size: 104 },
   neck: { x: -4, y: 12, size: 104 },
   body: { x: -4, y: 17, size: 104 },
-  full: { x: -8, y: -8, size: 112 },
 };
 
 export function defaultCostumeAlignment(slot: CostumeSlot): CostumeAlignment {
@@ -20,7 +19,8 @@ export function defaultCostumeAlignment(slot: CostumeSlot): CostumeAlignment {
 
 export function resolveCostumeAlignment(
   slot: CostumeSlot,
+  itemDefault: CostumeAlignment | undefined,
   saved: CostumeAlignment | undefined,
 ): CostumeAlignment {
-  return saved ? { ...saved } : defaultCostumeAlignment(slot);
+  return { ...(saved ?? itemDefault ?? defaults[slot]) };
 }
