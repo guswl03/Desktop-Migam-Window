@@ -3,7 +3,7 @@ import * as contextMenuActions from "./context-menu-actions";
 import { contextUtilityCommand, showUtilityThenHideMenu } from "./context-menu-actions";
 
 describe("pet context menu utility actions", () => {
-  it("exposes test controls only in development builds", () => {
+  it("does not expose test controls in any build", () => {
     const developmentTestFeatures = Reflect.get(
       contextMenuActions,
       "developmentTestFeatures",
@@ -11,13 +11,8 @@ describe("pet context menu utility actions", () => {
 
     expect(developmentTestFeatures).toBeTypeOf("function");
     expect(developmentTestFeatures(true)).toEqual({
-      contextMenu: [
-        { action: "photo", shortcut: "P", label: "사진 배달 테스트", detail: "DELIVER" },
-        { action: "battery", shortcut: "B", label: "저전력 이벤트 테스트", detail: "20%" },
-      ],
-      settings: [
-        { action: "rare-photo", label: "희귀 사진 이스터에그 테스트" },
-      ],
+      contextMenu: [],
+      settings: [],
     });
     expect(developmentTestFeatures(false)).toEqual({
       contextMenu: [],

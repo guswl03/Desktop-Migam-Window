@@ -100,9 +100,7 @@ export async function mountPetContextMenu(container: HTMLElement): Promise<() =>
       return;
     }
     await hide().catch(() => undefined);
-    if (action === "photo") await invoke("start_photo_delivery");
-    else if (action === "battery") await invoke("test_low_battery_event");
-    else if (action === "start") {
+    if (action === "start") {
       await invoke("start_focus");
       await invoke("show_utility_window", { label: "timer" });
     } else if (action === "pause") await invoke("pause_timer");

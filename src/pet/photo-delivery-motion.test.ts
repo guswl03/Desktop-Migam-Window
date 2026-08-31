@@ -12,9 +12,36 @@ describe("photo delivery layout", () => {
 
     expect(presentation).toBeTypeOf("function");
     expect(presentation(1600, 1200, 1920, 1040)).toEqual({
-      photoWidth: 480,
-      photoHeight: 360,
-      pullDurationMilliseconds: 17_500,
+      photoWidth: 430,
+      photoHeight: 323,
+      pullDurationMilliseconds: 6_000,
+    });
+  });
+
+  it("keeps a smaller minimum photo size on compact screens", () => {
+    const presentation = Reflect.get(photoDeliveryMotion, "calculatePhotoDeliveryPresentation");
+
+    expect(presentation(1600, 1200, 300, 220)).toEqual({
+      photoWidth: 260,
+      photoHeight: 208,
+      pullDurationMilliseconds: 6_000,
+    });
+  });
+
+  it("reduces only the special photo to 85 percent of the normal presentation", () => {
+    const presentation = Reflect.get(photoDeliveryMotion, "calculatePhotoDeliveryPresentation");
+
+    expect(presentation(1600, 1200, 1920, 1040, "normal")).toEqual({
+      photoWidth: 430,
+      photoHeight: 323,
+      pullDurationMilliseconds: 6_000,
+    });
+    expect(
+      presentation(1600, 1200, 1920, 1040, "real-heogeodeongseu"),
+    ).toEqual({
+      photoWidth: 366,
+      photoHeight: 275,
+      pullDurationMilliseconds: 6_000,
     });
   });
 

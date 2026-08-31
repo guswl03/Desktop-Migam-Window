@@ -3,10 +3,10 @@ import { settingsHelp } from "./settings-help";
 
 describe("settings help", () => {
   it("renders an accessible hover and focus explanation", () => {
-    const markup = settingsHelp("petSize");
+    const markup = settingsHelp("automaticPhotoDelivery");
     expect(markup).toContain('class="settings-help"');
     expect(markup).toContain('tabindex="0"');
-    expect(markup).toContain("기본값은 100");
+    expect(markup).toContain("20~40분");
   });
 
   it("explains what users should enter for distraction rules", () => {

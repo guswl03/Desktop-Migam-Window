@@ -9,9 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/guswl03/Desktop-Migam-Window/releases/download/v0.1.2/migam.desktop_0.1.2_x64-setup.exe"><strong>Windows용 설치 파일 다운로드</strong></a>
+  <a href="https://github.com/guswl03/Desktop-Migam-Window/releases/download/v0.2.0/migam.desktop_0.2.0_x64-setup.exe"><strong>Windows용 설치 파일 다운로드</strong></a>
   ·
-  <a href="https://github.com/guswl03/Desktop-Migam-Window/releases/tag/v0.1.2">v0.1.2 릴리즈 보기</a>
+  <a href="https://github.com/guswl03/Desktop-Migam-Window/releases/tag/v0.2.0">v0.2.0 릴리즈 보기</a>
 </p>
 
 > [!NOTE]
@@ -19,12 +19,12 @@
 
 ## 바로 설치하기
 
-1. [migam desktop 설치 파일 다운로드](https://github.com/guswl03/Desktop-Migam-Window/releases/download/v0.1.2/migam.desktop_0.1.2_x64-setup.exe)를 누릅니다.
-2. 다운로드한 `migam.desktop_0.1.2_x64-setup.exe`를 실행합니다.
+1. [migam desktop 설치 파일 다운로드](https://github.com/guswl03/Desktop-Migam-Window/releases/download/v0.2.0/migam.desktop_0.2.0_x64-setup.exe)를 누릅니다.
+2. 다운로드한 `migam.desktop_0.2.0_x64-setup.exe`를 실행합니다.
 3. SmartScreen이 나타나면 **추가 정보**를 누른 뒤 게시자가 `알 수 없는 게시자`인지와 파일 이름을 확인하고 **실행**을 누릅니다.
 4. 설치 안내에 따라 완료하면 migam desktop이 실행됩니다.
 
-설치가 시작되지 않으면 [v0.1.2 릴리즈 페이지](https://github.com/guswl03/Desktop-Migam-Window/releases/tag/v0.1.2)의 **Assets**에서 `migam.desktop_0.1.2_x64-setup.exe`를 직접 내려받으세요.
+설치가 시작되지 않으면 [v0.2.0 릴리즈 페이지](https://github.com/guswl03/Desktop-Migam-Window/releases/tag/v0.2.0)의 **Assets**에서 `migam.desktop_0.2.0_x64-setup.exe`를 직접 내려받으세요.
 
 ### 처음 실행했다면
 
@@ -40,7 +40,7 @@ Windows **설정 → 앱 → 설치된 앱**에서 `migam desktop`을 찾아 제
 ## 주요 기능
 
 - 투명·항상 위 펫 창과 다중 모니터 작업 영역 이동
-- 클릭, 드래그, 던지기, 착지·충돌·창 등반 애니메이션
+- 클릭, 드래그, 던지기, 착지·충돌과 사용자가 끌 수 있는 창 등반 애니메이션
 - CPU·메모리 사용량에 반응하는 이동과 트레이 표시
 - 뽀모도로 타이머와 할 일 집중 연결
 - 집중 완료 보상 티켓, GAMCHA와 뽑기 코스튬 185종 인벤토리(기본 3종을 포함한 매니페스트 총 188종)

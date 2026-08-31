@@ -195,10 +195,11 @@ export async function mountPhotoDelivery(container: HTMLElement): Promise<() => 
   const start = (request: PhotoDeliveryRequest = {}): void => {
     if (phase !== "idle") return;
     phase = "delivering";
-    rareDelivery = photoDeliveryRarity(
+    const rarity = photoDeliveryRarity(
       Math.random(),
       request.forceSpecialPhoto ?? false,
-    ) === "real-heogeodeongseu";
+    );
+    rareDelivery = rarity === "real-heogeodeongseu";
     rareClicks = 0;
     close.hidden = rareDelivery;
     rig.classList.toggle("rare", rareDelivery);
@@ -218,6 +219,7 @@ export async function mountPhotoDelivery(container: HTMLElement): Promise<() => 
         photo.naturalHeight,
         window.innerWidth,
         window.innerHeight,
+        rarity,
       );
       const comesFromLeft = Math.random() < 0.5;
       const { targetX, y: targetY, startX } = calculatePhotoDeliveryLayout(

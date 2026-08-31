@@ -7,7 +7,6 @@ import type {
   DistractionRule,
   Settings,
   SystemMetricsState,
-  ResourceResponseMode,
 } from "./contracts";
 import { mountKick } from "./intervention/kick-view";
 import { mountGamcha, mountGamchaNotice } from "./gamcha/gamcha-view";
@@ -24,6 +23,7 @@ import { mountTimer } from "./timer/timer-view";
 import { mountTodo } from "./todo/todo-view";
 import { invokeWhenReady } from "./tauri/invoke-when-ready";
 import { settingsHelp } from "./settings-help";
+import { readPetSettings, renderPetSettingsControls } from "./settings-pet-controls";
 import "./styles.css";
 
 const app = document.querySelector<HTMLDivElement>("#app");
@@ -191,19 +191,7 @@ function renderSettings(
         <form id="settings-form">
         <fieldset>
           <legend>펫</legend>
-          <label><span class="setting-label-text">펫 크기 (%) ${settingsHelp("petSize")}</span><input name="visualScalePercent" type="number" min="50" max="200" value="${settings.pet.visualScalePercent}" /></label>
-          <label><span class="setting-label-text">컴퓨터 상태에 따른 펫 반응 ${settingsHelp("resourceResponse")}</span>
-            <select name="resourceResponseMode">
-              <option value="off" ${settings.pet.resourceResponseMode === "off" ? "selected" : ""}>사용 안 함</option>
-              <option value="cpu" ${settings.pet.resourceResponseMode === "cpu" ? "selected" : ""}>CPU 사용량</option>
-              <option value="memory" ${settings.pet.resourceResponseMode === "memory" ? "selected" : ""}>메모리 사용량</option>
-              <option value="combined" ${settings.pet.resourceResponseMode === "combined" ? "selected" : ""}>CPU와 메모리 중 높은 값</option>
-            </select>
-          </label>
-          <p id="resource-status" class="detection-status" role="status">CPU --% · 메모리 --%</p>
-          <label class="checkbox-row"><input name="automaticPhotoDeliveryEnabled" type="checkbox" ${settings.pet.automaticPhotoDeliveryEnabled ? "checked" : ""} /> <span class="setting-label-text">자동 사진 배달 ${settingsHelp("automaticPhotoDelivery")}</span></label>
-          <label class="checkbox-row"><input name="windowClimbingEnabled" type="checkbox" ${settings.pet.windowClimbingEnabled ? "checked" : ""} /> <span class="setting-label-text">창 위로 올라가기 ${settingsHelp("windowClimbing")}</span></label>
-          ${developmentTestMarkup}
+          ${renderPetSettingsControls(settings.pet, developmentTestMarkup)}
         </fieldset>
         <fieldset>
           <legend>뽀모도로</legend>
@@ -303,12 +291,7 @@ function renderSettings(
     rules = readRules(values, rules);
     const next: Settings = {
       ...settings,
-      pet: {
-        visualScalePercent: numberValue(values, "visualScalePercent"),
-        resourceResponseMode: String(values.get("resourceResponseMode")) as ResourceResponseMode,
-        automaticPhotoDeliveryEnabled: values.has("automaticPhotoDeliveryEnabled"),
-        windowClimbingEnabled: values.has("windowClimbingEnabled"),
-      },
+      pet: readPetSettings(values, settings.pet),
       pomodoro: {
         focusMinutes: numberValue(values, "focusMinutes"),
         shortBreakMinutes: numberValue(values, "shortBreakMinutes"),
