@@ -1,13 +1,24 @@
+import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, relative, resolve } from "node:path";
 import { pathToFileURL, fileURLToPath } from "node:url";
-import { loadBlueprint } from "./costume-blueprint.mjs";
-import { readPngRgba, visibleBounds } from "./lib/png-rgba.mjs";
+import { loadBlueprint, validateBlueprint } from "./costume-blueprint.mjs";
+import { analyzePngSemantics, readPngRgba, visibleBounds } from "./lib/png-rgba.mjs";
+import { findNearDuplicateSprites } from "./lib/sprite-similarity.mjs";
 
 const repositoryRoot = fileURLToPath(new URL("..", import.meta.url));
 const manifestPath = resolve(repositoryRoot, "pack/manifest.json");
 const generatedDirectory = resolve(repositoryRoot, "pack/qa/generated/final");
 const rarities = ["common", "rare", "epic", "legendary", "special"];
+const expectedRarityCounts = { common: 80, rare: 57, epic: 31, legendary: 12, special: 5 };
+const expectedSlotCounts = { head: 99, face: 28, neck: 22, body: 36 };
+const expectedRaritySlotCounts = {
+  common: { head: 44, face: 12, neck: 10, body: 14 },
+  rare: { head: 31, face: 8, neck: 6, body: 12 },
+  epic: { head: 16, face: 5, neck: 4, body: 6 },
+  legendary: { head: 6, face: 2, neck: 1, body: 3 },
+  special: { head: 2, face: 1, neck: 1, body: 1 },
+};
 
 function escapeXml(value) {
   return String(value)
@@ -29,6 +40,7 @@ export function buildSheetRows(costumes, blueprint) {
         id: costume.id,
         name: costume.name,
         rarity: costume.rarity,
+        collection: costume.collection,
         file: costume.file,
         slot: costume.slot,
         defaultAlignment: costume.defaultAlignment,
@@ -179,38 +191,133 @@ async function loadManifest() {
   return JSON.parse(await readFile(manifestPath, "utf8"));
 }
 
-async function validateManifestAssets(manifest, blueprint) {
+function countBy(rows, key) {
+  const counts = {};
+  for (const row of rows) counts[row[key]] = (counts[row[key]] ?? 0) + 1;
+  return counts;
+}
+
+function compareCounts(errors, label, actual, expected) {
+  for (const [key, expectedCount] of Object.entries(expected)) {
+    const actualCount = actual[key] ?? 0;
+    if (actualCount !== expectedCount) {
+      errors.push(`${label}: expected ${key}=${expectedCount}, got ${actualCount}`);
+    }
+  }
+  for (const key of Object.keys(actual)) {
+    if (!(key in expected)) errors.push(`${label}: unexpected ${key}=${actual[key]}`);
+  }
+}
+
+function duplicateValues(rows, key) {
+  const firstByValue = new Map();
+  const duplicates = [];
+  for (const row of rows) {
+    const value = row[key];
+    if (firstByValue.has(value)) duplicates.push([firstByValue.get(value), row.id, value]);
+    else firstByValue.set(value, row.id);
+  }
+  return duplicates;
+}
+
+export async function validateManifestAssets(manifest, blueprint, root = repositoryRoot) {
+  const errors = validateBlueprint(blueprint).map((error) => `blueprint: ${error}`);
   const rows = buildSheetRows(manifest.costumes, blueprint);
   const blueprintById = new Map(blueprint.map((item) => [item.id, item]));
-  if (rows.length !== 185 || new Set(rows.map(({ id }) => id)).size !== 185) {
-    throw new Error(`expected 185 unique draw candidates, got ${rows.length}`);
+  const defaults = manifest.costumes.filter(({ rarity }) => rarity === "default");
+  if (manifest.count !== 188) errors.push(`manifest: expected count=188, got ${manifest.count}`);
+  if (defaults.length !== 3) errors.push(`manifest: expected 3 default costumes, got ${defaults.length}`);
+  if (rows.length !== 185) errors.push(`expected 185 draw candidates, got ${rows.length}`);
+  compareCounts(errors, "rarity", countBy(rows, "rarity"), expectedRarityCounts);
+  compareCounts(errors, "slot", countBy(rows, "slot"), expectedSlotCounts);
+  for (const rarity of rarities) {
+    compareCounts(
+      errors,
+      `${rarity} slot`,
+      countBy(rows.filter((row) => row.rarity === rarity), "slot"),
+      expectedRaritySlotCounts[rarity],
+    );
   }
+  for (const key of ["id", "name", "file"]) {
+    for (const [first, second, value] of duplicateValues(rows, key)) {
+      errors.push(`${second}: duplicate ${key} with ${first}: ${value}`);
+    }
+  }
+
+  const hashOwners = new Map();
+  const sprites = [];
   for (const costume of rows) {
     const item = blueprintById.get(costume.id);
-    if (!rarities.includes(costume.rarity)) throw new Error(`${costume.id}: invalid rarity`);
+    if (!rarities.includes(costume.rarity)) errors.push(`${costume.id}: invalid rarity`);
     if (!["head", "face", "neck", "body"].includes(costume.slot)) {
-      throw new Error(`${costume.id}: invalid slot`);
+      errors.push(`${costume.id}: invalid slot`);
     }
     const alignment = costume.defaultAlignment;
     if (![alignment?.x, alignment?.y, alignment?.size].every(Number.isInteger)) {
-      throw new Error(`${costume.id}: invalid default alignment`);
+      errors.push(`${costume.id}: invalid default alignment`);
     }
     if (
       item.name !== costume.name ||
       item.rarity !== costume.rarity ||
+      item.theme !== costume.collection ||
+      `${item.rarity}/${item.id}.png` !== costume.file ||
       item.slot !== costume.slot ||
       JSON.stringify(item.defaultAlignment) !== JSON.stringify(costume.defaultAlignment)
     ) {
-      throw new Error(`${costume.id}: blueprint and manifest differ`);
+      errors.push(`${costume.id}: blueprint and manifest differ`);
     }
-    const png = await readPngRgba(resolve(repositoryRoot, "pack", costume.file));
-    if (png.width !== 256 || png.height !== 256) throw new Error(`${costume.id}: expected 256x256`);
+    if (item.qaState !== "accepted") {
+      errors.push(`${costume.id}: qaState must be accepted (got ${item.qaState})`);
+    }
+    const assetPath = resolve(root, "pack", costume.file);
+    let bytes;
+    let png;
+    try {
+      bytes = await readFile(assetPath);
+      png = await readPngRgba(assetPath);
+    } catch (error) {
+      errors.push(`${costume.id}: unreadable PNG: ${error.message}`);
+      continue;
+    }
+    if (png.width !== 256 || png.height !== 256) errors.push(`${costume.id}: expected 256x256`);
     if (!png.pixels.some((value, index) => index % 4 === 3 && value === 0)) {
-      throw new Error(`${costume.id}: missing transparency`);
+      errors.push(`${costume.id}: missing transparency`);
     }
-    const bounds = visibleBounds(png.pixels, png.width, png.height);
-    if (!bounds) throw new Error(`${costume.id}: empty image`);
-    Object.assign(costume, analyzePlacement(costume, bounds));
+    const semantics = analyzePngSemantics(png, { minimumSpan: 64 });
+    if (!semantics.bounds) {
+      errors.push(`${costume.id}: empty image`);
+    } else {
+      for (const [side, margin] of Object.entries(semantics.edgeMargins)) {
+        if (margin < 12) errors.push(`${costume.id}: ${side} margin ${margin} is below 12`);
+      }
+      const spanX = semantics.bounds.right - semantics.bounds.left + 1;
+      const spanY = semantics.bounds.bottom - semantics.bounds.top + 1;
+      if (Math.max(spanX, spanY) < 64) {
+        errors.push(`${costume.id}: visible span ${spanX}x${spanY} is below 64`);
+      }
+      const placementBounds = visibleBounds(png.pixels, png.width, png.height);
+      Object.assign(costume, analyzePlacement(costume, placementBounds));
+    }
+    for (const warning of semantics.warnings) {
+      if (!["empty", "undersized"].includes(warning)) {
+        errors.push(`${costume.id}: ${warning}`);
+      }
+    }
+    const hash = createHash("sha256").update(bytes).digest("hex");
+    if (hashOwners.has(hash)) {
+      errors.push(`${costume.id}: duplicate file hash with ${hashOwners.get(hash)}`);
+    } else {
+      hashOwners.set(hash, costume.id);
+    }
+    sprites.push({ id: costume.id, png });
+  }
+  for (const pair of findNearDuplicateSprites(sprites)) {
+    errors.push(
+      `${pair.left}/${pair.right}: suspicious silhouette distance=${pair.distance.toFixed(6)}`,
+    );
+  }
+  if (errors.length > 0) {
+    throw new Error(errors.join("\n"));
   }
   return rows;
 }

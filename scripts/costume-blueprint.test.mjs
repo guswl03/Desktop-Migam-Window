@@ -600,7 +600,7 @@ test("applies all 185 blueprint rows while preserving only the three default cos
   assert.deepEqual(drawables[0], {
     id: "common_001", name: "새벽 우편모", rarity: "common", collection: "생활 도구",
     file: "common/common_001.png", slot: "head",
-    defaultAlignment: { x: -4, y: -30, size: 104 },
+    defaultAlignment: { x: 11, y: -37, size: 74 },
   });
   const drawableFields = [
     "collection", "defaultAlignment", "file", "id", "name", "rarity", "slot",

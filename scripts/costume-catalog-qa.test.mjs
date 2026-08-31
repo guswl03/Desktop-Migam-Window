@@ -6,7 +6,11 @@ import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { promisify } from "node:util";
 import { loadBlueprint } from "./costume-blueprint.mjs";
-import { analyzePlacement, buildSheetRows } from "./costume-catalog-qa.mjs";
+import {
+  analyzePlacement,
+  buildSheetRows,
+  validateManifestAssets,
+} from "./costume-catalog-qa.mjs";
 import { readPngRgba, visibleBounds } from "./lib/png-rgba.mjs";
 
 const repositoryRoot = fileURLToPath(new URL("..", import.meta.url));
@@ -200,6 +204,17 @@ test("accepted blueprint placements are applied to the production manifest", asy
       item.id,
     );
   }
+});
+
+test("final validation rejects blueprint and manifest collection divergence", async () => {
+  const blueprint = await loadBlueprint(repositoryRoot);
+  const changedManifest = structuredClone(manifest);
+  changedManifest.costumes.find(({ id }) => id === "common_001").collection = "다른 테마";
+
+  await assert.rejects(
+    validateManifestAssets(changedManifest, blueprint, repositoryRoot),
+    /common_001: blueprint and manifest differ/,
+  );
 });
 
 test("asset validation reports the full 185-item rarity totals", async () => {
