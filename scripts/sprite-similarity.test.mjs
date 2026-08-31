@@ -29,6 +29,23 @@ function notchedBlock({ deepNotch = false, smallNotch = false } = {}) {
   return { width, height, pixels };
 }
 
+function productionBlock({ rightSpur = false } = {}) {
+  const width = 256;
+  const height = 256;
+  const pixels = new Uint8Array(width * height * 4);
+  for (let y = 88; y < 168; y += 1) {
+    for (let x = 88; x < 168; x += 1) {
+      pixels[(y * width + x) * 4 + 3] = 255;
+    }
+  }
+  if (rightSpur) {
+    for (let x = 168; x <= 170; x += 1) {
+      pixels[(127 * width + x) * 4 + 3] = 255;
+    }
+  }
+  return { width, height, pixels };
+}
+
 test("finds identical silhouettes even when RGB colors differ", () => {
   const red = rgbaSprite([
     [4, 4, 255, 0, 0, 255],
@@ -77,6 +94,18 @@ test("flags a small boundary mutation as a near duplicate", () => {
   assert.deepEqual(
     pairs.map(({ left, right }) => [left, right]),
     [["original", "minor-edge-loss"]],
+  );
+});
+
+test("flags a production-sized block with a connected three-pixel outward spur", () => {
+  const pairs = findNearDuplicateSprites([
+    { id: "original", png: productionBlock() },
+    { id: "right-spur", png: productionBlock({ rightSpur: true }) },
+  ]);
+
+  assert.deepEqual(
+    pairs.map(({ left, right }) => [left, right]),
+    [["original", "right-spur"]],
   );
 });
 

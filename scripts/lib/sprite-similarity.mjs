@@ -1,6 +1,7 @@
 const DEFAULT_SIZE = 16;
 const DEFAULT_THRESHOLD = 0.08;
 const VISIBLE_ALPHA = 16;
+const BOUNDS_TRIM_FRACTION = 0.005;
 
 function assertDecoded(decoded) {
   if (
@@ -15,25 +16,89 @@ function assertDecoded(decoded) {
   }
 }
 
-function alphaBounds(decoded) {
+function alphaProfile(decoded) {
   let left = decoded.width;
   let top = decoded.height;
   let right = -1;
   let bottom = -1;
+  let visiblePixels = 0;
+  const columns = new Uint32Array(decoded.width);
+  const rows = new Uint32Array(decoded.height);
   for (let y = 0; y < decoded.height; y += 1) {
     for (let x = 0; x < decoded.width; x += 1) {
       if (decoded.pixels[(y * decoded.width + x) * 4 + 3] < VISIBLE_ALPHA) continue;
+      visiblePixels += 1;
+      columns[x] += 1;
+      rows[y] += 1;
       left = Math.min(left, x);
       top = Math.min(top, y);
       right = Math.max(right, x);
       bottom = Math.max(bottom, y);
     }
   }
-  return right < 0 ? null : { left, top, right, bottom };
+  return {
+    bounds: right < 0 ? null : { left, top, right, bottom },
+    columns,
+    rows,
+    visiblePixels,
+  };
 }
 
-function normalizedOccupancy(decoded, size) {
-  const bounds = alphaBounds(decoded);
+function alphaBounds(decoded) {
+  return alphaProfile(decoded).bounds;
+}
+
+function trimLow(counts, low, high, budget) {
+  let remaining = budget;
+  while (low < high && counts[low] <= remaining) {
+    remaining -= counts[low];
+    low += 1;
+  }
+  return low;
+}
+
+function trimHigh(counts, low, high, budget) {
+  let remaining = budget;
+  while (high > low && counts[high] <= remaining) {
+    remaining -= counts[high];
+    high -= 1;
+  }
+  return high;
+}
+
+function trimmedAlphaBounds(decoded) {
+  const profile = alphaProfile(decoded);
+  if (!profile.bounds) return null;
+  const budget = Math.floor(profile.visiblePixels * BOUNDS_TRIM_FRACTION);
+  return {
+    left: trimLow(
+      profile.columns,
+      profile.bounds.left,
+      profile.bounds.right,
+      budget,
+    ),
+    top: trimLow(
+      profile.rows,
+      profile.bounds.top,
+      profile.bounds.bottom,
+      budget,
+    ),
+    right: trimHigh(
+      profile.columns,
+      profile.bounds.left,
+      profile.bounds.right,
+      budget,
+    ),
+    bottom: trimHigh(
+      profile.rows,
+      profile.bounds.top,
+      profile.bounds.bottom,
+      budget,
+    ),
+  };
+}
+
+function normalizedOccupancy(decoded, size, bounds = alphaBounds(decoded)) {
   const occupancy = new Uint8Array(size * size);
   if (!bounds) return occupancy;
 
@@ -100,6 +165,15 @@ export function silhouetteFingerprint(decoded, size = DEFAULT_SIZE) {
   return fingerprint;
 }
 
+function trimmedCoreFingerprint(decoded, size = DEFAULT_SIZE) {
+  const occupancy = normalizedOccupancy(decoded, size, trimmedAlphaBounds(decoded));
+  const edges = edgeTransitions(occupancy, size);
+  const fingerprint = new Uint8Array(occupancy.length + edges.length);
+  fingerprint.set(occupancy);
+  fingerprint.set(edges, occupancy.length);
+  return fingerprint;
+}
+
 function fingerprintDistance(left, right) {
   if (left.length !== right.length || left.length % 2 !== 0) {
     throw new TypeError("fingerprints must have equal occupancy and edge sections");
@@ -127,13 +201,17 @@ export function findNearDuplicateSprites(entries, threshold = DEFAULT_THRESHOLD)
   const prepared = entries.map(({ id, png }) => ({
     id,
     fingerprint: silhouetteFingerprint(png),
+    trimmedCoreFingerprint: trimmedCoreFingerprint(png),
   }));
   const pairs = [];
   for (let leftIndex = 0; leftIndex < prepared.length; leftIndex += 1) {
     for (let rightIndex = leftIndex + 1; rightIndex < prepared.length; rightIndex += 1) {
       const left = prepared[leftIndex];
       const right = prepared[rightIndex];
-      const distance = fingerprintDistance(left.fingerprint, right.fingerprint);
+      const distance = Math.min(
+        fingerprintDistance(left.fingerprint, right.fingerprint),
+        fingerprintDistance(left.trimmedCoreFingerprint, right.trimmedCoreFingerprint),
+      );
       if (distance <= threshold) {
         pairs.push({ left: left.id, right: right.id, distance });
       }

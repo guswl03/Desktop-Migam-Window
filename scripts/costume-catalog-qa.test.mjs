@@ -1,7 +1,8 @@
 import assert from "node:assert/strict";
 import { execFile } from "node:child_process";
-import { readFile } from "node:fs/promises";
-import { resolve } from "node:path";
+import { copyFile, cp, mkdtemp, readFile, rm } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join, resolve } from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { promisify } from "node:util";
@@ -215,6 +216,36 @@ test("final validation rejects blueprint and manifest collection divergence", as
     validateManifestAssets(changedManifest, blueprint, repositoryRoot),
     /common_001: blueprint and manifest differ/,
   );
+});
+
+test("final validation reports duplicate hashes and suspicious silhouettes together", async () => {
+  const root = await mkdtemp(join(tmpdir(), "costume-final-qa-duplicate-"));
+  const blueprint = await loadBlueprint(repositoryRoot);
+  try {
+    await Promise.all(rarities.map((rarity) => cp(
+      resolve(repositoryRoot, "pack", rarity),
+      resolve(root, "pack", rarity),
+      { recursive: true },
+    )));
+    await copyFile(
+      resolve(root, "pack/common/common_001.png"),
+      resolve(root, "pack/rare/rare_001.png"),
+    );
+
+    await assert.rejects(
+      validateManifestAssets(structuredClone(manifest), blueprint, root),
+      (error) => {
+        assert.match(error.message, /rare_001: duplicate file hash with common_001/);
+        assert.match(
+          error.message,
+          /common_001\/rare_001: suspicious silhouette distance=0\.000000/,
+        );
+        return true;
+      },
+    );
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
 });
 
 test("asset validation reports the full 185-item rarity totals", async () => {
