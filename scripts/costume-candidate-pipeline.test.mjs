@@ -276,10 +276,15 @@ async function assertCatalogRollbackForManifestPhase(phase) {
   const root = await mkdtemp(join(tmpdir(), "costume-catalog-transaction-"));
   await prepareAuthoritativePromotion(root);
   const originalManifest = await readFile(join(root, "pack", "manifest.json"));
+  const injected = [];
   try {
-    await assert.rejects(applyCatalogPromotion({ root, failureHook: ({ currentPhase, index }) => {
-      if (currentPhase === phase && (!["before-manifest-stage-write", "after-manifest-stage-write"].includes(phase) || index === 185)) throw new Error(`injected ${phase}`);
+    await assert.rejects(applyCatalogPromotion({ root, failureHook: ({ currentPhase, index, id }) => {
+      if (currentPhase === phase && index === 185 && id === "manifest") {
+        injected.push({ currentPhase, index, id });
+        throw new Error(`injected ${phase}`);
+      }
     } }), /injected/);
+    assert.deepEqual(injected, [{ currentPhase: phase, index: 185, id: "manifest" }]);
     await assertOriginalCatalog(root);
     assert.deepEqual(await readFile(join(root, "pack", "manifest.json")), originalManifest);
     await assertNoPromotionArtifacts(root);
