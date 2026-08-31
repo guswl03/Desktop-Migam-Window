@@ -109,7 +109,7 @@
 - `pet`, `card`, `timer`, `todo`, `settings`, `gamcha` 창과 트레이, 설정 저장·복구, 전역 긴급 중지가 구현되어 있다.
 - 집중 시간이 자연스럽게 끝날 때만 GAMCHA 티켓 1장이 지급된다. Skip과 Stop은 보상하지 않는다.
 - GAMCHA 티켓·누적 추첨·보유 코스튬은 앱 데이터 디렉터리의 `gamcha.json`에 저장되고 손상 파일은 별도로 보존한다.
-- `pack/manifest.json` 159종 중 `default` 3종을 제외한 156종이 실제 추첨 후보이다.
+- `pack/manifest.json`은 총 188종이며 `default` 3종을 제외한 185종이 실제 추첨 후보이다.
 - 확률은 Common 60%, Rare 25%, Epic 10%, Legendary 4%, Special 1%이다.
 - 선택된 등급 안에서는 그 등급의 모든 코스튬을 모을 때까지 중복이 나오지 않는다.
 - 자연 집중 완료 시에는 작은 `gamcha-notice` 보상 말풍선만 펫 위에 나타난다.
@@ -120,7 +120,7 @@
 - GAMCHA 왼쪽 아래 `OUTFIT` 옷장에서 보유 코스튬 또는 `기본 모습`을 선택해 착용·해제할 수 있다.
 - 착용 ID는 `gamcha.json`에 저장되고 `gamcha://equipped` 이벤트로 펫에 즉시 반영되며 재시작 후 복원된다. 보유하지 않은 ID는 Rust에서 거부한다.
 - 256×256 코스튬은 128×128로 표시하고 96×104 펫 셀에 `left -16px`, `top -12px`로 중심 정렬한다. 걷기 중 2px 바운스를 적용하고 Hard Impact에서는 숨긴다.
-- `pack`의 개별 자산별 runtime alignment 메타데이터는 아직 없으므로 모자·안경·몸 장식별 Windows 육안 확인 후 종류별 미세 보정이 다음 단계다.
+- 185개 모든 추첨 코스튬에 아이템별 `defaultAlignment` 메타데이터가 있으며, 사용자 저장 보정값이 있으면 그 값을 우선 적용한다.
 - 보라색 placeholder 대신 `images/characters/gamjabot/final/spritesheet-extended.webp`의 실제 감자봇을 표시한다.
 - 감자봇 atlas는 1536×2288, 192×208 셀, 8열×11행이며 deterministic validation과 chroma despill이 통과했다.
 - 펫 창은 128×128이며, HTML/root/body/app/shell 배경을 모두 투명하게 두어 감자봇 외 픽셀을 그리지 않는다.
