@@ -1,11 +1,12 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, relative, resolve } from "node:path";
 import { pathToFileURL, fileURLToPath } from "node:url";
+import { loadBlueprint } from "./costume-blueprint.mjs";
 import { readPngRgba, visibleBounds } from "./lib/png-rgba.mjs";
 
 const repositoryRoot = fileURLToPath(new URL("..", import.meta.url));
 const manifestPath = resolve(repositoryRoot, "pack/manifest.json");
-const generatedDirectory = resolve(repositoryRoot, "pack/qa/generated");
+const generatedDirectory = resolve(repositoryRoot, "pack/qa/generated/final");
 const rarities = ["common", "rare", "epic", "legendary", "special"];
 
 function escapeXml(value) {
@@ -17,26 +18,79 @@ function escapeXml(value) {
     .replaceAll("'", "&apos;");
 }
 
-export function buildSheetRows(costumes) {
+export function buildSheetRows(costumes, blueprint) {
+  const blueprintById = new Map(blueprint.map((item) => [item.id, item]));
   return costumes
     .filter(({ rarity }) => rarity !== "default")
-    .map((costume) => ({
-      id: costume.id,
-      name: costume.name,
-      rarity: costume.rarity,
-      file: costume.file,
-      slot: costume.slot,
-      defaultAlignment: costume.defaultAlignment,
-    }));
+    .map((costume) => {
+      const item = blueprintById.get(costume.id);
+      if (!item) throw new Error(`${costume.id}: missing blueprint row`);
+      return {
+        id: costume.id,
+        name: costume.name,
+        rarity: costume.rarity,
+        file: costume.file,
+        slot: costume.slot,
+        defaultAlignment: costume.defaultAlignment,
+        theme: item.theme,
+        qaState: item.qaState,
+      };
+    });
+}
+
+export function analyzePlacement(costume, sourceBounds) {
+  const { x, y, size } = costume.defaultAlignment;
+  const scale = size / 256;
+  const wornBounds = {
+    left: Math.round(x + sourceBounds.left * scale),
+    top: Math.round(y + sourceBounds.top * scale),
+    right: Math.round(x + (sourceBounds.right + 1) * scale),
+    bottom: Math.round(y + (sourceBounds.bottom + 1) * scale),
+  };
+  const warnings = [];
+  if (wornBounds.left < -16) warnings.push("clipped-left");
+  if (wornBounds.top < -24) warnings.push("clipped-top");
+  if (wornBounds.right > 112) warnings.push("clipped-right");
+  if (wornBounds.bottom > 104) warnings.push("clipped-bottom");
+  const wornHeight = wornBounds.bottom - wornBounds.top;
+  const wornCenterY = (wornBounds.top + wornBounds.bottom) / 2;
+  if (costume.slot === "head" && wornBounds.bottom > 24) {
+    warnings.push("head-overlaps-face");
+  }
+  if (
+    costume.slot === "face" &&
+    (wornCenterY < 30 || wornCenterY > 44 || wornHeight > 42)
+  ) {
+    warnings.push("face-off-eye-line");
+  }
+  if (costume.slot === "neck" && wornBounds.top < 60) {
+    warnings.push("neck-above-mouth");
+  }
+  if (
+    costume.slot === "body" &&
+    (
+      wornBounds.left < 0 ||
+      wornBounds.top < 0 ||
+      wornBounds.right > 96 ||
+      wornBounds.bottom > 104
+    )
+  ) {
+    warnings.push("body-outside-cell");
+  }
+  return { sourceBounds, wornBounds, warnings };
 }
 
 function assetHref(fromPath, assetPath) {
   return relative(dirname(fromPath), assetPath).replaceAll("\\", "/");
 }
 
+function boundsLabel(bounds) {
+  return `L${bounds.left} T${bounds.top} R${bounds.right} B${bounds.bottom}`;
+}
+
 function sheetCell(costume, index, columns, outputPath) {
-  const cellWidth = 240;
-  const cellHeight = 340;
+  const cellWidth = 424;
+  const cellHeight = 448;
   const column = index % columns;
   const row = Math.floor(index / columns);
   const x = column * cellWidth;
@@ -49,34 +103,41 @@ function sheetCell(costume, index, columns, outputPath) {
   );
   const atlas = escapeXml(assetHref(outputPath, atlasPath));
   const alignment = costume.defaultAlignment;
-  const wornX = x + 128;
+  const wornX = x + 284;
   const wornY = y + 48;
-  const shortName = [...costume.name].slice(0, 20).join("");
+  const shortName = [...costume.name].slice(0, 24).join("");
+  const warningLabel = costume.warnings.length === 0
+    ? "warnings none"
+    : `warnings ${costume.warnings.join(", ")}`;
   return `
-    <g class="costume-cell" data-id="${escapeXml(costume.id)}">
-      <rect x="${x + 4}" y="${y + 4}" width="232" height="332" rx="8" fill="#222329" stroke="#5b5d67" />
-      <text x="${x + 16}" y="${y + 25}" class="section-label">ISOLATED</text>
-      <rect x="${x + 12}" y="${y + 34}" width="112" height="144" fill="url(#checker)" stroke="#777" />
-      <image href="${asset}" x="${x + 4}" y="${y + 26}" width="128" height="160" preserveAspectRatio="xMidYMid meet" />
-      <text x="${x + 140}" y="${y + 25}" class="section-label">WORN</text>
-      <rect x="${x + 132}" y="${y + 34}" width="96" height="144" fill="url(#checker)" stroke="#777" />
-      <svg x="${wornX}" y="${wornY}" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
-        <image href="${atlas}" x="0" y="0" width="768" height="1144" />
+    <g class="costume-cell" data-id="${escapeXml(costume.id)}" data-qa-state="${escapeXml(costume.qaState)}">
+      <rect x="${x + 4}" y="${y + 4}" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="${x + 16}" y="${y + 25}" class="section-label">ISOLATED · 4X</text>
+      <rect x="${x + 12}" y="${y + 34}" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="${asset}" x="${x + 12}" y="${y + 34}" width="256" height="256" />
+      <text x="${x + 300}" y="${y + 25}" class="section-label">WORN · 96PX</text>
+      <rect x="${wornX}" y="${wornY}" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="${wornX}" y="${wornY}" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="${atlas}" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="${asset}" x="${16 + alignment.x}" y="${24 + alignment.y}" width="${alignment.size}" height="${alignment.size}" />
       </svg>
-      <image href="${asset}" x="${wornX + alignment.x}" y="${wornY + alignment.y}" width="${alignment.size}" height="${alignment.size}" preserveAspectRatio="xMidYMid meet" />
-      <text x="${x + 16}" y="${y + 208}" class="id">${escapeXml(costume.id)}</text>
-      <text x="${x + 16}" y="${y + 235}" class="name"><title>${escapeXml(costume.name)}</title>${escapeXml(shortName)}</text>
-      <text x="${x + 16}" y="${y + 260}" class="meta">${escapeXml(costume.rarity.toUpperCase())} · ${escapeXml(costume.slot)}</text>
-      <text x="${x + 16}" y="${y + 284}" class="meta">x ${alignment.x} · y ${alignment.y} · size ${alignment.size}</text>
-      <text x="${x + 16}" y="${y + 311}" class="file">${escapeXml(costume.file)}</text>
+      <text x="${x + 16}" y="${y + 316}" class="id">${escapeXml(costume.id)}</text>
+      <text x="${x + 16}" y="${y + 340}" class="name"><title>${escapeXml(costume.name)}</title>${escapeXml(shortName)}</text>
+      <text x="${x + 16}" y="${y + 362}" class="meta">${escapeXml(costume.rarity.toUpperCase())} · ${escapeXml(costume.slot)} · ${escapeXml(costume.qaState)}</text>
+      <text x="${x + 16}" y="${y + 380}" class="meta">x ${alignment.x} · y ${alignment.y} · size ${alignment.size}</text>
+      <text x="${x + 16}" y="${y + 398}" class="bounds">source ${escapeXml(boundsLabel(costume.sourceBounds))}</text>
+      <text x="${x + 16}" y="${y + 416}" class="bounds">worn ${escapeXml(boundsLabel(costume.wornBounds))}</text>
+      <text x="${x + 16}" y="${y + 434}" class="${costume.warnings.length === 0 ? "clear" : "warning"}">${escapeXml(warningLabel)}</text>
     </g>`;
 }
 
 function renderSheet(rarity, costumes, outputPath) {
-  const columns = 6;
+  const columns = 4;
   const rows = Math.ceil(costumes.length / columns);
-  const width = columns * 240;
-  const height = rows * 340;
+  const width = columns * 424;
+  const height = rows * 448;
   const cells = costumes.map((costume, index) => sheetCell(costume, index, columns, outputPath));
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
@@ -93,7 +154,9 @@ function renderSheet(rarity, costumes, outputPath) {
       .id { font: 700 15px Consolas, monospace; fill: #7fd7ff; }
       .name { font-size: 17px; font-weight: 700; }
       .meta { font: 12px Consolas, monospace; fill: #ffcf53; }
-      .file { font: 10px Consolas, monospace; fill: #aeb2c0; }
+      .bounds { font: 11px Consolas, monospace; fill: #aeb2c0; }
+      .clear { font: 11px Consolas, monospace; fill: #7ee2a8; }
+      .warning { font: 11px Consolas, monospace; fill: #ff7f8c; }
     </style>
   </defs>
   <rect width="100%" height="100%" fill="#17181c" />
@@ -106,12 +169,14 @@ async function loadManifest() {
   return JSON.parse(await readFile(manifestPath, "utf8"));
 }
 
-async function validateManifestAssets(manifest) {
-  const rows = buildSheetRows(manifest.costumes);
+async function validateManifestAssets(manifest, blueprint) {
+  const rows = buildSheetRows(manifest.costumes, blueprint);
+  const blueprintById = new Map(blueprint.map((item) => [item.id, item]));
   if (rows.length !== 185 || new Set(rows.map(({ id }) => id)).size !== 185) {
     throw new Error(`expected 185 unique draw candidates, got ${rows.length}`);
   }
   for (const costume of rows) {
+    const item = blueprintById.get(costume.id);
     if (!rarities.includes(costume.rarity)) throw new Error(`${costume.id}: invalid rarity`);
     if (!["head", "face", "neck", "body"].includes(costume.slot)) {
       throw new Error(`${costume.id}: invalid slot`);
@@ -120,6 +185,14 @@ async function validateManifestAssets(manifest) {
     if (![alignment?.x, alignment?.y, alignment?.size].every(Number.isInteger)) {
       throw new Error(`${costume.id}: invalid default alignment`);
     }
+    if (
+      item.name !== costume.name ||
+      item.rarity !== costume.rarity ||
+      item.slot !== costume.slot ||
+      JSON.stringify(item.defaultAlignment) !== JSON.stringify(costume.defaultAlignment)
+    ) {
+      throw new Error(`${costume.id}: blueprint and manifest differ`);
+    }
     const png = await readPngRgba(resolve(repositoryRoot, "pack", costume.file));
     if (png.width !== 256 || png.height !== 256) throw new Error(`${costume.id}: expected 256x256`);
     if (!png.pixels.some((value, index) => index % 4 === 3 && value === 0)) {
@@ -127,6 +200,7 @@ async function validateManifestAssets(manifest) {
     }
     const bounds = visibleBounds(png.pixels, png.width, png.height);
     if (!bounds) throw new Error(`${costume.id}: empty image`);
+    Object.assign(costume, analyzePlacement(costume, bounds));
   }
   return rows;
 }
@@ -143,7 +217,8 @@ async function writeSheets(rows) {
 async function main() {
   const mode = process.argv[2];
   const manifest = await loadManifest();
-  const rows = await validateManifestAssets(manifest);
+  const blueprint = await loadBlueprint(repositoryRoot);
+  const rows = await validateManifestAssets(manifest, blueprint);
   if (mode === "validate") {
     const counts = Object.fromEntries(rarities.map((rarity) => [
       rarity,

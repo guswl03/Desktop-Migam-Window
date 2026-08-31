@@ -1,0 +1,1703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1696" height="8960" viewBox="0 0 1696 8960">
+  <title>Gamjabot common costume QA</title>
+  <defs>
+    <pattern id="checker" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#f1f1f1" />
+      <rect width="8" height="8" fill="#d8d8d8" />
+      <rect x="8" y="8" width="8" height="8" fill="#d8d8d8" />
+    </pattern>
+    <style>
+      text { font-family: "Segoe UI", sans-serif; fill: #f4f4f5; }
+      .section-label { font-size: 10px; fill: #aeb2c0; letter-spacing: 1px; }
+      .id { font: 700 15px Consolas, monospace; fill: #7fd7ff; }
+      .name { font-size: 17px; font-weight: 700; }
+      .meta { font: 12px Consolas, monospace; fill: #ffcf53; }
+      .bounds { font: 11px Consolas, monospace; fill: #aeb2c0; }
+      .clear { font: 11px Consolas, monospace; fill: #7ee2a8; }
+      .warning { font: 11px Consolas, monospace; fill: #ff7f8c; }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#17181c" />
+
+    <g class="costume-cell" data-id="common_001" data-qa-state="accepted">
+      <rect x="4" y="4" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="25" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="34" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_001.png" x="12" y="34" width="256" height="256" />
+      <text x="300" y="25" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="48" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="48" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_001.png" x="27" y="-13" width="75" height="75" />
+      </svg>
+      <text x="16" y="316" class="id">common_001</text>
+      <text x="16" y="340" class="name"><title>새벽 우편모</title>새벽 우편모</text>
+      <text x="16" y="362" class="meta">COMMON · head · accepted</text>
+      <text x="16" y="380" class="meta">x 11 · y -37 · size 75</text>
+      <text x="16" y="398" class="bounds">source L16 T47 R239 B208</text>
+      <text x="16" y="416" class="bounds">worn L16 T-23 R81 B24</text>
+      <text x="16" y="434" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_002" data-qa-state="accepted">
+      <rect x="428" y="4" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="25" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="34" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_002.png" x="436" y="34" width="256" height="256" />
+      <text x="724" y="25" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="48" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="48" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_002.png" x="22" y="-18" width="84" height="84" />
+      </svg>
+      <text x="440" y="316" class="id">common_002</text>
+      <text x="440" y="340" class="name"><title>아침 신문접이모</title>아침 신문접이모</text>
+      <text x="440" y="362" class="meta">COMMON · head · accepted</text>
+      <text x="440" y="380" class="meta">x 6 · y -42 · size 84</text>
+      <text x="440" y="398" class="bounds">source L16 T55 R239 B199</text>
+      <text x="440" y="416" class="bounds">worn L11 T-24 R85 B24</text>
+      <text x="440" y="434" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_003" data-qa-state="accepted">
+      <rect x="852" y="4" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="25" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="34" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_003.png" x="860" y="34" width="256" height="256" />
+      <text x="1148" y="25" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="48" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="48" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_003.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="864" y="316" class="id">common_003</text>
+      <text x="864" y="340" class="name"><title>찻집 보온두건</title>찻집 보온두건</text>
+      <text x="864" y="362" class="meta">COMMON · head · accepted</text>
+      <text x="864" y="380" class="meta">x 21 · y -27 · size 54</text>
+      <text x="864" y="398" class="bounds">source L34 T16 R220 B239</text>
+      <text x="864" y="416" class="bounds">worn L28 T-24 R68 B24</text>
+      <text x="864" y="434" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_004" data-qa-state="accepted">
+      <rect x="1276" y="4" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="25" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="34" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_004.png" x="1284" y="34" width="256" height="256" />
+      <text x="1572" y="25" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="48" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="48" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_004.png" x="25" y="-15" width="78" height="78" />
+      </svg>
+      <text x="1288" y="316" class="id">common_004</text>
+      <text x="1288" y="340" class="name"><title>빨래집게 햇차양</title>빨래집게 햇차양</text>
+      <text x="1288" y="362" class="meta">COMMON · head · accepted</text>
+      <text x="1288" y="380" class="meta">x 9 · y -39 · size 78</text>
+      <text x="1288" y="398" class="bounds">source L16 T49 R239 B205</text>
+      <text x="1288" y="416" class="bounds">worn L14 T-24 R82 B24</text>
+      <text x="1288" y="434" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_005" data-qa-state="accepted">
+      <rect x="4" y="452" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="473" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="482" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_005.png" x="12" y="482" width="256" height="256" />
+      <text x="300" y="473" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="496" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="496" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_005.png" x="31" y="-9" width="67" height="67" />
+      </svg>
+      <text x="16" y="764" class="id">common_005</text>
+      <text x="16" y="788" class="name"><title>장보기 접이모</title>장보기 접이모</text>
+      <text x="16" y="810" class="meta">COMMON · head · accepted</text>
+      <text x="16" y="828" class="meta">x 15 · y -33 · size 67</text>
+      <text x="16" y="846" class="bounds">source L16 T37 R239 B217</text>
+      <text x="16" y="864" class="bounds">worn L19 T-23 R78 B24</text>
+      <text x="16" y="882" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_006" data-qa-state="accepted">
+      <rect x="428" y="452" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="473" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="482" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_006.png" x="436" y="482" width="256" height="256" />
+      <text x="724" y="473" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="496" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="496" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_006.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="440" y="764" class="id">common_006</text>
+      <text x="440" y="788" class="name"><title>벽난로 재받이 후드</title>벽난로 재받이 후드</text>
+      <text x="440" y="810" class="meta">COMMON · head · accepted</text>
+      <text x="440" y="828" class="meta">x 21 · y -27 · size 54</text>
+      <text x="440" y="846" class="bounds">source L28 T16 R226 B239</text>
+      <text x="440" y="864" class="bounds">worn L27 T-24 R69 B24</text>
+      <text x="440" y="882" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_007" data-qa-state="accepted">
+      <rect x="852" y="452" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="473" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="482" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_007.png" x="860" y="482" width="256" height="256" />
+      <text x="1148" y="473" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="496" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="496" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_007.png" x="36" y="-4" width="57" height="57" />
+      </svg>
+      <text x="864" y="764" class="id">common_007</text>
+      <text x="864" y="788" class="name"><title>물뿌리개 손잡이캡</title>물뿌리개 손잡이캡</text>
+      <text x="864" y="810" class="meta">COMMON · head · accepted</text>
+      <text x="864" y="828" class="meta">x 20 · y -28 · size 57</text>
+      <text x="864" y="846" class="bounds">source L16 T20 R239 B234</text>
+      <text x="864" y="864" class="bounds">worn L24 T-24 R73 B24</text>
+      <text x="864" y="882" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_008" data-qa-state="accepted">
+      <rect x="1276" y="452" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="473" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="482" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_008.png" x="1284" y="482" width="256" height="256" />
+      <text x="1572" y="473" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="496" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="496" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_008.png" x="35" y="-5" width="59" height="59" />
+      </svg>
+      <text x="1288" y="764" class="id">common_008</text>
+      <text x="1288" y="788" class="name"><title>열쇠지기 고리모</title>열쇠지기 고리모</text>
+      <text x="1288" y="810" class="meta">COMMON · head · accepted</text>
+      <text x="1288" y="828" class="meta">x 19 · y -29 · size 59</text>
+      <text x="1288" y="846" class="bounds">source L16 T24 R239 B231</text>
+      <text x="1288" y="864" class="bounds">worn L23 T-23 R74 B24</text>
+      <text x="1288" y="882" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_009" data-qa-state="accepted">
+      <rect x="4" y="900" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="921" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="930" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_009.png" x="12" y="930" width="256" height="256" />
+      <text x="300" y="921" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="944" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="944" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_009.png" x="31" y="-9" width="66" height="66" />
+      </svg>
+      <text x="16" y="1212" class="id">common_009</text>
+      <text x="16" y="1236" class="name"><title>도자기 찻잔모</title>도자기 찻잔모</text>
+      <text x="16" y="1258" class="meta">COMMON · head · accepted</text>
+      <text x="16" y="1276" class="meta">x 15 · y -33 · size 66</text>
+      <text x="16" y="1294" class="bounds">source L16 T35 R239 B219</text>
+      <text x="16" y="1312" class="bounds">worn L19 T-24 R77 B24</text>
+      <text x="16" y="1330" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_010" data-qa-state="accepted">
+      <rect x="428" y="900" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="921" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="930" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_010.png" x="436" y="930" width="256" height="256" />
+      <text x="724" y="921" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="944" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="944" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_010.png" x="13" y="-25" width="102" height="102" />
+      </svg>
+      <text x="440" y="1212" class="id">common_010</text>
+      <text x="440" y="1236" class="name"><title>빗자루 솔챙모</title>빗자루 솔챙모</text>
+      <text x="440" y="1258" class="meta">COMMON · head · accepted</text>
+      <text x="440" y="1276" class="meta">x -3 · y -49 · size 102</text>
+      <text x="440" y="1294" class="bounds">source L16 T72 R239 B183</text>
+      <text x="440" y="1312" class="bounds">worn L3 T-20 R93 B24</text>
+      <text x="440" y="1330" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_011" data-qa-state="accepted">
+      <rect x="852" y="900" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="921" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="930" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_011.png" x="860" y="930" width="256" height="256" />
+      <text x="1148" y="921" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="944" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="944" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_011.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="864" y="1212" class="id">common_011</text>
+      <text x="864" y="1236" class="name"><title>등잔 심지모</title>등잔 심지모</text>
+      <text x="864" y="1258" class="meta">COMMON · head · accepted</text>
+      <text x="864" y="1276" class="meta">x 21 · y -27 · size 54</text>
+      <text x="864" y="1294" class="bounds">source L39 T16 R215 B239</text>
+      <text x="864" y="1312" class="bounds">worn L29 T-24 R67 B24</text>
+      <text x="864" y="1330" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_012" data-qa-state="accepted">
+      <rect x="1276" y="900" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="921" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="930" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_012.png" x="1284" y="930" width="256" height="256" />
+      <text x="1572" y="921" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="944" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="944" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_012.png" x="16" y="13" width="96" height="96" />
+      </svg>
+      <text x="1288" y="1212" class="id">common_012</text>
+      <text x="1288" y="1236" class="name"><title>바느질 눈금안경</title>바느질 눈금안경</text>
+      <text x="1288" y="1258" class="meta">COMMON · face · accepted</text>
+      <text x="1288" y="1276" class="meta">x 0 · y -11 · size 96</text>
+      <text x="1288" y="1294" class="bounds">source L16 T75 R239 B180</text>
+      <text x="1288" y="1312" class="bounds">worn L6 T17 R90 B57</text>
+      <text x="1288" y="1330" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_013" data-qa-state="accepted">
+      <rect x="4" y="1348" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="1369" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="1378" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_013.png" x="12" y="1378" width="256" height="256" />
+      <text x="300" y="1369" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="1392" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="1392" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_013.png" x="19" y="16" width="91" height="91" />
+      </svg>
+      <text x="16" y="1660" class="id">common_013</text>
+      <text x="16" y="1684" class="name"><title>양념갈이 코받이안경</title>양념갈이 코받이안경</text>
+      <text x="16" y="1706" class="meta">COMMON · face · accepted</text>
+      <text x="16" y="1724" class="meta">x 3 · y -8 · size 91</text>
+      <text x="16" y="1742" class="bounds">source L16 T72 R239 B183</text>
+      <text x="16" y="1760" class="bounds">worn L9 T18 R88 B57</text>
+      <text x="16" y="1778" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_014" data-qa-state="accepted">
+      <rect x="428" y="1348" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="1369" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="1378" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_014.png" x="436" y="1378" width="256" height="256" />
+      <text x="724" y="1369" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="1392" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="1392" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_014.png" x="29" y="26" width="70" height="70" />
+      </svg>
+      <text x="440" y="1660" class="id">common_014</text>
+      <text x="440" y="1684" class="name"><title>창닦이 물방울고글</title>창닦이 물방울고글</text>
+      <text x="440" y="1706" class="meta">COMMON · face · accepted</text>
+      <text x="440" y="1724" class="meta">x 13 · y 2 · size 70</text>
+      <text x="440" y="1742" class="bounds">source L16 T55 R239 B200</text>
+      <text x="440" y="1760" class="bounds">worn L17 T17 R79 B57</text>
+      <text x="440" y="1778" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_015" data-qa-state="accepted">
+      <rect x="852" y="1348" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="1369" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="1378" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_015.png" x="860" y="1378" width="256" height="256" />
+      <text x="1148" y="1369" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="1392" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="1392" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_015.png" x="30" y="72" width="69" height="69" />
+      </svg>
+      <text x="864" y="1660" class="id">common_015</text>
+      <text x="864" y="1684" class="name"><title>식탁보 접이칼라</title>식탁보 접이칼라</text>
+      <text x="864" y="1706" class="meta">COMMON · neck · accepted</text>
+      <text x="864" y="1724" class="meta">x 14 · y 48 · size 69</text>
+      <text x="864" y="1742" class="bounds">source L16 T46 R239 B208</text>
+      <text x="864" y="1760" class="bounds">worn L18 T60 R79 B104</text>
+      <text x="864" y="1778" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_016" data-qa-state="accepted">
+      <rect x="1276" y="1348" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="1369" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="1378" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_016.png" x="1284" y="1378" width="256" height="256" />
+      <text x="1572" y="1369" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="1392" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="1392" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_016.png" x="39" y="81" width="50" height="50" />
+      </svg>
+      <text x="1288" y="1660" class="id">common_016</text>
+      <text x="1288" y="1684" class="name"><title>찬장 열쇠목도리</title>찬장 열쇠목도리</text>
+      <text x="1288" y="1706" class="meta">COMMON · neck · accepted</text>
+      <text x="1288" y="1724" class="meta">x 23 · y 57 · size 50</text>
+      <text x="1288" y="1742" class="bounds">source L65 T16 R190 B239</text>
+      <text x="1288" y="1760" class="bounds">worn L36 T60 R60 B104</text>
+      <text x="1288" y="1778" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_017" data-qa-state="accepted">
+      <rect x="4" y="1796" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="1817" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="1826" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_017.png" x="12" y="1826" width="256" height="256" />
+      <text x="300" y="1817" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="1840" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="1840" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_017.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="16" y="2108" class="id">common_017</text>
+      <text x="16" y="2132" class="name"><title>살림꾼 다용도앞치마</title>살림꾼 다용도앞치마</text>
+      <text x="16" y="2154" class="meta">COMMON · body · accepted</text>
+      <text x="16" y="2172" class="meta">x 19 · y 48 · size 59</text>
+      <text x="16" y="2190" class="bounds">source L45 T16 R209 B239</text>
+      <text x="16" y="2208" class="bounds">worn L29 T52 R67 B103</text>
+      <text x="16" y="2226" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_018" data-qa-state="accepted">
+      <rect x="428" y="1796" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="1817" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="1826" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_018.png" x="436" y="1826" width="256" height="256" />
+      <text x="724" y="1817" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="1840" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="1840" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_018.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="440" y="2108" class="id">common_018</text>
+      <text x="440" y="2132" class="name"><title>장보기 등바구니</title>장보기 등바구니</text>
+      <text x="440" y="2154" class="meta">COMMON · body · accepted</text>
+      <text x="440" y="2172" class="meta">x 19 · y 48 · size 59</text>
+      <text x="440" y="2190" class="bounds">source L23 T16 R231 B239</text>
+      <text x="440" y="2208" class="bounds">worn L24 T52 R72 B103</text>
+      <text x="440" y="2226" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_019" data-qa-state="accepted">
+      <rect x="852" y="1796" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="1817" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="1826" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_019.png" x="860" y="1826" width="256" height="256" />
+      <text x="1148" y="1817" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="1840" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="1840" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_019.png" x="34" y="72" width="60" height="60" />
+      </svg>
+      <text x="864" y="2108" class="id">common_019</text>
+      <text x="864" y="2132" class="name"><title>뜨개 물주머니조끼</title>뜨개 물주머니조끼</text>
+      <text x="864" y="2154" class="meta">COMMON · body · accepted</text>
+      <text x="864" y="2172" class="meta">x 18 · y 48 · size 60</text>
+      <text x="864" y="2190" class="bounds">source L16 T18 R239 B236</text>
+      <text x="864" y="2208" class="bounds">worn L22 T52 R74 B104</text>
+      <text x="864" y="2226" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_020" data-qa-state="accepted">
+      <rect x="1276" y="1796" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="1817" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="1826" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_020.png" x="1284" y="1826" width="256" height="256" />
+      <text x="1572" y="1817" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="1840" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="1840" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_020.png" x="34" y="72" width="60" height="60" />
+      </svg>
+      <text x="1288" y="2108" class="id">common_020</text>
+      <text x="1288" y="2132" class="name"><title>빗물받이 층단망토</title>빗물받이 층단망토</text>
+      <text x="1288" y="2154" class="meta">COMMON · body · accepted</text>
+      <text x="1288" y="2172" class="meta">x 18 · y 48 · size 60</text>
+      <text x="1288" y="2190" class="bounds">source L16 T18 R239 B237</text>
+      <text x="1288" y="2208" class="bounds">worn L22 T52 R74 B104</text>
+      <text x="1288" y="2226" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_021" data-qa-state="accepted">
+      <rect x="4" y="2244" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="2265" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="2274" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_021.png" x="12" y="2274" width="256" height="256" />
+      <text x="300" y="2265" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="2288" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="2288" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_021.png" x="17" y="-23" width="94" height="94" />
+      </svg>
+      <text x="16" y="2556" class="id">common_021</text>
+      <text x="16" y="2580" class="name"><title>철도원 납작모</title>철도원 납작모</text>
+      <text x="16" y="2602" class="meta">COMMON · head · accepted</text>
+      <text x="16" y="2620" class="meta">x 1 · y -47 · size 94</text>
+      <text x="16" y="2638" class="bounds">source L16 T63 R239 B192</text>
+      <text x="16" y="2656" class="bounds">worn L7 T-24 R89 B24</text>
+      <text x="16" y="2674" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_022" data-qa-state="accepted">
+      <rect x="428" y="2244" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="2265" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="2274" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_022.png" x="436" y="2274" width="256" height="256" />
+      <text x="724" y="2265" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="2288" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="2288" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_022.png" x="25" y="-15" width="79" height="79" />
+      </svg>
+      <text x="440" y="2556" class="id">common_022</text>
+      <text x="440" y="2580" class="name"><title>목수 자투리챙모</title>목수 자투리챙모</text>
+      <text x="440" y="2602" class="meta">COMMON · head · accepted</text>
+      <text x="440" y="2620" class="meta">x 9 · y -39 · size 79</text>
+      <text x="440" y="2638" class="bounds">source L16 T50 R239 B204</text>
+      <text x="440" y="2656" class="bounds">worn L14 T-24 R83 B24</text>
+      <text x="440" y="2674" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_023" data-qa-state="accepted">
+      <rect x="852" y="2244" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="2265" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="2274" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_023.png" x="860" y="2274" width="256" height="256" />
+      <text x="1148" y="2265" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="2288" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="2288" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_023.png" x="32" y="-8" width="64" height="64" />
+      </svg>
+      <text x="864" y="2556" class="id">common_023</text>
+      <text x="864" y="2580" class="name"><title>제빵사 봉긋모</title>제빵사 봉긋모</text>
+      <text x="864" y="2602" class="meta">COMMON · head · accepted</text>
+      <text x="864" y="2620" class="meta">x 16 · y -32 · size 64</text>
+      <text x="864" y="2638" class="bounds">source L16 T32 R239 B222</text>
+      <text x="864" y="2656" class="bounds">worn L20 T-24 R76 B24</text>
+      <text x="864" y="2674" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_024" data-qa-state="accepted">
+      <rect x="1276" y="2244" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="2265" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="2274" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_024.png" x="1284" y="2274" width="256" height="256" />
+      <text x="1572" y="2265" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="2288" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="2288" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_024.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="1288" y="2556" class="id">common_024</text>
+      <text x="1288" y="2580" class="name"><title>어부 그물두건</title>어부 그물두건</text>
+      <text x="1288" y="2602" class="meta">COMMON · head · accepted</text>
+      <text x="1288" y="2620" class="meta">x 21 · y -27 · size 54</text>
+      <text x="1288" y="2638" class="bounds">source L19 T16 R235 B239</text>
+      <text x="1288" y="2656" class="bounds">worn L25 T-24 R71 B24</text>
+      <text x="1288" y="2674" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_025" data-qa-state="accepted">
+      <rect x="4" y="2692" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="2713" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="2722" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_025.png" x="12" y="2722" width="256" height="256" />
+      <text x="300" y="2713" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="2736" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="2736" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_025.png" x="32" y="-8" width="65" height="65" />
+      </svg>
+      <text x="16" y="3004" class="id">common_025</text>
+      <text x="16" y="3028" class="name"><title>분류실 봉투모</title>분류실 봉투모</text>
+      <text x="16" y="3050" class="meta">COMMON · head · accepted</text>
+      <text x="16" y="3068" class="meta">x 16 · y -32 · size 65</text>
+      <text x="16" y="3086" class="bounds">source L16 T34 R239 B221</text>
+      <text x="16" y="3104" class="bounds">worn L20 T-23 R77 B24</text>
+      <text x="16" y="3122" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_026" data-qa-state="accepted">
+      <rect x="428" y="2692" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="2713" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="2722" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_026.png" x="436" y="2722" width="256" height="256" />
+      <text x="724" y="2713" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="2736" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="2736" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_026.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="440" y="3004" class="id">common_026</text>
+      <text x="440" y="3028" class="name"><title>등대지기 방풍모</title>등대지기 방풍모</text>
+      <text x="440" y="3050" class="meta">COMMON · head · accepted</text>
+      <text x="440" y="3068" class="meta">x 21 · y -27 · size 54</text>
+      <text x="440" y="3086" class="bounds">source L16 T16 R239 B239</text>
+      <text x="440" y="3104" class="bounds">worn L24 T-24 R72 B24</text>
+      <text x="440" y="3122" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_027" data-qa-state="accepted">
+      <rect x="852" y="2692" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="2713" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="2722" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_027.png" x="860" y="2722" width="256" height="256" />
+      <text x="1148" y="2713" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="2736" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="2736" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_027.png" x="21" y="-19" width="86" height="86" />
+      </svg>
+      <text x="864" y="3004" class="id">common_027</text>
+      <text x="864" y="3028" class="name"><title>도서관 먼지털이모</title>도서관 먼지털이모</text>
+      <text x="864" y="3050" class="meta">COMMON · head · accepted</text>
+      <text x="864" y="3068" class="meta">x 5 · y -43 · size 86</text>
+      <text x="864" y="3086" class="bounds">source L16 T57 R239 B198</text>
+      <text x="864" y="3104" class="bounds">worn L10 T-24 R86 B24</text>
+      <text x="864" y="3122" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_028" data-qa-state="accepted">
+      <rect x="1276" y="2692" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="2713" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="2722" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_028.png" x="1284" y="2722" width="256" height="256" />
+      <text x="1572" y="2713" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="2736" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="2736" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_028.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="1288" y="3004" class="id">common_028</text>
+      <text x="1288" y="3028" class="name"><title>도예가 흙막이후드</title>도예가 흙막이후드</text>
+      <text x="1288" y="3050" class="meta">COMMON · head · accepted</text>
+      <text x="1288" y="3068" class="meta">x 21 · y -27 · size 54</text>
+      <text x="1288" y="3086" class="bounds">source L30 T16 R225 B239</text>
+      <text x="1288" y="3104" class="bounds">worn L27 T-24 R69 B24</text>
+      <text x="1288" y="3122" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_029" data-qa-state="accepted">
+      <rect x="4" y="3140" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="3161" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="3170" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_029.png" x="12" y="3170" width="256" height="256" />
+      <text x="300" y="3161" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="3184" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="3184" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_029.png" x="27" y="-13" width="74" height="74" />
+      </svg>
+      <text x="16" y="3452" class="id">common_029</text>
+      <text x="16" y="3476" class="name"><title>정비공 볼트캡</title>정비공 볼트캡</text>
+      <text x="16" y="3498" class="meta">COMMON · head · accepted</text>
+      <text x="16" y="3516" class="meta">x 11 · y -37 · size 74</text>
+      <text x="16" y="3534" class="bounds">source L16 T45 R239 B210</text>
+      <text x="16" y="3552" class="bounds">worn L16 T-24 R80 B24</text>
+      <text x="16" y="3570" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_030" data-qa-state="accepted">
+      <rect x="428" y="3140" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="3161" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="3170" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_030.png" x="436" y="3170" width="256" height="256" />
+      <text x="724" y="3161" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="3184" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="3184" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_030.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="440" y="3452" class="id">common_030</text>
+      <text x="440" y="3476" class="name"><title>꽃집 리본보닛</title>꽃집 리본보닛</text>
+      <text x="440" y="3498" class="meta">COMMON · head · accepted</text>
+      <text x="440" y="3516" class="meta">x 21 · y -27 · size 54</text>
+      <text x="440" y="3534" class="bounds">source L29 T16 R226 B239</text>
+      <text x="440" y="3552" class="bounds">worn L27 T-24 R69 B24</text>
+      <text x="440" y="3570" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_031" data-qa-state="accepted">
+      <rect x="852" y="3140" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="3161" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="3170" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_031.png" x="860" y="3170" width="256" height="256" />
+      <text x="1148" y="3161" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="3184" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="3184" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_031.png" x="36" y="-4" width="56" height="56" />
+      </svg>
+      <text x="864" y="3452" class="id">common_031</text>
+      <text x="864" y="3476" class="name"><title>굴착부 랜턴모</title>굴착부 랜턴모</text>
+      <text x="864" y="3498" class="meta">COMMON · head · accepted</text>
+      <text x="864" y="3516" class="meta">x 20 · y -28 · size 56</text>
+      <text x="864" y="3534" class="bounds">source L16 T19 R239 B235</text>
+      <text x="864" y="3552" class="bounds">worn L24 T-24 R73 B24</text>
+      <text x="864" y="3570" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_032" data-qa-state="accepted">
+      <rect x="1276" y="3140" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="3161" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="3170" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_032.png" x="1284" y="3170" width="256" height="256" />
+      <text x="1572" y="3161" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="3184" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="3184" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_032.png" x="13" y="10" width="102" height="102" />
+      </svg>
+      <text x="1288" y="3452" class="id">common_032</text>
+      <text x="1288" y="3476" class="name"><title>제도사 사각안경</title>제도사 사각안경</text>
+      <text x="1288" y="3498" class="meta">COMMON · face · accepted</text>
+      <text x="1288" y="3516" class="meta">x -3 · y -14 · size 102</text>
+      <text x="1288" y="3534" class="bounds">source L16 T80 R239 B175</text>
+      <text x="1288" y="3552" class="bounds">worn L3 T18 R93 B56</text>
+      <text x="1288" y="3570" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_033" data-qa-state="accepted">
+      <rect x="4" y="3588" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="3609" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="3618" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_033.png" x="12" y="3618" width="256" height="256" />
+      <text x="300" y="3609" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="3632" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="3632" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_033.png" x="27" y="24" width="75" height="75" />
+      </svg>
+      <text x="16" y="3900" class="id">common_033</text>
+      <text x="16" y="3924" class="name"><title>용접공 틈빛보안경</title>용접공 틈빛보안경</text>
+      <text x="16" y="3946" class="meta">COMMON · face · accepted</text>
+      <text x="16" y="3964" class="meta">x 11 · y 0 · size 75</text>
+      <text x="16" y="3982" class="bounds">source L16 T60 R239 B194</text>
+      <text x="16" y="4000" class="bounds">worn L16 T18 R81 B57</text>
+      <text x="16" y="4018" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_034" data-qa-state="accepted">
+      <rect x="428" y="3588" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="3609" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="3618" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_034.png" x="436" y="3618" width="256" height="256" />
+      <text x="724" y="3609" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="3632" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="3632" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_034.png" x="40" y="37" width="48" height="48" />
+      </svg>
+      <text x="440" y="3900" class="id">common_034</text>
+      <text x="440" y="3924" class="name"><title>양봉가 짧은망사면</title>양봉가 짧은망사면</text>
+      <text x="440" y="3946" class="meta">COMMON · face · accepted</text>
+      <text x="440" y="3964" class="meta">x 24 · y 13 · size 48</text>
+      <text x="440" y="3982" class="bounds">source L16 T17 R239 B238</text>
+      <text x="440" y="4000" class="bounds">worn L27 T16 R69 B58</text>
+      <text x="440" y="4018" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_035" data-qa-state="accepted">
+      <rect x="852" y="3588" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="3609" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="3618" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_035.png" x="860" y="3618" width="256" height="256" />
+      <text x="1148" y="3609" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="3632" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="3632" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_035.png" x="38" y="80" width="52" height="52" />
+      </svg>
+      <text x="864" y="3900" class="id">common_035</text>
+      <text x="864" y="3924" class="name"><title>이발사 줄무늬목수건</title>이발사 줄무늬목수건</text>
+      <text x="864" y="3946" class="meta">COMMON · neck · accepted</text>
+      <text x="864" y="3964" class="meta">x 22 · y 56 · size 52</text>
+      <text x="864" y="3982" class="bounds">source L16 T20 R239 B234</text>
+      <text x="864" y="4000" class="bounds">worn L25 T60 R71 B104</text>
+      <text x="864" y="4018" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_036" data-qa-state="accepted">
+      <rect x="1276" y="3588" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="3609" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="3618" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_036.png" x="1284" y="3618" width="256" height="256" />
+      <text x="1572" y="3609" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="3632" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="3632" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_036.png" x="39" y="81" width="50" height="50" />
+      </svg>
+      <text x="1288" y="3900" class="id">common_036</text>
+      <text x="1288" y="3924" class="name"><title>시계공 렌즈펜던트</title>시계공 렌즈펜던트</text>
+      <text x="1288" y="3946" class="meta">COMMON · neck · accepted</text>
+      <text x="1288" y="3964" class="meta">x 23 · y 57 · size 50</text>
+      <text x="1288" y="3982" class="bounds">source L59 T16 R196 B239</text>
+      <text x="1288" y="4000" class="bounds">worn L35 T60 R61 B104</text>
+      <text x="1288" y="4018" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_037" data-qa-state="accepted">
+      <rect x="4" y="4036" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="4057" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="4066" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_037.png" x="12" y="4066" width="256" height="256" />
+      <text x="300" y="4057" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="4080" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="4080" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_037.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="16" y="4348" class="id">common_037</text>
+      <text x="16" y="4372" class="name"><title>목공소 연필앞치마</title>목공소 연필앞치마</text>
+      <text x="16" y="4394" class="meta">COMMON · body · accepted</text>
+      <text x="16" y="4412" class="meta">x 19 · y 48 · size 59</text>
+      <text x="16" y="4430" class="bounds">source L52 T16 R203 B239</text>
+      <text x="16" y="4448" class="bounds">worn L31 T52 R66 B103</text>
+      <text x="16" y="4466" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_038" data-qa-state="accepted">
+      <rect x="428" y="4036" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="4057" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="4066" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_038.png" x="436" y="4066" width="256" height="256" />
+      <text x="724" y="4057" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="4080" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="4080" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_038.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="440" y="4348" class="id">common_038</text>
+      <text x="440" y="4372" class="name"><title>항구 신호조끼</title>항구 신호조끼</text>
+      <text x="440" y="4394" class="meta">COMMON · body · accepted</text>
+      <text x="440" y="4412" class="meta">x 19 · y 48 · size 59</text>
+      <text x="440" y="4430" class="bounds">source L28 T16 R226 B239</text>
+      <text x="440" y="4448" class="bounds">worn L25 T52 R71 B103</text>
+      <text x="440" y="4466" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_039" data-qa-state="accepted">
+      <rect x="852" y="4036" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="4057" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="4066" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_039.png" x="860" y="4066" width="256" height="256" />
+      <text x="1148" y="4057" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="4080" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="4080" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_039.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="864" y="4348" class="id">common_039</text>
+      <text x="864" y="4372" class="name"><title>우유배달 병걸이멜빵</title>우유배달 병걸이멜빵</text>
+      <text x="864" y="4394" class="meta">COMMON · body · accepted</text>
+      <text x="864" y="4412" class="meta">x 19 · y 48 · size 59</text>
+      <text x="864" y="4430" class="bounds">source L78 T16 R177 B239</text>
+      <text x="864" y="4448" class="bounds">worn L37 T52 R60 B103</text>
+      <text x="864" y="4466" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_040" data-qa-state="accepted">
+      <rect x="1276" y="4036" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="4057" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="4066" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_040.png" x="1284" y="4066" width="256" height="256" />
+      <text x="1572" y="4057" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="4080" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="4080" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_040.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="1288" y="4348" class="id">common_040</text>
+      <text x="1288" y="4372" class="name"><title>인쇄공 잉크가운</title>인쇄공 잉크가운</text>
+      <text x="1288" y="4394" class="meta">COMMON · body · accepted</text>
+      <text x="1288" y="4412" class="meta">x 19 · y 48 · size 59</text>
+      <text x="1288" y="4430" class="bounds">source L49 T16 R206 B239</text>
+      <text x="1288" y="4448" class="bounds">worn L30 T52 R67 B103</text>
+      <text x="1288" y="4466" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_041" data-qa-state="accepted">
+      <rect x="4" y="4484" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="4505" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="4514" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_041.png" x="12" y="4514" width="256" height="256" />
+      <text x="300" y="4505" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="4528" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="4528" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_041.png" x="24" y="-16" width="80" height="80" />
+      </svg>
+      <text x="16" y="4796" class="id">common_041</text>
+      <text x="16" y="4820" class="name"><title>역참 접이중절모</title>역참 접이중절모</text>
+      <text x="16" y="4842" class="meta">COMMON · head · accepted</text>
+      <text x="16" y="4860" class="meta">x 8 · y -40 · size 80</text>
+      <text x="16" y="4878" class="bounds">source L16 T51 R239 B203</text>
+      <text x="16" y="4896" class="bounds">worn L13 T-24 R83 B24</text>
+      <text x="16" y="4914" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_042" data-qa-state="accepted">
+      <rect x="428" y="4484" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="4505" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="4514" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_042.png" x="436" y="4514" width="256" height="256" />
+      <text x="724" y="4505" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="4528" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="4528" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_042.png" x="22" y="-18" width="84" height="84" />
+      </svg>
+      <text x="440" y="4796" class="id">common_042</text>
+      <text x="440" y="4820" class="name"><title>산길 표지챙모</title>산길 표지챙모</text>
+      <text x="440" y="4842" class="meta">COMMON · head · accepted</text>
+      <text x="440" y="4860" class="meta">x 6 · y -42 · size 84</text>
+      <text x="440" y="4878" class="bounds">source L16 T55 R239 B199</text>
+      <text x="440" y="4896" class="bounds">worn L11 T-24 R85 B24</text>
+      <text x="440" y="4914" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_043" data-qa-state="accepted">
+      <rect x="852" y="4484" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="4505" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="4514" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_043.png" x="860" y="4514" width="256" height="256" />
+      <text x="1148" y="4505" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="4528" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="4528" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_043.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="864" y="4796" class="id">common_043</text>
+      <text x="864" y="4820" class="name"><title>강변 갈대갓</title>강변 갈대갓</text>
+      <text x="864" y="4842" class="meta">COMMON · head · accepted</text>
+      <text x="864" y="4860" class="meta">x 21 · y -27 · size 54</text>
+      <text x="864" y="4878" class="bounds">source L23 T16 R231 B239</text>
+      <text x="864" y="4896" class="bounds">worn L26 T-24 R70 B24</text>
+      <text x="864" y="4914" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_044" data-qa-state="accepted">
+      <rect x="1276" y="4484" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="4505" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="4514" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_044.png" x="1284" y="4514" width="256" height="256" />
+      <text x="1572" y="4505" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="4528" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="4528" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_044.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="1288" y="4796" class="id">common_044</text>
+      <text x="1288" y="4820" class="name"><title>사막 물병터번</title>사막 물병터번</text>
+      <text x="1288" y="4842" class="meta">COMMON · head · accepted</text>
+      <text x="1288" y="4860" class="meta">x 21 · y -27 · size 54</text>
+      <text x="1288" y="4878" class="bounds">source L36 T16 R218 B239</text>
+      <text x="1288" y="4896" class="bounds">worn L29 T-24 R67 B24</text>
+      <text x="1288" y="4914" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_045" data-qa-state="accepted">
+      <rect x="4" y="4932" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="4953" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="4962" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_045.png" x="12" y="4962" width="256" height="256" />
+      <text x="300" y="4953" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="4976" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="4976" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_045.png" x="35" y="-5" width="58" height="58" />
+      </svg>
+      <text x="16" y="5244" class="id">common_045</text>
+      <text x="16" y="5268" class="name"><title>숲길 나침반관</title>숲길 나침반관</text>
+      <text x="16" y="5290" class="meta">COMMON · head · accepted</text>
+      <text x="16" y="5308" class="meta">x 19 · y -29 · size 58</text>
+      <text x="16" y="5326" class="bounds">source L16 T23 R239 B231</text>
+      <text x="16" y="5344" class="bounds">worn L23 T-24 R73 B24</text>
+      <text x="16" y="5362" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_046" data-qa-state="accepted">
+      <rect x="428" y="4932" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="4953" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="4962" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_046.png" x="436" y="4962" width="256" height="256" />
+      <text x="724" y="4953" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="4976" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="4976" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_046.png" x="35" y="-5" width="59" height="59" />
+      </svg>
+      <text x="440" y="5244" class="id">common_046</text>
+      <text x="440" y="5268" class="name"><title>설원 덧댐모</title>설원 덧댐모</text>
+      <text x="440" y="5290" class="meta">COMMON · head · accepted</text>
+      <text x="440" y="5308" class="meta">x 19 · y -29 · size 59</text>
+      <text x="440" y="5326" class="bounds">source L16 T25 R239 B229</text>
+      <text x="440" y="5344" class="bounds">worn L23 T-23 R74 B24</text>
+      <text x="440" y="5362" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_047" data-qa-state="accepted">
+      <rect x="852" y="4932" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="4953" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="4962" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_047.png" x="860" y="4962" width="256" height="256" />
+      <text x="1148" y="4953" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="4976" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="4976" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_047.png" x="31" y="-9" width="66" height="66" />
+      </svg>
+      <text x="864" y="5244" class="id">common_047</text>
+      <text x="864" y="5268" class="name"><title>해안 조개머리띠</title>해안 조개머리띠</text>
+      <text x="864" y="5290" class="meta">COMMON · head · accepted</text>
+      <text x="864" y="5308" class="meta">x 15 · y -33 · size 66</text>
+      <text x="864" y="5326" class="bounds">source L16 T35 R239 B219</text>
+      <text x="864" y="5344" class="bounds">worn L19 T-24 R77 B24</text>
+      <text x="864" y="5362" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_048" data-qa-state="accepted">
+      <rect x="1276" y="4932" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="4953" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="4962" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_048.png" x="1284" y="4962" width="256" height="256" />
+      <text x="1572" y="4953" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="4976" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="4976" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_048.png" x="33" y="-7" width="63" height="63" />
+      </svg>
+      <text x="1288" y="5244" class="id">common_048</text>
+      <text x="1288" y="5268" class="name"><title>기차표 둥근모</title>기차표 둥근모</text>
+      <text x="1288" y="5290" class="meta">COMMON · head · accepted</text>
+      <text x="1288" y="5308" class="meta">x 17 · y -31 · size 63</text>
+      <text x="1288" y="5326" class="bounds">source L16 T31 R239 B224</text>
+      <text x="1288" y="5344" class="bounds">worn L21 T-23 R76 B24</text>
+      <text x="1288" y="5362" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_049" data-qa-state="accepted">
+      <rect x="4" y="5380" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="5401" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="5410" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_049.png" x="12" y="5410" width="256" height="256" />
+      <text x="300" y="5401" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="5424" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="5424" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_049.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="16" y="5692" class="id">common_049</text>
+      <text x="16" y="5716" class="name"><title>야영 불씨망건</title>야영 불씨망건</text>
+      <text x="16" y="5738" class="meta">COMMON · head · accepted</text>
+      <text x="16" y="5756" class="meta">x 21 · y -27 · size 54</text>
+      <text x="16" y="5774" class="bounds">source L21 T16 R234 B239</text>
+      <text x="16" y="5792" class="bounds">worn L25 T-24 R71 B24</text>
+      <text x="16" y="5810" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_050" data-qa-state="accepted">
+      <rect x="428" y="5380" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="5401" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="5410" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_050.png" x="436" y="5410" width="256" height="256" />
+      <text x="724" y="5401" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="5424" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="5424" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_050.png" x="29" y="-11" width="71" height="71" />
+      </svg>
+      <text x="440" y="5692" class="id">common_050</text>
+      <text x="440" y="5716" class="name"><title>지도꾼 두루마리모</title>지도꾼 두루마리모</text>
+      <text x="440" y="5738" class="meta">COMMON · head · accepted</text>
+      <text x="440" y="5756" class="meta">x 13 · y -35 · size 71</text>
+      <text x="440" y="5774" class="bounds">source L16 T42 R239 B213</text>
+      <text x="440" y="5792" class="bounds">worn L17 T-23 R80 B24</text>
+      <text x="440" y="5810" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_051" data-qa-state="accepted">
+      <rect x="852" y="5380" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="5401" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="5410" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_051.png" x="860" y="5410" width="256" height="256" />
+      <text x="1148" y="5401" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="5424" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="5424" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_051.png" x="28" y="-12" width="72" height="72" />
+      </svg>
+      <text x="864" y="5692" class="id">common_051</text>
+      <text x="864" y="5716" class="name"><title>돌길 먼지막이모</title>돌길 먼지막이모</text>
+      <text x="864" y="5738" class="meta">COMMON · head · accepted</text>
+      <text x="864" y="5756" class="meta">x 12 · y -36 · size 72</text>
+      <text x="864" y="5774" class="bounds">source L16 T43 R239 B211</text>
+      <text x="864" y="5792" class="bounds">worn L17 T-24 R80 B24</text>
+      <text x="864" y="5810" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_052" data-qa-state="accepted">
+      <rect x="1276" y="5380" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="5401" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="5410" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_052.png" x="1284" y="5410" width="256" height="256" />
+      <text x="1572" y="5401" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="5424" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="5424" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_052.png" x="15" y="12" width="98" height="98" />
+      </svg>
+      <text x="1288" y="5692" class="id">common_052</text>
+      <text x="1288" y="5716" class="name"><title>노을빛 길안경</title>노을빛 길안경</text>
+      <text x="1288" y="5738" class="meta">COMMON · face · accepted</text>
+      <text x="1288" y="5756" class="meta">x -1 · y -12 · size 98</text>
+      <text x="1288" y="5774" class="bounds">source L16 T76 R239 B179</text>
+      <text x="1288" y="5792" class="bounds">worn L5 T17 R91 B57</text>
+      <text x="1288" y="5810" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_053" data-qa-state="accepted">
+      <rect x="4" y="5828" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="5849" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="5858" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_053.png" x="12" y="5858" width="256" height="256" />
+      <text x="300" y="5849" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="5872" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="5872" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_053.png" x="23" y="20" width="83" height="83" />
+      </svg>
+      <text x="16" y="6140" class="id">common_053</text>
+      <text x="16" y="6164" class="name"><title>안개길 삼중고글</title>안개길 삼중고글</text>
+      <text x="16" y="6186" class="meta">COMMON · face · accepted</text>
+      <text x="16" y="6204" class="meta">x 7 · y -4 · size 83</text>
+      <text x="16" y="6222" class="bounds">source L16 T67 R239 B188</text>
+      <text x="16" y="6240" class="bounds">worn L12 T18 R85 B57</text>
+      <text x="16" y="6258" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_054" data-qa-state="accepted">
+      <rect x="428" y="5828" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="5849" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="5858" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_054.png" x="436" y="5858" width="256" height="256" />
+      <text x="724" y="5849" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="5872" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="5872" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_054.png" x="40" y="37" width="48" height="48" />
+      </svg>
+      <text x="440" y="6140" class="id">common_054</text>
+      <text x="440" y="6164" class="name"><title>모래바람 마름모가리개</title>모래바람 마름모가리개</text>
+      <text x="440" y="6186" class="meta">COMMON · face · accepted</text>
+      <text x="440" y="6204" class="meta">x 24 · y 13 · size 48</text>
+      <text x="440" y="6222" class="bounds">source L16 T18 R239 B237</text>
+      <text x="440" y="6240" class="bounds">worn L27 T16 R69 B58</text>
+      <text x="440" y="6258" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_055" data-qa-state="accepted">
+      <rect x="852" y="5828" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="5849" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="5858" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_055.png" x="860" y="5858" width="256" height="256" />
+      <text x="1148" y="5849" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="5872" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="5872" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_055.png" x="39" y="81" width="50" height="50" />
+      </svg>
+      <text x="864" y="6140" class="id">common_055</text>
+      <text x="864" y="6164" class="name"><title>여관 열쇠목걸이</title>여관 열쇠목걸이</text>
+      <text x="864" y="6186" class="meta">COMMON · neck · accepted</text>
+      <text x="864" y="6204" class="meta">x 23 · y 57 · size 50</text>
+      <text x="864" y="6222" class="bounds">source L58 T16 R197 B239</text>
+      <text x="864" y="6240" class="bounds">worn L34 T60 R62 B104</text>
+      <text x="864" y="6258" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_056" data-qa-state="accepted">
+      <rect x="1276" y="5828" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="5849" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="5858" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_056.png" x="1284" y="5858" width="256" height="256" />
+      <text x="1572" y="5849" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="5872" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="5872" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_056.png" x="25" y="67" width="78" height="78" />
+      </svg>
+      <text x="1288" y="6140" class="id">common_056</text>
+      <text x="1288" y="6164" class="name"><title>지도 부채칼라</title>지도 부채칼라</text>
+      <text x="1288" y="6186" class="meta">COMMON · neck · accepted</text>
+      <text x="1288" y="6204" class="meta">x 9 · y 43 · size 78</text>
+      <text x="1288" y="6222" class="bounds">source L16 T56 R239 B198</text>
+      <text x="1288" y="6240" class="bounds">worn L14 T60 R82 B104</text>
+      <text x="1288" y="6258" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_057" data-qa-state="accepted">
+      <rect x="4" y="6276" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="6297" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="6306" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_057.png" x="12" y="6306" width="256" height="256" />
+      <text x="300" y="6297" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="6320" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="6320" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_057.png" x="39" y="81" width="50" height="50" />
+      </svg>
+      <text x="16" y="6588" class="id">common_057</text>
+      <text x="16" y="6612" class="name"><title>항로 표식케이프칼라</title>항로 표식케이프칼라</text>
+      <text x="16" y="6634" class="meta">COMMON · neck · accepted</text>
+      <text x="16" y="6652" class="meta">x 23 · y 57 · size 50</text>
+      <text x="16" y="6670" class="bounds">source L17 T16 R238 B239</text>
+      <text x="16" y="6688" class="bounds">worn L26 T60 R70 B104</text>
+      <text x="16" y="6706" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_058" data-qa-state="accepted">
+      <rect x="428" y="6276" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="6297" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="6306" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_058.png" x="436" y="6306" width="256" height="256" />
+      <text x="724" y="6297" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="6320" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="6320" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_058.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="440" y="6588" class="id">common_058</text>
+      <text x="440" y="6612" class="name"><title>하루길 납작배낭</title>하루길 납작배낭</text>
+      <text x="440" y="6634" class="meta">COMMON · body · accepted</text>
+      <text x="440" y="6652" class="meta">x 19 · y 48 · size 59</text>
+      <text x="440" y="6670" class="bounds">source L44 T16 R210 B239</text>
+      <text x="440" y="6688" class="bounds">worn L29 T52 R68 B103</text>
+      <text x="440" y="6706" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_059" data-qa-state="accepted">
+      <rect x="852" y="6276" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="6297" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="6306" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_059.png" x="860" y="6306" width="256" height="256" />
+      <text x="1148" y="6297" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="6320" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="6320" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_059.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="864" y="6588" class="id">common_059</text>
+      <text x="864" y="6612" class="name"><title>야영 담요판초</title>야영 담요판초</text>
+      <text x="864" y="6634" class="meta">COMMON · body · accepted</text>
+      <text x="864" y="6652" class="meta">x 19 · y 48 · size 59</text>
+      <text x="864" y="6670" class="bounds">source L23 T16 R231 B239</text>
+      <text x="864" y="6688" class="bounds">worn L24 T52 R72 B103</text>
+      <text x="864" y="6706" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_060" data-qa-state="accepted">
+      <rect x="1276" y="6276" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="6297" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="6306" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_060.png" x="1284" y="6306" width="256" height="256" />
+      <text x="1572" y="6297" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="6320" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="6320" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_060.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="1288" y="6588" class="id">common_060</text>
+      <text x="1288" y="6612" class="name"><title>나룻배 방수조끼</title>나룻배 방수조끼</text>
+      <text x="1288" y="6634" class="meta">COMMON · body · accepted</text>
+      <text x="1288" y="6652" class="meta">x 19 · y 48 · size 59</text>
+      <text x="1288" y="6670" class="bounds">source L25 T16 R230 B239</text>
+      <text x="1288" y="6688" class="bounds">worn L25 T52 R72 B103</text>
+      <text x="1288" y="6706" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_061" data-qa-state="accepted">
+      <rect x="4" y="6724" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="6745" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="6754" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_061.png" x="12" y="6754" width="256" height="256" />
+      <text x="300" y="6745" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="6768" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="6768" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_061.png" x="30" y="-10" width="69" height="69" />
+      </svg>
+      <text x="16" y="7036" class="id">common_061</text>
+      <text x="16" y="7060" class="name"><title>수채화 팔레트베레</title>수채화 팔레트베레</text>
+      <text x="16" y="7082" class="meta">COMMON · head · accepted</text>
+      <text x="16" y="7100" class="meta">x 14 · y -34 · size 69</text>
+      <text x="16" y="7118" class="bounds">source L16 T40 R239 B215</text>
+      <text x="16" y="7136" class="bounds">worn L18 T-23 R79 B24</text>
+      <text x="16" y="7154" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_062" data-qa-state="accepted">
+      <rect x="428" y="6724" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="6745" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="6754" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_062.png" x="436" y="6754" width="256" height="256" />
+      <text x="724" y="6745" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="6768" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="6768" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_062.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="440" y="7036" class="id">common_062</text>
+      <text x="440" y="7060" class="name"><title>뜨개실 주름빗모</title>뜨개실 주름빗모</text>
+      <text x="440" y="7082" class="meta">COMMON · head · accepted</text>
+      <text x="440" y="7100" class="meta">x 21 · y -27 · size 54</text>
+      <text x="440" y="7118" class="bounds">source L27 T16 R228 B239</text>
+      <text x="440" y="7136" class="bounds">worn L27 T-24 R69 B24</text>
+      <text x="440" y="7154" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_063" data-qa-state="accepted">
+      <rect x="852" y="6724" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="6745" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="6754" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_063.png" x="860" y="6754" width="256" height="256" />
+      <text x="1148" y="6745" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="6768" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="6768" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_063.png" x="30" y="-10" width="69" height="69" />
+      </svg>
+      <text x="864" y="7036" class="id">common_063</text>
+      <text x="864" y="7060" class="name"><title>목각 부스러기모</title>목각 부스러기모</text>
+      <text x="864" y="7082" class="meta">COMMON · head · accepted</text>
+      <text x="864" y="7100" class="meta">x 14 · y -34 · size 69</text>
+      <text x="864" y="7118" class="bounds">source L16 T40 R239 B215</text>
+      <text x="864" y="7136" class="bounds">worn L18 T-23 R79 B24</text>
+      <text x="864" y="7154" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_064" data-qa-state="accepted">
+      <rect x="1276" y="6724" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="6745" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="6754" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_064.png" x="1284" y="6754" width="256" height="256" />
+      <text x="1572" y="6745" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="6768" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="6768" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_064.png" x="29" y="-11" width="71" height="71" />
+      </svg>
+      <text x="1288" y="7036" class="id">common_064</text>
+      <text x="1288" y="7060" class="name"><title>종이접기 학모</title>종이접기 학모</text>
+      <text x="1288" y="7082" class="meta">COMMON · head · accepted</text>
+      <text x="1288" y="7100" class="meta">x 13 · y -35 · size 71</text>
+      <text x="1288" y="7118" class="bounds">source L16 T42 R239 B213</text>
+      <text x="1288" y="7136" class="bounds">worn L17 T-23 R80 B24</text>
+      <text x="1288" y="7154" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_065" data-qa-state="accepted">
+      <rect x="4" y="7172" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="7193" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="7202" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_065.png" x="12" y="7202" width="256" height="256" />
+      <text x="300" y="7193" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="7216" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="7216" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_065.png" x="36" y="-4" width="57" height="57" />
+      </svg>
+      <text x="16" y="7484" class="id">common_065</text>
+      <text x="16" y="7508" class="name"><title>사진가 암실베일</title>사진가 암실베일</text>
+      <text x="16" y="7530" class="meta">COMMON · head · accepted</text>
+      <text x="16" y="7548" class="meta">x 20 · y -28 · size 57</text>
+      <text x="16" y="7566" class="bounds">source L16 T21 R239 B233</text>
+      <text x="16" y="7584" class="bounds">worn L24 T-23 R73 B24</text>
+      <text x="16" y="7602" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_066" data-qa-state="accepted">
+      <rect x="428" y="7172" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="7193" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="7202" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_066.png" x="436" y="7202" width="256" height="256" />
+      <text x="724" y="7193" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="7216" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="7216" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_066.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="440" y="7484" class="id">common_066</text>
+      <text x="440" y="7508" class="name"><title>원예 씨앗족두리</title>원예 씨앗족두리</text>
+      <text x="440" y="7530" class="meta">COMMON · head · accepted</text>
+      <text x="440" y="7548" class="meta">x 21 · y -27 · size 54</text>
+      <text x="440" y="7566" class="bounds">source L41 T16 R213 B239</text>
+      <text x="440" y="7584" class="bounds">worn L30 T-24 R66 B24</text>
+      <text x="440" y="7602" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_067" data-qa-state="accepted">
+      <rect x="852" y="7172" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="7193" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="7202" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_067.png" x="860" y="7202" width="256" height="256" />
+      <text x="1148" y="7193" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="7216" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="7216" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_067.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="864" y="7484" class="id">common_067</text>
+      <text x="864" y="7508" class="name"><title>모형선 돛모</title>모형선 돛모</text>
+      <text x="864" y="7530" class="meta">COMMON · head · accepted</text>
+      <text x="864" y="7548" class="meta">x 21 · y -27 · size 54</text>
+      <text x="864" y="7566" class="bounds">source L46 T16 R209 B239</text>
+      <text x="864" y="7584" class="bounds">worn L31 T-24 R65 B24</text>
+      <text x="864" y="7602" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_068" data-qa-state="accepted">
+      <rect x="1276" y="7172" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="7193" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="7202" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_068.png" x="1284" y="7202" width="256" height="256" />
+      <text x="1572" y="7193" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="7216" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="7216" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_068.png" x="36" y="-4" width="57" height="57" />
+      </svg>
+      <text x="1288" y="7484" class="id">common_068</text>
+      <text x="1288" y="7508" class="name"><title>서예 붓챙모</title>서예 붓챙모</text>
+      <text x="1288" y="7530" class="meta">COMMON · head · accepted</text>
+      <text x="1288" y="7548" class="meta">x 20 · y -28 · size 57</text>
+      <text x="1288" y="7566" class="bounds">source L16 T21 R239 B233</text>
+      <text x="1288" y="7584" class="bounds">worn L24 T-23 R73 B24</text>
+      <text x="1288" y="7602" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_069" data-qa-state="accepted">
+      <rect x="4" y="7620" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="7641" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="7650" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_069.png" x="12" y="7650" width="256" height="256" />
+      <text x="300" y="7641" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="7664" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="7664" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_069.png" x="35" y="-5" width="59" height="59" />
+      </svg>
+      <text x="16" y="7932" class="id">common_069</text>
+      <text x="16" y="7956" class="name"><title>자수 골무비녀</title>자수 골무비녀</text>
+      <text x="16" y="7978" class="meta">COMMON · head · accepted</text>
+      <text x="16" y="7996" class="meta">x 19 · y -29 · size 59</text>
+      <text x="16" y="8014" class="bounds">source L16 T24 R239 B230</text>
+      <text x="16" y="8032" class="bounds">worn L23 T-23 R74 B24</text>
+      <text x="16" y="8050" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_070" data-qa-state="accepted">
+      <rect x="428" y="7620" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="7641" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="7650" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_070.png" x="436" y="7650" width="256" height="256" />
+      <text x="724" y="7641" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="7664" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="7664" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_070.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="440" y="7932" class="id">common_070</text>
+      <text x="440" y="7956" class="name"><title>도예 유약모</title>도예 유약모</text>
+      <text x="440" y="7978" class="meta">COMMON · head · accepted</text>
+      <text x="440" y="7996" class="meta">x 21 · y -27 · size 54</text>
+      <text x="440" y="8014" class="bounds">source L16 T16 R239 B239</text>
+      <text x="440" y="8032" class="bounds">worn L24 T-24 R72 B24</text>
+      <text x="440" y="8050" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_071" data-qa-state="accepted">
+      <rect x="852" y="7620" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="7641" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="7650" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_071.png" x="860" y="7650" width="256" height="256" />
+      <text x="1148" y="7641" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="7664" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="7664" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_071.png" x="36" y="-4" width="56" height="56" />
+      </svg>
+      <text x="864" y="7932" class="id">common_071</text>
+      <text x="864" y="7956" class="name"><title>별관측 종이망원모</title>별관측 종이망원모</text>
+      <text x="864" y="7978" class="meta">COMMON · head · accepted</text>
+      <text x="864" y="7996" class="meta">x 20 · y -28 · size 56</text>
+      <text x="864" y="8014" class="bounds">source L16 T19 R239 B236</text>
+      <text x="864" y="8032" class="bounds">worn L24 T-24 R73 B24</text>
+      <text x="864" y="8050" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_072" data-qa-state="accepted">
+      <rect x="1276" y="7620" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="7641" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="7650" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_072.png" x="1284" y="7650" width="256" height="256" />
+      <text x="1572" y="7641" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="7664" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="7664" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_072.png" x="31" y="28" width="67" height="67" />
+      </svg>
+      <text x="1288" y="7932" class="id">common_072</text>
+      <text x="1288" y="7956" class="name"><title>판화 보호안경</title>판화 보호안경</text>
+      <text x="1288" y="7978" class="meta">COMMON · face · accepted</text>
+      <text x="1288" y="7996" class="meta">x 15 · y 4 · size 67</text>
+      <text x="1288" y="8014" class="bounds">source L16 T52 R239 B203</text>
+      <text x="1288" y="8032" class="bounds">worn L19 T18 R78 B57</text>
+      <text x="1288" y="8050" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_073" data-qa-state="accepted">
+      <rect x="4" y="8068" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="8089" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="8098" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_073.png" x="12" y="8098" width="256" height="256" />
+      <text x="300" y="8089" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="8112" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="8112" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_073.png" x="31" y="28" width="67" height="67" />
+      </svg>
+      <text x="16" y="8380" class="id">common_073</text>
+      <text x="16" y="8404" class="name"><title>구슬공예 반달안경</title>구슬공예 반달안경</text>
+      <text x="16" y="8426" class="meta">COMMON · face · accepted</text>
+      <text x="16" y="8444" class="meta">x 15 · y 4 · size 67</text>
+      <text x="16" y="8462" class="bounds">source L16 T52 R239 B202</text>
+      <text x="16" y="8480" class="bounds">worn L19 T18 R78 B57</text>
+      <text x="16" y="8498" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_074" data-qa-state="accepted">
+      <rect x="428" y="8068" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="8089" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="8098" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_074.png" x="436" y="8098" width="256" height="256" />
+      <text x="724" y="8089" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="8112" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="8112" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_074.png" x="31" y="28" width="67" height="67" />
+      </svg>
+      <text x="440" y="8380" class="id">common_074</text>
+      <text x="440" y="8404" class="name"><title>모자이크 색조각면</title>모자이크 색조각면</text>
+      <text x="440" y="8426" class="meta">COMMON · face · accepted</text>
+      <text x="440" y="8444" class="meta">x 15 · y 4 · size 67</text>
+      <text x="440" y="8462" class="bounds">source L16 T52 R239 B203</text>
+      <text x="440" y="8480" class="bounds">worn L19 T18 R78 B57</text>
+      <text x="440" y="8498" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_075" data-qa-state="accepted">
+      <rect x="852" y="8068" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="8089" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="8098" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_075.png" x="860" y="8098" width="256" height="256" />
+      <text x="1148" y="8089" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="8112" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="8112" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_075.png" x="36" y="78" width="56" height="56" />
+      </svg>
+      <text x="864" y="8380" class="id">common_075</text>
+      <text x="864" y="8404" class="name"><title>뜨개 견본칼라</title>뜨개 견본칼라</text>
+      <text x="864" y="8426" class="meta">COMMON · neck · accepted</text>
+      <text x="864" y="8444" class="meta">x 20 · y 54 · size 56</text>
+      <text x="864" y="8462" class="bounds">source L16 T29 R239 B226</text>
+      <text x="864" y="8480" class="bounds">worn L24 T60 R73 B104</text>
+      <text x="864" y="8498" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_076" data-qa-state="accepted">
+      <rect x="1276" y="8068" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="8089" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="8098" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_076.png" x="1284" y="8098" width="256" height="256" />
+      <text x="1572" y="8089" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="8112" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="8112" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_076.png" x="39" y="81" width="50" height="50" />
+      </svg>
+      <text x="1288" y="8380" class="id">common_076</text>
+      <text x="1288" y="8404" class="name"><title>목공예 줄자펜던트</title>목공예 줄자펜던트</text>
+      <text x="1288" y="8426" class="meta">COMMON · neck · accepted</text>
+      <text x="1288" y="8444" class="meta">x 23 · y 57 · size 50</text>
+      <text x="1288" y="8462" class="bounds">source L82 T16 R173 B239</text>
+      <text x="1288" y="8480" class="bounds">worn L39 T60 R57 B104</text>
+      <text x="1288" y="8498" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_077" data-qa-state="accepted">
+      <rect x="4" y="8516" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="8537" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="8546" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_077.png" x="12" y="8546" width="256" height="256" />
+      <text x="300" y="8537" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="8560" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="8560" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_077.png" x="39" y="81" width="50" height="50" />
+      </svg>
+      <text x="16" y="8828" class="id">common_077</text>
+      <text x="16" y="8852" class="name"><title>압화 표본스카프</title>압화 표본스카프</text>
+      <text x="16" y="8874" class="meta">COMMON · neck · accepted</text>
+      <text x="16" y="8892" class="meta">x 23 · y 57 · size 50</text>
+      <text x="16" y="8910" class="bounds">source L56 T16 R198 B239</text>
+      <text x="16" y="8928" class="bounds">worn L34 T60 R62 B104</text>
+      <text x="16" y="8946" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_078" data-qa-state="accepted">
+      <rect x="428" y="8516" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="8537" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="8546" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_078.png" x="436" y="8546" width="256" height="256" />
+      <text x="724" y="8537" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="8560" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="8560" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_078.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="440" y="8828" class="id">common_078</text>
+      <text x="440" y="8852" class="name"><title>물감 얼룩작업복</title>물감 얼룩작업복</text>
+      <text x="440" y="8874" class="meta">COMMON · body · accepted</text>
+      <text x="440" y="8892" class="meta">x 19 · y 48 · size 59</text>
+      <text x="440" y="8910" class="bounds">source L35 T16 R219 B239</text>
+      <text x="440" y="8928" class="bounds">worn L27 T52 R70 B103</text>
+      <text x="440" y="8946" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_079" data-qa-state="accepted">
+      <rect x="852" y="8516" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="8537" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="8546" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_079.png" x="860" y="8546" width="256" height="256" />
+      <text x="1148" y="8537" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="8560" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="8560" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_079.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="864" y="8828" class="id">common_079</text>
+      <text x="864" y="8852" class="name"><title>가죽공예 도구조끼</title>가죽공예 도구조끼</text>
+      <text x="864" y="8874" class="meta">COMMON · body · accepted</text>
+      <text x="864" y="8892" class="meta">x 19 · y 48 · size 59</text>
+      <text x="864" y="8910" class="bounds">source L40 T16 R215 B239</text>
+      <text x="864" y="8928" class="bounds">worn L28 T52 R69 B103</text>
+      <text x="864" y="8946" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="common_080" data-qa-state="accepted">
+      <rect x="1276" y="8516" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="8537" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="8546" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../common/common_080.png" x="1284" y="8546" width="256" height="256" />
+      <text x="1572" y="8537" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="8560" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="8560" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../common/common_080.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="1288" y="8828" class="id">common_080</text>
+      <text x="1288" y="8852" class="name"><title>연날리기 마름망토</title>연날리기 마름망토</text>
+      <text x="1288" y="8874" class="meta">COMMON · body · accepted</text>
+      <text x="1288" y="8892" class="meta">x 19 · y 48 · size 59</text>
+      <text x="1288" y="8910" class="bounds">source L26 T16 R228 B239</text>
+      <text x="1288" y="8928" class="bounds">worn L25 T52 R72 B103</text>
+      <text x="1288" y="8946" class="clear">warnings none</text>
+    </g>
+</svg>

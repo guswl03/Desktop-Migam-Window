@@ -18,9 +18,9 @@
       "file": "common/common_001.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 11,
+        "y": -37,
+        "size": 75
       }
     },
     {
@@ -31,9 +31,9 @@
       "file": "common/common_002.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 1,
-        "y": -32,
-        "size": 102
+        "x": 6,
+        "y": -42,
+        "size": 84
       }
     },
     {
@@ -44,9 +44,9 @@
       "file": "common/common_003.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -2,
-        "y": -28,
-        "size": 106
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -57,9 +57,9 @@
       "file": "common/common_004.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 0,
-        "y": -25,
-        "size": 110
+        "x": 9,
+        "y": -39,
+        "size": 78
       }
     },
     {
@@ -70,9 +70,9 @@
       "file": "common/common_005.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 3,
-        "y": -27,
-        "size": 101
+        "x": 15,
+        "y": -33,
+        "size": 67
       }
     },
     {
@@ -83,9 +83,9 @@
       "file": "common/common_006.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -1,
-        "y": -29,
-        "size": 105
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -96,9 +96,9 @@
       "file": "common/common_007.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 2,
-        "y": -31,
-        "size": 100
+        "x": 20,
+        "y": -28,
+        "size": 57
       }
     },
     {
@@ -109,9 +109,9 @@
       "file": "common/common_008.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -3,
-        "y": -26,
-        "size": 103
+        "x": 19,
+        "y": -29,
+        "size": 59
       }
     },
     {
@@ -122,9 +122,9 @@
       "file": "common/common_009.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 4,
-        "y": -30,
-        "size": 99
+        "x": 15,
+        "y": -33,
+        "size": 66
       }
     },
     {
@@ -135,9 +135,9 @@
       "file": "common/common_010.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -5,
-        "y": -24,
-        "size": 108
+        "x": -3,
+        "y": -49,
+        "size": 102
       }
     },
     {
@@ -148,9 +148,9 @@
       "file": "common/common_011.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 0,
-        "y": -33,
-        "size": 100
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -161,8 +161,8 @@
       "file": "common/common_012.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": -1,
-        "y": -10,
+        "x": 0,
+        "y": -11,
         "size": 96
       }
     },
@@ -174,9 +174,9 @@
       "file": "common/common_013.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": 2,
-        "y": -9,
-        "size": 94
+        "x": 3,
+        "y": -8,
+        "size": 91
       }
     },
     {
@@ -187,9 +187,9 @@
       "file": "common/common_014.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": 0,
-        "y": -8,
-        "size": 98
+        "x": 13,
+        "y": 2,
+        "size": 70
       }
     },
     {
@@ -200,9 +200,9 @@
       "file": "common/common_015.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": -2,
-        "y": 10,
-        "size": 100
+        "x": 14,
+        "y": 48,
+        "size": 69
       }
     },
     {
@@ -213,9 +213,9 @@
       "file": "common/common_016.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": 3,
-        "y": 12,
-        "size": 98
+        "x": 23,
+        "y": 57,
+        "size": 50
       }
     },
     {
@@ -226,9 +226,9 @@
       "file": "common/common_017.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 0,
-        "y": 22,
-        "size": 108
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -239,9 +239,9 @@
       "file": "common/common_018.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 4,
-        "y": 18,
-        "size": 105
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -252,9 +252,9 @@
       "file": "common/common_019.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": -3,
-        "y": 20,
-        "size": 103
+        "x": 18,
+        "y": 48,
+        "size": 60
       }
     },
     {
@@ -265,9 +265,9 @@
       "file": "common/common_020.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 1,
-        "y": 24,
-        "size": 110
+        "x": 18,
+        "y": 48,
+        "size": 60
       }
     },
     {
@@ -278,9 +278,9 @@
       "file": "common/common_021.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -2,
-        "y": -27,
-        "size": 104
+        "x": 1,
+        "y": -47,
+        "size": 94
       }
     },
     {
@@ -291,9 +291,9 @@
       "file": "common/common_022.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 5,
-        "y": -25,
-        "size": 107
+        "x": 9,
+        "y": -39,
+        "size": 79
       }
     },
     {
@@ -304,9 +304,9 @@
       "file": "common/common_023.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 0,
-        "y": -34,
-        "size": 101
+        "x": 16,
+        "y": -32,
+        "size": 64
       }
     },
     {
@@ -317,9 +317,9 @@
       "file": "common/common_024.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 3,
-        "y": -29,
-        "size": 106
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -330,9 +330,9 @@
       "file": "common/common_025.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -26,
-        "size": 102
+        "x": 16,
+        "y": -32,
+        "size": 65
       }
     },
     {
@@ -343,9 +343,9 @@
       "file": "common/common_026.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 1,
-        "y": -31,
-        "size": 104
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -356,9 +356,9 @@
       "file": "common/common_027.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -1,
-        "y": -24,
-        "size": 109
+        "x": 5,
+        "y": -43,
+        "size": 86
       }
     },
     {
@@ -369,9 +369,9 @@
       "file": "common/common_028.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 4,
-        "y": -30,
-        "size": 103
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -382,9 +382,9 @@
       "file": "common/common_029.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -3,
-        "y": -26,
-        "size": 100
+        "x": 11,
+        "y": -37,
+        "size": 74
       }
     },
     {
@@ -395,9 +395,9 @@
       "file": "common/common_030.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 2,
-        "y": -32,
-        "size": 105
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -408,9 +408,9 @@
       "file": "common/common_031.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 0,
+        "x": 20,
         "y": -28,
-        "size": 106
+        "size": 56
       }
     },
     {
@@ -421,9 +421,9 @@
       "file": "common/common_032.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": 1,
-        "y": -9,
-        "size": 97
+        "x": -3,
+        "y": -14,
+        "size": 102
       }
     },
     {
@@ -434,9 +434,9 @@
       "file": "common/common_033.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": -2,
-        "y": -7,
-        "size": 101
+        "x": 11,
+        "y": 0,
+        "size": 75
       }
     },
     {
@@ -447,9 +447,9 @@
       "file": "common/common_034.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": 0,
-        "y": -6,
-        "size": 103
+        "x": 24,
+        "y": 13,
+        "size": 48
       }
     },
     {
@@ -460,9 +460,9 @@
       "file": "common/common_035.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": 2,
-        "y": 9,
-        "size": 96
+        "x": 22,
+        "y": 56,
+        "size": 52
       }
     },
     {
@@ -473,9 +473,9 @@
       "file": "common/common_036.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": -1,
-        "y": 14,
-        "size": 99
+        "x": 23,
+        "y": 57,
+        "size": 50
       }
     },
     {
@@ -486,9 +486,9 @@
       "file": "common/common_037.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": -2,
-        "y": 23,
-        "size": 107
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -499,9 +499,9 @@
       "file": "common/common_038.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 1,
-        "y": 19,
-        "size": 102
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -512,9 +512,9 @@
       "file": "common/common_039.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 3,
-        "y": 21,
-        "size": 104
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -525,9 +525,9 @@
       "file": "common/common_040.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 0,
-        "y": 25,
-        "size": 109
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -538,9 +538,9 @@
       "file": "common/common_041.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -3,
-        "y": -27,
-        "size": 105
+        "x": 8,
+        "y": -40,
+        "size": 80
       }
     },
     {
@@ -551,9 +551,9 @@
       "file": "common/common_042.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 2,
-        "y": -31,
-        "size": 103
+        "x": 6,
+        "y": -42,
+        "size": 84
       }
     },
     {
@@ -564,9 +564,9 @@
       "file": "common/common_043.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 0,
-        "y": -28,
-        "size": 110
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -577,9 +577,9 @@
       "file": "common/common_044.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 4,
-        "y": -29,
-        "size": 104
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -590,9 +590,9 @@
       "file": "common/common_045.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -1,
-        "y": -30,
-        "size": 105
+        "x": 19,
+        "y": -29,
+        "size": 58
       }
     },
     {
@@ -603,9 +603,9 @@
       "file": "common/common_046.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 3,
-        "y": -28,
-        "size": 108
+        "x": 19,
+        "y": -29,
+        "size": 59
       }
     },
     {
@@ -616,9 +616,9 @@
       "file": "common/common_047.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -24,
-        "size": 108
+        "x": 15,
+        "y": -33,
+        "size": 66
       }
     },
     {
@@ -629,9 +629,9 @@
       "file": "common/common_048.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 1,
-        "y": -32,
-        "size": 100
+        "x": 17,
+        "y": -31,
+        "size": 63
       }
     },
     {
@@ -642,9 +642,9 @@
       "file": "common/common_049.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -2,
-        "y": -25,
-        "size": 106
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -655,9 +655,9 @@
       "file": "common/common_050.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 5,
-        "y": -26,
-        "size": 109
+        "x": 13,
+        "y": -35,
+        "size": 71
       }
     },
     {
@@ -668,9 +668,9 @@
       "file": "common/common_051.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 0,
-        "y": -24,
-        "size": 110
+        "x": 12,
+        "y": -36,
+        "size": 72
       }
     },
     {
@@ -681,8 +681,8 @@
       "file": "common/common_052.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": 2,
-        "y": -10,
+        "x": -1,
+        "y": -12,
         "size": 98
       }
     },
@@ -694,9 +694,9 @@
       "file": "common/common_053.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": -1,
-        "y": -8,
-        "size": 100
+        "x": 7,
+        "y": -4,
+        "size": 83
       }
     },
     {
@@ -707,9 +707,9 @@
       "file": "common/common_054.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": 0,
-        "y": -6,
-        "size": 102
+        "x": 24,
+        "y": 13,
+        "size": 48
       }
     },
     {
@@ -720,9 +720,9 @@
       "file": "common/common_055.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": 3,
-        "y": 13,
-        "size": 95
+        "x": 23,
+        "y": 57,
+        "size": 50
       }
     },
     {
@@ -733,9 +733,9 @@
       "file": "common/common_056.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": -2,
-        "y": 11,
-        "size": 102
+        "x": 9,
+        "y": 43,
+        "size": 78
       }
     },
     {
@@ -746,9 +746,9 @@
       "file": "common/common_057.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": 1,
-        "y": 15,
-        "size": 100
+        "x": 23,
+        "y": 57,
+        "size": 50
       }
     },
     {
@@ -759,9 +759,9 @@
       "file": "common/common_058.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": -3,
-        "y": 17,
-        "size": 106
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -772,9 +772,9 @@
       "file": "common/common_059.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 2,
-        "y": 26,
-        "size": 111
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -785,9 +785,9 @@
       "file": "common/common_060.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 0,
-        "y": 20,
-        "size": 104
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -798,9 +798,9 @@
       "file": "common/common_061.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 4,
-        "y": -28,
-        "size": 106
+        "x": 14,
+        "y": -34,
+        "size": 69
       }
     },
     {
@@ -811,9 +811,9 @@
       "file": "common/common_062.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 0,
-        "y": -30,
-        "size": 104
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -824,9 +824,9 @@
       "file": "common/common_063.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 2,
-        "y": -26,
-        "size": 109
+        "x": 14,
+        "y": -34,
+        "size": 69
       }
     },
     {
@@ -837,9 +837,9 @@
       "file": "common/common_064.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -32,
-        "size": 105
+        "x": 13,
+        "y": -35,
+        "size": 71
       }
     },
     {
@@ -850,9 +850,9 @@
       "file": "common/common_065.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 1,
-        "y": -30,
-        "size": 109
+        "x": 20,
+        "y": -28,
+        "size": 57
       }
     },
     {
@@ -863,9 +863,9 @@
       "file": "common/common_066.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 3,
-        "y": -31,
-        "size": 105
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -876,9 +876,9 @@
       "file": "common/common_067.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -2,
-        "y": -36,
-        "size": 103
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -889,9 +889,9 @@
       "file": "common/common_068.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 5,
-        "y": -27,
-        "size": 110
+        "x": 20,
+        "y": -28,
+        "size": 57
       }
     },
     {
@@ -902,9 +902,9 @@
       "file": "common/common_069.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 2,
-        "y": -23,
-        "size": 110
+        "x": 19,
+        "y": -29,
+        "size": 59
       }
     },
     {
@@ -915,9 +915,9 @@
       "file": "common/common_070.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -3,
-        "y": -30,
-        "size": 104
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -928,9 +928,9 @@
       "file": "common/common_071.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 4,
-        "y": -34,
-        "size": 105
+        "x": 20,
+        "y": -28,
+        "size": 56
       }
     },
     {
@@ -941,9 +941,9 @@
       "file": "common/common_072.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": -2,
-        "y": -9,
-        "size": 99
+        "x": 15,
+        "y": 4,
+        "size": 67
       }
     },
     {
@@ -954,9 +954,9 @@
       "file": "common/common_073.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": 2,
-        "y": -8,
-        "size": 97
+        "x": 15,
+        "y": 4,
+        "size": 67
       }
     },
     {
@@ -967,9 +967,9 @@
       "file": "common/common_074.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": 0,
-        "y": -7,
-        "size": 103
+        "x": 15,
+        "y": 4,
+        "size": 67
       }
     },
     {
@@ -980,9 +980,9 @@
       "file": "common/common_075.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": 1,
-        "y": 10,
-        "size": 101
+        "x": 20,
+        "y": 54,
+        "size": 56
       }
     },
     {
@@ -993,9 +993,9 @@
       "file": "common/common_076.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": -1,
-        "y": 14,
-        "size": 96
+        "x": 23,
+        "y": 57,
+        "size": 50
       }
     },
     {
@@ -1006,9 +1006,9 @@
       "file": "common/common_077.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": 3,
-        "y": 12,
-        "size": 100
+        "x": 23,
+        "y": 57,
+        "size": 50
       }
     },
     {
@@ -1019,9 +1019,9 @@
       "file": "common/common_078.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": -2,
-        "y": 24,
-        "size": 108
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -1032,9 +1032,9 @@
       "file": "common/common_079.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 2,
-        "y": 19,
-        "size": 103
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -1045,9 +1045,9 @@
       "file": "common/common_080.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 0,
-        "y": 27,
-        "size": 112
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -1058,9 +1058,9 @@
       "file": "rare/rare_001.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 2,
-        "y": -32,
-        "size": 111
+        "x": 17,
+        "y": -31,
+        "size": 62
       }
     },
     {
@@ -1071,9 +1071,9 @@
       "file": "rare/rare_002.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -1,
-        "y": -35,
-        "size": 107
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -1084,9 +1084,9 @@
       "file": "rare/rare_003.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 3,
-        "y": -29,
-        "size": 112
+        "x": 11,
+        "y": -37,
+        "size": 75
       }
     },
     {
@@ -1097,9 +1097,9 @@
       "file": "rare/rare_004.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 1,
-        "y": -33,
-        "size": 110
+        "x": 18,
+        "y": -30,
+        "size": 60
       }
     },
     {
@@ -1110,9 +1110,9 @@
       "file": "rare/rare_005.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -3,
-        "y": -27,
-        "size": 114
+        "x": 18,
+        "y": -30,
+        "size": 61
       }
     },
     {
@@ -1123,9 +1123,9 @@
       "file": "rare/rare_006.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 0,
-        "y": -36,
-        "size": 105
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -1136,9 +1136,9 @@
       "file": "rare/rare_007.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 0,
+        "x": 18,
         "y": -30,
-        "size": 113
+        "size": 60
       }
     },
     {
@@ -1149,9 +1149,9 @@
       "file": "rare/rare_008.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 4,
-        "y": -34,
-        "size": 109
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -1163,8 +1163,8 @@
       "slot": "face",
       "defaultAlignment": {
         "x": -2,
-        "y": -8,
-        "size": 103
+        "y": -13,
+        "size": 101
       }
     },
     {
@@ -1175,9 +1175,9 @@
       "file": "rare/rare_010.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": 1,
-        "y": -9,
-        "size": 101
+        "x": 4,
+        "y": -7,
+        "size": 89
       }
     },
     {
@@ -1188,9 +1188,9 @@
       "file": "rare/rare_011.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": 0,
-        "y": 11,
-        "size": 104
+        "x": 19,
+        "y": 52,
+        "size": 59
       }
     },
     {
@@ -1201,9 +1201,9 @@
       "file": "rare/rare_012.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": 2,
-        "y": 13,
-        "size": 99
+        "x": 23,
+        "y": 57,
+        "size": 50
       }
     },
     {
@@ -1214,9 +1214,9 @@
       "file": "rare/rare_013.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": -1,
-        "y": 20,
-        "size": 108
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -1227,9 +1227,9 @@
       "file": "rare/rare_014.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 3,
-        "y": 27,
-        "size": 113
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -1240,9 +1240,9 @@
       "file": "rare/rare_015.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 0,
-        "y": 21,
-        "size": 109
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -1253,9 +1253,9 @@
       "file": "rare/rare_016.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -2,
-        "y": -38,
-        "size": 104
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -1266,9 +1266,9 @@
       "file": "rare/rare_017.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 1,
+        "x": 11,
         "y": -37,
-        "size": 106
+        "size": 75
       }
     },
     {
@@ -1279,9 +1279,9 @@
       "file": "rare/rare_018.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 0,
-        "y": -28,
-        "size": 115
+        "x": -3,
+        "y": -49,
+        "size": 102
       }
     },
     {
@@ -1292,9 +1292,9 @@
       "file": "rare/rare_019.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 3,
-        "y": -29,
-        "size": 110
+        "x": 14,
+        "y": -34,
+        "size": 69
       }
     },
     {
@@ -1305,9 +1305,9 @@
       "file": "rare/rare_020.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -1,
-        "y": -36,
-        "size": 105
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -1318,9 +1318,9 @@
       "file": "rare/rare_021.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 2,
+        "x": 21,
         "y": -27,
-        "size": 113
+        "size": 54
       }
     },
     {
@@ -1331,9 +1331,9 @@
       "file": "rare/rare_022.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 0,
-        "y": -33,
-        "size": 107
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -1344,9 +1344,9 @@
       "file": "rare/rare_023.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 4,
-        "y": -31,
-        "size": 111
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -1357,9 +1357,9 @@
       "file": "rare/rare_024.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": 0,
-        "y": -7,
-        "size": 102
+        "x": 24,
+        "y": 13,
+        "size": 48
       }
     },
     {
@@ -1370,9 +1370,9 @@
       "file": "rare/rare_025.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": 2,
-        "y": -6,
-        "size": 104
+        "x": -3,
+        "y": -14,
+        "size": 102
       }
     },
     {
@@ -1383,9 +1383,9 @@
       "file": "rare/rare_026.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": -2,
-        "y": 10,
-        "size": 105
+        "x": 20,
+        "y": 54,
+        "size": 56
       }
     },
     {
@@ -1396,9 +1396,9 @@
       "file": "rare/rare_027.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 1,
-        "y": 25,
-        "size": 114
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -1409,9 +1409,9 @@
       "file": "rare/rare_028.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 0,
-        "y": 24,
-        "size": 115
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -1422,9 +1422,9 @@
       "file": "rare/rare_029.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": -1,
-        "y": 19,
-        "size": 110
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -1435,9 +1435,9 @@
       "file": "rare/rare_030.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 3,
-        "y": -30,
-        "size": 111
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -1448,9 +1448,9 @@
       "file": "rare/rare_031.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -2,
-        "y": -32,
-        "size": 108
+        "x": -3,
+        "y": -50,
+        "size": 102
       }
     },
     {
@@ -1461,9 +1461,9 @@
       "file": "rare/rare_032.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 0,
-        "y": -34,
-        "size": 109
+        "x": 20,
+        "y": -28,
+        "size": 57
       }
     },
     {
@@ -1474,9 +1474,9 @@
       "file": "rare/rare_033.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 1,
-        "y": -31,
-        "size": 110
+        "x": 19,
+        "y": -29,
+        "size": 58
       }
     },
     {
@@ -1487,9 +1487,9 @@
       "file": "rare/rare_034.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 4,
-        "y": -29,
-        "size": 114
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -1500,9 +1500,9 @@
       "file": "rare/rare_035.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -1,
-        "y": -35,
-        "size": 106
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -1513,9 +1513,9 @@
       "file": "rare/rare_036.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 2,
-        "y": -28,
-        "size": 112
+        "x": 16,
+        "y": -32,
+        "size": 64
       }
     },
     {
@@ -1526,9 +1526,9 @@
       "file": "rare/rare_037.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": -3,
-        "y": -8,
-        "size": 100
+        "x": 19,
+        "y": 8,
+        "size": 58
       }
     },
     {
@@ -1539,9 +1539,9 @@
       "file": "rare/rare_038.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": 1,
-        "y": -9,
-        "size": 101
+        "x": 11,
+        "y": 0,
+        "size": 74
       }
     },
     {
@@ -1552,9 +1552,9 @@
       "file": "rare/rare_039.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": 3,
-        "y": 12,
-        "size": 103
+        "x": 20,
+        "y": 53,
+        "size": 57
       }
     },
     {
@@ -1565,9 +1565,9 @@
       "file": "rare/rare_040.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": 0,
-        "y": 15,
-        "size": 98
+        "x": 23,
+        "y": 57,
+        "size": 50
       }
     },
     {
@@ -1578,9 +1578,9 @@
       "file": "rare/rare_041.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": -2,
-        "y": 20,
-        "size": 110
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -1591,9 +1591,9 @@
       "file": "rare/rare_042.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 1,
-        "y": 19,
-        "size": 108
+        "x": 18,
+        "y": 47,
+        "size": 61
       }
     },
     {
@@ -1604,9 +1604,9 @@
       "file": "rare/rare_043.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 0,
-        "y": 26,
-        "size": 113
+        "x": 18,
+        "y": 48,
+        "size": 60
       }
     },
     {
@@ -1617,9 +1617,9 @@
       "file": "rare/rare_044.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 2,
-        "y": -34,
-        "size": 108
+        "x": 17,
+        "y": -31,
+        "size": 62
       }
     },
     {
@@ -1630,9 +1630,9 @@
       "file": "rare/rare_045.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -1,
-        "y": -37,
-        "size": 105
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -1643,9 +1643,9 @@
       "file": "rare/rare_046.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 3,
-        "y": -30,
-        "size": 113
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -1656,9 +1656,9 @@
       "file": "rare/rare_047.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 0,
-        "y": -32,
-        "size": 109
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -1669,9 +1669,9 @@
       "file": "rare/rare_048.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 4,
-        "y": -27,
-        "size": 115
+        "x": 9,
+        "y": -39,
+        "size": 78
       }
     },
     {
@@ -1682,9 +1682,9 @@
       "file": "rare/rare_049.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -2,
-        "y": -36,
-        "size": 106
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -1695,9 +1695,9 @@
       "file": "rare/rare_050.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 1,
-        "y": -33,
-        "size": 108
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -1708,9 +1708,9 @@
       "file": "rare/rare_051.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 0,
-        "y": -29,
-        "size": 114
+        "x": 12,
+        "y": -36,
+        "size": 73
       }
     },
     {
@@ -1721,9 +1721,9 @@
       "file": "rare/rare_052.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": -1,
-        "y": -8,
-        "size": 101
+        "x": 1,
+        "y": -10,
+        "size": 94
       }
     },
     {
@@ -1734,9 +1734,9 @@
       "file": "rare/rare_053.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": 2,
-        "y": -7,
-        "size": 104
+        "x": 13,
+        "y": 2,
+        "size": 70
       }
     },
     {
@@ -1747,9 +1747,9 @@
       "file": "rare/rare_054.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": 0,
-        "y": 11,
-        "size": 105
+        "x": 18,
+        "y": 51,
+        "size": 61
       }
     },
     {
@@ -1760,9 +1760,9 @@
       "file": "rare/rare_055.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 3,
-        "y": 27,
-        "size": 112
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -1773,9 +1773,9 @@
       "file": "rare/rare_056.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": -2,
-        "y": 20,
-        "size": 110
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -1786,9 +1786,9 @@
       "file": "rare/rare_057.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 1,
-        "y": 25,
-        "size": 114
+        "x": 16,
+        "y": 45,
+        "size": 65
       }
     },
     {
@@ -1799,9 +1799,9 @@
       "file": "epic/epic_001.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -2,
-        "y": -35,
-        "size": 111
+        "x": 11,
+        "y": -37,
+        "size": 74
       }
     },
     {
@@ -1812,9 +1812,9 @@
       "file": "epic/epic_002.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 3,
-        "y": -32,
-        "size": 114
+        "x": 9,
+        "y": -39,
+        "size": 78
       }
     },
     {
@@ -1825,9 +1825,9 @@
       "file": "epic/epic_003.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 0,
-        "y": -38,
-        "size": 108
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -1838,9 +1838,9 @@
       "file": "epic/epic_004.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -1,
-        "y": -34,
-        "size": 116
+        "x": 6,
+        "y": -42,
+        "size": 84
       }
     },
     {
@@ -1851,9 +1851,9 @@
       "file": "epic/epic_005.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": 1,
-        "y": -8,
-        "size": 106
+        "x": -3,
+        "y": -14,
+        "size": 102
       }
     },
     {
@@ -1864,9 +1864,9 @@
       "file": "epic/epic_006.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": -3,
-        "y": 12,
-        "size": 105
+        "x": 13,
+        "y": 47,
+        "size": 70
       }
     },
     {
@@ -1877,9 +1877,9 @@
       "file": "epic/epic_007.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 0,
-        "y": 22,
-        "size": 115
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -1890,9 +1890,9 @@
       "file": "epic/epic_008.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 2,
-        "y": 25,
-        "size": 118
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -1903,9 +1903,9 @@
       "file": "epic/epic_009.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -2,
-        "y": -37,
-        "size": 110
+        "x": 9,
+        "y": -39,
+        "size": 78
       }
     },
     {
@@ -1916,9 +1916,9 @@
       "file": "epic/epic_010.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 1,
-        "y": -39,
-        "size": 109
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -1929,9 +1929,9 @@
       "file": "epic/epic_011.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 4,
-        "y": -31,
-        "size": 117
+        "x": 14,
+        "y": -34,
+        "size": 69
       }
     },
     {
@@ -1942,9 +1942,9 @@
       "file": "epic/epic_012.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 0,
-        "y": -33,
-        "size": 116
+        "x": 16,
+        "y": -32,
+        "size": 65
       }
     },
     {
@@ -1955,9 +1955,9 @@
       "file": "epic/epic_013.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": 2,
-        "y": -7,
-        "size": 108
+        "x": 16,
+        "y": 5,
+        "size": 64
       }
     },
     {
@@ -1968,9 +1968,9 @@
       "file": "epic/epic_014.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": -2,
-        "y": -9,
-        "size": 104
+        "x": 24,
+        "y": 13,
+        "size": 49
       }
     },
     {
@@ -1981,9 +1981,9 @@
       "file": "epic/epic_015.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": 0,
-        "y": 14,
-        "size": 107
+        "x": 23,
+        "y": 57,
+        "size": 50
       }
     },
     {
@@ -1994,9 +1994,9 @@
       "file": "epic/epic_016.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": -1,
-        "y": 20,
-        "size": 119
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -2007,9 +2007,9 @@
       "file": "epic/epic_017.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -3,
-        "y": -35,
-        "size": 112
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -2020,9 +2020,9 @@
       "file": "epic/epic_018.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 2,
-        "y": -30,
-        "size": 118
+        "x": 5,
+        "y": -43,
+        "size": 87
       }
     },
     {
@@ -2033,9 +2033,9 @@
       "file": "epic/epic_019.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 4,
-        "y": -32,
-        "size": 115
+        "x": 2,
+        "y": -46,
+        "size": 93
       }
     },
     {
@@ -2046,9 +2046,9 @@
       "file": "epic/epic_020.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 0,
-        "y": -33,
-        "size": 113
+        "x": 6,
+        "y": -42,
+        "size": 85
       }
     },
     {
@@ -2059,9 +2059,9 @@
       "file": "epic/epic_021.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": -1,
-        "y": -8,
-        "size": 107
+        "x": 17,
+        "y": 6,
+        "size": 62
       }
     },
     {
@@ -2072,9 +2072,9 @@
       "file": "epic/epic_022.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": 3,
-        "y": 11,
-        "size": 108
+        "x": 17,
+        "y": 51,
+        "size": 62
       }
     },
     {
@@ -2085,9 +2085,9 @@
       "file": "epic/epic_023.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": -2,
-        "y": 19,
-        "size": 116
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -2098,9 +2098,9 @@
       "file": "epic/epic_024.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 2,
-        "y": 27,
-        "size": 117
+        "x": 16,
+        "y": 46,
+        "size": 65
       }
     },
     {
@@ -2111,9 +2111,9 @@
       "file": "epic/epic_025.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -3,
-        "y": -36,
-        "size": 113
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -2124,9 +2124,9 @@
       "file": "epic/epic_026.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 1,
-        "y": -34,
-        "size": 116
+        "x": 16,
+        "y": -32,
+        "size": 65
       }
     },
     {
@@ -2137,9 +2137,9 @@
       "file": "epic/epic_027.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 4,
-        "y": -32,
-        "size": 114
+        "x": 11,
+        "y": -37,
+        "size": 74
       }
     },
     {
@@ -2150,9 +2150,9 @@
       "file": "epic/epic_028.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 0,
-        "y": -37,
-        "size": 111
+        "x": 19,
+        "y": -29,
+        "size": 58
       }
     },
     {
@@ -2163,9 +2163,9 @@
       "file": "epic/epic_029.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": 2,
-        "y": -9,
-        "size": 105
+        "x": -3,
+        "y": -14,
+        "size": 102
       }
     },
     {
@@ -2176,9 +2176,9 @@
       "file": "epic/epic_030.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": -1,
-        "y": 13,
-        "size": 106
+        "x": 7,
+        "y": 41,
+        "size": 82
       }
     },
     {
@@ -2189,9 +2189,9 @@
       "file": "epic/epic_031.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 1,
-        "y": 24,
-        "size": 120
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -2202,9 +2202,9 @@
       "file": "legendary/legendary_001.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -2,
-        "y": -40,
-        "size": 121
+        "x": 20,
+        "y": -28,
+        "size": 57
       }
     },
     {
@@ -2215,9 +2215,9 @@
       "file": "legendary/legendary_002.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": 1,
-        "y": -9,
-        "size": 111
+        "x": 17,
+        "y": 6,
+        "size": 63
       }
     },
     {
@@ -2228,9 +2228,9 @@
       "file": "legendary/legendary_003.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 3,
-        "y": -37,
-        "size": 119
+        "x": 21,
+        "y": -27,
+        "size": 55
       }
     },
     {
@@ -2241,9 +2241,9 @@
       "file": "legendary/legendary_004.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 0,
-        "y": -42,
-        "size": 118
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -2254,9 +2254,9 @@
       "file": "legendary/legendary_005.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": 0,
-        "y": 13,
-        "size": 111
+        "x": 15,
+        "y": 49,
+        "size": 66
       }
     },
     {
@@ -2267,9 +2267,9 @@
       "file": "legendary/legendary_006.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 0,
-        "y": 20,
-        "size": 123
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -2280,9 +2280,9 @@
       "file": "legendary/legendary_007.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -1,
-        "y": -35,
-        "size": 124
+        "x": 15,
+        "y": -33,
+        "size": 66
       }
     },
     {
@@ -2293,9 +2293,9 @@
       "file": "legendary/legendary_008.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": -2,
-        "y": -7,
-        "size": 113
+        "x": 17,
+        "y": 6,
+        "size": 62
       }
     },
     {
@@ -2306,9 +2306,9 @@
       "file": "legendary/legendary_009.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 2,
-        "y": 23,
-        "size": 122
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -2319,9 +2319,9 @@
       "file": "legendary/legendary_010.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 2,
-        "y": -38,
-        "size": 123
+        "x": 9,
+        "y": -39,
+        "size": 78
       }
     },
     {
@@ -2332,9 +2332,9 @@
       "file": "legendary/legendary_011.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 4,
-        "y": -34,
-        "size": 122
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -2345,9 +2345,9 @@
       "file": "legendary/legendary_012.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": -1,
-        "y": 21,
-        "size": 124
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -2358,9 +2358,9 @@
       "file": "special/special_001.png",
       "slot": "body",
       "defaultAlignment": {
-        "x": 1,
-        "y": 23,
-        "size": 118
+        "x": 19,
+        "y": 48,
+        "size": 59
       }
     },
     {
@@ -2371,9 +2371,9 @@
       "file": "special/special_002.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -1,
-        "y": -36,
-        "size": 116
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {
@@ -2384,9 +2384,9 @@
       "file": "special/special_003.png",
       "slot": "neck",
       "defaultAlignment": {
-        "x": 2,
-        "y": 13,
-        "size": 110
+        "x": 23,
+        "y": 57,
+        "size": 50
       }
     },
     {
@@ -2397,9 +2397,9 @@
       "file": "special/special_004.png",
       "slot": "face",
       "defaultAlignment": {
-        "x": 3,
-        "y": -8,
-        "size": 108
+        "x": 12,
+        "y": 1,
+        "size": 73
       }
     },
     {
@@ -2410,9 +2410,9 @@
       "file": "special/special_005.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": 0,
-        "y": -33,
-        "size": 114
+        "x": 21,
+        "y": -27,
+        "size": 54
       }
     },
     {

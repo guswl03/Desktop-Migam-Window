@@ -1,0 +1,1220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1696" height="6720" viewBox="0 0 1696 6720">
+  <title>Gamjabot rare costume QA</title>
+  <defs>
+    <pattern id="checker" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#f1f1f1" />
+      <rect width="8" height="8" fill="#d8d8d8" />
+      <rect x="8" y="8" width="8" height="8" fill="#d8d8d8" />
+    </pattern>
+    <style>
+      text { font-family: "Segoe UI", sans-serif; fill: #f4f4f5; }
+      .section-label { font-size: 10px; fill: #aeb2c0; letter-spacing: 1px; }
+      .id { font: 700 15px Consolas, monospace; fill: #7fd7ff; }
+      .name { font-size: 17px; font-weight: 700; }
+      .meta { font: 12px Consolas, monospace; fill: #ffcf53; }
+      .bounds { font: 11px Consolas, monospace; fill: #aeb2c0; }
+      .clear { font: 11px Consolas, monospace; fill: #7ee2a8; }
+      .warning { font: 11px Consolas, monospace; fill: #ff7f8c; }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#17181c" />
+
+    <g class="costume-cell" data-id="rare_001" data-qa-state="accepted">
+      <rect x="4" y="4" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="25" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="34" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_001.png" x="12" y="34" width="256" height="256" />
+      <text x="300" y="25" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="48" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="48" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_001.png" x="33" y="-7" width="62" height="62" />
+      </svg>
+      <text x="16" y="316" class="id">rare_001</text>
+      <text x="16" y="340" class="name"><title>구름능선 풍향관모</title>구름능선 풍향관모</text>
+      <text x="16" y="362" class="meta">RARE · head · accepted</text>
+      <text x="16" y="380" class="meta">x 17 · y -31 · size 62</text>
+      <text x="16" y="398" class="bounds">source L16 T29 R239 B226</text>
+      <text x="16" y="416" class="bounds">worn L21 T-24 R75 B24</text>
+      <text x="16" y="434" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_002" data-qa-state="accepted">
+      <rect x="428" y="4" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="25" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="34" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_002.png" x="436" y="34" width="256" height="256" />
+      <text x="724" y="25" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="48" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="48" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_002.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="440" y="316" class="id">rare_002</text>
+      <text x="440" y="340" class="name"><title>동굴수정 채광관</title>동굴수정 채광관</text>
+      <text x="440" y="362" class="meta">RARE · head · accepted</text>
+      <text x="440" y="380" class="meta">x 21 · y -27 · size 54</text>
+      <text x="440" y="398" class="bounds">source L22 T16 R232 B239</text>
+      <text x="440" y="416" class="bounds">worn L26 T-24 R70 B24</text>
+      <text x="440" y="434" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_003" data-qa-state="accepted">
+      <rect x="852" y="4" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="25" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="34" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_003.png" x="860" y="34" width="256" height="256" />
+      <text x="1148" y="25" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="48" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="48" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_003.png" x="27" y="-13" width="75" height="75" />
+      </svg>
+      <text x="864" y="316" class="id">rare_003</text>
+      <text x="864" y="340" class="name"><title>협곡 밧줄고리관</title>협곡 밧줄고리관</text>
+      <text x="864" y="362" class="meta">RARE · head · accepted</text>
+      <text x="864" y="380" class="meta">x 11 · y -37 · size 75</text>
+      <text x="864" y="398" class="bounds">source L16 T47 R239 B208</text>
+      <text x="864" y="416" class="bounds">worn L16 T-23 R81 B24</text>
+      <text x="864" y="434" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_004" data-qa-state="accepted">
+      <rect x="1276" y="4" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="25" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="34" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_004.png" x="1284" y="34" width="256" height="256" />
+      <text x="1572" y="25" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="48" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="48" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_004.png" x="34" y="-6" width="60" height="60" />
+      </svg>
+      <text x="1288" y="316" class="id">rare_004</text>
+      <text x="1288" y="340" class="name"><title>빙벽 쐐기챙관</title>빙벽 쐐기챙관</text>
+      <text x="1288" y="362" class="meta">RARE · head · accepted</text>
+      <text x="1288" y="380" class="meta">x 18 · y -30 · size 60</text>
+      <text x="1288" y="398" class="bounds">source L16 T27 R239 B228</text>
+      <text x="1288" y="416" class="bounds">worn L22 T-24 R74 B24</text>
+      <text x="1288" y="434" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_005" data-qa-state="accepted">
+      <rect x="4" y="452" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="473" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="482" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_005.png" x="12" y="482" width="256" height="256" />
+      <text x="300" y="473" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="496" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="496" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_005.png" x="34" y="-6" width="61" height="61" />
+      </svg>
+      <text x="16" y="764" class="id">rare_005</text>
+      <text x="16" y="788" class="name"><title>습지원 부유잎모</title>습지원 부유잎모</text>
+      <text x="16" y="810" class="meta">RARE · head · accepted</text>
+      <text x="16" y="828" class="meta">x 18 · y -30 · size 61</text>
+      <text x="16" y="846" class="bounds">source L16 T28 R239 B226</text>
+      <text x="16" y="864" class="bounds">worn L22 T-23 R75 B24</text>
+      <text x="16" y="882" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_006" data-qa-state="accepted">
+      <rect x="428" y="452" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="473" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="482" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_006.png" x="436" y="482" width="256" height="256" />
+      <text x="724" y="473" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="496" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="496" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_006.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="440" y="764" class="id">rare_006</text>
+      <text x="440" y="788" class="name"><title>화산재 여과두름관</title>화산재 여과두름관</text>
+      <text x="440" y="810" class="meta">RARE · head · accepted</text>
+      <text x="440" y="828" class="meta">x 21 · y -27 · size 54</text>
+      <text x="440" y="846" class="bounds">source L16 T16 R239 B239</text>
+      <text x="440" y="864" class="bounds">worn L24 T-24 R72 B24</text>
+      <text x="440" y="882" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_007" data-qa-state="accepted">
+      <rect x="852" y="452" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="473" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="482" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_007.png" x="860" y="482" width="256" height="256" />
+      <text x="1148" y="473" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="496" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="496" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_007.png" x="34" y="-6" width="60" height="60" />
+      </svg>
+      <text x="864" y="764" class="id">rare_007</text>
+      <text x="864" y="788" class="name"><title>심해 수압종관</title>심해 수압종관</text>
+      <text x="864" y="810" class="meta">RARE · head · accepted</text>
+      <text x="864" y="828" class="meta">x 18 · y -30 · size 60</text>
+      <text x="864" y="846" class="bounds">source L16 T26 R239 B228</text>
+      <text x="864" y="864" class="bounds">worn L22 T-24 R74 B24</text>
+      <text x="864" y="882" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_008" data-qa-state="accepted">
+      <rect x="1276" y="452" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="473" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="482" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_008.png" x="1284" y="482" width="256" height="256" />
+      <text x="1572" y="473" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="496" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="496" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_008.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="1288" y="764" class="id">rare_008</text>
+      <text x="1288" y="788" class="name"><title>별길 입방측량관</title>별길 입방측량관</text>
+      <text x="1288" y="810" class="meta">RARE · head · accepted</text>
+      <text x="1288" y="828" class="meta">x 21 · y -27 · size 54</text>
+      <text x="1288" y="846" class="bounds">source L17 T16 R237 B239</text>
+      <text x="1288" y="864" class="bounds">worn L25 T-24 R71 B24</text>
+      <text x="1288" y="882" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_009" data-qa-state="accepted">
+      <rect x="4" y="900" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="921" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="930" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_009.png" x="12" y="930" width="256" height="256" />
+      <text x="300" y="921" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="944" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="944" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_009.png" x="14" y="11" width="101" height="101" />
+      </svg>
+      <text x="16" y="1212" class="id">rare_009</text>
+      <text x="16" y="1236" class="name"><title>지층 판독렌즈</title>지층 판독렌즈</text>
+      <text x="16" y="1258" class="meta">RARE · face · accepted</text>
+      <text x="16" y="1276" class="meta">x -2 · y -13 · size 101</text>
+      <text x="16" y="1294" class="bounds">source L16 T77 R239 B177</text>
+      <text x="16" y="1312" class="bounds">worn L4 T17 R93 B57</text>
+      <text x="16" y="1330" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_010" data-qa-state="accepted">
+      <rect x="428" y="900" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="921" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="930" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_010.png" x="436" y="930" width="256" height="256" />
+      <text x="724" y="921" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="944" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="944" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_010.png" x="20" y="17" width="89" height="89" />
+      </svg>
+      <text x="440" y="1212" class="id">rare_010</text>
+      <text x="440" y="1236" class="name"><title>폭풍 편광고글</title>폭풍 편광고글</text>
+      <text x="440" y="1258" class="meta">RARE · face · accepted</text>
+      <text x="440" y="1276" class="meta">x 4 · y -7 · size 89</text>
+      <text x="440" y="1294" class="bounds">source L16 T71 R239 B184</text>
+      <text x="440" y="1312" class="bounds">worn L10 T18 R87 B57</text>
+      <text x="440" y="1330" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_011" data-qa-state="accepted">
+      <rect x="852" y="900" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="921" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="930" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_011.png" x="860" y="930" width="256" height="256" />
+      <text x="1148" y="921" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="944" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="944" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_011.png" x="35" y="76" width="59" height="59" />
+      </svg>
+      <text x="864" y="1212" class="id">rare_011</text>
+      <text x="864" y="1236" class="name"><title>광맥 표본칼라</title>광맥 표본칼라</text>
+      <text x="864" y="1258" class="meta">RARE · neck · accepted</text>
+      <text x="864" y="1276" class="meta">x 19 · y 52 · size 59</text>
+      <text x="864" y="1294" class="bounds">source L16 T33 R239 B221</text>
+      <text x="864" y="1312" class="bounds">worn L23 T60 R74 B103</text>
+      <text x="864" y="1330" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_012" data-qa-state="accepted">
+      <rect x="1276" y="900" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="921" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="930" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_012.png" x="1284" y="930" width="256" height="256" />
+      <text x="1572" y="921" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="944" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="944" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_012.png" x="39" y="81" width="50" height="50" />
+      </svg>
+      <text x="1288" y="1212" class="id">rare_012</text>
+      <text x="1288" y="1236" class="name"><title>등고선 압인목장식</title>등고선 압인목장식</text>
+      <text x="1288" y="1258" class="meta">RARE · neck · accepted</text>
+      <text x="1288" y="1276" class="meta">x 23 · y 57 · size 50</text>
+      <text x="1288" y="1294" class="bounds">source L30 T16 R225 B239</text>
+      <text x="1288" y="1312" class="bounds">worn L29 T60 R67 B104</text>
+      <text x="1288" y="1330" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_013" data-qa-state="accepted">
+      <rect x="4" y="1348" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="1369" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="1378" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_013.png" x="12" y="1378" width="256" height="256" />
+      <text x="300" y="1369" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="1392" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="1392" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_013.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="16" y="1660" class="id">rare_013</text>
+      <text x="16" y="1684" class="name"><title>절벽 횡단하네스</title>절벽 횡단하네스</text>
+      <text x="16" y="1706" class="meta">RARE · body · accepted</text>
+      <text x="16" y="1724" class="meta">x 19 · y 48 · size 59</text>
+      <text x="16" y="1742" class="bounds">source L37 T16 R217 B239</text>
+      <text x="16" y="1760" class="bounds">worn L28 T52 R69 B103</text>
+      <text x="16" y="1778" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_014" data-qa-state="accepted">
+      <rect x="428" y="1348" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="1369" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="1378" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_014.png" x="436" y="1378" width="256" height="256" />
+      <text x="724" y="1369" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="1392" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="1392" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_014.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="440" y="1660" class="id">rare_014</text>
+      <text x="440" y="1684" class="name"><title>지하수 탐침망토</title>지하수 탐침망토</text>
+      <text x="440" y="1706" class="meta">RARE · body · accepted</text>
+      <text x="440" y="1724" class="meta">x 19 · y 48 · size 59</text>
+      <text x="440" y="1742" class="bounds">source L34 T16 R221 B239</text>
+      <text x="440" y="1760" class="bounds">worn L27 T52 R70 B103</text>
+      <text x="440" y="1778" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_015" data-qa-state="accepted">
+      <rect x="852" y="1348" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="1369" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="1378" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_015.png" x="860" y="1378" width="256" height="256" />
+      <text x="1148" y="1369" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="1392" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="1392" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_015.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="864" y="1660" class="id">rare_015</text>
+      <text x="864" y="1684" class="name"><title>빙하 틈새보호갑</title>빙하 틈새보호갑</text>
+      <text x="864" y="1706" class="meta">RARE · body · accepted</text>
+      <text x="864" y="1724" class="meta">x 19 · y 48 · size 59</text>
+      <text x="864" y="1742" class="bounds">source L23 T16 R231 B239</text>
+      <text x="864" y="1760" class="bounds">worn L24 T52 R72 B103</text>
+      <text x="864" y="1778" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_016" data-qa-state="accepted">
+      <rect x="1276" y="1348" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="1369" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="1378" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_016.png" x="1284" y="1378" width="256" height="256" />
+      <text x="1572" y="1369" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="1392" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="1392" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_016.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="1288" y="1660" class="id">rare_016</text>
+      <text x="1288" y="1684" class="name"><title>바람토끼 쌍귀모</title>바람토끼 쌍귀모</text>
+      <text x="1288" y="1706" class="meta">RARE · head · accepted</text>
+      <text x="1288" y="1724" class="meta">x 21 · y -27 · size 54</text>
+      <text x="1288" y="1742" class="bounds">source L41 T16 R213 B239</text>
+      <text x="1288" y="1760" class="bounds">worn L30 T-24 R66 B24</text>
+      <text x="1288" y="1778" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_017" data-qa-state="accepted">
+      <rect x="4" y="1796" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="1817" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="1826" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_017.png" x="12" y="1826" width="256" height="256" />
+      <text x="300" y="1817" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="1840" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="1840" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_017.png" x="27" y="-13" width="75" height="75" />
+      </svg>
+      <text x="16" y="2108" class="id">rare_017</text>
+      <text x="16" y="2132" class="name"><title>달나방 촉각관</title>달나방 촉각관</text>
+      <text x="16" y="2154" class="meta">RARE · head · accepted</text>
+      <text x="16" y="2172" class="meta">x 11 · y -37 · size 75</text>
+      <text x="16" y="2190" class="bounds">source L16 T46 R239 B208</text>
+      <text x="16" y="2208" class="bounds">worn L16 T-24 R81 B24</text>
+      <text x="16" y="2226" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_018" data-qa-state="accepted">
+      <rect x="428" y="1796" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="1817" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="1826" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_018.png" x="436" y="1826" width="256" height="256" />
+      <text x="724" y="1817" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="1840" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="1840" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_018.png" x="13" y="-25" width="102" height="102" />
+      </svg>
+      <text x="440" y="2108" class="id">rare_018</text>
+      <text x="440" y="2132" class="name"><title>물결가오리 지느러미관</title>물결가오리 지느러미관</text>
+      <text x="440" y="2154" class="meta">RARE · head · accepted</text>
+      <text x="440" y="2172" class="meta">x -3 · y -49 · size 102</text>
+      <text x="440" y="2190" class="bounds">source L16 T71 R239 B183</text>
+      <text x="440" y="2208" class="bounds">worn L3 T-21 R93 B24</text>
+      <text x="440" y="2226" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_019" data-qa-state="accepted">
+      <rect x="852" y="1796" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="1817" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="1826" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_019.png" x="860" y="1826" width="256" height="256" />
+      <text x="1148" y="1817" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="1840" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="1840" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_019.png" x="30" y="-10" width="69" height="69" />
+      </svg>
+      <text x="864" y="2108" class="id">rare_019</text>
+      <text x="864" y="2132" class="name"><title>숲아르마딜로 등딱지모</title>숲아르마딜로 등딱지모</text>
+      <text x="864" y="2154" class="meta">RARE · head · accepted</text>
+      <text x="864" y="2172" class="meta">x 14 · y -34 · size 69</text>
+      <text x="864" y="2190" class="bounds">source L16 T40 R239 B215</text>
+      <text x="864" y="2208" class="bounds">worn L18 T-23 R79 B24</text>
+      <text x="864" y="2226" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_020" data-qa-state="accepted">
+      <rect x="1276" y="1796" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="1817" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="1826" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_020.png" x="1284" y="1826" width="256" height="256" />
+      <text x="1572" y="1817" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="1840" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="1840" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_020.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="1288" y="2108" class="id">rare_020</text>
+      <text x="1288" y="2132" class="name"><title>서리올빼미 깃부채모</title>서리올빼미 깃부채모</text>
+      <text x="1288" y="2154" class="meta">RARE · head · accepted</text>
+      <text x="1288" y="2172" class="meta">x 21 · y -27 · size 54</text>
+      <text x="1288" y="2190" class="bounds">source L17 T16 R238 B239</text>
+      <text x="1288" y="2208" class="bounds">worn L25 T-24 R71 B24</text>
+      <text x="1288" y="2226" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_021" data-qa-state="accepted">
+      <rect x="4" y="2244" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="2265" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="2274" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_021.png" x="12" y="2274" width="256" height="256" />
+      <text x="300" y="2265" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="2288" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="2288" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_021.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="16" y="2556" class="id">rare_021</text>
+      <text x="16" y="2580" class="name"><title>조수도롱뇽 지느러미띠</title>조수도롱뇽 지느러미띠</text>
+      <text x="16" y="2602" class="meta">RARE · head · accepted</text>
+      <text x="16" y="2620" class="meta">x 21 · y -27 · size 54</text>
+      <text x="16" y="2638" class="bounds">source L20 T16 R235 B239</text>
+      <text x="16" y="2656" class="bounds">worn L25 T-24 R71 B24</text>
+      <text x="16" y="2674" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_022" data-qa-state="accepted">
+      <rect x="428" y="2244" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="2265" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="2274" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_022.png" x="436" y="2274" width="256" height="256" />
+      <text x="724" y="2265" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="2288" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="2288" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_022.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="440" y="2556" class="id">rare_022</text>
+      <text x="440" y="2580" class="name"><title>씨앗풍뎅이 겹딱지관</title>씨앗풍뎅이 겹딱지관</text>
+      <text x="440" y="2602" class="meta">RARE · head · accepted</text>
+      <text x="440" y="2620" class="meta">x 21 · y -27 · size 54</text>
+      <text x="440" y="2638" class="bounds">source L28 T16 R226 B239</text>
+      <text x="440" y="2656" class="bounds">worn L27 T-24 R69 B24</text>
+      <text x="440" y="2674" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_023" data-qa-state="accepted">
+      <rect x="852" y="2244" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="2265" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="2274" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_023.png" x="860" y="2274" width="256" height="256" />
+      <text x="1148" y="2265" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="2288" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="2288" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_023.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="864" y="2556" class="id">rare_023</text>
+      <text x="864" y="2580" class="name"><title>새벽제비 쌍깃관</title>새벽제비 쌍깃관</text>
+      <text x="864" y="2602" class="meta">RARE · head · accepted</text>
+      <text x="864" y="2620" class="meta">x 21 · y -27 · size 54</text>
+      <text x="864" y="2638" class="bounds">source L26 T16 R228 B239</text>
+      <text x="864" y="2656" class="bounds">worn L26 T-24 R69 B24</text>
+      <text x="864" y="2674" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_024" data-qa-state="accepted">
+      <rect x="1276" y="2244" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="2265" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="2274" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_024.png" x="1284" y="2274" width="256" height="256" />
+      <text x="1572" y="2265" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="2288" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="2288" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_024.png" x="40" y="37" width="48" height="48" />
+      </svg>
+      <text x="1288" y="2556" class="id">rare_024</text>
+      <text x="1288" y="2580" class="name"><title>밤물총새 쐐기깃테</title>밤물총새 쐐기깃테</text>
+      <text x="1288" y="2602" class="meta">RARE · face · accepted</text>
+      <text x="1288" y="2620" class="meta">x 24 · y 13 · size 48</text>
+      <text x="1288" y="2638" class="bounds">source L20 T16 R234 B239</text>
+      <text x="1288" y="2656" class="bounds">worn L28 T16 R68 B58</text>
+      <text x="1288" y="2674" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_025" data-qa-state="accepted">
+      <rect x="4" y="2692" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="2713" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="2722" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_025.png" x="12" y="2722" width="256" height="256" />
+      <text x="300" y="2713" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="2736" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="2736" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_025.png" x="13" y="10" width="102" height="102" />
+      </svg>
+      <text x="16" y="3004" class="id">rare_025</text>
+      <text x="16" y="3028" class="name"><title>산호복어 지느러미가리개</title>산호복어 지느러미가리개</text>
+      <text x="16" y="3050" class="meta">RARE · face · accepted</text>
+      <text x="16" y="3068" class="meta">x -3 · y -14 · size 102</text>
+      <text x="16" y="3086" class="bounds">source L16 T79 R239 B176</text>
+      <text x="16" y="3104" class="bounds">worn L3 T17 R93 B57</text>
+      <text x="16" y="3122" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_026" data-qa-state="accepted">
+      <rect x="428" y="2692" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="2713" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="2722" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_026.png" x="436" y="2722" width="256" height="256" />
+      <text x="724" y="2713" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="2736" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="2736" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_026.png" x="36" y="78" width="56" height="56" />
+      </svg>
+      <text x="440" y="3004" class="id">rare_026</text>
+      <text x="440" y="3028" class="name"><title>조약돌거북 등딱지칼라</title>조약돌거북 등딱지칼라</text>
+      <text x="440" y="3050" class="meta">RARE · neck · accepted</text>
+      <text x="440" y="3068" class="meta">x 20 · y 54 · size 56</text>
+      <text x="440" y="3086" class="bounds">source L16 T29 R239 B226</text>
+      <text x="440" y="3104" class="bounds">worn L24 T60 R73 B104</text>
+      <text x="440" y="3122" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_027" data-qa-state="accepted">
+      <rect x="852" y="2692" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="2713" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="2722" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_027.png" x="860" y="2722" width="256" height="256" />
+      <text x="1148" y="2713" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="2736" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="2736" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_027.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="864" y="3004" class="id">rare_027</text>
+      <text x="864" y="3028" class="name"><title>구름새 깃겹망토</title>구름새 깃겹망토</text>
+      <text x="864" y="3050" class="meta">RARE · body · accepted</text>
+      <text x="864" y="3068" class="meta">x 19 · y 48 · size 59</text>
+      <text x="864" y="3086" class="bounds">source L33 T16 R222 B239</text>
+      <text x="864" y="3104" class="bounds">worn L27 T52 R70 B103</text>
+      <text x="864" y="3122" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_028" data-qa-state="accepted">
+      <rect x="1276" y="2692" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="2713" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="2722" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_028.png" x="1284" y="2722" width="256" height="256" />
+      <text x="1572" y="2713" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="2736" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="2736" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_028.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="1288" y="3004" class="id">rare_028</text>
+      <text x="1288" y="3028" class="name"><title>물안개소라 원뿔껍질망토</title>물안개소라 원뿔껍질망토</text>
+      <text x="1288" y="3050" class="meta">RARE · body · accepted</text>
+      <text x="1288" y="3068" class="meta">x 19 · y 48 · size 59</text>
+      <text x="1288" y="3086" class="bounds">source L35 T16 R220 B239</text>
+      <text x="1288" y="3104" class="bounds">worn L27 T52 R70 B103</text>
+      <text x="1288" y="3122" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_029" data-qa-state="accepted">
+      <rect x="4" y="3140" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="3161" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="3170" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_029.png" x="12" y="3170" width="256" height="256" />
+      <text x="300" y="3161" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="3184" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="3184" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_029.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="16" y="3452" class="id">rare_029</text>
+      <text x="16" y="3476" class="name"><title>별무당벌레 둥근등갑</title>별무당벌레 둥근등갑</text>
+      <text x="16" y="3498" class="meta">RARE · body · accepted</text>
+      <text x="16" y="3516" class="meta">x 19 · y 48 · size 59</text>
+      <text x="16" y="3534" class="bounds">source L17 T16 R238 B239</text>
+      <text x="16" y="3552" class="bounds">worn L23 T52 R74 B103</text>
+      <text x="16" y="3570" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_030" data-qa-state="accepted">
+      <rect x="428" y="3140" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="3161" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="3170" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_030.png" x="436" y="3170" width="256" height="256" />
+      <text x="724" y="3161" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="3184" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="3184" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_030.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="440" y="3452" class="id">rare_030</text>
+      <text x="440" y="3476" class="name"><title>태엽승강 겹통관</title>태엽승강 겹통관</text>
+      <text x="440" y="3498" class="meta">RARE · head · accepted</text>
+      <text x="440" y="3516" class="meta">x 21 · y -27 · size 54</text>
+      <text x="440" y="3534" class="bounds">source L31 T16 R223 B239</text>
+      <text x="440" y="3552" class="bounds">worn L28 T-24 R68 B24</text>
+      <text x="440" y="3570" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_031" data-qa-state="accepted">
+      <rect x="852" y="3140" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="3161" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="3170" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_031.png" x="860" y="3170" width="256" height="256" />
+      <text x="1148" y="3161" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="3184" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="3184" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_031.png" x="13" y="-26" width="102" height="102" />
+      </svg>
+      <text x="864" y="3452" class="id">rare_031</text>
+      <text x="864" y="3476" class="name"><title>편심캠 높이조절관</title>편심캠 높이조절관</text>
+      <text x="864" y="3498" class="meta">RARE · head · accepted</text>
+      <text x="864" y="3516" class="meta">x -3 · y -50 · size 102</text>
+      <text x="864" y="3534" class="bounds">source L16 T69 R239 B185</text>
+      <text x="864" y="3552" class="bounds">worn L3 T-23 R93 B24</text>
+      <text x="864" y="3570" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_032" data-qa-state="accepted">
+      <rect x="1276" y="3140" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="3161" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="3170" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_032.png" x="1284" y="3170" width="256" height="256" />
+      <text x="1572" y="3161" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="3184" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="3184" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_032.png" x="36" y="-4" width="57" height="57" />
+      </svg>
+      <text x="1288" y="3452" class="id">rare_032</text>
+      <text x="1288" y="3476" class="name"><title>진자 균형모</title>진자 균형모</text>
+      <text x="1288" y="3498" class="meta">RARE · head · accepted</text>
+      <text x="1288" y="3516" class="meta">x 20 · y -28 · size 57</text>
+      <text x="1288" y="3534" class="bounds">source L16 T22 R239 B233</text>
+      <text x="1288" y="3552" class="bounds">worn L24 T-23 R73 B24</text>
+      <text x="1288" y="3570" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_033" data-qa-state="accepted">
+      <rect x="4" y="3588" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="3609" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="3618" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_033.png" x="12" y="3618" width="256" height="256" />
+      <text x="300" y="3609" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="3632" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="3632" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_033.png" x="35" y="-5" width="58" height="58" />
+      </svg>
+      <text x="16" y="3900" class="id">rare_033</text>
+      <text x="16" y="3924" class="name"><title>홍채판 통풍관</title>홍채판 통풍관</text>
+      <text x="16" y="3946" class="meta">RARE · head · accepted</text>
+      <text x="16" y="3964" class="meta">x 19 · y -29 · size 58</text>
+      <text x="16" y="3982" class="bounds">source L16 T22 R239 B232</text>
+      <text x="16" y="4000" class="bounds">worn L23 T-24 R73 B24</text>
+      <text x="16" y="4018" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_034" data-qa-state="accepted">
+      <rect x="428" y="3588" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="3609" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="3618" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_034.png" x="436" y="3618" width="256" height="256" />
+      <text x="724" y="3609" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="3632" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="3632" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_034.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="440" y="3900" class="id">rare_034</text>
+      <text x="440" y="3924" class="name"><title>도르래 승강아치관</title>도르래 승강아치관</text>
+      <text x="440" y="3946" class="meta">RARE · head · accepted</text>
+      <text x="440" y="3964" class="meta">x 21 · y -27 · size 54</text>
+      <text x="440" y="3982" class="bounds">source L33 T16 R222 B239</text>
+      <text x="440" y="4000" class="bounds">worn L28 T-24 R68 B24</text>
+      <text x="440" y="4018" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_035" data-qa-state="accepted">
+      <rect x="852" y="3588" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="3609" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="3618" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_035.png" x="860" y="3618" width="256" height="256" />
+      <text x="1148" y="3609" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="3632" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="3632" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_035.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="864" y="3900" class="id">rare_035</text>
+      <text x="864" y="3924" class="name"><title>회전프리즘 빛관</title>회전프리즘 빛관</text>
+      <text x="864" y="3946" class="meta">RARE · head · accepted</text>
+      <text x="864" y="3964" class="meta">x 21 · y -27 · size 54</text>
+      <text x="864" y="3982" class="bounds">source L37 T16 R218 B239</text>
+      <text x="864" y="4000" class="bounds">worn L29 T-24 R67 B24</text>
+      <text x="864" y="4018" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_036" data-qa-state="accepted">
+      <rect x="1276" y="3588" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="3609" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="3618" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_036.png" x="1284" y="3618" width="256" height="256" />
+      <text x="1572" y="3609" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="3632" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="3632" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_036.png" x="32" y="-8" width="64" height="64" />
+      </svg>
+      <text x="1288" y="3900" class="id">rare_036</text>
+      <text x="1288" y="3924" class="name"><title>압축스프링 완충모</title>압축스프링 완충모</text>
+      <text x="1288" y="3946" class="meta">RARE · head · accepted</text>
+      <text x="1288" y="3964" class="meta">x 16 · y -32 · size 64</text>
+      <text x="1288" y="3982" class="bounds">source L16 T32 R239 B222</text>
+      <text x="1288" y="4000" class="bounds">worn L20 T-24 R76 B24</text>
+      <text x="1288" y="4018" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_037" data-qa-state="accepted">
+      <rect x="4" y="4036" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="4057" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="4066" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_037.png" x="12" y="4066" width="256" height="256" />
+      <text x="300" y="4057" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="4080" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="4080" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_037.png" x="35" y="32" width="58" height="58" />
+      </svg>
+      <text x="16" y="4348" class="id">rare_037</text>
+      <text x="16" y="4372" class="name"><title>전환레버 육각단안테</title>전환레버 육각단안테</text>
+      <text x="16" y="4394" class="meta">RARE · face · accepted</text>
+      <text x="16" y="4412" class="meta">x 19 · y 8 · size 58</text>
+      <text x="16" y="4430" class="bounds">source L16 T41 R239 B214</text>
+      <text x="16" y="4448" class="bounds">worn L23 T17 R73 B57</text>
+      <text x="16" y="4466" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_038" data-qa-state="accepted">
+      <rect x="428" y="4036" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="4057" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="4066" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_038.png" x="436" y="4066" width="256" height="256" />
+      <text x="724" y="4057" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="4080" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="4080" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_038.png" x="27" y="24" width="74" height="74" />
+      </svg>
+      <text x="440" y="4348" class="id">rare_038</text>
+      <text x="440" y="4372" class="name"><title>톱니초점 쌍렌즈</title>톱니초점 쌍렌즈</text>
+      <text x="440" y="4394" class="meta">RARE · face · accepted</text>
+      <text x="440" y="4412" class="meta">x 11 · y 0 · size 74</text>
+      <text x="440" y="4430" class="bounds">source L16 T59 R239 B196</text>
+      <text x="440" y="4448" class="bounds">worn L16 T17 R80 B57</text>
+      <text x="440" y="4466" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_039" data-qa-state="accepted">
+      <rect x="852" y="4036" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="4057" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="4066" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_039.png" x="860" y="4066" width="256" height="256" />
+      <text x="1148" y="4057" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="4080" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="4080" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_039.png" x="36" y="77" width="57" height="57" />
+      </svg>
+      <text x="864" y="4348" class="id">rare_039</text>
+      <text x="864" y="4372" class="name"><title>자동감김 케이블칼라</title>자동감김 케이블칼라</text>
+      <text x="864" y="4394" class="meta">RARE · neck · accepted</text>
+      <text x="864" y="4412" class="meta">x 20 · y 53 · size 57</text>
+      <text x="864" y="4430" class="bounds">source L16 T30 R239 B225</text>
+      <text x="864" y="4448" class="bounds">worn L24 T60 R73 B103</text>
+      <text x="864" y="4466" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_040" data-qa-state="accepted">
+      <rect x="1276" y="4036" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="4057" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="4066" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_040.png" x="1284" y="4066" width="256" height="256" />
+      <text x="1572" y="4057" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="4080" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="4080" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_040.png" x="39" y="81" width="50" height="50" />
+      </svg>
+      <text x="1288" y="4348" class="id">rare_040</text>
+      <text x="1288" y="4372" class="name"><title>자석부상 추목걸이</title>자석부상 추목걸이</text>
+      <text x="1288" y="4394" class="meta">RARE · neck · accepted</text>
+      <text x="1288" y="4412" class="meta">x 23 · y 57 · size 50</text>
+      <text x="1288" y="4430" class="bounds">source L44 T16 R211 B239</text>
+      <text x="1288" y="4448" class="bounds">worn L32 T60 R64 B104</text>
+      <text x="1288" y="4466" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_041" data-qa-state="accepted">
+      <rect x="4" y="4484" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="4505" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="4514" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_041.png" x="12" y="4514" width="256" height="256" />
+      <text x="300" y="4505" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="4528" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="4528" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_041.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="16" y="4796" class="id">rare_041</text>
+      <text x="16" y="4820" class="name"><title>폴딩리브 전개조끼</title>폴딩리브 전개조끼</text>
+      <text x="16" y="4842" class="meta">RARE · body · accepted</text>
+      <text x="16" y="4860" class="meta">x 19 · y 48 · size 59</text>
+      <text x="16" y="4878" class="bounds">source L22 T16 R233 B239</text>
+      <text x="16" y="4896" class="bounds">worn L24 T52 R73 B103</text>
+      <text x="16" y="4914" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_042" data-qa-state="accepted">
+      <rect x="428" y="4484" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="4505" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="4514" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_042.png" x="436" y="4514" width="256" height="256" />
+      <text x="724" y="4505" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="4528" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="4528" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_042.png" x="34" y="71" width="61" height="61" />
+      </svg>
+      <text x="440" y="4796" class="id">rare_042</text>
+      <text x="440" y="4820" class="name"><title>벨로즈 완충갑</title>벨로즈 완충갑</text>
+      <text x="440" y="4842" class="meta">RARE · body · accepted</text>
+      <text x="440" y="4860" class="meta">x 18 · y 47 · size 61</text>
+      <text x="440" y="4878" class="bounds">source L16 T19 R239 B236</text>
+      <text x="440" y="4896" class="bounds">worn L22 T52 R75 B103</text>
+      <text x="440" y="4914" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_043" data-qa-state="accepted">
+      <rect x="852" y="4484" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="4505" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="4514" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_043.png" x="860" y="4514" width="256" height="256" />
+      <text x="1148" y="4505" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="4528" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="4528" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_043.png" x="34" y="72" width="60" height="60" />
+      </svg>
+      <text x="864" y="4796" class="id">rare_043</text>
+      <text x="864" y="4820" class="name"><title>롤러셔터 접이망토</title>롤러셔터 접이망토</text>
+      <text x="864" y="4842" class="meta">RARE · body · accepted</text>
+      <text x="864" y="4860" class="meta">x 18 · y 48 · size 60</text>
+      <text x="864" y="4878" class="bounds">source L16 T18 R239 B236</text>
+      <text x="864" y="4896" class="bounds">worn L22 T52 R74 B104</text>
+      <text x="864" y="4914" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_044" data-qa-state="accepted">
+      <rect x="1276" y="4484" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="4505" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="4514" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_044.png" x="1284" y="4514" width="256" height="256" />
+      <text x="1572" y="4505" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="4528" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="4528" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_044.png" x="33" y="-7" width="62" height="62" />
+      </svg>
+      <text x="1288" y="4796" class="id">rare_044</text>
+      <text x="1288" y="4820" class="name"><title>구름항 비행등표모</title>구름항 비행등표모</text>
+      <text x="1288" y="4842" class="meta">RARE · head · accepted</text>
+      <text x="1288" y="4860" class="meta">x 17 · y -31 · size 62</text>
+      <text x="1288" y="4878" class="bounds">source L16 T29 R239 B225</text>
+      <text x="1288" y="4896" class="bounds">worn L21 T-24 R75 B24</text>
+      <text x="1288" y="4914" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_045" data-qa-state="accepted">
+      <rect x="4" y="4932" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="4953" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="4962" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_045.png" x="12" y="4962" width="256" height="256" />
+      <text x="300" y="4953" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="4976" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="4976" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_045.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="16" y="5244" class="id">rare_045</text>
+      <text x="16" y="5268" class="name"><title>유리숲 햇살쐐기관</title>유리숲 햇살쐐기관</text>
+      <text x="16" y="5290" class="meta">RARE · head · accepted</text>
+      <text x="16" y="5308" class="meta">x 21 · y -27 · size 54</text>
+      <text x="16" y="5326" class="bounds">source L16 T16 R238 B239</text>
+      <text x="16" y="5344" class="bounds">worn L24 T-24 R71 B24</text>
+      <text x="16" y="5362" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_046" data-qa-state="accepted">
+      <rect x="428" y="4932" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="4953" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="4962" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_046.png" x="436" y="4962" width="256" height="256" />
+      <text x="724" y="4953" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="4976" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="4976" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_046.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="440" y="5244" class="id">rare_046</text>
+      <text x="440" y="5268" class="name"><title>달샘 계단물결모</title>달샘 계단물결모</text>
+      <text x="440" y="5290" class="meta">RARE · head · accepted</text>
+      <text x="440" y="5308" class="meta">x 21 · y -27 · size 54</text>
+      <text x="440" y="5326" class="bounds">source L46 T16 R209 B239</text>
+      <text x="440" y="5344" class="bounds">worn L31 T-24 R65 B24</text>
+      <text x="440" y="5362" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_047" data-qa-state="accepted">
+      <rect x="852" y="4932" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="4953" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="4962" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_047.png" x="860" y="4962" width="256" height="256" />
+      <text x="1148" y="4953" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="4976" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="4976" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_047.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="864" y="5244" class="id">rare_047</text>
+      <text x="864" y="5268" class="name"><title>잿바람벌판 화산석관</title>잿바람벌판 화산석관</text>
+      <text x="864" y="5290" class="meta">RARE · head · accepted</text>
+      <text x="864" y="5308" class="meta">x 21 · y -27 · size 54</text>
+      <text x="864" y="5326" class="bounds">source L25 T16 R229 B239</text>
+      <text x="864" y="5344" class="bounds">worn L26 T-24 R70 B24</text>
+      <text x="864" y="5362" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_048" data-qa-state="accepted">
+      <rect x="1276" y="4932" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="4953" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="4962" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_048.png" x="1284" y="4962" width="256" height="256" />
+      <text x="1572" y="4953" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="4976" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="4976" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_048.png" x="25" y="-15" width="78" height="78" />
+      </svg>
+      <text x="1288" y="5244" class="id">rare_048</text>
+      <text x="1288" y="5268" class="name"><title>별모래언덕 만조모</title>별모래언덕 만조모</text>
+      <text x="1288" y="5290" class="meta">RARE · head · accepted</text>
+      <text x="1288" y="5308" class="meta">x 9 · y -39 · size 78</text>
+      <text x="1288" y="5326" class="bounds">source L16 T49 R239 B205</text>
+      <text x="1288" y="5344" class="bounds">worn L14 T-24 R82 B24</text>
+      <text x="1288" y="5362" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_049" data-qa-state="accepted">
+      <rect x="4" y="5380" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="5401" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="5410" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_049.png" x="12" y="5410" width="256" height="256" />
+      <text x="300" y="5401" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="5424" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="5424" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_049.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="16" y="5692" class="id">rare_049</text>
+      <text x="16" y="5716" class="name"><title>청동이끼습원 잎탑모</title>청동이끼습원 잎탑모</text>
+      <text x="16" y="5738" class="meta">RARE · head · accepted</text>
+      <text x="16" y="5756" class="meta">x 21 · y -27 · size 54</text>
+      <text x="16" y="5774" class="bounds">source L40 T16 R215 B239</text>
+      <text x="16" y="5792" class="bounds">worn L29 T-24 R67 B24</text>
+      <text x="16" y="5810" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_050" data-qa-state="accepted">
+      <rect x="428" y="5380" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="5401" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="5410" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_050.png" x="436" y="5410" width="256" height="256" />
+      <text x="724" y="5401" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="5424" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="5424" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_050.png" x="37" y="-3" width="54" height="54" />
+      </svg>
+      <text x="440" y="5692" class="id">rare_050</text>
+      <text x="440" y="5716" class="name"><title>눈종골짜기 층빙모</title>눈종골짜기 층빙모</text>
+      <text x="440" y="5738" class="meta">RARE · head · accepted</text>
+      <text x="440" y="5756" class="meta">x 21 · y -27 · size 54</text>
+      <text x="440" y="5774" class="bounds">source L38 T16 R216 B239</text>
+      <text x="440" y="5792" class="bounds">worn L29 T-24 R67 B24</text>
+      <text x="440" y="5810" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_051" data-qa-state="accepted">
+      <rect x="852" y="5380" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="5401" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="5410" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_051.png" x="860" y="5410" width="256" height="256" />
+      <text x="1148" y="5401" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="5424" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="5424" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_051.png" x="28" y="-12" width="73" height="73" />
+      </svg>
+      <text x="864" y="5692" class="id">rare_051</text>
+      <text x="864" y="5716" class="name"><title>자주번개평원 전광챙관</title>자주번개평원 전광챙관</text>
+      <text x="864" y="5738" class="meta">RARE · head · accepted</text>
+      <text x="864" y="5756" class="meta">x 12 · y -36 · size 73</text>
+      <text x="864" y="5774" class="bounds">source L16 T44 R239 B211</text>
+      <text x="864" y="5792" class="bounds">worn L17 T-23 R80 B24</text>
+      <text x="864" y="5810" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_052" data-qa-state="accepted">
+      <rect x="1276" y="5380" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="5401" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="5410" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_052.png" x="1284" y="5410" width="256" height="256" />
+      <text x="1572" y="5401" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="5424" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="5424" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_052.png" x="17" y="14" width="94" height="94" />
+      </svg>
+      <text x="1288" y="5692" class="id">rare_052</text>
+      <text x="1288" y="5716" class="name"><title>거울안개섬 겹테안경</title>거울안개섬 겹테안경</text>
+      <text x="1288" y="5738" class="meta">RARE · face · accepted</text>
+      <text x="1288" y="5756" class="meta">x 1 · y -10 · size 94</text>
+      <text x="1288" y="5774" class="bounds">source L16 T74 R239 B181</text>
+      <text x="1288" y="5792" class="bounds">worn L7 T17 R89 B57</text>
+      <text x="1288" y="5810" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_053" data-qa-state="accepted">
+      <rect x="4" y="5828" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="5849" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="5858" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_053.png" x="12" y="5858" width="256" height="256" />
+      <text x="300" y="5849" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="5872" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="5872" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_053.png" x="29" y="26" width="70" height="70" />
+      </svg>
+      <text x="16" y="6140" class="id">rare_053</text>
+      <text x="16" y="6164" class="name"><title>푸른혜성해 역장가리개</title>푸른혜성해 역장가리개</text>
+      <text x="16" y="6186" class="meta">RARE · face · accepted</text>
+      <text x="16" y="6204" class="meta">x 13 · y 2 · size 70</text>
+      <text x="16" y="6222" class="bounds">source L16 T55 R239 B199</text>
+      <text x="16" y="6240" class="bounds">worn L17 T17 R79 B57</text>
+      <text x="16" y="6258" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_054" data-qa-state="accepted">
+      <rect x="428" y="5828" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="440" y="5849" class="section-label">ISOLATED · 4X</text>
+      <rect x="436" y="5858" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_054.png" x="436" y="5858" width="256" height="256" />
+      <text x="724" y="5849" class="section-label">WORN · 96PX</text>
+      <rect x="708" y="5872" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="708" y="5872" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_054.png" x="34" y="75" width="61" height="61" />
+      </svg>
+      <text x="440" y="6140" class="id">rare_054</text>
+      <text x="440" y="6164" class="name"><title>꿀빛협곡 낙석칼라</title>꿀빛협곡 낙석칼라</text>
+      <text x="440" y="6186" class="meta">RARE · neck · accepted</text>
+      <text x="440" y="6204" class="meta">x 18 · y 51 · size 61</text>
+      <text x="440" y="6222" class="bounds">source L16 T36 R239 B218</text>
+      <text x="440" y="6240" class="bounds">worn L22 T60 R75 B103</text>
+      <text x="440" y="6258" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_055" data-qa-state="accepted">
+      <rect x="852" y="5828" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="864" y="5849" class="section-label">ISOLATED · 4X</text>
+      <rect x="860" y="5858" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_055.png" x="860" y="5858" width="256" height="256" />
+      <text x="1148" y="5849" class="section-label">WORN · 96PX</text>
+      <rect x="1132" y="5872" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1132" y="5872" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_055.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="864" y="6140" class="id">rare_055</text>
+      <text x="864" y="6164" class="name"><title>수정비늪 방울망토</title>수정비늪 방울망토</text>
+      <text x="864" y="6186" class="meta">RARE · body · accepted</text>
+      <text x="864" y="6204" class="meta">x 19 · y 48 · size 59</text>
+      <text x="864" y="6222" class="bounds">source L48 T16 R207 B239</text>
+      <text x="864" y="6240" class="bounds">worn L30 T52 R67 B103</text>
+      <text x="864" y="6258" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_056" data-qa-state="accepted">
+      <rect x="1276" y="5828" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="1288" y="5849" class="section-label">ISOLATED · 4X</text>
+      <rect x="1284" y="5858" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_056.png" x="1284" y="5858" width="256" height="256" />
+      <text x="1572" y="5849" class="section-label">WORN · 96PX</text>
+      <rect x="1556" y="5872" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="1556" y="5872" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_056.png" x="35" y="72" width="59" height="59" />
+      </svg>
+      <text x="1288" y="6140" class="id">rare_056</text>
+      <text x="1288" y="6164" class="name"><title>노을톱산맥 능선갑</title>노을톱산맥 능선갑</text>
+      <text x="1288" y="6186" class="meta">RARE · body · accepted</text>
+      <text x="1288" y="6204" class="meta">x 19 · y 48 · size 59</text>
+      <text x="1288" y="6222" class="bounds">source L16 T16 R239 B239</text>
+      <text x="1288" y="6240" class="bounds">worn L23 T52 R74 B103</text>
+      <text x="1288" y="6258" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="rare_057" data-qa-state="accepted">
+      <rect x="4" y="6276" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="6297" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="6306" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../rare/rare_057.png" x="12" y="6306" width="256" height="256" />
+      <text x="300" y="6297" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="6320" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="6320" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../rare/rare_057.png" x="32" y="69" width="65" height="65" />
+      </svg>
+      <text x="16" y="6588" class="id">rare_057</text>
+      <text x="16" y="6612" class="name"><title>잔별초원 씨앗바람외투</title>잔별초원 씨앗바람외투</text>
+      <text x="16" y="6634" class="meta">RARE · body · accepted</text>
+      <text x="16" y="6652" class="meta">x 16 · y 45 · size 65</text>
+      <text x="16" y="6670" class="bounds">source L16 T27 R239 B228</text>
+      <text x="16" y="6688" class="bounds">worn L20 T52 R77 B103</text>
+      <text x="16" y="6706" class="clear">warnings none</text>
+    </g>
+</svg>

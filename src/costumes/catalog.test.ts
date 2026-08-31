@@ -40,7 +40,7 @@ describe("costume manifest metadata", () => {
       expect.objectContaining({
         name: "살림꾼 다용도앞치마",
         slot: "body",
-        defaultAlignment: { x: 0, y: 22, size: 108 },
+        defaultAlignment: { x: 19, y: 48, size: 59 },
       }),
     );
   });
