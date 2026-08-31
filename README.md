@@ -43,7 +43,7 @@ Windows **설정 → 앱 → 설치된 앱**에서 `migam desktop`을 찾아 제
 - 클릭, 드래그, 던지기, 착지·충돌·창 등반 애니메이션
 - CPU·메모리 사용량에 반응하는 이동과 트레이 표시
 - 뽀모도로 타이머와 할 일 집중 연결
-- 집중 완료 보상 티켓, GAMCHA와 156종 코스튬 인벤토리
+- 집중 완료 보상 티켓, GAMCHA와 뽑기 코스튬 185종 인벤토리(기본 3종을 포함한 매니페스트 총 188종)
 - 사진 배달, 희귀 이벤트와 저배터리 배터리 배달
 - 사용자 규칙과 대상 재검증을 거치는 안전한 방해 창 최소화
 - 설정·할 일·GAMCHA 로컬 저장 및 손상 JSON 보존·복구
@@ -87,6 +87,10 @@ npm run tauri -- dev
 ### 검증
 
 ```powershell
+npm run test:assets
+npm run costumes:blueprint
+npm run costumes:validate
+npm run costumes:validate-candidates
 npm run typecheck
 npm test
 npm run build
@@ -100,9 +104,11 @@ cargo clippy --all-targets -- -D warnings
 
 ## 현재 검증 상태
 
-- 프런트엔드 테스트 53개 통과
-- Rust 테스트 48개 통과
+- 에셋 테스트 56개와 프런트엔드 테스트 67개 통과
+- Rust 테스트 52개 통과
+- 뽑기 코스튬 185종(Common 80, Rare 57, Epic 31, Legendary 12, Special 5)과 기본 3종 검증 통과
+- 배치 슬롯 합계 head 99, face 28, neck 22, body 36 및 승인 후보 185개 검증 통과
 - TypeScript 검사, Vite production build, rustfmt, Clippy 통과
-- Windows x64 NSIS release 빌드 성공
+- 개발 앱 실행은 확인했으며 실제 Windows 추첨·착용·기존 기능 회귀는 수동 확인이 남아 있음
 
 상세한 구현 및 검증 기준은 [개발 문서 색인](docs/README.md)을 참고하세요.

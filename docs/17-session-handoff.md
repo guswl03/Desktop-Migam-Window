@@ -405,3 +405,27 @@
 - 아직 푸시·PR·main 병합·설치판 배포를 하지 않았다. 원래 작업 폴더의 사용자 미커밋 변경도 건드리지 않았다.
 
 남은 수동 확인: Windows에서 사진 배달 체감 크기·속도, 창 오르기 ON/OFF, 몸체·얼굴 구멍형을 포함한 대표 재제작 코스튬 착용 모습을 확인한다.
+
+## 2026-09-01 신규 185종 도감 최종 인수인계
+
+- `pack/manifest.json`은 뽑기 코스튬 185종과 기존 기본 3종, 총 188종이다.
+- 뽑기 등급 수는 Common 80·Rare 57·Epic 31·Legendary 12·Special 5이고, 배치 슬롯 수는 head 99·face 28·neck 22·body 36이다.
+- 185개 ID·이름·파일 경로가 모두 고유하며 ID는 승인된 정규 범위와 정확히 일치한다. 런타임과 매니페스트에는 `full`, split 파생 ID, `parentSetId`, `source`, derived-component 지원이 없다.
+- 프로덕션 PNG 185개와 `pack/qa/accepted/` 승인본 185개는 항목별 SHA-256이 모두 같고 불일치는 0개다. 모든 blueprint 행은 `accepted`다.
+- `pack/qa/generated/final/`의 5개 시트는 185개 셀을 매니페스트 순서로 포함하고 warning 요소가 없다.
+- Special 매핑은 `special_001` 사진 배달/body, `special_002` 집중 타이머/head, `special_003` 창 오르기/neck, `special_004` GAMCHA/face, `special_005` 미감이 정체성/head다.
+- 구 semantic repair 스크립트·원장·raw/worn 시트와 package 명령은 제거되어 있으며 새 blueprint·candidate·final QA 흐름만 사용한다.
+- 새로 실행한 검증은 에셋 56/56, 프런트 20파일·67테스트, Rust 52테스트, blueprint 185, candidate 185, production 185, final sheets 5/185, TypeScript·Vite production build·rustfmt·Clippy 모두 통과했다.
+- 후보 프로모션 파이프라인 전체 테스트는 36개 통과·실패 0개이며, Windows가 symlink 생성을 거부한 안전성 테스트 1개만 명시적으로 skip했다.
+- `npm run tauri -- dev`는 Vite 준비, Rust dev build, `migam-desktop.exe` 실행까지 성공했다. 연결 worktree의 deny-read ACL로 UI 자동화 도구가 종료되어 실제 추첨·착용 및 기존 기능 회귀의 Windows 수동 확인은 남아 있다.
+- `src-tauri/Cargo.toml`은 working tree와 index blob hash가 모두 `ec0a238b0252a93116d8a3c29ec5db1fbdf74503`으로 같으며 staging·커밋에서 제외한다.
+- 이번 단계에서는 배포·푸시·PR·병합을 수행하지 않았다.
+
+```text
+현재 상태: 신규 185종 게임 아이템 도감 자동 검증 완료, Windows 수동 인수 검사 대기
+마지막 성공 검사: 2026-09-01 에셋 56·프런트 67·Rust 52, blueprint/candidate/production 185, TypeScript·production build·fmt·Clippy 통과
+완료한 기능: 기존 ID·희귀도·소유 호환을 유지한 185종 신규 카탈로그, 개별 배치, 최종 이미지·시트·해시·레거시 검증
+다음으로 할 일: 일반 Windows 사용자 세션에서 등급별 대표 추첨·이름·아트·소유 복원·단일 장착·클리핑과 사진 배달·뽀모도로·창 오르기·설정을 확인
+알려진 위험: 자동 검증은 모두 통과했지만 위 실제 Windows 상호작용·시각 확인은 ACL 제한 때문에 아직 완료하지 못함
+실행/테스트 방법: README의 개발 실행과 카탈로그 QA 명령 사용
+```

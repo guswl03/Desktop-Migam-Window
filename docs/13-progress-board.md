@@ -323,3 +323,25 @@
 현재 상태: `feat/costume-catalog-overhaul` 브랜치에 사진 배달·테스트 메뉴·창 오르기 설정과 코스튬 도감 보강을 함께 반영했으며 배포·푸시는 하지 않음.
 
 다음으로 할 일: Windows 사용자 세션에서 변경된 사진 배달 크기·속도, 창 오르기 ON/OFF, 대표 코스튬 착용 모습을 눈으로 확인한 뒤 통합 방식을 결정.
+
+## 2026-09-01 신규 185종 게임 아이템 도감 최종 검증
+
+- [x] 뽑기 코스튬 185종과 기본 3종, 매니페스트 총 188종 확인
+- [x] 등급별 Common 80·Rare 57·Epic 31·Legendary 12·Special 5 확인
+- [x] 슬롯별 head 99·face 28·neck 22·body 36 확인
+- [x] 프로덕션 PNG 185개와 승인본 185개의 경로·SHA-256 항목별 동일성 확인(불일치 0)
+- [x] 최종 등급 시트 5개·185셀·매니페스트 순서 일치·경고 요소 0 확인
+- [x] 레거시 `full`/split 런타임 지원, 비정규 split ID, 구 repair 명령과 산출 경로 0건 확인
+- [x] Special 5종의 사진 배달·집중 타이머·창 오르기·GAMCHA·미감이 매핑 확인
+
+| 날짜 | 검사 | 결과 | 비고 |
+|---|---|---|---|
+| 2026-09-01 | `npm run test:assets`, `npm run costumes:blueprint`, `npm run costumes:validate` | 통과 | 에셋 56/56, blueprint 185·중복 0, production 80/57/31/12/5 = 185 |
+| 2026-09-01 | `npm run costumes:validate-candidates`, 후보 pipeline 전체 테스트 | 통과 | 후보 185개, 36 pass·0 fail·Windows `EPERM` symlink 1 skip |
+| 2026-09-01 | `npm test`, `npm run lint`, `npm run build` | 통과 | 프런트 20파일·67테스트, TypeScript, Vite production build(266 modules) |
+| 2026-09-01 | `cargo test`, `cargo fmt --check`, `cargo clippy --all-targets -- -D warnings` | 통과 | Rust 52개, 포맷·Clippy 경고 0 |
+| 2026-09-01 | `npm run costumes:sheets`와 독립 인벤토리·해시 검사 | 통과 | generated 5·items 185, accepted/production hash mismatch 0 |
+
+현재 상태: 신규 185종 도감의 자동 검증과 개발 앱 실행까지 통과했다. `src-tauri/Cargo.toml`의 내용 동일 working-tree refresh는 index와 같은 blob hash로 보존하고 커밋에서 제외했다. 배포·푸시·PR·병합은 수행하지 않았다.
+
+남은 수동 확인: 일반 Windows 사용자 세션에서 등급별 대표 아이템의 추첨·새 이름·착용·단일 장착·클리핑 없음과 기존 소유 ID 복원, 사진 배달·뽀모도로·창 오르기·설정 회귀를 눈으로 확인한다. 현재 연결 worktree의 deny-read ACL 때문에 UI 자동화 도구로는 이 확인을 완료하지 못했다.
