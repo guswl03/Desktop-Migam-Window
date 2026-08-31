@@ -26,7 +26,7 @@ export function applyBlueprint(manifest, items) {
     throw new Error(`blueprint validation failed:\n${validationErrors.join("\n")}`);
   }
   if (!Array.isArray(items) || items.length !== expected.size) {
-    throw new Error(`expected 185 blueprint rows, got ${items?.length ?? 0}`);
+    throw new Error(`expected 314 blueprint rows, got ${items?.length ?? 0}`);
   }
   if (defaults.length !== 3) {
     throw new Error(`expected 3 default costumes, got ${defaults.length}`);
@@ -284,10 +284,10 @@ export async function planPromotion(blueprint, acceptedCandidates, { root = repo
   const expected = expectedCatalogIds();
   const blueprintById = new Map();
   if (!Array.isArray(blueprint)) {
-    errors.push("blueprint: expected an array of 185 rows");
+    errors.push("blueprint: expected an array of 314 rows");
   } else {
     errors.push(...validateBlueprint(blueprint).map((error) => `blueprint: ${error}`));
-    if (blueprint.length !== expected.size) errors.push(`expected 185 blueprint rows, got ${blueprint.length}`);
+    if (blueprint.length !== expected.size) errors.push(`expected 314 blueprint rows, got ${blueprint.length}`);
     for (const item of blueprint) {
       const id = typeof item?.id === "string" ? item.id : "<blueprint row>";
       if (blueprintById.has(id)) {
@@ -308,7 +308,7 @@ export async function planPromotion(blueprint, acceptedCandidates, { root = repo
 
   const candidates = acceptedCandidates instanceof Map ? acceptedCandidates : new Map();
   if (!(acceptedCandidates instanceof Map)) errors.push("accepted candidates: expected a Map keyed by costume ID");
-  if (candidates.size !== expected.size) errors.push(`expected 185 accepted candidates, got ${candidates.size}`);
+  if (candidates.size !== expected.size) errors.push(`expected 314 accepted candidates, got ${candidates.size}`);
   const candidateIds = new Set();
   for (const [key, entry] of candidates) {
     const candidate = candidateRecord(key, entry);
@@ -370,6 +370,7 @@ export async function planPromotion(blueprint, acceptedCandidates, { root = repo
     return Object.freeze({
       id,
       rarity,
+      restoredFrom: item.restoredFrom,
       sourcePath: candidate.sourcePath ?? paths.sourcePath,
       targetPath: paths.targetPath,
       png: candidate.bytes,
@@ -383,7 +384,7 @@ function temporaryPath(parent, id, kind) {
 }
 
 async function rereadForStaging(root, copy) {
-  const item = { id: copy.id, rarity: copy.rarity };
+  const item = { id: copy.id, rarity: copy.rarity, restoredFrom: copy.restoredFrom };
   const sourcePath = await verifyAcceptedSource(root, item, copy.sourcePath);
   const decoded = await readPngRgba(sourcePath);
   const errors = validateCandidate(item, decoded);
@@ -472,7 +473,7 @@ export async function applyPromotion(options = {}) {
       staged.push(record);
       await writeFile(temporary, copy.bytes, { flag: "wx" });
       const stagedDecoded = await readPngRgba(temporary);
-      const errors = validateCandidate({ id: copy.id, rarity: copy.rarity }, stagedDecoded);
+      const errors = validateCandidate({ id: copy.id, rarity: copy.rarity, restoredFrom: copy.restoredFrom }, stagedDecoded);
       if (errors.length) throw new Error(errors.join("\n"));
       runFailureHook(failureHook, "stage", index, record);
     }
@@ -551,7 +552,7 @@ export async function applyCatalogPromotion({ root = repositoryRoot, failureHook
     const parent = await verifiedDirectory(root, resolve(root, "pack"), "manifest");
     await verifiedRegularFile(manifestPath, parent, "manifest");
     const temporary = temporaryPath(parent.canonicalDirectory, "manifest", "promote.tmp");
-    runFailureHook(failureHook, "before-manifest-stage-write", 185, { id: "manifest" });
+    runFailureHook(failureHook, "before-manifest-stage-write", 314, { id: "manifest" });
     await writeFile(temporary, bytes, { flag: "wx" });
     return {
       id: "manifest",

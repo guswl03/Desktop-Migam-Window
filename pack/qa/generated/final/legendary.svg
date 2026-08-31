@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1696" height="1344" viewBox="0 0 1696 1344">
+<svg xmlns="http://www.w3.org/2000/svg" width="1696" height="1792" viewBox="0 0 1696 1792">
   <title>Gamjabot legendary costume QA</title>
   <defs>
     <pattern id="checker" width="16" height="16" patternUnits="userSpaceOnUse">
@@ -271,5 +271,26 @@
       <text x="1288" y="1294" class="bounds">source L16 T16 R239 B238</text>
       <text x="1288" y="1312" class="bounds">worn L22.69 T51.69 R74.31 B103.08</text>
       <text x="1288" y="1330" class="clear">warnings none</text>
+    </g>
+    <g class="costume-cell" data-id="legendary_013" data-qa-state="accepted">
+      <rect x="4" y="1348" width="416" height="440" rx="8" fill="#222329" stroke="#5b5d67" />
+      <text x="16" y="1369" class="section-label">ISOLATED · 4X</text>
+      <rect x="12" y="1378" width="256" height="256" fill="url(#checker)" stroke="#777" />
+      <image href="../../../legendary/legendary_013.png" x="12" y="1378" width="256" height="256" />
+      <text x="300" y="1369" class="section-label">WORN · 96PX</text>
+      <rect x="284" y="1392" width="128" height="128" fill="url(#checker)" stroke="#777" />
+      <svg x="284" y="1392" width="128" height="128" viewBox="0 0 128 128" overflow="hidden">
+        <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+          <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+        </svg>
+        <image href="../../../legendary/legendary_013.png" x="10" y="24" width="108" height="108" />
+      </svg>
+      <text x="16" y="1660" class="id">legendary_013</text>
+      <text x="16" y="1684" class="name"><title>세계수 군주 관과 망토</title>세계수 군주 관과 망토</text>
+      <text x="16" y="1706" class="meta">LEGENDARY · body · accepted</text>
+      <text x="16" y="1724" class="meta">x -6 · y 0 · size 108</text>
+      <text x="16" y="1742" class="bounds">source L23 T62 R231 B192</text>
+      <text x="16" y="1760" class="bounds">worn L3.70 T26.16 R91.88 B81.42</text>
+      <text x="16" y="1778" class="clear">warnings none</text>
     </g>
 </svg>

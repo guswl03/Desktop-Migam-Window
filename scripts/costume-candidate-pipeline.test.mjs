@@ -176,7 +176,7 @@ test("normalization preserves prior accepted output when validation fails", asyn
 test("rejects an incomplete candidate set before promotion", async () => {
   const blueprint = acceptedBlueprint();
   const result = await planPromotion(blueprint, new Map([["common_001", Buffer.from("png")]]));
-  assert.ok(result.errors.includes("expected 185 accepted candidates, got 1"));
+  assert.ok(result.errors.includes("expected 314 accepted candidates, got 1"));
 });
 
 test("promotion requires exact accepted qa states and rejects extra or rarity-mismatched candidates", async () => {
@@ -199,7 +199,7 @@ test("promotion exposes all copies only after the complete dry run is clean", as
   const result = await planPromotion(blueprint, pngs);
 
   assert.deepEqual(result.errors, []);
-  assert.equal(result.copies.length, 185);
+  assert.equal(result.copies.length, 314);
   assert.match(result.copies[0].targetPath, /pack[\\/]common[\\/]common_001\.png$/);
 });
 
@@ -227,7 +227,7 @@ test("apply promotion writes the complete clean plan to its planned destination 
   try {
     await assert.rejects(applyPromotion(plan), /caller-supplied plan/);
     await prepareAuthoritativePromotion(root);
-    assert.equal(await applyPromotion({ root }), 185);
+    assert.equal(await applyPromotion({ root }), 314);
     assert.deepEqual(
       await readFile(join(root, "pack", "common", "common_001.png")),
       pngs.get("common_001").bytes,
@@ -279,12 +279,12 @@ async function assertCatalogRollbackForManifestPhase(phase) {
   const injected = [];
   try {
     await assert.rejects(applyCatalogPromotion({ root, failureHook: ({ currentPhase, index, id }) => {
-      if (currentPhase === phase && index === 185 && id === "manifest") {
+      if (currentPhase === phase && index === 314 && id === "manifest") {
         injected.push({ currentPhase, index, id });
         throw new Error(`injected ${phase}`);
       }
     } }), /injected/);
-    assert.deepEqual(injected, [{ currentPhase: phase, index: 185, id: "manifest" }]);
+    assert.deepEqual(injected, [{ currentPhase: phase, index: 314, id: "manifest" }]);
     await assertOriginalCatalog(root);
     assert.deepEqual(await readFile(join(root, "pack", "manifest.json")), originalManifest);
     await assertNoPromotionArtifacts(root);
@@ -297,20 +297,20 @@ for (const phase of ["before-manifest-stage-write", "after-manifest-stage-write"
   });
 }
 
-test("catalog promotion commits 185 PNGs and the projected manifest as one result", async () => {
+test("catalog promotion commits 314 PNGs and the projected manifest as one result", async () => {
   const root = await mkdtemp(join(tmpdir(), "costume-catalog-transaction-success-"));
   await prepareAuthoritativePromotion(root);
   try {
     const result = await applyCatalogPromotion({ root });
-    assert.equal(result.promoted, 185);
-    assert.equal(result.manifest, 188);
+    assert.equal(result.promoted, 314);
+    assert.equal(result.manifest, 317);
     assert.notDeepEqual(
       await readFile(join(root, "pack", "common", "common_001.png")),
       Buffer.from("original-common_001"),
     );
     const manifest = JSON.parse(await readFile(join(root, "pack", "manifest.json"), "utf8"));
-    assert.equal(manifest.count, 188);
-    assert.equal(manifest.costumes.length, 188);
+    assert.equal(manifest.count, 317);
+    assert.equal(manifest.costumes.length, 317);
     await assertNoPromotionArtifacts(root);
   } finally { await rm(root, { recursive: true, force: true }); }
 });
@@ -321,7 +321,7 @@ test("manifest cleanup failure preserves recovery evidence after a fully committ
   try {
     await assert.rejects(
       applyCatalogPromotion({ root, failureHook: ({ currentPhase, index }) => {
-        if (currentPhase === "before-backup-cleanup" && index === 185) throw new Error("injected manifest cleanup failure");
+        if (currentPhase === "before-backup-cleanup" && index === 314) throw new Error("injected manifest cleanup failure");
       } }),
       (error) => error instanceof AggregateError
         && error.message.includes("cleanup incomplete")
@@ -332,7 +332,7 @@ test("manifest cleanup failure preserves recovery evidence after a fully committ
       Buffer.from("original-common_001"),
     );
     const manifest = JSON.parse(await readFile(join(root, "pack", "manifest.json"), "utf8"));
-    assert.equal(manifest.count, 188);
+    assert.equal(manifest.count, 317);
     const leftovers = await readdir(join(root, "pack"));
     assert.ok(leftovers.some((name) => /^\.manifest\..+\.promote\.bak$/.test(name)));
   } finally { await rm(root, { recursive: true, force: true }); }
@@ -344,8 +344,8 @@ test("manifest rollback failure preserves its backup for recovery", async () => 
   try {
     await assert.rejects(
       applyCatalogPromotion({ root, failureHook: ({ currentPhase, index }) => {
-        if (currentPhase === "before-commit-rename" && index === 185) throw new Error("injected manifest commit failure");
-        if (currentPhase === "before-restore-rename" && index === 185) throw new Error("injected manifest restore failure");
+        if (currentPhase === "before-commit-rename" && index === 314) throw new Error("injected manifest commit failure");
+        if (currentPhase === "before-restore-rename" && index === 314) throw new Error("injected manifest restore failure");
       } }),
       (error) => error instanceof AggregateError
         && error.message.includes("rollback was incomplete")

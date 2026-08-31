@@ -8,7 +8,7 @@
   "assetType": "standalone-transparent-costume",
   "runtimeAlignment": "not-applied",
   "eyeNoisePolicy": "standalone source regions only; wearer previews and eye pixels excluded",
-  "count": 188,
+  "count": 317,
   "costumes": [
     {
       "id": "common_001",
@@ -1051,6 +1051,903 @@
       }
     },
     {
+      "id": "common_081",
+      "name": "검정 헤드폰",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_081.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 6,
+        "y": -42,
+        "size": 85
+      }
+    },
+    {
+      "id": "common_082",
+      "name": "탐정 모자",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_082.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 3,
+        "y": -45,
+        "size": 91
+      }
+    },
+    {
+      "id": "common_083",
+      "name": "요리사 모자",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_083.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 4,
+        "y": -44,
+        "size": 88
+      }
+    },
+    {
+      "id": "common_084",
+      "name": "빨간 머리띠",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_084.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -11,
+        "y": -59,
+        "size": 119
+      }
+    },
+    {
+      "id": "common_085",
+      "name": "남색 비니",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_085.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 3,
+        "y": -45,
+        "size": 91
+      }
+    },
+    {
+      "id": "common_086",
+      "name": "동그란 독서 안경",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_086.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 15,
+        "y": 4,
+        "size": 66
+      }
+    },
+    {
+      "id": "common_087",
+      "name": "빨간 넥타이",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_087.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": 12,
+        "y": 41,
+        "size": 73
+      }
+    },
+    {
+      "id": "common_088",
+      "name": "초록 야구 모자",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_088.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -7,
+        "y": -55,
+        "size": 111
+      }
+    },
+    {
+      "id": "common_089",
+      "name": "노란 우비 모자",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_089.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -6,
+        "y": -54,
+        "size": 109
+      }
+    },
+    {
+      "id": "common_090",
+      "name": "줄무늬 목도리",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_090.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": 3,
+        "y": 32,
+        "size": 90
+      }
+    },
+    {
+      "id": "common_091",
+      "name": "작은 나비넥타이",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_091.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": -53,
+        "y": -24,
+        "size": 202
+      }
+    },
+    {
+      "id": "common_092",
+      "name": "귀마개",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_092.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -6,
+        "y": -54,
+        "size": 109
+      }
+    },
+    {
+      "id": "common_093",
+      "name": "수면 안대",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_093.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 6,
+        "y": -5,
+        "size": 84
+      }
+    },
+    {
+      "id": "common_094",
+      "name": "종이 파티 왕관",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_094.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -48,
+        "y": -96,
+        "size": 193
+      }
+    },
+    {
+      "id": "common_095",
+      "name": "화가 베레모",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_095.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -21,
+        "y": -69,
+        "size": 138
+      }
+    },
+    {
+      "id": "common_096",
+      "name": "정원사 밀짚모자",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_096.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -17,
+        "y": -65,
+        "size": 131
+      }
+    },
+    {
+      "id": "common_097",
+      "name": "멜빵",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_097.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -62,
+        "y": -56,
+        "size": 221
+      }
+    },
+    {
+      "id": "common_098",
+      "name": "세일러 스카프",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_098.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": -9,
+        "y": 20,
+        "size": 115
+      }
+    },
+    {
+      "id": "common_099",
+      "name": "게이머 헤드셋",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_099.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 7,
+        "y": -41,
+        "size": 83
+      }
+    },
+    {
+      "id": "common_100",
+      "name": "학생 모자",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_100.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 0,
+        "y": -48,
+        "size": 96
+      }
+    },
+    {
+      "id": "common_101",
+      "name": "제빵사 모자",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_101.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 0,
+        "y": -48,
+        "size": 97
+      }
+    },
+    {
+      "id": "common_102",
+      "name": "등산 버킷햇",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_102.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -2,
+        "y": -50,
+        "size": 101
+      }
+    },
+    {
+      "id": "common_103",
+      "name": "수영 고글",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_103.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -23,
+        "y": -71,
+        "size": 143
+      }
+    },
+    {
+      "id": "common_104",
+      "name": "운동 머리띠",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_104.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -52,
+        "y": -100,
+        "size": 201
+      }
+    },
+    {
+      "id": "common_105",
+      "name": "미니 카메라",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_105.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -2,
+        "y": -50,
+        "size": 101
+      }
+    },
+    {
+      "id": "common_106",
+      "name": "기본 백팩",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_106.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -64,
+        "y": -58,
+        "size": 224
+      }
+    },
+    {
+      "id": "common_107",
+      "name": "산타 모자",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_107.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -56,
+        "size": 113
+      }
+    },
+    {
+      "id": "common_108",
+      "name": "사원증 목걸이",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_108.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": 8,
+        "y": 37,
+        "size": 80
+      }
+    },
+    {
+      "id": "common_109",
+      "name": "안전모",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_109.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -16,
+        "y": -64,
+        "size": 128
+      }
+    },
+    {
+      "id": "common_110",
+      "name": "간호사 모자",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_110.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -17,
+        "y": -65,
+        "size": 130
+      }
+    },
+    {
+      "id": "common_111",
+      "name": "정비공 반다나",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_111.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -15,
+        "y": -63,
+        "size": 126
+      }
+    },
+    {
+      "id": "common_112",
+      "name": "바리스타 앞치마",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_112.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -50,
+        "y": -44,
+        "size": 196
+      }
+    },
+    {
+      "id": "common_113",
+      "name": "낚시꾼 모자",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_113.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -6,
+        "y": -54,
+        "size": 109
+      }
+    },
+    {
+      "id": "common_114",
+      "name": "학사모",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_114.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -4,
+        "y": -52,
+        "size": 104
+      }
+    },
+    {
+      "id": "common_115",
+      "name": "꽃 머리핀",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_115.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -45,
+        "y": -93,
+        "size": 186
+      }
+    },
+    {
+      "id": "common_116",
+      "name": "토끼 귀",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_116.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -5,
+        "y": -53,
+        "size": 107
+      }
+    },
+    {
+      "id": "common_117",
+      "name": "검정 선글라스",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_117.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 9,
+        "y": -2,
+        "size": 78
+      }
+    },
+    {
+      "id": "common_118",
+      "name": "물방울 리본",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_118.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -22,
+        "y": -70,
+        "size": 140
+      }
+    },
+    {
+      "id": "common_119",
+      "name": "유틸리티 벨트",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_119.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -40,
+        "y": -34,
+        "size": 177
+      }
+    },
+    {
+      "id": "common_120",
+      "name": "주황 귀달이 모자",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_120.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 15,
+        "y": -33,
+        "size": 67
+      }
+    },
+    {
+      "id": "common_121",
+      "name": "줄무늬 넥워머",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_121.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": 6,
+        "y": 35,
+        "size": 84
+      }
+    },
+    {
+      "id": "common_122",
+      "name": "기본 비행사 모자",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_122.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 8,
+        "y": -40,
+        "size": 81
+      }
+    },
+    {
+      "id": "common_123",
+      "name": "꽃무늬 안경",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_123.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 8,
+        "y": -3,
+        "size": 80
+      }
+    },
+    {
+      "id": "common_124",
+      "name": "미니 작업 앞치마",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_124.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -48,
+        "y": -42,
+        "size": 193
+      }
+    },
+    {
+      "id": "common_125",
+      "name": "구름 모자",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_125.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -7,
+        "y": -55,
+        "size": 111
+      }
+    },
+    {
+      "id": "common_126",
+      "name": "나뭇잎 머리띠",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_126.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -13,
+        "y": -61,
+        "size": 122
+      }
+    },
+    {
+      "id": "common_127",
+      "name": "미니 메신저백",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_127.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -13,
+        "y": -61,
+        "size": 122
+      }
+    },
+    {
+      "id": "common_128",
+      "name": "물방울 샤워캡",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_128.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -3,
+        "y": -51,
+        "size": 103
+      }
+    },
+    {
+      "id": "common_129",
+      "name": "데님 버킷햇",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_129.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -5,
+        "y": -53,
+        "size": 106
+      }
+    },
+    {
+      "id": "common_130",
+      "name": "줄무늬 조끼",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_130.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -41,
+        "y": -35,
+        "size": 179
+      }
+    },
+    {
+      "id": "common_131",
+      "name": "실험실 고글",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_131.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -29,
+        "y": -77,
+        "size": 155
+      }
+    },
+    {
+      "id": "common_132",
+      "name": "제빵사 스카프",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_132.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": 10,
+        "y": 39,
+        "size": 77
+      }
+    },
+    {
+      "id": "common_133",
+      "name": "캠핑 헤드램프",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_133.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -28,
+        "y": -76,
+        "size": 153
+      }
+    },
+    {
+      "id": "common_134",
+      "name": "방울 목걸이",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_134.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": 7,
+        "y": 36,
+        "size": 83
+      }
+    },
+    {
+      "id": "common_135",
+      "name": "곰 귀 머리띠",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_135.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -7,
+        "y": -55,
+        "size": 111
+      }
+    },
+    {
+      "id": "common_136",
+      "name": "우비 케이프",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_136.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -28,
+        "y": -22,
+        "size": 152
+      }
+    },
+    {
+      "id": "common_137",
+      "name": "복고 뉴스보이캡",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_137.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -6,
+        "y": -54,
+        "size": 109
+      }
+    },
+    {
+      "id": "common_138",
+      "name": "하트 머리핀",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_138.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -39,
+        "y": -87,
+        "size": 174
+      }
+    },
+    {
+      "id": "common_139",
+      "name": "흰색 선캡",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_139.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -39,
+        "y": -87,
+        "size": 174
+      }
+    },
+    {
+      "id": "common_140",
+      "name": "열차 차장 세트",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_140.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -17,
+        "y": -11,
+        "size": 130
+      }
+    },
+    {
+      "id": "common_141",
+      "name": "도서관 사서 카디건",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_141.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -15,
+        "y": -9,
+        "size": 126
+      }
+    },
+    {
+      "id": "common_142",
+      "name": "배달 라이더 헬멧",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_142.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 9,
+        "y": -39,
+        "size": 78
+      }
+    },
+    {
+      "id": "common_143",
+      "name": "도예가 반다나와 앞치마",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_143.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -11,
+        "y": -5,
+        "size": 118
+      }
+    },
+    {
+      "id": "common_144",
+      "name": "탐조가 모자와 쌍안경 가방",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_144.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 22,
+        "y": 11,
+        "size": 52
+      }
+    },
+    {
+      "id": "common_145",
+      "name": "복고 식당 종이모자",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_145.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -5,
+        "y": -53,
+        "size": 106
+      }
+    },
+    {
+      "id": "common_146",
+      "name": "양봉가 모자",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_146.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 12,
+        "y": -36,
+        "size": 72
+      }
+    },
+    {
+      "id": "common_147",
+      "name": "오케스트라 지휘자 칼라",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_147.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": 20,
+        "y": 49,
+        "size": 56
+      }
+    },
+    {
+      "id": "common_148",
+      "name": "스키 고글과 니트밴드",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_148.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 5,
+        "y": -43,
+        "size": 86
+      }
+    },
+    {
+      "id": "common_149",
+      "name": "구운 마시멜로 모자",
+      "rarity": "common",
+      "collection": "기존 도감 복원",
+      "file": "common/common_149.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 10,
+        "y": -38,
+        "size": 76
+      }
+    },
+    {
       "id": "rare_001",
       "name": "구름능선 풍향관모",
       "rarity": "rare",
@@ -1792,6 +2689,461 @@
       }
     },
     {
+      "id": "rare_058",
+      "name": "보석 왕관",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_058.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -2,
+        "y": -50,
+        "size": 101
+      }
+    },
+    {
+      "id": "rare_059",
+      "name": "투명 우주 헬멧",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_059.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 8,
+        "y": -40,
+        "size": 80
+      }
+    },
+    {
+      "id": "rare_060",
+      "name": "붉은 영웅 망토",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_060.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -21,
+        "y": -15,
+        "size": 139
+      }
+    },
+    {
+      "id": "rare_061",
+      "name": "개구리 후드",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_061.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 4,
+        "y": -44,
+        "size": 88
+      }
+    },
+    {
+      "id": "rare_062",
+      "name": "검은 고양이 후드",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_062.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -5,
+        "y": -53,
+        "size": 107
+      }
+    },
+    {
+      "id": "rare_063",
+      "name": "닌자 머리띠",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_063.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -19,
+        "y": -67,
+        "size": 135
+      }
+    },
+    {
+      "id": "rare_064",
+      "name": "황동 스팀펑크 고글",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_064.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -26,
+        "y": -74,
+        "size": 148
+      }
+    },
+    {
+      "id": "rare_065",
+      "name": "숲속 버섯 모자",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_065.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 0,
+        "y": -48,
+        "size": 96
+      }
+    },
+    {
+      "id": "rare_066",
+      "name": "꿀벌 세트",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_066.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -43,
+        "y": -37,
+        "size": 183
+      }
+    },
+    {
+      "id": "rare_067",
+      "name": "레트로 로봇 모자",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_067.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 5,
+        "y": -43,
+        "size": 87
+      }
+    },
+    {
+      "id": "rare_068",
+      "name": "초밥 요리사 세트",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_068.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -24,
+        "y": -18,
+        "size": 144
+      }
+    },
+    {
+      "id": "rare_069",
+      "name": "숲 레인저 세트",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_069.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -11,
+        "y": -5,
+        "size": 118
+      }
+    },
+    {
+      "id": "rare_070",
+      "name": "레트로 우주 안테나 헬멧",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_070.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 14,
+        "y": -34,
+        "size": 69
+      }
+    },
+    {
+      "id": "rare_071",
+      "name": "뱀파이어 망토",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_071.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -24,
+        "y": -18,
+        "size": 145
+      }
+    },
+    {
+      "id": "rare_072",
+      "name": "심해 잠수 헬멧",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_072.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 13,
+        "y": -35,
+        "size": 71
+      }
+    },
+    {
+      "id": "rare_073",
+      "name": "황금 모노클",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_073.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 20,
+        "y": 9,
+        "size": 57
+      }
+    },
+    {
+      "id": "rare_074",
+      "name": "연금술사 보석모",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_074.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -5,
+        "y": -53,
+        "size": 107
+      }
+    },
+    {
+      "id": "rare_075",
+      "name": "레서판다 후드",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_075.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -1,
+        "y": -49,
+        "size": 99
+      }
+    },
+    {
+      "id": "rare_076",
+      "name": "번개 조종사 모자",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_076.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 10,
+        "y": -38,
+        "size": 76
+      }
+    },
+    {
+      "id": "rare_077",
+      "name": "벚꽃 화관",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_077.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 3,
+        "y": -45,
+        "size": 91
+      }
+    },
+    {
+      "id": "rare_078",
+      "name": "아케이드 외계인 후드",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_078.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 8,
+        "y": -40,
+        "size": 80
+      }
+    },
+    {
+      "id": "rare_079",
+      "name": "고딕 레이스 보닛",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_079.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 17,
+        "y": -31,
+        "size": 62
+      }
+    },
+    {
+      "id": "rare_080",
+      "name": "설산 등반가 세트",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_080.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -19,
+        "y": -13,
+        "size": 134
+      }
+    },
+    {
+      "id": "rare_081",
+      "name": "너구리 도둑 가면",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_081.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 11,
+        "y": 0,
+        "size": 74
+      }
+    },
+    {
+      "id": "rare_082",
+      "name": "축제 북 머리띠와 띠",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_082.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -13,
+        "y": -61,
+        "size": 123
+      }
+    },
+    {
+      "id": "rare_083",
+      "name": "붉은 사무라이 투구",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_083.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 19,
+        "y": -29,
+        "size": 58
+      }
+    },
+    {
+      "id": "rare_084",
+      "name": "심해 스쿠버 돔",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_084.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 19,
+        "y": -29,
+        "size": 58
+      }
+    },
+    {
+      "id": "rare_085",
+      "name": "번개 록스타 헤어",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_085.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 17,
+        "y": -31,
+        "size": 63
+      }
+    },
+    {
+      "id": "rare_086",
+      "name": "괴짜 과학자 세트",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_086.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -2,
+        "y": 4,
+        "size": 101
+      }
+    },
+    {
+      "id": "rare_087",
+      "name": "북방 바이킹 세트",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_087.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -2,
+        "size": 112
+      }
+    },
+    {
+      "id": "rare_088",
+      "name": "파스텔 요정 후드",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_088.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 18,
+        "y": -30,
+        "size": 61
+      }
+    },
+    {
+      "id": "rare_089",
+      "name": "코믹 히어로 가면",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_089.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 22,
+        "y": 11,
+        "size": 52
+      }
+    },
+    {
+      "id": "rare_090",
+      "name": "빈티지 사립탐정 세트",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_090.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -12,
+        "y": -6,
+        "size": 120
+      }
+    },
+    {
+      "id": "rare_091",
+      "name": "하늘 조종사 세트",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_091.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -15,
+        "y": -9,
+        "size": 127
+      }
+    },
+    {
+      "id": "rare_092",
+      "name": "왕실 벨벳 모자",
+      "rarity": "rare",
+      "collection": "기존 도감 복원",
+      "file": "rare/rare_092.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 8,
+        "y": -40,
+        "size": 80
+      }
+    },
+    {
       "id": "epic_001",
       "name": "기억제본학파 반전책등관",
       "rarity": "epic",
@@ -2195,6 +3547,279 @@
       }
     },
     {
+      "id": "epic_032",
+      "name": "달빛 천상 왕관",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_032.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 1,
+        "y": -47,
+        "size": 94
+      }
+    },
+    {
+      "id": "epic_033",
+      "name": "불사조 망토",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_033.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -4,
+        "y": 2,
+        "size": 105
+      }
+    },
+    {
+      "id": "epic_034",
+      "name": "수정 얼음 왕관",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_034.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 0,
+        "y": -48,
+        "size": 96
+      }
+    },
+    {
+      "id": "epic_035",
+      "name": "숲 수호자 뿔관",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_035.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -3,
+        "y": -51,
+        "size": 102
+      }
+    },
+    {
+      "id": "epic_036",
+      "name": "스팀펑크 발명가 헬멧",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_036.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -2,
+        "y": -50,
+        "size": 101
+      }
+    },
+    {
+      "id": "epic_037",
+      "name": "네온 사이버 바이저",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_037.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 11,
+        "y": 0,
+        "size": 74
+      }
+    },
+    {
+      "id": "epic_038",
+      "name": "왕실 해군 제독 세트",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_038.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -8,
+        "y": -2,
+        "size": 113
+      }
+    },
+    {
+      "id": "epic_039",
+      "name": "흑요석 화산 왕관",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_039.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 2,
+        "y": -46,
+        "size": 93
+      }
+    },
+    {
+      "id": "epic_040",
+      "name": "황금 마스터 셰프 모자",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_040.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 6,
+        "y": -42,
+        "size": 85
+      }
+    },
+    {
+      "id": "epic_041",
+      "name": "아케이드 챔피언 세트",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_041.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -20,
+        "y": -14,
+        "size": 136
+      }
+    },
+    {
+      "id": "epic_042",
+      "name": "오로라 주술사 뿔후드",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_042.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 14,
+        "y": -34,
+        "size": 69
+      }
+    },
+    {
+      "id": "epic_043",
+      "name": "기계 부엉이 학자 후드",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_043.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 11,
+        "y": -37,
+        "size": 75
+      }
+    },
+    {
+      "id": "epic_044",
+      "name": "바다 신탁 조개 왕관",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_044.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 5,
+        "y": -43,
+        "size": 87
+      }
+    },
+    {
+      "id": "epic_045",
+      "name": "벚꽃 수호자 망토",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_045.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -2,
+        "y": 4,
+        "size": 101
+      }
+    },
+    {
+      "id": "epic_046",
+      "name": "천둥새 조종사 투구",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_046.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 4,
+        "y": -44,
+        "size": 88
+      }
+    },
+    {
+      "id": "epic_047",
+      "name": "달빛 가면무도회 가면",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_047.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 17,
+        "y": 6,
+        "size": 63
+      }
+    },
+    {
+      "id": "epic_048",
+      "name": "마법 도서관 대마법사 모자",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_048.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 5,
+        "y": -43,
+        "size": 87
+      }
+    },
+    {
+      "id": "epic_049",
+      "name": "진홍 쇼군 갑주",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_049.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -10,
+        "y": -4,
+        "size": 117
+      }
+    },
+    {
+      "id": "epic_050",
+      "name": "심연 잠수부 압력 헬멧",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_050.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 19,
+        "y": -29,
+        "size": 58
+      }
+    },
+    {
+      "id": "epic_051",
+      "name": "폭풍 록 아이돌 왕관",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_051.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 3,
+        "y": -45,
+        "size": 91
+      }
+    },
+    {
+      "id": "epic_052",
+      "name": "대연금술사 세트",
+      "rarity": "epic",
+      "collection": "기존 도감 복원",
+      "file": "epic/epic_052.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -2,
+        "y": 4,
+        "size": 101
+      }
+    },
+    {
       "id": "legendary_001",
       "name": "삼중궤도 천구모",
       "rarity": "legendary",
@@ -2351,6 +3976,19 @@
       }
     },
     {
+      "id": "legendary_013",
+      "name": "세계수 군주 관과 망토",
+      "rarity": "legendary",
+      "collection": "기존 도감 복원",
+      "file": "legendary/legendary_013.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -6,
+        "y": 0,
+        "size": 108
+      }
+    },
+    {
       "id": "special_001",
       "name": "빛그림배달 감광가방",
       "rarity": "special",
@@ -2413,6 +4051,45 @@
         "x": 21,
         "y": -27,
         "size": 54
+      }
+    },
+    {
+      "id": "special_006",
+      "name": "원조 감자 개발자 — 감자 새싹 왕관, 개발자 후드, 감자봇의 원형 입 문양을 활용한 황금 배지",
+      "rarity": "special",
+      "collection": "기존 도감 복원",
+      "file": "special/special_006.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 25,
+        "y": -23,
+        "size": 46
+      }
+    },
+    {
+      "id": "special_007",
+      "name": "숨겨진 Stitch 기록관 — 다섯 색상 조각을 이어 만든 패치워크 후드와 감자봇 원형 입 문양 잠금장식",
+      "rarity": "special",
+      "collection": "기존 도감 복원",
+      "file": "special/special_007.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 6,
+        "y": -42,
+        "size": 85
+      }
+    },
+    {
+      "id": "special_008",
+      "name": "다섯 시트의 큐레이터 — 다섯 색상 탭과 감자봇 나선 문양 잠금장식을 단 박물관 큐레이터 세트",
+      "rarity": "special",
+      "collection": "기존 도감 복원",
+      "file": "special/special_008.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -9,
+        "y": -3,
+        "size": 114
       }
     },
     {

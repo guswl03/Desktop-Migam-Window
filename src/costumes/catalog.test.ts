@@ -17,9 +17,9 @@ const drawCandidates = manifest.costumes
   >;
 
 describe("costume manifest metadata", () => {
-  it("covers all 185 draw candidates with explicit placement", () => {
-    expect(drawCandidates).toHaveLength(185);
-    expect(new Set(drawCandidates.map(({ id }) => id)).size).toBe(185);
+  it("covers all 314 draw candidates with explicit placement", () => {
+    expect(drawCandidates).toHaveLength(314);
+    expect(new Set(drawCandidates.map(({ id }) => id)).size).toBe(314);
 
     for (const costume of drawCandidates) {
       expect(["head", "face", "neck", "body"]).toContain(costume.slot);

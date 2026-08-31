@@ -54,11 +54,11 @@ test("complete worn placements have no clipping or slot-position warnings", asyn
 test("contact-sheet rows cover every blueprint-backed candidate", async () => {
   const blueprint = await loadBlueprint(repositoryRoot);
   const rows = buildSheetRows(manifest.costumes, blueprint);
-  assert.equal(rows.length, 185);
-  assert.equal(new Set(rows.map(({ id }) => id)).size, 185);
+  assert.equal(rows.length, 314);
+  assert.equal(new Set(rows.map(({ id }) => id)).size, 314);
   assert.deepEqual(
     rows.map(({ qaState }) => qaState),
-    Array.from({ length: 185 }, () => "accepted"),
+    Array.from({ length: 314 }, () => "accepted"),
   );
   assert.equal(rows[0].theme, blueprint[0].theme);
 });
@@ -86,7 +86,7 @@ test("generated SVG sheet data IDs follow rarity-filtered manifest order", async
     assert.deepEqual(actualIds, expectedIds, rarity);
     generatedItems += actualIds.length;
   }
-  assert.equal(generatedItems, 185);
+  assert.equal(generatedItems, 314);
 });
 
 test("placement analysis uses raw fractional bounds for boundary decisions", () => {
@@ -248,7 +248,7 @@ test("final validation reports duplicate hashes and suspicious silhouettes toget
   }
 });
 
-test("asset validation reports the full 185-item rarity totals", async () => {
+test("asset validation reports the full 314-item rarity totals", async () => {
   const { stdout } = await execFileAsync(
     process.execPath,
     ["scripts/costume-catalog-qa.mjs", "validate"],
@@ -256,6 +256,6 @@ test("asset validation reports the full 185-item rarity totals", async () => {
   );
   assert.equal(
     stdout.trim(),
-    "common=80 rare=57 epic=31 legendary=12 special=5 total=185",
+    "common=149 rare=92 epic=52 legendary=13 special=8 total=314",
   );
 });

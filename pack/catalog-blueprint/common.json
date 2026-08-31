@@ -1,82 +1,3349 @@
 [
-  {"id":"common_001","rarity":"common","name":"새벽 우편모","slot":"head","theme":"생활 도구","silhouette":"낮은 둥근 크라운과 짧은 사각 챙","palette":{"primary":"먹남색","secondary":"밤갈색","accent":"밀랍금색"},"material":"두꺼운 천과 낡은 가죽","signatureDetail":"챙 중앙의 작은 밀랍 봉인 단추","prompt":"새벽 우편모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":11,"y":-37,"size":74},"qaState":"accepted"},
-  {"id":"common_002","rarity":"common","name":"아침 신문접이모","slot":"head","theme":"생활 도구","silhouette":"두 겹으로 접힌 배모양 크라운과 양끝의 뾰족한 능선","palette":{"primary":"신문회백색","secondary":"인쇄먹색","accent":"날짜청색"},"material":"빳빳한 천과 얇은 가죽","signatureDetail":"접힌 한쪽 면의 작은 파란 날짜도장","prompt":"아침 신문접이모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":6,"y":-42,"size":84},"qaState":"accepted"},
-  {"id":"common_003","rarity":"common","name":"찻집 보온두건","slot":"head","theme":"생활 도구","silhouette":"삼각 포개짐과 뒤로 길게 내려오는 한쪽 꼬리","palette":{"primary":"찻잎초록","secondary":"우유빛","accent":"구리주황"},"material":"누빈 천과 단순한 금속","signatureDetail":"정면을 여미는 찻잎 무늬 금속핀","prompt":"찻집 보온두건 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":21,"y":-27,"size":54},"qaState":"accepted"},
-  {"id":"common_004","rarity":"common","name":"빨래집게 햇차양","slot":"head","theme":"생활 도구","silhouette":"넓은 반달 차양과 양끝의 짧은 아래판","palette":{"primary":"햇볕베이지","secondary":"빨랫줄파랑","accent":"집게빨강"},"material":"빳빳한 천과 얇은 나무","signatureDetail":"차양 끝에 고정된 붉은 나무집게 하나","prompt":"빨래집게 햇차양 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":9,"y":-38,"size":77},"qaState":"accepted"},
-  {"id":"common_005","rarity":"common","name":"장보기 접이모","slot":"head","theme":"생활 도구","silhouette":"납작한 팔각 크라운과 접힌 앞쪽 차양","palette":{"primary":"장바구니황토","secondary":"쑥초록","accent":"동전노랑"},"material":"거친 천과 얇은 가죽","signatureDetail":"팔각 꼭짓점의 납작한 동전 단추","prompt":"장보기 접이모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":15,"y":-33,"size":66},"qaState":"accepted"},
-  {"id":"common_006","rarity":"common","name":"벽난로 재받이 후드","slot":"head","theme":"생활 도구","silhouette":"깊은 종형 덮개와 바깥으로 벌어진 아랫단","palette":{"primary":"잿빛회색","secondary":"벽돌갈색","accent":"불씨주황"},"material":"두꺼운 천과 단순한 금속","signatureDetail":"아랫단에 달린 작은 불씨색 금속고리","prompt":"벽난로 재받이 후드 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":21,"y":-27,"size":54},"qaState":"accepted"},
-  {"id":"common_007","rarity":"common","name":"물뿌리개 손잡이캡","slot":"head","theme":"생활 도구","silhouette":"낮은 원기둥 위로 솟은 넓은 손잡이 아치","palette":{"primary":"물뿌리개청록","secondary":"정원흙색","accent":"새싹연두"},"material":"단순한 금속과 낡은 가죽","signatureDetail":"아치 밑에 매단 새싹색 가죽끈","prompt":"물뿌리개 손잡이캡 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":20,"y":-28,"size":56},"qaState":"accepted"},
-  {"id":"common_008","rarity":"common","name":"열쇠지기 고리모","slot":"head","theme":"생활 도구","silhouette":"매끈한 타원 돔과 한쪽의 큰 고리 돌출부","palette":{"primary":"열쇠은회색","secondary":"문짝밤색","accent":"끈자주"},"material":"단순한 금속과 두꺼운 천","signatureDetail":"큰 고리 안쪽의 자주색 실매듭","prompt":"열쇠지기 고리모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":19,"y":-29,"size":58},"qaState":"accepted"},
-  {"id":"common_009","rarity":"common","name":"도자기 찻잔모","slot":"head","theme":"생활 도구","silhouette":"거꾸로 놓인 잔형 크라운과 굽은 손잡이 차양","palette":{"primary":"찻잔아이보리","secondary":"홍차갈색","accent":"테두리남색"},"material":"가벼운 도자기와 부드러운 천","signatureDetail":"크라운 둘레의 한 줄 남색 띠","prompt":"도자기 찻잔모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":15,"y":-33,"size":66},"qaState":"accepted"},
-  {"id":"common_010","rarity":"common","name":"빗자루 솔챙모","slot":"head","theme":"생활 도구","silhouette":"낮은 크라운에서 길게 뻗은 직사각 솔챙","palette":{"primary":"빗자루밀색","secondary":"손잡이갈색","accent":"끈청색"},"material":"부드러운 나무와 질긴 천","signatureDetail":"솔챙 뿌리를 묶은 푸른 천띠","prompt":"빗자루 솔챙모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":-3,"y":-50,"size":102},"qaState":"accepted"},
-  {"id":"common_011","rarity":"common","name":"등잔 심지모","slot":"head","theme":"생활 도구","silhouette":"끝이 좁아지는 원뿔 크라운과 낮은 둥근 테","palette":{"primary":"등잔검정","secondary":"기름호박색","accent":"심지크림"},"material":"두꺼운 천과 단순한 금속","signatureDetail":"꼭대기에 선 짧은 크림색 심지술","prompt":"등잔 심지모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":21,"y":-27,"size":54},"qaState":"accepted"},
-  {"id":"common_012","rarity":"common","name":"바느질 눈금안경","slot":"face","theme":"생활 도구","silhouette":"가느다란 가로 직사각 틀과 좌우의 짧은 눈금날개","palette":{"primary":"눈금회색","secondary":"바늘은색","accent":"실파랑"},"material":"단순한 금속과 얇은 가죽","signatureDetail":"왼쪽 위에 새긴 세 칸짜리 눈금","prompt":"바느질 눈금안경 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":0,"y":-11,"size":96},"qaState":"accepted"},
-  {"id":"common_013","rarity":"common","name":"양념갈이 코받이안경","slot":"face","theme":"생활 도구","silhouette":"두 개의 세로 타원틀과 매우 짧은 가운데 다리","palette":{"primary":"후추검정","secondary":"소금흰색","accent":"놋빛노랑"},"material":"단순한 금속과 가벼운 도자기","signatureDetail":"오른쪽 테의 작은 후추알 점무늬","prompt":"양념갈이 코받이안경 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":3,"y":-8,"size":91},"qaState":"accepted"},
-  {"id":"common_014","rarity":"common","name":"창닦이 물방울고글","slot":"face","theme":"생활 도구","silhouette":"큼직한 물방울형 두 틀과 둥근 바깥 테두리","palette":{"primary":"유리하늘색","secondary":"창틀회색","accent":"물방울청록"},"material":"가벼운 도자기와 질긴 천","signatureDetail":"한쪽 틀 아래의 청록 물방울 표식","prompt":"창닦이 물방울고글 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":13,"y":2,"size":70},"qaState":"accepted"},
-  {"id":"common_015","rarity":"common","name":"식탁보 접이칼라","slot":"neck","theme":"생활 도구","silhouette":"넓은 사각 천을 삼각으로 접은 판형 윤곽","palette":{"primary":"식탁보적색","secondary":"무명크림","accent":"단추갈색"},"material":"부드러운 천과 나무","signatureDetail":"삼각 끝의 밤톨 모양 나무단추","prompt":"식탁보 접이칼라 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":14,"y":48,"size":68},"qaState":"accepted"},
-  {"id":"common_016","rarity":"common","name":"찬장 열쇠목도리","slot":"neck","theme":"생활 도구","silhouette":"길고 좁은 띠와 한쪽만 길게 내려온 열쇠형 끝단","palette":{"primary":"찬장초록","secondary":"열쇠황동색","accent":"안감밤색"},"material":"두꺼운 천과 단순한 금속","signatureDetail":"짧은 쪽 끝의 네모난 찬장표","prompt":"찬장 열쇠목도리 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":23,"y":57,"size":50},"qaState":"accepted"},
-  {"id":"common_017","rarity":"common","name":"살림꾼 다용도앞치마","slot":"body","theme":"생활 도구","silhouette":"넓은 윗판에서 퍼지는 A자 앞판과 두 칸 아랫주머니","palette":{"primary":"앞치마남색","secondary":"행주하늘색","accent":"박음질흰색"},"material":"질긴 천과 얇은 가죽","signatureDetail":"왼쪽 주머니의 흰 십자 박음선","prompt":"살림꾼 다용도앞치마 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":19,"y":48,"size":59},"qaState":"accepted"},
-  {"id":"common_018","rarity":"common","name":"장보기 등바구니","slot":"body","theme":"생활 도구","silhouette":"위가 벌어진 상자형 바구니와 완전히 평평한 밑선","palette":{"primary":"등바구니갈대색","secondary":"가죽고동색","accent":"사과빨강"},"material":"얇은 나무와 낡은 가죽","signatureDetail":"앞면 모서리에 묶인 붉은 사과표 끈","prompt":"장보기 등바구니 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":19,"y":48,"size":59},"qaState":"accepted"},
-  {"id":"common_019","rarity":"common","name":"뜨개 물주머니조끼","slot":"body","theme":"생활 도구","silhouette":"짧고 둥근 조끼판과 하나의 볼록한 앞주머니","palette":{"primary":"뜨개보라","secondary":"물주머니청색","accent":"코바늘은색"},"material":"두꺼운 천과 단순한 금속","signatureDetail":"주머니 가장자리의 세 코짜리 은색 고리","prompt":"뜨개 물주머니조끼 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":18,"y":48,"size":60},"qaState":"accepted"},
-  {"id":"common_020","rarity":"common","name":"빗물받이 층단망토","slot":"body","theme":"생활 도구","silhouette":"넓은 반원 판과 계단처럼 세 번 꺾인 아랫단","palette":{"primary":"빗물회청색","secondary":"안감모래색","accent":"단추먹색"},"material":"촘촘한 천과 단순한 금속","signatureDetail":"가장 위 단에 박힌 먹색 빗방울단추","prompt":"빗물받이 층단망토 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":18,"y":48,"size":60},"qaState":"accepted"},
-  {"id":"common_021","rarity":"common","name":"철도원 납작모","slot":"head","theme":"직업 장비","silhouette":"넓은 직사각 크라운과 곧게 뻗은 짧은 챙","palette":{"primary":"철도남색","secondary":"승강장회색","accent":"표지판빨강"},"material":"두꺼운 천과 단순한 금속","signatureDetail":"정면의 작은 네모 승차권표","prompt":"철도원 납작모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":1,"y":-47,"size":94},"qaState":"accepted"},
-  {"id":"common_022","rarity":"common","name":"목수 자투리챙모","slot":"head","theme":"직업 장비","silhouette":"비대칭 쐐기 크라운과 한쪽으로 넓어진 차양","palette":{"primary":"톱밥황토","secondary":"목재갈색","accent":"연필주황"},"material":"거친 천과 얇은 나무","signatureDetail":"차양 모서리의 짧은 연필꽂이","prompt":"목수 자투리챙모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":9,"y":-39,"size":78},"qaState":"accepted"},
-  {"id":"common_023","rarity":"common","name":"제빵사 봉긋모","slot":"head","theme":"직업 장비","silhouette":"세 갈래로 봉긋한 풍선형 윗부분과 좁은 띠 밑단","palette":{"primary":"반죽크림","secondary":"오븐갈색","accent":"체리적색"},"material":"부드러운 천과 얇은 가죽","signatureDetail":"띠 중앙의 작은 체리색 실점","prompt":"제빵사 봉긋모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":16,"y":-32,"size":64},"qaState":"accepted"},
-  {"id":"common_024","rarity":"common","name":"어부 그물두건","slot":"head","theme":"직업 장비","silhouette":"길쭉한 물방울 덮개와 뒤로 모인 그물꼬리","palette":{"primary":"바다청색","secondary":"밧줄베이지","accent":"부표주황"},"material":"성긴 천과 낡은 가죽","signatureDetail":"꼬리 끝의 조그만 주황 나무부표","prompt":"어부 그물두건 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":21,"y":-27,"size":54},"qaState":"accepted"},
-  {"id":"common_025","rarity":"common","name":"분류실 봉투모","slot":"head","theme":"직업 장비","silhouette":"층층이 겹친 사각 크라운과 얕은 봉투형 챙","palette":{"primary":"봉투황백색","secondary":"도장자주","accent":"분류초록"},"material":"빳빳한 천과 단순한 금속","signatureDetail":"윗단에 찍힌 둥근 자주색 분류도장","prompt":"분류실 봉투모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":16,"y":-32,"size":64},"qaState":"accepted"},
-  {"id":"common_026","rarity":"common","name":"등대지기 방풍모","slot":"head","theme":"직업 장비","silhouette":"키 큰 사다리꼴 크라운과 아래로 감기는 둘레챙","palette":{"primary":"등대흰색","secondary":"폭풍회색","accent":"신호빨강"},"material":"촘촘한 천과 얇은 가죽","signatureDetail":"크라운 옆의 붉은 세로 신호선","prompt":"등대지기 방풍모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":21,"y":-27,"size":54},"qaState":"accepted"},
-  {"id":"common_027","rarity":"common","name":"도서관 먼지털이모","slot":"head","theme":"직업 장비","silhouette":"낮은 반구 크라운과 세로 술이 둘린 넓은 테","palette":{"primary":"책등초록","secondary":"먼지회색","accent":"책갈피노랑"},"material":"부드러운 천과 얇은 나무","signatureDetail":"뒤쪽 테에 꽂힌 노란 천책갈피","prompt":"도서관 먼지털이모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":5,"y":-43,"size":86},"qaState":"accepted"},
-  {"id":"common_028","rarity":"common","name":"도예가 흙막이후드","slot":"head","theme":"직업 장비","silhouette":"모난 지붕형 덮개와 뒤로 기운 사선 아랫단","palette":{"primary":"찰흙갈색","secondary":"유약청록","accent":"가마주황"},"material":"두꺼운 천과 가벼운 도자기","signatureDetail":"사선 끝에 달린 작은 도자기 물레표","prompt":"도예가 흙막이후드 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":21,"y":-27,"size":54},"qaState":"accepted"},
-  {"id":"common_029","rarity":"common","name":"정비공 볼트캡","slot":"head","theme":"직업 장비","silhouette":"여섯 면의 짧은 크라운과 볼트머리처럼 평평한 테","palette":{"primary":"기계회색","secondary":"기름검정","accent":"경고노랑"},"material":"단순한 금속과 두꺼운 천","signatureDetail":"오른쪽 면의 노란 한 줄 조임표시","prompt":"정비공 볼트캡 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":11,"y":-37,"size":74},"qaState":"accepted"},
-  {"id":"common_030","rarity":"common","name":"꽃집 리본보닛","slot":"head","theme":"직업 장비","silhouette":"둥근 덮개 뒤의 큰 원판과 앞쪽의 좁은 아치","palette":{"primary":"꽃잎분홍","secondary":"잎사귀초록","accent":"리본크림"},"material":"부드러운 천과 얇은 가죽","signatureDetail":"뒤 원판 아래의 납작한 크림색 리본표","prompt":"꽃집 리본보닛 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":21,"y":-27,"size":54},"qaState":"accepted"},
-  {"id":"common_031","rarity":"common","name":"굴착부 랜턴모","slot":"head","theme":"직업 장비","silhouette":"상자형 둥근 크라운과 정면의 짧은 등불 돌출부","palette":{"primary":"탄가루먹색","secondary":"작업복갈색","accent":"랜턴노랑"},"material":"단순한 금속과 낡은 가죽","signatureDetail":"돌출부 안의 네모난 노란 반사판","prompt":"굴착부 랜턴모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":20,"y":-28,"size":56},"qaState":"accepted"},
-  {"id":"common_032","rarity":"common","name":"제도사 사각안경","slot":"face","theme":"직업 장비","silhouette":"큰 정사각 두 틀과 위를 잇는 곧은 자막대","palette":{"primary":"도면청색","secondary":"자은회색","accent":"연필노랑"},"material":"단순한 금속과 얇은 나무","signatureDetail":"윗막대 끝의 작은 삼각 눈금","prompt":"제도사 사각안경 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":-3,"y":-14,"size":102},"qaState":"accepted"},
-  {"id":"common_033","rarity":"common","name":"용접공 틈빛보안경","slot":"face","theme":"직업 장비","silhouette":"폭이 넓고 높이가 낮은 하나의 가로 틈새판","palette":{"primary":"보안경먹색","secondary":"철판남색","accent":"불꽃주황"},"material":"단순한 금속과 두꺼운 가죽","signatureDetail":"틈새판 끝의 주황색 불꽃점 하나","prompt":"용접공 틈빛보안경 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":11,"y":0,"size":75},"qaState":"accepted"},
-  {"id":"common_034","rarity":"common","name":"양봉가 짧은망사면","slot":"face","theme":"직업 장비","silhouette":"위가 좁고 아래가 넓은 짧은 사다리꼴 가리개","palette":{"primary":"꿀노랑","secondary":"벌집갈색","accent":"망사검정"},"material":"촘촘한 천과 단순한 금속","signatureDetail":"아랫단 중앙의 작은 육각 벌집표","prompt":"양봉가 짧은망사면 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":24,"y":13,"size":48},"qaState":"accepted"},
-  {"id":"common_035","rarity":"common","name":"이발사 줄무늬목수건","slot":"neck","theme":"직업 장비","silhouette":"짧은 직사각 띠가 한 번 평평하게 감긴 고리형","palette":{"primary":"수건흰색","secondary":"이발청색","accent":"빗살빨강"},"material":"부드러운 천과 얇은 나무","signatureDetail":"끝단의 붉고 푸른 사선 두 줄","prompt":"이발사 줄무늬목수건 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":22,"y":56,"size":52},"qaState":"accepted"},
-  {"id":"common_036","rarity":"common","name":"시계공 렌즈펜던트","slot":"neck","theme":"직업 장비","silhouette":"가느다란 V자 띠 아래에 매달린 큰 원형 틀","palette":{"primary":"시계갈색","secondary":"톱니은색","accent":"초침빨강"},"material":"얇은 가죽과 단순한 금속","signatureDetail":"원형 틀 안쪽의 붉은 한 칸 표시","prompt":"시계공 렌즈펜던트 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":23,"y":57,"size":50},"qaState":"accepted"},
-  {"id":"common_037","rarity":"common","name":"목공소 연필앞치마","slot":"body","theme":"직업 장비","silhouette":"길쭉한 직사각 앞판과 한쪽으로 튀어나온 넓은 주머니","palette":{"primary":"작업천갈색","secondary":"톱날회색","accent":"연필주황빛"},"material":"질긴 천과 얇은 가죽","signatureDetail":"주머니 위의 세로 연필선 세 개","prompt":"목공소 연필앞치마 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":19,"y":48,"size":59},"qaState":"accepted"},
-  {"id":"common_038","rarity":"common","name":"항구 신호조끼","slot":"body","theme":"직업 장비","silhouette":"반듯한 사각 조끼판과 가로로 두른 굵은 한 줄 띠","palette":{"primary":"항구주황","secondary":"밧줄갈색","accent":"신호흰색"},"material":"두꺼운 천과 단순한 금속","signatureDetail":"가로띠 중앙의 흰 깃발표","prompt":"항구 신호조끼 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":19,"y":48,"size":59},"qaState":"accepted"},
-  {"id":"common_039","rarity":"common","name":"우유배달 병걸이멜빵","slot":"body","theme":"직업 장비","silhouette":"세로 사다리형 띠와 아래쪽의 둥근 병고리 윤곽","palette":{"primary":"우유흰색","secondary":"병뚜껑파랑","accent":"멜빵갈색"},"material":"두꺼운 가죽과 단순한 금속","signatureDetail":"가운데 칸의 파란 병뚜껑단추","prompt":"우유배달 병걸이멜빵 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":19,"y":48,"size":59},"qaState":"accepted"},
-  {"id":"common_040","rarity":"common","name":"인쇄공 잉크가운","slot":"body","theme":"직업 장비","silhouette":"긴 H자 덧옷판과 폭이 넓은 네모 아랫단","palette":{"primary":"잉크남색","secondary":"종이회색","accent":"활자검정"},"material":"촘촘한 천과 얇은 가죽","signatureDetail":"아랫단 모서리의 작은 거꾸로 활자표","prompt":"인쇄공 잉크가운 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":19,"y":48,"size":59},"qaState":"accepted"},
-  {"id":"common_041","rarity":"common","name":"역참 접이중절모","slot":"head","theme":"여행 장비","silhouette":"눌린 타원 크라운과 양옆이 접힌 두 겹 챙","palette":{"primary":"역참갈색","secondary":"노을주황","accent":"표끈청록"},"material":"두꺼운 천과 낡은 가죽","signatureDetail":"접힌 챙 사이의 청록 승마표 끈","prompt":"역참 접이중절모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":8,"y":-39,"size":79},"qaState":"accepted"},
-  {"id":"common_042","rarity":"common","name":"산길 표지챙모","slot":"head","theme":"여행 장비","silhouette":"삼각 표지판형 크라운과 넓고 평평한 밑변","palette":{"primary":"산길초록","secondary":"바위회색","accent":"이정표노랑"},"material":"빳빳한 천과 얇은 나무","signatureDetail":"정면의 노란 왼쪽 화살표 한 개","prompt":"산길 표지챙모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":6,"y":-42,"size":84},"qaState":"accepted"},
-  {"id":"common_043","rarity":"common","name":"강변 갈대갓","slot":"head","theme":"여행 장비","silhouette":"넓고 얇은 원판 테와 위로 선 세 갈래 갈대살","palette":{"primary":"갈대연갈색","secondary":"강물회청색","accent":"매듭초록"},"material":"얇은 나무와 질긴 천","signatureDetail":"가운데 갈대살에 감긴 초록 실띠","prompt":"강변 갈대갓 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":21,"y":-27,"size":54},"qaState":"accepted"},
-  {"id":"common_044","rarity":"common","name":"사막 물병터번","slot":"head","theme":"여행 장비","silhouette":"폭이 넓은 감김 원통과 비스듬히 솟은 윗마루","palette":{"primary":"모래베이지","secondary":"물병청색","accent":"석양적색"},"material":"부드러운 천과 얇은 가죽","signatureDetail":"비스듬한 마루의 파란 물방울 천표","prompt":"사막 물병터번 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":21,"y":-27,"size":54},"qaState":"accepted"},
-  {"id":"common_045","rarity":"common","name":"숲길 나침반관","slot":"head","theme":"여행 장비","silhouette":"세로로 선 팔각 고리와 한쪽으로 솟은 북쪽 지침판","palette":{"primary":"고사리초록","secondary":"나무밤색","accent":"바늘주홍"},"material":"얇은 나무와 단순한 금속","signatureDetail":"팔각 고리 꼭대기의 붉은 북쪽 쐐기","prompt":"숲길 나침반관 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":19,"y":-29,"size":58},"qaState":"accepted"},
-  {"id":"common_046","rarity":"common","name":"설원 덧댐모","slot":"head","theme":"여행 장비","silhouette":"두툼한 직사각 크라운과 양옆의 넓은 내려판","palette":{"primary":"눈밭흰색","secondary":"솔잎남색","accent":"장작주황"},"material":"누빈 천과 부드러운 가죽","signatureDetail":"왼쪽 내려판의 주황 장작결 박음선","prompt":"설원 덧댐모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":19,"y":-29,"size":58},"qaState":"accepted"},
-  {"id":"common_047","rarity":"common","name":"해안 조개머리띠","slot":"head","theme":"여행 장비","silhouette":"폭이 넓은 물결띠와 한쪽의 큰 부채꼴 조개판","palette":{"primary":"조개아이보리","secondary":"파도하늘색","accent":"산호주홍"},"material":"가벼운 도자기와 질긴 천","signatureDetail":"조개판 가운데의 산호색 나선 한 줄","prompt":"해안 조개머리띠 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":15,"y":-33,"size":66},"qaState":"accepted"},
-  {"id":"common_048","rarity":"common","name":"기차표 둥근모","slot":"head","theme":"여행 장비","silhouette":"매끈한 구형 크라운과 가운데를 가르는 좁은 수평띠","palette":{"primary":"객차적갈색","secondary":"승차권크림","accent":"검표파랑"},"material":"두꺼운 천과 단순한 금속","signatureDetail":"수평띠에 끼운 파란 검표조각","prompt":"기차표 둥근모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":17,"y":-31,"size":62},"qaState":"accepted"},
-  {"id":"common_049","rarity":"common","name":"야영 불씨망건","slot":"head","theme":"여행 장비","silhouette":"낮은 타원 격자띠와 뒤쪽으로 선 하나의 사각 불씨판","palette":{"primary":"숯먹색","secondary":"장작갈색","accent":"불씨노랑"},"material":"질긴 천과 얇은 나무","signatureDetail":"사각 불씨판의 노란 마름모 구멍","prompt":"야영 불씨망건 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":21,"y":-27,"size":54},"qaState":"accepted"},
-  {"id":"common_050","rarity":"common","name":"지도꾼 두루마리모","slot":"head","theme":"여행 장비","silhouette":"가로 원통 크라운과 양끝에 말린 작은 원형 단면","palette":{"primary":"지도황백색","secondary":"경로적색","accent":"등고선갈색"},"material":"빳빳한 천과 얇은 나무","signatureDetail":"원통 가운데의 붉은 점선 경로","prompt":"지도꾼 두루마리모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":13,"y":-35,"size":70},"qaState":"accepted"},
-  {"id":"common_051","rarity":"common","name":"돌길 먼지막이모","slot":"head","theme":"여행 장비","silhouette":"낮은 사다리꼴 크라운과 층진 먼지털이 차양","palette":{"primary":"돌길회색","secondary":"먼지황토","accent":"풀잎연두"},"material":"거친 천과 얇은 가죽","signatureDetail":"두 번째 차양의 연두색 길표식","prompt":"돌길 먼지막이모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":12,"y":-36,"size":72},"qaState":"accepted"},
-  {"id":"common_052","rarity":"common","name":"노을빛 길안경","slot":"face","theme":"여행 장비","silhouette":"바깥쪽이 치켜올라간 두 개의 큰 D자 틀","palette":{"primary":"노을주홍","secondary":"길먼지갈색","accent":"저녁보라"},"material":"단순한 금속과 얇은 가죽","signatureDetail":"오른쪽 D자 틀의 보라색 수평선","prompt":"노을빛 길안경 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":-1,"y":-12,"size":98},"qaState":"accepted"},
-  {"id":"common_053","rarity":"common","name":"안개길 삼중고글","slot":"face","theme":"여행 장비","silhouette":"굵기가 다른 세 겹 원형테가 나란히 선 윤곽","palette":{"primary":"안개회백색","secondary":"가죽밤색","accent":"등불연두"},"material":"단순한 금속과 두꺼운 가죽","signatureDetail":"가운데 테의 연두색 반달표","prompt":"안개길 삼중고글 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":7,"y":-4,"size":83},"qaState":"accepted"},
-  {"id":"common_054","rarity":"common","name":"모래바람 마름모가리개","slot":"face","theme":"여행 장비","silhouette":"가운데 세로선이 선명한 넓은 마름모 천판","palette":{"primary":"사막황토","secondary":"그늘자주","accent":"물빛청록"},"material":"촘촘한 천과 얇은 가죽","signatureDetail":"아래 꼭짓점의 청록색 한 땀","prompt":"모래바람 마름모가리개 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":24,"y":13,"size":48},"qaState":"accepted"},
-  {"id":"common_055","rarity":"common","name":"여관 열쇠목걸이","slot":"neck","theme":"여행 장비","silhouette":"짧은 U자 금속띠 아래의 넓적한 열쇠판","palette":{"primary":"여관황동색","secondary":"문패초록","accent":"침구크림"},"material":"단순한 금속과 얇은 가죽","signatureDetail":"열쇠판에 새긴 작은 달 모양 방표시","prompt":"여관 열쇠목걸이 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":23,"y":57,"size":50},"qaState":"accepted"},
-  {"id":"common_056","rarity":"common","name":"지도 부채칼라","slot":"neck","theme":"여행 장비","silhouette":"부채처럼 주름진 넓은 반원형 접이칼라","palette":{"primary":"지도크림","secondary":"강줄기파랑","accent":"산맥갈색"},"material":"빳빳한 천과 얇은 나무","signatureDetail":"가장 넓은 주름의 파란 강줄기 한 획","prompt":"지도 부채칼라 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":9,"y":43,"size":78},"qaState":"accepted"},
-  {"id":"common_057","rarity":"common","name":"항로 표식케이프칼라","slot":"neck","theme":"여행 장비","silhouette":"뒤로 길어지는 사다리꼴 판과 짧은 직선 윗깃","palette":{"primary":"항로남색","secondary":"파도청색","accent":"부표흰색"},"material":"두꺼운 천과 단순한 금속","signatureDetail":"사다리꼴 중앙의 흰 점선 항로","prompt":"항로 표식케이프칼라 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":23,"y":57,"size":50},"qaState":"accepted"},
-  {"id":"common_058","rarity":"common","name":"하루길 납작배낭","slot":"body","theme":"여행 장비","silhouette":"세로로 긴 납작 상자형 가방과 말아 올린 윗단","palette":{"primary":"여행천카키","secondary":"끈갈색","accent":"식량주황"},"material":"질긴 천과 두꺼운 가죽","signatureDetail":"말린 윗단을 고정한 주황 사각고리","prompt":"하루길 납작배낭 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":19,"y":48,"size":59},"qaState":"accepted"},
-  {"id":"common_059","rarity":"common","name":"야영 담요판초","slot":"body","theme":"여행 장비","silhouette":"넓은 거꾸로 U자 판과 둥글게 깎인 아래 모서리","palette":{"primary":"담요벽돌색","secondary":"밤하늘남색","accent":"별빛크림"},"material":"두꺼운 천과 얇은 가죽","signatureDetail":"오른쪽 아래의 크림색 네 칸 격자","prompt":"야영 담요판초 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":19,"y":48,"size":59},"qaState":"accepted"},
-  {"id":"common_060","rarity":"common","name":"나룻배 방수조끼","slot":"body","theme":"여행 장비","silhouette":"짧은 통형 조끼판과 비스듬히 겹친 넓은 앞단","palette":{"primary":"나룻배갈색","secondary":"강청색","accent":"노끈베이지"},"material":"촘촘한 천과 낡은 가죽","signatureDetail":"비스듬한 앞단의 작은 노 모양 박음표","prompt":"나룻배 방수조끼 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":19,"y":48,"size":59},"qaState":"accepted"},
-  {"id":"common_061","rarity":"common","name":"수채화 팔레트베레","slot":"head","theme":"취미·공예 장비","silhouette":"납작하고 넓은 원반 크라운과 비켜난 짧은 챙","palette":{"primary":"물감청색","secondary":"종이크림","accent":"붓끝분홍"},"material":"부드러운 천과 얇은 나무","signatureDetail":"원반 가장자리의 분홍 물감점 하나","prompt":"수채화 팔레트베레 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":14,"y":-34,"size":68},"qaState":"accepted"},
-  {"id":"common_062","rarity":"common","name":"뜨개실 주름빗모","slot":"head","theme":"취미·공예 장비","silhouette":"낮은 안장형 받침 위에 앞뒤로 선 네 장의 둥근 직사각 뜨개주름이 계단처럼 이어진 빗살 윤곽","palette":{"primary":"털실자주","secondary":"뜨개크림","accent":"바늘청록"},"material":"두꺼운 천과 단순한 금속","signatureDetail":"가장 높은 앞 주름을 가로지른 청록색 한 코 고리","prompt":"뜨개실 주름빗모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":21,"y":-27,"size":54},"qaState":"accepted"},
-  {"id":"common_063","rarity":"common","name":"목각 부스러기모","slot":"head","theme":"취미·공예 장비","silhouette":"각진 조각 크라운과 톱니처럼 들쭉날쭉한 넓은 챙","palette":{"primary":"조각나무색","secondary":"끌회색","accent":"칠감초록"},"material":"얇은 나무와 질긴 천","signatureDetail":"챙의 가장 긴 톱니에 칠한 초록 끝점","prompt":"목각 부스러기모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":14,"y":-34,"size":68},"qaState":"accepted"},
-  {"id":"common_064","rarity":"common","name":"종이접기 학모","slot":"head","theme":"취미·공예 장비","silhouette":"꺾인 삼각 크라운과 두 겹 지그재그 테두리","palette":{"primary":"접이종이흰색","secondary":"먹물검정","accent":"꼭짓점빨강"},"material":"빳빳한 천과 얇은 나무","signatureDetail":"가장 높은 접힘선의 붉은 삼각점","prompt":"종이접기 학모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":13,"y":-35,"size":70},"qaState":"accepted"},
-  {"id":"common_065","rarity":"common","name":"사진가 암실베일","slot":"head","theme":"취미·공예 장비","silhouette":"윗부분은 좁고 뒤로 넓게 펼쳐지는 긴 사다리꼴 천판","palette":{"primary":"암막먹색","secondary":"필름밤색","accent":"현상등주홍"},"material":"두꺼운 천과 얇은 가죽","signatureDetail":"아랫모서리의 주홍색 필름칸 네 개","prompt":"사진가 암실베일 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":20,"y":-28,"size":56},"qaState":"accepted"},
-  {"id":"common_066","rarity":"common","name":"원예 씨앗족두리","slot":"head","theme":"취미·공예 장비","silhouette":"낮은 육각 받침 위로 씨앗꼬투리 판이 세로로 선 윤곽","palette":{"primary":"씨앗황토색","secondary":"새잎연두","accent":"꽃술크림"},"material":"부드러운 천과 얇은 나무","signatureDetail":"세로판 중앙의 크림색 씨앗 세 점","prompt":"원예 씨앗족두리 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":21,"y":-27,"size":54},"qaState":"accepted"},
-  {"id":"common_067","rarity":"common","name":"모형선 돛모","slot":"head","theme":"취미·공예 장비","silhouette":"높은 삼각 돛 크라운과 굽은 배판형 밑단","palette":{"primary":"돛크림","secondary":"선체갈색","accent":"깃발청색"},"material":"빳빳한 천과 얇은 나무","signatureDetail":"삼각 꼭대기의 짧은 파란 깃표","prompt":"모형선 돛모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":21,"y":-27,"size":54},"qaState":"accepted"},
-  {"id":"common_068","rarity":"common","name":"서예 붓챙모","slot":"head","theme":"취미·공예 장비","silhouette":"길쭉한 붓자국형 타원 크라운과 앞으로 뾰족한 챙","palette":{"primary":"먹빛남색","secondary":"한지베이지","accent":"낙관주홍"},"material":"부드러운 천과 얇은 나무","signatureDetail":"뾰족한 챙 끝의 주홍 낙관점","prompt":"서예 붓챙모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":20,"y":-28,"size":56},"qaState":"accepted"},
-  {"id":"common_069","rarity":"common","name":"자수 골무비녀","slot":"head","theme":"취미·공예 장비","silhouette":"길게 뻗은 가로 바늘대와 한쪽의 큰 반구 골무장식","palette":{"primary":"바늘은회색","secondary":"자수보라","accent":"실노랑"},"material":"단순한 금속과 부드러운 천","signatureDetail":"골무장식 중앙의 노란 십자수 한 칸","prompt":"자수 골무비녀 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":19,"y":-29,"size":58},"qaState":"accepted"},
-  {"id":"common_070","rarity":"common","name":"도예 유약모","slot":"head","theme":"취미·공예 장비","silhouette":"납작한 항아리 돔과 좁은 목테 아래의 넓은 입술단","palette":{"primary":"유약하늘색","secondary":"가마흙갈색","accent":"흐름흰색"},"material":"가벼운 도자기와 부드러운 천","signatureDetail":"돔 한쪽의 흰 유약 흐름선","prompt":"도예 유약모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":21,"y":-27,"size":54},"qaState":"accepted"},
-  {"id":"common_071","rarity":"common","name":"별관측 종이망원모","slot":"head","theme":"취미·공예 장비","silhouette":"비스듬히 놓인 긴 원통 크라운과 가느다란 고리 밑단","palette":{"primary":"밤하늘보라","secondary":"별빛노랑","accent":"망원경회색"},"material":"빳빳한 천과 단순한 금속","signatureDetail":"원통 옆의 작은 노란 네꼭지별","prompt":"별관측 종이망원모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":20,"y":-28,"size":56},"qaState":"accepted"},
-  {"id":"common_072","rarity":"common","name":"판화 보호안경","slot":"face","theme":"취미·공예 장비","silhouette":"두꺼운 오각 두 틀과 폭이 넓은 곧은 윗테","palette":{"primary":"판화먹색","secondary":"롤러회색","accent":"종이황백색"},"material":"단순한 금속과 두꺼운 가죽","signatureDetail":"왼쪽 오각틀의 작은 잉크롤러선","prompt":"판화 보호안경 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":15,"y":4,"size":67},"qaState":"accepted"},
-  {"id":"common_073","rarity":"common","name":"구슬공예 반달안경","slot":"face","theme":"취미·공예 장비","silhouette":"크기가 다른 두 반달틀이 비스듬히 맞물린 윤곽","palette":{"primary":"구슬청록","secondary":"실버금속색","accent":"자두보라"},"material":"단순한 금속과 가벼운 도자기","signatureDetail":"큰 반달틀 끝의 자주색 도자기구슬 하나","prompt":"구슬공예 반달안경 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":15,"y":4,"size":67},"qaState":"accepted"},
-  {"id":"common_074","rarity":"common","name":"모자이크 색조각면","slot":"face","theme":"취미·공예 장비","silhouette":"여러 칸으로 나뉜 넓은 활꼴 가리개판","palette":{"primary":"조각파랑","secondary":"줄눈회색","accent":"타일주황"},"material":"가벼운 도자기와 질긴 천","signatureDetail":"활꼴 중앙의 주황 마름모 조각","prompt":"모자이크 색조각면 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":15,"y":4,"size":67},"qaState":"accepted"},
-  {"id":"common_075","rarity":"common","name":"뜨개 견본칼라","slot":"neck","theme":"취미·공예 장비","silhouette":"둥글게 선 굵은 골지칼라와 한쪽의 네모 견본판","palette":{"primary":"견본민트색","secondary":"실타래크림","accent":"코표시분홍"},"material":"두꺼운 천과 얇은 나무","signatureDetail":"견본판의 분홍색 두 코 화살표","prompt":"뜨개 견본칼라 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":20,"y":54,"size":56},"qaState":"accepted"},
-  {"id":"common_076","rarity":"common","name":"목공예 줄자펜던트","slot":"neck","theme":"취미·공예 장비","silhouette":"좁은 V자 가죽띠와 세로 직사각 줄자판","palette":{"primary":"줄자노랑","secondary":"가죽밤색","accent":"눈금검정"},"material":"얇은 가죽과 단순한 금속","signatureDetail":"줄자판 아래의 검은 다섯 번째 눈금","prompt":"목공예 줄자펜던트 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":23,"y":57,"size":50},"qaState":"accepted"},
-  {"id":"common_077","rarity":"common","name":"압화 표본스카프","slot":"neck","theme":"취미·공예 장비","silhouette":"길쭉한 잎형 천판이 납작한 잠금쇠에서 교차한 윤곽","palette":{"primary":"마른꽃자주","secondary":"표본지베이지","accent":"줄기초록"},"material":"부드러운 천과 단순한 금속","signatureDetail":"교차점의 작은 초록 잎맥핀","prompt":"압화 표본스카프 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":23,"y":57,"size":50},"qaState":"accepted"},
-  {"id":"common_078","rarity":"common","name":"물감 얼룩작업복","slot":"body","theme":"취미·공예 장비","silhouette":"위가 좁고 아래가 넓은 사다리꼴 덧옷판","palette":{"primary":"작업복청색","secondary":"캔버스크림","accent":"물감빨강"},"material":"질긴 천과 얇은 가죽","signatureDetail":"아랫단 한쪽의 둥근 붉은 물감얼룩","prompt":"물감 얼룩작업복 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":19,"y":48,"size":59},"qaState":"accepted"},
-  {"id":"common_079","rarity":"common","name":"가죽공예 도구조끼","slot":"body","theme":"취미·공예 장비","silhouette":"작은 상자형 조끼판과 계단식으로 튀어나온 도구칸","palette":{"primary":"무두질갈색","secondary":"송곳은색","accent":"감청색실"},"material":"두꺼운 가죽과 단순한 금속","signatureDetail":"가장 낮은 도구칸의 파란 실고리","prompt":"가죽공예 도구조끼 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":19,"y":48,"size":59},"qaState":"accepted"},
-  {"id":"common_080","rarity":"common","name":"연날리기 마름망토","slot":"body","theme":"취미·공예 장비","silhouette":"큰 마름모 판과 아래로 길게 뻗은 하나의 뾰족 끝","palette":{"primary":"연하늘색","secondary":"꼬리흰색","accent":"바람빨강"},"material":"가벼운 천과 얇은 나무","signatureDetail":"마름모 중앙의 붉은 바람개비 박음표","prompt":"연날리기 마름망토 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현","defaultAlignment":{"x":19,"y":48,"size":59},"qaState":"accepted"}
+  {
+    "id": "common_001",
+    "rarity": "common",
+    "name": "새벽 우편모",
+    "slot": "head",
+    "theme": "생활 도구",
+    "silhouette": "낮은 둥근 크라운과 짧은 사각 챙",
+    "palette": {
+      "primary": "먹남색",
+      "secondary": "밤갈색",
+      "accent": "밀랍금색"
+    },
+    "material": "두꺼운 천과 낡은 가죽",
+    "signatureDetail": "챙 중앙의 작은 밀랍 봉인 단추",
+    "prompt": "새벽 우편모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 11,
+      "y": -37,
+      "size": 74
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_002",
+    "rarity": "common",
+    "name": "아침 신문접이모",
+    "slot": "head",
+    "theme": "생활 도구",
+    "silhouette": "두 겹으로 접힌 배모양 크라운과 양끝의 뾰족한 능선",
+    "palette": {
+      "primary": "신문회백색",
+      "secondary": "인쇄먹색",
+      "accent": "날짜청색"
+    },
+    "material": "빳빳한 천과 얇은 가죽",
+    "signatureDetail": "접힌 한쪽 면의 작은 파란 날짜도장",
+    "prompt": "아침 신문접이모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 6,
+      "y": -42,
+      "size": 84
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_003",
+    "rarity": "common",
+    "name": "찻집 보온두건",
+    "slot": "head",
+    "theme": "생활 도구",
+    "silhouette": "삼각 포개짐과 뒤로 길게 내려오는 한쪽 꼬리",
+    "palette": {
+      "primary": "찻잎초록",
+      "secondary": "우유빛",
+      "accent": "구리주황"
+    },
+    "material": "누빈 천과 단순한 금속",
+    "signatureDetail": "정면을 여미는 찻잎 무늬 금속핀",
+    "prompt": "찻집 보온두건 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 21,
+      "y": -27,
+      "size": 54
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_004",
+    "rarity": "common",
+    "name": "빨래집게 햇차양",
+    "slot": "head",
+    "theme": "생활 도구",
+    "silhouette": "넓은 반달 차양과 양끝의 짧은 아래판",
+    "palette": {
+      "primary": "햇볕베이지",
+      "secondary": "빨랫줄파랑",
+      "accent": "집게빨강"
+    },
+    "material": "빳빳한 천과 얇은 나무",
+    "signatureDetail": "차양 끝에 고정된 붉은 나무집게 하나",
+    "prompt": "빨래집게 햇차양 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 9,
+      "y": -38,
+      "size": 77
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_005",
+    "rarity": "common",
+    "name": "장보기 접이모",
+    "slot": "head",
+    "theme": "생활 도구",
+    "silhouette": "납작한 팔각 크라운과 접힌 앞쪽 차양",
+    "palette": {
+      "primary": "장바구니황토",
+      "secondary": "쑥초록",
+      "accent": "동전노랑"
+    },
+    "material": "거친 천과 얇은 가죽",
+    "signatureDetail": "팔각 꼭짓점의 납작한 동전 단추",
+    "prompt": "장보기 접이모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 15,
+      "y": -33,
+      "size": 66
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_006",
+    "rarity": "common",
+    "name": "벽난로 재받이 후드",
+    "slot": "head",
+    "theme": "생활 도구",
+    "silhouette": "깊은 종형 덮개와 바깥으로 벌어진 아랫단",
+    "palette": {
+      "primary": "잿빛회색",
+      "secondary": "벽돌갈색",
+      "accent": "불씨주황"
+    },
+    "material": "두꺼운 천과 단순한 금속",
+    "signatureDetail": "아랫단에 달린 작은 불씨색 금속고리",
+    "prompt": "벽난로 재받이 후드 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 21,
+      "y": -27,
+      "size": 54
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_007",
+    "rarity": "common",
+    "name": "물뿌리개 손잡이캡",
+    "slot": "head",
+    "theme": "생활 도구",
+    "silhouette": "낮은 원기둥 위로 솟은 넓은 손잡이 아치",
+    "palette": {
+      "primary": "물뿌리개청록",
+      "secondary": "정원흙색",
+      "accent": "새싹연두"
+    },
+    "material": "단순한 금속과 낡은 가죽",
+    "signatureDetail": "아치 밑에 매단 새싹색 가죽끈",
+    "prompt": "물뿌리개 손잡이캡 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 20,
+      "y": -28,
+      "size": 56
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_008",
+    "rarity": "common",
+    "name": "열쇠지기 고리모",
+    "slot": "head",
+    "theme": "생활 도구",
+    "silhouette": "매끈한 타원 돔과 한쪽의 큰 고리 돌출부",
+    "palette": {
+      "primary": "열쇠은회색",
+      "secondary": "문짝밤색",
+      "accent": "끈자주"
+    },
+    "material": "단순한 금속과 두꺼운 천",
+    "signatureDetail": "큰 고리 안쪽의 자주색 실매듭",
+    "prompt": "열쇠지기 고리모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": -29,
+      "size": 58
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_009",
+    "rarity": "common",
+    "name": "도자기 찻잔모",
+    "slot": "head",
+    "theme": "생활 도구",
+    "silhouette": "거꾸로 놓인 잔형 크라운과 굽은 손잡이 차양",
+    "palette": {
+      "primary": "찻잔아이보리",
+      "secondary": "홍차갈색",
+      "accent": "테두리남색"
+    },
+    "material": "가벼운 도자기와 부드러운 천",
+    "signatureDetail": "크라운 둘레의 한 줄 남색 띠",
+    "prompt": "도자기 찻잔모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 15,
+      "y": -33,
+      "size": 66
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_010",
+    "rarity": "common",
+    "name": "빗자루 솔챙모",
+    "slot": "head",
+    "theme": "생활 도구",
+    "silhouette": "낮은 크라운에서 길게 뻗은 직사각 솔챙",
+    "palette": {
+      "primary": "빗자루밀색",
+      "secondary": "손잡이갈색",
+      "accent": "끈청색"
+    },
+    "material": "부드러운 나무와 질긴 천",
+    "signatureDetail": "솔챙 뿌리를 묶은 푸른 천띠",
+    "prompt": "빗자루 솔챙모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": -3,
+      "y": -50,
+      "size": 102
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_011",
+    "rarity": "common",
+    "name": "등잔 심지모",
+    "slot": "head",
+    "theme": "생활 도구",
+    "silhouette": "끝이 좁아지는 원뿔 크라운과 낮은 둥근 테",
+    "palette": {
+      "primary": "등잔검정",
+      "secondary": "기름호박색",
+      "accent": "심지크림"
+    },
+    "material": "두꺼운 천과 단순한 금속",
+    "signatureDetail": "꼭대기에 선 짧은 크림색 심지술",
+    "prompt": "등잔 심지모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 21,
+      "y": -27,
+      "size": 54
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_012",
+    "rarity": "common",
+    "name": "바느질 눈금안경",
+    "slot": "face",
+    "theme": "생활 도구",
+    "silhouette": "가느다란 가로 직사각 틀과 좌우의 짧은 눈금날개",
+    "palette": {
+      "primary": "눈금회색",
+      "secondary": "바늘은색",
+      "accent": "실파랑"
+    },
+    "material": "단순한 금속과 얇은 가죽",
+    "signatureDetail": "왼쪽 위에 새긴 세 칸짜리 눈금",
+    "prompt": "바느질 눈금안경 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 0,
+      "y": -11,
+      "size": 96
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_013",
+    "rarity": "common",
+    "name": "양념갈이 코받이안경",
+    "slot": "face",
+    "theme": "생활 도구",
+    "silhouette": "두 개의 세로 타원틀과 매우 짧은 가운데 다리",
+    "palette": {
+      "primary": "후추검정",
+      "secondary": "소금흰색",
+      "accent": "놋빛노랑"
+    },
+    "material": "단순한 금속과 가벼운 도자기",
+    "signatureDetail": "오른쪽 테의 작은 후추알 점무늬",
+    "prompt": "양념갈이 코받이안경 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 3,
+      "y": -8,
+      "size": 91
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_014",
+    "rarity": "common",
+    "name": "창닦이 물방울고글",
+    "slot": "face",
+    "theme": "생활 도구",
+    "silhouette": "큼직한 물방울형 두 틀과 둥근 바깥 테두리",
+    "palette": {
+      "primary": "유리하늘색",
+      "secondary": "창틀회색",
+      "accent": "물방울청록"
+    },
+    "material": "가벼운 도자기와 질긴 천",
+    "signatureDetail": "한쪽 틀 아래의 청록 물방울 표식",
+    "prompt": "창닦이 물방울고글 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 13,
+      "y": 2,
+      "size": 70
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_015",
+    "rarity": "common",
+    "name": "식탁보 접이칼라",
+    "slot": "neck",
+    "theme": "생활 도구",
+    "silhouette": "넓은 사각 천을 삼각으로 접은 판형 윤곽",
+    "palette": {
+      "primary": "식탁보적색",
+      "secondary": "무명크림",
+      "accent": "단추갈색"
+    },
+    "material": "부드러운 천과 나무",
+    "signatureDetail": "삼각 끝의 밤톨 모양 나무단추",
+    "prompt": "식탁보 접이칼라 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 14,
+      "y": 48,
+      "size": 68
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_016",
+    "rarity": "common",
+    "name": "찬장 열쇠목도리",
+    "slot": "neck",
+    "theme": "생활 도구",
+    "silhouette": "길고 좁은 띠와 한쪽만 길게 내려온 열쇠형 끝단",
+    "palette": {
+      "primary": "찬장초록",
+      "secondary": "열쇠황동색",
+      "accent": "안감밤색"
+    },
+    "material": "두꺼운 천과 단순한 금속",
+    "signatureDetail": "짧은 쪽 끝의 네모난 찬장표",
+    "prompt": "찬장 열쇠목도리 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 23,
+      "y": 57,
+      "size": 50
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_017",
+    "rarity": "common",
+    "name": "살림꾼 다용도앞치마",
+    "slot": "body",
+    "theme": "생활 도구",
+    "silhouette": "넓은 윗판에서 퍼지는 A자 앞판과 두 칸 아랫주머니",
+    "palette": {
+      "primary": "앞치마남색",
+      "secondary": "행주하늘색",
+      "accent": "박음질흰색"
+    },
+    "material": "질긴 천과 얇은 가죽",
+    "signatureDetail": "왼쪽 주머니의 흰 십자 박음선",
+    "prompt": "살림꾼 다용도앞치마 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": 48,
+      "size": 59
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_018",
+    "rarity": "common",
+    "name": "장보기 등바구니",
+    "slot": "body",
+    "theme": "생활 도구",
+    "silhouette": "위가 벌어진 상자형 바구니와 완전히 평평한 밑선",
+    "palette": {
+      "primary": "등바구니갈대색",
+      "secondary": "가죽고동색",
+      "accent": "사과빨강"
+    },
+    "material": "얇은 나무와 낡은 가죽",
+    "signatureDetail": "앞면 모서리에 묶인 붉은 사과표 끈",
+    "prompt": "장보기 등바구니 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": 48,
+      "size": 59
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_019",
+    "rarity": "common",
+    "name": "뜨개 물주머니조끼",
+    "slot": "body",
+    "theme": "생활 도구",
+    "silhouette": "짧고 둥근 조끼판과 하나의 볼록한 앞주머니",
+    "palette": {
+      "primary": "뜨개보라",
+      "secondary": "물주머니청색",
+      "accent": "코바늘은색"
+    },
+    "material": "두꺼운 천과 단순한 금속",
+    "signatureDetail": "주머니 가장자리의 세 코짜리 은색 고리",
+    "prompt": "뜨개 물주머니조끼 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 18,
+      "y": 48,
+      "size": 60
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_020",
+    "rarity": "common",
+    "name": "빗물받이 층단망토",
+    "slot": "body",
+    "theme": "생활 도구",
+    "silhouette": "넓은 반원 판과 계단처럼 세 번 꺾인 아랫단",
+    "palette": {
+      "primary": "빗물회청색",
+      "secondary": "안감모래색",
+      "accent": "단추먹색"
+    },
+    "material": "촘촘한 천과 단순한 금속",
+    "signatureDetail": "가장 위 단에 박힌 먹색 빗방울단추",
+    "prompt": "빗물받이 층단망토 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 18,
+      "y": 48,
+      "size": 60
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_021",
+    "rarity": "common",
+    "name": "철도원 납작모",
+    "slot": "head",
+    "theme": "직업 장비",
+    "silhouette": "넓은 직사각 크라운과 곧게 뻗은 짧은 챙",
+    "palette": {
+      "primary": "철도남색",
+      "secondary": "승강장회색",
+      "accent": "표지판빨강"
+    },
+    "material": "두꺼운 천과 단순한 금속",
+    "signatureDetail": "정면의 작은 네모 승차권표",
+    "prompt": "철도원 납작모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 1,
+      "y": -47,
+      "size": 94
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_022",
+    "rarity": "common",
+    "name": "목수 자투리챙모",
+    "slot": "head",
+    "theme": "직업 장비",
+    "silhouette": "비대칭 쐐기 크라운과 한쪽으로 넓어진 차양",
+    "palette": {
+      "primary": "톱밥황토",
+      "secondary": "목재갈색",
+      "accent": "연필주황"
+    },
+    "material": "거친 천과 얇은 나무",
+    "signatureDetail": "차양 모서리의 짧은 연필꽂이",
+    "prompt": "목수 자투리챙모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 9,
+      "y": -39,
+      "size": 78
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_023",
+    "rarity": "common",
+    "name": "제빵사 봉긋모",
+    "slot": "head",
+    "theme": "직업 장비",
+    "silhouette": "세 갈래로 봉긋한 풍선형 윗부분과 좁은 띠 밑단",
+    "palette": {
+      "primary": "반죽크림",
+      "secondary": "오븐갈색",
+      "accent": "체리적색"
+    },
+    "material": "부드러운 천과 얇은 가죽",
+    "signatureDetail": "띠 중앙의 작은 체리색 실점",
+    "prompt": "제빵사 봉긋모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 16,
+      "y": -32,
+      "size": 64
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_024",
+    "rarity": "common",
+    "name": "어부 그물두건",
+    "slot": "head",
+    "theme": "직업 장비",
+    "silhouette": "길쭉한 물방울 덮개와 뒤로 모인 그물꼬리",
+    "palette": {
+      "primary": "바다청색",
+      "secondary": "밧줄베이지",
+      "accent": "부표주황"
+    },
+    "material": "성긴 천과 낡은 가죽",
+    "signatureDetail": "꼬리 끝의 조그만 주황 나무부표",
+    "prompt": "어부 그물두건 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 21,
+      "y": -27,
+      "size": 54
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_025",
+    "rarity": "common",
+    "name": "분류실 봉투모",
+    "slot": "head",
+    "theme": "직업 장비",
+    "silhouette": "층층이 겹친 사각 크라운과 얕은 봉투형 챙",
+    "palette": {
+      "primary": "봉투황백색",
+      "secondary": "도장자주",
+      "accent": "분류초록"
+    },
+    "material": "빳빳한 천과 단순한 금속",
+    "signatureDetail": "윗단에 찍힌 둥근 자주색 분류도장",
+    "prompt": "분류실 봉투모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 16,
+      "y": -32,
+      "size": 64
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_026",
+    "rarity": "common",
+    "name": "등대지기 방풍모",
+    "slot": "head",
+    "theme": "직업 장비",
+    "silhouette": "키 큰 사다리꼴 크라운과 아래로 감기는 둘레챙",
+    "palette": {
+      "primary": "등대흰색",
+      "secondary": "폭풍회색",
+      "accent": "신호빨강"
+    },
+    "material": "촘촘한 천과 얇은 가죽",
+    "signatureDetail": "크라운 옆의 붉은 세로 신호선",
+    "prompt": "등대지기 방풍모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 21,
+      "y": -27,
+      "size": 54
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_027",
+    "rarity": "common",
+    "name": "도서관 먼지털이모",
+    "slot": "head",
+    "theme": "직업 장비",
+    "silhouette": "낮은 반구 크라운과 세로 술이 둘린 넓은 테",
+    "palette": {
+      "primary": "책등초록",
+      "secondary": "먼지회색",
+      "accent": "책갈피노랑"
+    },
+    "material": "부드러운 천과 얇은 나무",
+    "signatureDetail": "뒤쪽 테에 꽂힌 노란 천책갈피",
+    "prompt": "도서관 먼지털이모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 5,
+      "y": -43,
+      "size": 86
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_028",
+    "rarity": "common",
+    "name": "도예가 흙막이후드",
+    "slot": "head",
+    "theme": "직업 장비",
+    "silhouette": "모난 지붕형 덮개와 뒤로 기운 사선 아랫단",
+    "palette": {
+      "primary": "찰흙갈색",
+      "secondary": "유약청록",
+      "accent": "가마주황"
+    },
+    "material": "두꺼운 천과 가벼운 도자기",
+    "signatureDetail": "사선 끝에 달린 작은 도자기 물레표",
+    "prompt": "도예가 흙막이후드 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 21,
+      "y": -27,
+      "size": 54
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_029",
+    "rarity": "common",
+    "name": "정비공 볼트캡",
+    "slot": "head",
+    "theme": "직업 장비",
+    "silhouette": "여섯 면의 짧은 크라운과 볼트머리처럼 평평한 테",
+    "palette": {
+      "primary": "기계회색",
+      "secondary": "기름검정",
+      "accent": "경고노랑"
+    },
+    "material": "단순한 금속과 두꺼운 천",
+    "signatureDetail": "오른쪽 면의 노란 한 줄 조임표시",
+    "prompt": "정비공 볼트캡 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 11,
+      "y": -37,
+      "size": 74
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_030",
+    "rarity": "common",
+    "name": "꽃집 리본보닛",
+    "slot": "head",
+    "theme": "직업 장비",
+    "silhouette": "둥근 덮개 뒤의 큰 원판과 앞쪽의 좁은 아치",
+    "palette": {
+      "primary": "꽃잎분홍",
+      "secondary": "잎사귀초록",
+      "accent": "리본크림"
+    },
+    "material": "부드러운 천과 얇은 가죽",
+    "signatureDetail": "뒤 원판 아래의 납작한 크림색 리본표",
+    "prompt": "꽃집 리본보닛 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 21,
+      "y": -27,
+      "size": 54
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_031",
+    "rarity": "common",
+    "name": "굴착부 랜턴모",
+    "slot": "head",
+    "theme": "직업 장비",
+    "silhouette": "상자형 둥근 크라운과 정면의 짧은 등불 돌출부",
+    "palette": {
+      "primary": "탄가루먹색",
+      "secondary": "작업복갈색",
+      "accent": "랜턴노랑"
+    },
+    "material": "단순한 금속과 낡은 가죽",
+    "signatureDetail": "돌출부 안의 네모난 노란 반사판",
+    "prompt": "굴착부 랜턴모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 20,
+      "y": -28,
+      "size": 56
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_032",
+    "rarity": "common",
+    "name": "제도사 사각안경",
+    "slot": "face",
+    "theme": "직업 장비",
+    "silhouette": "큰 정사각 두 틀과 위를 잇는 곧은 자막대",
+    "palette": {
+      "primary": "도면청색",
+      "secondary": "자은회색",
+      "accent": "연필노랑"
+    },
+    "material": "단순한 금속과 얇은 나무",
+    "signatureDetail": "윗막대 끝의 작은 삼각 눈금",
+    "prompt": "제도사 사각안경 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": -3,
+      "y": -14,
+      "size": 102
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_033",
+    "rarity": "common",
+    "name": "용접공 틈빛보안경",
+    "slot": "face",
+    "theme": "직업 장비",
+    "silhouette": "폭이 넓고 높이가 낮은 하나의 가로 틈새판",
+    "palette": {
+      "primary": "보안경먹색",
+      "secondary": "철판남색",
+      "accent": "불꽃주황"
+    },
+    "material": "단순한 금속과 두꺼운 가죽",
+    "signatureDetail": "틈새판 끝의 주황색 불꽃점 하나",
+    "prompt": "용접공 틈빛보안경 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 11,
+      "y": 0,
+      "size": 75
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_034",
+    "rarity": "common",
+    "name": "양봉가 짧은망사면",
+    "slot": "face",
+    "theme": "직업 장비",
+    "silhouette": "위가 좁고 아래가 넓은 짧은 사다리꼴 가리개",
+    "palette": {
+      "primary": "꿀노랑",
+      "secondary": "벌집갈색",
+      "accent": "망사검정"
+    },
+    "material": "촘촘한 천과 단순한 금속",
+    "signatureDetail": "아랫단 중앙의 작은 육각 벌집표",
+    "prompt": "양봉가 짧은망사면 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 24,
+      "y": 13,
+      "size": 48
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_035",
+    "rarity": "common",
+    "name": "이발사 줄무늬목수건",
+    "slot": "neck",
+    "theme": "직업 장비",
+    "silhouette": "짧은 직사각 띠가 한 번 평평하게 감긴 고리형",
+    "palette": {
+      "primary": "수건흰색",
+      "secondary": "이발청색",
+      "accent": "빗살빨강"
+    },
+    "material": "부드러운 천과 얇은 나무",
+    "signatureDetail": "끝단의 붉고 푸른 사선 두 줄",
+    "prompt": "이발사 줄무늬목수건 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 22,
+      "y": 56,
+      "size": 52
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_036",
+    "rarity": "common",
+    "name": "시계공 렌즈펜던트",
+    "slot": "neck",
+    "theme": "직업 장비",
+    "silhouette": "가느다란 V자 띠 아래에 매달린 큰 원형 틀",
+    "palette": {
+      "primary": "시계갈색",
+      "secondary": "톱니은색",
+      "accent": "초침빨강"
+    },
+    "material": "얇은 가죽과 단순한 금속",
+    "signatureDetail": "원형 틀 안쪽의 붉은 한 칸 표시",
+    "prompt": "시계공 렌즈펜던트 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 23,
+      "y": 57,
+      "size": 50
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_037",
+    "rarity": "common",
+    "name": "목공소 연필앞치마",
+    "slot": "body",
+    "theme": "직업 장비",
+    "silhouette": "길쭉한 직사각 앞판과 한쪽으로 튀어나온 넓은 주머니",
+    "palette": {
+      "primary": "작업천갈색",
+      "secondary": "톱날회색",
+      "accent": "연필주황빛"
+    },
+    "material": "질긴 천과 얇은 가죽",
+    "signatureDetail": "주머니 위의 세로 연필선 세 개",
+    "prompt": "목공소 연필앞치마 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": 48,
+      "size": 59
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_038",
+    "rarity": "common",
+    "name": "항구 신호조끼",
+    "slot": "body",
+    "theme": "직업 장비",
+    "silhouette": "반듯한 사각 조끼판과 가로로 두른 굵은 한 줄 띠",
+    "palette": {
+      "primary": "항구주황",
+      "secondary": "밧줄갈색",
+      "accent": "신호흰색"
+    },
+    "material": "두꺼운 천과 단순한 금속",
+    "signatureDetail": "가로띠 중앙의 흰 깃발표",
+    "prompt": "항구 신호조끼 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": 48,
+      "size": 59
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_039",
+    "rarity": "common",
+    "name": "우유배달 병걸이멜빵",
+    "slot": "body",
+    "theme": "직업 장비",
+    "silhouette": "세로 사다리형 띠와 아래쪽의 둥근 병고리 윤곽",
+    "palette": {
+      "primary": "우유흰색",
+      "secondary": "병뚜껑파랑",
+      "accent": "멜빵갈색"
+    },
+    "material": "두꺼운 가죽과 단순한 금속",
+    "signatureDetail": "가운데 칸의 파란 병뚜껑단추",
+    "prompt": "우유배달 병걸이멜빵 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": 48,
+      "size": 59
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_040",
+    "rarity": "common",
+    "name": "인쇄공 잉크가운",
+    "slot": "body",
+    "theme": "직업 장비",
+    "silhouette": "긴 H자 덧옷판과 폭이 넓은 네모 아랫단",
+    "palette": {
+      "primary": "잉크남색",
+      "secondary": "종이회색",
+      "accent": "활자검정"
+    },
+    "material": "촘촘한 천과 얇은 가죽",
+    "signatureDetail": "아랫단 모서리의 작은 거꾸로 활자표",
+    "prompt": "인쇄공 잉크가운 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": 48,
+      "size": 59
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_041",
+    "rarity": "common",
+    "name": "역참 접이중절모",
+    "slot": "head",
+    "theme": "여행 장비",
+    "silhouette": "눌린 타원 크라운과 양옆이 접힌 두 겹 챙",
+    "palette": {
+      "primary": "역참갈색",
+      "secondary": "노을주황",
+      "accent": "표끈청록"
+    },
+    "material": "두꺼운 천과 낡은 가죽",
+    "signatureDetail": "접힌 챙 사이의 청록 승마표 끈",
+    "prompt": "역참 접이중절모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 8,
+      "y": -39,
+      "size": 79
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_042",
+    "rarity": "common",
+    "name": "산길 표지챙모",
+    "slot": "head",
+    "theme": "여행 장비",
+    "silhouette": "삼각 표지판형 크라운과 넓고 평평한 밑변",
+    "palette": {
+      "primary": "산길초록",
+      "secondary": "바위회색",
+      "accent": "이정표노랑"
+    },
+    "material": "빳빳한 천과 얇은 나무",
+    "signatureDetail": "정면의 노란 왼쪽 화살표 한 개",
+    "prompt": "산길 표지챙모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 6,
+      "y": -42,
+      "size": 84
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_043",
+    "rarity": "common",
+    "name": "강변 갈대갓",
+    "slot": "head",
+    "theme": "여행 장비",
+    "silhouette": "넓고 얇은 원판 테와 위로 선 세 갈래 갈대살",
+    "palette": {
+      "primary": "갈대연갈색",
+      "secondary": "강물회청색",
+      "accent": "매듭초록"
+    },
+    "material": "얇은 나무와 질긴 천",
+    "signatureDetail": "가운데 갈대살에 감긴 초록 실띠",
+    "prompt": "강변 갈대갓 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 21,
+      "y": -27,
+      "size": 54
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_044",
+    "rarity": "common",
+    "name": "사막 물병터번",
+    "slot": "head",
+    "theme": "여행 장비",
+    "silhouette": "폭이 넓은 감김 원통과 비스듬히 솟은 윗마루",
+    "palette": {
+      "primary": "모래베이지",
+      "secondary": "물병청색",
+      "accent": "석양적색"
+    },
+    "material": "부드러운 천과 얇은 가죽",
+    "signatureDetail": "비스듬한 마루의 파란 물방울 천표",
+    "prompt": "사막 물병터번 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 21,
+      "y": -27,
+      "size": 54
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_045",
+    "rarity": "common",
+    "name": "숲길 나침반관",
+    "slot": "head",
+    "theme": "여행 장비",
+    "silhouette": "세로로 선 팔각 고리와 한쪽으로 솟은 북쪽 지침판",
+    "palette": {
+      "primary": "고사리초록",
+      "secondary": "나무밤색",
+      "accent": "바늘주홍"
+    },
+    "material": "얇은 나무와 단순한 금속",
+    "signatureDetail": "팔각 고리 꼭대기의 붉은 북쪽 쐐기",
+    "prompt": "숲길 나침반관 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": -29,
+      "size": 58
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_046",
+    "rarity": "common",
+    "name": "설원 덧댐모",
+    "slot": "head",
+    "theme": "여행 장비",
+    "silhouette": "두툼한 직사각 크라운과 양옆의 넓은 내려판",
+    "palette": {
+      "primary": "눈밭흰색",
+      "secondary": "솔잎남색",
+      "accent": "장작주황"
+    },
+    "material": "누빈 천과 부드러운 가죽",
+    "signatureDetail": "왼쪽 내려판의 주황 장작결 박음선",
+    "prompt": "설원 덧댐모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": -29,
+      "size": 58
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_047",
+    "rarity": "common",
+    "name": "해안 조개머리띠",
+    "slot": "head",
+    "theme": "여행 장비",
+    "silhouette": "폭이 넓은 물결띠와 한쪽의 큰 부채꼴 조개판",
+    "palette": {
+      "primary": "조개아이보리",
+      "secondary": "파도하늘색",
+      "accent": "산호주홍"
+    },
+    "material": "가벼운 도자기와 질긴 천",
+    "signatureDetail": "조개판 가운데의 산호색 나선 한 줄",
+    "prompt": "해안 조개머리띠 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 15,
+      "y": -33,
+      "size": 66
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_048",
+    "rarity": "common",
+    "name": "기차표 둥근모",
+    "slot": "head",
+    "theme": "여행 장비",
+    "silhouette": "매끈한 구형 크라운과 가운데를 가르는 좁은 수평띠",
+    "palette": {
+      "primary": "객차적갈색",
+      "secondary": "승차권크림",
+      "accent": "검표파랑"
+    },
+    "material": "두꺼운 천과 단순한 금속",
+    "signatureDetail": "수평띠에 끼운 파란 검표조각",
+    "prompt": "기차표 둥근모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 17,
+      "y": -31,
+      "size": 62
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_049",
+    "rarity": "common",
+    "name": "야영 불씨망건",
+    "slot": "head",
+    "theme": "여행 장비",
+    "silhouette": "낮은 타원 격자띠와 뒤쪽으로 선 하나의 사각 불씨판",
+    "palette": {
+      "primary": "숯먹색",
+      "secondary": "장작갈색",
+      "accent": "불씨노랑"
+    },
+    "material": "질긴 천과 얇은 나무",
+    "signatureDetail": "사각 불씨판의 노란 마름모 구멍",
+    "prompt": "야영 불씨망건 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 21,
+      "y": -27,
+      "size": 54
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_050",
+    "rarity": "common",
+    "name": "지도꾼 두루마리모",
+    "slot": "head",
+    "theme": "여행 장비",
+    "silhouette": "가로 원통 크라운과 양끝에 말린 작은 원형 단면",
+    "palette": {
+      "primary": "지도황백색",
+      "secondary": "경로적색",
+      "accent": "등고선갈색"
+    },
+    "material": "빳빳한 천과 얇은 나무",
+    "signatureDetail": "원통 가운데의 붉은 점선 경로",
+    "prompt": "지도꾼 두루마리모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 13,
+      "y": -35,
+      "size": 70
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_051",
+    "rarity": "common",
+    "name": "돌길 먼지막이모",
+    "slot": "head",
+    "theme": "여행 장비",
+    "silhouette": "낮은 사다리꼴 크라운과 층진 먼지털이 차양",
+    "palette": {
+      "primary": "돌길회색",
+      "secondary": "먼지황토",
+      "accent": "풀잎연두"
+    },
+    "material": "거친 천과 얇은 가죽",
+    "signatureDetail": "두 번째 차양의 연두색 길표식",
+    "prompt": "돌길 먼지막이모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 12,
+      "y": -36,
+      "size": 72
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_052",
+    "rarity": "common",
+    "name": "노을빛 길안경",
+    "slot": "face",
+    "theme": "여행 장비",
+    "silhouette": "바깥쪽이 치켜올라간 두 개의 큰 D자 틀",
+    "palette": {
+      "primary": "노을주홍",
+      "secondary": "길먼지갈색",
+      "accent": "저녁보라"
+    },
+    "material": "단순한 금속과 얇은 가죽",
+    "signatureDetail": "오른쪽 D자 틀의 보라색 수평선",
+    "prompt": "노을빛 길안경 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": -1,
+      "y": -12,
+      "size": 98
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_053",
+    "rarity": "common",
+    "name": "안개길 삼중고글",
+    "slot": "face",
+    "theme": "여행 장비",
+    "silhouette": "굵기가 다른 세 겹 원형테가 나란히 선 윤곽",
+    "palette": {
+      "primary": "안개회백색",
+      "secondary": "가죽밤색",
+      "accent": "등불연두"
+    },
+    "material": "단순한 금속과 두꺼운 가죽",
+    "signatureDetail": "가운데 테의 연두색 반달표",
+    "prompt": "안개길 삼중고글 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 7,
+      "y": -4,
+      "size": 83
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_054",
+    "rarity": "common",
+    "name": "모래바람 마름모가리개",
+    "slot": "face",
+    "theme": "여행 장비",
+    "silhouette": "가운데 세로선이 선명한 넓은 마름모 천판",
+    "palette": {
+      "primary": "사막황토",
+      "secondary": "그늘자주",
+      "accent": "물빛청록"
+    },
+    "material": "촘촘한 천과 얇은 가죽",
+    "signatureDetail": "아래 꼭짓점의 청록색 한 땀",
+    "prompt": "모래바람 마름모가리개 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 24,
+      "y": 13,
+      "size": 48
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_055",
+    "rarity": "common",
+    "name": "여관 열쇠목걸이",
+    "slot": "neck",
+    "theme": "여행 장비",
+    "silhouette": "짧은 U자 금속띠 아래의 넓적한 열쇠판",
+    "palette": {
+      "primary": "여관황동색",
+      "secondary": "문패초록",
+      "accent": "침구크림"
+    },
+    "material": "단순한 금속과 얇은 가죽",
+    "signatureDetail": "열쇠판에 새긴 작은 달 모양 방표시",
+    "prompt": "여관 열쇠목걸이 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 23,
+      "y": 57,
+      "size": 50
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_056",
+    "rarity": "common",
+    "name": "지도 부채칼라",
+    "slot": "neck",
+    "theme": "여행 장비",
+    "silhouette": "부채처럼 주름진 넓은 반원형 접이칼라",
+    "palette": {
+      "primary": "지도크림",
+      "secondary": "강줄기파랑",
+      "accent": "산맥갈색"
+    },
+    "material": "빳빳한 천과 얇은 나무",
+    "signatureDetail": "가장 넓은 주름의 파란 강줄기 한 획",
+    "prompt": "지도 부채칼라 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 9,
+      "y": 43,
+      "size": 78
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_057",
+    "rarity": "common",
+    "name": "항로 표식케이프칼라",
+    "slot": "neck",
+    "theme": "여행 장비",
+    "silhouette": "뒤로 길어지는 사다리꼴 판과 짧은 직선 윗깃",
+    "palette": {
+      "primary": "항로남색",
+      "secondary": "파도청색",
+      "accent": "부표흰색"
+    },
+    "material": "두꺼운 천과 단순한 금속",
+    "signatureDetail": "사다리꼴 중앙의 흰 점선 항로",
+    "prompt": "항로 표식케이프칼라 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 23,
+      "y": 57,
+      "size": 50
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_058",
+    "rarity": "common",
+    "name": "하루길 납작배낭",
+    "slot": "body",
+    "theme": "여행 장비",
+    "silhouette": "세로로 긴 납작 상자형 가방과 말아 올린 윗단",
+    "palette": {
+      "primary": "여행천카키",
+      "secondary": "끈갈색",
+      "accent": "식량주황"
+    },
+    "material": "질긴 천과 두꺼운 가죽",
+    "signatureDetail": "말린 윗단을 고정한 주황 사각고리",
+    "prompt": "하루길 납작배낭 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": 48,
+      "size": 59
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_059",
+    "rarity": "common",
+    "name": "야영 담요판초",
+    "slot": "body",
+    "theme": "여행 장비",
+    "silhouette": "넓은 거꾸로 U자 판과 둥글게 깎인 아래 모서리",
+    "palette": {
+      "primary": "담요벽돌색",
+      "secondary": "밤하늘남색",
+      "accent": "별빛크림"
+    },
+    "material": "두꺼운 천과 얇은 가죽",
+    "signatureDetail": "오른쪽 아래의 크림색 네 칸 격자",
+    "prompt": "야영 담요판초 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": 48,
+      "size": 59
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_060",
+    "rarity": "common",
+    "name": "나룻배 방수조끼",
+    "slot": "body",
+    "theme": "여행 장비",
+    "silhouette": "짧은 통형 조끼판과 비스듬히 겹친 넓은 앞단",
+    "palette": {
+      "primary": "나룻배갈색",
+      "secondary": "강청색",
+      "accent": "노끈베이지"
+    },
+    "material": "촘촘한 천과 낡은 가죽",
+    "signatureDetail": "비스듬한 앞단의 작은 노 모양 박음표",
+    "prompt": "나룻배 방수조끼 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": 48,
+      "size": 59
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_061",
+    "rarity": "common",
+    "name": "수채화 팔레트베레",
+    "slot": "head",
+    "theme": "취미·공예 장비",
+    "silhouette": "납작하고 넓은 원반 크라운과 비켜난 짧은 챙",
+    "palette": {
+      "primary": "물감청색",
+      "secondary": "종이크림",
+      "accent": "붓끝분홍"
+    },
+    "material": "부드러운 천과 얇은 나무",
+    "signatureDetail": "원반 가장자리의 분홍 물감점 하나",
+    "prompt": "수채화 팔레트베레 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 14,
+      "y": -34,
+      "size": 68
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_062",
+    "rarity": "common",
+    "name": "뜨개실 주름빗모",
+    "slot": "head",
+    "theme": "취미·공예 장비",
+    "silhouette": "낮은 안장형 받침 위에 앞뒤로 선 네 장의 둥근 직사각 뜨개주름이 계단처럼 이어진 빗살 윤곽",
+    "palette": {
+      "primary": "털실자주",
+      "secondary": "뜨개크림",
+      "accent": "바늘청록"
+    },
+    "material": "두꺼운 천과 단순한 금속",
+    "signatureDetail": "가장 높은 앞 주름을 가로지른 청록색 한 코 고리",
+    "prompt": "뜨개실 주름빗모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 21,
+      "y": -27,
+      "size": 54
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_063",
+    "rarity": "common",
+    "name": "목각 부스러기모",
+    "slot": "head",
+    "theme": "취미·공예 장비",
+    "silhouette": "각진 조각 크라운과 톱니처럼 들쭉날쭉한 넓은 챙",
+    "palette": {
+      "primary": "조각나무색",
+      "secondary": "끌회색",
+      "accent": "칠감초록"
+    },
+    "material": "얇은 나무와 질긴 천",
+    "signatureDetail": "챙의 가장 긴 톱니에 칠한 초록 끝점",
+    "prompt": "목각 부스러기모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 14,
+      "y": -34,
+      "size": 68
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_064",
+    "rarity": "common",
+    "name": "종이접기 학모",
+    "slot": "head",
+    "theme": "취미·공예 장비",
+    "silhouette": "꺾인 삼각 크라운과 두 겹 지그재그 테두리",
+    "palette": {
+      "primary": "접이종이흰색",
+      "secondary": "먹물검정",
+      "accent": "꼭짓점빨강"
+    },
+    "material": "빳빳한 천과 얇은 나무",
+    "signatureDetail": "가장 높은 접힘선의 붉은 삼각점",
+    "prompt": "종이접기 학모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 13,
+      "y": -35,
+      "size": 70
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_065",
+    "rarity": "common",
+    "name": "사진가 암실베일",
+    "slot": "head",
+    "theme": "취미·공예 장비",
+    "silhouette": "윗부분은 좁고 뒤로 넓게 펼쳐지는 긴 사다리꼴 천판",
+    "palette": {
+      "primary": "암막먹색",
+      "secondary": "필름밤색",
+      "accent": "현상등주홍"
+    },
+    "material": "두꺼운 천과 얇은 가죽",
+    "signatureDetail": "아랫모서리의 주홍색 필름칸 네 개",
+    "prompt": "사진가 암실베일 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 20,
+      "y": -28,
+      "size": 56
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_066",
+    "rarity": "common",
+    "name": "원예 씨앗족두리",
+    "slot": "head",
+    "theme": "취미·공예 장비",
+    "silhouette": "낮은 육각 받침 위로 씨앗꼬투리 판이 세로로 선 윤곽",
+    "palette": {
+      "primary": "씨앗황토색",
+      "secondary": "새잎연두",
+      "accent": "꽃술크림"
+    },
+    "material": "부드러운 천과 얇은 나무",
+    "signatureDetail": "세로판 중앙의 크림색 씨앗 세 점",
+    "prompt": "원예 씨앗족두리 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 21,
+      "y": -27,
+      "size": 54
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_067",
+    "rarity": "common",
+    "name": "모형선 돛모",
+    "slot": "head",
+    "theme": "취미·공예 장비",
+    "silhouette": "높은 삼각 돛 크라운과 굽은 배판형 밑단",
+    "palette": {
+      "primary": "돛크림",
+      "secondary": "선체갈색",
+      "accent": "깃발청색"
+    },
+    "material": "빳빳한 천과 얇은 나무",
+    "signatureDetail": "삼각 꼭대기의 짧은 파란 깃표",
+    "prompt": "모형선 돛모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 21,
+      "y": -27,
+      "size": 54
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_068",
+    "rarity": "common",
+    "name": "서예 붓챙모",
+    "slot": "head",
+    "theme": "취미·공예 장비",
+    "silhouette": "길쭉한 붓자국형 타원 크라운과 앞으로 뾰족한 챙",
+    "palette": {
+      "primary": "먹빛남색",
+      "secondary": "한지베이지",
+      "accent": "낙관주홍"
+    },
+    "material": "부드러운 천과 얇은 나무",
+    "signatureDetail": "뾰족한 챙 끝의 주홍 낙관점",
+    "prompt": "서예 붓챙모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 20,
+      "y": -28,
+      "size": 56
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_069",
+    "rarity": "common",
+    "name": "자수 골무비녀",
+    "slot": "head",
+    "theme": "취미·공예 장비",
+    "silhouette": "길게 뻗은 가로 바늘대와 한쪽의 큰 반구 골무장식",
+    "palette": {
+      "primary": "바늘은회색",
+      "secondary": "자수보라",
+      "accent": "실노랑"
+    },
+    "material": "단순한 금속과 부드러운 천",
+    "signatureDetail": "골무장식 중앙의 노란 십자수 한 칸",
+    "prompt": "자수 골무비녀 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": -29,
+      "size": 58
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_070",
+    "rarity": "common",
+    "name": "도예 유약모",
+    "slot": "head",
+    "theme": "취미·공예 장비",
+    "silhouette": "납작한 항아리 돔과 좁은 목테 아래의 넓은 입술단",
+    "palette": {
+      "primary": "유약하늘색",
+      "secondary": "가마흙갈색",
+      "accent": "흐름흰색"
+    },
+    "material": "가벼운 도자기와 부드러운 천",
+    "signatureDetail": "돔 한쪽의 흰 유약 흐름선",
+    "prompt": "도예 유약모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 21,
+      "y": -27,
+      "size": 54
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_071",
+    "rarity": "common",
+    "name": "별관측 종이망원모",
+    "slot": "head",
+    "theme": "취미·공예 장비",
+    "silhouette": "비스듬히 놓인 긴 원통 크라운과 가느다란 고리 밑단",
+    "palette": {
+      "primary": "밤하늘보라",
+      "secondary": "별빛노랑",
+      "accent": "망원경회색"
+    },
+    "material": "빳빳한 천과 단순한 금속",
+    "signatureDetail": "원통 옆의 작은 노란 네꼭지별",
+    "prompt": "별관측 종이망원모 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 20,
+      "y": -28,
+      "size": 56
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_072",
+    "rarity": "common",
+    "name": "판화 보호안경",
+    "slot": "face",
+    "theme": "취미·공예 장비",
+    "silhouette": "두꺼운 오각 두 틀과 폭이 넓은 곧은 윗테",
+    "palette": {
+      "primary": "판화먹색",
+      "secondary": "롤러회색",
+      "accent": "종이황백색"
+    },
+    "material": "단순한 금속과 두꺼운 가죽",
+    "signatureDetail": "왼쪽 오각틀의 작은 잉크롤러선",
+    "prompt": "판화 보호안경 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 15,
+      "y": 4,
+      "size": 67
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_073",
+    "rarity": "common",
+    "name": "구슬공예 반달안경",
+    "slot": "face",
+    "theme": "취미·공예 장비",
+    "silhouette": "크기가 다른 두 반달틀이 비스듬히 맞물린 윤곽",
+    "palette": {
+      "primary": "구슬청록",
+      "secondary": "실버금속색",
+      "accent": "자두보라"
+    },
+    "material": "단순한 금속과 가벼운 도자기",
+    "signatureDetail": "큰 반달틀 끝의 자주색 도자기구슬 하나",
+    "prompt": "구슬공예 반달안경 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 15,
+      "y": 4,
+      "size": 67
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_074",
+    "rarity": "common",
+    "name": "모자이크 색조각면",
+    "slot": "face",
+    "theme": "취미·공예 장비",
+    "silhouette": "여러 칸으로 나뉜 넓은 활꼴 가리개판",
+    "palette": {
+      "primary": "조각파랑",
+      "secondary": "줄눈회색",
+      "accent": "타일주황"
+    },
+    "material": "가벼운 도자기와 질긴 천",
+    "signatureDetail": "활꼴 중앙의 주황 마름모 조각",
+    "prompt": "모자이크 색조각면 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 15,
+      "y": 4,
+      "size": 67
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_075",
+    "rarity": "common",
+    "name": "뜨개 견본칼라",
+    "slot": "neck",
+    "theme": "취미·공예 장비",
+    "silhouette": "둥글게 선 굵은 골지칼라와 한쪽의 네모 견본판",
+    "palette": {
+      "primary": "견본민트색",
+      "secondary": "실타래크림",
+      "accent": "코표시분홍"
+    },
+    "material": "두꺼운 천과 얇은 나무",
+    "signatureDetail": "견본판의 분홍색 두 코 화살표",
+    "prompt": "뜨개 견본칼라 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 20,
+      "y": 54,
+      "size": 56
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_076",
+    "rarity": "common",
+    "name": "목공예 줄자펜던트",
+    "slot": "neck",
+    "theme": "취미·공예 장비",
+    "silhouette": "좁은 V자 가죽띠와 세로 직사각 줄자판",
+    "palette": {
+      "primary": "줄자노랑",
+      "secondary": "가죽밤색",
+      "accent": "눈금검정"
+    },
+    "material": "얇은 가죽과 단순한 금속",
+    "signatureDetail": "줄자판 아래의 검은 다섯 번째 눈금",
+    "prompt": "목공예 줄자펜던트 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 23,
+      "y": 57,
+      "size": 50
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_077",
+    "rarity": "common",
+    "name": "압화 표본스카프",
+    "slot": "neck",
+    "theme": "취미·공예 장비",
+    "silhouette": "길쭉한 잎형 천판이 납작한 잠금쇠에서 교차한 윤곽",
+    "palette": {
+      "primary": "마른꽃자주",
+      "secondary": "표본지베이지",
+      "accent": "줄기초록"
+    },
+    "material": "부드러운 천과 단순한 금속",
+    "signatureDetail": "교차점의 작은 초록 잎맥핀",
+    "prompt": "압화 표본스카프 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 23,
+      "y": 57,
+      "size": 50
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_078",
+    "rarity": "common",
+    "name": "물감 얼룩작업복",
+    "slot": "body",
+    "theme": "취미·공예 장비",
+    "silhouette": "위가 좁고 아래가 넓은 사다리꼴 덧옷판",
+    "palette": {
+      "primary": "작업복청색",
+      "secondary": "캔버스크림",
+      "accent": "물감빨강"
+    },
+    "material": "질긴 천과 얇은 가죽",
+    "signatureDetail": "아랫단 한쪽의 둥근 붉은 물감얼룩",
+    "prompt": "물감 얼룩작업복 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": 48,
+      "size": 59
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_079",
+    "rarity": "common",
+    "name": "가죽공예 도구조끼",
+    "slot": "body",
+    "theme": "취미·공예 장비",
+    "silhouette": "작은 상자형 조끼판과 계단식으로 튀어나온 도구칸",
+    "palette": {
+      "primary": "무두질갈색",
+      "secondary": "송곳은색",
+      "accent": "감청색실"
+    },
+    "material": "두꺼운 가죽과 단순한 금속",
+    "signatureDetail": "가장 낮은 도구칸의 파란 실고리",
+    "prompt": "가죽공예 도구조끼 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": 48,
+      "size": 59
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_080",
+    "rarity": "common",
+    "name": "연날리기 마름망토",
+    "slot": "body",
+    "theme": "취미·공예 장비",
+    "silhouette": "큰 마름모 판과 아래로 길게 뻗은 하나의 뾰족 끝",
+    "palette": {
+      "primary": "연하늘색",
+      "secondary": "꼬리흰색",
+      "accent": "바람빨강"
+    },
+    "material": "가벼운 천과 얇은 나무",
+    "signatureDetail": "마름모 중앙의 붉은 바람개비 박음표",
+    "prompt": "연날리기 마름망토 한 개만, 독립 착용 아이템으로 큰 외곽선과 절제된 세부를 살려 표현",
+    "defaultAlignment": {
+      "x": 19,
+      "y": 48,
+      "size": 59
+    },
+    "qaState": "accepted"
+  },
+  {
+    "id": "common_081",
+    "rarity": "common",
+    "name": "검정 헤드폰",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "검정 헤드폰 원본의 윗윤곽과 common 001 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "검정 헤드폰 원본 주색",
+      "secondary": "검정 헤드폰 원본 보조색",
+      "accent": "검정 헤드폰 원본 강조색"
+    },
+    "material": "검정 헤드폰 원본의 재질 표현",
+    "signatureDetail": "검정 헤드폰 원본 고유 장식",
+    "prompt": "검정 헤드폰, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 6,
+      "y": -42,
+      "size": 85
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_001"
+  },
+  {
+    "id": "common_082",
+    "rarity": "common",
+    "name": "탐정 모자",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "탐정 모자 원본의 윗윤곽과 common 002 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "탐정 모자 원본 주색",
+      "secondary": "탐정 모자 원본 보조색",
+      "accent": "탐정 모자 원본 강조색"
+    },
+    "material": "탐정 모자 원본의 재질 표현",
+    "signatureDetail": "탐정 모자 원본 고유 장식",
+    "prompt": "탐정 모자, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 3,
+      "y": -45,
+      "size": 91
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_002"
+  },
+  {
+    "id": "common_083",
+    "rarity": "common",
+    "name": "요리사 모자",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "요리사 모자 원본의 윗윤곽과 common 003 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "요리사 모자 원본 주색",
+      "secondary": "요리사 모자 원본 보조색",
+      "accent": "요리사 모자 원본 강조색"
+    },
+    "material": "요리사 모자 원본의 재질 표현",
+    "signatureDetail": "요리사 모자 원본 고유 장식",
+    "prompt": "요리사 모자, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 4,
+      "y": -44,
+      "size": 88
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_003"
+  },
+  {
+    "id": "common_084",
+    "rarity": "common",
+    "name": "빨간 머리띠",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "빨간 머리띠 원본의 윗윤곽과 common 004 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "빨간 머리띠 원본 주색",
+      "secondary": "빨간 머리띠 원본 보조색",
+      "accent": "빨간 머리띠 원본 강조색"
+    },
+    "material": "빨간 머리띠 원본의 재질 표현",
+    "signatureDetail": "빨간 머리띠 원본 고유 장식",
+    "prompt": "빨간 머리띠, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -11,
+      "y": -59,
+      "size": 119
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_004"
+  },
+  {
+    "id": "common_085",
+    "rarity": "common",
+    "name": "남색 비니",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "남색 비니 원본의 윗윤곽과 common 005 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "남색 비니 원본 주색",
+      "secondary": "남색 비니 원본 보조색",
+      "accent": "남색 비니 원본 강조색"
+    },
+    "material": "남색 비니 원본의 재질 표현",
+    "signatureDetail": "남색 비니 원본 고유 장식",
+    "prompt": "남색 비니, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 3,
+      "y": -45,
+      "size": 91
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_005"
+  },
+  {
+    "id": "common_086",
+    "rarity": "common",
+    "name": "동그란 독서 안경",
+    "slot": "face",
+    "theme": "기존 도감 복원",
+    "silhouette": "동그란 독서 안경 원본의 윗윤곽과 common 006 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "동그란 독서 안경 원본 주색",
+      "secondary": "동그란 독서 안경 원본 보조색",
+      "accent": "동그란 독서 안경 원본 강조색"
+    },
+    "material": "동그란 독서 안경 원본의 재질 표현",
+    "signatureDetail": "동그란 독서 안경 원본 고유 장식",
+    "prompt": "동그란 독서 안경, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 15,
+      "y": 4,
+      "size": 66
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_006"
+  },
+  {
+    "id": "common_087",
+    "rarity": "common",
+    "name": "빨간 넥타이",
+    "slot": "neck",
+    "theme": "기존 도감 복원",
+    "silhouette": "빨간 넥타이 원본의 윗윤곽과 common 007 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "빨간 넥타이 원본 주색",
+      "secondary": "빨간 넥타이 원본 보조색",
+      "accent": "빨간 넥타이 원본 강조색"
+    },
+    "material": "빨간 넥타이 원본의 재질 표현",
+    "signatureDetail": "빨간 넥타이 원본 고유 장식",
+    "prompt": "빨간 넥타이, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 12,
+      "y": 41,
+      "size": 73
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_007"
+  },
+  {
+    "id": "common_088",
+    "rarity": "common",
+    "name": "초록 야구 모자",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "초록 야구 모자 원본의 윗윤곽과 common 008 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "초록 야구 모자 원본 주색",
+      "secondary": "초록 야구 모자 원본 보조색",
+      "accent": "초록 야구 모자 원본 강조색"
+    },
+    "material": "초록 야구 모자 원본의 재질 표현",
+    "signatureDetail": "초록 야구 모자 원본 고유 장식",
+    "prompt": "초록 야구 모자, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -7,
+      "y": -55,
+      "size": 111
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_008"
+  },
+  {
+    "id": "common_089",
+    "rarity": "common",
+    "name": "노란 우비 모자",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "노란 우비 모자 원본의 윗윤곽과 common 009 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "노란 우비 모자 원본 주색",
+      "secondary": "노란 우비 모자 원본 보조색",
+      "accent": "노란 우비 모자 원본 강조색"
+    },
+    "material": "노란 우비 모자 원본의 재질 표현",
+    "signatureDetail": "노란 우비 모자 원본 고유 장식",
+    "prompt": "노란 우비 모자, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -6,
+      "y": -54,
+      "size": 109
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_009"
+  },
+  {
+    "id": "common_090",
+    "rarity": "common",
+    "name": "줄무늬 목도리",
+    "slot": "neck",
+    "theme": "기존 도감 복원",
+    "silhouette": "줄무늬 목도리 원본의 윗윤곽과 common 010 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "줄무늬 목도리 원본 주색",
+      "secondary": "줄무늬 목도리 원본 보조색",
+      "accent": "줄무늬 목도리 원본 강조색"
+    },
+    "material": "줄무늬 목도리 원본의 재질 표현",
+    "signatureDetail": "줄무늬 목도리 원본 고유 장식",
+    "prompt": "줄무늬 목도리, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 3,
+      "y": 32,
+      "size": 90
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_010"
+  },
+  {
+    "id": "common_091",
+    "rarity": "common",
+    "name": "작은 나비넥타이",
+    "slot": "neck",
+    "theme": "기존 도감 복원",
+    "silhouette": "작은 나비넥타이 원본의 윗윤곽과 common 011 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "작은 나비넥타이 원본 주색",
+      "secondary": "작은 나비넥타이 원본 보조색",
+      "accent": "작은 나비넥타이 원본 강조색"
+    },
+    "material": "작은 나비넥타이 원본의 재질 표현",
+    "signatureDetail": "작은 나비넥타이 원본 고유 장식",
+    "prompt": "작은 나비넥타이, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -53,
+      "y": -24,
+      "size": 202
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_011"
+  },
+  {
+    "id": "common_092",
+    "rarity": "common",
+    "name": "귀마개",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "귀마개 원본의 윗윤곽과 common 012 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "귀마개 원본 주색",
+      "secondary": "귀마개 원본 보조색",
+      "accent": "귀마개 원본 강조색"
+    },
+    "material": "귀마개 원본의 재질 표현",
+    "signatureDetail": "귀마개 원본 고유 장식",
+    "prompt": "귀마개, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -6,
+      "y": -54,
+      "size": 109
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_012"
+  },
+  {
+    "id": "common_093",
+    "rarity": "common",
+    "name": "수면 안대",
+    "slot": "face",
+    "theme": "기존 도감 복원",
+    "silhouette": "수면 안대 원본의 윗윤곽과 common 013 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "수면 안대 원본 주색",
+      "secondary": "수면 안대 원본 보조색",
+      "accent": "수면 안대 원본 강조색"
+    },
+    "material": "수면 안대 원본의 재질 표현",
+    "signatureDetail": "수면 안대 원본 고유 장식",
+    "prompt": "수면 안대, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 6,
+      "y": -5,
+      "size": 84
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_013"
+  },
+  {
+    "id": "common_094",
+    "rarity": "common",
+    "name": "종이 파티 왕관",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "종이 파티 왕관 원본의 윗윤곽과 common 014 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "종이 파티 왕관 원본 주색",
+      "secondary": "종이 파티 왕관 원본 보조색",
+      "accent": "종이 파티 왕관 원본 강조색"
+    },
+    "material": "종이 파티 왕관 원본의 재질 표현",
+    "signatureDetail": "종이 파티 왕관 원본 고유 장식",
+    "prompt": "종이 파티 왕관, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -48,
+      "y": -96,
+      "size": 193
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_014"
+  },
+  {
+    "id": "common_095",
+    "rarity": "common",
+    "name": "화가 베레모",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "화가 베레모 원본의 윗윤곽과 common 015 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "화가 베레모 원본 주색",
+      "secondary": "화가 베레모 원본 보조색",
+      "accent": "화가 베레모 원본 강조색"
+    },
+    "material": "화가 베레모 원본의 재질 표현",
+    "signatureDetail": "화가 베레모 원본 고유 장식",
+    "prompt": "화가 베레모, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -21,
+      "y": -69,
+      "size": 138
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_015"
+  },
+  {
+    "id": "common_096",
+    "rarity": "common",
+    "name": "정원사 밀짚모자",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "정원사 밀짚모자 원본의 윗윤곽과 common 016 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "정원사 밀짚모자 원본 주색",
+      "secondary": "정원사 밀짚모자 원본 보조색",
+      "accent": "정원사 밀짚모자 원본 강조색"
+    },
+    "material": "정원사 밀짚모자 원본의 재질 표현",
+    "signatureDetail": "정원사 밀짚모자 원본 고유 장식",
+    "prompt": "정원사 밀짚모자, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -17,
+      "y": -65,
+      "size": 131
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_016"
+  },
+  {
+    "id": "common_097",
+    "rarity": "common",
+    "name": "멜빵",
+    "slot": "body",
+    "theme": "기존 도감 복원",
+    "silhouette": "멜빵 원본의 윗윤곽과 common 017 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "멜빵 원본 주색",
+      "secondary": "멜빵 원본 보조색",
+      "accent": "멜빵 원본 강조색"
+    },
+    "material": "멜빵 원본의 재질 표현",
+    "signatureDetail": "멜빵 원본 고유 장식",
+    "prompt": "멜빵, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -62,
+      "y": -56,
+      "size": 221
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_017"
+  },
+  {
+    "id": "common_098",
+    "rarity": "common",
+    "name": "세일러 스카프",
+    "slot": "neck",
+    "theme": "기존 도감 복원",
+    "silhouette": "세일러 스카프 원본의 윗윤곽과 common 018 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "세일러 스카프 원본 주색",
+      "secondary": "세일러 스카프 원본 보조색",
+      "accent": "세일러 스카프 원본 강조색"
+    },
+    "material": "세일러 스카프 원본의 재질 표현",
+    "signatureDetail": "세일러 스카프 원본 고유 장식",
+    "prompt": "세일러 스카프, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -9,
+      "y": 20,
+      "size": 115
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_018"
+  },
+  {
+    "id": "common_099",
+    "rarity": "common",
+    "name": "게이머 헤드셋",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "게이머 헤드셋 원본의 윗윤곽과 common 019 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "게이머 헤드셋 원본 주색",
+      "secondary": "게이머 헤드셋 원본 보조색",
+      "accent": "게이머 헤드셋 원본 강조색"
+    },
+    "material": "게이머 헤드셋 원본의 재질 표현",
+    "signatureDetail": "게이머 헤드셋 원본 고유 장식",
+    "prompt": "게이머 헤드셋, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 7,
+      "y": -41,
+      "size": 83
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_019"
+  },
+  {
+    "id": "common_100",
+    "rarity": "common",
+    "name": "학생 모자",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "학생 모자 원본의 윗윤곽과 common 020 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "학생 모자 원본 주색",
+      "secondary": "학생 모자 원본 보조색",
+      "accent": "학생 모자 원본 강조색"
+    },
+    "material": "학생 모자 원본의 재질 표현",
+    "signatureDetail": "학생 모자 원본 고유 장식",
+    "prompt": "학생 모자, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 0,
+      "y": -48,
+      "size": 96
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_020"
+  },
+  {
+    "id": "common_101",
+    "rarity": "common",
+    "name": "제빵사 모자",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "제빵사 모자 원본의 윗윤곽과 common 021 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "제빵사 모자 원본 주색",
+      "secondary": "제빵사 모자 원본 보조색",
+      "accent": "제빵사 모자 원본 강조색"
+    },
+    "material": "제빵사 모자 원본의 재질 표현",
+    "signatureDetail": "제빵사 모자 원본 고유 장식",
+    "prompt": "제빵사 모자, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 0,
+      "y": -48,
+      "size": 97
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_021"
+  },
+  {
+    "id": "common_102",
+    "rarity": "common",
+    "name": "등산 버킷햇",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "등산 버킷햇 원본의 윗윤곽과 common 022 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "등산 버킷햇 원본 주색",
+      "secondary": "등산 버킷햇 원본 보조색",
+      "accent": "등산 버킷햇 원본 강조색"
+    },
+    "material": "등산 버킷햇 원본의 재질 표현",
+    "signatureDetail": "등산 버킷햇 원본 고유 장식",
+    "prompt": "등산 버킷햇, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -2,
+      "y": -50,
+      "size": 101
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_022"
+  },
+  {
+    "id": "common_103",
+    "rarity": "common",
+    "name": "수영 고글",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "수영 고글 원본의 윗윤곽과 common 023 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "수영 고글 원본 주색",
+      "secondary": "수영 고글 원본 보조색",
+      "accent": "수영 고글 원본 강조색"
+    },
+    "material": "수영 고글 원본의 재질 표현",
+    "signatureDetail": "수영 고글 원본 고유 장식",
+    "prompt": "수영 고글, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -23,
+      "y": -71,
+      "size": 143
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_023"
+  },
+  {
+    "id": "common_104",
+    "rarity": "common",
+    "name": "운동 머리띠",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "운동 머리띠 원본의 윗윤곽과 common 024 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "운동 머리띠 원본 주색",
+      "secondary": "운동 머리띠 원본 보조색",
+      "accent": "운동 머리띠 원본 강조색"
+    },
+    "material": "운동 머리띠 원본의 재질 표현",
+    "signatureDetail": "운동 머리띠 원본 고유 장식",
+    "prompt": "운동 머리띠, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -52,
+      "y": -100,
+      "size": 201
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_024"
+  },
+  {
+    "id": "common_105",
+    "rarity": "common",
+    "name": "미니 카메라",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "미니 카메라 원본의 윗윤곽과 common 025 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "미니 카메라 원본 주색",
+      "secondary": "미니 카메라 원본 보조색",
+      "accent": "미니 카메라 원본 강조색"
+    },
+    "material": "미니 카메라 원본의 재질 표현",
+    "signatureDetail": "미니 카메라 원본 고유 장식",
+    "prompt": "미니 카메라, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -2,
+      "y": -50,
+      "size": 101
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_025"
+  },
+  {
+    "id": "common_106",
+    "rarity": "common",
+    "name": "기본 백팩",
+    "slot": "body",
+    "theme": "기존 도감 복원",
+    "silhouette": "기본 백팩 원본의 윗윤곽과 common 026 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "기본 백팩 원본 주색",
+      "secondary": "기본 백팩 원본 보조색",
+      "accent": "기본 백팩 원본 강조색"
+    },
+    "material": "기본 백팩 원본의 재질 표현",
+    "signatureDetail": "기본 백팩 원본 고유 장식",
+    "prompt": "기본 백팩, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -64,
+      "y": -58,
+      "size": 224
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_026"
+  },
+  {
+    "id": "common_107",
+    "rarity": "common",
+    "name": "산타 모자",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "산타 모자 원본의 윗윤곽과 common 027 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "산타 모자 원본 주색",
+      "secondary": "산타 모자 원본 보조색",
+      "accent": "산타 모자 원본 강조색"
+    },
+    "material": "산타 모자 원본의 재질 표현",
+    "signatureDetail": "산타 모자 원본 고유 장식",
+    "prompt": "산타 모자, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -8,
+      "y": -56,
+      "size": 113
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_027"
+  },
+  {
+    "id": "common_108",
+    "rarity": "common",
+    "name": "사원증 목걸이",
+    "slot": "neck",
+    "theme": "기존 도감 복원",
+    "silhouette": "사원증 목걸이 원본의 윗윤곽과 common 028 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "사원증 목걸이 원본 주색",
+      "secondary": "사원증 목걸이 원본 보조색",
+      "accent": "사원증 목걸이 원본 강조색"
+    },
+    "material": "사원증 목걸이 원본의 재질 표현",
+    "signatureDetail": "사원증 목걸이 원본 고유 장식",
+    "prompt": "사원증 목걸이, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 8,
+      "y": 37,
+      "size": 80
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_028"
+  },
+  {
+    "id": "common_109",
+    "rarity": "common",
+    "name": "안전모",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "안전모 원본의 윗윤곽과 common 029 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "안전모 원본 주색",
+      "secondary": "안전모 원본 보조색",
+      "accent": "안전모 원본 강조색"
+    },
+    "material": "안전모 원본의 재질 표현",
+    "signatureDetail": "안전모 원본 고유 장식",
+    "prompt": "안전모, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -16,
+      "y": -64,
+      "size": 128
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_029"
+  },
+  {
+    "id": "common_110",
+    "rarity": "common",
+    "name": "간호사 모자",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "간호사 모자 원본의 윗윤곽과 common 030 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "간호사 모자 원본 주색",
+      "secondary": "간호사 모자 원본 보조색",
+      "accent": "간호사 모자 원본 강조색"
+    },
+    "material": "간호사 모자 원본의 재질 표현",
+    "signatureDetail": "간호사 모자 원본 고유 장식",
+    "prompt": "간호사 모자, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -17,
+      "y": -65,
+      "size": 130
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_030"
+  },
+  {
+    "id": "common_111",
+    "rarity": "common",
+    "name": "정비공 반다나",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "정비공 반다나 원본의 윗윤곽과 common 032 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "정비공 반다나 원본 주색",
+      "secondary": "정비공 반다나 원본 보조색",
+      "accent": "정비공 반다나 원본 강조색"
+    },
+    "material": "정비공 반다나 원본의 재질 표현",
+    "signatureDetail": "정비공 반다나 원본 고유 장식",
+    "prompt": "정비공 반다나, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -15,
+      "y": -63,
+      "size": 126
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_032"
+  },
+  {
+    "id": "common_112",
+    "rarity": "common",
+    "name": "바리스타 앞치마",
+    "slot": "body",
+    "theme": "기존 도감 복원",
+    "silhouette": "바리스타 앞치마 원본의 윗윤곽과 common 033 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "바리스타 앞치마 원본 주색",
+      "secondary": "바리스타 앞치마 원본 보조색",
+      "accent": "바리스타 앞치마 원본 강조색"
+    },
+    "material": "바리스타 앞치마 원본의 재질 표현",
+    "signatureDetail": "바리스타 앞치마 원본 고유 장식",
+    "prompt": "바리스타 앞치마, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -50,
+      "y": -44,
+      "size": 196
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_033"
+  },
+  {
+    "id": "common_113",
+    "rarity": "common",
+    "name": "낚시꾼 모자",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "낚시꾼 모자 원본의 윗윤곽과 common 034 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "낚시꾼 모자 원본 주색",
+      "secondary": "낚시꾼 모자 원본 보조색",
+      "accent": "낚시꾼 모자 원본 강조색"
+    },
+    "material": "낚시꾼 모자 원본의 재질 표현",
+    "signatureDetail": "낚시꾼 모자 원본 고유 장식",
+    "prompt": "낚시꾼 모자, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -6,
+      "y": -54,
+      "size": 109
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_034"
+  },
+  {
+    "id": "common_114",
+    "rarity": "common",
+    "name": "학사모",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "학사모 원본의 윗윤곽과 common 035 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "학사모 원본 주색",
+      "secondary": "학사모 원본 보조색",
+      "accent": "학사모 원본 강조색"
+    },
+    "material": "학사모 원본의 재질 표현",
+    "signatureDetail": "학사모 원본 고유 장식",
+    "prompt": "학사모, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -4,
+      "y": -52,
+      "size": 104
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_035"
+  },
+  {
+    "id": "common_115",
+    "rarity": "common",
+    "name": "꽃 머리핀",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "꽃 머리핀 원본의 윗윤곽과 common 036 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "꽃 머리핀 원본 주색",
+      "secondary": "꽃 머리핀 원본 보조색",
+      "accent": "꽃 머리핀 원본 강조색"
+    },
+    "material": "꽃 머리핀 원본의 재질 표현",
+    "signatureDetail": "꽃 머리핀 원본 고유 장식",
+    "prompt": "꽃 머리핀, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -45,
+      "y": -93,
+      "size": 186
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_036"
+  },
+  {
+    "id": "common_116",
+    "rarity": "common",
+    "name": "토끼 귀",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "토끼 귀 원본의 윗윤곽과 common 037 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "토끼 귀 원본 주색",
+      "secondary": "토끼 귀 원본 보조색",
+      "accent": "토끼 귀 원본 강조색"
+    },
+    "material": "토끼 귀 원본의 재질 표현",
+    "signatureDetail": "토끼 귀 원본 고유 장식",
+    "prompt": "토끼 귀, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -5,
+      "y": -53,
+      "size": 107
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_037"
+  },
+  {
+    "id": "common_117",
+    "rarity": "common",
+    "name": "검정 선글라스",
+    "slot": "face",
+    "theme": "기존 도감 복원",
+    "silhouette": "검정 선글라스 원본의 윗윤곽과 common 038 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "검정 선글라스 원본 주색",
+      "secondary": "검정 선글라스 원본 보조색",
+      "accent": "검정 선글라스 원본 강조색"
+    },
+    "material": "검정 선글라스 원본의 재질 표현",
+    "signatureDetail": "검정 선글라스 원본 고유 장식",
+    "prompt": "검정 선글라스, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 9,
+      "y": -2,
+      "size": 78
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_038"
+  },
+  {
+    "id": "common_118",
+    "rarity": "common",
+    "name": "물방울 리본",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "물방울 리본 원본의 윗윤곽과 common 039 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "물방울 리본 원본 주색",
+      "secondary": "물방울 리본 원본 보조색",
+      "accent": "물방울 리본 원본 강조색"
+    },
+    "material": "물방울 리본 원본의 재질 표현",
+    "signatureDetail": "물방울 리본 원본 고유 장식",
+    "prompt": "물방울 리본, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -22,
+      "y": -70,
+      "size": 140
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_039"
+  },
+  {
+    "id": "common_119",
+    "rarity": "common",
+    "name": "유틸리티 벨트",
+    "slot": "body",
+    "theme": "기존 도감 복원",
+    "silhouette": "유틸리티 벨트 원본의 윗윤곽과 common 040 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "유틸리티 벨트 원본 주색",
+      "secondary": "유틸리티 벨트 원본 보조색",
+      "accent": "유틸리티 벨트 원본 강조색"
+    },
+    "material": "유틸리티 벨트 원본의 재질 표현",
+    "signatureDetail": "유틸리티 벨트 원본 고유 장식",
+    "prompt": "유틸리티 벨트, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -40,
+      "y": -34,
+      "size": 177
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_040"
+  },
+  {
+    "id": "common_120",
+    "rarity": "common",
+    "name": "주황 귀달이 모자",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "주황 귀달이 모자 원본의 윗윤곽과 common 041 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "주황 귀달이 모자 원본 주색",
+      "secondary": "주황 귀달이 모자 원본 보조색",
+      "accent": "주황 귀달이 모자 원본 강조색"
+    },
+    "material": "주황 귀달이 모자 원본의 재질 표현",
+    "signatureDetail": "주황 귀달이 모자 원본 고유 장식",
+    "prompt": "주황 귀달이 모자, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 15,
+      "y": -33,
+      "size": 67
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_041"
+  },
+  {
+    "id": "common_121",
+    "rarity": "common",
+    "name": "줄무늬 넥워머",
+    "slot": "neck",
+    "theme": "기존 도감 복원",
+    "silhouette": "줄무늬 넥워머 원본의 윗윤곽과 common 042 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "줄무늬 넥워머 원본 주색",
+      "secondary": "줄무늬 넥워머 원본 보조색",
+      "accent": "줄무늬 넥워머 원본 강조색"
+    },
+    "material": "줄무늬 넥워머 원본의 재질 표현",
+    "signatureDetail": "줄무늬 넥워머 원본 고유 장식",
+    "prompt": "줄무늬 넥워머, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 6,
+      "y": 35,
+      "size": 84
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_042"
+  },
+  {
+    "id": "common_122",
+    "rarity": "common",
+    "name": "기본 비행사 모자",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "기본 비행사 모자 원본의 윗윤곽과 common 043 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "기본 비행사 모자 원본 주색",
+      "secondary": "기본 비행사 모자 원본 보조색",
+      "accent": "기본 비행사 모자 원본 강조색"
+    },
+    "material": "기본 비행사 모자 원본의 재질 표현",
+    "signatureDetail": "기본 비행사 모자 원본 고유 장식",
+    "prompt": "기본 비행사 모자, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 8,
+      "y": -40,
+      "size": 81
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_043"
+  },
+  {
+    "id": "common_123",
+    "rarity": "common",
+    "name": "꽃무늬 안경",
+    "slot": "face",
+    "theme": "기존 도감 복원",
+    "silhouette": "꽃무늬 안경 원본의 윗윤곽과 common 044 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "꽃무늬 안경 원본 주색",
+      "secondary": "꽃무늬 안경 원본 보조색",
+      "accent": "꽃무늬 안경 원본 강조색"
+    },
+    "material": "꽃무늬 안경 원본의 재질 표현",
+    "signatureDetail": "꽃무늬 안경 원본 고유 장식",
+    "prompt": "꽃무늬 안경, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 8,
+      "y": -3,
+      "size": 80
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_044"
+  },
+  {
+    "id": "common_124",
+    "rarity": "common",
+    "name": "미니 작업 앞치마",
+    "slot": "body",
+    "theme": "기존 도감 복원",
+    "silhouette": "미니 작업 앞치마 원본의 윗윤곽과 common 045 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "미니 작업 앞치마 원본 주색",
+      "secondary": "미니 작업 앞치마 원본 보조색",
+      "accent": "미니 작업 앞치마 원본 강조색"
+    },
+    "material": "미니 작업 앞치마 원본의 재질 표현",
+    "signatureDetail": "미니 작업 앞치마 원본 고유 장식",
+    "prompt": "미니 작업 앞치마, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -48,
+      "y": -42,
+      "size": 193
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_045"
+  },
+  {
+    "id": "common_125",
+    "rarity": "common",
+    "name": "구름 모자",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "구름 모자 원본의 윗윤곽과 common 046 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "구름 모자 원본 주색",
+      "secondary": "구름 모자 원본 보조색",
+      "accent": "구름 모자 원본 강조색"
+    },
+    "material": "구름 모자 원본의 재질 표현",
+    "signatureDetail": "구름 모자 원본 고유 장식",
+    "prompt": "구름 모자, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -7,
+      "y": -55,
+      "size": 111
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_046"
+  },
+  {
+    "id": "common_126",
+    "rarity": "common",
+    "name": "나뭇잎 머리띠",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "나뭇잎 머리띠 원본의 윗윤곽과 common 047 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "나뭇잎 머리띠 원본 주색",
+      "secondary": "나뭇잎 머리띠 원본 보조색",
+      "accent": "나뭇잎 머리띠 원본 강조색"
+    },
+    "material": "나뭇잎 머리띠 원본의 재질 표현",
+    "signatureDetail": "나뭇잎 머리띠 원본 고유 장식",
+    "prompt": "나뭇잎 머리띠, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -13,
+      "y": -61,
+      "size": 122
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_047"
+  },
+  {
+    "id": "common_127",
+    "rarity": "common",
+    "name": "미니 메신저백",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "미니 메신저백 원본의 윗윤곽과 common 048 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "미니 메신저백 원본 주색",
+      "secondary": "미니 메신저백 원본 보조색",
+      "accent": "미니 메신저백 원본 강조색"
+    },
+    "material": "미니 메신저백 원본의 재질 표현",
+    "signatureDetail": "미니 메신저백 원본 고유 장식",
+    "prompt": "미니 메신저백, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -13,
+      "y": -61,
+      "size": 122
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_048"
+  },
+  {
+    "id": "common_128",
+    "rarity": "common",
+    "name": "물방울 샤워캡",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "물방울 샤워캡 원본의 윗윤곽과 common 049 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "물방울 샤워캡 원본 주색",
+      "secondary": "물방울 샤워캡 원본 보조색",
+      "accent": "물방울 샤워캡 원본 강조색"
+    },
+    "material": "물방울 샤워캡 원본의 재질 표현",
+    "signatureDetail": "물방울 샤워캡 원본 고유 장식",
+    "prompt": "물방울 샤워캡, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -3,
+      "y": -51,
+      "size": 103
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_049"
+  },
+  {
+    "id": "common_129",
+    "rarity": "common",
+    "name": "데님 버킷햇",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "데님 버킷햇 원본의 윗윤곽과 common 050 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "데님 버킷햇 원본 주색",
+      "secondary": "데님 버킷햇 원본 보조색",
+      "accent": "데님 버킷햇 원본 강조색"
+    },
+    "material": "데님 버킷햇 원본의 재질 표현",
+    "signatureDetail": "데님 버킷햇 원본 고유 장식",
+    "prompt": "데님 버킷햇, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -5,
+      "y": -53,
+      "size": 106
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_050"
+  },
+  {
+    "id": "common_130",
+    "rarity": "common",
+    "name": "줄무늬 조끼",
+    "slot": "body",
+    "theme": "기존 도감 복원",
+    "silhouette": "줄무늬 조끼 원본의 윗윤곽과 common 051 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "줄무늬 조끼 원본 주색",
+      "secondary": "줄무늬 조끼 원본 보조색",
+      "accent": "줄무늬 조끼 원본 강조색"
+    },
+    "material": "줄무늬 조끼 원본의 재질 표현",
+    "signatureDetail": "줄무늬 조끼 원본 고유 장식",
+    "prompt": "줄무늬 조끼, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -41,
+      "y": -35,
+      "size": 179
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_051"
+  },
+  {
+    "id": "common_131",
+    "rarity": "common",
+    "name": "실험실 고글",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "실험실 고글 원본의 윗윤곽과 common 052 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "실험실 고글 원본 주색",
+      "secondary": "실험실 고글 원본 보조색",
+      "accent": "실험실 고글 원본 강조색"
+    },
+    "material": "실험실 고글 원본의 재질 표현",
+    "signatureDetail": "실험실 고글 원본 고유 장식",
+    "prompt": "실험실 고글, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -29,
+      "y": -77,
+      "size": 155
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_052"
+  },
+  {
+    "id": "common_132",
+    "rarity": "common",
+    "name": "제빵사 스카프",
+    "slot": "neck",
+    "theme": "기존 도감 복원",
+    "silhouette": "제빵사 스카프 원본의 윗윤곽과 common 053 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "제빵사 스카프 원본 주색",
+      "secondary": "제빵사 스카프 원본 보조색",
+      "accent": "제빵사 스카프 원본 강조색"
+    },
+    "material": "제빵사 스카프 원본의 재질 표현",
+    "signatureDetail": "제빵사 스카프 원본 고유 장식",
+    "prompt": "제빵사 스카프, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 10,
+      "y": 39,
+      "size": 77
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_053"
+  },
+  {
+    "id": "common_133",
+    "rarity": "common",
+    "name": "캠핑 헤드램프",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "캠핑 헤드램프 원본의 윗윤곽과 common 054 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "캠핑 헤드램프 원본 주색",
+      "secondary": "캠핑 헤드램프 원본 보조색",
+      "accent": "캠핑 헤드램프 원본 강조색"
+    },
+    "material": "캠핑 헤드램프 원본의 재질 표현",
+    "signatureDetail": "캠핑 헤드램프 원본 고유 장식",
+    "prompt": "캠핑 헤드램프, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -28,
+      "y": -76,
+      "size": 153
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_054"
+  },
+  {
+    "id": "common_134",
+    "rarity": "common",
+    "name": "방울 목걸이",
+    "slot": "neck",
+    "theme": "기존 도감 복원",
+    "silhouette": "방울 목걸이 원본의 윗윤곽과 common 055 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "방울 목걸이 원본 주색",
+      "secondary": "방울 목걸이 원본 보조색",
+      "accent": "방울 목걸이 원본 강조색"
+    },
+    "material": "방울 목걸이 원본의 재질 표현",
+    "signatureDetail": "방울 목걸이 원본 고유 장식",
+    "prompt": "방울 목걸이, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 7,
+      "y": 36,
+      "size": 83
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_055"
+  },
+  {
+    "id": "common_135",
+    "rarity": "common",
+    "name": "곰 귀 머리띠",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "곰 귀 머리띠 원본의 윗윤곽과 common 056 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "곰 귀 머리띠 원본 주색",
+      "secondary": "곰 귀 머리띠 원본 보조색",
+      "accent": "곰 귀 머리띠 원본 강조색"
+    },
+    "material": "곰 귀 머리띠 원본의 재질 표현",
+    "signatureDetail": "곰 귀 머리띠 원본 고유 장식",
+    "prompt": "곰 귀 머리띠, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -7,
+      "y": -55,
+      "size": 111
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_056"
+  },
+  {
+    "id": "common_136",
+    "rarity": "common",
+    "name": "우비 케이프",
+    "slot": "body",
+    "theme": "기존 도감 복원",
+    "silhouette": "우비 케이프 원본의 윗윤곽과 common 057 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "우비 케이프 원본 주색",
+      "secondary": "우비 케이프 원본 보조색",
+      "accent": "우비 케이프 원본 강조색"
+    },
+    "material": "우비 케이프 원본의 재질 표현",
+    "signatureDetail": "우비 케이프 원본 고유 장식",
+    "prompt": "우비 케이프, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -28,
+      "y": -22,
+      "size": 152
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_057"
+  },
+  {
+    "id": "common_137",
+    "rarity": "common",
+    "name": "복고 뉴스보이캡",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "복고 뉴스보이캡 원본의 윗윤곽과 common 058 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "복고 뉴스보이캡 원본 주색",
+      "secondary": "복고 뉴스보이캡 원본 보조색",
+      "accent": "복고 뉴스보이캡 원본 강조색"
+    },
+    "material": "복고 뉴스보이캡 원본의 재질 표현",
+    "signatureDetail": "복고 뉴스보이캡 원본 고유 장식",
+    "prompt": "복고 뉴스보이캡, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -6,
+      "y": -54,
+      "size": 109
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_058"
+  },
+  {
+    "id": "common_138",
+    "rarity": "common",
+    "name": "하트 머리핀",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "하트 머리핀 원본의 윗윤곽과 common 059 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "하트 머리핀 원본 주색",
+      "secondary": "하트 머리핀 원본 보조색",
+      "accent": "하트 머리핀 원본 강조색"
+    },
+    "material": "하트 머리핀 원본의 재질 표현",
+    "signatureDetail": "하트 머리핀 원본 고유 장식",
+    "prompt": "하트 머리핀, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -39,
+      "y": -87,
+      "size": 174
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_059"
+  },
+  {
+    "id": "common_139",
+    "rarity": "common",
+    "name": "흰색 선캡",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "흰색 선캡 원본의 윗윤곽과 common 060 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "흰색 선캡 원본 주색",
+      "secondary": "흰색 선캡 원본 보조색",
+      "accent": "흰색 선캡 원본 강조색"
+    },
+    "material": "흰색 선캡 원본의 재질 표현",
+    "signatureDetail": "흰색 선캡 원본 고유 장식",
+    "prompt": "흰색 선캡, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -39,
+      "y": -87,
+      "size": 174
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_060"
+  },
+  {
+    "id": "common_140",
+    "rarity": "common",
+    "name": "열차 차장 세트",
+    "slot": "body",
+    "theme": "기존 도감 복원",
+    "silhouette": "열차 차장 세트 원본의 윗윤곽과 common 061 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "열차 차장 세트 원본 주색",
+      "secondary": "열차 차장 세트 원본 보조색",
+      "accent": "열차 차장 세트 원본 강조색"
+    },
+    "material": "열차 차장 세트 원본의 재질 표현",
+    "signatureDetail": "열차 차장 세트 원본 고유 장식",
+    "prompt": "열차 차장 세트, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -17,
+      "y": -11,
+      "size": 130
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_061"
+  },
+  {
+    "id": "common_141",
+    "rarity": "common",
+    "name": "도서관 사서 카디건",
+    "slot": "body",
+    "theme": "기존 도감 복원",
+    "silhouette": "도서관 사서 카디건 원본의 윗윤곽과 common 062 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "도서관 사서 카디건 원본 주색",
+      "secondary": "도서관 사서 카디건 원본 보조색",
+      "accent": "도서관 사서 카디건 원본 강조색"
+    },
+    "material": "도서관 사서 카디건 원본의 재질 표현",
+    "signatureDetail": "도서관 사서 카디건 원본 고유 장식",
+    "prompt": "도서관 사서 카디건, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -15,
+      "y": -9,
+      "size": 126
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_062"
+  },
+  {
+    "id": "common_142",
+    "rarity": "common",
+    "name": "배달 라이더 헬멧",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "배달 라이더 헬멧 원본의 윗윤곽과 common 063 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "배달 라이더 헬멧 원본 주색",
+      "secondary": "배달 라이더 헬멧 원본 보조색",
+      "accent": "배달 라이더 헬멧 원본 강조색"
+    },
+    "material": "배달 라이더 헬멧 원본의 재질 표현",
+    "signatureDetail": "배달 라이더 헬멧 원본 고유 장식",
+    "prompt": "배달 라이더 헬멧, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 9,
+      "y": -39,
+      "size": 78
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_063"
+  },
+  {
+    "id": "common_143",
+    "rarity": "common",
+    "name": "도예가 반다나와 앞치마",
+    "slot": "body",
+    "theme": "기존 도감 복원",
+    "silhouette": "도예가 반다나와 앞치마 원본의 윗윤곽과 common 064 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "도예가 반다나와 앞치마 원본 주색",
+      "secondary": "도예가 반다나와 앞치마 원본 보조색",
+      "accent": "도예가 반다나와 앞치마 원본 강조색"
+    },
+    "material": "도예가 반다나와 앞치마 원본의 재질 표현",
+    "signatureDetail": "도예가 반다나와 앞치마 원본 고유 장식",
+    "prompt": "도예가 반다나와 앞치마, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -11,
+      "y": -5,
+      "size": 118
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_064"
+  },
+  {
+    "id": "common_144",
+    "rarity": "common",
+    "name": "탐조가 모자와 쌍안경 가방",
+    "slot": "face",
+    "theme": "기존 도감 복원",
+    "silhouette": "탐조가 모자와 쌍안경 가방 원본의 윗윤곽과 common 065 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "탐조가 모자와 쌍안경 가방 원본 주색",
+      "secondary": "탐조가 모자와 쌍안경 가방 원본 보조색",
+      "accent": "탐조가 모자와 쌍안경 가방 원본 강조색"
+    },
+    "material": "탐조가 모자와 쌍안경 가방 원본의 재질 표현",
+    "signatureDetail": "탐조가 모자와 쌍안경 가방 원본 고유 장식",
+    "prompt": "탐조가 모자와 쌍안경 가방, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 22,
+      "y": 11,
+      "size": 52
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_065"
+  },
+  {
+    "id": "common_145",
+    "rarity": "common",
+    "name": "복고 식당 종이모자",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "복고 식당 종이모자 원본의 윗윤곽과 common 066 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "복고 식당 종이모자 원본 주색",
+      "secondary": "복고 식당 종이모자 원본 보조색",
+      "accent": "복고 식당 종이모자 원본 강조색"
+    },
+    "material": "복고 식당 종이모자 원본의 재질 표현",
+    "signatureDetail": "복고 식당 종이모자 원본 고유 장식",
+    "prompt": "복고 식당 종이모자, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": -5,
+      "y": -53,
+      "size": 106
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_066"
+  },
+  {
+    "id": "common_146",
+    "rarity": "common",
+    "name": "양봉가 모자",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "양봉가 모자 원본의 윗윤곽과 common 067 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "양봉가 모자 원본 주색",
+      "secondary": "양봉가 모자 원본 보조색",
+      "accent": "양봉가 모자 원본 강조색"
+    },
+    "material": "양봉가 모자 원본의 재질 표현",
+    "signatureDetail": "양봉가 모자 원본 고유 장식",
+    "prompt": "양봉가 모자, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 12,
+      "y": -36,
+      "size": 72
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_067"
+  },
+  {
+    "id": "common_147",
+    "rarity": "common",
+    "name": "오케스트라 지휘자 칼라",
+    "slot": "neck",
+    "theme": "기존 도감 복원",
+    "silhouette": "오케스트라 지휘자 칼라 원본의 윗윤곽과 common 069 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "오케스트라 지휘자 칼라 원본 주색",
+      "secondary": "오케스트라 지휘자 칼라 원본 보조색",
+      "accent": "오케스트라 지휘자 칼라 원본 강조색"
+    },
+    "material": "오케스트라 지휘자 칼라 원본의 재질 표현",
+    "signatureDetail": "오케스트라 지휘자 칼라 원본 고유 장식",
+    "prompt": "오케스트라 지휘자 칼라, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 20,
+      "y": 49,
+      "size": 56
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_069"
+  },
+  {
+    "id": "common_148",
+    "rarity": "common",
+    "name": "스키 고글과 니트밴드",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "스키 고글과 니트밴드 원본의 윗윤곽과 common 070 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "스키 고글과 니트밴드 원본 주색",
+      "secondary": "스키 고글과 니트밴드 원본 보조색",
+      "accent": "스키 고글과 니트밴드 원본 강조색"
+    },
+    "material": "스키 고글과 니트밴드 원본의 재질 표현",
+    "signatureDetail": "스키 고글과 니트밴드 원본 고유 장식",
+    "prompt": "스키 고글과 니트밴드, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 5,
+      "y": -43,
+      "size": 86
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_070"
+  },
+  {
+    "id": "common_149",
+    "rarity": "common",
+    "name": "구운 마시멜로 모자",
+    "slot": "head",
+    "theme": "기존 도감 복원",
+    "silhouette": "구운 마시멜로 모자 원본의 윗윤곽과 common 072 고유 밑단이 이어진 외곽",
+    "palette": {
+      "primary": "구운 마시멜로 모자 원본 주색",
+      "secondary": "구운 마시멜로 모자 원본 보조색",
+      "accent": "구운 마시멜로 모자 원본 강조색"
+    },
+    "material": "구운 마시멜로 모자 원본의 재질 표현",
+    "signatureDetail": "구운 마시멜로 모자 원본 고유 장식",
+    "prompt": "구운 마시멜로 모자, 기존 도감 원본 에셋의 구성과 색상을 그대로 유지",
+    "defaultAlignment": {
+      "x": 10,
+      "y": -38,
+      "size": 76
+    },
+    "qaState": "accepted",
+    "restoredFrom": "common_072"
+  }
 ]

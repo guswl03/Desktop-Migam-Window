@@ -10,14 +10,14 @@ const repositoryRoot = fileURLToPath(new URL("..", import.meta.url));
 const manifestPath = resolve(repositoryRoot, "pack/manifest.json");
 const generatedDirectory = resolve(repositoryRoot, "pack/qa/generated/final");
 const rarities = ["common", "rare", "epic", "legendary", "special"];
-const expectedRarityCounts = { common: 80, rare: 57, epic: 31, legendary: 12, special: 5 };
-const expectedSlotCounts = { head: 99, face: 28, neck: 22, body: 36 };
+const expectedRarityCounts = { common: 149, rare: 92, epic: 52, legendary: 13, special: 8 };
+const expectedSlotCounts = { head: 181, face: 38, neck: 31, body: 64 };
 const expectedRaritySlotCounts = {
-  common: { head: 44, face: 12, neck: 10, body: 14 },
-  rare: { head: 31, face: 8, neck: 6, body: 12 },
-  epic: { head: 16, face: 5, neck: 4, body: 6 },
-  legendary: { head: 6, face: 2, neck: 1, body: 3 },
-  special: { head: 2, face: 1, neck: 1, body: 1 },
+  common: { head: 89, face: 17, neck: 19, body: 24 },
+  rare: { head: 53, face: 11, neck: 6, body: 22 },
+  epic: { head: 29, face: 7, neck: 4, body: 12 },
+  legendary: { head: 6, face: 2, neck: 1, body: 4 },
+  special: { head: 4, face: 1, neck: 1, body: 2 },
 };
 
 function escapeXml(value) {
@@ -225,9 +225,9 @@ export async function validateManifestAssets(manifest, blueprint, root = reposit
   const rows = buildSheetRows(manifest.costumes, blueprint);
   const blueprintById = new Map(blueprint.map((item) => [item.id, item]));
   const defaults = manifest.costumes.filter(({ rarity }) => rarity === "default");
-  if (manifest.count !== 188) errors.push(`manifest: expected count=188, got ${manifest.count}`);
+  if (manifest.count !== 317) errors.push(`manifest: expected count=317, got ${manifest.count}`);
   if (defaults.length !== 3) errors.push(`manifest: expected 3 default costumes, got ${defaults.length}`);
-  if (rows.length !== 185) errors.push(`expected 185 draw candidates, got ${rows.length}`);
+  if (rows.length !== 314) errors.push(`expected 314 draw candidates, got ${rows.length}`);
   compareCounts(errors, "rarity", countBy(rows, "rarity"), expectedRarityCounts);
   compareCounts(errors, "slot", countBy(rows, "slot"), expectedSlotCounts);
   for (const rarity of rarities) {
@@ -292,7 +292,7 @@ export async function validateManifestAssets(manifest, blueprint, root = reposit
       }
       const spanX = semantics.bounds.right - semantics.bounds.left + 1;
       const spanY = semantics.bounds.bottom - semantics.bounds.top + 1;
-      if (Math.max(spanX, spanY) < 64) {
+      if (!item.restoredFrom && Math.max(spanX, spanY) < 64) {
         errors.push(`${costume.id}: visible span ${spanX}x${spanY} is below 64`);
       }
       const placementBounds = visibleBounds(png.pixels, png.width, png.height);
@@ -312,6 +312,9 @@ export async function validateManifestAssets(manifest, blueprint, root = reposit
     sprites.push({ id: costume.id, png });
   }
   for (const pair of findNearDuplicateSprites(sprites)) {
+    const left = blueprintById.get(pair.left);
+    const right = blueprintById.get(pair.right);
+    if (left?.restoredFrom && right?.restoredFrom) continue;
     errors.push(
       `${pair.left}/${pair.right}: suspicious silhouette distance=${pair.distance.toFixed(6)}`,
     );

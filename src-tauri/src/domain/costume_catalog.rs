@@ -111,18 +111,18 @@ mod tests {
     }
 
     #[test]
-    fn rarity_pools_cover_all_185_blueprint_ids() {
+    fn rarity_pools_cover_all_314_blueprint_ids() {
         let expected = [
-            (GamchaRarity::Common, 80),
-            (GamchaRarity::Rare, 57),
-            (GamchaRarity::Epic, 31),
-            (GamchaRarity::Legendary, 12),
-            (GamchaRarity::Special, 5),
+            (GamchaRarity::Common, 149),
+            (GamchaRarity::Rare, 92),
+            (GamchaRarity::Epic, 52),
+            (GamchaRarity::Legendary, 13),
+            (GamchaRarity::Special, 8),
         ];
 
         for (rarity, count) in expected {
             assert_eq!(costume_ids_for(rarity).len(), count);
         }
-        assert_eq!(drawable_manifest_count(), 185);
+        assert_eq!(drawable_manifest_count(), 314);
     }
 }

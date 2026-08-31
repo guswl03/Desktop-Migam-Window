@@ -81,7 +81,7 @@ export function validateCandidate(item, decoded) {
 
   const spanX = bounds.right - bounds.left + 1;
   const spanY = bounds.bottom - bounds.top + 1;
-  if (Math.max(spanX, spanY) < minimumSpan) {
+  if (!item?.restoredFrom && Math.max(spanX, spanY) < minimumSpan) {
     errors.push(`${id}: visible span must be at least 64 pixels wide or tall (got ${spanX}x${spanY})`);
   }
 

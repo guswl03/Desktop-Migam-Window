@@ -46,11 +46,11 @@ const validItem = {
 };
 
 const slotsByRarity = {
-  common: { head: 44, face: 12, neck: 10, body: 14 },
-  rare: { head: 31, face: 8, neck: 6, body: 12 },
-  epic: { head: 16, face: 5, neck: 4, body: 6 },
-  legendary: { head: 6, face: 2, neck: 1, body: 3 },
-  special: { head: 2, face: 1, neck: 1, body: 1 },
+  common: { head: 89, face: 17, neck: 19, body: 24 },
+  rare: { head: 53, face: 11, neck: 6, body: 22 },
+  epic: { head: 29, face: 7, neck: 4, body: 12 },
+  legendary: { head: 6, face: 2, neck: 1, body: 4 },
+  special: { head: 4, face: 1, neck: 1, body: 2 },
 };
 
 function completeBlueprint() {
@@ -61,11 +61,11 @@ function completeBlueprint() {
   const nextSlot = Object.fromEntries(Object.keys(slots).map((rarity) => [rarity, 0]));
   const fixtureCenterShapes = [
     "둥근 삼각", "비대칭 사다리꼴", "가로 타원", "뾰족 오각",
-    "넓은 육각", "기운 반원", "세로 마름모",
+    "넓은 육각", "기운 반원", "세로 마름모", "납작 칠각", "굽은 십각",
   ];
   const fixtureEdgeShapes = [
     "두 갈래 굽은", "세 단 계단", "한쪽 둥근홈", "쌍봉우리",
-    "굵은 갈고리", "깊은 V홈", "비대칭 물결",
+    "굵은 갈고리", "깊은 V홈", "비대칭 물결", "엇갈린 톱니",
   ];
   let rankedShapeIndex = 0;
 
@@ -96,14 +96,14 @@ function completeBlueprint() {
   });
 }
 
-test("declares exactly the approved 185 rarity IDs", () => {
+test("declares exactly the approved 314 rarity IDs", () => {
   const ids = expectedCatalogIds();
-  assert.equal(ids.size, 185);
-  assert.equal([...ids.values()].filter((value) => value === "common").length, 80);
-  assert.equal([...ids.values()].filter((value) => value === "rare").length, 57);
-  assert.equal([...ids.values()].filter((value) => value === "epic").length, 31);
-  assert.equal([...ids.values()].filter((value) => value === "legendary").length, 12);
-  assert.equal([...ids.values()].filter((value) => value === "special").length, 5);
+  assert.equal(ids.size, 314);
+  assert.equal([...ids.values()].filter((value) => value === "common").length, 149);
+  assert.equal([...ids.values()].filter((value) => value === "rare").length, 92);
+  assert.equal([...ids.values()].filter((value) => value === "epic").length, 52);
+  assert.equal([...ids.values()].filter((value) => value === "legendary").length, 13);
+  assert.equal([...ids.values()].filter((value) => value === "special").length, 8);
 });
 
 test("rejects duplicate concepts and non-independent slots", () => {
@@ -118,22 +118,22 @@ test("accepts a complete catalog with the approved rarity and slot totals", () =
   assert.deepEqual(validateBlueprint(completeBlueprint()), []);
 });
 
-test("an incomplete common subset still requires all 80 approved Common IDs", () => {
+test("an incomplete common subset still requires all 149 approved Common IDs", () => {
   const errors = validateBlueprint([validItem], { rarity: "common" });
-  assert.ok(errors.includes("catalog: expected 80 items, got 1"));
-  assert.ok(errors.includes("missing catalog ID common_080"));
+  assert.ok(errors.includes("catalog: expected 149 items, got 1"));
+  assert.ok(errors.includes("missing catalog ID common_149"));
   assert.ok(!errors.includes("missing catalog ID rare_001"));
 });
 
 test("reports missing and duplicate catalog IDs", () => {
   const items = completeBlueprint();
-  const missing = items.filter(({ id }) => id !== "common_080");
+  const missing = items.filter(({ id }) => id !== "common_149");
   const duplicate = [...missing, { ...items[0] }];
 
-  assert.ok(validateBlueprint(missing).some((error) => error.includes("missing catalog ID common_080")));
+  assert.ok(validateBlueprint(missing).some((error) => error.includes("missing catalog ID common_149")));
   const duplicateErrors = validateBlueprint(duplicate);
   assert.ok(duplicateErrors.some((error) => error.includes("common_001: duplicate ID")));
-  assert.ok(duplicateErrors.some((error) => error.includes("missing catalog ID common_080")));
+  assert.ok(duplicateErrors.some((error) => error.includes("missing catalog ID common_149")));
 });
 
 test("reports item rarity and per-rarity slot count violations", () => {
@@ -145,8 +145,8 @@ test("reports item rarity and per-rarity slot count violations", () => {
 
   const errors = validateBlueprint(items);
   assert.ok(errors.some((error) => error.includes("rare_001: wrong rarity")));
-  assert.ok(errors.some((error) => error.includes("common: expected slots head=44 face=12 neck=10 body=14")));
-  assert.ok(errors.some((error) => error.includes("rare: expected slots head=31 face=8 neck=6 body=12")));
+  assert.ok(errors.some((error) => error.includes("common: expected slots head=89 face=17 neck=19 body=24")));
+  assert.ok(errors.some((error) => error.includes("rare: expected slots head=53 face=11 neck=6 body=22")));
 });
 
 test("reports duplicate signature details with the duplicate item ID", () => {
@@ -209,7 +209,7 @@ test("aggregate loading treats absent canonical rarity files as empty planned ra
     assert.deepEqual(items, [validItem]);
     const errors = validateBlueprint(items);
     assert.ok(errors.includes("missing catalog ID rare_001"));
-    assert.ok(errors.includes("missing catalog ID special_005"));
+    assert.ok(errors.includes("missing catalog ID special_008"));
   } finally {
     await rm(root, { recursive: true, force: true });
   }
@@ -265,7 +265,7 @@ test("default validation stays full-catalog when non-Common rarity files are emp
   try {
     const items = await loadBlueprint(root);
     const errors = validateBlueprint(items);
-    assert.ok(errors.includes("catalog: expected 185 items, got 80"));
+    assert.ok(errors.includes("catalog: expected 314 items, got 149"));
     assert.ok(errors.includes("missing catalog ID rare_001"));
   } finally {
     await rm(root, { recursive: true, force: true });
@@ -279,9 +279,10 @@ test("common blueprint covers its approved themes and slots", async () => {
     "직업 장비": 20,
     "여행 장비": 20,
     "취미·공예 장비": 20,
+    "기존 도감 복원": 69,
   });
-  assert.deepEqual(countBy(common, "slot"), { head: 44, face: 12, neck: 10, body: 14 });
-  assert.deepEqual(common.map(({ id }) => id), expectedIds("common", 80));
+  assert.deepEqual(countBy(common, "slot"), { head: 89, face: 17, neck: 19, body: 24 });
+  assert.deepEqual(common.map(({ id }) => id), expectedIds("common", 149));
   assert.deepEqual(validateBlueprint(common, { rarity: "common" }), []);
 });
 
@@ -289,7 +290,7 @@ test("common blueprint later headwear types do not reuse first-half form labels"
   const common = JSON.parse(await readFile(
     new URL("../pack/catalog-blueprint/common.json", import.meta.url),
   ));
-  const laterHeadwear = common.slice(40).filter(({ slot }) => slot === "head");
+  const laterHeadwear = common.slice(40, 80).filter(({ slot }) => slot === "head");
   const reused = laterHeadwear
     .filter(({ name }) => ["보닛", "두건", "후드", "캡"].some((form) => name.includes(form)))
     .map(({ id, name }) => `${id} ${name}`);
@@ -304,7 +305,7 @@ test("common blueprint CLI validates only the Common document", async () => {
   );
   assert.equal(
     stdout.trim(),
-    "common=80 missing=0 duplicate=0 slot=head:44,face:12,neck:10,body:14",
+    "common=149 missing=0 duplicate=0 slot=head:89,face:17,neck:19,body:24",
   );
 });
 
@@ -315,9 +316,10 @@ test("rare blueprint covers its approved themes and slots", async () => {
     "생물 영감 장비": 14,
     "소형 기계 장비": 14,
     "가상 지역 장비": 14,
+    "기존 도감 복원": 35,
   });
-  assert.deepEqual(countBy(rare, "slot"), { head: 31, face: 8, neck: 6, body: 12 });
-  assert.deepEqual(rare.map(({ id }) => id), expectedIds("rare", 57));
+  assert.deepEqual(countBy(rare, "slot"), { head: 53, face: 11, neck: 6, body: 22 });
+  assert.deepEqual(rare.map(({ id }) => id), expectedIds("rare", 92));
   assert.deepEqual(validateBlueprint(rare, { rarity: "rare" }), []);
 });
 
@@ -328,9 +330,10 @@ test("epic blueprint covers its approved themes and slots", async () => {
     "원소 장비": 8,
     "신비 조직 장비": 8,
     "꿈·차원 장비": 7,
+    "기존 도감 복원": 21,
   });
-  assert.deepEqual(countBy(epic, "slot"), { head: 16, face: 5, neck: 4, body: 6 });
-  assert.deepEqual(epic.map(({ id }) => id), expectedIds("epic", 31));
+  assert.deepEqual(countBy(epic, "slot"), { head: 29, face: 7, neck: 4, body: 12 });
+  assert.deepEqual(epic.map(({ id }) => id), expectedIds("epic", 52));
   assert.deepEqual(validateBlueprint(epic, { rarity: "epic" }), []);
 });
 
@@ -358,11 +361,26 @@ test("epic organization emblems keep distinct topologies and unambiguous fold co
   });
 });
 
-test("complete blueprint contains 185 unique original items", async () => {
+test("catalog includes exactly 129 separately restored original items", async () => {
   const items = await loadBlueprint();
-  assert.equal(items.length, 185);
-  assert.equal(new Set(items.map(({ id }) => id)).size, 185);
-  assert.equal(new Set(items.map(({ name }) => name)).size, 185);
+  const restored = items.filter(({ restoredFrom }) => restoredFrom);
+  assert.equal(restored.length, 129);
+  assert.equal(new Set(restored.map(({ restoredFrom }) => restoredFrom)).size, 129);
+  assert.deepEqual(countBy(restored, "rarity"), { common: 69, rare: 35, epic: 21, legendary: 1, special: 3 });
+  assert.deepEqual(restored.map(({ id }) => id), [
+    ...expectedIds("common", 149).slice(80),
+    ...expectedIds("rare", 92).slice(57),
+    ...expectedIds("epic", 52).slice(31),
+    ...expectedIds("legendary", 13).slice(12),
+    ...expectedIds("special", 8).slice(5),
+  ]);
+});
+
+test("complete blueprint contains 314 unique items", async () => {
+  const items = await loadBlueprint();
+  assert.equal(items.length, 314);
+  assert.equal(new Set(items.map(({ id }) => id)).size, 314);
+  assert.equal(new Set(items.map(({ name }) => name)).size, 314);
   assert.deepEqual(validateBlueprint(items), []);
 });
 
@@ -370,24 +388,27 @@ test("legendary and special quotas are exact", async () => {
   const legendary = await loadRarityBlueprint("legendary");
   const special = await loadRarityBlueprint("special");
 
-  assert.deepEqual(legendary.map(({ id }) => id), expectedIds("legendary", 12));
+  assert.deepEqual(legendary.map(({ id }) => id), expectedIds("legendary", 13));
   assert.deepEqual(countBy(legendary, "theme"), {
     "천체 장비": 3,
     "고대 군주 장비": 3,
     "세계수·거대 생물 장비": 3,
     "우주 현상 장비": 3,
+    "기존 도감 복원": 1,
   });
-  assert.deepEqual(countBy(legendary, "slot"), { head: 6, face: 2, neck: 1, body: 3 });
+  assert.deepEqual(countBy(legendary, "slot"), { head: 6, face: 2, neck: 1, body: 4 });
   assert.deepEqual(validateBlueprint(legendary, { rarity: "legendary" }), []);
 
-  assert.deepEqual(special.map(({ id }) => id), expectedIds("special", 5));
-  assert.deepEqual(special.map(({ theme, slot }) => ({ theme, slot })), [
+  assert.deepEqual(special.map(({ id }) => id), expectedIds("special", 8));
+  assert.deepEqual(special.slice(0, 5).map(({ theme, slot }) => ({ theme, slot })), [
     { theme: "사진 배달", slot: "body" },
     { theme: "집중 타이머", slot: "head" },
     { theme: "창 오르기", slot: "neck" },
     { theme: "GAMCHA", slot: "face" },
     { theme: "미감이 정체성", slot: "head" },
   ]);
+  assert.equal(countBy(special, "theme")["기존 도감 복원"], 3);
+  assert.deepEqual(countBy(special, "slot"), { head: 4, face: 1, neck: 1, body: 2 });
   assert.deepEqual(validateBlueprint(special, { rarity: "special" }), []);
 });
 
@@ -561,11 +582,11 @@ test("complete blueprint CLI reports the concept-lock summary", async () => {
   );
   assert.equal(
     stdout.trim(),
-    "items=185 missing=0 duplicateName=0 duplicateSilhouette=0 duplicatePalette=0 duplicateDetail=0",
+    "items=314 missing=0 duplicateName=0 duplicateSilhouette=0 duplicatePalette=0 duplicateDetail=0",
   );
 });
 
-test("applies all 185 blueprint rows while preserving only the three default costumes", async () => {
+test("applies all 314 blueprint rows while preserving only the three default costumes", async () => {
   const blueprint = await loadBlueprint();
   const defaultCostumes = [
     { id: "default_ghost", name: "classic ghost", rarity: "default", collection: "singles", file: "default/default_ghost.png", source: "singles/classic-sheet-ghost.png", sourceSlot: 0 },
@@ -593,8 +614,8 @@ test("applies all 185 blueprint rows while preserving only the three default cos
   const result = applyBlueprint(manifest, blueprint);
   const drawables = result.costumes.filter(({ rarity }) => rarity !== "default");
 
-  assert.equal(result.count, 188);
-  assert.equal(drawables.length, 185);
+  assert.equal(result.count, 317);
+  assert.equal(drawables.length, 314);
   assert.deepEqual(result.costumes.slice(-3), defaultCostumes);
   assert.deepEqual(result.canvas, { width: 256, height: 256 });
   assert.deepEqual(drawables[0], {

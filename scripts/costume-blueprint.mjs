@@ -2,15 +2,15 @@ import { lstat, readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
-const rarityCounts = { common: 80, rare: 57, epic: 31, legendary: 12, special: 5 };
+const rarityCounts = { common: 149, rare: 92, epic: 52, legendary: 13, special: 8 };
 const slotCountsByRarity = {
-  common: { head: 44, face: 12, neck: 10, body: 14 },
-  rare: { head: 31, face: 8, neck: 6, body: 12 },
-  epic: { head: 16, face: 5, neck: 4, body: 6 },
-  legendary: { head: 6, face: 2, neck: 1, body: 3 },
-  special: { head: 2, face: 1, neck: 1, body: 1 },
+  common: { head: 89, face: 17, neck: 19, body: 24 },
+  rare: { head: 53, face: 11, neck: 6, body: 22 },
+  epic: { head: 29, face: 7, neck: 4, body: 12 },
+  legendary: { head: 6, face: 2, neck: 1, body: 4 },
+  special: { head: 4, face: 1, neck: 1, body: 2 },
 };
-const overallSlotCounts = { head: 99, face: 28, neck: 22, body: 36 };
+const overallSlotCounts = { head: 181, face: 38, neck: 31, body: 64 };
 const blueprintFiles = ["common.json", "rare.json", "epic.json", "legendary.json", "special.json"];
 const allowedRarities = new Set(Object.keys(rarityCounts));
 const allowedSlots = new Set(Object.keys(overallSlotCounts));
