@@ -20,7 +20,7 @@
       "defaultAlignment": {
         "x": 11,
         "y": -37,
-        "size": 75
+        "size": 74
       }
     },
     {
@@ -58,8 +58,8 @@
       "slot": "head",
       "defaultAlignment": {
         "x": 9,
-        "y": -39,
-        "size": 78
+        "y": -38,
+        "size": 77
       }
     },
     {
@@ -72,7 +72,7 @@
       "defaultAlignment": {
         "x": 15,
         "y": -33,
-        "size": 67
+        "size": 66
       }
     },
     {
@@ -98,7 +98,7 @@
       "defaultAlignment": {
         "x": 20,
         "y": -28,
-        "size": 57
+        "size": 56
       }
     },
     {
@@ -111,7 +111,7 @@
       "defaultAlignment": {
         "x": 19,
         "y": -29,
-        "size": 59
+        "size": 58
       }
     },
     {
@@ -136,7 +136,7 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -3,
-        "y": -49,
+        "y": -50,
         "size": 102
       }
     },
@@ -202,7 +202,7 @@
       "defaultAlignment": {
         "x": 14,
         "y": 48,
-        "size": 69
+        "size": 68
       }
     },
     {
@@ -293,7 +293,7 @@
       "defaultAlignment": {
         "x": 9,
         "y": -39,
-        "size": 79
+        "size": 78
       }
     },
     {
@@ -332,7 +332,7 @@
       "defaultAlignment": {
         "x": 16,
         "y": -32,
-        "size": 65
+        "size": 64
       }
     },
     {
@@ -539,8 +539,8 @@
       "slot": "head",
       "defaultAlignment": {
         "x": 8,
-        "y": -40,
-        "size": 80
+        "y": -39,
+        "size": 79
       }
     },
     {
@@ -605,7 +605,7 @@
       "defaultAlignment": {
         "x": 19,
         "y": -29,
-        "size": 59
+        "size": 58
       }
     },
     {
@@ -631,7 +631,7 @@
       "defaultAlignment": {
         "x": 17,
         "y": -31,
-        "size": 63
+        "size": 62
       }
     },
     {
@@ -657,7 +657,7 @@
       "defaultAlignment": {
         "x": 13,
         "y": -35,
-        "size": 71
+        "size": 70
       }
     },
     {
@@ -800,7 +800,7 @@
       "defaultAlignment": {
         "x": 14,
         "y": -34,
-        "size": 69
+        "size": 68
       }
     },
     {
@@ -826,7 +826,7 @@
       "defaultAlignment": {
         "x": 14,
         "y": -34,
-        "size": 69
+        "size": 68
       }
     },
     {
@@ -839,7 +839,7 @@
       "defaultAlignment": {
         "x": 13,
         "y": -35,
-        "size": 71
+        "size": 70
       }
     },
     {
@@ -852,7 +852,7 @@
       "defaultAlignment": {
         "x": 20,
         "y": -28,
-        "size": 57
+        "size": 56
       }
     },
     {
@@ -891,7 +891,7 @@
       "defaultAlignment": {
         "x": 20,
         "y": -28,
-        "size": 57
+        "size": 56
       }
     },
     {
@@ -904,7 +904,7 @@
       "defaultAlignment": {
         "x": 19,
         "y": -29,
-        "size": 59
+        "size": 58
       }
     },
     {
@@ -1086,7 +1086,7 @@
       "defaultAlignment": {
         "x": 11,
         "y": -37,
-        "size": 75
+        "size": 74
       }
     },
     {
@@ -1112,7 +1112,7 @@
       "defaultAlignment": {
         "x": 18,
         "y": -30,
-        "size": 61
+        "size": 60
       }
     },
     {
@@ -1189,8 +1189,8 @@
       "slot": "neck",
       "defaultAlignment": {
         "x": 19,
-        "y": 52,
-        "size": 59
+        "y": 53,
+        "size": 58
       }
     },
     {
@@ -1268,7 +1268,7 @@
       "defaultAlignment": {
         "x": 11,
         "y": -37,
-        "size": 75
+        "size": 74
       }
     },
     {
@@ -1280,7 +1280,7 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -3,
-        "y": -49,
+        "y": -50,
         "size": 102
       }
     },
@@ -1294,7 +1294,7 @@
       "defaultAlignment": {
         "x": 14,
         "y": -34,
-        "size": 69
+        "size": 68
       }
     },
     {
@@ -1449,7 +1449,7 @@
       "slot": "head",
       "defaultAlignment": {
         "x": -3,
-        "y": -50,
+        "y": -51,
         "size": 102
       }
     },
@@ -1463,7 +1463,7 @@
       "defaultAlignment": {
         "x": 20,
         "y": -28,
-        "size": 57
+        "size": 56
       }
     },
     {
@@ -1475,8 +1475,8 @@
       "slot": "head",
       "defaultAlignment": {
         "x": 19,
-        "y": -29,
-        "size": 58
+        "y": -28,
+        "size": 57
       }
     },
     {
@@ -1553,8 +1553,8 @@
       "slot": "neck",
       "defaultAlignment": {
         "x": 20,
-        "y": 53,
-        "size": 57
+        "y": 54,
+        "size": 56
       }
     },
     {
@@ -1670,8 +1670,8 @@
       "slot": "head",
       "defaultAlignment": {
         "x": 9,
-        "y": -39,
-        "size": 78
+        "y": -38,
+        "size": 77
       }
     },
     {
@@ -1710,7 +1710,7 @@
       "defaultAlignment": {
         "x": 12,
         "y": -36,
-        "size": 73
+        "size": 72
       }
     },
     {
@@ -1748,8 +1748,8 @@
       "slot": "neck",
       "defaultAlignment": {
         "x": 18,
-        "y": 51,
-        "size": 61
+        "y": 52,
+        "size": 60
       }
     },
     {
@@ -1931,7 +1931,7 @@
       "defaultAlignment": {
         "x": 14,
         "y": -34,
-        "size": 69
+        "size": 68
       }
     },
     {
@@ -1944,7 +1944,7 @@
       "defaultAlignment": {
         "x": 16,
         "y": -32,
-        "size": 65
+        "size": 64
       }
     },
     {
@@ -2022,7 +2022,7 @@
       "defaultAlignment": {
         "x": 5,
         "y": -43,
-        "size": 87
+        "size": 86
       }
     },
     {
@@ -2035,7 +2035,7 @@
       "defaultAlignment": {
         "x": 2,
         "y": -46,
-        "size": 93
+        "size": 92
       }
     },
     {
@@ -2048,7 +2048,7 @@
       "defaultAlignment": {
         "x": 6,
         "y": -42,
-        "size": 85
+        "size": 84
       }
     },
     {
@@ -2099,7 +2099,7 @@
       "slot": "body",
       "defaultAlignment": {
         "x": 16,
-        "y": 46,
+        "y": 45,
         "size": 65
       }
     },
@@ -2126,7 +2126,7 @@
       "defaultAlignment": {
         "x": 16,
         "y": -32,
-        "size": 65
+        "size": 64
       }
     },
     {
@@ -2177,8 +2177,8 @@
       "slot": "neck",
       "defaultAlignment": {
         "x": 7,
-        "y": 41,
-        "size": 82
+        "y": 42,
+        "size": 80
       }
     },
     {
@@ -2204,7 +2204,7 @@
       "defaultAlignment": {
         "x": 20,
         "y": -28,
-        "size": 57
+        "size": 56
       }
     },
     {
@@ -2230,7 +2230,7 @@
       "defaultAlignment": {
         "x": 21,
         "y": -27,
-        "size": 55
+        "size": 54
       }
     },
     {
@@ -2320,8 +2320,8 @@
       "slot": "head",
       "defaultAlignment": {
         "x": 9,
-        "y": -39,
-        "size": 78
+        "y": -38,
+        "size": 77
       }
     },
     {

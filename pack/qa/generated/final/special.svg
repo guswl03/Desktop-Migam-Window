@@ -38,7 +38,7 @@
       <text x="16" y="362" class="meta">SPECIAL · body · accepted</text>
       <text x="16" y="380" class="meta">x 19 · y 48 · size 59</text>
       <text x="16" y="398" class="bounds">source L30 T16 R225 B239</text>
-      <text x="16" y="416" class="bounds">worn L26 T52 R71 B103</text>
+      <text x="16" y="416" class="bounds">worn L25.91 T51.69 R71.09 B103.31</text>
       <text x="16" y="434" class="clear">warnings none</text>
     </g>
     <g class="costume-cell" data-id="special_002" data-qa-state="accepted">
@@ -59,7 +59,7 @@
       <text x="440" y="362" class="meta">SPECIAL · head · accepted</text>
       <text x="440" y="380" class="meta">x 21 · y -27 · size 54</text>
       <text x="440" y="398" class="bounds">source L48 T16 R206 B239</text>
-      <text x="440" y="416" class="bounds">worn L31 T-24 R65 B24</text>
+      <text x="440" y="416" class="bounds">worn L31.13 T-23.63 R64.66 B23.63</text>
       <text x="440" y="434" class="clear">warnings none</text>
     </g>
     <g class="costume-cell" data-id="special_003" data-qa-state="accepted">
@@ -80,7 +80,7 @@
       <text x="864" y="362" class="meta">SPECIAL · neck · accepted</text>
       <text x="864" y="380" class="meta">x 23 · y 57 · size 50</text>
       <text x="864" y="398" class="bounds">source L51 T16 R203 B239</text>
-      <text x="864" y="416" class="bounds">worn L33 T60 R63 B104</text>
+      <text x="864" y="416" class="bounds">worn L32.96 T60.13 R62.84 B103.88</text>
       <text x="864" y="434" class="clear">warnings none</text>
     </g>
     <g class="costume-cell" data-id="special_004" data-qa-state="accepted">
@@ -101,7 +101,7 @@
       <text x="1288" y="362" class="meta">SPECIAL · face · accepted</text>
       <text x="1288" y="380" class="meta">x 12 · y 1 · size 73</text>
       <text x="1288" y="398" class="bounds">source L16 T58 R239 B196</text>
-      <text x="1288" y="416" class="bounds">worn L17 T18 R80 B57</text>
+      <text x="1288" y="416" class="bounds">worn L16.56 T17.54 R80.44 B57.18</text>
       <text x="1288" y="434" class="clear">warnings none</text>
     </g>
     <g class="costume-cell" data-id="special_005" data-qa-state="accepted">
@@ -122,7 +122,7 @@
       <text x="16" y="810" class="meta">SPECIAL · head · accepted</text>
       <text x="16" y="828" class="meta">x 21 · y -27 · size 54</text>
       <text x="16" y="846" class="bounds">source L33 T16 R222 B239</text>
-      <text x="16" y="864" class="bounds">worn L28 T-24 R68 B24</text>
+      <text x="16" y="864" class="bounds">worn L27.96 T-23.63 R68.04 B23.63</text>
       <text x="16" y="882" class="clear">warnings none</text>
     </g>
 </svg>

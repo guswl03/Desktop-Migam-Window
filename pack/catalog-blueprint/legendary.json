@@ -15,7 +15,7 @@
     "material": "별빛 합금과 반투명 광석",
     "signatureDetail": "세 궤도띠가 만나는 축의 붉은 항성핵 하나",
     "prompt": "기울기가 다른 세 궤도띠가 공통축에서 모두 붙어 있는 단일 연결형 천구 머리 장식 한 개, 큰 비대칭 원형 외곽과 붉은 항성핵 하나만 선명하게 표현",
-    "defaultAlignment": { "x": 20, "y": -28, "size": 57 },
+    "defaultAlignment": { "x": 20, "y": -28, "size": 56 },
     "qaState": "accepted"
   },
   {
@@ -53,7 +53,7 @@
     "material": "운모청동과 별무늬 자개",
     "signatureDetail": "사분원 호의 가운데에 박힌 청록색 단일 항로못",
     "prompt": "굵은 호와 대각살이 받침띠에 완전히 연결된 사분의 형태 머리 장식 한 개, 사분원 외곽과 청록색 항로못 하나를 중심으로 단순하고 장엄하게 표현",
-    "defaultAlignment": { "x": 21, "y": -27, "size": 55 },
+    "defaultAlignment": { "x": 21, "y": -27, "size": 54 },
     "qaState": "accepted"
   },
   {
@@ -186,7 +186,7 @@
     "material": "중력유리와 검은 운철",
     "signatureDetail": "깔때기 목을 감도는 주홍색 한 바퀴 흡입선",
     "prompt": "기울어진 넓은 원반이 중앙 깔때기 목으로 끊김 없이 말려드는 단일 머리 장식 한 개, 분리된 천체나 배경 없이 중력 깔때기 외곽과 흡입선 하나만 표현",
-    "defaultAlignment": { "x": 9, "y": -39, "size": 78 },
+    "defaultAlignment": { "x": 9, "y": -38, "size": 77 },
     "qaState": "accepted"
   },
   {

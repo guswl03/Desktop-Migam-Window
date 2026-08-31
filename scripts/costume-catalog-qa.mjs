@@ -42,10 +42,10 @@ export function analyzePlacement(costume, sourceBounds) {
   const { x, y, size } = costume.defaultAlignment;
   const scale = size / 256;
   const wornBounds = {
-    left: Math.round(x + sourceBounds.left * scale),
-    top: Math.round(y + sourceBounds.top * scale),
-    right: Math.round(x + (sourceBounds.right + 1) * scale),
-    bottom: Math.round(y + (sourceBounds.bottom + 1) * scale),
+    left: x + sourceBounds.left * scale,
+    top: y + sourceBounds.top * scale,
+    right: x + (sourceBounds.right + 1) * scale,
+    bottom: y + (sourceBounds.bottom + 1) * scale,
   };
   const warnings = [];
   if (wornBounds.left < -16) warnings.push("clipped-left");
@@ -53,13 +53,22 @@ export function analyzePlacement(costume, sourceBounds) {
   if (wornBounds.right > 112) warnings.push("clipped-right");
   if (wornBounds.bottom > 104) warnings.push("clipped-bottom");
   const wornHeight = wornBounds.bottom - wornBounds.top;
+  const wornCenterX = (wornBounds.left + wornBounds.right) / 2;
   const wornCenterY = (wornBounds.top + wornBounds.bottom) / 2;
   if (costume.slot === "head" && wornBounds.bottom > 24) {
     warnings.push("head-overlaps-face");
   }
   if (
     costume.slot === "face" &&
-    (wornCenterY < 30 || wornCenterY > 44 || wornHeight > 42)
+    (
+      wornCenterX < 32 ||
+      wornCenterX > 64 ||
+      wornBounds.right <= 24 ||
+      wornBounds.left >= 72 ||
+      wornCenterY < 30 ||
+      wornCenterY > 44 ||
+      wornHeight > 42
+    )
   ) {
     warnings.push("face-off-eye-line");
   }
@@ -85,7 +94,8 @@ function assetHref(fromPath, assetPath) {
 }
 
 function boundsLabel(bounds) {
-  return `L${bounds.left} T${bounds.top} R${bounds.right} B${bounds.bottom}`;
+  const display = (value) => Number.isInteger(value) ? value : value.toFixed(2);
+  return `L${display(bounds.left)} T${display(bounds.top)} R${display(bounds.right)} B${display(bounds.bottom)}`;
 }
 
 function sheetCell(costume, index, columns, outputPath) {

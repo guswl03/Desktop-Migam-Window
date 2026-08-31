@@ -31,14 +31,14 @@
         <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
           <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
         </svg>
-        <image href="../../../legendary/legendary_001.png" x="36" y="-4" width="57" height="57" />
+        <image href="../../../legendary/legendary_001.png" x="36" y="-4" width="56" height="56" />
       </svg>
       <text x="16" y="316" class="id">legendary_001</text>
       <text x="16" y="340" class="name"><title>삼중궤도 천구모</title>삼중궤도 천구모</text>
       <text x="16" y="362" class="meta">LEGENDARY · head · accepted</text>
-      <text x="16" y="380" class="meta">x 20 · y -28 · size 57</text>
+      <text x="16" y="380" class="meta">x 20 · y -28 · size 56</text>
       <text x="16" y="398" class="bounds">source L16 T22 R239 B233</text>
-      <text x="16" y="416" class="bounds">worn L24 T-23 R73 B24</text>
+      <text x="16" y="416" class="bounds">worn L23.50 T-23.19 R72.50 B23.19</text>
       <text x="16" y="434" class="clear">warnings none</text>
     </g>
     <g class="costume-cell" data-id="legendary_002" data-qa-state="accepted">
@@ -59,7 +59,7 @@
       <text x="440" y="362" class="meta">LEGENDARY · face · accepted</text>
       <text x="440" y="380" class="meta">x 17 · y 6 · size 63</text>
       <text x="440" y="398" class="bounds">source L16 T47 R239 B207</text>
-      <text x="440" y="416" class="bounds">worn L21 T18 R76 B57</text>
+      <text x="440" y="416" class="bounds">worn L20.94 T17.57 R76.06 B57.19</text>
       <text x="440" y="434" class="clear">warnings none</text>
     </g>
     <g class="costume-cell" data-id="legendary_003" data-qa-state="accepted">
@@ -73,14 +73,14 @@
         <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
           <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
         </svg>
-        <image href="../../../legendary/legendary_003.png" x="37" y="-3" width="55" height="55" />
+        <image href="../../../legendary/legendary_003.png" x="37" y="-3" width="54" height="54" />
       </svg>
       <text x="864" y="316" class="id">legendary_003</text>
       <text x="864" y="340" class="name"><title>별항로 사분의모</title>별항로 사분의모</text>
       <text x="864" y="362" class="meta">LEGENDARY · head · accepted</text>
-      <text x="864" y="380" class="meta">x 21 · y -27 · size 55</text>
+      <text x="864" y="380" class="meta">x 21 · y -27 · size 54</text>
       <text x="864" y="398" class="bounds">source L16 T17 R239 B237</text>
-      <text x="864" y="416" class="bounds">worn L24 T-23 R73 B24</text>
+      <text x="864" y="416" class="bounds">worn L24.38 T-23.41 R71.63 B23.20</text>
       <text x="864" y="434" class="clear">warnings none</text>
     </g>
     <g class="costume-cell" data-id="legendary_004" data-qa-state="accepted">
@@ -101,7 +101,7 @@
       <text x="1288" y="362" class="meta">LEGENDARY · head · accepted</text>
       <text x="1288" y="380" class="meta">x 21 · y -27 · size 54</text>
       <text x="1288" y="398" class="bounds">source L19 T16 R235 B239</text>
-      <text x="1288" y="416" class="bounds">worn L25 T-24 R71 B24</text>
+      <text x="1288" y="416" class="bounds">worn L25.01 T-23.63 R70.78 B23.63</text>
       <text x="1288" y="434" class="clear">warnings none</text>
     </g>
     <g class="costume-cell" data-id="legendary_005" data-qa-state="accepted">
@@ -122,7 +122,7 @@
       <text x="16" y="810" class="meta">LEGENDARY · neck · accepted</text>
       <text x="16" y="828" class="meta">x 15 · y 49 · size 66</text>
       <text x="16" y="846" class="bounds">source L16 T43 R239 B212</text>
-      <text x="16" y="864" class="bounds">worn L19 T60 R77 B104</text>
+      <text x="16" y="864" class="bounds">worn L19.13 T60.09 R76.88 B103.91</text>
       <text x="16" y="882" class="clear">warnings none</text>
     </g>
     <g class="costume-cell" data-id="legendary_006" data-qa-state="accepted">
@@ -143,7 +143,7 @@
       <text x="440" y="810" class="meta">LEGENDARY · body · accepted</text>
       <text x="440" y="828" class="meta">x 19 · y 48 · size 59</text>
       <text x="440" y="846" class="bounds">source L57 T16 R197 B239</text>
-      <text x="440" y="864" class="bounds">worn L32 T52 R65 B103</text>
+      <text x="440" y="864" class="bounds">worn L32.14 T51.69 R64.63 B103.31</text>
       <text x="440" y="882" class="clear">warnings none</text>
     </g>
     <g class="costume-cell" data-id="legendary_007" data-qa-state="accepted">
@@ -164,7 +164,7 @@
       <text x="864" y="810" class="meta">LEGENDARY · head · accepted</text>
       <text x="864" y="828" class="meta">x 15 · y -33 · size 66</text>
       <text x="864" y="846" class="bounds">source L16 T35 R239 B219</text>
-      <text x="864" y="864" class="bounds">worn L19 T-24 R77 B24</text>
+      <text x="864" y="864" class="bounds">worn L19.13 T-23.98 R76.88 B23.72</text>
       <text x="864" y="882" class="clear">warnings none</text>
     </g>
     <g class="costume-cell" data-id="legendary_008" data-qa-state="accepted">
@@ -185,7 +185,7 @@
       <text x="1288" y="810" class="meta">LEGENDARY · face · accepted</text>
       <text x="1288" y="828" class="meta">x 17 · y 6 · size 62</text>
       <text x="1288" y="846" class="bounds">source L16 T45 R239 B209</text>
-      <text x="1288" y="864" class="bounds">worn L21 T17 R75 B57</text>
+      <text x="1288" y="864" class="bounds">worn L20.88 T16.90 R75.13 B56.86</text>
       <text x="1288" y="882" class="clear">warnings none</text>
     </g>
     <g class="costume-cell" data-id="legendary_009" data-qa-state="accepted">
@@ -206,7 +206,7 @@
       <text x="16" y="1258" class="meta">LEGENDARY · body · accepted</text>
       <text x="16" y="1276" class="meta">x 19 · y 48 · size 59</text>
       <text x="16" y="1294" class="bounds">source L18 T16 R236 B239</text>
-      <text x="16" y="1312" class="bounds">worn L23 T52 R74 B103</text>
+      <text x="16" y="1312" class="bounds">worn L23.15 T51.69 R73.62 B103.31</text>
       <text x="16" y="1330" class="clear">warnings none</text>
     </g>
     <g class="costume-cell" data-id="legendary_010" data-qa-state="accepted">
@@ -220,14 +220,14 @@
         <svg x="16" y="24" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
           <image href="../../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
         </svg>
-        <image href="../../../legendary/legendary_010.png" x="25" y="-15" width="78" height="78" />
+        <image href="../../../legendary/legendary_010.png" x="25" y="-14" width="77" height="77" />
       </svg>
       <text x="440" y="1212" class="id">legendary_010</text>
       <text x="440" y="1236" class="name"><title>사건지평 깔때기모</title>사건지평 깔때기모</text>
       <text x="440" y="1258" class="meta">LEGENDARY · head · accepted</text>
-      <text x="440" y="1276" class="meta">x 9 · y -39 · size 78</text>
+      <text x="440" y="1276" class="meta">x 9 · y -38 · size 77</text>
       <text x="440" y="1294" class="bounds">source L16 T49 R239 B205</text>
-      <text x="440" y="1312" class="bounds">worn L14 T-24 R82 B24</text>
+      <text x="440" y="1312" class="bounds">worn L13.81 T-23.26 R81.19 B23.96</text>
       <text x="440" y="1330" class="clear">warnings none</text>
     </g>
     <g class="costume-cell" data-id="legendary_011" data-qa-state="accepted">
@@ -248,7 +248,7 @@
       <text x="864" y="1258" class="meta">LEGENDARY · head · accepted</text>
       <text x="864" y="1276" class="meta">x 21 · y -27 · size 54</text>
       <text x="864" y="1294" class="bounds">source L42 T16 R212 B239</text>
-      <text x="864" y="1312" class="bounds">worn L30 T-24 R66 B24</text>
+      <text x="864" y="1312" class="bounds">worn L29.86 T-23.63 R65.93 B23.63</text>
       <text x="864" y="1330" class="clear">warnings none</text>
     </g>
     <g class="costume-cell" data-id="legendary_012" data-qa-state="accepted">
@@ -269,7 +269,7 @@
       <text x="1288" y="1258" class="meta">LEGENDARY · body · accepted</text>
       <text x="1288" y="1276" class="meta">x 19 · y 48 · size 59</text>
       <text x="1288" y="1294" class="bounds">source L16 T16 R239 B238</text>
-      <text x="1288" y="1312" class="bounds">worn L23 T52 R74 B103</text>
+      <text x="1288" y="1312" class="bounds">worn L22.69 T51.69 R74.31 B103.08</text>
       <text x="1288" y="1330" class="clear">warnings none</text>
     </g>
 </svg>
