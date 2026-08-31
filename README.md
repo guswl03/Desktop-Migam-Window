@@ -104,7 +104,7 @@ cargo clippy --all-targets -- -D warnings
 
 ## 현재 검증 상태
 
-- 에셋 테스트 57개와 프런트엔드 테스트 75개 통과
+- 에셋 테스트 57개와 프런트엔드 테스트 76개 통과
 - Rust 테스트 52개 통과
 - 뽑기 코스튬 314종(Common 149, Rare 92, Epic 52, Legendary 13, Special 8)과 기본 3종 검증 통과
 - 배치 슬롯 합계 head 181, face 38, neck 31, body 64 및 승인 후보 314개 검증 통과
