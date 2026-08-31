@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="2312" height="8412" viewBox="0 0 2312 8412">
   <title>New Rare catalog QA through 057</title>
+  <desc>Wearable silhouette clarification fixes: rare_035, rare_040, rare_044</desc>
   <defs>
     <pattern id="checker" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="#f1f1f1"/><rect width="8" height="8" fill="#d8d8d8"/><rect x="8" y="8" width="8" height="8" fill="#d8d8d8"/></pattern>
     <style>text{font-family:"Segoe UI",sans-serif;fill:#f4f4f5}.section{font:700 12px Consolas,monospace;fill:#aeb2c0;letter-spacing:1px}.id{font:700 18px Consolas,monospace;fill:#7fd7ff}.name{font-size:19px;font-weight:700}.meta{font:13px Consolas,monospace;fill:#ffcf53}</style>
