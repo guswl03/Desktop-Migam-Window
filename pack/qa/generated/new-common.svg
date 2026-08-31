@@ -927,13 +927,13 @@
     <rect x="32" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
     <image href="../accepted/common/common_062.png" x="32" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" image-rendering="pixelated" />
     <text x="20" y="458" class="id">common_062</text>
-    <text x="20" y="484" class="name">뜨개실 타래환모</text>
-    <text x="20" y="507" class="meta">COMMON · head · x -1 · y -23 · size 104</text>
+    <text x="20" y="484" class="name">뜨개실 주름빗모</text>
+    <text x="20" y="507" class="meta">COMMON · head · x 0 · y -30 · size 104</text>
     <text x="20" y="532" class="section">WORN · PET 96PX</text>
     <rect x="136" y="540" width="176" height="136" fill="url(#checker)" stroke="#777" />
     <svg x="176" y="556" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
       <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
-      <image href="../accepted/common/common_062.png" x="-1" y="-23" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
+      <image href="../accepted/common/common_062.png" x="0" y="-30" width="104" height="104" preserveAspectRatio="xMidYMid meet" />
     </svg>
   </g>
   <g class="common" data-id="common_063" transform="translate(932 8412)">
