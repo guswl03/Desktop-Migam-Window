@@ -1,12 +1,16 @@
 import assert from "node:assert/strict";
+import { execFile } from "node:child_process";
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
+import { promisify } from "node:util";
+import { loadBlueprint } from "./costume-blueprint.mjs";
 import { buildSheetRows } from "./costume-catalog-qa.mjs";
 import { readPngRgba } from "./lib/png-rgba.mjs";
 
 const repositoryRoot = fileURLToPath(new URL("..", import.meta.url));
+const execFileAsync = promisify(execFile);
 const manifest = JSON.parse(
   await readFile(resolve(repositoryRoot, "pack/manifest.json"), "utf8"),
 );
@@ -26,45 +30,37 @@ test("production costume PNGs are 256 square RGBA with transparent pixels", asyn
 
 test("contact-sheet rows cover every candidate exactly once", () => {
   const rows = buildSheetRows(manifest.costumes);
-  assert.equal(rows.length, 156);
-  assert.equal(new Set(rows.map(({ id }) => id)).size, 156);
+  assert.equal(rows.length, 185);
+  assert.equal(new Set(rows.map(({ id }) => id)).size, 185);
   assert.deepEqual(
     rows.map(({ id }) => id),
     drawCandidates.map(({ id }) => id),
   );
 });
 
-test("catalog audit classifies every candidate exactly once", async () => {
-  const audit = JSON.parse(
-    await readFile(resolve(repositoryRoot, "pack/qa/catalog-audit.json"), "utf8"),
-  );
-  const validStates = new Set(["keep", "realign", "redraw"]);
+test("accepted blueprint placements are applied to the production manifest", async () => {
+  const blueprint = await loadBlueprint(repositoryRoot);
+  const costumesById = new Map(drawCandidates.map((costume) => [costume.id, costume]));
 
-  assert.equal(audit.length, drawCandidates.length);
-  assert.equal(new Set(audit.map(({ id }) => id)).size, drawCandidates.length);
-  assert.deepEqual(
-    audit.map(({ id }) => id),
-    drawCandidates.map(({ id }) => id),
-  );
-
-  for (const entry of audit) {
-    assert.ok(validStates.has(entry.state), `${entry.id}: invalid state`);
-    assert.ok(entry.reason.trim().length > 0, `${entry.id}: missing reason`);
+  for (const item of blueprint) {
+    const costume = costumesById.get(item.id);
+    assert.equal(item.qaState, "accepted", item.id);
+    assert.deepEqual(
+      { slot: costume.slot, defaultAlignment: costume.defaultAlignment },
+      { slot: item.slot, defaultAlignment: item.defaultAlignment },
+      item.id,
+    );
   }
 });
 
-test("reviewed placement corrections are applied to the manifest", async () => {
-  const audit = JSON.parse(
-    await readFile(resolve(repositoryRoot, "pack/qa/catalog-audit.json"), "utf8"),
+test("asset validation reports the full 185-item rarity totals", async () => {
+  const { stdout } = await execFileAsync(
+    process.execPath,
+    ["scripts/costume-catalog-qa.mjs", "validate"],
+    { cwd: repositoryRoot },
   );
-  const costumesById = new Map(drawCandidates.map((costume) => [costume.id, costume]));
-
-  for (const entry of audit.filter(({ state }) => state !== "keep")) {
-    const costume = costumesById.get(entry.id);
-    assert.deepEqual(
-      { slot: costume.slot, defaultAlignment: costume.defaultAlignment },
-      entry.placement,
-      entry.id,
-    );
-  }
+  assert.equal(
+    stdout.trim(),
+    "common=80 rare=57 epic=31 legendary=12 special=5 total=185",
+  );
 });

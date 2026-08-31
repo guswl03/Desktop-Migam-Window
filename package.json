@@ -15,8 +15,6 @@
     "costumes:validate-candidates": "node scripts/costume-promote-candidates.mjs",
     "costumes:promote-candidates": "node scripts/costume-promote-candidates.mjs --apply",
     "costumes:sheets": "node scripts/costume-catalog-qa.mjs sheets",
-    "costumes:semantic-audit": "node scripts/costume-semantic-audit.mjs validate",
-    "costumes:semantic-sheets": "node scripts/costume-semantic-audit.mjs sheets",
     "typecheck": "tsc --noEmit",
     "tauri": "tauri"
   },

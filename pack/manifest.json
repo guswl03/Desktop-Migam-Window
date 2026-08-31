@@ -8,16 +8,14 @@
   "assetType": "standalone-transparent-costume",
   "runtimeAlignment": "not-applied",
   "eyeNoisePolicy": "standalone source regions only; wearer previews and eye pixels excluded",
-  "count": 159,
+  "count": 188,
   "costumes": [
     {
       "id": "common_001",
-      "name": "검정 헤드폰",
+      "name": "새벽 우편모",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "생활 도구",
       "file": "common/common_001.png",
-      "source": "catalog-81/01-common-01-09.png",
-      "sourceSlot": 0,
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
@@ -27,2327 +25,2394 @@
     },
     {
       "id": "common_002",
-      "name": "탐정 모자",
+      "name": "아침 신문접이모",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "생활 도구",
       "file": "common/common_002.png",
-      "source": "catalog-81/01-common-01-09.png",
-      "sourceSlot": 1,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 1,
+        "y": -32,
+        "size": 102
       }
     },
     {
       "id": "common_003",
-      "name": "요리사 모자",
+      "name": "찻집 보온두건",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "생활 도구",
       "file": "common/common_003.png",
-      "source": "catalog-81/01-common-01-09.png",
-      "sourceSlot": 2,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": -2,
+        "y": -28,
+        "size": 106
       }
     },
     {
       "id": "common_004",
-      "name": "빨간 머리띠",
+      "name": "빨래집게 햇차양",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "생활 도구",
       "file": "common/common_004.png",
-      "source": "catalog-81/01-common-01-09.png",
-      "sourceSlot": 3,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 0,
+        "y": -25,
+        "size": 110
       }
     },
     {
       "id": "common_005",
-      "name": "남색 비니",
+      "name": "장보기 접이모",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "생활 도구",
       "file": "common/common_005.png",
-      "source": "catalog-81/01-common-01-09.png",
-      "sourceSlot": 4,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 3,
+        "y": -27,
+        "size": 101
       }
     },
     {
       "id": "common_006",
-      "name": "동그란 독서 안경",
+      "name": "벽난로 재받이 후드",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "생활 도구",
       "file": "common/common_006.png",
-      "source": "catalog-81/01-common-01-09.png",
-      "sourceSlot": 5,
-      "slot": "face",
+      "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -8,
-        "size": 104
+        "x": -1,
+        "y": -29,
+        "size": 105
       }
     },
     {
       "id": "common_007",
-      "name": "빨간 넥타이",
+      "name": "물뿌리개 손잡이캡",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "생활 도구",
       "file": "common/common_007.png",
-      "source": "catalog-81/01-common-01-09.png",
-      "sourceSlot": 6,
-      "slot": "neck",
+      "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": 12,
-        "size": 104
+        "x": 2,
+        "y": -31,
+        "size": 100
       }
     },
     {
       "id": "common_008",
-      "name": "초록 야구 모자",
+      "name": "열쇠지기 고리모",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "생활 도구",
       "file": "common/common_008.png",
-      "source": "catalog-81/01-common-01-09.png",
-      "sourceSlot": 7,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": -3,
+        "y": -26,
+        "size": 103
       }
     },
     {
       "id": "common_009",
-      "name": "노란 우비 모자",
+      "name": "도자기 찻잔모",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "생활 도구",
       "file": "common/common_009.png",
-      "source": "catalog-81/01-common-01-09.png",
-      "sourceSlot": 8,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
+        "x": 4,
         "y": -30,
-        "size": 104
+        "size": 99
       }
     },
     {
       "id": "common_010",
-      "name": "줄무늬 목도리",
+      "name": "빗자루 솔챙모",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "생활 도구",
       "file": "common/common_010.png",
-      "source": "catalog-81/02-common-10-18.png",
-      "sourceSlot": 0,
-      "slot": "neck",
+      "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": 12,
-        "size": 104
+        "x": -5,
+        "y": -24,
+        "size": 108
       }
     },
     {
       "id": "common_011",
-      "name": "작은 나비넥타이",
+      "name": "등잔 심지모",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "생활 도구",
       "file": "common/common_011.png",
-      "source": "catalog-81/02-common-10-18.png",
-      "sourceSlot": 1,
-      "slot": "neck",
+      "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": 12,
-        "size": 104
+        "x": 0,
+        "y": -33,
+        "size": 100
       }
     },
     {
       "id": "common_012",
-      "name": "귀마개",
+      "name": "바느질 눈금안경",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "생활 도구",
       "file": "common/common_012.png",
-      "source": "catalog-81/02-common-10-18.png",
-      "sourceSlot": 2,
-      "slot": "head",
+      "slot": "face",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": -1,
+        "y": -10,
+        "size": 96
       }
     },
     {
       "id": "common_013",
-      "name": "수면 안대",
+      "name": "양념갈이 코받이안경",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "생활 도구",
       "file": "common/common_013.png",
-      "source": "catalog-81/02-common-10-18.png",
-      "sourceSlot": 3,
       "slot": "face",
       "defaultAlignment": {
-        "x": -4,
-        "y": -24,
-        "size": 104
+        "x": 2,
+        "y": -9,
+        "size": 94
       }
     },
     {
       "id": "common_014",
-      "name": "종이 파티 왕관",
+      "name": "창닦이 물방울고글",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "생활 도구",
       "file": "common/common_014.png",
-      "source": "catalog-81/02-common-10-18.png",
-      "sourceSlot": 4,
-      "slot": "head",
+      "slot": "face",
       "defaultAlignment": {
-        "x": -4,
-        "y": -48,
-        "size": 104
+        "x": 0,
+        "y": -8,
+        "size": 98
       }
     },
     {
       "id": "common_015",
-      "name": "화가 베레모",
+      "name": "식탁보 접이칼라",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "생활 도구",
       "file": "common/common_015.png",
-      "source": "catalog-81/02-common-10-18.png",
-      "sourceSlot": 5,
-      "slot": "head",
+      "slot": "neck",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": -2,
+        "y": 10,
+        "size": 100
       }
     },
     {
       "id": "common_016",
-      "name": "정원사 밀짚모자",
+      "name": "찬장 열쇠목도리",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "생활 도구",
       "file": "common/common_016.png",
-      "source": "catalog-81/02-common-10-18.png",
-      "sourceSlot": 6,
-      "slot": "head",
+      "slot": "neck",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 3,
+        "y": 12,
+        "size": 98
       }
     },
     {
       "id": "common_017",
-      "name": "멜빵",
+      "name": "살림꾼 다용도앞치마",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "생활 도구",
       "file": "common/common_017.png",
-      "source": "catalog-81/02-common-10-18.png",
-      "sourceSlot": 7,
-      "slot": "full",
+      "slot": "body",
       "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
+        "x": 0,
+        "y": 22,
+        "size": 108
       }
     },
     {
       "id": "common_018",
-      "name": "세일러 스카프",
+      "name": "장보기 등바구니",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "생활 도구",
       "file": "common/common_018.png",
-      "source": "catalog-81/02-common-10-18.png",
-      "sourceSlot": 8,
-      "slot": "neck",
+      "slot": "body",
       "defaultAlignment": {
-        "x": -4,
-        "y": 12,
-        "size": 104
+        "x": 4,
+        "y": 18,
+        "size": 105
       }
     },
     {
       "id": "common_019",
-      "name": "게이머 헤드셋",
+      "name": "뜨개 물주머니조끼",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "생활 도구",
       "file": "common/common_019.png",
-      "source": "catalog-81/03-common-19-27.png",
-      "sourceSlot": 0,
-      "slot": "head",
+      "slot": "body",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": -3,
+        "y": 20,
+        "size": 103
       }
     },
     {
       "id": "common_020",
-      "name": "학생 모자",
+      "name": "빗물받이 층단망토",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "생활 도구",
       "file": "common/common_020.png",
-      "source": "catalog-81/03-common-19-27.png",
-      "sourceSlot": 1,
-      "slot": "head",
+      "slot": "body",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 1,
+        "y": 24,
+        "size": 110
       }
     },
     {
       "id": "common_021",
-      "name": "제빵사 모자",
+      "name": "철도원 납작모",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "직업 장비",
       "file": "common/common_021.png",
-      "source": "catalog-81/03-common-19-27.png",
-      "sourceSlot": 2,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
+        "x": -2,
+        "y": -27,
         "size": 104
       }
     },
     {
       "id": "common_022",
-      "name": "등산 버킷햇",
+      "name": "목수 자투리챙모",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "직업 장비",
       "file": "common/common_022.png",
-      "source": "catalog-81/03-common-19-27.png",
-      "sourceSlot": 3,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 5,
+        "y": -25,
+        "size": 107
       }
     },
     {
       "id": "common_023",
-      "name": "수영 고글",
+      "name": "제빵사 봉긋모",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "직업 장비",
       "file": "common/common_023.png",
-      "source": "catalog-81/03-common-19-27.png",
-      "sourceSlot": 4,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 0,
+        "y": -34,
+        "size": 101
       }
     },
     {
       "id": "common_024",
-      "name": "운동 머리띠",
+      "name": "어부 그물두건",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "직업 장비",
       "file": "common/common_024.png",
-      "source": "catalog-81/03-common-19-27.png",
-      "sourceSlot": 5,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -44,
-        "size": 104
+        "x": 3,
+        "y": -29,
+        "size": 106
       }
     },
     {
       "id": "common_025",
-      "name": "미니 카메라",
+      "name": "분류실 봉투모",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "직업 장비",
       "file": "common/common_025.png",
-      "source": "catalog-81/03-common-19-27.png",
-      "sourceSlot": 6,
-      "slot": "neck",
+      "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": 24,
-        "size": 96
+        "y": -26,
+        "size": 102
       }
     },
     {
       "id": "common_026",
-      "name": "기본 백팩",
+      "name": "등대지기 방풍모",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "직업 장비",
       "file": "common/common_026.png",
-      "source": "catalog-81/03-common-19-27.png",
-      "sourceSlot": 7,
-      "slot": "body",
+      "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": 17,
+        "x": 1,
+        "y": -31,
         "size": 104
       }
     },
     {
       "id": "common_027",
-      "name": "산타 모자",
+      "name": "도서관 먼지털이모",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "직업 장비",
       "file": "common/common_027.png",
-      "source": "catalog-81/03-common-19-27.png",
-      "sourceSlot": 8,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": -1,
+        "y": -24,
+        "size": 109
       }
     },
     {
       "id": "common_028",
-      "name": "사원증 목걸이",
+      "name": "도예가 흙막이후드",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "직업 장비",
       "file": "common/common_028.png",
-      "source": "catalog-81/04-common-28-36.png",
-      "sourceSlot": 0,
-      "slot": "neck",
+      "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": 12,
-        "size": 104
+        "x": 4,
+        "y": -30,
+        "size": 103
       }
     },
     {
       "id": "common_029",
-      "name": "안전모",
+      "name": "정비공 볼트캡",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "직업 장비",
       "file": "common/common_029.png",
-      "source": "catalog-81/04-common-28-36.png",
-      "sourceSlot": 1,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": -3,
+        "y": -26,
+        "size": 100
       }
     },
     {
       "id": "common_030",
-      "name": "간호사 모자",
+      "name": "꽃집 리본보닛",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "직업 장비",
       "file": "common/common_030.png",
-      "source": "catalog-81/04-common-28-36.png",
-      "sourceSlot": 2,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 2,
+        "y": -32,
+        "size": 105
       }
     },
     {
       "id": "common_031",
-      "name": "우체부 세트",
+      "name": "굴착부 랜턴모",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "직업 장비",
       "file": "common/common_031.png",
-      "source": "catalog-81/04-common-28-36.png",
-      "sourceSlot": 3,
-      "slot": "full",
+      "slot": "head",
       "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
+        "x": 0,
+        "y": -28,
+        "size": 106
       }
     },
     {
       "id": "common_032",
-      "name": "정비공 반다나",
+      "name": "제도사 사각안경",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "직업 장비",
       "file": "common/common_032.png",
-      "source": "catalog-81/04-common-28-36.png",
-      "sourceSlot": 4,
-      "slot": "head",
+      "slot": "face",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 1,
+        "y": -9,
+        "size": 97
       }
     },
     {
       "id": "common_033",
-      "name": "바리스타 앞치마",
+      "name": "용접공 틈빛보안경",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "직업 장비",
       "file": "common/common_033.png",
-      "source": "catalog-81/04-common-28-36.png",
-      "sourceSlot": 5,
-      "slot": "body",
+      "slot": "face",
       "defaultAlignment": {
-        "x": -4,
-        "y": 17,
-        "size": 104
+        "x": -2,
+        "y": -7,
+        "size": 101
       }
     },
     {
       "id": "common_034",
-      "name": "낚시꾼 모자",
+      "name": "양봉가 짧은망사면",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "직업 장비",
       "file": "common/common_034.png",
-      "source": "catalog-81/04-common-28-36.png",
-      "sourceSlot": 6,
-      "slot": "head",
+      "slot": "face",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 0,
+        "y": -6,
+        "size": 103
       }
     },
     {
       "id": "common_035",
-      "name": "학사모",
+      "name": "이발사 줄무늬목수건",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "직업 장비",
       "file": "common/common_035.png",
-      "source": "catalog-81/04-common-28-36.png",
-      "sourceSlot": 7,
-      "slot": "head",
+      "slot": "neck",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 2,
+        "y": 9,
+        "size": 96
       }
     },
     {
       "id": "common_036",
-      "name": "꽃 머리핀",
+      "name": "시계공 렌즈펜던트",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "직업 장비",
       "file": "common/common_036.png",
-      "source": "catalog-81/04-common-28-36.png",
-      "sourceSlot": 8,
-      "slot": "head",
+      "slot": "neck",
       "defaultAlignment": {
-        "x": 18,
-        "y": -38,
-        "size": 96
+        "x": -1,
+        "y": 14,
+        "size": 99
       }
     },
     {
       "id": "common_037",
-      "name": "토끼 귀",
+      "name": "목공소 연필앞치마",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "직업 장비",
       "file": "common/common_037.png",
-      "source": "catalog-81/05-common-37-40-rare-01-05.png",
-      "sourceSlot": 0,
-      "slot": "head",
+      "slot": "body",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": -2,
+        "y": 23,
+        "size": 107
       }
     },
     {
       "id": "common_038",
-      "name": "검정 선글라스",
+      "name": "항구 신호조끼",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "직업 장비",
       "file": "common/common_038.png",
-      "source": "catalog-81/05-common-37-40-rare-01-05.png",
-      "sourceSlot": 1,
-      "slot": "face",
+      "slot": "body",
       "defaultAlignment": {
-        "x": -4,
-        "y": -8,
-        "size": 104
+        "x": 1,
+        "y": 19,
+        "size": 102
       }
     },
     {
       "id": "common_039",
-      "name": "물방울 리본",
+      "name": "우유배달 병걸이멜빵",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "직업 장비",
       "file": "common/common_039.png",
-      "source": "catalog-81/05-common-37-40-rare-01-05.png",
-      "sourceSlot": 2,
-      "slot": "head",
+      "slot": "body",
       "defaultAlignment": {
-        "x": 18,
-        "y": -40,
-        "size": 96
+        "x": 3,
+        "y": 21,
+        "size": 104
       }
     },
     {
       "id": "common_040",
-      "name": "유틸리티 벨트",
+      "name": "인쇄공 잉크가운",
       "rarity": "common",
-      "collection": "catalog-81",
+      "collection": "직업 장비",
       "file": "common/common_040.png",
-      "source": "catalog-81/05-common-37-40-rare-01-05.png",
-      "sourceSlot": 3,
       "slot": "body",
       "defaultAlignment": {
-        "x": -4,
-        "y": 17,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_001",
-      "name": "보석 왕관",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_001.png",
-      "source": "catalog-81/05-common-37-40-rare-01-05.png",
-      "sourceSlot": 4,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -58,
-        "size": 100
-      }
-    },
-    {
-      "id": "rare_002",
-      "name": "투명 우주 헬멧",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_002.png",
-      "source": "catalog-81/05-common-37-40-rare-01-05.png",
-      "sourceSlot": 5,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_003",
-      "name": "별빛 마법사 모자",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_003.png",
-      "source": "catalog-81/05-common-37-40-rare-01-05.png",
-      "sourceSlot": 6,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -54,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_004",
-      "name": "붉은 영웅 망토",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_004.png",
-      "source": "catalog-81/05-common-37-40-rare-01-05.png",
-      "sourceSlot": 7,
-      "slot": "body",
-      "defaultAlignment": {
-        "x": -4,
-        "y": 17,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_005",
-      "name": "개구리 후드",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_005.png",
-      "source": "catalog-81/05-common-37-40-rare-01-05.png",
-      "sourceSlot": 8,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_006",
-      "name": "검은 고양이 후드",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_006.png",
-      "source": "catalog-81/06-rare-06-14.png",
-      "sourceSlot": 0,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_007",
-      "name": "해적 선장 세트",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_007.png",
-      "source": "catalog-81/06-rare-06-14.png",
-      "sourceSlot": 1,
-      "slot": "full",
-      "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
-      }
-    },
-    {
-      "id": "rare_008",
-      "name": "닌자 머리띠",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_008.png",
-      "source": "catalog-81/06-rare-06-14.png",
-      "sourceSlot": 2,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_009",
-      "name": "황동 스팀펑크 고글",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_009.png",
-      "source": "catalog-81/06-rare-06-14.png",
-      "sourceSlot": 3,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_010",
-      "name": "숲속 버섯 모자",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_010.png",
-      "source": "catalog-81/06-rare-06-14.png",
-      "sourceSlot": 4,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_011",
-      "name": "꿀벌 세트",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_011.png",
-      "source": "catalog-81/06-rare-06-14.png",
-      "sourceSlot": 5,
-      "slot": "full",
-      "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
-      }
-    },
-    {
-      "id": "rare_012",
-      "name": "상어 후드",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_012.png",
-      "source": "catalog-81/06-rare-06-14.png",
-      "sourceSlot": 6,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_013",
-      "name": "레트로 로봇 모자",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_013.png",
-      "source": "catalog-81/06-rare-06-14.png",
-      "sourceSlot": 7,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_014",
-      "name": "마법 파티 모자",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_014.png",
-      "source": "catalog-81/06-rare-06-14.png",
-      "sourceSlot": 8,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -44,
-        "size": 92
-      }
-    },
-    {
-      "id": "rare_015",
-      "name": "초밥 요리사 세트",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_015.png",
-      "source": "catalog-81/07-rare-15-23.png",
-      "sourceSlot": 0,
-      "slot": "full",
-      "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
-      }
-    },
-    {
-      "id": "rare_016",
-      "name": "붉은 용 후드",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_016.png",
-      "source": "catalog-81/07-rare-15-23.png",
-      "sourceSlot": 1,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_017",
-      "name": "얼음 마법사 후드",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_017.png",
-      "source": "catalog-81/07-rare-15-23.png",
-      "sourceSlot": 2,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_018",
-      "name": "숲 레인저 세트",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_018.png",
-      "source": "catalog-81/07-rare-15-23.png",
-      "sourceSlot": 3,
-      "slot": "full",
-      "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
-      }
-    },
-    {
-      "id": "rare_019",
-      "name": "레트로 우주 안테나 헬멧",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_019.png",
-      "source": "catalog-81/07-rare-15-23.png",
-      "sourceSlot": 4,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_020",
-      "name": "뱀파이어 망토",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_020.png",
-      "source": "catalog-81/07-rare-15-23.png",
-      "sourceSlot": 5,
-      "slot": "body",
-      "defaultAlignment": {
-        "x": -4,
-        "y": 17,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_021",
-      "name": "왕실 기사 투구",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_021.png",
-      "source": "catalog-81/07-rare-15-23.png",
-      "sourceSlot": 6,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_022",
-      "name": "카니발 광대 모자",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_022.png",
-      "source": "catalog-81/07-rare-15-23.png",
-      "sourceSlot": 7,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -40,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_023",
-      "name": "심해 잠수 헬멧",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_023.png",
-      "source": "catalog-81/07-rare-15-23.png",
-      "sourceSlot": 8,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_024",
-      "name": "황금 모노클",
-      "rarity": "rare",
-      "collection": "catalog-81",
-      "file": "rare/rare_024.png",
-      "source": "catalog-81/08-rare-24-epic-01-08.png",
-      "sourceSlot": 0,
-      "slot": "face",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -8,
-        "size": 104
-      }
-    },
-    {
-      "id": "epic_001",
-      "name": "달빛 천상 왕관",
-      "rarity": "epic",
-      "collection": "catalog-81",
-      "file": "epic/epic_001.png",
-      "source": "catalog-81/08-rare-24-epic-01-08.png",
-      "sourceSlot": 1,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -58,
-        "size": 100
-      }
-    },
-    {
-      "id": "epic_002",
-      "name": "불사조 망토",
-      "rarity": "epic",
-      "collection": "catalog-81",
-      "file": "epic/epic_002.png",
-      "source": "catalog-81/08-rare-24-epic-01-08.png",
-      "sourceSlot": 2,
-      "slot": "body",
-      "defaultAlignment": {
-        "x": -4,
-        "y": 17,
-        "size": 104
-      }
-    },
-    {
-      "id": "epic_003",
-      "name": "수정 얼음 왕관",
-      "rarity": "epic",
-      "collection": "catalog-81",
-      "file": "epic/epic_003.png",
-      "source": "catalog-81/08-rare-24-epic-01-08.png",
-      "sourceSlot": 3,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -52,
-        "size": 104
-      }
-    },
-    {
-      "id": "epic_004",
-      "name": "숲 수호자 뿔관",
-      "rarity": "epic",
-      "collection": "catalog-81",
-      "file": "epic/epic_004.png",
-      "source": "catalog-81/08-rare-24-epic-01-08.png",
-      "sourceSlot": 4,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -48,
-        "size": 104
-      }
-    },
-    {
-      "id": "epic_005",
-      "name": "스팀펑크 발명가 헬멧",
-      "rarity": "epic",
-      "collection": "catalog-81",
-      "file": "epic/epic_005.png",
-      "source": "catalog-81/08-rare-24-epic-01-08.png",
-      "sourceSlot": 5,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "epic_006",
-      "name": "네온 사이버 바이저",
-      "rarity": "epic",
-      "collection": "catalog-81",
-      "file": "epic/epic_006.png",
-      "source": "catalog-81/08-rare-24-epic-01-08.png",
-      "sourceSlot": 6,
-      "slot": "face",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -8,
-        "size": 104
-      }
-    },
-    {
-      "id": "epic_007",
-      "name": "왕실 해군 제독 세트",
-      "rarity": "epic",
-      "collection": "catalog-81",
-      "file": "epic/epic_007.png",
-      "source": "catalog-81/08-rare-24-epic-01-08.png",
-      "sourceSlot": 7,
-      "slot": "full",
-      "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
-      }
-    },
-    {
-      "id": "epic_008",
-      "name": "흑요석 화산 왕관",
-      "rarity": "epic",
-      "collection": "catalog-81",
-      "file": "epic/epic_008.png",
-      "source": "catalog-81/08-rare-24-epic-01-08.png",
-      "sourceSlot": 8,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -52,
-        "size": 104
-      }
-    },
-    {
-      "id": "epic_009",
-      "name": "은하 수면모 세트",
-      "rarity": "epic",
-      "collection": "catalog-81",
-      "file": "epic/epic_009.png",
-      "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
-      "sourceSlot": 0,
-      "slot": "full",
-      "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
-      }
-    },
-    {
-      "id": "epic_010",
-      "name": "황금 마스터 셰프 모자",
-      "rarity": "epic",
-      "collection": "catalog-81",
-      "file": "epic/epic_010.png",
-      "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
-      "sourceSlot": 1,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "epic_011",
-      "name": "고대 유적 탐험가 세트",
-      "rarity": "epic",
-      "collection": "catalog-81",
-      "file": "epic/epic_011.png",
-      "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
-      "sourceSlot": 2,
-      "slot": "body",
-      "defaultAlignment": {
-        "x": 8,
-        "y": 22,
-        "size": 88
-      }
-    },
-    {
-      "id": "epic_012",
-      "name": "아케이드 챔피언 세트",
-      "rarity": "epic",
-      "collection": "catalog-81",
-      "file": "epic/epic_012.png",
-      "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
-      "sourceSlot": 3,
-      "slot": "full",
-      "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
-      }
-    },
-    {
-      "id": "legendary_001",
-      "name": "태양 황제 관과 망토",
-      "rarity": "legendary",
-      "collection": "catalog-81",
-      "file": "legendary/legendary_001.png",
-      "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
-      "sourceSlot": 4,
-      "slot": "full",
-      "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
-      }
-    },
-    {
-      "id": "legendary_002",
-      "name": "심야 우주 군주 후드",
-      "rarity": "legendary",
-      "collection": "catalog-81",
-      "file": "legendary/legendary_002.png",
-      "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
-      "sourceSlot": 5,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "legendary_003",
-      "name": "프리즘 수정룡 세트",
-      "rarity": "legendary",
-      "collection": "catalog-81",
-      "file": "legendary/legendary_003.png",
-      "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
-      "sourceSlot": 6,
-      "slot": "full",
-      "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
-      }
-    },
-    {
-      "id": "legendary_004",
-      "name": "태엽 시간지기 세트",
-      "rarity": "legendary",
-      "collection": "catalog-81",
-      "file": "legendary/legendary_004.png",
-      "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
-      "sourceSlot": 7,
-      "slot": "full",
-      "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
-      }
-    },
-    {
-      "id": "special_001",
-      "name": "원조 감자 개발자 — 감자 새싹 왕관, 개발자 후드, 감자봇의 원형 입 문양을 활용한 황금 배지",
-      "rarity": "special",
-      "collection": "catalog-81",
-      "file": "special/special_001.png",
-      "source": "catalog-81/09-epic-09-12-legendary-01-04-easter-egg.png",
-      "sourceSlot": 8,
-      "slot": "full",
-      "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
+        "x": 0,
+        "y": 25,
+        "size": 109
       }
     },
     {
       "id": "common_041",
-      "name": "주황 귀달이 모자",
+      "name": "역참 접이중절모",
       "rarity": "common",
-      "collection": "additional-45",
+      "collection": "여행 장비",
       "file": "common/common_041.png",
-      "source": "additional-45/10-common-41-49.png",
-      "sourceSlot": 0,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": -3,
+        "y": -27,
+        "size": 105
       }
     },
     {
       "id": "common_042",
-      "name": "줄무늬 넥워머",
+      "name": "산길 표지챙모",
       "rarity": "common",
-      "collection": "additional-45",
+      "collection": "여행 장비",
       "file": "common/common_042.png",
-      "source": "additional-45/10-common-41-49.png",
-      "sourceSlot": 1,
-      "slot": "neck",
+      "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": 12,
-        "size": 104
+        "x": 2,
+        "y": -31,
+        "size": 103
       }
     },
     {
       "id": "common_043",
-      "name": "기본 비행사 모자",
+      "name": "강변 갈대갓",
       "rarity": "common",
-      "collection": "additional-45",
+      "collection": "여행 장비",
       "file": "common/common_043.png",
-      "source": "additional-45/10-common-41-49.png",
-      "sourceSlot": 2,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 0,
+        "y": -28,
+        "size": 110
       }
     },
     {
       "id": "common_044",
-      "name": "꽃무늬 안경",
+      "name": "사막 물병터번",
       "rarity": "common",
-      "collection": "additional-45",
+      "collection": "여행 장비",
       "file": "common/common_044.png",
-      "source": "additional-45/10-common-41-49.png",
-      "sourceSlot": 3,
-      "slot": "face",
+      "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -22,
+        "x": 4,
+        "y": -29,
         "size": 104
       }
     },
     {
       "id": "common_045",
-      "name": "미니 작업 앞치마",
+      "name": "숲길 나침반관",
       "rarity": "common",
-      "collection": "additional-45",
+      "collection": "여행 장비",
       "file": "common/common_045.png",
-      "source": "additional-45/10-common-41-49.png",
-      "sourceSlot": 4,
-      "slot": "body",
+      "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": 17,
-        "size": 104
+        "x": -1,
+        "y": -30,
+        "size": 105
       }
     },
     {
       "id": "common_046",
-      "name": "구름 모자",
+      "name": "설원 덧댐모",
       "rarity": "common",
-      "collection": "additional-45",
+      "collection": "여행 장비",
       "file": "common/common_046.png",
-      "source": "additional-45/10-common-41-49.png",
-      "sourceSlot": 5,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 3,
+        "y": -28,
+        "size": 108
       }
     },
     {
       "id": "common_047",
-      "name": "나뭇잎 머리띠",
+      "name": "해안 조개머리띠",
       "rarity": "common",
-      "collection": "additional-45",
+      "collection": "여행 장비",
       "file": "common/common_047.png",
-      "source": "additional-45/10-common-41-49.png",
-      "sourceSlot": 6,
       "slot": "head",
       "defaultAlignment": {
         "x": -4,
-        "y": -30,
-        "size": 104
+        "y": -24,
+        "size": 108
       }
     },
     {
       "id": "common_048",
-      "name": "미니 메신저백",
+      "name": "기차표 둥근모",
       "rarity": "common",
-      "collection": "additional-45",
+      "collection": "여행 장비",
       "file": "common/common_048.png",
-      "source": "additional-45/10-common-41-49.png",
-      "sourceSlot": 7,
-      "slot": "body",
+      "slot": "head",
       "defaultAlignment": {
-        "x": 8,
-        "y": 17,
-        "size": 96
+        "x": 1,
+        "y": -32,
+        "size": 100
       }
     },
     {
       "id": "common_049",
-      "name": "물방울 샤워캡",
+      "name": "야영 불씨망건",
       "rarity": "common",
-      "collection": "additional-45",
+      "collection": "여행 장비",
       "file": "common/common_049.png",
-      "source": "additional-45/10-common-41-49.png",
-      "sourceSlot": 8,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": -2,
+        "y": -25,
+        "size": 106
       }
     },
     {
       "id": "common_050",
-      "name": "데님 버킷햇",
+      "name": "지도꾼 두루마리모",
       "rarity": "common",
-      "collection": "additional-45",
+      "collection": "여행 장비",
       "file": "common/common_050.png",
-      "source": "additional-45/11-common-50-58.png",
-      "sourceSlot": 0,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 5,
+        "y": -26,
+        "size": 109
       }
     },
     {
       "id": "common_051",
-      "name": "줄무늬 조끼",
+      "name": "돌길 먼지막이모",
       "rarity": "common",
-      "collection": "additional-45",
+      "collection": "여행 장비",
       "file": "common/common_051.png",
-      "source": "additional-45/11-common-50-58.png",
-      "sourceSlot": 1,
-      "slot": "body",
+      "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": 17,
-        "size": 104
+        "x": 0,
+        "y": -24,
+        "size": 110
       }
     },
     {
       "id": "common_052",
-      "name": "실험실 고글",
+      "name": "노을빛 길안경",
       "rarity": "common",
-      "collection": "additional-45",
+      "collection": "여행 장비",
       "file": "common/common_052.png",
-      "source": "additional-45/11-common-50-58.png",
-      "sourceSlot": 2,
-      "slot": "head",
+      "slot": "face",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 2,
+        "y": -10,
+        "size": 98
       }
     },
     {
       "id": "common_053",
-      "name": "제빵사 스카프",
+      "name": "안개길 삼중고글",
       "rarity": "common",
-      "collection": "additional-45",
+      "collection": "여행 장비",
       "file": "common/common_053.png",
-      "source": "additional-45/11-common-50-58.png",
-      "sourceSlot": 3,
-      "slot": "neck",
+      "slot": "face",
       "defaultAlignment": {
-        "x": -4,
-        "y": 12,
-        "size": 104
+        "x": -1,
+        "y": -8,
+        "size": 100
       }
     },
     {
       "id": "common_054",
-      "name": "캠핑 헤드램프",
+      "name": "모래바람 마름모가리개",
       "rarity": "common",
-      "collection": "additional-45",
+      "collection": "여행 장비",
       "file": "common/common_054.png",
-      "source": "additional-45/11-common-50-58.png",
-      "sourceSlot": 4,
-      "slot": "head",
+      "slot": "face",
       "defaultAlignment": {
-        "x": -4,
-        "y": -36,
-        "size": 104
+        "x": 0,
+        "y": -6,
+        "size": 102
       }
     },
     {
       "id": "common_055",
-      "name": "방울 목걸이",
+      "name": "여관 열쇠목걸이",
       "rarity": "common",
-      "collection": "additional-45",
+      "collection": "여행 장비",
       "file": "common/common_055.png",
-      "source": "additional-45/11-common-50-58.png",
-      "sourceSlot": 5,
       "slot": "neck",
       "defaultAlignment": {
-        "x": -4,
-        "y": 12,
-        "size": 104
+        "x": 3,
+        "y": 13,
+        "size": 95
       }
     },
     {
       "id": "common_056",
-      "name": "곰 귀 머리띠",
+      "name": "지도 부채칼라",
       "rarity": "common",
-      "collection": "additional-45",
+      "collection": "여행 장비",
       "file": "common/common_056.png",
-      "source": "additional-45/11-common-50-58.png",
-      "sourceSlot": 6,
-      "slot": "head",
+      "slot": "neck",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": -2,
+        "y": 11,
+        "size": 102
       }
     },
     {
       "id": "common_057",
-      "name": "우비 케이프",
+      "name": "항로 표식케이프칼라",
       "rarity": "common",
-      "collection": "additional-45",
+      "collection": "여행 장비",
       "file": "common/common_057.png",
-      "source": "additional-45/11-common-50-58.png",
-      "sourceSlot": 7,
-      "slot": "body",
+      "slot": "neck",
       "defaultAlignment": {
-        "x": -4,
-        "y": 17,
-        "size": 104
+        "x": 1,
+        "y": 15,
+        "size": 100
       }
     },
     {
       "id": "common_058",
-      "name": "복고 뉴스보이캡",
+      "name": "하루길 납작배낭",
       "rarity": "common",
-      "collection": "additional-45",
+      "collection": "여행 장비",
       "file": "common/common_058.png",
-      "source": "additional-45/11-common-50-58.png",
-      "sourceSlot": 8,
-      "slot": "head",
+      "slot": "body",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": -3,
+        "y": 17,
+        "size": 106
       }
     },
     {
       "id": "common_059",
-      "name": "하트 머리핀",
+      "name": "야영 담요판초",
       "rarity": "common",
-      "collection": "additional-45",
+      "collection": "여행 장비",
       "file": "common/common_059.png",
-      "source": "additional-45/12-common-59-60-rare-25-31.png",
-      "sourceSlot": 0,
-      "slot": "head",
+      "slot": "body",
       "defaultAlignment": {
-        "x": 18,
-        "y": -34,
-        "size": 88
+        "x": 2,
+        "y": 26,
+        "size": 111
       }
     },
     {
       "id": "common_060",
-      "name": "흰색 선캡",
+      "name": "나룻배 방수조끼",
       "rarity": "common",
-      "collection": "additional-45",
+      "collection": "여행 장비",
       "file": "common/common_060.png",
-      "source": "additional-45/12-common-59-60-rare-25-31.png",
-      "sourceSlot": 1,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -48,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_025",
-      "name": "연금술사 보석모",
-      "rarity": "rare",
-      "collection": "additional-45",
-      "file": "rare/rare_025.png",
-      "source": "additional-45/12-common-59-60-rare-25-31.png",
-      "sourceSlot": 2,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_026",
-      "name": "레서판다 후드",
-      "rarity": "rare",
-      "collection": "additional-45",
-      "file": "rare/rare_026.png",
-      "source": "additional-45/12-common-59-60-rare-25-31.png",
-      "sourceSlot": 3,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_027",
-      "name": "달토끼 머리띠",
-      "rarity": "rare",
-      "collection": "additional-45",
-      "file": "rare/rare_027.png",
-      "source": "additional-45/12-common-59-60-rare-25-31.png",
-      "sourceSlot": 4,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_028",
-      "name": "사막 유목민 두건",
-      "rarity": "rare",
-      "collection": "additional-45",
-      "file": "rare/rare_028.png",
-      "source": "additional-45/12-common-59-60-rare-25-31.png",
-      "sourceSlot": 5,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_029",
-      "name": "산호초 후드",
-      "rarity": "rare",
-      "collection": "additional-45",
-      "file": "rare/rare_029.png",
-      "source": "additional-45/12-common-59-60-rare-25-31.png",
-      "sourceSlot": 6,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_030",
-      "name": "장난감 병정 모자",
-      "rarity": "rare",
-      "collection": "additional-45",
-      "file": "rare/rare_030.png",
-      "source": "additional-45/12-common-59-60-rare-25-31.png",
-      "sourceSlot": 7,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -42,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_031",
-      "name": "영화감독 베레모",
-      "rarity": "rare",
-      "collection": "additional-45",
-      "file": "rare/rare_031.png",
-      "source": "additional-45/12-common-59-60-rare-25-31.png",
-      "sourceSlot": 8,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_032",
-      "name": "번개 조종사 모자",
-      "rarity": "rare",
-      "collection": "additional-45",
-      "file": "rare/rare_032.png",
-      "source": "additional-45/13-rare-32-38-epic-13-14.png",
-      "sourceSlot": 0,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_033",
-      "name": "벚꽃 화관",
-      "rarity": "rare",
-      "collection": "additional-45",
-      "file": "rare/rare_033.png",
-      "source": "additional-45/13-rare-32-38-epic-13-14.png",
-      "sourceSlot": 1,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_034",
-      "name": "아케이드 외계인 후드",
-      "rarity": "rare",
-      "collection": "additional-45",
-      "file": "rare/rare_034.png",
-      "source": "additional-45/13-rare-32-38-epic-13-14.png",
-      "sourceSlot": 2,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_035",
-      "name": "고딕 레이스 보닛",
-      "rarity": "rare",
-      "collection": "additional-45",
-      "file": "rare/rare_035.png",
-      "source": "additional-45/13-rare-32-38-epic-13-14.png",
-      "sourceSlot": 3,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_036",
-      "name": "설산 등반가 세트",
-      "rarity": "rare",
-      "collection": "additional-45",
-      "file": "rare/rare_036.png",
-      "source": "additional-45/13-rare-32-38-epic-13-14.png",
-      "sourceSlot": 4,
-      "slot": "full",
-      "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
-      }
-    },
-    {
-      "id": "rare_037",
-      "name": "너구리 도둑 가면",
-      "rarity": "rare",
-      "collection": "additional-45",
-      "file": "rare/rare_037.png",
-      "source": "additional-45/13-rare-32-38-epic-13-14.png",
-      "sourceSlot": 5,
-      "slot": "face",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -8,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_038",
-      "name": "축제 북 머리띠와 띠",
-      "rarity": "rare",
-      "collection": "additional-45",
-      "file": "rare/rare_038.png",
-      "source": "additional-45/13-rare-32-38-epic-13-14.png",
-      "sourceSlot": 6,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -40,
-        "size": 100
-      }
-    },
-    {
-      "id": "epic_013",
-      "name": "오로라 주술사 뿔후드",
-      "rarity": "epic",
-      "collection": "additional-45",
-      "file": "epic/epic_013.png",
-      "source": "additional-45/13-rare-32-38-epic-13-14.png",
-      "sourceSlot": 7,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "epic_014",
-      "name": "기계 부엉이 학자 후드",
-      "rarity": "epic",
-      "collection": "additional-45",
-      "file": "epic/epic_014.png",
-      "source": "additional-45/13-rare-32-38-epic-13-14.png",
-      "sourceSlot": 8,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "epic_015",
-      "name": "바다 신탁 조개 왕관",
-      "rarity": "epic",
-      "collection": "additional-45",
-      "file": "epic/epic_015.png",
-      "source": "additional-45/14-epic-15-19-legendary-05-07-bonus-special.png",
-      "sourceSlot": 0,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -52,
-        "size": 104
-      }
-    },
-    {
-      "id": "epic_016",
-      "name": "벚꽃 수호자 망토",
-      "rarity": "epic",
-      "collection": "additional-45",
-      "file": "epic/epic_016.png",
-      "source": "additional-45/14-epic-15-19-legendary-05-07-bonus-special.png",
-      "sourceSlot": 1,
       "slot": "body",
       "defaultAlignment": {
-        "x": -4,
-        "y": 17,
-        "size": 104
-      }
-    },
-    {
-      "id": "epic_017",
-      "name": "천둥새 조종사 투구",
-      "rarity": "epic",
-      "collection": "additional-45",
-      "file": "epic/epic_017.png",
-      "source": "additional-45/14-epic-15-19-legendary-05-07-bonus-special.png",
-      "sourceSlot": 2,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "epic_018",
-      "name": "달빛 가면무도회 가면",
-      "rarity": "epic",
-      "collection": "additional-45",
-      "file": "epic/epic_018.png",
-      "source": "additional-45/14-epic-15-19-legendary-05-07-bonus-special.png",
-      "sourceSlot": 3,
-      "slot": "face",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -8,
-        "size": 104
-      }
-    },
-    {
-      "id": "epic_019",
-      "name": "마법 도서관 대마법사 모자",
-      "rarity": "epic",
-      "collection": "additional-45",
-      "file": "epic/epic_019.png",
-      "source": "additional-45/14-epic-15-19-legendary-05-07-bonus-special.png",
-      "sourceSlot": 4,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -54,
-        "size": 104
-      }
-    },
-    {
-      "id": "legendary_005",
-      "name": "심연 레비아탄 왕관",
-      "rarity": "legendary",
-      "collection": "additional-45",
-      "file": "legendary/legendary_005.png",
-      "source": "additional-45/14-epic-15-19-legendary-05-07-bonus-special.png",
-      "sourceSlot": 5,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -48,
-        "size": 100
-      }
-    },
-    {
-      "id": "legendary_006",
-      "name": "세계수 군주 관과 망토",
-      "rarity": "legendary",
-      "collection": "additional-45",
-      "file": "legendary/legendary_006.png",
-      "source": "additional-45/14-epic-15-19-legendary-05-07-bonus-special.png",
-      "sourceSlot": 6,
-      "slot": "full",
-      "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
-      }
-    },
-    {
-      "id": "legendary_007",
-      "name": "무지개 오로라 천상 투구",
-      "rarity": "legendary",
-      "collection": "additional-45",
-      "file": "legendary/legendary_007.png",
-      "source": "additional-45/14-epic-15-19-legendary-05-07-bonus-special.png",
-      "sourceSlot": 7,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "special_002",
-      "name": "숨겨진 Stitch 기록관 — 다섯 색상 조각을 이어 만든 패치워크 후드와 감자봇 원형 입 문양 잠금장식",
-      "rarity": "special",
-      "collection": "additional-45",
-      "file": "special/special_002.png",
-      "source": "additional-45/14-epic-15-19-legendary-05-07-bonus-special.png",
-      "sourceSlot": 8,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
+        "x": 0,
+        "y": 20,
         "size": 104
       }
     },
     {
       "id": "common_061",
-      "name": "열차 차장 세트",
+      "name": "수채화 팔레트베레",
       "rarity": "common",
-      "collection": "more-30",
+      "collection": "취미·공예 장비",
       "file": "common/common_061.png",
-      "source": "more-30/15-common-61-66.png",
-      "sourceSlot": 0,
-      "slot": "full",
+      "slot": "head",
       "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
+        "x": 4,
+        "y": -28,
+        "size": 106
       }
     },
     {
       "id": "common_062",
-      "name": "도서관 사서 카디건",
+      "name": "뜨개실 주름빗모",
       "rarity": "common",
-      "collection": "more-30",
+      "collection": "취미·공예 장비",
       "file": "common/common_062.png",
-      "source": "more-30/15-common-61-66.png",
-      "sourceSlot": 1,
-      "slot": "body",
+      "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": 17,
+        "x": 0,
+        "y": -30,
         "size": 104
       }
     },
     {
       "id": "common_063",
-      "name": "배달 라이더 헬멧",
+      "name": "목각 부스러기모",
       "rarity": "common",
-      "collection": "more-30",
+      "collection": "취미·공예 장비",
       "file": "common/common_063.png",
-      "source": "more-30/15-common-61-66.png",
-      "sourceSlot": 2,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 2,
+        "y": -26,
+        "size": 109
       }
     },
     {
       "id": "common_064",
-      "name": "도예가 반다나와 앞치마",
+      "name": "종이접기 학모",
       "rarity": "common",
-      "collection": "more-30",
+      "collection": "취미·공예 장비",
       "file": "common/common_064.png",
-      "source": "more-30/15-common-61-66.png",
-      "sourceSlot": 3,
-      "slot": "full",
+      "slot": "head",
       "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
+        "x": -4,
+        "y": -32,
+        "size": 105
       }
     },
     {
       "id": "common_065",
-      "name": "탐조가 모자와 쌍안경 가방",
+      "name": "사진가 암실베일",
       "rarity": "common",
-      "collection": "more-30",
+      "collection": "취미·공예 장비",
       "file": "common/common_065.png",
-      "source": "more-30/15-common-61-66.png",
-      "sourceSlot": 4,
-      "slot": "full",
+      "slot": "head",
       "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
+        "x": 1,
+        "y": -30,
+        "size": 109
       }
     },
     {
       "id": "common_066",
-      "name": "복고 식당 종이모자",
+      "name": "원예 씨앗족두리",
       "rarity": "common",
-      "collection": "more-30",
+      "collection": "취미·공예 장비",
       "file": "common/common_066.png",
-      "source": "more-30/15-common-61-66.png",
-      "sourceSlot": 5,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 3,
+        "y": -31,
+        "size": 105
       }
     },
     {
       "id": "common_067",
-      "name": "양봉가 모자",
+      "name": "모형선 돛모",
       "rarity": "common",
-      "collection": "more-30",
+      "collection": "취미·공예 장비",
       "file": "common/common_067.png",
-      "source": "more-30/16-common-67-72.png",
-      "sourceSlot": 0,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": -2,
+        "y": -36,
+        "size": 103
       }
     },
     {
       "id": "common_068",
-      "name": "테니스 선캡과 손목밴드",
+      "name": "서예 붓챙모",
       "rarity": "common",
-      "collection": "more-30",
+      "collection": "취미·공예 장비",
       "file": "common/common_068.png",
-      "source": "more-30/16-common-67-72.png",
-      "sourceSlot": 1,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 5,
+        "y": -27,
+        "size": 110
       }
     },
     {
       "id": "common_069",
-      "name": "오케스트라 지휘자 칼라",
+      "name": "자수 골무비녀",
       "rarity": "common",
-      "collection": "more-30",
+      "collection": "취미·공예 장비",
       "file": "common/common_069.png",
-      "source": "more-30/16-common-67-72.png",
-      "sourceSlot": 2,
-      "slot": "neck",
+      "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": 12,
-        "size": 104
+        "x": 2,
+        "y": -23,
+        "size": 110
       }
     },
     {
       "id": "common_070",
-      "name": "스키 고글과 니트밴드",
+      "name": "도예 유약모",
       "rarity": "common",
-      "collection": "more-30",
+      "collection": "취미·공예 장비",
       "file": "common/common_070.png",
-      "source": "more-30/16-common-67-72.png",
-      "sourceSlot": 3,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
+        "x": -3,
         "y": -30,
         "size": 104
       }
     },
     {
       "id": "common_071",
-      "name": "필름 사진가 베레모",
+      "name": "별관측 종이망원모",
       "rarity": "common",
-      "collection": "more-30",
+      "collection": "취미·공예 장비",
       "file": "common/common_071.png",
-      "source": "more-30/16-common-67-72.png",
-      "sourceSlot": 4,
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": 4,
+        "y": -34,
+        "size": 105
       }
     },
     {
       "id": "common_072",
-      "name": "구운 마시멜로 모자",
+      "name": "판화 보호안경",
       "rarity": "common",
-      "collection": "more-30",
+      "collection": "취미·공예 장비",
       "file": "common/common_072.png",
-      "source": "more-30/16-common-67-72.png",
-      "sourceSlot": 5,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -40,
-        "size": 92
-      }
-    },
-    {
-      "id": "rare_039",
-      "name": "붉은 사무라이 투구",
-      "rarity": "rare",
-      "collection": "more-30",
-      "file": "rare/rare_039.png",
-      "source": "more-30/17-rare-39-44.png",
-      "sourceSlot": 0,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_040",
-      "name": "심해 스쿠버 돔",
-      "rarity": "rare",
-      "collection": "more-30",
-      "file": "rare/rare_040.png",
-      "source": "more-30/17-rare-39-44.png",
-      "sourceSlot": 1,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_041",
-      "name": "번개 록스타 헤어",
-      "rarity": "rare",
-      "collection": "more-30",
-      "file": "rare/rare_041.png",
-      "source": "more-30/17-rare-39-44.png",
-      "sourceSlot": 2,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_042",
-      "name": "괴짜 과학자 세트",
-      "rarity": "rare",
-      "collection": "more-30",
-      "file": "rare/rare_042.png",
-      "source": "more-30/17-rare-39-44.png",
-      "sourceSlot": 3,
-      "slot": "full",
-      "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
-      }
-    },
-    {
-      "id": "rare_043",
-      "name": "북방 바이킹 세트",
-      "rarity": "rare",
-      "collection": "more-30",
-      "file": "rare/rare_043.png",
-      "source": "more-30/17-rare-39-44.png",
-      "sourceSlot": 4,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -50,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_044",
-      "name": "파스텔 요정 후드",
-      "rarity": "rare",
-      "collection": "more-30",
-      "file": "rare/rare_044.png",
-      "source": "more-30/17-rare-39-44.png",
-      "sourceSlot": 5,
-      "slot": "head",
-      "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
-      }
-    },
-    {
-      "id": "rare_045",
-      "name": "코믹 히어로 가면",
-      "rarity": "rare",
-      "collection": "more-30",
-      "file": "rare/rare_045.png",
-      "source": "more-30/18-rare-45-48-epic-20-21.png",
-      "sourceSlot": 0,
       "slot": "face",
       "defaultAlignment": {
-        "x": -4,
+        "x": -2,
+        "y": -9,
+        "size": 99
+      }
+    },
+    {
+      "id": "common_073",
+      "name": "구슬공예 반달안경",
+      "rarity": "common",
+      "collection": "취미·공예 장비",
+      "file": "common/common_073.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 2,
         "y": -8,
+        "size": 97
+      }
+    },
+    {
+      "id": "common_074",
+      "name": "모자이크 색조각면",
+      "rarity": "common",
+      "collection": "취미·공예 장비",
+      "file": "common/common_074.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 0,
+        "y": -7,
+        "size": 103
+      }
+    },
+    {
+      "id": "common_075",
+      "name": "뜨개 견본칼라",
+      "rarity": "common",
+      "collection": "취미·공예 장비",
+      "file": "common/common_075.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": 1,
+        "y": 10,
+        "size": 101
+      }
+    },
+    {
+      "id": "common_076",
+      "name": "목공예 줄자펜던트",
+      "rarity": "common",
+      "collection": "취미·공예 장비",
+      "file": "common/common_076.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": -1,
+        "y": 14,
+        "size": 96
+      }
+    },
+    {
+      "id": "common_077",
+      "name": "압화 표본스카프",
+      "rarity": "common",
+      "collection": "취미·공예 장비",
+      "file": "common/common_077.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": 3,
+        "y": 12,
+        "size": 100
+      }
+    },
+    {
+      "id": "common_078",
+      "name": "물감 얼룩작업복",
+      "rarity": "common",
+      "collection": "취미·공예 장비",
+      "file": "common/common_078.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -2,
+        "y": 24,
+        "size": 108
+      }
+    },
+    {
+      "id": "common_079",
+      "name": "가죽공예 도구조끼",
+      "rarity": "common",
+      "collection": "취미·공예 장비",
+      "file": "common/common_079.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": 2,
+        "y": 19,
+        "size": 103
+      }
+    },
+    {
+      "id": "common_080",
+      "name": "연날리기 마름망토",
+      "rarity": "common",
+      "collection": "취미·공예 장비",
+      "file": "common/common_080.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": 0,
+        "y": 27,
+        "size": 112
+      }
+    },
+    {
+      "id": "rare_001",
+      "name": "구름능선 풍향관모",
+      "rarity": "rare",
+      "collection": "탐험가 장비",
+      "file": "rare/rare_001.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 2,
+        "y": -32,
+        "size": 111
+      }
+    },
+    {
+      "id": "rare_002",
+      "name": "동굴수정 채광관",
+      "rarity": "rare",
+      "collection": "탐험가 장비",
+      "file": "rare/rare_002.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -1,
+        "y": -35,
+        "size": 107
+      }
+    },
+    {
+      "id": "rare_003",
+      "name": "협곡 밧줄고리관",
+      "rarity": "rare",
+      "collection": "탐험가 장비",
+      "file": "rare/rare_003.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 3,
+        "y": -29,
+        "size": 112
+      }
+    },
+    {
+      "id": "rare_004",
+      "name": "빙벽 쐐기챙관",
+      "rarity": "rare",
+      "collection": "탐험가 장비",
+      "file": "rare/rare_004.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 1,
+        "y": -33,
+        "size": 110
+      }
+    },
+    {
+      "id": "rare_005",
+      "name": "습지원 부유잎모",
+      "rarity": "rare",
+      "collection": "탐험가 장비",
+      "file": "rare/rare_005.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -3,
+        "y": -27,
+        "size": 114
+      }
+    },
+    {
+      "id": "rare_006",
+      "name": "화산재 여과두름관",
+      "rarity": "rare",
+      "collection": "탐험가 장비",
+      "file": "rare/rare_006.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 0,
+        "y": -36,
+        "size": 105
+      }
+    },
+    {
+      "id": "rare_007",
+      "name": "심해 수압종관",
+      "rarity": "rare",
+      "collection": "탐험가 장비",
+      "file": "rare/rare_007.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 0,
+        "y": -30,
+        "size": 113
+      }
+    },
+    {
+      "id": "rare_008",
+      "name": "별길 입방측량관",
+      "rarity": "rare",
+      "collection": "탐험가 장비",
+      "file": "rare/rare_008.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 4,
+        "y": -34,
+        "size": 109
+      }
+    },
+    {
+      "id": "rare_009",
+      "name": "지층 판독렌즈",
+      "rarity": "rare",
+      "collection": "탐험가 장비",
+      "file": "rare/rare_009.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": -2,
+        "y": -8,
+        "size": 103
+      }
+    },
+    {
+      "id": "rare_010",
+      "name": "폭풍 편광고글",
+      "rarity": "rare",
+      "collection": "탐험가 장비",
+      "file": "rare/rare_010.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 1,
+        "y": -9,
+        "size": 101
+      }
+    },
+    {
+      "id": "rare_011",
+      "name": "광맥 표본칼라",
+      "rarity": "rare",
+      "collection": "탐험가 장비",
+      "file": "rare/rare_011.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": 0,
+        "y": 11,
         "size": 104
       }
     },
     {
-      "id": "rare_046",
-      "name": "빈티지 사립탐정 세트",
+      "id": "rare_012",
+      "name": "등고선 압인목장식",
       "rarity": "rare",
-      "collection": "more-30",
-      "file": "rare/rare_046.png",
-      "source": "more-30/18-rare-45-48-epic-20-21.png",
-      "sourceSlot": 1,
-      "slot": "full",
+      "collection": "탐험가 장비",
+      "file": "rare/rare_012.png",
+      "slot": "neck",
       "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
+        "x": 2,
+        "y": 13,
+        "size": 99
       }
     },
     {
-      "id": "rare_047",
-      "name": "하늘 조종사 세트",
+      "id": "rare_013",
+      "name": "절벽 횡단하네스",
       "rarity": "rare",
-      "collection": "more-30",
-      "file": "rare/rare_047.png",
-      "source": "more-30/18-rare-45-48-epic-20-21.png",
-      "sourceSlot": 2,
-      "slot": "full",
+      "collection": "탐험가 장비",
+      "file": "rare/rare_013.png",
+      "slot": "body",
       "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
+        "x": -1,
+        "y": 20,
+        "size": 108
       }
     },
     {
-      "id": "rare_048",
-      "name": "왕실 벨벳 모자",
+      "id": "rare_014",
+      "name": "지하수 탐침망토",
       "rarity": "rare",
-      "collection": "more-30",
-      "file": "rare/rare_048.png",
-      "source": "more-30/18-rare-45-48-epic-20-21.png",
-      "sourceSlot": 3,
+      "collection": "탐험가 장비",
+      "file": "rare/rare_014.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": 3,
+        "y": 27,
+        "size": 113
+      }
+    },
+    {
+      "id": "rare_015",
+      "name": "빙하 틈새보호갑",
+      "rarity": "rare",
+      "collection": "탐험가 장비",
+      "file": "rare/rare_015.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": 0,
+        "y": 21,
+        "size": 109
+      }
+    },
+    {
+      "id": "rare_016",
+      "name": "바람토끼 쌍귀모",
+      "rarity": "rare",
+      "collection": "생물 영감 장비",
+      "file": "rare/rare_016.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
+        "x": -2,
         "y": -38,
         "size": 104
       }
     },
     {
-      "id": "epic_020",
-      "name": "진홍 쇼군 갑주",
-      "rarity": "epic",
-      "collection": "more-30",
-      "file": "epic/epic_020.png",
-      "source": "more-30/18-rare-45-48-epic-20-21.png",
-      "sourceSlot": 4,
+      "id": "rare_017",
+      "name": "달나방 촉각관",
+      "rarity": "rare",
+      "collection": "생물 영감 장비",
+      "file": "rare/rare_017.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -54,
+        "x": 1,
+        "y": -37,
+        "size": 106
+      }
+    },
+    {
+      "id": "rare_018",
+      "name": "물결가오리 지느러미관",
+      "rarity": "rare",
+      "collection": "생물 영감 장비",
+      "file": "rare/rare_018.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 0,
+        "y": -28,
+        "size": 115
+      }
+    },
+    {
+      "id": "rare_019",
+      "name": "숲아르마딜로 등딱지모",
+      "rarity": "rare",
+      "collection": "생물 영감 장비",
+      "file": "rare/rare_019.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 3,
+        "y": -29,
+        "size": 110
+      }
+    },
+    {
+      "id": "rare_020",
+      "name": "서리올빼미 깃부채모",
+      "rarity": "rare",
+      "collection": "생물 영감 장비",
+      "file": "rare/rare_020.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -1,
+        "y": -36,
+        "size": 105
+      }
+    },
+    {
+      "id": "rare_021",
+      "name": "조수도롱뇽 지느러미띠",
+      "rarity": "rare",
+      "collection": "생물 영감 장비",
+      "file": "rare/rare_021.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 2,
+        "y": -27,
+        "size": 113
+      }
+    },
+    {
+      "id": "rare_022",
+      "name": "씨앗풍뎅이 겹딱지관",
+      "rarity": "rare",
+      "collection": "생물 영감 장비",
+      "file": "rare/rare_022.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 0,
+        "y": -33,
+        "size": 107
+      }
+    },
+    {
+      "id": "rare_023",
+      "name": "새벽제비 쌍깃관",
+      "rarity": "rare",
+      "collection": "생물 영감 장비",
+      "file": "rare/rare_023.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 4,
+        "y": -31,
+        "size": 111
+      }
+    },
+    {
+      "id": "rare_024",
+      "name": "밤물총새 쐐기깃테",
+      "rarity": "rare",
+      "collection": "생물 영감 장비",
+      "file": "rare/rare_024.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 0,
+        "y": -7,
+        "size": 102
+      }
+    },
+    {
+      "id": "rare_025",
+      "name": "산호복어 지느러미가리개",
+      "rarity": "rare",
+      "collection": "생물 영감 장비",
+      "file": "rare/rare_025.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 2,
+        "y": -6,
         "size": 104
+      }
+    },
+    {
+      "id": "rare_026",
+      "name": "조약돌거북 등딱지칼라",
+      "rarity": "rare",
+      "collection": "생물 영감 장비",
+      "file": "rare/rare_026.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": -2,
+        "y": 10,
+        "size": 105
+      }
+    },
+    {
+      "id": "rare_027",
+      "name": "구름새 깃겹망토",
+      "rarity": "rare",
+      "collection": "생물 영감 장비",
+      "file": "rare/rare_027.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": 1,
+        "y": 25,
+        "size": 114
+      }
+    },
+    {
+      "id": "rare_028",
+      "name": "물안개소라 원뿔껍질망토",
+      "rarity": "rare",
+      "collection": "생물 영감 장비",
+      "file": "rare/rare_028.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": 0,
+        "y": 24,
+        "size": 115
+      }
+    },
+    {
+      "id": "rare_029",
+      "name": "별무당벌레 둥근등갑",
+      "rarity": "rare",
+      "collection": "생물 영감 장비",
+      "file": "rare/rare_029.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -1,
+        "y": 19,
+        "size": 110
+      }
+    },
+    {
+      "id": "rare_030",
+      "name": "태엽승강 겹통관",
+      "rarity": "rare",
+      "collection": "소형 기계 장비",
+      "file": "rare/rare_030.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 3,
+        "y": -30,
+        "size": 111
+      }
+    },
+    {
+      "id": "rare_031",
+      "name": "편심캠 높이조절관",
+      "rarity": "rare",
+      "collection": "소형 기계 장비",
+      "file": "rare/rare_031.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -2,
+        "y": -32,
+        "size": 108
+      }
+    },
+    {
+      "id": "rare_032",
+      "name": "진자 균형모",
+      "rarity": "rare",
+      "collection": "소형 기계 장비",
+      "file": "rare/rare_032.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 0,
+        "y": -34,
+        "size": 109
+      }
+    },
+    {
+      "id": "rare_033",
+      "name": "홍채판 통풍관",
+      "rarity": "rare",
+      "collection": "소형 기계 장비",
+      "file": "rare/rare_033.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 1,
+        "y": -31,
+        "size": 110
+      }
+    },
+    {
+      "id": "rare_034",
+      "name": "도르래 승강아치관",
+      "rarity": "rare",
+      "collection": "소형 기계 장비",
+      "file": "rare/rare_034.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 4,
+        "y": -29,
+        "size": 114
+      }
+    },
+    {
+      "id": "rare_035",
+      "name": "회전프리즘 빛관",
+      "rarity": "rare",
+      "collection": "소형 기계 장비",
+      "file": "rare/rare_035.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -1,
+        "y": -35,
+        "size": 106
+      }
+    },
+    {
+      "id": "rare_036",
+      "name": "압축스프링 완충모",
+      "rarity": "rare",
+      "collection": "소형 기계 장비",
+      "file": "rare/rare_036.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 2,
+        "y": -28,
+        "size": 112
+      }
+    },
+    {
+      "id": "rare_037",
+      "name": "전환레버 육각단안테",
+      "rarity": "rare",
+      "collection": "소형 기계 장비",
+      "file": "rare/rare_037.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": -3,
+        "y": -8,
+        "size": 100
+      }
+    },
+    {
+      "id": "rare_038",
+      "name": "톱니초점 쌍렌즈",
+      "rarity": "rare",
+      "collection": "소형 기계 장비",
+      "file": "rare/rare_038.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 1,
+        "y": -9,
+        "size": 101
+      }
+    },
+    {
+      "id": "rare_039",
+      "name": "자동감김 케이블칼라",
+      "rarity": "rare",
+      "collection": "소형 기계 장비",
+      "file": "rare/rare_039.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": 3,
+        "y": 12,
+        "size": 103
+      }
+    },
+    {
+      "id": "rare_040",
+      "name": "자석부상 추목걸이",
+      "rarity": "rare",
+      "collection": "소형 기계 장비",
+      "file": "rare/rare_040.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": 0,
+        "y": 15,
+        "size": 98
+      }
+    },
+    {
+      "id": "rare_041",
+      "name": "폴딩리브 전개조끼",
+      "rarity": "rare",
+      "collection": "소형 기계 장비",
+      "file": "rare/rare_041.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -2,
+        "y": 20,
+        "size": 110
+      }
+    },
+    {
+      "id": "rare_042",
+      "name": "벨로즈 완충갑",
+      "rarity": "rare",
+      "collection": "소형 기계 장비",
+      "file": "rare/rare_042.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": 1,
+        "y": 19,
+        "size": 108
+      }
+    },
+    {
+      "id": "rare_043",
+      "name": "롤러셔터 접이망토",
+      "rarity": "rare",
+      "collection": "소형 기계 장비",
+      "file": "rare/rare_043.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": 0,
+        "y": 26,
+        "size": 113
+      }
+    },
+    {
+      "id": "rare_044",
+      "name": "구름항 비행등표모",
+      "rarity": "rare",
+      "collection": "가상 지역 장비",
+      "file": "rare/rare_044.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 2,
+        "y": -34,
+        "size": 108
+      }
+    },
+    {
+      "id": "rare_045",
+      "name": "유리숲 햇살쐐기관",
+      "rarity": "rare",
+      "collection": "가상 지역 장비",
+      "file": "rare/rare_045.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -1,
+        "y": -37,
+        "size": 105
+      }
+    },
+    {
+      "id": "rare_046",
+      "name": "달샘 계단물결모",
+      "rarity": "rare",
+      "collection": "가상 지역 장비",
+      "file": "rare/rare_046.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 3,
+        "y": -30,
+        "size": 113
+      }
+    },
+    {
+      "id": "rare_047",
+      "name": "잿바람벌판 화산석관",
+      "rarity": "rare",
+      "collection": "가상 지역 장비",
+      "file": "rare/rare_047.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 0,
+        "y": -32,
+        "size": 109
+      }
+    },
+    {
+      "id": "rare_048",
+      "name": "별모래언덕 만조모",
+      "rarity": "rare",
+      "collection": "가상 지역 장비",
+      "file": "rare/rare_048.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 4,
+        "y": -27,
+        "size": 115
+      }
+    },
+    {
+      "id": "rare_049",
+      "name": "청동이끼습원 잎탑모",
+      "rarity": "rare",
+      "collection": "가상 지역 장비",
+      "file": "rare/rare_049.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -2,
+        "y": -36,
+        "size": 106
+      }
+    },
+    {
+      "id": "rare_050",
+      "name": "눈종골짜기 층빙모",
+      "rarity": "rare",
+      "collection": "가상 지역 장비",
+      "file": "rare/rare_050.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 1,
+        "y": -33,
+        "size": 108
+      }
+    },
+    {
+      "id": "rare_051",
+      "name": "자주번개평원 전광챙관",
+      "rarity": "rare",
+      "collection": "가상 지역 장비",
+      "file": "rare/rare_051.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 0,
+        "y": -29,
+        "size": 114
+      }
+    },
+    {
+      "id": "rare_052",
+      "name": "거울안개섬 겹테안경",
+      "rarity": "rare",
+      "collection": "가상 지역 장비",
+      "file": "rare/rare_052.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": -1,
+        "y": -8,
+        "size": 101
+      }
+    },
+    {
+      "id": "rare_053",
+      "name": "푸른혜성해 역장가리개",
+      "rarity": "rare",
+      "collection": "가상 지역 장비",
+      "file": "rare/rare_053.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 2,
+        "y": -7,
+        "size": 104
+      }
+    },
+    {
+      "id": "rare_054",
+      "name": "꿀빛협곡 낙석칼라",
+      "rarity": "rare",
+      "collection": "가상 지역 장비",
+      "file": "rare/rare_054.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": 0,
+        "y": 11,
+        "size": 105
+      }
+    },
+    {
+      "id": "rare_055",
+      "name": "수정비늪 방울망토",
+      "rarity": "rare",
+      "collection": "가상 지역 장비",
+      "file": "rare/rare_055.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": 3,
+        "y": 27,
+        "size": 112
+      }
+    },
+    {
+      "id": "rare_056",
+      "name": "노을톱산맥 능선갑",
+      "rarity": "rare",
+      "collection": "가상 지역 장비",
+      "file": "rare/rare_056.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -2,
+        "y": 20,
+        "size": 110
+      }
+    },
+    {
+      "id": "rare_057",
+      "name": "잔별초원 씨앗바람외투",
+      "rarity": "rare",
+      "collection": "가상 지역 장비",
+      "file": "rare/rare_057.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": 1,
+        "y": 25,
+        "size": 114
+      }
+    },
+    {
+      "id": "epic_001",
+      "name": "기억제본학파 반전책등관",
+      "rarity": "epic",
+      "collection": "마법 학파 장비",
+      "file": "epic/epic_001.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -2,
+        "y": -35,
+        "size": 111
+      }
+    },
+    {
+      "id": "epic_002",
+      "name": "유리연성학파 연화쐐기관",
+      "rarity": "epic",
+      "collection": "마법 학파 장비",
+      "file": "epic/epic_002.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 3,
+        "y": -32,
+        "size": 114
+      }
+    },
+    {
+      "id": "epic_003",
+      "name": "공간기하학파 접면칠각관",
+      "rarity": "epic",
+      "collection": "마법 학파 장비",
+      "file": "epic/epic_003.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 0,
+        "y": -38,
+        "size": 108
+      }
+    },
+    {
+      "id": "epic_004",
+      "name": "무음주문학파 정지파관",
+      "rarity": "epic",
+      "collection": "마법 학파 장비",
+      "file": "epic/epic_004.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -1,
+        "y": -34,
+        "size": 116
+      }
+    },
+    {
+      "id": "epic_005",
+      "name": "변환기호학파 상변가리개",
+      "rarity": "epic",
+      "collection": "마법 학파 장비",
+      "file": "epic/epic_005.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 1,
+        "y": -8,
+        "size": 106
+      }
+    },
+    {
+      "id": "epic_006",
+      "name": "공명술학파 진동턱칼라",
+      "rarity": "epic",
+      "collection": "마법 학파 장비",
+      "file": "epic/epic_006.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": -3,
+        "y": 12,
+        "size": 105
+      }
+    },
+    {
+      "id": "epic_007",
+      "name": "보호결계학파 문턱결계갑",
+      "rarity": "epic",
+      "collection": "마법 학파 장비",
+      "file": "epic/epic_007.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": 0,
+        "y": 22,
+        "size": 115
+      }
+    },
+    {
+      "id": "epic_008",
+      "name": "확률직조학파 우연갈래외투",
+      "rarity": "epic",
+      "collection": "마법 학파 장비",
+      "file": "epic/epic_008.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": 2,
+        "y": 25,
+        "size": 118
+      }
+    },
+    {
+      "id": "epic_009",
+      "name": "수정맥 폐곡관",
+      "rarity": "epic",
+      "collection": "원소 장비",
+      "file": "epic/epic_009.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -2,
+        "y": -37,
+        "size": 110
+      }
+    },
+    {
+      "id": "epic_010",
+      "name": "불꽃심 비틀관",
+      "rarity": "epic",
+      "collection": "원소 장비",
+      "file": "epic/epic_010.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 1,
+        "y": -39,
+        "size": 109
+      }
+    },
+    {
+      "id": "epic_011",
+      "name": "회오리띠 바람관",
+      "rarity": "epic",
+      "collection": "원소 장비",
+      "file": "epic/epic_011.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 4,
+        "y": -31,
+        "size": 117
+      }
+    },
+    {
+      "id": "epic_012",
+      "name": "거석문 대지관",
+      "rarity": "epic",
+      "collection": "원소 장비",
+      "file": "epic/epic_012.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 0,
+        "y": -33,
+        "size": 116
+      }
+    },
+    {
+      "id": "epic_013",
+      "name": "만조마루 물결가리개",
+      "rarity": "epic",
+      "collection": "원소 장비",
+      "file": "epic/epic_013.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 2,
+        "y": -7,
+        "size": 108
+      }
+    },
+    {
+      "id": "epic_014",
+      "name": "뇌광고리 번개테",
+      "rarity": "epic",
+      "collection": "원소 장비",
+      "file": "epic/epic_014.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": -2,
+        "y": -9,
+        "size": 104
+      }
+    },
+    {
+      "id": "epic_015",
+      "name": "서리별 결정칼라",
+      "rarity": "epic",
+      "collection": "원소 장비",
+      "file": "epic/epic_015.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": 0,
+        "y": 14,
+        "size": 107
+      }
+    },
+    {
+      "id": "epic_016",
+      "name": "생장나선 덩굴갑",
+      "rarity": "epic",
+      "collection": "원소 장비",
+      "file": "epic/epic_016.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -1,
+        "y": 20,
+        "size": 119
+      }
+    },
+    {
+      "id": "epic_017",
+      "name": "여백수집회 빈모서리관",
+      "rarity": "epic",
+      "collection": "신비 조직 장비",
+      "file": "epic/epic_017.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -3,
+        "y": -35,
+        "size": 112
+      }
+    },
+    {
+      "id": "epic_018",
+      "name": "반대편창문실 어긋창관",
+      "rarity": "epic",
+      "collection": "신비 조직 장비",
+      "file": "epic/epic_018.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 2,
+        "y": -30,
+        "size": 118
+      }
+    },
+    {
+      "id": "epic_019",
+      "name": "늦은종착기록소 되돌이관",
+      "rarity": "epic",
+      "collection": "신비 조직 장비",
+      "file": "epic/epic_019.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 4,
+        "y": -32,
+        "size": 115
+      }
+    },
+    {
+      "id": "epic_020",
+      "name": "푸른침묵연구회 고요홈관",
+      "rarity": "epic",
+      "collection": "신비 조직 장비",
+      "file": "epic/epic_020.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 0,
+        "y": -33,
+        "size": 113
       }
     },
     {
       "id": "epic_021",
-      "name": "심연 잠수부 압력 헬멧",
+      "name": "첫그늘측량소 그늘부채테",
       "rarity": "epic",
-      "collection": "more-30",
+      "collection": "신비 조직 장비",
       "file": "epic/epic_021.png",
-      "source": "more-30/18-rare-45-48-epic-20-21.png",
-      "sourceSlot": 5,
-      "slot": "head",
+      "slot": "face",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": -1,
+        "y": -8,
+        "size": 107
       }
     },
     {
       "id": "epic_022",
-      "name": "폭풍 록 아이돌 왕관",
+      "name": "잊은계절안내실 계절쐐기칼라",
       "rarity": "epic",
-      "collection": "more-30",
+      "collection": "신비 조직 장비",
       "file": "epic/epic_022.png",
-      "source": "more-30/19-epic-22-24-legendary-08-09-secret-special.png",
-      "sourceSlot": 0,
-      "slot": "head",
+      "slot": "neck",
       "defaultAlignment": {
-        "x": -4,
-        "y": -52,
-        "size": 104
+        "x": 3,
+        "y": 11,
+        "size": 108
       }
     },
     {
       "id": "epic_023",
-      "name": "대연금술사 세트",
+      "name": "무명도형보관소 빈지붕갑",
       "rarity": "epic",
-      "collection": "more-30",
+      "collection": "신비 조직 장비",
       "file": "epic/epic_023.png",
-      "source": "more-30/19-epic-22-24-legendary-08-09-secret-special.png",
-      "sourceSlot": 1,
-      "slot": "full",
+      "slot": "body",
       "defaultAlignment": {
-        "x": -8,
-        "y": -8,
-        "size": 112
+        "x": -2,
+        "y": 19,
+        "size": 116
       }
     },
     {
       "id": "epic_024",
-      "name": "발키리 룬 투구",
+      "name": "느린빛편찬회 늦광외투",
       "rarity": "epic",
-      "collection": "more-30",
+      "collection": "신비 조직 장비",
       "file": "epic/epic_024.png",
-      "source": "more-30/19-epic-22-24-legendary-08-09-secret-special.png",
-      "sourceSlot": 2,
+      "slot": "body",
+      "defaultAlignment": {
+        "x": 2,
+        "y": 27,
+        "size": 117
+      }
+    },
+    {
+      "id": "epic_025",
+      "name": "거꾸로계단 꿈관",
+      "rarity": "epic",
+      "collection": "꿈·차원 장비",
+      "file": "epic/epic_025.png",
       "slot": "head",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": -3,
+        "y": -36,
+        "size": 113
+      }
+    },
+    {
+      "id": "epic_026",
+      "name": "접힌복도 사잇문관",
+      "rarity": "epic",
+      "collection": "꿈·차원 장비",
+      "file": "epic/epic_026.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 1,
+        "y": -34,
+        "size": 116
+      }
+    },
+    {
+      "id": "epic_027",
+      "name": "한박자늦은 모래관",
+      "rarity": "epic",
+      "collection": "꿈·차원 장비",
+      "file": "epic/epic_027.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 4,
+        "y": -32,
+        "size": 114
+      }
+    },
+    {
+      "id": "epic_028",
+      "name": "되감긴미로 포갬관",
+      "rarity": "epic",
+      "collection": "꿈·차원 장비",
+      "file": "epic/epic_028.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 0,
+        "y": -37,
+        "size": 111
+      }
+    },
+    {
+      "id": "epic_029",
+      "name": "어긋난초점 꿈가리개",
+      "rarity": "epic",
+      "collection": "꿈·차원 장비",
+      "file": "epic/epic_029.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 2,
+        "y": -9,
+        "size": 105
+      }
+    },
+    {
+      "id": "epic_030",
+      "name": "위로낙하 반전칼라",
+      "rarity": "epic",
+      "collection": "꿈·차원 장비",
+      "file": "epic/epic_030.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": -1,
+        "y": 13,
+        "size": 106
+      }
+    },
+    {
+      "id": "epic_031",
+      "name": "안팎반전 복도망토",
+      "rarity": "epic",
+      "collection": "꿈·차원 장비",
+      "file": "epic/epic_031.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": 1,
+        "y": 24,
+        "size": 120
+      }
+    },
+    {
+      "id": "legendary_001",
+      "name": "삼중궤도 천구모",
+      "rarity": "legendary",
+      "collection": "천체 장비",
+      "file": "legendary/legendary_001.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -2,
+        "y": -40,
+        "size": 121
+      }
+    },
+    {
+      "id": "legendary_002",
+      "name": "쌍월식 겹달가리개",
+      "rarity": "legendary",
+      "collection": "천체 장비",
+      "file": "legendary/legendary_002.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 1,
+        "y": -9,
+        "size": 111
+      }
+    },
+    {
+      "id": "legendary_003",
+      "name": "별항로 사분의모",
+      "rarity": "legendary",
+      "collection": "천체 장비",
+      "file": "legendary/legendary_003.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 3,
+        "y": -37,
+        "size": 119
+      }
+    },
+    {
+      "id": "legendary_004",
+      "name": "황혼왕조 해시계모",
+      "rarity": "legendary",
+      "collection": "고대 군주 장비",
+      "file": "legendary/legendary_004.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 0,
+        "y": -42,
+        "size": 118
+      }
+    },
+    {
+      "id": "legendary_005",
+      "name": "잊힌군주 세잎인장칼라",
+      "rarity": "legendary",
+      "collection": "고대 군주 장비",
+      "file": "legendary/legendary_005.png",
+      "slot": "neck",
+      "defaultAlignment": {
+        "x": 0,
+        "y": 13,
+        "size": 111
+      }
+    },
+    {
+      "id": "legendary_006",
+      "name": "무명군주 빈좌등갑",
+      "rarity": "legendary",
+      "collection": "고대 군주 장비",
+      "file": "legendary/legendary_006.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": 0,
+        "y": 20,
+        "size": 123
+      }
+    },
+    {
+      "id": "legendary_007",
+      "name": "세계수 공중뿌리차양",
+      "rarity": "legendary",
+      "collection": "세계수·거대 생물 장비",
+      "file": "legendary/legendary_007.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -1,
+        "y": -35,
+        "size": 124
       }
     },
     {
       "id": "legendary_008",
-      "name": "황금 파라오 태양관",
+      "name": "세계수 옹이문가리개",
       "rarity": "legendary",
-      "collection": "more-30",
+      "collection": "세계수·거대 생물 장비",
       "file": "legendary/legendary_008.png",
-      "source": "more-30/19-epic-22-24-legendary-08-09-secret-special.png",
-      "sourceSlot": 3,
-      "slot": "head",
+      "slot": "face",
       "defaultAlignment": {
-        "x": -4,
-        "y": -30,
-        "size": 104
+        "x": -2,
+        "y": -7,
+        "size": 113
       }
     },
     {
       "id": "legendary_009",
-      "name": "유령 가면무도회 후드",
+      "name": "거대걸음 울림등갑",
       "rarity": "legendary",
-      "collection": "more-30",
+      "collection": "세계수·거대 생물 장비",
       "file": "legendary/legendary_009.png",
-      "source": "more-30/19-epic-22-24-legendary-08-09-secret-special.png",
-      "sourceSlot": 4,
-      "slot": "face",
+      "slot": "body",
       "defaultAlignment": {
-        "x": -4,
-        "y": -8,
-        "size": 104
+        "x": 2,
+        "y": 23,
+        "size": 122
+      }
+    },
+    {
+      "id": "legendary_010",
+      "name": "사건지평 깔때기모",
+      "rarity": "legendary",
+      "collection": "우주 현상 장비",
+      "file": "legendary/legendary_010.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 2,
+        "y": -38,
+        "size": 123
+      }
+    },
+    {
+      "id": "legendary_011",
+      "name": "극광폭포 커튼모",
+      "rarity": "legendary",
+      "collection": "우주 현상 장비",
+      "file": "legendary/legendary_011.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 4,
+        "y": -34,
+        "size": 122
+      }
+    },
+    {
+      "id": "legendary_012",
+      "name": "초신성 파열흉갑",
+      "rarity": "legendary",
+      "collection": "우주 현상 장비",
+      "file": "legendary/legendary_012.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": -1,
+        "y": 21,
+        "size": 124
+      }
+    },
+    {
+      "id": "special_001",
+      "name": "빛그림배달 감광가방",
+      "rarity": "special",
+      "collection": "사진 배달",
+      "file": "special/special_001.png",
+      "slot": "body",
+      "defaultAlignment": {
+        "x": 1,
+        "y": 23,
+        "size": 118
+      }
+    },
+    {
+      "id": "special_002",
+      "name": "몰입불씨 초읽기모",
+      "rarity": "special",
+      "collection": "집중 타이머",
+      "file": "special/special_002.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": -1,
+        "y": -36,
+        "size": 116
       }
     },
     {
       "id": "special_003",
-      "name": "다섯 시트의 큐레이터 — 다섯 색상 탭과 감자봇 나선 문양 잠금장식을 단 박물관 큐레이터 세트",
+      "name": "창턱오름 갈고리칼라",
       "rarity": "special",
-      "collection": "more-30",
+      "collection": "창 오르기",
       "file": "special/special_003.png",
-      "source": "more-30/19-epic-22-24-legendary-08-09-secret-special.png",
-      "sourceSlot": 5,
-      "slot": "full",
+      "slot": "neck",
       "defaultAlignment": {
-        "x": -8,
+        "x": 2,
+        "y": 13,
+        "size": 110
+      }
+    },
+    {
+      "id": "special_004",
+      "name": "감차 행운캡슐단안경",
+      "rarity": "special",
+      "collection": "GAMCHA",
+      "file": "special/special_004.png",
+      "slot": "face",
+      "defaultAlignment": {
+        "x": 3,
         "y": -8,
-        "size": 112
+        "size": 108
+      }
+    },
+    {
+      "id": "special_005",
+      "name": "미감이 청록감자모",
+      "rarity": "special",
+      "collection": "미감이 정체성",
+      "file": "special/special_005.png",
+      "slot": "head",
+      "defaultAlignment": {
+        "x": 0,
+        "y": -33,
+        "size": 114
       }
     },
     {

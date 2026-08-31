@@ -17,13 +17,10 @@ struct Manifest {
 struct ManifestCostume {
     id: String,
     rarity: String,
-    #[serde(default)]
-    parent_set_id: Option<String>,
 }
 
 struct CostumeCatalog {
     ids_by_rarity: BTreeMap<GamchaRarity, Vec<String>>,
-    components_by_parent: BTreeMap<String, Vec<String>>,
     drawable_count: usize,
 }
 
@@ -32,7 +29,6 @@ impl CostumeCatalog {
         let manifest: Manifest = serde_json::from_str(include_str!("../../../pack/manifest.json"))
             .expect("embedded costume manifest must be valid JSON");
         let mut ids_by_rarity = BTreeMap::<GamchaRarity, Vec<String>>::new();
-        let mut components_by_parent = BTreeMap::<String, Vec<String>>::new();
         let mut seen = BTreeSet::new();
 
         for costume in manifest.costumes {
@@ -47,26 +43,15 @@ impl CostumeCatalog {
             ids_by_rarity
                 .entry(rarity)
                 .or_default()
-                .push(costume.id.clone());
-            if let Some(parent_set_id) = costume.parent_set_id {
-                components_by_parent
-                    .entry(parent_set_id)
-                    .or_default()
-                    .push(costume.id);
-            }
+                .push(costume.id);
         }
 
         for ids in ids_by_rarity.values_mut() {
             ids.sort_by_key(|id| numeric_suffix(id));
         }
-        for ids in components_by_parent.values_mut() {
-            ids.sort_by_key(|id| numeric_suffix(id));
-        }
-
         let drawable_count = ids_by_rarity.values().map(Vec::len).sum();
         Self {
             ids_by_rarity,
-            components_by_parent,
             drawable_count,
         }
     }
@@ -103,14 +88,6 @@ pub fn costume_ids_for(rarity: GamchaRarity) -> &'static [String] {
         .unwrap_or(&[])
 }
 
-pub fn derived_components(parent_set_id: &str) -> &'static [String] {
-    catalog()
-        .components_by_parent
-        .get(parent_set_id)
-        .map(Vec::as_slice)
-        .unwrap_or(&[])
-}
-
 pub fn drawable_manifest_count() -> usize {
     catalog().drawable_count
 }
@@ -134,5 +111,21 @@ mod tests {
                 .windows(2)
                 .all(|pair| numeric_suffix(&pair[0]) < numeric_suffix(&pair[1])));
         }
+    }
+
+    #[test]
+    fn rarity_pools_cover_all_185_blueprint_ids() {
+        let expected = [
+            (GamchaRarity::Common, 80),
+            (GamchaRarity::Rare, 57),
+            (GamchaRarity::Epic, 31),
+            (GamchaRarity::Legendary, 12),
+            (GamchaRarity::Special, 5),
+        ];
+
+        for (rarity, count) in expected {
+            assert_eq!(costume_ids_for(rarity).len(), count);
+        }
+        assert_eq!(drawable_manifest_count(), 185);
     }
 }

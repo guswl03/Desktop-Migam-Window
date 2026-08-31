@@ -17,12 +17,12 @@ const drawCandidates = manifest.costumes
   >;
 
 describe("costume manifest metadata", () => {
-  it("covers all 156 draw candidates with explicit placement", () => {
-    expect(drawCandidates).toHaveLength(156);
-    expect(new Set(drawCandidates.map(({ id }) => id)).size).toBe(156);
+  it("covers all 185 draw candidates with explicit placement", () => {
+    expect(drawCandidates).toHaveLength(185);
+    expect(new Set(drawCandidates.map(({ id }) => id)).size).toBe(185);
 
     for (const costume of drawCandidates) {
-      expect(["head", "face", "neck", "body", "full"]).toContain(costume.slot);
+      expect(["head", "face", "neck", "body"]).toContain(costume.slot);
       expect(costume.defaultAlignment).toEqual({
         x: expect.any(Number),
         y: expect.any(Number),
@@ -31,15 +31,16 @@ describe("costume manifest metadata", () => {
     }
   });
 
+  it("contains no legacy full-slot runtime row", () => {
+    expect(drawCandidates.some(({ slot }) => slot === "full")).toBe(false);
+  });
+
   it("exposes explicit manifest placement through the runtime catalog", () => {
-    expect(costumeById.get("legendary_003")).toEqual(
+    expect(costumeById.get("common_017")).toEqual(
       expect.objectContaining({
-        slot: "full",
-        defaultAlignment: expect.objectContaining({
-          x: expect.any(Number),
-          y: expect.any(Number),
-          size: expect.any(Number),
-        }),
+        name: "살림꾼 다용도앞치마",
+        slot: "body",
+        defaultAlignment: { x: 0, y: 22, size: 108 },
       }),
     );
   });

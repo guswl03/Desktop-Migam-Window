@@ -12,6 +12,7 @@ import {
   loadBlueprint,
   validateBlueprint,
 } from "./costume-blueprint.mjs";
+import { applyBlueprint } from "./costume-promote-candidates.mjs";
 
 const execFileAsync = promisify(execFile);
 
@@ -562,6 +563,53 @@ test("complete blueprint CLI reports the concept-lock summary", async () => {
     stdout.trim(),
     "items=185 missing=0 duplicateName=0 duplicateSilhouette=0 duplicatePalette=0 duplicateDetail=0",
   );
+});
+
+test("applies all 185 blueprint rows while preserving only the three default costumes", async () => {
+  const blueprint = await loadBlueprint();
+  const defaultCostumes = [
+    { id: "default_ghost", name: "classic ghost", rarity: "default", collection: "singles", file: "default/default_ghost.png", source: "singles/classic-sheet-ghost.png", sourceSlot: 0 },
+    { id: "default_raincoat", name: "yellow raincoat", rarity: "default", collection: "singles", file: "default/default_raincoat.png", source: "singles/yellow-raincoat.png", sourceSlot: 0 },
+    { id: "default_clown", name: "rainbow clown", rarity: "default", collection: "singles", file: "default/default_clown.png", source: "singles/rainbow-clown.png", sourceSlot: 0 },
+  ];
+  const manifest = {
+    schemaVersion: 1,
+    id: "gamjabot-costumes",
+    canvas: { width: 256, height: 256 },
+    assetType: "standalone-transparent-costume",
+    runtimeAlignment: "not-applied",
+    eyeNoisePolicy: "standalone source regions only; wearer previews and eye pixels excluded",
+    count: 4,
+    costumes: [
+      {
+        id: "common_001", name: "old item", rarity: "common", collection: "old",
+        file: "common/common_001.png", source: "old-sheet.png", sourceSlot: 0,
+        slot: "full", defaultAlignment: { x: -8, y: -8, size: 112 },
+      },
+      ...defaultCostumes,
+    ],
+  };
+
+  const result = applyBlueprint(manifest, blueprint);
+  const drawables = result.costumes.filter(({ rarity }) => rarity !== "default");
+
+  assert.equal(result.count, 188);
+  assert.equal(drawables.length, 185);
+  assert.deepEqual(result.costumes.slice(-3), defaultCostumes);
+  assert.deepEqual(result.canvas, { width: 256, height: 256 });
+  assert.deepEqual(drawables[0], {
+    id: "common_001", name: "새벽 우편모", rarity: "common", collection: "생활 도구",
+    file: "common/common_001.png", slot: "head",
+    defaultAlignment: { x: -4, y: -30, size: 104 },
+  });
+  const drawableFields = [
+    "collection", "defaultAlignment", "file", "id", "name", "rarity", "slot",
+  ];
+  for (const row of drawables) {
+    assert.deepEqual(Object.keys(row).sort(), drawableFields, row.id);
+  }
+  assert.ok(drawables.every(({ id, rarity, file, slot }) =>
+    file === `${rarity}/${id}.png` && ["head", "face", "neck", "body"].includes(slot)));
 });
 
 test("assembles a standalone transparent image prompt", () => {

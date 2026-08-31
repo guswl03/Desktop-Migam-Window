@@ -108,12 +108,12 @@ async function loadManifest() {
 
 async function validateManifestAssets(manifest) {
   const rows = buildSheetRows(manifest.costumes);
-  if (rows.length !== 156 || new Set(rows.map(({ id }) => id)).size !== 156) {
-    throw new Error(`expected 156 unique draw candidates, got ${rows.length}`);
+  if (rows.length !== 185 || new Set(rows.map(({ id }) => id)).size !== 185) {
+    throw new Error(`expected 185 unique draw candidates, got ${rows.length}`);
   }
   for (const costume of rows) {
     if (!rarities.includes(costume.rarity)) throw new Error(`${costume.id}: invalid rarity`);
-    if (!["head", "face", "neck", "body", "full"].includes(costume.slot)) {
+    if (!["head", "face", "neck", "body"].includes(costume.slot)) {
       throw new Error(`${costume.id}: invalid slot`);
     }
     const alignment = costume.defaultAlignment;

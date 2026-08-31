@@ -18,6 +18,41 @@ import { readPngRgba } from "./lib/png-rgba.mjs";
 const repositoryRoot = fileURLToPath(new URL("..", import.meta.url));
 const rarities = ["common", "rare", "epic", "legendary", "special"];
 
+export function applyBlueprint(manifest, items) {
+  const defaults = manifest?.costumes?.filter(({ rarity }) => rarity === "default") ?? [];
+  const expected = expectedCatalogIds();
+  if (!Array.isArray(items) || items.length !== expected.size) {
+    throw new Error(`expected 185 blueprint rows, got ${items?.length ?? 0}`);
+  }
+  if (defaults.length !== 3) {
+    throw new Error(`expected 3 default costumes, got ${defaults.length}`);
+  }
+
+  const seen = new Set();
+  const drawables = items.map((item) => {
+    const expectedRarity = expected.get(item?.id);
+    if (!expectedRarity || item.rarity !== expectedRarity || seen.has(item.id)) {
+      throw new Error(`${item?.id ?? "<blueprint row>"}: invalid blueprint ID or rarity`);
+    }
+    seen.add(item.id);
+    return {
+      id: item.id,
+      name: item.name,
+      rarity: item.rarity,
+      collection: item.theme,
+      file: `${item.rarity}/${item.id}.png`,
+      slot: item.slot,
+      defaultAlignment: { ...item.defaultAlignment },
+    };
+  });
+
+  return {
+    ...manifest,
+    count: drawables.length + defaults.length,
+    costumes: [...drawables, ...defaults],
+  };
+}
+
 function isWindowsNetworkOrDevicePath(path) {
   return typeof path === "string" && /^(?:\\\\|\/\/)/.test(path);
 }
@@ -503,8 +538,20 @@ async function main() {
     await loadAcceptedCandidates(repositoryRoot),
   );
   if (plan.errors.length) throw new Error(plan.errors.join("\n"));
-  if (apply[0] === "--apply") console.log(`promoted=${await applyPromotion()}`);
-  else console.log(`validated=${plan.copies.length}`);
+  if (apply[0] === "--apply") {
+    const promoted = await applyPromotion();
+    const manifestPath = resolve(repositoryRoot, "pack", "manifest.json");
+    const manifest = JSON.parse(await readFile(manifestPath, "utf8"));
+    const nextManifest = applyBlueprint(manifest, await loadBlueprint(repositoryRoot));
+    const temporaryManifest = temporaryPath(resolve(repositoryRoot, "pack"), "manifest", "promote.tmp");
+    await writeFile(temporaryManifest, `${JSON.stringify(nextManifest, null, 2)}\n`, { flag: "wx" });
+    try {
+      await rename(temporaryManifest, manifestPath);
+    } finally {
+      await rm(temporaryManifest, { force: true });
+    }
+    console.log(`promoted=${promoted} manifest=${nextManifest.count}`);
+  } else console.log(`validated=${plan.copies.length}`);
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {

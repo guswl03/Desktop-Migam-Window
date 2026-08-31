@@ -21,9 +21,9 @@ export interface Costume {
   defaultAlignment: CostumeAlignment;
 }
 
-export type CostumeSlot = "head" | "face" | "neck" | "body" | "full";
+export type CostumeSlot = "head" | "face" | "neck" | "body";
 
-const costumeSlots: CostumeSlot[] = ["head", "face", "neck", "body", "full"];
+const costumeSlots: CostumeSlot[] = ["head", "face", "neck", "body"];
 
 export function readCostumePlacement(costume: ManifestCostume): {
   slot: CostumeSlot;
