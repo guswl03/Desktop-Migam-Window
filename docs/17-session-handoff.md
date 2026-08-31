@@ -451,3 +451,22 @@
 알려진 위험: 자동 검증은 모두 통과했지만 위 실제 Windows 상호작용·시각 확인은 ACL 제한 때문에 아직 완료하지 못함
 실행/테스트 방법: README의 개발 실행과 카탈로그 QA 명령 사용
 ```
+
+## 2026-09-01 v0.2.2 최종 배포 인수인계
+
+- PR [#42](https://github.com/guswl03/Desktop-Migam-Window/pull/42)는 충돌 없이 `main`에 병합됐다. 앱 릴리스 기준 커밋은 `aca6b49c8566795070a30a0ea4a23252bc523dfa`다.
+- 최종 도감은 신규 185종과 별도 ID로 복구한 기존 129종을 모두 유지한다. 추첨 코스튬은 314종이고 기본 3종을 포함한 매니페스트는 총 317종이다.
+- 등급 수는 Common 149·Rare 92·Epic 52·Legendary 13·Special 8이며, 슬롯 수는 head 181·face 38·neck 31·body 64다.
+- 카탈로그 314종의 ID·이름·파일 경로가 고유하고, 이미지 규격·여백·edge contact·alpha dust·배치 및 실루엣·팔레트·디테일 중복 검사를 통과했다.
+- 프런트엔드 76개, 에셋 57개, Rust 52개 테스트와 TypeScript, production build, rustfmt, Clippy, Windows NSIS build를 통과했다.
+- main GitHub Actions run [33429191453](https://github.com/guswl03/Desktop-Migam-Window/actions/runs/33429191453)은 첫 실행에서 기존 브라우저 레이아웃 테스트가 15초 경계에 걸렸으나 동일 커밋 재실행에서 npm test·typecheck·build·cargo check가 모두 통과했다.
+- [v0.2.2 릴리스](https://github.com/guswl03/Desktop-Migam-Window/releases/tag/v0.2.2)에 `migam.desktop_0.2.2_x64-setup.exe`를 게시했다. 크기는 31,707,285 bytes, SHA-256은 `F76101043B0D02FBD3A17E29149E20800C4063AC8C1C7288299C04D7015943AE`다.
+
+```text
+현재 상태: v0.2.2 병합·태그·Windows x64 설치 파일 배포 완료
+마지막 성공 검사: 2026-09-01 프런트 76·에셋 57·Rust 52, catalog 314, TypeScript·production build·fmt·Clippy·NSIS·main CI 통과
+완료한 기능: 신규 185종과 복구 129종을 각각 독립 아이템으로 유지한 314종 도감, 실제 총수 표시, 이미지·배치·중복 QA, v0.2.2 릴리스
+다음으로 할 일: 실제 설치 환경에서 대표 추첨·착용·클리핑과 사진 배달·뽀모도로·창 오르기·설정 회귀를 수동 확인
+알려진 위험: 설치 파일은 코드 서명이 없어 SmartScreen 경고가 나타날 수 있음
+실행/테스트 방법: v0.2.2 설치 파일 또는 README의 개발 실행·카탈로그 QA 명령 사용
+```

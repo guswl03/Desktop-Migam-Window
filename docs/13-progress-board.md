@@ -361,3 +361,25 @@
 현재 상태: 신규 185종 도감의 자동 검증과 개발 앱 실행까지 통과했다. `src-tauri/Cargo.toml`의 내용 동일 working-tree refresh는 index와 같은 blob hash로 보존하고 커밋에서 제외했다. 배포·푸시·PR·병합은 수행하지 않았다.
 
 남은 수동 확인: 일반 Windows 사용자 세션에서 등급별 대표 아이템의 추첨·새 이름·착용·단일 장착·클리핑 없음과 기존 소유 ID 복원, 사진 배달·뽀모도로·창 오르기·설정 회귀를 눈으로 확인한다. 현재 연결 worktree의 deny-read ACL 때문에 UI 자동화 도구로는 이 확인을 완료하지 못했다.
+
+## 2026-09-01 v0.2.2 도감 확장·최종 릴리스
+
+- [x] 신규 게임 아이템 185종과 별도 ID로 복구한 기존 아이템 129종을 함께 유지해 추첨 코스튬 314종 구성
+- [x] 기본 아이템 3종을 포함한 `pack/manifest.json` 총 317종 확인
+- [x] 등급별 Common 149·Rare 92·Epic 52·Legendary 13·Special 8, 슬롯별 head 181·face 38·neck 31·body 64 확인
+- [x] 314개 프로덕션 PNG의 256×256 RGBA·여백·잘림·노이즈·배치와 ID·이름·실루엣·팔레트·디테일 중복 0건 확인
+- [x] 로딩 중 도감 총수를 고정값이 아닌 실제 매니페스트 길이로 표시
+- [x] PR #42를 충돌 없이 `main`에 병합하고 merge commit `aca6b49c8566795070a30a0ea4a23252bc523dfa`에 `v0.2.2` 태그 게시
+- [x] Windows 11 x64 NSIS 설치 파일을 GitHub Release에 게시
+
+| 날짜 | 검사 | 결과 | 비고 |
+|---|---|---|---|
+| 2026-09-01 | `npm test`, `npm run typecheck`, `npm run build` | 통과 | 프런트 76개, TypeScript, Vite production build 396 modules |
+| 2026-09-01 | 카탈로그·에셋 QA | 통과 | 에셋 57/57, blueprint/candidate/production 314, 등급·슬롯 합계 일치, 중복 0 |
+| 2026-09-01 | `cargo test`, `cargo fmt --check`, `cargo clippy --all-targets -- -D warnings` | 통과 | Rust 52개, 포맷·Clippy 경고 0 |
+| 2026-09-01 | PR·main GitHub Actions | 통과 | PR 최종 SHA `280dd52`, main run `33429191453` 재실행 전체 통과 |
+| 2026-09-01 | Windows NSIS release build | 통과 | 31,707,285 bytes, SHA-256 `F76101043B0D02FBD3A17E29149E20800C4063AC8C1C7288299C04D7015943AE` |
+
+현재 상태: `v0.2.2` 병합·태그·Windows 설치 파일 배포 완료. 릴리스 주소는 <https://github.com/guswl03/Desktop-Migam-Window/releases/tag/v0.2.2>이다.
+
+남은 수동 확인: 실제 설치 환경에서 대표 아이템 추첨·착용·클리핑과 사진 배달·뽀모도로·창 오르기·설정 회귀를 눈으로 확인한다. 설치 파일은 코드 서명이 없어 SmartScreen 경고가 나타날 수 있다.
