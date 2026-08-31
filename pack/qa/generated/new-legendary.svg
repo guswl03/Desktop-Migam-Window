@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2312" height="2112" viewBox="0 0 2312 2112">
+  <title>New Legendary catalog QA</title>
+  <desc>Twelve accepted Legendary wearables; fundamentally new outer structures, zero crown and zero hood forms; isolated four-times logical scale and actual 96px worn placements.</desc>
+  <defs>
+    <pattern id="checker" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="#f1f1f1"/><rect width="8" height="8" fill="#d8d8d8"/><rect x="8" y="8" width="8" height="8" fill="#d8d8d8"/></pattern>
+    <style>text{font-family:"Segoe UI",sans-serif;fill:#f4f4f5}.section{font:700 12px Consolas,monospace;fill:#aeb2c0;letter-spacing:1px}.id{font:700 18px Consolas,monospace;fill:#f2c66d}.name{font-size:19px;font-weight:700}.meta{font:13px Consolas,monospace;fill:#ffcf53}</style>
+  </defs>
+  <rect width="100%" height="100%" fill="#17181c"/>
+  <g class="legendary" data-id="legendary_001" transform="translate(12 12)">
+    <rect width="448" height="688" rx="8" fill="#222329" stroke="#f2c66d" stroke-width="2" />
+    <text x="20" y="28" class="section">ISOLATED · 4X LOGICAL</text>
+    <rect x="32" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../accepted/legendary/legendary_001.png" x="32" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" image-rendering="pixelated" />
+    <text x="20" y="458" class="id">legendary_001</text>
+    <text x="20" y="484" class="name">삼중궤도 천구모</text>
+    <text x="20" y="507" class="meta">LEGENDARY · head · x -2 · y -40 · size 121</text>
+    <text x="20" y="532" class="section">WORN · PET 96PX</text>
+    <rect x="136" y="540" width="176" height="136" fill="url(#checker)" stroke="#777" />
+    <svg x="176" y="556" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+      <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      <image href="../accepted/legendary/legendary_001.png" x="-2" y="-40" width="121" height="121" preserveAspectRatio="xMidYMid meet" />
+    </svg>
+  </g>
+  <g class="legendary" data-id="legendary_002" transform="translate(472 12)">
+    <rect width="448" height="688" rx="8" fill="#222329" stroke="#f2c66d" stroke-width="2" />
+    <text x="20" y="28" class="section">ISOLATED · 4X LOGICAL</text>
+    <rect x="32" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../accepted/legendary/legendary_002.png" x="32" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" image-rendering="pixelated" />
+    <text x="20" y="458" class="id">legendary_002</text>
+    <text x="20" y="484" class="name">쌍월식 겹달가리개</text>
+    <text x="20" y="507" class="meta">LEGENDARY · face · x 1 · y -9 · size 111</text>
+    <text x="20" y="532" class="section">WORN · PET 96PX</text>
+    <rect x="136" y="540" width="176" height="136" fill="url(#checker)" stroke="#777" />
+    <svg x="176" y="556" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+      <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      <image href="../accepted/legendary/legendary_002.png" x="1" y="-9" width="111" height="111" preserveAspectRatio="xMidYMid meet" />
+    </svg>
+  </g>
+  <g class="legendary" data-id="legendary_003" transform="translate(932 12)">
+    <rect width="448" height="688" rx="8" fill="#222329" stroke="#f2c66d" stroke-width="2" />
+    <text x="20" y="28" class="section">ISOLATED · 4X LOGICAL</text>
+    <rect x="32" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../accepted/legendary/legendary_003.png" x="32" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" image-rendering="pixelated" />
+    <text x="20" y="458" class="id">legendary_003</text>
+    <text x="20" y="484" class="name">별항로 사분의모</text>
+    <text x="20" y="507" class="meta">LEGENDARY · head · x 3 · y -37 · size 119</text>
+    <text x="20" y="532" class="section">WORN · PET 96PX</text>
+    <rect x="136" y="540" width="176" height="136" fill="url(#checker)" stroke="#777" />
+    <svg x="176" y="556" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+      <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      <image href="../accepted/legendary/legendary_003.png" x="3" y="-37" width="119" height="119" preserveAspectRatio="xMidYMid meet" />
+    </svg>
+  </g>
+  <g class="legendary" data-id="legendary_004" transform="translate(1392 12)">
+    <rect width="448" height="688" rx="8" fill="#222329" stroke="#f2c66d" stroke-width="2" />
+    <text x="20" y="28" class="section">ISOLATED · 4X LOGICAL</text>
+    <rect x="32" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../accepted/legendary/legendary_004.png" x="32" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" image-rendering="pixelated" />
+    <text x="20" y="458" class="id">legendary_004</text>
+    <text x="20" y="484" class="name">황혼왕조 해시계모</text>
+    <text x="20" y="507" class="meta">LEGENDARY · head · x 0 · y -42 · size 118</text>
+    <text x="20" y="532" class="section">WORN · PET 96PX</text>
+    <rect x="136" y="540" width="176" height="136" fill="url(#checker)" stroke="#777" />
+    <svg x="176" y="556" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+      <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      <image href="../accepted/legendary/legendary_004.png" x="0" y="-42" width="118" height="118" preserveAspectRatio="xMidYMid meet" />
+    </svg>
+  </g>
+  <g class="legendary" data-id="legendary_005" transform="translate(1852 12)">
+    <rect width="448" height="688" rx="8" fill="#222329" stroke="#f2c66d" stroke-width="2" />
+    <text x="20" y="28" class="section">ISOLATED · 4X LOGICAL</text>
+    <rect x="32" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../accepted/legendary/legendary_005.png" x="32" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" image-rendering="pixelated" />
+    <text x="20" y="458" class="id">legendary_005</text>
+    <text x="20" y="484" class="name">잊힌군주 세잎인장칼라</text>
+    <text x="20" y="507" class="meta">LEGENDARY · neck · x 0 · y 13 · size 111</text>
+    <text x="20" y="532" class="section">WORN · PET 96PX</text>
+    <rect x="136" y="540" width="176" height="136" fill="url(#checker)" stroke="#777" />
+    <svg x="176" y="556" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+      <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      <image href="../accepted/legendary/legendary_005.png" x="0" y="13" width="111" height="111" preserveAspectRatio="xMidYMid meet" />
+    </svg>
+  </g>
+  <g class="legendary" data-id="legendary_006" transform="translate(12 712)">
+    <rect width="448" height="688" rx="8" fill="#222329" stroke="#f2c66d" stroke-width="2" />
+    <text x="20" y="28" class="section">ISOLATED · 4X LOGICAL</text>
+    <rect x="32" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../accepted/legendary/legendary_006.png" x="32" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" image-rendering="pixelated" />
+    <text x="20" y="458" class="id">legendary_006</text>
+    <text x="20" y="484" class="name">무명군주 빈좌등갑</text>
+    <text x="20" y="507" class="meta">LEGENDARY · body · x 0 · y 20 · size 123</text>
+    <text x="20" y="532" class="section">WORN · PET 96PX</text>
+    <rect x="136" y="540" width="176" height="136" fill="url(#checker)" stroke="#777" />
+    <svg x="176" y="556" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+      <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      <image href="../accepted/legendary/legendary_006.png" x="0" y="20" width="123" height="123" preserveAspectRatio="xMidYMid meet" />
+    </svg>
+  </g>
+  <g class="legendary" data-id="legendary_007" transform="translate(472 712)">
+    <rect width="448" height="688" rx="8" fill="#222329" stroke="#f2c66d" stroke-width="2" />
+    <text x="20" y="28" class="section">ISOLATED · 4X LOGICAL</text>
+    <rect x="32" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../accepted/legendary/legendary_007.png" x="32" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" image-rendering="pixelated" />
+    <text x="20" y="458" class="id">legendary_007</text>
+    <text x="20" y="484" class="name">세계수 공중뿌리차양</text>
+    <text x="20" y="507" class="meta">LEGENDARY · head · x -1 · y -35 · size 124</text>
+    <text x="20" y="532" class="section">WORN · PET 96PX</text>
+    <rect x="136" y="540" width="176" height="136" fill="url(#checker)" stroke="#777" />
+    <svg x="176" y="556" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+      <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      <image href="../accepted/legendary/legendary_007.png" x="-1" y="-35" width="124" height="124" preserveAspectRatio="xMidYMid meet" />
+    </svg>
+  </g>
+  <g class="legendary" data-id="legendary_008" transform="translate(932 712)">
+    <rect width="448" height="688" rx="8" fill="#222329" stroke="#f2c66d" stroke-width="2" />
+    <text x="20" y="28" class="section">ISOLATED · 4X LOGICAL</text>
+    <rect x="32" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../accepted/legendary/legendary_008.png" x="32" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" image-rendering="pixelated" />
+    <text x="20" y="458" class="id">legendary_008</text>
+    <text x="20" y="484" class="name">세계수 옹이문가리개</text>
+    <text x="20" y="507" class="meta">LEGENDARY · face · x -2 · y -7 · size 113</text>
+    <text x="20" y="532" class="section">WORN · PET 96PX</text>
+    <rect x="136" y="540" width="176" height="136" fill="url(#checker)" stroke="#777" />
+    <svg x="176" y="556" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+      <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      <image href="../accepted/legendary/legendary_008.png" x="-2" y="-7" width="113" height="113" preserveAspectRatio="xMidYMid meet" />
+    </svg>
+  </g>
+  <g class="legendary" data-id="legendary_009" transform="translate(1392 712)">
+    <rect width="448" height="688" rx="8" fill="#222329" stroke="#f2c66d" stroke-width="2" />
+    <text x="20" y="28" class="section">ISOLATED · 4X LOGICAL</text>
+    <rect x="32" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../accepted/legendary/legendary_009.png" x="32" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" image-rendering="pixelated" />
+    <text x="20" y="458" class="id">legendary_009</text>
+    <text x="20" y="484" class="name">거대걸음 울림등갑</text>
+    <text x="20" y="507" class="meta">LEGENDARY · body · x 2 · y 23 · size 122</text>
+    <text x="20" y="532" class="section">WORN · PET 96PX</text>
+    <rect x="136" y="540" width="176" height="136" fill="url(#checker)" stroke="#777" />
+    <svg x="176" y="556" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+      <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      <image href="../accepted/legendary/legendary_009.png" x="2" y="23" width="122" height="122" preserveAspectRatio="xMidYMid meet" />
+    </svg>
+  </g>
+  <g class="legendary" data-id="legendary_010" transform="translate(1852 712)">
+    <rect width="448" height="688" rx="8" fill="#222329" stroke="#f2c66d" stroke-width="2" />
+    <text x="20" y="28" class="section">ISOLATED · 4X LOGICAL</text>
+    <rect x="32" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../accepted/legendary/legendary_010.png" x="32" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" image-rendering="pixelated" />
+    <text x="20" y="458" class="id">legendary_010</text>
+    <text x="20" y="484" class="name">사건지평 깔때기모</text>
+    <text x="20" y="507" class="meta">LEGENDARY · head · x 2 · y -38 · size 123</text>
+    <text x="20" y="532" class="section">WORN · PET 96PX</text>
+    <rect x="136" y="540" width="176" height="136" fill="url(#checker)" stroke="#777" />
+    <svg x="176" y="556" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+      <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      <image href="../accepted/legendary/legendary_010.png" x="2" y="-38" width="123" height="123" preserveAspectRatio="xMidYMid meet" />
+    </svg>
+  </g>
+  <g class="legendary" data-id="legendary_011" transform="translate(12 1412)">
+    <rect width="448" height="688" rx="8" fill="#222329" stroke="#f2c66d" stroke-width="2" />
+    <text x="20" y="28" class="section">ISOLATED · 4X LOGICAL</text>
+    <rect x="32" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../accepted/legendary/legendary_011.png" x="32" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" image-rendering="pixelated" />
+    <text x="20" y="458" class="id">legendary_011</text>
+    <text x="20" y="484" class="name">극광폭포 커튼모</text>
+    <text x="20" y="507" class="meta">LEGENDARY · head · x 4 · y -34 · size 122</text>
+    <text x="20" y="532" class="section">WORN · PET 96PX</text>
+    <rect x="136" y="540" width="176" height="136" fill="url(#checker)" stroke="#777" />
+    <svg x="176" y="556" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+      <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      <image href="../accepted/legendary/legendary_011.png" x="4" y="-34" width="122" height="122" preserveAspectRatio="xMidYMid meet" />
+    </svg>
+  </g>
+  <g class="legendary" data-id="legendary_012" transform="translate(472 1412)">
+    <rect width="448" height="688" rx="8" fill="#222329" stroke="#f2c66d" stroke-width="2" />
+    <text x="20" y="28" class="section">ISOLATED · 4X LOGICAL</text>
+    <rect x="32" y="42" width="384" height="384" fill="url(#checker)" stroke="#777" />
+    <image href="../accepted/legendary/legendary_012.png" x="32" y="42" width="384" height="384" preserveAspectRatio="xMidYMid meet" image-rendering="pixelated" />
+    <text x="20" y="458" class="id">legendary_012</text>
+    <text x="20" y="484" class="name">초신성 파열흉갑</text>
+    <text x="20" y="507" class="meta">LEGENDARY · body · x -1 · y 21 · size 124</text>
+    <text x="20" y="532" class="section">WORN · PET 96PX</text>
+    <rect x="136" y="540" width="176" height="136" fill="url(#checker)" stroke="#777" />
+    <svg x="176" y="556" width="96" height="104" viewBox="0 0 96 104" overflow="hidden">
+      <image href="../../../images/characters/gamjabot/references/base-spritesheet-extended.png" x="0" y="0" width="768" height="1144" />
+      <image href="../accepted/legendary/legendary_012.png" x="-1" y="21" width="124" height="124" preserveAspectRatio="xMidYMid meet" />
+    </svg>
+  </g>
+</svg>

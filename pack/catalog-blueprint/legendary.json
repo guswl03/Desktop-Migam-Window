@@ -35,7 +35,7 @@
     "signatureDetail": "두 초승달판이 겹치는 한쪽 끝의 복숭아색 코로나테",
     "prompt": "서로 반대 방향의 두 초승달판이 양끝에서 붙어 하나가 된 단일 얼굴 가리개 한 개, 가운데 아몬드형 빈틈과 한쪽 코로나테만 남긴 넓고 읽기 쉬운 외곽",
     "defaultAlignment": { "x": 1, "y": -9, "size": 111 },
-    "qaState": "planned"
+    "qaState": "accepted"
   },
   {
     "id": "legendary_003",
@@ -54,7 +54,7 @@
     "signatureDetail": "사분원 호의 가운데에 박힌 청록색 단일 항로못",
     "prompt": "굵은 호와 대각살이 받침띠에 완전히 연결된 사분의 형태 머리 장식 한 개, 사분원 외곽과 청록색 항로못 하나를 중심으로 단순하고 장엄하게 표현",
     "defaultAlignment": { "x": 3, "y": -37, "size": 119 },
-    "qaState": "planned"
+    "qaState": "accepted"
   },
   {
     "id": "legendary_004",
@@ -73,7 +73,7 @@
     "signatureDetail": "반원 받침을 가르는 청금색 긴 그림자쐐기 하나",
     "prompt": "반원 받침과 비스듬한 사각 기둥판이 한 덩어리로 이어진 해시계형 머리 장식 한 개, 실제 문화의 표장 없이 긴 그림자쐐기 하나만 강조",
     "defaultAlignment": { "x": 0, "y": -42, "size": 118 },
-    "qaState": "planned"
+    "qaState": "accepted"
   },
   {
     "id": "legendary_005",
@@ -92,7 +92,7 @@
     "signatureDetail": "원형 윗판 중앙의 석류색 세잎매듭 하나",
     "prompt": "완전히 닫힌 원형 윗판과 세 갈래 둥근 아랫잎이 한 덩어리로 이어진 대칭형 가슴받이칼라 한 개, 좌우 대칭 외곽과 세잎매듭 하나만 크게 표현",
     "defaultAlignment": { "x": 0, "y": 13, "size": 111 },
-    "qaState": "planned"
+    "qaState": "accepted"
   },
   {
     "id": "legendary_006",
@@ -111,7 +111,7 @@
     "signatureDetail": "오각 등받이 중앙의 호박색 비어 있는 타원홈",
     "prompt": "높은 오각 등받이판과 아래 곡선 받침이 붙어 있는 빈 왕좌 형태의 단일 등갑 한 개, 실제 의자 부품이나 인물 없이 하나의 착용물로 단순화",
     "defaultAlignment": { "x": 0, "y": 20, "size": 123 },
-    "qaState": "planned"
+    "qaState": "accepted"
   },
   {
     "id": "legendary_007",
@@ -130,7 +130,7 @@
     "signatureDetail": "한쪽 공중뿌리의 달빛색 둥근 수액창 하나",
     "prompt": "평평한 나무차양과 양끝의 굵은 공중뿌리가 아래 고리까지 모두 연결된 머리 장식 한 개, 잎이나 분리된 가지 없이 큰 뿌리 외곽과 수액창 하나만 표현",
     "defaultAlignment": { "x": -1, "y": -35, "size": 124 },
-    "qaState": "planned"
+    "qaState": "accepted"
   },
   {
     "id": "legendary_008",
@@ -149,7 +149,7 @@
     "signatureDetail": "부푼 옹이 안쪽의 금빛 새눈 모양 결 하나",
     "prompt": "비정형 옹이테와 좁은 뿌리다리가 한 덩어리로 닫힌 단일 얼굴 가리개 한 개, 얼굴이나 눈을 그리지 않고 커다란 옹이문 외곽과 금빛 나뭇결 하나만 표현",
     "defaultAlignment": { "x": -2, "y": -7, "size": 113 },
-    "qaState": "planned"
+    "qaState": "accepted"
   },
   {
     "id": "legendary_009",
@@ -168,7 +168,7 @@
     "signatureDetail": "눌린 모서리에서 시작하는 산호색 단일 충격파선",
     "prompt": "한 모서리가 눌린 둥근 사각 진동판과 세 겹 파동테가 모두 붙은 단일 등갑 한 개, 생물 신체나 발자국 없이 거대한 걸음의 울림만 추상적으로 표현",
     "defaultAlignment": { "x": 2, "y": 23, "size": 122 },
-    "qaState": "planned"
+    "qaState": "accepted"
   },
   {
     "id": "legendary_010",
@@ -187,7 +187,7 @@
     "signatureDetail": "깔때기 목을 감도는 주홍색 한 바퀴 흡입선",
     "prompt": "기울어진 넓은 원반이 중앙 깔때기 목으로 끊김 없이 말려드는 단일 머리 장식 한 개, 분리된 천체나 배경 없이 중력 깔때기 외곽과 흡입선 하나만 표현",
     "defaultAlignment": { "x": 2, "y": -38, "size": 123 },
-    "qaState": "planned"
+    "qaState": "accepted"
   },
   {
     "id": "legendary_011",
@@ -206,7 +206,7 @@
     "signatureDetail": "가장 긴 물결천 끝의 분홍색 한 줄 빛굽이",
     "prompt": "낮은 활대와 세 폭의 넓은 물결천이 위아래에서 모두 이어진 단일 커튼형 머리 장식 한 개, 옆면이 열린 채 극광의 큰 흐름과 빛굽이 하나만 표현",
     "defaultAlignment": { "x": 4, "y": -34, "size": 122 },
-    "qaState": "planned"
+    "qaState": "accepted"
   },
   {
     "id": "legendary_012",
@@ -225,6 +225,6 @@
     "signatureDetail": "중심판 한쪽을 비껴 가르는 진분홍색 충격파틈",
     "prompt": "중심판과 여덟 방사쐐기가 모두 붙은 단일 파열별 형태 흉갑 한 개, 별이나 폭발 조각을 추가하지 않고 큰 방사 외곽과 충격파틈 하나만 표현",
     "defaultAlignment": { "x": -1, "y": 21, "size": 124 },
-    "qaState": "planned"
+    "qaState": "accepted"
   }
 ]

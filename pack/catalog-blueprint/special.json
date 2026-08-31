@@ -33,7 +33,7 @@
     "signatureDetail": "숫자 없는 원판에 남은 귤빛 부채꼴 한 칸",
     "prompt": "원형 초읽기판과 꼭대기 감김손잡이와 쿠션띠가 모두 붙은 단일 머리 장식 한 개, 숫자나 글자나 주변 사물 없이 남은 시간을 뜻하는 귤빛 부채꼴 한 칸만 표현",
     "defaultAlignment": { "x": -1, "y": -36, "size": 116 },
-    "qaState": "planned"
+    "qaState": "accepted"
   },
   {
     "id": "special_003",
@@ -51,7 +51,7 @@
     "signatureDetail": "J자 갈고리 안쪽의 라즈베리색 창턱받침 한 칸",
     "prompt": "굵은 밧줄칼라가 앞의 큰 J자 갈고리까지 끊김 없이 이어진 단일 목 장식 한 개, 주변 사물이나 캐릭터 없이 창턱을 오르는 기능을 포근한 모험 장비로 표현",
     "defaultAlignment": { "x": 2, "y": 13, "size": 110 },
-    "qaState": "planned"
+    "qaState": "accepted"
   },
   {
     "id": "special_004",
@@ -69,7 +69,7 @@
     "signatureDetail": "캡슐 이음선 한쪽의 노란 네꼭지 행운홈",
     "prompt": "원형 캡슐렌즈와 짧은 곡선테가 완전히 붙은 단일 단안경 한 개, 캡슐 안의 물체나 글자 없이 행운홈 하나로 GAMCHA를 은유",
     "defaultAlignment": { "x": 3, "y": -8, "size": 108 },
-    "qaState": "planned"
+    "qaState": "accepted"
   },
   {
     "id": "special_005",
@@ -87,6 +87,6 @@
     "signatureDetail": "통통한 옆면의 청록색 한 줄 미소굽이 박음선",
     "prompt": "비정형 감자형 쿠션과 짧은 새싹꼭지가 붙은 단일 머리 장식 한 개, 눈이나 입이나 캐릭터 신체나 글자 없이 청록색과 미소굽이 박음선으로 미감이 정체성을 표현",
     "defaultAlignment": { "x": 0, "y": -33, "size": 114 },
-    "qaState": "planned"
+    "qaState": "accepted"
   }
 ]
