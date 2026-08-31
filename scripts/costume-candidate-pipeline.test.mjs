@@ -10,9 +10,10 @@ import {
   validateCandidate,
 } from "./costume-normalize-candidates.mjs";
 import { encodePngRgba } from "./lib/png-normalize.mjs";
-import { expectedCatalogIds } from "./costume-blueprint.mjs";
+import { expectedCatalogIds, loadBlueprint } from "./costume-blueprint.mjs";
 import {
   applyPromotion,
+  applyCatalogPromotion,
   assertPathInside,
   assertWindowsPathInside,
   authorizeDirectoryChain,
@@ -49,8 +50,10 @@ function sprite({
   return { width, height, pixels };
 }
 
+const canonicalBlueprint = await loadBlueprint();
+
 function acceptedBlueprint() {
-  return [...expectedCatalogIds()].map(([id, rarity]) => item(id, rarity));
+  return structuredClone(canonicalBlueprint);
 }
 
 function acceptedPngs(blueprint) {
@@ -78,6 +81,9 @@ async function prepareAuthoritativePromotion(root, { override = new Map() } = {}
     await writeFile(acceptedPath, override.get(candidate.id) ?? encodePngRgba(sprite()));
     await writeFile(destination, Buffer.from(`original-${candidate.id}`));
   }
+  await writeFile(join(root, "pack", "manifest.json"), JSON.stringify({ costumes: [
+    { id: "default_ghost", rarity: "default" }, { id: "default_raincoat", rarity: "default" }, { id: "default_clown", rarity: "default" },
+  ] }));
   return blueprint;
 }
 
@@ -97,6 +103,9 @@ async function assertNoPromotionArtifacts(root) {
       .filter((name) => /\.promote\.(tmp|bak)$/.test(name));
     assert.deepEqual(leftovers, [], rarity);
   }
+  const manifestArtifacts = (await readdir(join(root, "pack")))
+    .filter((name) => /^\.manifest\..+\.promote\.(tmp|bak)$/.test(name));
+  assert.deepEqual(manifestArtifacts, [], "manifest");
 }
 
 test("normalizes candidates into rarity directories", () => {
@@ -261,6 +270,87 @@ test("apply promotion rejects an arbitrary caller plan with zero writes", async 
   } finally {
     await rm(root, { recursive: true, force: true });
   }
+});
+
+async function assertCatalogRollbackForManifestPhase(phase) {
+  const root = await mkdtemp(join(tmpdir(), "costume-catalog-transaction-"));
+  await prepareAuthoritativePromotion(root);
+  const originalManifest = await readFile(join(root, "pack", "manifest.json"));
+  try {
+    await assert.rejects(applyCatalogPromotion({ root, failureHook: ({ currentPhase, index }) => {
+      if (currentPhase === phase && (!["before-manifest-stage-write", "after-manifest-stage-write"].includes(phase) || index === 185)) throw new Error(`injected ${phase}`);
+    } }), /injected/);
+    await assertOriginalCatalog(root);
+    assert.deepEqual(await readFile(join(root, "pack", "manifest.json")), originalManifest);
+    await assertNoPromotionArtifacts(root);
+  } finally { await rm(root, { recursive: true, force: true }); }
+}
+
+for (const phase of ["before-manifest-stage-write", "after-manifest-stage-write", "before-commit-rename", "after-commit-rename"]) {
+  test(`manifest ${phase} failure rolls back PNGs and manifest together`, async () => {
+    await assertCatalogRollbackForManifestPhase(phase);
+  });
+}
+
+test("catalog promotion commits 185 PNGs and the projected manifest as one result", async () => {
+  const root = await mkdtemp(join(tmpdir(), "costume-catalog-transaction-success-"));
+  await prepareAuthoritativePromotion(root);
+  try {
+    const result = await applyCatalogPromotion({ root });
+    assert.equal(result.promoted, 185);
+    assert.equal(result.manifest, 188);
+    assert.notDeepEqual(
+      await readFile(join(root, "pack", "common", "common_001.png")),
+      Buffer.from("original-common_001"),
+    );
+    const manifest = JSON.parse(await readFile(join(root, "pack", "manifest.json"), "utf8"));
+    assert.equal(manifest.count, 188);
+    assert.equal(manifest.costumes.length, 188);
+    await assertNoPromotionArtifacts(root);
+  } finally { await rm(root, { recursive: true, force: true }); }
+});
+
+test("manifest cleanup failure preserves recovery evidence after a fully committed catalog", async () => {
+  const root = await mkdtemp(join(tmpdir(), "costume-catalog-manifest-cleanup-"));
+  await prepareAuthoritativePromotion(root);
+  try {
+    await assert.rejects(
+      applyCatalogPromotion({ root, failureHook: ({ currentPhase, index }) => {
+        if (currentPhase === "before-backup-cleanup" && index === 185) throw new Error("injected manifest cleanup failure");
+      } }),
+      (error) => error instanceof AggregateError
+        && error.message.includes("cleanup incomplete")
+        && error.errors.some((entry) => entry.message.includes("manifest: promotion committed but backup cleanup incomplete")),
+    );
+    assert.notDeepEqual(
+      await readFile(join(root, "pack", "common", "common_001.png")),
+      Buffer.from("original-common_001"),
+    );
+    const manifest = JSON.parse(await readFile(join(root, "pack", "manifest.json"), "utf8"));
+    assert.equal(manifest.count, 188);
+    const leftovers = await readdir(join(root, "pack"));
+    assert.ok(leftovers.some((name) => /^\.manifest\..+\.promote\.bak$/.test(name)));
+  } finally { await rm(root, { recursive: true, force: true }); }
+});
+
+test("manifest rollback failure preserves its backup for recovery", async () => {
+  const root = await mkdtemp(join(tmpdir(), "costume-catalog-manifest-rollback-"));
+  await prepareAuthoritativePromotion(root);
+  try {
+    await assert.rejects(
+      applyCatalogPromotion({ root, failureHook: ({ currentPhase, index }) => {
+        if (currentPhase === "before-commit-rename" && index === 185) throw new Error("injected manifest commit failure");
+        if (currentPhase === "before-restore-rename" && index === 185) throw new Error("injected manifest restore failure");
+      } }),
+      (error) => error instanceof AggregateError
+        && error.message.includes("rollback was incomplete")
+        && error.errors.some((entry) => entry.message.includes("manifest: restore failed; backup preserved at")),
+    );
+    await assertOriginalCatalog(root);
+    await assert.rejects(readFile(join(root, "pack", "manifest.json")));
+    const leftovers = await readdir(join(root, "pack"));
+    assert.ok(leftovers.some((name) => /^\.manifest\..+\.promote\.bak$/.test(name)));
+  } finally { await rm(root, { recursive: true, force: true }); }
 });
 
 async function assertRollbackForPhase(phase) {

@@ -11,7 +11,7 @@ import {
 import { extname, isAbsolute, parse, relative, resolve, sep, win32 } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { randomUUID } from "node:crypto";
-import { expectedCatalogIds, loadBlueprint } from "./costume-blueprint.mjs";
+import { expectedCatalogIds, loadBlueprint, validateBlueprint } from "./costume-blueprint.mjs";
 import { acceptedCandidatePath, validateCandidate } from "./costume-normalize-candidates.mjs";
 import { readPngRgba } from "./lib/png-rgba.mjs";
 
@@ -21,6 +21,10 @@ const rarities = ["common", "rare", "epic", "legendary", "special"];
 export function applyBlueprint(manifest, items) {
   const defaults = manifest?.costumes?.filter(({ rarity }) => rarity === "default") ?? [];
   const expected = expectedCatalogIds();
+  const validationErrors = validateBlueprint(items);
+  if (validationErrors.length) {
+    throw new Error(`blueprint validation failed:\n${validationErrors.join("\n")}`);
+  }
   if (!Array.isArray(items) || items.length !== expected.size) {
     throw new Error(`expected 185 blueprint rows, got ${items?.length ?? 0}`);
   }
@@ -29,9 +33,10 @@ export function applyBlueprint(manifest, items) {
   }
 
   const seen = new Set();
-  const drawables = items.map((item) => {
-    const expectedRarity = expected.get(item?.id);
-    if (!expectedRarity || item.rarity !== expectedRarity || seen.has(item.id)) {
+  const itemsById = new Map(items.map((item) => [item.id, item]));
+  const drawables = [...expected].map(([id, expectedRarity]) => {
+    const item = itemsById.get(id);
+    if (!item || item.rarity !== expectedRarity || seen.has(item.id)) {
       throw new Error(`${item?.id ?? "<blueprint row>"}: invalid blueprint ID or rarity`);
     }
     seen.add(item.id);
@@ -281,6 +286,7 @@ export async function planPromotion(blueprint, acceptedCandidates, { root = repo
   if (!Array.isArray(blueprint)) {
     errors.push("blueprint: expected an array of 185 rows");
   } else {
+    errors.push(...validateBlueprint(blueprint).map((error) => `blueprint: ${error}`));
     if (blueprint.length !== expected.size) errors.push(`expected 185 blueprint rows, got ${blueprint.length}`);
     for (const item of blueprint) {
       const id = typeof item?.id === "string" ? item.id : "<blueprint row>";
@@ -470,7 +476,13 @@ export async function applyPromotion(options = {}) {
       if (errors.length) throw new Error(errors.join("\n"));
       runFailureHook(failureHook, "stage", index, record);
     }
-    await beforeCommit?.(Object.freeze({ root, copies: plan.copies }));
+    const extraRecord = await beforeCommit?.(Object.freeze({ root, copies: plan.copies }));
+    if (extraRecord) {
+      staged.push(extraRecord);
+      if (extraRecord.afterStageFailurePhase) {
+        runFailureHook(failureHook, extraRecord.afterStageFailurePhase, staged.length - 1, extraRecord);
+      }
+    }
     for (let index = 0; index < staged.length; index += 1) {
       const record = staged[index];
       await verifiedRegularFile(record.targetPath, record.parent, record.id, { allowMissing: true });
@@ -517,7 +529,7 @@ export async function applyPromotion(options = {}) {
       }
     }
     if (cleanupErrors.length) throw new AggregateError(cleanupErrors, "promotion committed but cleanup incomplete");
-    return staged.length;
+    return plan.copies.length;
   } catch (error) {
     if (committed) throw error;
     const rollbackErrors = await rollback(staged, failureHook);
@@ -526,6 +538,33 @@ export async function applyPromotion(options = {}) {
     }
     throw error;
   }
+}
+
+export async function applyCatalogPromotion({ root = repositoryRoot, failureHook } = {}) {
+  root = await authorizePromotionRoot(root);
+  const blueprint = await loadBlueprint(root);
+  const manifestPath = resolve(root, "pack", "manifest.json");
+  const manifest = JSON.parse(await readFile(manifestPath, "utf8"));
+  const nextManifest = applyBlueprint(manifest, blueprint);
+  const bytes = Buffer.from(`${JSON.stringify(nextManifest, null, 2)}\n`);
+  const promoted = await applyPromotion({ root, failureHook, beforeCommit: async () => {
+    const parent = await verifiedDirectory(root, resolve(root, "pack"), "manifest");
+    await verifiedRegularFile(manifestPath, parent, "manifest");
+    const temporary = temporaryPath(parent.canonicalDirectory, "manifest", "promote.tmp");
+    runFailureHook(failureHook, "before-manifest-stage-write", 185, { id: "manifest" });
+    await writeFile(temporary, bytes, { flag: "wx" });
+    return {
+      id: "manifest",
+      kind: "manifest",
+      parent,
+      targetPath: manifestPath,
+      temporaryPath: temporary,
+      backupPath: null,
+      committed: false,
+      afterStageFailurePhase: "after-manifest-stage-write",
+    };
+  } });
+  return { promoted, manifest: nextManifest.count };
 }
 
 async function main() {
@@ -539,18 +578,8 @@ async function main() {
   );
   if (plan.errors.length) throw new Error(plan.errors.join("\n"));
   if (apply[0] === "--apply") {
-    const promoted = await applyPromotion();
-    const manifestPath = resolve(repositoryRoot, "pack", "manifest.json");
-    const manifest = JSON.parse(await readFile(manifestPath, "utf8"));
-    const nextManifest = applyBlueprint(manifest, await loadBlueprint(repositoryRoot));
-    const temporaryManifest = temporaryPath(resolve(repositoryRoot, "pack"), "manifest", "promote.tmp");
-    await writeFile(temporaryManifest, `${JSON.stringify(nextManifest, null, 2)}\n`, { flag: "wx" });
-    try {
-      await rename(temporaryManifest, manifestPath);
-    } finally {
-      await rm(temporaryManifest, { force: true });
-    }
-    console.log(`promoted=${promoted} manifest=${nextManifest.count}`);
+    const result = await applyCatalogPromotion();
+    console.log(`promoted=${result.promoted} manifest=${result.manifest}`);
   } else console.log(`validated=${plan.copies.length}`);
 }
 

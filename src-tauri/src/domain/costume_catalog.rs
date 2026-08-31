@@ -40,10 +40,7 @@ impl CostumeCatalog {
                 "embedded costume manifest contains duplicate id {}",
                 costume.id
             );
-            ids_by_rarity
-                .entry(rarity)
-                .or_default()
-                .push(costume.id);
+            ids_by_rarity.entry(rarity).or_default().push(costume.id);
         }
 
         for ids in ids_by_rarity.values_mut() {

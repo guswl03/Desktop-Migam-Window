@@ -612,6 +612,30 @@ test("applies all 185 blueprint rows while preserving only the three default cos
     file === `${rarity}/${id}.png` && ["head", "face", "neck", "body"].includes(slot)));
 });
 
+test("rejects malformed full blueprints before manifest projection and canonicalizes order", async () => {
+  const blueprint = await loadBlueprint();
+  const manifest = { costumes: [
+    { id: "default_ghost", rarity: "default" },
+    { id: "default_raincoat", rarity: "default" },
+    { id: "default_clown", rarity: "default" },
+  ] };
+  for (const mutate of [
+    (items) => { delete items[0].name; },
+    (items) => { items[0].slot = "full"; },
+    (items) => { items[0].defaultAlignment = null; },
+    (items) => { items[0].id = "wrong_001"; },
+    (items) => { items[1].id = items[0].id; },
+    (items) => items.slice(1),
+  ]) {
+    const items = structuredClone(blueprint);
+    const result = mutate(items) ?? items;
+    assert.throws(() => applyBlueprint(manifest, result), /blueprint validation failed/);
+  }
+  const forward = applyBlueprint(manifest, blueprint);
+  const reverse = applyBlueprint(manifest, [...blueprint].reverse());
+  assert.deepEqual(reverse.costumes, forward.costumes);
+});
+
 test("assembles a standalone transparent image prompt", () => {
   const prompt = buildImagePrompt(validItem, "approved style lock");
   assert.match(prompt, /Asset type: standalone common desktop-pet costume icon/);
